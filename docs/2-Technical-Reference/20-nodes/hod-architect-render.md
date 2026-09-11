@@ -1,7 +1,7 @@
 # Hod: Architect-Render (Deterministic Articulation)
 
 **Normative for kOA:** YES (node specification)  
-**External normative references:** Kristal v4 (pinned) for Kristal-facing artifacts/contracts referenced by this node (see `docs/40-integration/kristal-v4/contract-pointers.md`)
+**External normative references:** Kristal v4 (pinned) for Kristal-facing artifacts/contracts referenced by this node (see `docs/2-Technical-Reference/40-integration/kristal-v4/contract-pointers.md`)
 
 ## Purpose
 Architect-Render turns **validated knowledge** into **user-consumable outputs** (text or structured blocks) under strict rules:

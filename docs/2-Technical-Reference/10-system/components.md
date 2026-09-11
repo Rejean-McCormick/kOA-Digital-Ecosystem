@@ -64,7 +64,7 @@
 - Query API (portable query semantics over Exchange/Pack)
 - Integration contracts for Orgo / SenTient / Architect / Konnaxion
 
-> kOA does not restate Kristal contracts here. See `docs/40-integration/kristal-v4/`.
+> kOA does not restate Kristal contracts here. See `docs/2-Technical-Reference/40-integration/kristal-v4/`.
 
 ---
 
@@ -189,6 +189,6 @@ Konnaxion is treated as two facets.
 
 ## 3) Where the detailed contracts live
 
-- Node-level responsibilities and boundary specifics: `docs/20-nodes/*` (one page per component role).
-- kOA-owned artifact contracts and schemas (e.g., Orgo Case/Task, Build/Release records): `docs/30-artifacts/*`.
-- Kristal artifact contracts/schemas (Exchange, Runtime Pack, Claim-IR, Resolved Claim-IR, Validation Report): referenced via the pinned Kristal v4 dependency (not duplicated here): `docs/40-integration/kristal-v4/`.
+- Node-level responsibilities and boundary specifics: `docs/2-Technical-Reference/20-nodes/*` (one page per component role).
+- kOA-owned artifact contracts and schemas (e.g., Orgo Case/Task, Build/Release records): `docs/2-Technical-Reference/30-artifacts/*`.
+- Kristal artifact contracts/schemas (Exchange, Runtime Pack, Claim-IR, Resolved Claim-IR, Validation Report): referenced via the pinned Kristal v4 dependency (not duplicated here): `docs/2-Technical-Reference/40-integration/kristal-v4/`.

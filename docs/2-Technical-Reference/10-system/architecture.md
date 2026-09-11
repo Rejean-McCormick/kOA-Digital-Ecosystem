@@ -15,7 +15,7 @@ This document describes:
 - the stage spine (lifecycle),
 - cross-cutting properties (determinism, fail-closed verification, auditability, offline behavior).
 
-It does **not** redefine Kristal schemas or artifact formats; those are external normative sources pinned under `docs/40-integration/kristal-v4/`.
+It does **not** redefine Kristal schemas or artifact formats; those are external normative sources pinned under `docs/2-Technical-Reference/40-integration/kristal-v4/`.
 
 ---
 
@@ -126,9 +126,9 @@ Tenant-scoped policies and trust roots must be enforced at verification and publ
 
 ## 8) Where to go next
 
-- Lifecycle: `docs/10-system/lifecycle.md`
-- Components map: `docs/10-system/components.md`
-- Trust boundaries: `docs/10-system/trust-boundaries.md`
-- Determinism: `docs/10-system/determinism.md`
-- Node specs: `docs/20-nodes/`
-- Kristal integration (pinned references + kOA profile): `docs/40-integration/kristal-v4/`
+- Lifecycle: `docs/2-Technical-Reference/10-system/lifecycle.md`
+- Components map: `docs/2-Technical-Reference/10-system/components.md`
+- Trust boundaries: `docs/2-Technical-Reference/10-system/trust-boundaries.md`
+- Determinism: `docs/2-Technical-Reference/10-system/determinism.md`
+- Node specs: `docs/2-Technical-Reference/20-nodes/`
+- Kristal integration (pinned references + kOA profile): `docs/2-Technical-Reference/40-integration/kristal-v4/`

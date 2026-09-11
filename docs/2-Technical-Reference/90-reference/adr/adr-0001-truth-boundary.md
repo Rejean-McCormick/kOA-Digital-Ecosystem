@@ -45,11 +45,11 @@ kOA integrates with Kristal as the canonical truth compiler. Kristal v4 defines 
 ## Implementation notes
 
 - The pinned Kristal dependency is recorded under:
-  - `docs/40-integration/kristal-v4/pinned-dependency.md`
+  - `docs/2-Technical-Reference/40-integration/kristal-v4/pinned-dependency.md`
 - kOA operational enforcement points include:
-  - `docs/50-operations/pipeline.md`
-  - `docs/50-operations/rollback.md`
-  - `docs/50-operations/releases.md`
+  - `docs/2-Technical-Reference/50-operations/pipeline.md`
+  - `docs/2-Technical-Reference/50-operations/rollback.md`
+  - `docs/2-Technical-Reference/50-operations/releases.md`
 
 ---
 
@@ -63,4 +63,4 @@ kOA integrates with Kristal as the canonical truth compiler. Kristal v4 defines 
 ## Links
 
 - `docs/01-principles/02-truth-boundary.md`
-- `docs/40-integration/kristal-v4/index.md`
+- `docs/2-Technical-Reference/40-integration/kristal-v4/index.md`

@@ -1,6 +1,6 @@
 # Testing (kOA)
 
-**File:** `docs/60-guides/testing.md`  
+**File:** `docs/2-Technical-Reference/60-guides/testing.md`  
 **Normative scope:** kOA testing expectations and test organization.  
 **Non-normative:** Kristal artifact schemas/formats (external); this guide references the pinned Kristal v4 dependency for schema validation.
 
@@ -40,7 +40,7 @@ Scope:
 
 Rule:
 - For Kristal artifacts, use the **pinned Kristal v4 schemas** (do not copy schemas into kOA).  
-See: `docs/40-integration/kristal-v4/pinned-dependency.md`.
+See: `docs/2-Technical-Reference/40-integration/kristal-v4/pinned-dependency.md`.
 
 ### 2.3 Integration tests (multi-component)
 Scope:
@@ -75,7 +75,7 @@ Scope:
 ### 3.3 Schema conformance
 - Validate all emitted artifacts against their schemas.
 - For Kristal artifacts, validate against pinned Kristal v4 schemas.
-- For kOA-native artifacts (Orgo Task/Case, Build Record, Release Record, etc.), validate against kOA schemas under `docs/30-artifacts/schemas/`.
+- For kOA-native artifacts (Orgo Task/Case, Build Record, Release Record, etc.), validate against kOA schemas under `docs/2-Technical-Reference/30-artifacts/schemas/`.
 
 ### 3.4 Verification + activation (fail-closed)
 - Corrupted payload hash → activation must fail
@@ -143,7 +143,7 @@ When a test fails, capture:
 
 ## 7) Related docs
 
-- Conformance checklist: `docs/40-integration/kristal-v4/conformance.md`
-- Operations pipeline: `docs/50-operations/pipeline.md`
-- Rollout/rollback: `docs/50-operations/rollback.md`
-- Determinism: `docs/10-system/determinism.md`
+- Conformance checklist: `docs/2-Technical-Reference/40-integration/kristal-v4/conformance.md`
+- Operations pipeline: `docs/2-Technical-Reference/50-operations/pipeline.md`
+- Rollout/rollback: `docs/2-Technical-Reference/50-operations/rollback.md`
+- Determinism: `docs/2-Technical-Reference/10-system/determinism.md`

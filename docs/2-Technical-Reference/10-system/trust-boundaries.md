@@ -1,6 +1,6 @@
 # Trust Boundaries
 
-**File:** `docs/10-system/trust-boundaries.md`  
+**File:** `docs/2-Technical-Reference/10-system/trust-boundaries.md`  
 **Status:** Normative (kOA)  
 **External normative references:** Kristal v4 docs + schemas (pinned dependency)
 

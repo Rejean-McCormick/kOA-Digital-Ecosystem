@@ -41,7 +41,7 @@ A Mandate Bundle is a versioned, auditable container that includes:
 - one or more policy documents / rule sets
 - optional signatures for authenticity
 
-Schema: `docs/30-artifacts/schemas/mandate-bundle.schema.json`
+Schema: `docs/2-Technical-Reference/30-artifacts/schemas/mandate-bundle.schema.json`
 
 ---
 

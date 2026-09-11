@@ -48,8 +48,7 @@ flowchart TD
   I --> J[Execute Tasks -> Telemetry]
   J --> K[Feedback -> New Case/Task]
   K --> C
-````
-
+```
 ---
 
 ## 3) Stage-by-stage specification
@@ -335,8 +334,8 @@ Each stage specifies: **Owner**, **Inputs**, **Outputs**, **Gate**, **Observabil
 
 ## 5) Pointers
 
-* Build orchestration details: `docs/50-operations/pipeline.md`
-* Kristal v4 integration profile and contract pointers: `docs/40-integration/kristal-v4/`
-* Conformance tests: `docs/60-guides/testing.md`
+* Build orchestration details: `docs/2-Technical-Reference/50-operations/pipeline.md`
+* Kristal v4 integration profile and contract pointers: `docs/2-Technical-Reference/40-integration/kristal-v4/`
+* Conformance tests: `docs/2-Technical-Reference/60-guides/testing.md`
 
 

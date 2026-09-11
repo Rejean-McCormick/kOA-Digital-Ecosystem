@@ -22,8 +22,8 @@ Orgo MUST:
 - Block downstream activation/release when integrity checks fail (**fail-closed**).
 
 Kristal contract details are external; see:
-- `docs/40-integration/kristal-v4/contract-pointers.md`
-- `docs/40-integration/kristal-v4/conformance.md`
+- `docs/2-Technical-Reference/40-integration/kristal-v4/contract-pointers.md`
+- `docs/2-Technical-Reference/40-integration/kristal-v4/conformance.md`
 
 ### 3) Governance workflow (cases/tasks) (normative)
 Orgo MUST:
@@ -63,20 +63,20 @@ Orgo SHOULD:
 ## Outputs (Artifacts)
 
 ### kOA-native (owned by Orgo)
-- `docs/30-artifacts/orgo-case.md`
-- `docs/30-artifacts/orgo-task.md`
-- `docs/30-artifacts/build-record.md`
-- `docs/30-artifacts/release-record.md`
+- `docs/2-Technical-Reference/30-artifacts/orgo-case.md`
+- `docs/2-Technical-Reference/30-artifacts/orgo-task.md`
+- `docs/2-Technical-Reference/30-artifacts/build-record.md`
+- `docs/2-Technical-Reference/30-artifacts/release-record.md`
 
 Schemas:
-- `docs/30-artifacts/schemas/orgo-case.schema.json`
-- `docs/30-artifacts/schemas/orgo-task.schema.json`
-- `docs/30-artifacts/schemas/build-record.schema.json`
-- `docs/30-artifacts/schemas/release-record.schema.json`
+- `docs/2-Technical-Reference/30-artifacts/schemas/orgo-case.schema.json`
+- `docs/2-Technical-Reference/30-artifacts/schemas/orgo-task.schema.json`
+- `docs/2-Technical-Reference/30-artifacts/schemas/build-record.schema.json`
+- `docs/2-Technical-Reference/30-artifacts/schemas/release-record.schema.json`
 
 ### Externally specified (referenced by Orgo; not defined here)
 Orgo records and references Kristal artifacts (Exchange, Runtime Pack, Validation Report, etc.) but does not redefine them.
-See `docs/40-integration/kristal-v4/contract-pointers.md`.
+See `docs/2-Technical-Reference/40-integration/kristal-v4/contract-pointers.md`.
 
 ---
 
@@ -196,16 +196,16 @@ Orgo SHOULD:
 
 ## Versioning & compatibility
 
-- kOA-native artifact schemas evolve under `docs/90-reference/adr/`.
+- kOA-native artifact schemas evolve under `docs/2-Technical-Reference/90-reference/adr/`.
 - Kristal artifact compatibility is governed by the pinned Kristal v4 dependency and the kOA profile:
-  - `docs/40-integration/kristal-v4/pinned-dependency.md`
-  - `docs/40-integration/kristal-v4/koa-profile.md`
-  - `docs/40-integration/kristal-v4/legacy-compat.md`
+  - `docs/2-Technical-Reference/40-integration/kristal-v4/pinned-dependency.md`
+  - `docs/2-Technical-Reference/40-integration/kristal-v4/koa-profile.md`
+  - `docs/2-Technical-Reference/40-integration/kristal-v4/legacy-compat.md`
 
 ---
 
 ## Links
-- System gates: `docs/10-system/trust-boundaries.md`, `docs/10-system/determinism.md`
-- Operations: `docs/50-operations/pipeline.md`, `docs/50-operations/releases.md`, `docs/50-operations/rollback.md`
-- kOA-native artifacts: `docs/30-artifacts/`
-- Kristal integration: `docs/40-integration/kristal-v4/`
+- System gates: `docs/2-Technical-Reference/10-system/trust-boundaries.md`, `docs/2-Technical-Reference/10-system/determinism.md`
+- Operations: `docs/2-Technical-Reference/50-operations/pipeline.md`, `docs/2-Technical-Reference/50-operations/releases.md`, `docs/2-Technical-Reference/50-operations/rollback.md`
+- kOA-native artifacts: `docs/2-Technical-Reference/30-artifacts/`
+- Kristal integration: `docs/2-Technical-Reference/40-integration/kristal-v4/`

@@ -1,6 +1,6 @@
 # Tiferet — SenTient (Resolution Engine)
 
-**File:** `docs/20-nodes/tiferet-sentient.md`  
+**File:** `docs/2-Technical-Reference/20-nodes/tiferet-sentient.md`  
 **Normative scope:** kOA node behavior and interfaces.  
 **Non-normative:** Kristal artifact schemas (external), cryptographic/canonicalization specifics (external).
 
@@ -181,6 +181,6 @@ Minimum test suite:
 
 ## 11) Links
 
-- Node map and lifecycle: `docs/10-system/`
-- Orgo pipeline stage contract: `docs/50-operations/pipeline.md`
-- Integration profile for Kristal compilation boundaries: `docs/40-integration/kristal-v4/`
+- Node map and lifecycle: `docs/2-Technical-Reference/10-system/`
+- Orgo pipeline stage contract: `docs/2-Technical-Reference/50-operations/pipeline.md`
+- Integration profile for Kristal compilation boundaries: `docs/2-Technical-Reference/40-integration/kristal-v4/`

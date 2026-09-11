@@ -2,7 +2,7 @@
 
 **Purpose:** Architecture Decision Records (ADRs) capture **kOA-owned** decisions: invariants, operational policies, compatibility rules, governance behavior, and component splits.
 
-**Rule:** ADRs must not duplicate Kristal’s normative artifact contracts. When a decision depends on Kristal, the ADR must reference the pinned Kristal v4 dependency (see `docs/40-integration/kristal-v4/pinned-dependency.md`) and point to the specific Kristal doc/schema section.
+**Rule:** ADRs must not duplicate Kristal’s normative artifact contracts. When a decision depends on Kristal, the ADR must reference the pinned Kristal v4 dependency (see `docs/2-Technical-Reference/40-integration/kristal-v4/pinned-dependency.md`) and point to the specific Kristal doc/schema section.
 
 ---
 

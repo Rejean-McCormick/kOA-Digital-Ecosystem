@@ -105,5 +105,5 @@ Legacy acceptance expands the input surface. Therefore:
 ---
 
 ## Change control
-- Any expansion of “Allowed legacy forms” requires an ADR under `docs/90-reference/adr/`.
+- Any expansion of “Allowed legacy forms” requires an ADR under `docs/2-Technical-Reference/90-reference/adr/`.
 - Compatibility level defaults and environment policy must be recorded in `koa-profile.md`.

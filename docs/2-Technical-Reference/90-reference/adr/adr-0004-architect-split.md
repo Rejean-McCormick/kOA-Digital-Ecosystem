@@ -77,6 +77,6 @@ Split the Architect role into two components:
 
 - Define the minimal Plan → Case/Task request format (kOA-owned artifact) if not already standardized.
 - Ensure conformance tests include deterministic Render Bundle checks.
-- Update node docs (`docs/20-nodes/netzach-architect-strategy.md`, `docs/20-nodes/hod-architect-render.md`) to reflect this split.
+- Update node docs (`docs/2-Technical-Reference/20-nodes/netzach-architect-strategy.md`, `docs/2-Technical-Reference/20-nodes/hod-architect-render.md`) to reflect this split.
 
 ---

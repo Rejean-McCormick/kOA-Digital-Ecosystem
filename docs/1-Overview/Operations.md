@@ -19,8 +19,7 @@ flowchart LR
   C --> D[Konnaxion<br/>verify -> activate]
   D --> E[Runtime (Malkuth)<br/>serve offline]
   E --> F[Rollback if needed<br/>deterministic target]
-````
-
+```
 ## Key operational concepts
 
 * **Build**: a gated run that produces a candidate Runtime Pack and evidence of what happened.

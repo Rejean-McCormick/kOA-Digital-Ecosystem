@@ -63,8 +63,7 @@ flowchart LR
   D -->|fail| F[Try earlier candidate or Safe Mode]
   E --> G[Post-check: health + correctness]
   G --> H[Record evidence + unfreeze (gated)]
-````
-
+```
 ---
 
 ## Procedure: automatic rollback (activation-time)

@@ -137,7 +137,7 @@ Rollback principles:
 - Atomic activation of the rollback target
 - Preserve the release record and link incident notes
 
-See: [Operations — Rollbacks](Operations-Rollbacks)
+See: [Operations — Rollbacks](Operations-Rollbacks.md)
 
 ## Evidence and audit trail
 
@@ -150,7 +150,7 @@ Every release should leave an auditable trail:
 - Promotion/pinning/rollback decisions + rationale
 - Links to incident/postmortem if applicable
 
-See: [Artifacts — Operational](Artifacts-Operational)
+See: [Artifacts — Operational](Artifacts-Operational.md)
 
 ## Common pitfalls
 
@@ -162,9 +162,9 @@ See: [Artifacts — Operational](Artifacts-Operational)
 
 ## Related pages
 
-- [Operations](Operations)
-- [Operations — Builds](Operations-Builds)
-- [Operations — Rollbacks](Operations-Rollbacks)
-- [Operations — Observability](Operations-Observability)
-- [Operations — Incident response](Operations-Incident-response)
-- [Integration — Kristal v4](Integration-Kristal-v4)
+- [Operations](Operations.md)
+- [Operations — Builds](Operations-Builds.md)
+- [Operations — Rollbacks](Operations-Rollbacks.md)
+- [Operations — Observability](Operations-Observability.md)
+- [Operations — Incident response](Operations-Incident-response.md)
+- [Integration — Kristal v4](Integration-Kristal-v4.md)

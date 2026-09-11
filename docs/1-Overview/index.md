@@ -34,8 +34,7 @@ flowchart TD
   H --> I[Render -> Render Bundle + trace_map]
   I --> J[Execute Tasks -> Telemetry]
   J --> K[Feedback -> New Case/Task]
-````
-
+```
 ---
 
 ## Core components (who does what)
@@ -57,7 +56,7 @@ flowchart TD
 * **Atomic activation + deterministic rollback:** no partial activation; rollback is explicit and reproducible.
 * **No new facts downstream:** rendering must trace to validated lineage or refuse deterministically.
 
-See: [Principles & invariants](Principles-and-invariants)
+See: [Principles & invariants](Principles-and-invariants.md)
 
 ---
 
@@ -73,18 +72,18 @@ See: [Principles & invariants](Principles-and-invariants)
 
 * Field-level Kristal schemas, canonicalization mechanics, signature formats, etc.
 
-See: [Non-goals](Non-goals)
+See: [Non-goals](Non-goals.md)
 
 ---
 
 ## How to navigate
 
-* Want the flow: [Lifecycle](Lifecycle)
-* Want the parts: [Components](Components)
-* Want what crosses boundaries: [Artifacts](Artifacts)
-* Want how it runs in production: [Operations](Operations)
-* Want external integration: [Integration](Integration)
-* Need vocabulary and quick answers: [Glossary](Glossary), [FAQ](FAQ)
+* Want the flow: [Lifecycle](Lifecycle.md)
+* Want the parts: [Components](Components.md)
+* Want what crosses boundaries: [Artifacts](Artifacts.md)
+* Want how it runs in production: [Operations](Operations.md)
+* Want external integration: [Integration](Integration.md)
+* Need vocabulary and quick answers: [Glossary](Glossary.md), [FAQ](FAQ.md)
 
 ---
 

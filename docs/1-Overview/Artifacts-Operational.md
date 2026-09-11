@@ -1,7 +1,7 @@
 # Operational Artifacts (kOA-native)
 
-Operational artifacts are **typed payloads** used to **operate, govern, distribute, and observe** the ecosystem. :contentReference[oaicite:0]{index=0}  
-They do **not** redefine Kristal artifacts; they reference Kristal outputs by opaque IDs defined in the pinned Kristal spec. :contentReference[oaicite:1]{index=1}
+Operational artifacts are **typed payloads** used to **operate, govern, distribute, and observe** the ecosystem.  
+They do **not** redefine Kristal artifacts; they reference Kristal outputs by opaque IDs defined in the pinned Kristal spec.
 
 ---
 
@@ -18,7 +18,7 @@ An operational artifact exists to answer questions like:
 Each kOA artifact has:
 - a documented contract (human-readable),
 - a JSON Schema for validation, and
-- explicit versioning/compat expectations. :contentReference[oaicite:2]{index=2}
+- explicit versioning/compat expectations.
 
 ---
 
@@ -34,7 +34,7 @@ A **case** is the top-level unit of governed operational work (incident, remedia
 
 #### Orgo Task
 A **task** is an executable unit of work under constraints (tool/agent/human/hybrid), with pinned inputs and declared expected outputs.
-Tasks are the primary way the system turns “needed action” into auditable execution and evidence linkage. :contentReference[oaicite:3]{index=3}
+Tasks are the primary way the system turns “needed action” into auditable execution and evidence linkage.
 
 **Typical usage**
 - “Investigate repeated validation failures”
@@ -52,10 +52,10 @@ A **Build Record** is the audit-grade record of a pipeline run. It must allow an
 - what pinned context was applied (blueprint/mandate/policy/toolchain identity),
 - which stages ran and their outcomes,
 - gate decisions (especially validation),
-- which outputs were produced (Kristal Exchange + Runtime Pack refs). :contentReference[oaicite:4]{index=4}
+- which outputs were produced (Kristal Exchange + Runtime Pack refs).
 
 **Key invariant**
-- **No compile on fail**: if validation fails, the Build Record must not claim Exchange/Runtime Pack outputs for that attempt. :contentReference[oaicite:5]{index=5}
+- **No compile on fail**: if validation fails, the Build Record must not claim Exchange/Runtime Pack outputs for that attempt.
 
 **Why it exists**
 - Reproducibility (“same pinned context → comparable results”)
@@ -65,40 +65,40 @@ A **Build Record** is the audit-grade record of a pipeline run. It must allow an
 ---
 
 #### Release Record
-A **Release Record** captures **distribution intent** and **rollout state** for publishing verified build outputs (e.g., Runtime Packs) to channels/cohorts. :contentReference[oaicite:6]{index=6}  
+A **Release Record** captures **distribution intent** and **rollout state** for publishing verified build outputs (e.g., Runtime Packs) to channels/cohorts.  
 It binds:
 - what is being released (references to build outputs),
 - where it is released (channels/cohorts),
 - how it is released (policy + rollout strategy),
-- what happened (verification/activation outcomes, timestamps, operators, reasons). :contentReference[oaicite:7]{index=7}
+- what happened (verification/activation outcomes, timestamps, operators, reasons).
 
 **Important boundary**
-- A Release Record does not mutate canonical truth; it is operational governance used by Orgo/Konnaxion. :contentReference[oaicite:8]{index=8}
+- A Release Record does not mutate canonical truth; it is operational governance used by Orgo/Konnaxion.
 
 ---
 
 ### 3) Policy / mandate
 
 #### Mandate Bundle
-A **Mandate Bundle** is a pinned, versioned bundle of governance inputs that define what the ecosystem is allowed to do and how it must behave. :contentReference[oaicite:9]{index=9}  
+A **Mandate Bundle** is a pinned, versioned bundle of governance inputs that define what the ecosystem is allowed to do and how it must behave.  
 It exists to:
 - provide a single content-addressed governance package referenced by builds/releases/audits,
 - enable reproducible policy decisions,
-- separate governance configuration from runtime execution and from canonical truth artifacts. :contentReference[oaicite:10]{index=10}
+- separate governance configuration from runtime execution and from canonical truth artifacts.
 
 ---
 
 ### 4) Distribution / runtime
 
 #### Konnaxion State
-**Konnaxion State** captures the local distribution/activation state of a Konnaxion instance (or cluster) in a structured, auditable form. :contentReference[oaicite:11]{index=11}  
+**Konnaxion State** captures the local distribution/activation state of a Konnaxion instance (or cluster) in a structured, auditable form.  
 It is designed to:
 - provide a consistent view of what is installed/active/pinned,
 - support deterministic rollback decisions,
-- correlate activation outcomes with health signals. :contentReference[oaicite:12]{index=12}
+- correlate activation outcomes with health signals.
 
 **When it’s emitted**
-Konnaxion updates this record on verify/activate attempts (success or fail), rollback start/completion, pin/unpin changes, and optionally periodic heartbeat. :contentReference[oaicite:13]{index=13}
+Konnaxion updates this record on verify/activate attempts (success or fail), rollback start/completion, pin/unpin changes, and optionally periodic heartbeat.
 
 ---
 

@@ -2,7 +2,7 @@
 
 **Artifact class:** Operational (governance + reproducibility)  
 **Owned by:** Orgo (control plane)  
-**Schema:** `docs/30-artifacts/schemas/build-record.schema.json`  
+**Schema:** `docs/2-Technical-Reference/30-artifacts/schemas/build-record.schema.json`  
 **Purpose:** Provide a single, auditable, content-addressed (or at least tamper-evident) record of *what was built*, *from what*, *under which pinned policies/blueprints*, *which gates ran*, and *what artifacts were produced*.
 
 This record is kOA-owned. It references Kristal artifacts by **opaque IDs + manifest refs**, but does not redefine Kristal contracts.
@@ -151,8 +151,7 @@ A list of stage executions, each with:
 
   "record_hash": { "alg": "sha256", "value": "..." }
 }
-````
-
+```
 ---
 
 ## 8) Versioning and compatibility

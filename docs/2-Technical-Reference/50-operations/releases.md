@@ -105,4 +105,4 @@ All field-level definitions for:
 
 are defined in the pinned Kristal v4 specification referenced in:
 
-* `docs/40-integration/kristal-v4/contract-pointers.md`
+* `docs/2-Technical-Reference/40-integration/kristal-v4/contract-pointers.md`

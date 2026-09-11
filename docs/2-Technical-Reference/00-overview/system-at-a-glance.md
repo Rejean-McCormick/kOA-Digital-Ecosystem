@@ -50,8 +50,8 @@ This repo does **not** re-specify Kristal artifact formats/schemas.
 
 ## Next reads
 
-* `docs/10-system/architecture.md`
-* `docs/10-system/lifecycle.md`
-* `docs/20-nodes/index.md`
-* `docs/40-integration/kristal-v4/index.md`
-* `docs/50-operations/pipeline.md`
+* `docs/2-Technical-Reference/10-system/architecture.md`
+* `docs/2-Technical-Reference/10-system/lifecycle.md`
+* `docs/2-Technical-Reference/20-nodes/index.md`
+* `docs/2-Technical-Reference/40-integration/kristal-v4/index.md`
+* `docs/2-Technical-Reference/50-operations/pipeline.md`

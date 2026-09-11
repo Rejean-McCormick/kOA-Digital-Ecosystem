@@ -8,7 +8,7 @@ This wiki does **not** re-specify **Kristal** artifact contracts (schemas, canon
 
 ## Where is the Kristal spec?
 See the pinned Kristal v4 reference and pointers in:
-- [Integration: Kristal v4](Integration-Kristal-v4)
+- [Integration: Kristal v4](Integration-Kristal-v4.md)
 
 ## What is “canonical” vs “informative” here?
 - **Canonical for kOA**: ecosystem invariants, operational rules, component responsibilities, and **kOA-native** operational artifacts.
@@ -30,21 +30,21 @@ Duplicating normative contracts causes drift. kOA documentation stays stable by 
 
 ## Where do I start if I’m implementing?
 Start with:
-- [Home](Home)
-- [Principles & invariants](Principles-and-invariants)
-- [Lifecycle](Lifecycle)
-- [Components](Components)
-- [Artifacts](Artifacts)
-- [Integration: Kristal v4](Integration-Kristal-v4)
-- [Operations](Operations)
+- [Home](index.md)
+- [Principles & invariants](Principles-and-invariants.md)
+- [Lifecycle](Lifecycle.md)
+- [Components](Components.md)
+- [Artifacts](Artifacts.md)
+- [Integration: Kristal v4](Integration-Kristal-v4.md)
+- [Operations](Operations.md)
 
 ## Where do I start if I’m operating?
 Start with:
-- [Operations](Operations)
-- [Operations: Releases](Operations-Releases)
-- [Operations: Rollbacks](Operations-Rollbacks)
-- [Operations: Observability](Operations-Observability)
-- [Operations: Incident response](Operations-Incident-response)
+- [Operations](Operations.md)
+- [Operations: Releases](Operations-Releases.md)
+- [Operations: Rollbacks](Operations-Rollbacks.md)
+- [Operations: Observability](Operations-Observability.md)
+- [Operations: Incident response](Operations-Incident-response.md)
 
 ## How do changes get made safely?
 - Changes to **kOA** invariants/interfaces/operational contracts should be accompanied by an ADR and conformance updates.
@@ -52,7 +52,7 @@ Start with:
 
 ## What should I do if I find a mismatch between kOA and Kristal?
 Treat it as a **kOA integration issue** unless you are also changing the pinned Kristal version. Update:
-- [Integration: Kristal v4](Integration-Kristal-v4)
+- [Integration: Kristal v4](Integration-Kristal-v4.md)
 - Any impacted operations or artifact pages that reference the integration behavior
 
 ## Does kOA require online connectivity to use Kristal artifacts?

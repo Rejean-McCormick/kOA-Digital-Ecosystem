@@ -1,6 +1,6 @@
 # Incident Response
 
-**File:** `docs/50-operations/incident-response.md`  
+**File:** `docs/2-Technical-Reference/50-operations/incident-response.md`  
 **Status:** Normative (kOA)  
 **External normative references:** Kristal v4 docs + schemas (pinned dependency)
 
@@ -16,7 +16,7 @@ Provide a deterministic, auditable procedure for detecting, triaging, mitigating
 - Trust roots / keys / revocations,
 - Multi-tenant isolation.
 
-This runbook avoids schema-level duplication. When you need artifact formats, follow the pinned Kristal references (integration section) or kOA-native schemas under `docs/30-artifacts/schemas/`.
+This runbook avoids schema-level duplication. When you need artifact formats, follow the pinned Kristal references (integration section) or kOA-native schemas under `docs/2-Technical-Reference/30-artifacts/schemas/`.
 
 ---
 

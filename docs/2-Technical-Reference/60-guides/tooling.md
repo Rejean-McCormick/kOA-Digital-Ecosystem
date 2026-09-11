@@ -21,7 +21,7 @@ Baseline expectations:
 
 kOA-owned schemas live under:
 
-* `docs/30-artifacts/schemas/`
+* `docs/2-Technical-Reference/30-artifacts/schemas/`
 
 Recommended tooling:
 

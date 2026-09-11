@@ -1,6 +1,6 @@
 # Chokmah — Inputs (Ingest + Provenance Boundary)
 
-**File:** `docs/20-nodes/chokmah-inputs.md`  
+**File:** `docs/2-Technical-Reference/20-nodes/chokmah-inputs.md`  
 **Normative scope:** kOA node behavior and interfaces.  
 **Non-normative:** Kristal artifact schemas (external).
 
@@ -64,7 +64,7 @@ Chokmah MUST NOT:
 - Optional: **Quarantine Report**
   - When content is blocked/sanitized/quarantined per policy
 
-> Field-level schemas for kOA-owned operational artifacts live under `docs/30-artifacts/`. If you maintain a dedicated Input Snapshot / Snapshot Manifest schema, treat it as kOA-owned.
+> Field-level schemas for kOA-owned operational artifacts live under `docs/2-Technical-Reference/30-artifacts/`. If you maintain a dedicated Input Snapshot / Snapshot Manifest schema, treat it as kOA-owned.
 
 ---
 
@@ -163,8 +163,8 @@ Chokmah SHOULD emit:
 
 ## 9) Related docs
 
-- `docs/10-system/trust-boundaries.md`
-- `docs/50-operations/pipeline.md`
-- `docs/30-artifacts/build-record.md`
-- `docs/30-artifacts/mandate-bundle.md`
-- `docs/40-integration/kristal-v4/contract-pointers.md`
+- `docs/2-Technical-Reference/10-system/trust-boundaries.md`
+- `docs/2-Technical-Reference/50-operations/pipeline.md`
+- `docs/2-Technical-Reference/30-artifacts/build-record.md`
+- `docs/2-Technical-Reference/30-artifacts/mandate-bundle.md`
+- `docs/2-Technical-Reference/40-integration/kristal-v4/contract-pointers.md`

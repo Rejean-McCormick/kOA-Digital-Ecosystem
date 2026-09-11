@@ -36,8 +36,8 @@ Recommended repo layout (example):
 
 kOA MUST record the Kristal pin in:
 
-- `docs/40-integration/kristal-v4/index.md` (human-readable)
-- `docs/40-integration/kristal-v4/contract-pointers.md` (normative links)
+- `docs/2-Technical-Reference/40-integration/kristal-v4/index.md` (human-readable)
+- `docs/2-Technical-Reference/40-integration/kristal-v4/contract-pointers.md` (normative links)
 - Build/Release records (machine-verifiable)
 
 At minimum, record:
@@ -61,8 +61,8 @@ Upgrading the Kristal pin MUST:
 
 - be done as a single explicit change (one PR/change set)
 - include a compatibility review against kOA’s conformance checks
-- update `docs/40-integration/kristal-v4/legacy-compat.md` if any behavior changes are required
-- be recorded in an ADR under `docs/90-reference/adr/`
+- update `docs/2-Technical-Reference/40-integration/kristal-v4/legacy-compat.md` if any behavior changes are required
+- be recorded in an ADR under `docs/2-Technical-Reference/90-reference/adr/`
 
 ## Enforcement (recommended)
 

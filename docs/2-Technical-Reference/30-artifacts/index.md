@@ -1,7 +1,7 @@
 # kOA Artifacts
 
 **Scope:** kOA-owned artifacts only (operational + distribution + governance).  
-**Non-goal:** This section does not redefine Kristal artifacts (Claim-IR, Resolved Claim-IR, Validation Report, Exchange, Runtime Pack). Those are normatively defined in Kristal v4 and referenced from `docs/40-integration/kristal-v4/`.
+**Non-goal:** This section does not redefine Kristal artifacts (Claim-IR, Resolved Claim-IR, Validation Report, Exchange, Runtime Pack). Those are normatively defined in Kristal v4 and referenced from `docs/2-Technical-Reference/40-integration/kristal-v4/`.
 
 ---
 
@@ -16,8 +16,8 @@ kOA artifacts are typed payloads that exist to operate, govern, distribute, and 
 
 Each artifact has:
 - A **documented contract** (human-readable)
-- A **JSON Schema** (machine-validated) under `docs/30-artifacts/schemas/`
-- **Versioning/compat** expectations (see `docs/10-system/determinism.md` and `docs/40-integration/kristal-v4/koa-profile.md`)
+- A **JSON Schema** (machine-validated) under `docs/2-Technical-Reference/30-artifacts/schemas/`
+- **Versioning/compat** expectations (see `docs/2-Technical-Reference/10-system/determinism.md` and `docs/2-Technical-Reference/40-integration/kristal-v4/koa-profile.md`)
 
 ---
 
@@ -42,7 +42,7 @@ Each artifact has:
 ## Schemas
 
 Schemas live in:
-- `docs/30-artifacts/schemas/`
+- `docs/2-Technical-Reference/30-artifacts/schemas/`
 
 Naming rules:
 - One schema per artifact
@@ -54,5 +54,5 @@ Naming rules:
 
 ## References
 
-- Kristal v4 integration: `docs/40-integration/kristal-v4/`
-- System invariants: `docs/10-system/trust-boundaries.md`, `docs/10-system/determinism.md`
+- Kristal v4 integration: `docs/2-Technical-Reference/40-integration/kristal-v4/`
+- System invariants: `docs/2-Technical-Reference/10-system/trust-boundaries.md`, `docs/2-Technical-Reference/10-system/determinism.md`

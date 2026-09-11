@@ -112,6 +112,6 @@ Minimum tests typically cover:
 
 ## Related pages
 
-- [Lifecycle](Lifecycle)
-- [Integration — Kristal v4](Integration-Kristal-v4)
-- [Operations](Operations)
+- [Lifecycle](Lifecycle.md)
+- [Integration — Kristal v4](Integration-Kristal-v4.md)
+- [Operations](Operations.md)

@@ -79,7 +79,7 @@ Konnaxion must expose:
 
 ## Related docs
 
-* `docs/40-integration/kristal-v4/koa-profile.md`
-* `docs/50-operations/releases.md`
-* `docs/50-operations/rollback.md`
-* `docs/30-artifacts/konnaxion-state.md`
+* `docs/2-Technical-Reference/40-integration/kristal-v4/koa-profile.md`
+* `docs/2-Technical-Reference/50-operations/releases.md`
+* `docs/2-Technical-Reference/50-operations/rollback.md`
+* `docs/2-Technical-Reference/30-artifacts/konnaxion-state.md`

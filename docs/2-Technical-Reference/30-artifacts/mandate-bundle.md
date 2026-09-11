@@ -57,4 +57,4 @@ A Mandate Bundle typically includes:
 
 ## Schema
 
-* JSON schema: `docs/30-artifacts/schemas/mandate-bundle.schema.json`
+* JSON schema: `docs/2-Technical-Reference/30-artifacts/schemas/mandate-bundle.schema.json`

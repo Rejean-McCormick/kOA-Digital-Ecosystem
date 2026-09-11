@@ -24,20 +24,19 @@ flowchart LR
   F --> G[Architect<br/>Render with trace]
   G --> H[SwarmCraft<br/>Execute governed tasks]
   H --> I[Feedback -> Orgo<br/>New governed work]
-````
-
+```
 ## Component index (what to read next)
 
 | Component               | What it does (high-level)                                                                                                    | Wiki page                                                            |
 | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| **Orgo**                | Enforces stage order + hard gates; records operational evidence; drives releases/rollbacks                                   | [Components-Orgo](Components-Orgo)                                   |
-| **Chokmah**             | Ingest boundary: turns raw inputs into immutable, provenance-pinned snapshots                                                | [Components-Chokmah](Components-Chokmah)                             |
-| **Binah**               | Planning: converts mandate + available inputs into an auditable Blueprint (what will be built and how)                       | [Components-Binah](Components-Binah)                                 |
-| **SenTient**            | Resolution: produces explicit, deterministic resolution outputs while preserving ambiguity when needed                       | [Components-SenTient](Components-SenTient)                           |
-| **Kristal + Daat**      | Truth compilation + bridge: compile canonical Exchange + Runtime Pack; enforce pinned Kristal contracts at boundaries        | [Components-Kristal-and-Daat](Components-Kristal-and-Daat)           |
-| **Konnaxion + Malkuth** | Distribution/runtime: verify-before-activate (fail-closed), atomic activation, deterministic rollback; serve offline queries | [Components-Konnaxion-and-Malkuth](Components-Konnaxion-and-Malkuth) |
-| **Architect**           | Strategy + Render: propose governed work; render deterministic user-facing outputs with trace and “no new facts”             | [Components-Architect](Components-Architect)                         |
-| **SwarmCraft**          | Execution: runs governed tasks, emits telemetry, does not mutate canonical truth directly                                    | [Components-SwarmCraft](Components-SwarmCraft)                       |
+| **Orgo**                | Enforces stage order + hard gates; records operational evidence; drives releases/rollbacks                                   | [Components-Orgo](Components-Orgo.md)                                   |
+| **Chokmah**             | Ingest boundary: turns raw inputs into immutable, provenance-pinned snapshots                                                | [Components-Chokmah](Components-Chokmah.md)                             |
+| **Binah**               | Planning: converts mandate + available inputs into an auditable Blueprint (what will be built and how)                       | [Components-Binah](Components-Binah.md)                                 |
+| **SenTient**            | Resolution: produces explicit, deterministic resolution outputs while preserving ambiguity when needed                       | [Components-SenTient](Components-SenTient.md)                           |
+| **Kristal + Daat**      | Truth compilation + bridge: compile canonical Exchange + Runtime Pack; enforce pinned Kristal contracts at boundaries        | [Components-Kristal-and-Daat](Components-Kristal-and-Daat.md)           |
+| **Konnaxion + Malkuth** | Distribution/runtime: verify-before-activate (fail-closed), atomic activation, deterministic rollback; serve offline queries | [Components-Konnaxion-and-Malkuth](Components-Konnaxion-and-Malkuth.md) |
+| **Architect**           | Strategy + Render: propose governed work; render deterministic user-facing outputs with trace and “no new facts”             | [Components-Architect](Components-Architect.md)                         |
+| **SwarmCraft**          | Execution: runs governed tasks, emits telemetry, does not mutate canonical truth directly                                    | [Components-SwarmCraft](Components-SwarmCraft.md)                       |
 
 ## Boundaries (what crosses between components)
 
@@ -45,8 +44,8 @@ kOA components exchange **typed artifacts**, not implicit state. The main pipeli
 
 ## Where the detailed contracts live
 
-* Node-by-node interface specs: see [Architecture / Nodes](Components-%28Nodes%29) (and each node page)
-* kOA-owned operational artifacts: see [Artifacts](Artifacts)
-* Kristal artifact contracts/schemas: see [Kristal v4 integration](Kristal-v4-integration) (pinned references; not duplicated here)
+* Node-by-node interface specs: see [Architecture / Nodes](Components.md) (and each node page)
+* kOA-owned operational artifacts: see [Artifacts](Artifacts.md)
+* Kristal artifact contracts/schemas: see [Kristal v4 integration](Integration-Kristal-v4.md) (pinned references; not duplicated here)
 
 

@@ -143,6 +143,6 @@ Rules:
 
 The JSON schema for Orgo Case lives at:
 
-- `docs/30-artifacts/schemas/orgo-case.schema.json`
+- `docs/2-Technical-Reference/30-artifacts/schemas/orgo-case.schema.json`
 
 This doc is normative; the schema is the executable contract.

@@ -82,6 +82,6 @@ This node is the *integration surface*, not the Kristal spec.
 
 ## What lives elsewhere (by design)
 
-* Normative Kristal artifact definitions and schemas: `docs/40-integration/kristal-v4/contract-pointers.md`
-* kOA’s chosen profile / operational constraints: `docs/40-integration/kristal-v4/koa-profile.md`
-* kOA conformance tests for Kristal artifacts: `docs/40-integration/kristal-v4/conformance.md`
+* Normative Kristal artifact definitions and schemas: `docs/2-Technical-Reference/40-integration/kristal-v4/contract-pointers.md`
+* kOA’s chosen profile / operational constraints: `docs/2-Technical-Reference/40-integration/kristal-v4/koa-profile.md`
+* kOA conformance tests for Kristal artifacts: `docs/2-Technical-Reference/40-integration/kristal-v4/conformance.md`

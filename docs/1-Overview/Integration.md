@@ -30,8 +30,8 @@ You run Konnaxion (or consume its outputs) to deliver offline-first Runtime Pack
 
 ## Where the authoritative contracts live
 
-- **Kristal v4 boundary contracts (pinned):** see [Integration-Kristal-v4](Integration-Kristal-v4)  
-- **kOA operational expectations (gates, rollout, rollback, evidence):** see [Operations](Operations)  
+- **Kristal v4 boundary contracts (pinned):** see [Integration-Kristal-v4](Integration-Kristal-v4.md)  
+- **kOA operational expectations (gates, rollout, rollback, evidence):** see [Operations](Operations.md)  
 - **Practical checklists/patterns:** see Integrator Guide (optional) in the main docs set (not duplicated in the wiki)
 
 ## Quick start checklist
@@ -58,5 +58,5 @@ Integrations should emit:
 
 ## Next pages
 
-- [Integration-Kristal-v4](Integration-Kristal-v4)
-- [Integration-External-systems](Integration-External-systems)
+- [Integration-Kristal-v4](Integration-Kristal-v4.md)
+- [Integration-External-systems](Integration-External-systems.md)

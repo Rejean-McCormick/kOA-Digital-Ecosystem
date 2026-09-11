@@ -96,8 +96,7 @@ flowchart LR
   M --> C[Consumers (apps, Architect, SwarmCraft, tooling)]
   K --> S[Konnaxion State (ops/audit)]
   S --> O[Orgo / Ops / Monitoring]
-````
-
+```
 * Konnaxion is the **gatekeeper**: it prevents corrupted, incompatible, revoked, substituted, or downgraded packs from becoming active.
 * Malkuth is the **runtime contract**: it only serves from what Konnaxion has made active, and it stays deterministic and fail-closed.
 

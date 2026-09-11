@@ -28,8 +28,7 @@ flowchart LR
   S5 <--> K
   A --> P[Pipeline stages\n(extract/resolve/validate/compile)]
   P --> K --> S6
-````
-
+```
 ---
 
 ## 1) Ingest sources (how external inputs enter safely)
@@ -170,8 +169,8 @@ Before connecting an external system, confirm:
 
 ## Links
 
-* [Integration (Overview)](Integration)
-* [Integration — Kristal v4](Integration-Kristal-v4)
-* [Operations](Operations)
-* [Artifacts](Artifacts)
+* [Integration (Overview)](Integration.md)
+* [Integration — Kristal v4](Integration-Kristal-v4.md)
+* [Operations](Operations.md)
+* [Artifacts](Artifacts.md)
 

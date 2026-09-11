@@ -1,6 +1,6 @@
 # Release Record (kOA-native artifact)
 
-**File:** `docs/30-artifacts/release-record.md`  
+**File:** `docs/2-Technical-Reference/30-artifacts/release-record.md`  
 **Normative scope:** kOA-native artifact contract (control-plane).  
 **Non-normative:** Kristal artifact schemas and cryptographic/canonicalization mechanics (external).
 
@@ -107,6 +107,6 @@ A Release Record does not mutate canonical truth. It is an operational governanc
 
 ## 8) Schema
 
-- JSON Schema: `docs/30-artifacts/schemas/release-record.schema.json`
+- JSON Schema: `docs/2-Technical-Reference/30-artifacts/schemas/release-record.schema.json`
 
 ---

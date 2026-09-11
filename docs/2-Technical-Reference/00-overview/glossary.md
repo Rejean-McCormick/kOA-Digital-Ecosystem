@@ -119,7 +119,7 @@ Recorded lineage linking outputs to inputs, configs, policies, and gate results 
 
 ### Render Bundle (kOA)
 Deterministic renderer output envelope with trace coverage and events.  
-kOA-native definition lives in `docs/30-artifacts/` (do not treat as Kristal-normative unless explicitly adopted in `docs/40-integration/kristal-v4/`).
+kOA-native definition lives in `docs/2-Technical-Reference/30-artifacts/` (do not treat as Kristal-normative unless explicitly adopted in `docs/2-Technical-Reference/40-integration/kristal-v4/`).
 
 ### Release Record (kOA)
 Operational record tying a build’s outputs to distribution intent (channels/cohorts/timestamps/status), enabling traceability and rollback.

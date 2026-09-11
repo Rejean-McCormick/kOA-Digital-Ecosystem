@@ -39,7 +39,7 @@ You must:
 - support deterministic rollback
 - emit operational state/telemetry back to Orgo
 
-See `docs/50-operations/rollback.md` and `docs/30-artifacts/konnaxion-state.md`.
+See `docs/2-Technical-Reference/50-operations/rollback.md` and `docs/2-Technical-Reference/30-artifacts/konnaxion-state.md`.
 
 ---
 
@@ -49,13 +49,13 @@ See `docs/50-operations/rollback.md` and `docs/30-artifacts/konnaxion-state.md`.
 All Kristal artifacts (Exchange, Runtime Pack, Validation Report, etc.) are externally specified.
 
 Use:
-- `docs/40-integration/kristal-v4/pinned-dependency.md`
-- `docs/40-integration/kristal-v4/contract-pointers.md`
-- `docs/40-integration/kristal-v4/conformance.md`
+- `docs/2-Technical-Reference/40-integration/kristal-v4/pinned-dependency.md`
+- `docs/2-Technical-Reference/40-integration/kristal-v4/contract-pointers.md`
+- `docs/2-Technical-Reference/40-integration/kristal-v4/conformance.md`
 
 ### kOA-native artifacts
 kOA-native operational artifacts are specified here:
-- `docs/30-artifacts/` and `docs/30-artifacts/schemas/`
+- `docs/2-Technical-Reference/30-artifacts/` and `docs/2-Technical-Reference/30-artifacts/schemas/`
 
 ---
 
@@ -125,7 +125,7 @@ You should emit (minimum):
 - references to logs/traces (not raw blobs in-band)
 
 If you operate Konnaxion:
-- emit Konnaxion State records (`docs/30-artifacts/konnaxion-state.md`)
+- emit Konnaxion State records (`docs/2-Technical-Reference/30-artifacts/konnaxion-state.md`)
 - report activation/rollback outcomes and health signals
 
 ---
@@ -143,7 +143,7 @@ Integrators must:
 ## 7) Compatibility and migration
 
 If you are migrating from earlier Kristal conventions:
-- follow `docs/40-integration/kristal-v4/legacy-compat.md`
+- follow `docs/2-Technical-Reference/40-integration/kristal-v4/legacy-compat.md`
 - do not emit legacy spellings at boundaries
 - track normalization metrics until legacy usage is eliminated
 

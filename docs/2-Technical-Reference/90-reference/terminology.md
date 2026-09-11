@@ -1,6 +1,6 @@
 # Terminology (kOA)
 
-**File:** `docs/90-reference/terminology.md`  
+**File:** `docs/2-Technical-Reference/90-reference/terminology.md`  
 **Purpose:** Provide a concise, kOA-first vocabulary with explicit mapping to external Kristal terms where applicable.  
 **Rule:** If a term is defined normatively in Kristal v4, kOA references it rather than redefining it.
 

@@ -8,7 +8,7 @@ It is designed to:
 - support deterministic rollback decisions,
 - correlate activation outcomes with health signals.
 
-This artifact does **not** redefine Kristal artifacts (Exchange, Runtime Pack, Validation Report). It references them by ID as defined in the pinned Kristal v4 spec. See `docs/40-integration/kristal-v4/`.
+This artifact does **not** redefine Kristal artifacts (Exchange, Runtime Pack, Validation Report). It references them by ID as defined in the pinned Kristal v4 spec. See `docs/2-Technical-Reference/40-integration/kristal-v4/`.
 
 ---
 
@@ -141,13 +141,12 @@ The exact field names and meaning are defined by Kristal; this artifact only sto
     "trace": "traceref:..."
   }
 }
-````
-
+```
 ---
 
 ## Validation
 
-Schema: `docs/30-artifacts/schemas/konnaxion-state.schema.json`
+Schema: `docs/2-Technical-Reference/30-artifacts/schemas/konnaxion-state.schema.json`
 
 ---
 
@@ -155,7 +154,7 @@ Schema: `docs/30-artifacts/schemas/konnaxion-state.schema.json`
 
 This is a kOA-native contract. Changes require:
 
-* an ADR in `docs/90-reference/adr/`
+* an ADR in `docs/2-Technical-Reference/90-reference/adr/`
 * a schema version bump per your compatibility policy
 
 

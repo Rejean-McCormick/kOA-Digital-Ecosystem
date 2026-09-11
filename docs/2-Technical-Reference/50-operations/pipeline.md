@@ -1,7 +1,7 @@
 # Pipeline Operations (Orgo)
 
 **Scope:** Operational runbook for the kOA pipeline as orchestrated by **Orgo**.  
-**Non-goal:** This document does not restate Kristal artifact schemas. When a stage produces/consumes Kristal artifacts, it references them as opaque refs and points to `docs/40-integration/kristal-v4/contract-pointers.md`.
+**Non-goal:** This document does not restate Kristal artifact schemas. When a stage produces/consumes Kristal artifacts, it references them as opaque refs and points to `docs/2-Technical-Reference/40-integration/kristal-v4/contract-pointers.md`.
 
 ---
 
@@ -27,11 +27,11 @@ Orgo enforces this ordered stage spine:
 
 For every pipeline execution, Orgo MUST persist a **Build Record**:
 
-- `docs/30-artifacts/build-record.md`
+- `docs/2-Technical-Reference/30-artifacts/build-record.md`
 
 For every promotion/publish action, Orgo MUST persist a **Release Record**:
 
-- `docs/30-artifacts/release-record.md`
+- `docs/2-Technical-Reference/30-artifacts/release-record.md`
 
 ---
 

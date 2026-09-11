@@ -100,12 +100,12 @@ A conformance suite must include:
 
 - Determinism requirements apply from the adoption of the pinned Kristal v4 dependency onward.
 - Any relaxation or tightening requires a new ADR and a documented rollout window.
-- Legacy acceptance is controlled by `docs/40-integration/kristal-v4/legacy-compat.md`.
+- Legacy acceptance is controlled by `docs/2-Technical-Reference/40-integration/kristal-v4/legacy-compat.md`.
 
 ---
 
 ## 6) References (non-normative)
 
-- Kristal v4 pinned dependency: `docs/40-integration/kristal-v4/pinned-dependency.md`
-- kOA pipeline runbook: `docs/50-operations/pipeline.md`
-- kOA conformance: `docs/40-integration/kristal-v4/conformance.md`
+- Kristal v4 pinned dependency: `docs/2-Technical-Reference/40-integration/kristal-v4/pinned-dependency.md`
+- kOA pipeline runbook: `docs/2-Technical-Reference/50-operations/pipeline.md`
+- kOA conformance: `docs/2-Technical-Reference/40-integration/kristal-v4/conformance.md`

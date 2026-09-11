@@ -1,6 +1,6 @@
 # 07 — Netzach: Architect-Strategy (Planning / Work Orchestration)
 
-**File:** `docs/20-nodes/netzach-architect-strategy.md`  
+**File:** `docs/2-Technical-Reference/20-nodes/netzach-architect-strategy.md`  
 **Status:** Normative (kOA)  
 **External normative references:** Kristal v4 docs + schemas (pinned dependency)
 

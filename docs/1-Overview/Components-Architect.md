@@ -94,8 +94,8 @@ Architect-Render should emit, at minimum:
 
 ## Links
 
-- [Lifecycle](Lifecycle)
-- [Artifacts](Artifacts) (Render Bundle)
-- [Operations](Operations) (release/rollback behavior that keeps the runtime safe)
-- [Components — Orgo](Components-Orgo)
-- [Components — Konnaxion & Malkuth](Components-Konnaxion-and-Malkuth)
+- [Lifecycle](Lifecycle.md)
+- [Artifacts](Artifacts.md) (Render Bundle)
+- [Operations](Operations.md) (release/rollback behavior that keeps the runtime safe)
+- [Components — Orgo](Components-Orgo.md)
+- [Components — Konnaxion & Malkuth](Components-Konnaxion-and-Malkuth.md)

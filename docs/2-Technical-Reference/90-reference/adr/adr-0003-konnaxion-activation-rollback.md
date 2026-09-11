@@ -165,8 +165,8 @@ A conformant Konnaxion-Distribution implementation MUST provide tests for:
 
 ## References (kOA)
 
-- `docs/20-nodes/chesed-konnaxion.md`
-- `docs/50-operations/releases.md`
-- `docs/50-operations/rollback.md`
-- `docs/40-integration/kristal-v4/contract-pointers.md`
-- `docs/40-integration/kristal-v4/koa-profile.md`
+- `docs/2-Technical-Reference/20-nodes/chesed-konnaxion.md`
+- `docs/2-Technical-Reference/50-operations/releases.md`
+- `docs/2-Technical-Reference/50-operations/rollback.md`
+- `docs/2-Technical-Reference/40-integration/kristal-v4/contract-pointers.md`
+- `docs/2-Technical-Reference/40-integration/kristal-v4/koa-profile.md`

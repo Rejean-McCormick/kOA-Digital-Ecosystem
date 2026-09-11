@@ -145,7 +145,7 @@ Key compromise response SHOULD:
 
 ## Related docs
 
-- `docs/50-operations/rollback.md`
-- `docs/50-operations/releases.md`
-- `docs/40-integration/kristal-v4/conformance.md`
-- `docs/90-reference/adr/adr-0003-konnaxion-activation-rollback.md`
+- `docs/2-Technical-Reference/50-operations/rollback.md`
+- `docs/2-Technical-Reference/50-operations/releases.md`
+- `docs/2-Technical-Reference/40-integration/kristal-v4/conformance.md`
+- `docs/2-Technical-Reference/90-reference/adr/adr-0003-konnaxion-activation-rollback.md`

@@ -1,6 +1,6 @@
 # Kristal v4 Conformance (kOA)
 
-**File:** `docs/40-integration/kristal-v4/conformance.md`  
+**File:** `docs/2-Technical-Reference/40-integration/kristal-v4/conformance.md`  
 **Normative scope:** kOA requirements for producing/consuming Kristal artifacts (conformance gates).  
 **External normative source:** Kristal v4 (pinned) schemas and spec.
 
@@ -38,7 +38,7 @@ kOA MUST pin:
 - schema paths used for validation (Exchange Manifest, Runtime Pack Manifest, Validation Report, etc.)
 - canonicalization profile/version expectations (as specified by Kristal v4)
 
-See: `docs/40-integration/kristal-v4/pinned-dependency.md`.
+See: `docs/2-Technical-Reference/40-integration/kristal-v4/pinned-dependency.md`.
 
 ---
 
@@ -148,6 +148,6 @@ kOA SHOULD maintain a kOA-native **conformance report** per release:
 - verification policy version
 - pass/fail summary + links to evidence artifacts
 
-(If you formalize this, it belongs under `docs/30-artifacts/` as a kOA artifact.)
+(If you formalize this, it belongs under `docs/2-Technical-Reference/30-artifacts/` as a kOA artifact.)
 
 ---
