@@ -1,7 +1,7 @@
 # Historical A014 — Orgo↔Konnaxion Runtime Validation Snapshot (2026-09-12)
 
-**Status:** historical validation note — **architecture misalignment identified; not current acceptance evidence**  
-**Normative for kOA:** NO  
+**Status:** historical fixture — **outbound Orgo→Konnaxion publish validated; corrected inbound Konnaxion/eThikos→Orgo path still pending**
+**Normative for kOA:** NO
 **Secrets:** intentionally omitted
 
 ---
@@ -19,29 +19,28 @@ Konnaxion / eThikos
 
 UCKK is an **optional publication/distribution surface**, not the decision authority and not a mandatory relay. Decisions for this flow are finalized in **Konnaxion/eThikos**.
 
-As a result, the checkpoint results below remain useful as historical runtime/mechanics evidence, but they do **not** prove conformance of the corrected end-to-end decision path.
+The historical A014 identifiers remain useful for runtime traceability, but they are not acceptance evidence for the corrected inbound authority path.
 
 ---
 
-## Purpose
+## What is now validated
 
-Capture the exact historical runtime stopping point and preserve evidence that may still be useful while the scenario is refactored to the corrected Konnaxion/eThikos → Orgo path.
-
----
-
-## Historical checkpoint results
+The historical fixture has validated useful runtime mechanics:
 
 ```text
-T-14     PASS (historical fixture)
-T-7      PASS (historical fixture)
-T0-pre   PASS (historical fixture)
-T0-post  PASS (historical fixture)
-J3       PASS (historical fixture)
+T-14     PASS (historical fixture mechanics)
+T-7      PASS (historical fixture mechanics)
+T0-pre   PASS (historical fixture mechanics)
+T0-post  PASS (historical fixture mechanics)
+J3       PASS (historical fixture mechanics)
+J30      PASS for outbound Orgo→Konnaxion transport/publication
 ```
 
-T0-post validated useful Orgo mechanics after aligning scenario work references with canonical work IDs and using legal Task state transitions. However, the inbound decision authority/path for these runs was wrong and must be replaced.
+Important distinction:
 
-J30 request creation also remains useful as outbound transport evidence, but final Orgo→Konnaxion publication was not completed.
+- the **outbound** path `Orgo → Konnaxion` is now validated end-to-end;
+- the **corrected inbound** path `Konnaxion/eThikos → Orgo` has not yet been validated end-to-end;
+- therefore the historical T0 authority path must still be refactored before the vertical slice can be called architecturally complete.
 
 ---
 
@@ -51,127 +50,172 @@ Validated local provider runtime:
 
 ```text
 World                 uckk-a014
-Release               r1
+Release               r1 / world_release 1
 World status          READY
 Promoted release      CURRENT
 Bridge listener       127.0.0.1:8011
-Provider runtime      Python 3.12 virtual environment
+Provider endpoint     /api/integrations/orgo/konnaxion/uckk-a014/publish/
 ```
 
-The bridge endpoint is authenticated; an unauthenticated health/request may return an authorization response while still proving the listener is reachable.
-
-The World/Release bridge storage path was validated after fixing schema dependency and migration-ledger idempotency issues.
+The provider was confirmed healthy through its authenticated bridge runtime. The publish request returned HTTP 200 and the impact lookup returned HTTP 200.
 
 ---
 
 ## Orgo runtime state
 
-Validated local Orgo database/runtime facts:
+Validated local Orgo runtime facts:
 
 ```text
 PostgreSQL host       127.0.0.1
 PostgreSQL port       5432
 Database              orgo_test
 Database user         orgo_test
-Worker                active with bridge configuration
-API                   available on port 4000 when started
+Worker                active with Konnaxion bridge configuration
+API                   alive on port 4000 during redrive
+Application login     successful for orgo-e2e test account
 ```
 
-Passwords and full database URLs are intentionally not recorded here.
-
-The Orgo worker is started with runtime-only Konnaxion bridge URL/token configuration. The generated bridge token must not be logged or persisted.
+Passwords, bearer tokens and full database URLs are intentionally not recorded here.
 
 ---
 
-## J30 IntegrationOperation
+## J30 recovery and final result
 
-Existing operation (do not recreate blindly):
+The existing J30 operation was originally terminally failed because the provider was not configured:
 
 ```text
 operation_id          6b8c5523-096e-4fc0-b6a9-be644240b497
 provider              konnaxion
 operation             publish
-status                FAILED
-error                 PROVIDER_UNCONFIGURED
+initial status        FAILED
+initial error         PROVIDER_UNCONFIGURED
 idempotency_key       uckk:A014:impact:J30:v1
 correlation_id        corr.uckk.A014.D009
 ```
 
-Request metadata identifies the synthetic day-30 Impact:
-
-```text
-external_reference    impact:UCKK-A014:day30:v1
-checkpoint            day_30
-synthetic             true
-```
-
-The failure occurred before the Konnaxion adapter/provider was active.
-
----
-
-## J30 outbox state
-
-Existing outbox item:
+Associated historical outbox item:
 
 ```text
 outbox_id             2def0f3a-f62c-4104-bb14-779d239d2237
-type                  integration
-status                DEAD
-attempts              8
-last_error            PROVIDER_UNCONFIGURED
+initial status        DEAD
+initial attempts      8
+initial last_error    PROVIDER_UNCONFIGURED
 aggregate_id          6b8c5523-096e-4fc0-b6a9-be644240b497
-correlation_id        corr.uckk.A014.D009
 ```
 
-This item is the one to redrive after confirming the provider/worker runtime is healthy.
+Recovery used the **canonical Orgo redrive API**, not SQL and not a duplicate J30 scenario request.
+
+Observed redrive result:
+
+```text
+redrive               accepted
+IntegrationOperation  RUNNING after ~2 s
+IntegrationOperation  SUCCEEDED after ~4 s
+```
+
+This confirms the durable Orgo worker/provider path can recover a previously dead delivery after the provider is restored.
+
+The outbox row itself was not separately re-read after success in this session; the confirmed acceptance evidence is the terminal `IntegrationOperation = SUCCEEDED` plus the provider-owned Konnaxion effect below.
 
 ---
 
-## Correct resume procedure
+## Konnaxion J30 Impact — exact-once evidence
 
-Do **not** continue the old scenario as if only J30 redrive remained. The architecture must be corrected first.
+The provider received the Orgo publish request:
+
+```text
+POST /api/integrations/orgo/konnaxion/uckk-a014/publish/ → 200
+```
+
+The verification lookup returned exactly one matching Impact:
+
+```text
+GET /api/integrations/orgo/konnaxion/uckk-a014/impacts/
+  ?external_reference=impact:UCKK-A014:day30:v1
+→ 200
+count = 1
+```
+
+Confirmed business effect:
+
+```text
+impact id              1
+external_reference     impact:UCKK-A014:day30:v1
+status                 published
+checkpoint             day_30
+demo_id                uckk-pedagogy-pilot-a014
+correlation_id         corr.uckk.A014.D009
+published_at           2026-09-12T23:34:16.996048+00:00
+receipt.status         succeeded
+receipt.impact_id      1
+receipt.published      true
+receipt.synthetic      true
+receipt.world_key      uckk-a014
+receipt.world_release  1
+receipt.artifact_type  impact_update
+receipt.epistemic      synthetic_demo_fixture
+```
+
+Acceptance condition for the outbound path is satisfied:
+
+```text
+Orgo IntegrationOperation.status == SUCCEEDED
+AND
+Konnaxion Impact count == 1
+AND
+Konnaxion receipt.status == succeeded
+```
+
+Therefore:
+
+> **Historical J30 outbound Orgo→Konnaxion publish = PASS.**
+
+This proves the outbound bridge mechanics and idempotent business effect for this fixture. It does **not** prove the corrected inbound decision authority path.
+
+---
+
+## What remains before architectural completion
+
+Do not treat the old UCKK/Assembly inbound path as the final architecture.
 
 Resume in this order:
 
-1. Define/confirm the Konnaxion/eThikos finalized decision object/event that is authoritative for the scenario.
-2. Implement or configure the direct **Konnaxion/eThikos → Orgo** authenticated handoff.
-3. Remove UCKK/Assembly as a required decision authority/relay from the scenario and fixtures. UCKK may remain as an optional publication consumer.
-4. Re-run the inbound path and verify Orgo receives/deduplicates the decision Signal and creates the expected governed work.
-5. Revalidate the scenario checkpoints against this corrected authority path.
-6. Then validate the outbound **Orgo → Konnaxion** Impact path using the existing IntegrationOperation/Outbox mechanics or a clean corrected-scenario operation.
-7. Require terminal `SUCCEEDED` and exactly one Konnaxion business effect for the relevant idempotency identity.
-8. Only then continue later follow-up checkpoints.
-
-The existing failed/dead J30 operation may be inspected/redriven for transport debugging, but it is not sufficient acceptance evidence for the corrected end-to-end architecture.
+1. Define/confirm the finalized Konnaxion/eThikos DecisionRecord that authoritatively triggers operational work.
+2. Implement/configure the direct authenticated **Konnaxion/eThikos → Orgo** machine handoff.
+3. Remove UCKK/Assembly as a required decision authority or relay from the runtime scenario and fixtures. UCKK may remain as an optional publication/distribution consumer.
+4. Re-run the inbound path and prove exactly one Orgo Signal/business consequence for a stable decision idempotency identity.
+5. Revalidate Case/Task/workflow creation using the corrected decision source.
+6. Re-run the outbound impact path from the corrected scenario and preserve the already validated `SUCCEEDED + exactly one Konnaxion effect` invariant.
+7. Only then continue later follow-up/reconsideration checkpoints (historically named J90/R1).
 
 No cross-system SQL mutation should be used.
 
 ---
 
-## Known authentication distinction
+## Authentication distinction
 
-The local PostgreSQL username/password are database credentials. They are **not** the Orgo application login credential for the E2E user. The Orgo API login uses the test organization/user credential configured for the browser/API test profile.
+Database credentials and Orgo application credentials are separate concerns.
 
-This distinction was confirmed when a database credential was rejected by the Orgo API with `UNAUTHENTICATED / Invalid credentials`.
+The canonical redrive was performed through the Orgo API using an application login. Database credentials are not application login credentials and must not be documented as such.
 
 ---
 
-## Acceptance criteria before later follow-up checkpoints
+## Current completion gate
 
-The corrected scenario must first prove:
+The corrected vertical slice is complete only when both directions are proven:
 
 ```text
-Konnaxion/eThikos finalized decision
-→ direct Orgo handoff
-→ expected Signal / Case / Tasks
+Konnaxion/eThikos finalized DecisionRecord
+→ direct authenticated Orgo handoff
+→ expected Signal / Workflow / Case / Tasks
 ```
 
-Then the outbound impact path must prove:
+and:
 
 ```text
 Orgo IntegrationOperation.status == SUCCEEDED
 AND
-Konnaxion business effect count for the idempotency identity == 1
+exactly one Konnaxion provider-owned Impact exists
 ```
 
-Until both inbound and outbound conditions are true, later follow-up checkpoints remain blocked.
+The second condition is now validated for the historical J30 fixture. The first condition remains the principal open architecture/integration task.

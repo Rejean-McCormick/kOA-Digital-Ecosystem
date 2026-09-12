@@ -2,6 +2,10 @@
 
 The repository uses three documentation layers with different purposes.
 
+## Current status
+
+For the latest implementation/validation state, start with [`status/index.md`](status/index.md). Status pages are descriptive snapshots; ADRs and technical contracts remain authoritative.
+
 ## 1. Overview
 
 `1-Overview/` is the readable entry point for the ecosystem: lifecycle, components, artifacts, operations, integrations, glossary, and FAQ. It explains the system without duplicating schema-level contracts.
@@ -32,6 +36,7 @@ Start with: [`3-Layer-Model/README.md`](3-Layer-Model/README.md)
 ```text
 docs/
 ├── index.md
+├── status/
 ├── 1-Overview/
 ├── 2-Technical-Reference/
 │   ├── 00-overview/

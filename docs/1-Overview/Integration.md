@@ -68,4 +68,4 @@ Integrations should emit:
 
 - [Integration-Kristal-v4](Integration-Kristal-v4.md)
 - [Integration-External-systems](Integration-External-systems.md)
-- [Orgo → Konnaxion durable publish profile](../2-Technical-Reference/40-integration/orgo-konnaxion/index.md)
+- [Konnaxion/eThikos ↔ Orgo decision + durable publish profile](../2-Technical-Reference/40-integration/orgo-konnaxion/index.md)

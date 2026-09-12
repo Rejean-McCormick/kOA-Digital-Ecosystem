@@ -252,20 +252,36 @@ UCKK does not become authoritative merely because it displays or republishes a d
 
 ## 10) Validation status of the historical A014 fixture
 
-The historical A014 runs validated several **mechanical/runtime capabilities** (Signal handling, workflow execution, Case/Task creation, outbox/provider mechanics), but the original inbound authority path was modeled incorrectly as UCKK/Assembly → Orgo.
+The historical A014 runs validate several **mechanical/runtime capabilities** while retaining a known inbound authority-model defect.
 
-Therefore those prior passes are **not acceptance evidence for the corrected decision architecture**.
+### Confirmed mechanics
+
+The following capabilities have been exercised successfully:
+
+- Signal/workflow/Case/Task mechanics in Orgo under the historical fixture;
+- Konnaxion World `uckk-a014` / release `1` provider runtime;
+- authenticated Orgo worker → Konnaxion publish call;
+- canonical redrive of an existing `FAILED` IntegrationOperation / `DEAD` outbox delivery;
+- operation transition `RUNNING → SUCCEEDED` after provider recovery;
+- provider receipt `status = succeeded`;
+- exactly one Konnaxion Impact for `impact:UCKK-A014:day30:v1`.
+
+Therefore the **outbound Orgo→Konnaxion durable publish path is validated** for this fixture, including recovery from `PROVIDER_UNCONFIGURED`.
+
+### Still not accepted
+
+The original inbound path was modeled incorrectly as UCKK/Assembly → Orgo. Those historical inbound checkpoint passes are not acceptance evidence for the corrected decision architecture.
 
 Before declaring the vertical slice complete, it must be reworked and revalidated as:
 
 ```text
 Konnaxion/eThikos finalized decision
-→ direct Orgo handoff
+→ direct authenticated Orgo handoff
 → Orgo governed work
 → Orgo impact publication back to Konnaxion
 ```
 
-The existing J30 failed/dead operation may be kept as historical transport evidence, but should not be used by itself to claim end-to-end conformance of the corrected flow.
+The outbound half is now proven. The direct Konnaxion/eThikos→Orgo half remains the primary gap.
 
 ---
 

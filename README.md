@@ -48,6 +48,11 @@ flowchart LR
 
 ## Documentation
 
+### Current implementation status
+
+See [`docs/status/index.md`](docs/status/index.md) for the latest validated integration state and open gaps. Status snapshots are descriptive; ADRs and technical contracts remain authoritative.
+
+
 The documentation is intentionally separated into three levels:
 
 1. **Overview** — [`docs/1-Overview/index.md`](docs/1-Overview/index.md)
@@ -67,6 +72,7 @@ kOA_Digital_Ecosystem/
 ├── .gitattributes
 └── docs/
     ├── index.md
+    ├── status/
     ├── 1-Overview/
     ├── 2-Technical-Reference/
     │   ├── 00-overview/
@@ -93,3 +99,4 @@ Implementations should demonstrate deterministic rebuilds, fail-closed verificat
 4. [`docs/2-Technical-Reference/10-system/architecture.md`](docs/2-Technical-Reference/10-system/architecture.md)
 5. [`docs/2-Technical-Reference/20-nodes/index.md`](docs/2-Technical-Reference/20-nodes/index.md)
 6. [`docs/3-Layer-Model/README.md`](docs/3-Layer-Model/README.md)
+7. [`docs/status/index.md`](docs/status/index.md)
