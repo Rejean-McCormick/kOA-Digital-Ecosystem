@@ -317,6 +317,7 @@ Relevant technical documentation includes:
 ../../2-Technical-Reference/30-artifacts/build-record.md
 ../../2-Technical-Reference/30-artifacts/release-record.md
 ../../2-Technical-Reference/40-integration/kristal-v4/
+../../2-Technical-Reference/40-integration/identity-oidc/
 ../../2-Technical-Reference/50-operations/rollback.md
 ../../2-Technical-Reference/50-operations/incident-response.md
 ../../2-Technical-Reference/50-operations/key-management.md
@@ -394,5 +395,15 @@ Local autonomy must remain governed autonomy.
 ## 14. One-Sentence Definition
 
 Resilience / Autonomy is the layer that allows kOA to keep knowledge, decisions, execution, and memory usable, verifiable, portable, and locally controllable under constraint.
+---
 
+## 15. Identity federation and autonomy
 
+Shared authentication must preserve this layer's local-continuity principle. kOA therefore defines a normative technical profile based on **optional OIDC federation + local authorization + standalone administrative recovery**, rather than a shared user/password database.
+
+Normative technical references:
+
+```text
+../../2-Technical-Reference/40-integration/identity-oidc/index.md
+../../2-Technical-Reference/90-reference/adr/adr-0006-common-identity-oidc.md
+```

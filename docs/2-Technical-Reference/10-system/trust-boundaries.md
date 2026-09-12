@@ -100,22 +100,40 @@ Rollback must be deterministic given the same verified inputs and triggers, and 
 
 ---
 
-## 6) Multi-tenancy boundaries
+## 6) Identity boundary (authentication vs authorization)
 
-### 6.1 Data isolation
+### 6.1 Federated identity is optional
+Human identity MAY be federated through the kOA OIDC profile, but each application retains its local account and authorization state.
+
+### 6.2 Canonical federated key
+Cross-application identity correlation uses `(issuer, subject)`, never email alone.
+
+### 6.3 Local authorization remains authoritative
+An authenticated federated identity does not grant permissions by itself. Orgo, Konnaxion, and UCKK-Moodle evaluate authorization locally.
+
+### 6.4 Availability boundary
+The common IdP must not erase standalone operation. Critical deployments retain a documented local administrative recovery path.
+
+See: `../40-integration/identity-oidc/index.md` and ADR-0006.
+
+---
+
+## 7) Multi-tenancy boundaries
+
+### 7.1 Data isolation
 - Inputs, build artifacts, packs, logs, and telemetry are tenant-scoped.
 - Access control and storage layout must prevent cross-tenant reads/writes.
 
-### 6.2 Trust isolation
+### 7.2 Trust isolation
 - Trust roots are tenant/environment/channel scoped.
 - Signature verification must be tenant-correct (no cross-tenant key acceptance unless explicitly configured and auditable).
 
-### 6.3 Policy isolation
+### 7.3 Policy isolation
 - Mandates/policies and blueprint/config pins are tenant-scoped unless explicitly shared by design (and then treated as shared dependencies with explicit governance).
 
 ---
 
-## 7) Failure modes (must be handled deterministically)
+## 8) Failure modes (must be handled deterministically)
 
 - **Wrong trust root set** (cross-tenant confusion) → hard fail (no activation/publish).
 - **Tampered bytes** (hash/signature mismatch) → fail-closed.
@@ -125,7 +143,7 @@ Rollback must be deterministic given the same verified inputs and triggers, and 
 
 ---
 
-## 8) Minimum conformance checklist
+## 9) Minimum conformance checklist
 
 - [ ] Truth boundary enforced (no compile on fail; no downstream canon edits).
 - [ ] Pinned trust roots per channel; offline verification possible.
@@ -134,3 +152,4 @@ Rollback must be deterministic given the same verified inputs and triggers, and 
 - [ ] Downgrade prevention + substitution safety.
 - [ ] Tenant isolation for data + trust roots + policy.
 - [ ] Orgo records build/release provenance and integrity metadata (`key_id`, signatures, hashes).
+- [ ] Identity federation preserves local authorization and standalone administrative recovery.

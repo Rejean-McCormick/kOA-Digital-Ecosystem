@@ -208,6 +208,37 @@ This page defines the kOA system-level failure taxonomy, how failures propagate 
 
 ---
 
+### F9 — Durable provider / outbox delivery failures
+
+**Description:** Orgo has committed a durable external request, but the provider adapter is unavailable, unconfigured, rejects the request, or never produces a final success receipt.
+
+**Examples**
+
+* Provider URL/token not configured at worker start
+* Provider process unavailable or unreachable
+* Provider returns a retryable failure
+* Provider returns `accepted` but no final receipt arrives
+* Outbox retries are exhausted and the delivery becomes `DEAD`
+
+**Required behavior**
+
+* Keep the external publication status separate from Case/Task status.
+* Retry according to outbox policy; do not create a new business request for each retry.
+* Preserve idempotency and correlation identifiers across retries/redrive.
+* Treat `accepted` as non-terminal; do not report success until a final `succeeded` receipt exists.
+* When retries are exhausted, mark the IntegrationOperation failed and the outbox item dead/terminal according to the Orgo implementation contract.
+* Recover through the canonical Orgo redrive API/manager path. Do not repair by cross-system SQL mutation.
+* Before advancing a dependent scenario/checkpoint, verify both the Orgo terminal success state and the provider-owned business effect count.
+
+**Operator signals**
+
+* IntegrationOperation stuck in `PENDING`/`RUNNING`
+* `PROVIDER_UNCONFIGURED` or equivalent provider error
+* Outbox attempt count increasing or `DEAD`
+* Provider shows a business effect while Orgo has no final success receipt (receipt-path incident)
+
+---
+
 ## Propagation rules (how failures move through the system)
 
 * **F1–F2** are “pre-boundary” and should not produce promotable outputs.
@@ -215,6 +246,7 @@ This page defines the kOA system-level failure taxonomy, how failures propagate 
 * **F5** blocks publication but does not necessarily indicate content corruption.
 * **F6–F7** require environment-specific safety behavior (staged rollback, safe mode).
 * **F8** blocks promotions in strict channels because auditability is part of safety.
+* **F9** blocks any dependent checkpoint until durable delivery reaches terminal success and the provider-owned effect is verified.
 
 ## Severity and required response
 
@@ -223,6 +255,8 @@ This page defines the kOA system-level failure taxonomy, how failures propagate 
 * **SEV-3:** Elevated F1/F5 rates, localized F6, or intermittent F8.
 * **SEV-4:** Single-mandate issues with clear remediation.
 
+A localized F9 is normally operational/recoverable through canonical redrive; escalate severity if duplicate effects, receipt divergence, or unauthorized cross-system mutation is suspected.
+
 ## Required artifacts (kOA-owned) for failure handling
 
 * **Build Record:** captures stage outcomes, exact error codes, artifact IDs, and verification results.
@@ -230,3 +264,4 @@ This page defines the kOA system-level failure taxonomy, how failures propagate 
 * **Orgo Task/Case:** tracks remediation actions with ownership and approval.
 
 (Definitions live in `30-artifacts/`.)
+

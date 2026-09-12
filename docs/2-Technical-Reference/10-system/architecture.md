@@ -124,7 +124,33 @@ Tenant-scoped policies and trust roots must be enforced at verification and publ
 
 ---
 
-## 8) Where to go next
+## 8) Operational coordination and durable side effects
+
+The current Orgo implementation includes an operational coordination path in addition to build/release orchestration:
+
+```text
+normalized Signal
+→ immutable published WorkflowVersion
+→ Case / Tasks
+→ IntegrationOperation + OutboxMessage (same durable boundary)
+→ worker
+→ provider adapter
+→ accepted/succeeded receipt
+```
+
+Architecture rules for this path:
+
+- A favorable advisory/computed reading is not, by itself, institutional authority. A workflow trigger must identify its authoritative source explicitly.
+- Simulation returns intended actions and does not imply that external effects succeeded.
+- External publication status is represented separately from Case/Task status.
+- `accepted` is non-terminal; only a final `succeeded` receipt closes the external operation successfully.
+- Provider calls are idempotent and correlated end-to-end.
+- Cross-system SQL mutation is forbidden. Each provider mutates its own system through its own application/service boundary.
+- Wait/poll operations are fail-closed: terminal failure or timeout is an error, not implicit success.
+
+See `docs/2-Technical-Reference/40-integration/orgo-konnaxion/index.md` for the current provider profile.
+
+## 9) Where to go next
 
 - Lifecycle: `docs/2-Technical-Reference/10-system/lifecycle.md`
 - Components map: `docs/2-Technical-Reference/10-system/components.md`
@@ -132,3 +158,4 @@ Tenant-scoped policies and trust roots must be enforced at verification and publ
 - Determinism: `docs/2-Technical-Reference/10-system/determinism.md`
 - Node specs: `docs/2-Technical-Reference/20-nodes/`
 - Kristal integration (pinned references + kOA profile): `docs/2-Technical-Reference/40-integration/kristal-v4/`
+

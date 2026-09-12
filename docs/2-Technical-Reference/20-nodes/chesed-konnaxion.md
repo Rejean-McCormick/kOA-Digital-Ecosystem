@@ -83,3 +83,21 @@ Konnaxion must expose:
 * `docs/2-Technical-Reference/50-operations/releases.md`
 * `docs/2-Technical-Reference/50-operations/rollback.md`
 * `docs/2-Technical-Reference/30-artifacts/konnaxion-state.md`
+
+## Inbound Orgo publication bridge (current implementation profile)
+
+In the current implementation, Konnaxion also exposes a provider-owned bridge for Orgo operational publication. This capability is distinct from Runtime Pack activation: it accepts an explicit Orgo integration envelope and applies the requested mutation through Konnaxion-owned domain/application services.
+
+Current profile requirements:
+
+- Provider operation: `publish` (with `distribute` reserved/allowlisted on the Orgo side where configured).
+- World-scoped routing: publication is directed to the selected Konnaxion World and current/promoted Release context.
+- Authentication: bearer token at the bridge boundary.
+- Idempotency: the Orgo idempotency key is authoritative for duplicate suppression.
+- Correlation: `X-Correlation-ID` follows the request across Orgo and Konnaxion.
+- Ownership: Konnaxion performs its own mutation; Orgo never writes Konnaxion tables directly.
+- Receipt semantics: return `succeeded` for terminal synchronous success, or `accepted` only when a final receipt/callback will later close the Orgo operation.
+
+A repeated request with the same idempotency key MUST NOT create a second business effect.
+
+See `docs/2-Technical-Reference/40-integration/orgo-konnaxion/index.md`.

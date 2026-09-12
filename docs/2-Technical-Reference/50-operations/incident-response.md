@@ -159,6 +159,22 @@ Collect and snapshot:
 
 ---
 
+### 6.8 Durable provider bridge / outbox failure
+
+**Goal:** restore a durable external publication without duplicating the business effect or bypassing system ownership.
+
+- [ ] Confirm the provider is healthy and configured before redrive.
+- [ ] Confirm the Orgo worker is running with the expected provider URL/token configuration; never print the token.
+- [ ] Inspect the existing IntegrationOperation and outbox item. Reuse the existing operation; do not blindly re-run the business scenario.
+- [ ] If the operation is already `SUCCEEDED`, do not redrive.
+- [ ] If the operation is `FAILED` and the outbox item is terminal/dead, use the canonical Orgo redrive endpoint/manager action.
+- [ ] Preserve the original business idempotency key and correlation ID across provider delivery.
+- [ ] Treat provider `accepted` as non-terminal. Wait for the final `succeeded` receipt.
+- [ ] Verify the provider-owned business effect exists exactly once before advancing dependent work.
+- [ ] Do not mutate the provider database or Orgo integration tables directly as a repair mechanism.
+
+For the current Orgo→Konnaxion profile, see `docs/2-Technical-Reference/40-integration/orgo-konnaxion/index.md`.
+
 ## 7) Communication requirements
 
 ### 7.1 Internal updates (IC cadence)
@@ -221,3 +237,4 @@ Before declaring resolved:
 - **Schema validation errors** → block publish → confirm pinned versions → fix producer/consumer pinning
 - **Untraceable rendered facts** → safe rendering mode → roll back template/model → collect bundles
 - **Unsafe execution behavior** → halt dispatch → isolate tasks → capture telemetry → enforce mandate gates
+

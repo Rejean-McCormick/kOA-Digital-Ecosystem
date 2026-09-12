@@ -28,6 +28,11 @@ You implement a stage (e.g., extractor, resolution adjunct, validation adjunct) 
 ### 3) Distribution/runtime consumer
 You run Konnaxion (or consume its outputs) to deliver offline-first Runtime Packs to runtime environments. Your contract is: verify-before-activate, atomic activation, deterministic rollback, and auditable events.
 
+### 4) Durable operational provider
+You receive durable side-effect requests from Orgo (for example `publish`) through an authenticated provider adapter. Your contract is: idempotent processing, correlation propagation, provider-owned mutation, explicit terminal receipts, and no shared cross-system database writes.
+
+The current Orgo→Konnaxion profile is documented in `../2-Technical-Reference/40-integration/orgo-konnaxion/index.md`.
+
 ## Where the authoritative contracts live
 
 - **Kristal v4 boundary contracts (pinned):** see [Integration-Kristal-v4](Integration-Kristal-v4.md)  
@@ -60,3 +65,4 @@ Integrations should emit:
 
 - [Integration-Kristal-v4](Integration-Kristal-v4.md)
 - [Integration-External-systems](Integration-External-systems.md)
+- [Orgo → Konnaxion durable publish profile](../2-Technical-Reference/40-integration/orgo-konnaxion/index.md)

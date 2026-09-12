@@ -35,3 +35,4 @@ Create an ADR when you change:
 - `adr-0003-konnaxion-activation-rollback.md`
 - `adr-0004-architect-split.md`
 - `adr-0005-compatibility-versioning.md`
+- `adr-0006-common-identity-oidc.md`

@@ -108,3 +108,17 @@ flowchart LR
 * If runtime answers look inconsistent: confirm Malkuth is in deterministic mode and that the active pack identity matches expectations.
 * If an incident occurs: prefer **explicit rollback** to last-known-good/pinned known-good, and preserve the audit trail.
 
+
+## Orgo provider bridge (current implementation profile)
+
+Konnaxion can also act as a **provider-owned publication boundary** for durable effects requested by Orgo. This does not give Orgo direct database access to Konnaxion. Instead:
+
+1. Orgo persists an `IntegrationOperation` and outbox message.
+2. The Orgo worker calls a Konnaxion provider endpoint using an idempotency key and correlation ID.
+3. Konnaxion performs the mutation through Konnaxion-owned application/service code in the selected World/Release context.
+4. Konnaxion returns `succeeded` immediately, or `accepted` followed by a final receipt/callback when processing is asynchronous.
+5. Orgo closes the `IntegrationOperation` only on the final success receipt.
+
+The current demonstration profile scopes publication to a selected **World** (for example `uckk-a014`) and its promoted/current Release. Replaying the same idempotency key must not create duplicate business effects. Provider credentials/tokens are runtime secrets and must not be persisted in documentation or logs.
+
+See `docs/2-Technical-Reference/40-integration/orgo-konnaxion/index.md`.

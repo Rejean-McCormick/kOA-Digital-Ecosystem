@@ -118,3 +118,33 @@ Recommended traces: correlate build IDs across stage jobs and downstream distrib
 
 * Pipeline operations (Orgo): `Operations-Builds` / `Operations` 
 * Orgo-native artifacts: Build Record / Release Record / Case / Task 
+
+## Operational coordination surface (current implementation)
+
+In addition to the stage spine above, the current Orgo implementation exposes an **operational coordination surface** for turning governed signals into traceable work and durable external effects:
+
+```mermaid
+flowchart LR
+  S[Signal] --> W[Published WorkflowVersion]
+  W --> C[Case]
+  W --> T[Tasks]
+  C --> IO[IntegrationOperation]
+  IO --> OB[OutboxMessage]
+  OB --> A[Provider adapter]
+  A --> R[Receipt]
+```
+
+The implementation-level vocabulary is:
+
+- **Signal** — normalized, deduplicated input to operational workflow evaluation.
+- **Published WorkflowVersion** — immutable workflow definition used for simulation/execution.
+- **Case / Task** — governed work created or updated by workflow actions.
+- **IntegrationOperation** — status record for a durable external publication or distribution request. Its status is independent from Case/Task status.
+- **OutboxMessage** — durable delivery record processed asynchronously by the Orgo worker.
+
+For durable provider calls, Orgo uses a transactional-outbox pattern. The business mutation and outbox message are committed first; the worker later invokes the provider adapter. A provider response of **`accepted`** means the provider durably accepted the request, not that publication is complete. The operation remains non-terminal until a final **`succeeded`** receipt is recorded. Failed/unavailable providers are retried and can reach a terminal failed/dead state that must be redriven through the Orgo control-plane API rather than by cross-system SQL.
+
+The current Orgo→Konnaxion implementation profile is documented in:
+
+- `docs/2-Technical-Reference/40-integration/orgo-konnaxion/index.md`
+- `docs/2-Technical-Reference/40-integration/orgo-konnaxion/uckk-a014-validation-2026-09-12.md`

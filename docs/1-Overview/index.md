@@ -39,7 +39,7 @@ flowchart TD
 
 ## Core components (who does what)
 
-* **Orgo (control plane):** orchestrates stages, enforces gates, records operational evidence, drives releases.
+* **Orgo (control plane):** orchestrates stages, enforces gates, turns governed Signals into immutable WorkflowVersion-driven Cases/Tasks, records operational evidence, and drives durable external effects through IntegrationOperations/outbox delivery.
 * **SenTient (resolver):** turns ambiguous surfaces into explicit resolution outputs (keeps ambiguity explicit when unresolved).
 * **Kristal (truth pivot):** compiles canonical truth artifacts (Exchange) and derived offline artifacts (Runtime Pack).
 * **Konnaxion (distribution + platform):** verifies/activates/rolls back packs; powers offline-first delivery.

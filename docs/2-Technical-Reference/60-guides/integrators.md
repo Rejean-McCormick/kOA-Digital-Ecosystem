@@ -116,6 +116,29 @@ Checklist:
 
 ---
 
+### Pattern 4 — Orgo durable operation → provider-owned mutation
+
+Use this pattern when Orgo must request a durable side effect in another system (for example publishing an Impact into Konnaxion).
+
+1. Orgo creates an `IntegrationOperation` plus an outbox message in its own transaction boundary.
+2. The worker calls the provider adapter with bearer authentication, idempotency key, and correlation ID.
+3. The provider mutates only its own system through its own application/service layer.
+4. A synchronous terminal result returns `succeeded`; asynchronous durable acceptance returns `accepted` and MUST later produce a final receipt.
+5. Orgo marks success only on the final `succeeded` result/receipt.
+6. Failed/dead delivery is recovered by canonical redrive, not by creating a second scenario request or editing databases manually.
+
+Checklist:
+
+- stable business idempotency key
+- correlation ID propagated end-to-end
+- provider operation allowlisted
+- provider-owned mutation only
+- no secrets in logs
+- `accepted != succeeded`
+- exact-once business effect verified after redrive
+
+Current example profile: `docs/2-Technical-Reference/40-integration/orgo-konnaxion/index.md`.
+
 ## 5) Required telemetry
 
 You should emit (minimum):
@@ -158,3 +181,4 @@ If you are migrating from earlier Kristal conventions:
 - [ ] You verify/activate/rollback fail-closed (distribution consumers).
 - [ ] You provide telemetry refs (logs/traces/metrics) tied to build/release IDs.
 - [ ] You have an operator escalation path for failed gates/rollouts.
+

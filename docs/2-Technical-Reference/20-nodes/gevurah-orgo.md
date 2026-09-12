@@ -209,3 +209,33 @@ Orgo SHOULD:
 - Operations: `docs/2-Technical-Reference/50-operations/pipeline.md`, `docs/2-Technical-Reference/50-operations/releases.md`, `docs/2-Technical-Reference/50-operations/rollback.md`
 - kOA-native artifacts: `docs/2-Technical-Reference/30-artifacts/`
 - Kristal integration: `docs/2-Technical-Reference/40-integration/kristal-v4/`
+
+## Operational workflow + durable integration profile
+
+The current Orgo runtime also owns a governed operational path built from **Signals, published WorkflowVersions, Cases, Tasks, IntegrationOperations, and outbox delivery**.
+
+### Signal and workflow semantics
+
+- Signals are normalized and deduplicated before workflow evaluation.
+- Published WorkflowVersions are immutable execution inputs.
+- Simulation MUST NOT execute external handlers or claim external success.
+- Workflow actions may create/update Cases and Tasks and may request durable integrations.
+
+### Durable external effects
+
+For a durable provider request, Orgo persists an `IntegrationOperation` and an `OutboxMessage`, then lets the worker invoke the provider adapter asynchronously.
+
+Required semantics:
+
+- `IntegrationOperation.status` is independent of Case/Task status.
+- The provider and operation name are allowlisted by the adapter.
+- Idempotency key and correlation ID propagate to the provider.
+- `accepted` means durably accepted and keeps the operation non-terminal (`RUNNING`).
+- `succeeded` is terminal success and records completion.
+- Provider unavailable/unconfigured conditions are retryable until policy exhausts retries; exhausted delivery becomes a failed operation/dead outbox item.
+- Redrive MUST use the Orgo control-plane/API path so operation and outbox state transition together; direct SQL repair is not an integration mechanism.
+- Wait semantics are fail-closed: `SUCCEEDED` completes; `FAILED` or timeout fails the waiting workflow/scenario.
+
+Current Konnaxion adapter configuration uses runtime environment variables for bridge URL/token. Tokens are secrets: do not persist or log them.
+
+See `docs/2-Technical-Reference/40-integration/orgo-konnaxion/index.md`.
