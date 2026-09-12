@@ -45,3 +45,8 @@ docs/
 └── 3-Layer-Model/
     └── layers/
 ```
+
+
+## Decision-path correction (2026-09-12)
+
+For Konnaxion civic/public decisions, **Konnaxion/eThikos finalizes the decision and pushes the decision handoff directly to Orgo**. UCKK is optional for publication/distribution and is not a mandatory decision authority or relay. See `2-Technical-Reference/90-reference/adr/adr-0007-konnaxion-ethikos-decision-authority.md`.

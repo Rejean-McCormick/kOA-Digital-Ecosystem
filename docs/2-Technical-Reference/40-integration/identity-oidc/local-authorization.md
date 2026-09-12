@@ -14,7 +14,7 @@ Konnaxion remains authoritative for its participation, moderation, deliberation,
 
 ## UCKK-Moodle
 
-UCKK-Moodle remains authoritative for enrolments, course/context roles, capabilities, academic permissions, and institutional/Assembly permissions.
+UCKK-Moodle remains authoritative for enrolments, course/context roles, capabilities, academic permissions, and its own publication/administrative permissions. It is not the owner of Konnaxion/eThikos civic decisions.
 
 ## No universal role table
 

@@ -14,7 +14,8 @@
 - **Resolution Plane:** SenTient (reconciliation / normalization / ambiguity structures)
 - **Articulation Plane:** Architect (Strategy + Render; deterministic outputs; trace)
 - **Execution Plane:** SwarmCraft (tool/agent/human execution; telemetry)
-- **Distribution + Runtime Plane:** Konnaxion (pack distribution, verification, caching, activation/rollback) + Malkuth (offline serving/execution substrate)
+- **Civic Decision Plane:** Konnaxion/eThikos (deliberation, decision surfaces, finalized DecisionRecords, direct decision handoff to Orgo)
+- **Distribution + Runtime Plane:** Konnaxion distribution facet (pack distribution, verification, caching, activation/rollback) + Malkuth (offline serving/execution substrate)
 - **Trust + Impact Plane:** EkoH (reputation/ethics, votes, impact ledger; never mutates canonical truth)
 
 ---
@@ -140,9 +141,24 @@ Architect is explicitly split into two roles.
 
 ---
 
-### 2.7 Konnaxion (Distribution + Interface Plane)
+### 2.7 Konnaxion (Civic Decision + Distribution + Interface Plane)
 
-Konnaxion is treated as two facets.
+Konnaxion is treated as multiple explicit facets.
+
+#### 2.7.0 eThikos civic decision facet
+**Owns**
+- structured deliberation/decision state inside Konnaxion
+- finalized DecisionRecords and their provenance
+- direct authenticated decision handoff to Orgo when execution is required
+
+**Interfaces**
+- Input: deliberation outputs, readings, decision criteria/context
+- Output: finalized DecisionRecord; optional UCKK publication; direct Orgo governed-work handoff
+
+**Boundary**
+- Smart Vote/EkoH readings inform the decision but do not silently become the finalized decision
+- UCKK is not a mandatory decision authority or relay
+- Konnaxion does not write Orgo Case/Task storage directly
 
 #### 2.7.1 Distribution facet (Runtime Packs)
 **Owns**

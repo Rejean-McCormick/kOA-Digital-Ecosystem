@@ -33,6 +33,9 @@ You receive durable side-effect requests from Orgo (for example `publish`) throu
 
 The current Orgo→Konnaxion profile is documented in `../2-Technical-Reference/40-integration/orgo-konnaxion/index.md`.
 
+### Konnaxion/eThikos decision producer → Orgo
+You finalize a decision in Konnaxion/eThikos and hand it directly to Orgo when operational work is required. Your contract is: stable decision identity, finalized status, authenticated machine handoff, idempotent replay, correlation propagation, and Orgo-owned mutation only. UCKK is an optional publication/distribution consumer, not a mandatory relay.
+
 ## Where the authoritative contracts live
 
 - **Kristal v4 boundary contracts (pinned):** see [Integration-Kristal-v4](Integration-Kristal-v4.md)  

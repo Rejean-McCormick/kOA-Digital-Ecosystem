@@ -116,7 +116,28 @@ Checklist:
 
 ---
 
-### Pattern 4 — Orgo durable operation → provider-owned mutation
+### Pattern 4 — Konnaxion/eThikos finalized decision → Orgo governed work
+
+Use this pattern when a decision finalized in Konnaxion/eThikos requires operational follow-through.
+
+1. eThikos finalizes a DecisionRecord in Konnaxion.
+2. Konnaxion sends a versioned/authenticated machine handoff directly to Orgo.
+3. Orgo validates scope, identity and replay/idempotency information.
+4. Orgo persists/deduplicates a Signal and evaluates the applicable published WorkflowVersion.
+5. Orgo creates/updates only Orgo-owned Case/Task state.
+6. UCKK may independently receive the decision for optional publication/distribution; it is not a required hop.
+
+Checklist:
+
+- finalized eThikos decision identity
+- stable idempotency/replay identity
+- correlation ID propagated end-to-end
+- machine credential/scope, not human SSO
+- Konnaxion does not write Orgo storage directly
+- Smart Vote/EkoH reading is not silently treated as final decision
+- UCKK is optional
+
+### Pattern 5 — Orgo durable operation → provider-owned mutation
 
 Use this pattern when Orgo must request a durable side effect in another system (for example publishing an Impact into Konnaxion).
 

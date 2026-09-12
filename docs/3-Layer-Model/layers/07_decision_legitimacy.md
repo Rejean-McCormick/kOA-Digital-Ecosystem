@@ -297,6 +297,20 @@ The decision surface transforms deliberation into a structured choice.
 
 ---
 
+### Konnaxion/eThikos decision authority
+
+For Konnaxion-owned civic/public decision flows, finalization occurs inside **Konnaxion/eThikos**. Smart Vote and EkoH contribute transparent readings and governed signals; the authoritative cross-system object is the **finalized eThikos DecisionRecord**.
+
+When operational follow-through is required:
+
+```text
+finalized eThikos DecisionRecord
+→ direct Konnaxion→Orgo handoff
+→ governed execution
+```
+
+UCKK may publish or distribute the decision as an optional surface, but does not become the decision owner and is not a required relay to Orgo.
+
 ## 12. Decision finalization
 
 A decision is not just a vote.

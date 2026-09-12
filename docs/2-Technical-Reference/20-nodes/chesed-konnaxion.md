@@ -1,10 +1,13 @@
 # Chesed: Konnaxion
 
-**Role:** Connectivity + distribution + offline platform boundary.
-**Primary responsibility:** safely deliver **verified, pinned** knowledge packs to products and services, and provide deterministic access patterns without mutating canonical truth.
+**Role:** Civic/public decision platform + connectivity/distribution boundary.
+**Primary responsibility:** own Konnaxion/eThikos deliberation and finalized decision state, hand finalized decisions directly to Orgo when governed work is required, and provide the Konnaxion distribution facet for verified/pinned knowledge packs without mutating canonical truth.
 
 ## Responsibilities
 
+* Own eThikos deliberation/decision state and finalized DecisionRecords.
+* Push finalized Konnaxion/eThikos decisions directly to Orgo through an authenticated, idempotent machine boundary when operational work is required.
+* Allow UCKK to consume/publish decisions optionally without making UCKK a required authority or relay.
 * Fetch, cache, and serve **Runtime Packs** and related indexes/channels.
 * Verify pack integrity **fail-closed** before activation (signatures, hashes, compatibility).
 * Activate packs atomically and support deterministic rollback to a last-known-good or pinned version.
@@ -83,6 +86,22 @@ Konnaxion must expose:
 * `docs/2-Technical-Reference/50-operations/releases.md`
 * `docs/2-Technical-Reference/50-operations/rollback.md`
 * `docs/2-Technical-Reference/30-artifacts/konnaxion-state.md`
+
+## Direct decision handoff to Orgo
+
+For Konnaxion-owned civic/public decisions, the source event is a **finalized eThikos DecisionRecord**. The direct handoff pattern is:
+
+```text
+Konnaxion/eThikos DecisionRecord
+→ authenticated/versioned handoff
+→ Orgo Signal
+→ WorkflowVersion
+→ Case / Tasks
+```
+
+Smart Vote/EkoH may provide readings used inside the decision process. They are not the cross-system execution trigger by themselves. UCKK is an optional publication/distribution consumer and is not required between Konnaxion and Orgo.
+
+Konnaxion never writes Orgo tables directly.
 
 ## Inbound Orgo publication bridge (current implementation profile)
 

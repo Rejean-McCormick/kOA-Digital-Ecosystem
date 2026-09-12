@@ -1,13 +1,52 @@
 # Components — Konnaxion & Malkuth
 
-Konnaxion and Malkuth are the **distribution + runtime** pair that make “offline-first, verified knowledge” real:
+Konnaxion is a broader **civic/public decision and platform system**. Malkuth is the runtime substrate used by the Runtime Pack facet.
 
-- **Konnaxion (Distribution)** decides what can be installed/activated, verifies it **fail-closed**, activates it **atomically**, and rolls back **deterministically**.
-- **Malkuth (Runtime)** serves deterministic queries (and optionally executes pack-defined routines) **only** over the currently active, verified pack.
+Konnaxion therefore has at least two distinct responsibilities that must not be collapsed:
+
+- **Konnaxion/eThikos (civic decision facet):** deliberation, decision surfaces and finalized DecisionRecords. Finalized eThikos decisions may be pushed **directly to Orgo** as governed-work triggers.
+- **Konnaxion distribution facet:** verifies candidate Runtime Packs **fail-closed**, activates them **atomically**, and rolls back **deterministically**.
+- **Malkuth (Runtime):** serves deterministic queries (and optionally executes pack-defined routines) only over the currently active, verified pack.
+
+UCKK is optional for publication/distribution/presentation and is not a mandatory relay for Konnaxion→Orgo decisions.
 
 ---
 
-## Konnaxion (Distribution)
+## Konnaxion/eThikos decision facet
+
+### Purpose
+
+Turn structured deliberation into a finalized, auditable Konnaxion decision that can be consumed by other systems without transferring decision ownership.
+
+```text
+Konnaxion / eThikos deliberation
+→ Smart Vote / EkoH / other readings
+→ eThikos decision stage
+→ finalized DecisionRecord
+→ direct Konnaxion→Orgo handoff when operational work is required
+```
+
+### Owns
+
+- decision process/state within eThikos;
+- finalized DecisionRecord and its provenance;
+- decision-specific participation/deliberation surfaces;
+- direct machine-to-machine handoff of finalized decisions to Orgo when configured.
+
+### Does not own
+
+- Orgo Case/Task lifecycle;
+- direct writes into Orgo storage;
+- UCKK publication state;
+- treating a Smart Vote reading as an automatic execution trigger unless the eThikos decision contract explicitly finalizes it.
+
+### UCKK relation
+
+UCKK may receive the finalized decision for publication, education or distribution, but that branch is optional and independent from the direct Konnaxion→Orgo handoff.
+
+---
+
+## Konnaxion (Distribution facet)
 
 ### Purpose
 Safely deliver Runtime Packs to environments (edge, device, offline node, cluster) and ensure that only **verified, compatible** packs become active.
@@ -109,7 +148,7 @@ flowchart LR
 * If an incident occurs: prefer **explicit rollback** to last-known-good/pinned known-good, and preserve the audit trail.
 
 
-## Orgo provider bridge (current implementation profile)
+## Orgo provider bridge (outbound Orgo→Konnaxion implementation profile)
 
 Konnaxion can also act as a **provider-owned publication boundary** for durable effects requested by Orgo. This does not give Orgo direct database access to Konnaxion. Instead:
 

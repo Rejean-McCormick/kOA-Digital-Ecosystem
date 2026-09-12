@@ -23,7 +23,7 @@ kOA turns messy inputs into **validated, canonical knowledge** and then safely d
 * **Orgo (control plane):** orchestrates stages, enforces gates, records operational evidence, drives releases.
 * **SenTient (resolver):** turns ambiguous surfaces into explicit, typed resolution outputs (keeps ambiguity explicit when unresolved).
 * **Kristal (truth pivot):** compiles canonical truth artifacts (Exchange) and derived offline artifacts (Runtime Pack).
-* **Konnaxion (distribution + platform):** verifies/activates/rolls back packs; powers offline-first delivery and product navigation.
+* **Konnaxion/eThikos (civic decision + platform):** owns Konnaxion deliberation/decision flows and finalized DecisionRecords, can hand decisions directly to Orgo, and also provides distribution/activation capabilities where deployed.
 * **Architect (renderer):** produces deterministic natural-language (or other outputs) that cannot introduce new facts and must trace.
 * **SwarmCraft (execution):** executes tasks into deliverables under constraints; emits telemetry.
 

@@ -1,30 +1,47 @@
-# UCKK A014 — Orgo↔Konnaxion Runtime Validation Snapshot (2026-09-12)
+# Historical A014 — Orgo↔Konnaxion Runtime Validation Snapshot (2026-09-12)
 
-**Status:** historical validation note / resume point  
+**Status:** historical validation note — **architecture misalignment identified; not current acceptance evidence**  
 **Normative for kOA:** NO  
 **Secrets:** intentionally omitted
 
 ---
 
-## Purpose
+## Architecture correction (2026-09-12)
 
-Capture the exact validated stopping point of the UCKK A014 vertical slice so work can resume without reconstructing state from chat logs.
+The original A014 fixture incorrectly modeled the decision authority/path as **UCKK/Assembly → Orgo**. The corrected architecture is:
+
+```text
+Konnaxion / eThikos
+→ finalized decision
+→ direct Konnaxion→Orgo handoff
+→ Signal / Workflow / Case / Tasks
+```
+
+UCKK is an **optional publication/distribution surface**, not the decision authority and not a mandatory relay. Decisions for this flow are finalized in **Konnaxion/eThikos**.
+
+As a result, the checkpoint results below remain useful as historical runtime/mechanics evidence, but they do **not** prove conformance of the corrected end-to-end decision path.
 
 ---
 
-## Validated checkpoints
+## Purpose
+
+Capture the exact historical runtime stopping point and preserve evidence that may still be useful while the scenario is refactored to the corrected Konnaxion/eThikos → Orgo path.
+
+---
+
+## Historical checkpoint results
 
 ```text
-T-14     PASS
-T-7      PASS
-T0-pre   PASS
-T0-post  PASS
-J3       PASS
+T-14     PASS (historical fixture)
+T-7      PASS (historical fixture)
+T0-pre   PASS (historical fixture)
+T0-post  PASS (historical fixture)
+J3       PASS (historical fixture)
 ```
 
-T0-post was validated after aligning scenario work references with canonical work IDs and using legal Task state transitions.
+T0-post validated useful Orgo mechanics after aligning scenario work references with canonical work IDs and using legal Task state transitions. However, the inbound decision authority/path for these runs was wrong and must be replaced.
 
-J30 request creation was validated, but final Orgo→Konnaxion publication is not yet complete.
+J30 request creation also remains useful as outbound transport evidence, but final Orgo→Konnaxion publication was not completed.
 
 ---
 
@@ -110,23 +127,24 @@ This item is the one to redrive after confirming the provider/worker runtime is 
 
 ---
 
-## Resume procedure
+## Correct resume procedure
 
-Do not inject J30 again as the first recovery action.
+Do **not** continue the old scenario as if only J30 redrive remained. The architecture must be corrected first.
 
 Resume in this order:
 
-1. Keep/start the Konnaxion provider for World `uckk-a014`.
-2. Keep/start the bridge-enabled Orgo worker against the same Orgo test database.
-3. Start the Orgo API if required for the control-plane redrive action.
-4. Authenticate with the Orgo application credential for the test organization/user (not the PostgreSQL credential).
-5. Inspect the existing IntegrationOperation/outbox item.
-6. Redrive the existing dead outbox item through the canonical Orgo API/manager action.
-7. Wait for terminal `SUCCEEDED` (not merely `accepted`).
-8. Verify **exactly one** Konnaxion Impact with the stable J30 identifiers.
-9. Only after steps 7–8 pass, run J90.
+1. Define/confirm the Konnaxion/eThikos finalized decision object/event that is authoritative for the scenario.
+2. Implement or configure the direct **Konnaxion/eThikos → Orgo** authenticated handoff.
+3. Remove UCKK/Assembly as a required decision authority/relay from the scenario and fixtures. UCKK may remain as an optional publication consumer.
+4. Re-run the inbound path and verify Orgo receives/deduplicates the decision Signal and creates the expected governed work.
+5. Revalidate the scenario checkpoints against this corrected authority path.
+6. Then validate the outbound **Orgo → Konnaxion** Impact path using the existing IntegrationOperation/Outbox mechanics or a clean corrected-scenario operation.
+7. Require terminal `SUCCEEDED` and exactly one Konnaxion business effect for the relevant idempotency identity.
+8. Only then continue later follow-up checkpoints.
 
-No cross-system SQL mutation should be used to publish the Impact or repair delivery state.
+The existing failed/dead J30 operation may be inspected/redriven for transport debugging, but it is not sufficient acceptance evidence for the corrected end-to-end architecture.
+
+No cross-system SQL mutation should be used.
 
 ---
 
@@ -138,12 +156,22 @@ This distinction was confirmed when a database credential was rejected by the Or
 
 ---
 
-## Acceptance criteria before J90
+## Acceptance criteria before later follow-up checkpoints
+
+The corrected scenario must first prove:
+
+```text
+Konnaxion/eThikos finalized decision
+→ direct Orgo handoff
+→ expected Signal / Case / Tasks
+```
+
+Then the outbound impact path must prove:
 
 ```text
 Orgo IntegrationOperation.status == SUCCEEDED
 AND
-Konnaxion Impact count for idempotency/external reference == 1
+Konnaxion business effect count for the idempotency identity == 1
 ```
 
-Until both conditions are true, J90 remains blocked.
+Until both inbound and outbound conditions are true, later follow-up checkpoints remain blocked.

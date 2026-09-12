@@ -36,3 +36,4 @@ Create an ADR when you change:
 - `adr-0004-architect-split.md`
 - `adr-0005-compatibility-versioning.md`
 - `adr-0006-common-identity-oidc.md`
+- `adr-0007-konnaxion-ethikos-decision-authority.md`

@@ -6,7 +6,7 @@ Ce document définit l'architecture cible commune de l'écosystème.
 
 Il décrit uniquement ce qui doit être vrai dans l'état aligné : responsabilités, ownership, frontières, contrats, identités, flux et invariants. Il ne décrit pas un processus de migration et ne crée pas d'autorité supplémentaire au-dessus des systèmes existants.
 
-**Mise à jour 2026-09-12.** Les invariants observés et validés sur la vertical slice UCKK-A014 sont intégrés ci-dessous comme contraintes d'architecture : `IntegrationOperation`/Outbox côté Orgo, bridge provider-owned côté Konnaxion, sémantique `accepted ≠ succeeded`, redrive canonique, idempotency/correlation, absence de write SQL cross-system et conservation explicite de l'autorité institutionnelle UCKK.
+**Mise à jour 2026-09-12.** Les invariants observés et validés sur la vertical slice UCKK-A014 sont intégrés ci-dessous comme contraintes d'architecture : `IntegrationOperation`/Outbox côté Orgo, bridge provider-owned côté Konnaxion, sémantique `accepted ≠ succeeded`, redrive canonique, idempotency/correlation, absence de write SQL cross-system et conservation explicite de l'autorité décisionnelle Konnaxion/eThikos et du rôle optionnel de diffusion d'UCKK.
 
 Les systèmes principaux sont :
 
@@ -2354,39 +2354,43 @@ active local runtime state
 health / rollback / forward repair
 ```
 
-## 21.6 Profile de référence UCKK-A014
+## 21.6 Profile de référence Konnaxion/eThikos → Orgo
 
-La vertical slice UCKK-A014 sert de **profile de conformance d'intégration**. Elle illustre les frontières sans créer de nouvelles primitives globales.
+La vertical slice historique A014 est conservée comme source de tests techniques, mais son ancien modèle d'autorité UCKK était incorrect. Le profile cible est le suivant.
 
-### Autorité
+### Autorité de décision
 
-La lecture Smart Vote est consultative/dérivée.
-
-Le déclencheur autoritaire du workflow opérationnel est :
+La délibération et la décision ont lieu dans **Konnaxion/eThikos**. Smart Vote, EkoH et les autres readings peuvent éclairer le processus mais ne remplacent pas le DecisionRecord finalisé par eThikos.
 
 ```text
-UCKK Assembly
-→ human institutional decision
-→ published decision D009
+Konnaxion / eThikos
+  → deliberation
+  → readings / Smart Vote / EkoH
+  → decision stage
+  → finalized DecisionRecord
+  → direct handoff to Orgo
+  → Signal / WorkflowVersion / Case / Tasks
 ```
 
-et non :
+Le déclencheur opérationnel est donc le **DecisionRecord finalisé dans eThikos**, pas une décision UCKK et pas un Smart Vote pris isolément.
+
+### UCKK est optionnel
+
+UCKK peut être une plateforme de publication, diffusion, présentation ou apprentissage :
 
 ```text
-favorable Smart Vote
-→ automatic operational mandate
+Konnaxion/eThikos finalized decision
+→ optional UCKK publication/distribution
 ```
 
-Le flux de référence est :
+Cette branche est indépendante du handoff vers Orgo. UCKK ne devient ni l'owner de la décision, ni un relay obligatoire.
+
+### Boucle opérationnelle
 
 ```text
-Konnaxion deliberation + baseline + Smart Vote reading
-        ↓ advisory information
-UCKK Assembly
-        ↓ human institutional decision
-UCKK-D009 published
+Konnaxion/eThikos finalized decision
         ↓
-UCKK-Moodle / decision adapter
+Konnaxion → Orgo decision handoff
         ↓
 Orgo Signal
         ↓
@@ -2394,73 +2398,49 @@ WorkflowVersion
         ↓
 Case + Tasks
         ↓
-J3 / J30 observations
+operational observations / impact
         ↓
-IntegrationOperation publish
-        ↓
-Outbox
+IntegrationOperation + Outbox
         ↓
 Orgo worker
         ↓
 Konnaxion provider
         ↓
-Konnaxion Impact
+Konnaxion Impact / accountability state
         ↓
-J90 observations
-        ↓
-A014-R1 reconsideration material
-        ↓
-UCKK decision authority remains external/human
+follow-up / reconsideration in eThikos when needed
 ```
 
-### Stable logical references
+### Historical A014 identifiers
 
-Le profile utilise des références stables telles que :
+Les noms `UCKK-A014`, `UCKK-D009`, `corr.uckk.A014.D009` et autres identifiants similaires restent présents dans certains fixtures/runtime historiques. Ils ne doivent plus être interprétés comme une preuve d'ownership UCKK. Ils doivent être renommés ou remappés lors de la refonte du scenario vers des références Konnaxion/eThikos.
+
+Les UUID runtime restent non portables et ne doivent pas être hardcodés dans les packs de scénario.
+
+### Gate de validation
+
+La conformance end-to-end exige d'abord :
 
 ```text
-demo_id              = uckk-pedagogy-pilot-a014
-assembly              = UCKK-A014
-moodle                = UCKK-M014
-decision              = UCKK-D009
-archive               = UCKK-ARCH-A014-D009
-workflow              = uckk_pedagogy_pilot
-case external ref     = uckk:assembly:A014:decision:D009:v1
-correlation           = corr.uckk.A014.D009
-J30 Impact ref        = impact:UCKK-A014:day30:v1
-J30 idempotency       = uckk:A014:impact:J30:v1
+finalized eThikos DecisionRecord
+→ direct Orgo handoff
+→ expected Orgo governed work
 ```
 
-Les runtime UUIDs sont résolus au moment de l'exécution et ne sont pas encodés comme identities stables du scenario.
-
-### Gate J30 → J90
-
-Le passage à J90 exige deux faits distincts :
+puis, pour un effet de retour vers Konnaxion :
 
 ```text
 Orgo IntegrationOperation = SUCCEEDED
 AND
-exactly one Konnaxion Impact exists for the J30 idempotency identity
+exactly one Konnaxion business effect exists for the idempotency identity
 ```
 
 Un statut `accepted`, un outbox livré ou une simple réponse HTTP ne suffit pas.
 
-Cette gate protège contre :
+### Follow-up
 
-- faux succès ;
-- duplication d'Impact ;
-- continuation du scénario avec une publication externe incomplète.
+Les observations opérationnelles peuvent ouvrir une reconsidération dans eThikos, mais Orgo ne modifie pas la décision civique de sa propre initiative. Orgo orchestre le travail ; Konnaxion/eThikos possède le processus de décision.
 
-### J90 ne légifère pas
-
-Les observations J90 peuvent ouvrir une reconsidération, mais ne changent pas automatiquement la policy.
-
-```text
-observation
-→ evidence / reconsideration material
-→ human/institutional decision path
-```
-
-Orgo coordonne le travail. Konnaxion structure la lecture et l'impact. UCKK conserve l'autorité de décision institutionnelle dans ce profile.
 ---
 
 # 22. Frontières qui doivent rester petites
@@ -2744,7 +2724,7 @@ L'architecture cible tient en quelques règles fortes :
 13. **Les effets externes Orgo passent par IntegrationOperation + Outbox + provider adapter**, pas par des writes directs dans le système cible.
 14. **`accepted` n'est jamais assimilé à `succeeded`** : une finalité asynchrone exige un receipt final.
 15. **Retry et redrive préservent l'idempotency identity**, afin qu'un même handoff logique ne crée pas deux effets métier.
-16. **Dans le profile UCKK-A014, la décision publiée de l'Assemblée est l'autorité de déclenchement** ; Smart Vote reste une reading consultative.
+16. **Dans le profile de décision Konnaxion/eThikos, le DecisionRecord finalisé dans eThikos est l'autorité de déclenchement vers Orgo** ; UCKK reste une surface de diffusion optionnelle et Smart Vote une reading/input du processus.
 
 ```text
              DOMAIN OWNERSHIP                   PLATFORM OWNERSHIP

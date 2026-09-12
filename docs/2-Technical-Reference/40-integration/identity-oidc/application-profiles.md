@@ -32,8 +32,8 @@ issuer + subject
 -> Moodle roles/capabilities
 ```
 
-Identity federation does not transfer academic or Assembly authority to Orgo or Konnaxion.
+Identity federation does not transfer UCKK-local academic/publication permissions to Orgo or Konnaxion. Konnaxion/eThikos decision authority is a separate business-domain concern and is not derived from OIDC roles.
 
 ## 4) Service integrations
 
-UCKK->Orgo decision handoff, Orgo->Konnaxion publication, workers, and callbacks use dedicated machine credentials/scopes rather than human SSO sessions.
+Konnaxion/eThikos→Orgo decision handoff, Orgo→Konnaxion impact/publication, workers, and callbacks use dedicated machine credentials/scopes rather than human SSO sessions. Optional UCKK publication/distribution integrations use their own service identity when needed.

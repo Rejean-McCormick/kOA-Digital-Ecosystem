@@ -61,6 +61,7 @@ High-level flow:
 - **SenTient**: reconciliation/resolution engine producing Resolved Claim-IR from Claim-IR, preserving ambiguity explicitly.
 
 ### 4.3 Distribution + runtime
+- **Konnaxion/eThikos (civic decision facet)**: owns Konnaxion deliberation/decision state and finalized DecisionRecords; may hand finalized decisions directly to Orgo.
 - **Konnaxion (distribution facet)**: verifies, activates, and rolls back Runtime Packs **fail-closed**, with atomic activation and deterministic rollback.
 - **Malkuth (runtime)**: offline serving and execution substrate consuming the active Runtime Pack (read-only), providing deterministic query and (optional) routine execution.
 
@@ -140,7 +141,7 @@ normalized Signal
 
 Architecture rules for this path:
 
-- A favorable advisory/computed reading is not, by itself, institutional authority. A workflow trigger must identify its authoritative source explicitly.
+- A favorable advisory/computed reading is not, by itself, the decision trigger. For Konnaxion-owned civic decisions, the authoritative source is the finalized **eThikos DecisionRecord**, handed directly from Konnaxion to Orgo. UCKK is optional publication/distribution, not a mandatory relay.
 - Simulation returns intended actions and does not imply that external effects succeeded.
 - External publication status is represented separately from Case/Task status.
 - `accepted` is non-terminal; only a final `succeeded` receipt closes the external operation successfully.

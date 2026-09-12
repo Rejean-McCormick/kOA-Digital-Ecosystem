@@ -265,3 +265,19 @@ A localized F9 is normally operational/recoverable through canonical redrive; es
 
 (Definitions live in `30-artifacts/`.)
 
+
+
+### F8 — Wrong decision-authority/relay path
+
+**Description:** A decision flow attributes authority to the wrong system or inserts an optional publication surface as a mandatory relay.
+
+For the Konnaxion/eThikos→Orgo flow, examples include treating UCKK as the decision owner or requiring UCKK to relay a decision before Orgo can act.
+
+**Required behavior:**
+
+- stop acceptance of the affected scenario as architecture-conformant;
+- preserve runtime evidence as historical/mechanical evidence only;
+- restore Konnaxion/eThikos as the decision owner;
+- use a direct authenticated Konnaxion→Orgo handoff;
+- keep UCKK optional for publication/distribution;
+- re-run end-to-end validation after correction.

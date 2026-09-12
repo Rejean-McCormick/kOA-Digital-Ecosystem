@@ -55,6 +55,21 @@ Design rules:
 
 ---
 
+## Konnaxion/eThikos decision handoff
+
+A finalized decision owned by Konnaxion/eThikos can directly create governed work in Orgo through an authenticated, versioned handoff:
+
+```text
+Konnaxion/eThikos DecisionRecord
+→ machine-to-machine handoff
+→ Orgo Signal
+→ Workflow / Case / Tasks
+```
+
+UCKK may receive the same decision for optional publication/distribution, but it is not required in the Konnaxion→Orgo path.
+
+---
+
 ## 2) Automation triggers (how work starts)
 
 External systems may initiate work via:

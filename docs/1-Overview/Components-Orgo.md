@@ -43,6 +43,7 @@ Orgo ties an eligible build to a rollout intent (channels/cohorts/pins), monitor
 
 ### Upstream signals
 
+* Finalized Konnaxion/eThikos decision handoffs that require governed operational work
 * Ingest/provenance signals (Chokmah) 
 * Blueprint/policy bundles (Keter/Binah) 
 * Resolution outputs (SenTient) 
@@ -118,6 +119,12 @@ Recommended traces: correlate build IDs across stage jobs and downstream distrib
 
 * Pipeline operations (Orgo): `Operations-Builds` / `Operations` 
 * Orgo-native artifacts: Build Record / Release Record / Case / Task 
+
+## Konnaxion/eThikos decision ownership
+
+For civic/public decisions owned by Konnaxion, Orgo receives the **finalized eThikos DecisionRecord/handoff directly from Konnaxion**. Orgo validates/deduplicates that handoff and creates governed work; it does not become the owner of the civic decision.
+
+UCKK may independently publish/display the decision, but it is not a required relay to Orgo. Smart Vote/EkoH readings may inform the eThikos decision process but are not, by themselves, the Orgo execution trigger.
 
 ## Operational coordination surface (current implementation)
 

@@ -95,8 +95,9 @@ Typical inputs include:
 - validated plans;
 - mandate constraints;
 - policy constraints;
-- Smart Vote / EkoH decision readings;
-- ethiKos deliberation outputs;
+- finalized Konnaxion/eThikos DecisionRecords and direct decision handoffs;
+- Smart Vote / EkoH decision readings as advisory/context inputs;
+- ethiKos deliberation outputs that are not yet decisions;
 - Architect-Strategy plans;
 - Kristal references;
 - Runtime Pack references;
@@ -106,6 +107,8 @@ Typical inputs include:
 - feedback requiring action.
 
 Execution should not receive vague intention alone. It should receive enough structure to produce governed work.
+
+For Konnaxion-owned civic decisions, the normal trigger is a finalized **eThikos DecisionRecord handed directly to Orgo**. UCKK publication is optional and does not sit in this mandatory path.
 
 ---
 

@@ -42,7 +42,7 @@ flowchart TD
 * **Orgo (control plane):** orchestrates stages, enforces gates, turns governed Signals into immutable WorkflowVersion-driven Cases/Tasks, records operational evidence, and drives durable external effects through IntegrationOperations/outbox delivery.
 * **SenTient (resolver):** turns ambiguous surfaces into explicit resolution outputs (keeps ambiguity explicit when unresolved).
 * **Kristal (truth pivot):** compiles canonical truth artifacts (Exchange) and derived offline artifacts (Runtime Pack).
-* **Konnaxion (distribution + platform):** verifies/activates/rolls back packs; powers offline-first delivery.
+* **Konnaxion / eThikos (civic decision + platform):** structures deliberation and finalized decisions in eThikos, can push finalized decision handoffs directly to Orgo, and also provides distribution/runtime-pack capabilities where deployed.
 * **Architect (renderer):** produces deterministic outputs that cannot introduce new facts and must trace.
 * **SwarmCraft (execution):** executes tasks under constraints; emits telemetry.
 

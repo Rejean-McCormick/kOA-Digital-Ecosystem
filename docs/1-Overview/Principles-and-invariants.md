@@ -70,3 +70,10 @@ If you’re reviewing a change, confirm:
 - Output is deterministic under pinned context (including error behavior).
 - Rendering cannot invent facts and always provides trace coverage or deterministic refusal.
 - Activation is atomic and rollback target selection is deterministic.
+
+## 11) Decision authority stays with the decision owner
+
+- For Konnaxion civic/public decisions, the finalized decision is owned by **Konnaxion/eThikos**.
+- Orgo may receive that decision directly and turn it into governed work, but does not become the civic decision authority.
+- UCKK may publish/distribute/present the decision, but is optional and does not become a mandatory authority or relay.
+- Smart Vote/EkoH outputs are transparent readings/inputs unless the eThikos decision contract explicitly assigns them another role.

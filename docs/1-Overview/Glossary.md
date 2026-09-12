@@ -64,7 +64,13 @@ Verification that an artifact/pack is unmodified and complete (e.g., hash/signat
 The truth compilation subsystem and the normative source for Kristal artifact contracts (schemas/canonicalization/signing rules).
 
 ## Konnaxion
-The distribution/runtime platform that fetches/caches packs, verifies them fail-closed, activates atomically, and supports deterministic rollback.
+The civic/public and platform system that hosts eThikos deliberation/decision flows and related application surfaces. A finalized eThikos decision can be handed directly to Orgo as governed-work input. Konnaxion may also provide Runtime Pack distribution/verification/activation capabilities in deployments that use that facet.
+
+## eThikos
+The Konnaxion deliberation and public decision pipeline. For Konnaxion-owned civic decisions, the finalized eThikos DecisionRecord is the authoritative source event for a direct handoff to Orgo. Smart Vote/EkoH outputs are readings/inputs unless the decision contract explicitly gives them another role.
+
+## UCKK
+An optional publication/distribution/learning surface in this integration context. UCKK may present or relay Konnaxion decisions, but it is not the owner of the eThikos decision and is not a mandatory hop between Konnaxion and Orgo.
 
 ## Last-known-good (LKG)
 A known safe pack/version that can be selected deterministically as a rollback target.
