@@ -1,6 +1,6 @@
 # Integration — Interaction Kernel
 
-Interaction Kernel (IK) is the **target system-of-systems interoperability protocol/Profile layer** for cross-product interactions such as Konnaxion↔Orgo and ecosystem↔Da’at.
+Interaction Kernel (IK) is the **target system-of-systems interoperability protocol/Profile layer** for cross-product interactions such as Konnaxion↔Orgo and ecosystem↔Da’at. IK is transport/protocol semantics, not a participant database or Kristal artifact store.
 
 ## Status boundary
 
@@ -27,7 +27,8 @@ Planned/mapped Profiles include:
 - Konnaxion↔Orgo is direct by default; no forced Kristal hop.
 - Da’at remains the anti-corruption/mapping boundary for IK-facing Kristal work.
 - Profile admission does not imply Kristal validation/recognition.
-- Source-owned artifacts remain source-owned.
+- Source-owned artifacts remain source-owned; ArtifactRef/ExportManifest identify immutable boundary artifacts without moving the live database record.
+- IK must not create a distributed transaction spanning product databases and Kristal; owners commit locally and reconcile durable cross-system effects asynchronously.
 - Durable interactions preserve idempotency identity and reconciliation.
 
 ## Adoption claim

@@ -18,7 +18,7 @@ canonicalization_version 1
 
 - verify the exact Kristal pin expected by the active Profile;
 - validate the IK-side request/profile/admission requirements;
-- map source-owned exports into Kristal-native Structured Epistemic State or other explicitly supported inputs;
+- map immutable source-owned exports/snapshots into Kristal-native Structured Epistemic State or other explicitly supported inputs;
 - invoke Kristal-native contracts/tools;
 - validate produced artifacts against the pinned schemas/contracts;
 - return receipts/events with Kristal-owned ArtifactRefs;
@@ -32,4 +32,7 @@ Da’at does not:
 - collapse compilation, validation and recognition into one gate;
 - interpret a signature as epistemic recognition;
 - turn Working Exchange into Reference Exchange;
-- own physical Runtime Pack activation.
+- own physical Runtime Pack activation;
+- read/write another product's live operational database as part of Kristal compilation;
+- maintain bidirectional authority synchronization between a product database and Kristal;
+- treat an optional Runtime Pack query database/index as authoritative state.

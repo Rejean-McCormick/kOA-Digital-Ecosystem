@@ -9,6 +9,7 @@ The ecosystem documentation is aligned at the ownership/contract level, but adop
 | Area | Ecosystem documentation | Current evidence / remaining work |
 |---|---|---|
 | Kristal v5 epistemic model | Aligned | Structured Epistemic State, Working/Reference separation, Reader Policy and non-universal validation gate are preserved |
+| Operational DB / Kristal / Runtime Pack boundary | Aligned | Product DBs remain mutable authorities; Kristal consumes immutable source artifacts; query/runtime stores are derived and rebuildable |
 | kOA-Linux Runtime Pack ownership | Corrected | `kristal_runtime` owns verification/compatibility/active-state/activation+rollback receipts/runtime health; Node Agent is the narrow privileged host-transition path |
 | kOA-Linux release model | Corrected | Release Set binds compatible `system`, `services`, `governance`, `knowledge` channel versions; Digital Ecosystem Release Record is deprecated as authority |
 | Runtime Activation State | Corrected | Digital Ecosystem no longer creates a parallel authoritative state beside `kristal_runtime` |
@@ -20,6 +21,27 @@ The ecosystem documentation is aligned at the ownership/contract level, but adop
 | Konnaxion↔Orgo IK handoff | Target/migration | Direct finalized DecisionRecord→Orgo path still requires explicit implementation/conformance evidence |
 | Orgo→Konnaxion durable publication | Target mapping + historical evidence | Product-level IK Profile conformance still required |
 | Da’at→Kristal v5 | Target mapping | Migration/conformance evidence remains owner-repository work |
+
+## Operational state → knowledge → materialization boundary
+
+ADR-0011 establishes the cross-system storage/authority model:
+
+```text
+Orgo/Konnaxion operational database
+  mutable + transactional + product-owned
+        │ immutable export/snapshot + provenance
+        ▼
+Da’at mapping boundary
+        ▼
+Kristal Exchange / epistemic artifacts
+  content-addressed + Kristal-owned
+        │ deterministic build
+        ▼
+Runtime Pack / query materialization
+  read-oriented + non-authoritative + rebuildable
+```
+
+This explicitly rejects cross-system dual-write authority, bidirectional operational-DB↔Kristal synchronization, and treating a Runtime Pack query database/index as an independent source of truth. IK carries versioned interactions and ArtifactRefs/ExportManifests; it is not the database or Kristal storage owner.
 
 ## Precise kOA-Linux ownership model
 

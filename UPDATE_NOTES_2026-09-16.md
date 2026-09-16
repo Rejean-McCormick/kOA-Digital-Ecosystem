@@ -13,3 +13,5 @@ This update starts from the supplied `kOA_Digital_Ecosystem.wiki(2).zip` version
 7. Reframed Interaction Kernel as the target cross-system protocol/Profile layer whose adoption must be explicit; it does not automatically replace kOA-Linux internal/component contracts.
 8. Kept Kristal v4 pages only as historical link targets; v5 remains active.
 9. Updated ADR-0009 and ADR-0010 to reflect the refined ownership/adoption model.
+10. Added ADR-0011 to formalize the three-layer authority boundary: product-owned operational state → immutable source export/Da’at mapping → Kristal knowledge artifact → derived Runtime Pack/query materialization.
+11. Clarified that IK is not a database/artifact store, Kristal is not a shared transactional database, and any database-like Runtime Pack representation must be read-only/derived/rebuildable rather than a second source of truth.

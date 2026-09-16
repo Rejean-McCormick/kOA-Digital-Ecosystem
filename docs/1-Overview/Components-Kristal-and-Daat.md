@@ -1,6 +1,6 @@
 # Kristal and Da'at
 
-Kristal is the ecosystem's **structured epistemic/reference system**. Da'at is the **Kristal integration boundary** used by the kOA ecosystem.
+Kristal is the ecosystem's **structured epistemic/reference system**. Da'at is the **Kristal integration boundary** used by the kOA ecosystem. Kristal is not the shared transactional database for Orgo, Konnaxion or other products.
 
 ## Kristal v5 lifecycle
 
@@ -44,6 +44,22 @@ A **Reference Exchange** is an Exchange recognized as a reference by declared au
 
 Validation is not a universal compile blocker. Production policies may require validation/recognition before reference publication, distribution or activation.
 
+## Operational-to-knowledge boundary
+
+The normal write path is one-way with respect to authoritative state:
+
+```text
+product-owned mutable state
+        ↓ immutable export/snapshot + provenance
+Da'at
+        ↓ Kristal-native mapping
+Structured Epistemic State / Exchange
+        ↓ deterministic derivation
+Runtime Pack / query materialization
+```
+
+Products may retain ArtifactRefs and local caches/projections, but they do not synchronize a Kristal representation bidirectionally with the live operational record. A Kristal assertion derived from an Orgo/Konnaxion record is a distinct artifact with lineage, not the same record under a second owner.
+
 ## Da'at responsibilities
 
 Da'at:
@@ -52,7 +68,8 @@ Da'at:
 - preserves source ownership and provenance;
 - preserves epistemic labels and authority scope;
 - returns ArtifactRefs/status rather than transferring domain ownership;
-- must not collapse Working and Reference status.
+- must not collapse Working and Reference status;
+- must not turn a source export into a writable shared database or introduce a second authoritative owner.
 
 Da'at does not turn an Orgo or Konnaxion record into “truth” merely because it crosses the boundary.
 

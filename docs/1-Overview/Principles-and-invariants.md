@@ -15,3 +15,7 @@
 13. **Idempotency survives retry/redrive.** Same logical key with different semantic content is a conflict.
 14. **IK adoption is explicit.** Interaction Kernel is the target cross-system Profile layer, but it does not silently replace kOA-Linux internal/component contracts.
 15. **No forced Kristal hop.** Konnaxion↔Orgo remains direct unless an adopted Profile explicitly requires Kristal.
+16. **Operational databases remain product-owned.** Kristal is not a shared transactional store and no integration creates a second writable authority for an Orgo/Konnaxion record.
+17. **Operational-to-Kristal flow is snapshot/export based.** Knowledge compilation consumes immutable source-owned exports/references with provenance; it does not rely on cross-system database writes or distributed commits.
+18. **Runtime query stores are materializations.** Any Runtime Pack table/index/columnar/read-only database representation is derived, non-authoritative and deterministically rebuildable from the referenced Kristal artifact and declared build inputs.
+19. **No bidirectional authority synchronization.** Product state may produce knowledge and consume ArtifactRefs/projections, but the product database, Kristal Exchange and Runtime Pack do not form peer writable sources of truth.

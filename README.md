@@ -2,9 +2,9 @@
 
 > System-of-systems documentation for the kOA ecosystem. This repository describes cross-system ownership, integration contracts, release/activation boundaries, and implementation-status evidence. Product repositories remain authoritative for their internal models and implementation status.
 
-**Alignment baseline:** 2026-09-16  
-**Kristal baseline:** `5.0.0-rc.1` / tag `v5.0.0-rc.1` / commit `af703bf02ee04a69a5f2ad6694fa8b8e56ae2b19`  
-**kOA-Linux baseline:** current supplied docs/contracts snapshot generated 2026-09-16  
+**Alignment baseline:** 2026-09-16
+**Kristal baseline:** `5.0.0-rc.1` / tag `v5.0.0-rc.1` / commit `af703bf02ee04a69a5f2ad6694fa8b8e56ae2b19`
+**kOA-Linux baseline:** current supplied docs/contracts snapshot generated 2026-09-16
 **Koali Spaces baseline:** current supplied docs snapshot generated 2026-09-16
 
 ## Purpose
@@ -34,6 +34,9 @@ kOA is a system of independently owned systems. This documentation answers:
 
 - **One authoritative owner per state.** Hosting, rendering, transport or projection does not transfer ownership.
 - **No cross-system database writes.** Receivers mutate only their own authoritative state.
+- **Operational state stays with its product owner.** Orgo/Konnaxion databases remain the source of truth for mutable workflow, civic, identity and application state; Kristal is not a shared transactional database.
+- **Knowledge crosses the Kristal boundary as an immutable snapshot/export.** Da’at maps source-owned exports to Kristal-native epistemic artifacts; products retain ArtifactRefs/lineage rather than dual-writing the same authoritative record into Kristal.
+- **Runtime query materializations are derived.** A Runtime Pack may carry deterministic read/query structures (for example tables, indexes, Parquet, or a profile-defined read-only database), but they are non-authoritative and rebuildable from the pinned Kristal source artifact.
 - **Kristal v5 compilation is distinct from validation and recognition.** A Working Exchange can exist before final validation/recognition where policy permits.
 - **Release channels are distinct.** kOA-Linux separates `system`, `services`, `governance` and `knowledge` channels and binds compatible versions through a Release Set.
 - **Runtime Pack activation state is not a new Digital Ecosystem artifact.** In kOA-Linux deployments, `kristal_runtime` owns Runtime Pack verification/active-state/rollback records; kOA Node Agent can execute the narrow privileged host transition where required.
@@ -56,7 +59,10 @@ Konnaxion-owned accountability / impact state
 ```
 
 ```text
-source / dataset / proposal
+Orgo/Konnaxion operational state
+        │ source-owned immutable export/snapshot
+        ▼
+Da’at mapping boundary
         ▼
 Structured Epistemic State
         ▼
@@ -66,7 +72,7 @@ validation / review / authority recognition as applicable
         ▼
 Reference Exchange when recognized
         ▼
-Runtime Pack
+Runtime Pack / deterministic query materializations
         ▼
 kOA-Linux knowledge channel + Release Set compatibility
         ▼

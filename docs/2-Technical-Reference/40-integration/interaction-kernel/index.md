@@ -1,9 +1,9 @@
 # Interaction Kernel integration
 
-**Normative for kOA ecosystem mapping:** YES  
+**Normative for kOA ecosystem mapping:** YES
 **Protocol authority:** Interaction Kernel supplied documentation/contracts
 
-Interaction Kernel (IK) is the distributed cross-system protocol used by the target ecosystem architecture. It is not a central server and does not replace participant-owned domain APIs or stores.
+Interaction Kernel (IK) is the distributed cross-system protocol used by the target ecosystem architecture. It is not a central server and does not replace participant-owned domain APIs or stores. It is not an operational database and it is not the storage location for Kristal artifacts.
 
 ## Core protocol
 
@@ -23,7 +23,7 @@ Boundary objects:
 - ArtifactRef
 - ExportManifest
 
-An ArtifactRef never transfers ownership, authority or validation status.
+An ArtifactRef never transfers ownership, authority or validation status. An ExportManifest identifies source-owned immutable boundary material; it is not permission to mutate the source database.
 
 ## Reliability
 
@@ -44,6 +44,8 @@ same key + different fingerprint  => IK_IDEMPOTENCY_CONFLICT
 - Durable commands/queries resolve to a concrete receiver.
 - Published Profile/schema versions are immutable.
 - Known incompatibility is rejected explicitly.
+- Product owners commit mutable state locally; IK does not require a distributed transaction spanning Orgo/Konnaxion/Kristal.
+- Kristal build/revision flows carry source exports/references to Da’at and return Kristal ArtifactRefs/events; they do not dual-write the same domain record into Kristal.
 
 ## Current Profiles
 

@@ -3,7 +3,13 @@
 Identity, authentication, policy authorization, resource admission, artifact verification, epistemic validation/recognition, release compatibility, privileged host operation and presentation state are distinct.
 
 ## Cross-system protocol
-Where IK is adopted, the receiver authenticates/authorizes/adopts locally. IK admission is not Kristal validation and does not replace platform admission.
+Where IK is adopted, the receiver authenticates/authorizes/adopts locally. IK admission is not Kristal validation and does not replace platform admission. IK transports protocol records and artifact references; it is not an authority database or artifact store.
+
+## Operational/epistemic ownership boundary
+Operational owners commit mutable domain state locally. An immutable export/snapshot may cross to Da’at for epistemic compilation, but the live record remains owned by its source product. Kristal owns the derived epistemic artifact, not the source operational record. No boundary requires a cross-system distributed commit.
+
+## Materialization boundary
+Runtime Pack query structures are consumption materializations. They may optimize reads but cannot silently become writable operational authority or change assertion/validation/recognition state independently of their referenced Kristal source artifact.
 
 ## kOA-Linux release boundary
 Release Set/channel compatibility is a platform release decision. It does not make an artifact epistemically valid or active.

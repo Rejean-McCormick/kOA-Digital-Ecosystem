@@ -35,7 +35,11 @@ A Structured Epistemic State may compile to a **Working Exchange** before final 
 
 A Runtime Pack declares at minimum its source Exchange reference and `source_artifact_status`. Packs derived from working and reference artifacts are not equivalent.
 
-Reader Policy and Query Contract determine how eligible content is exposed; they do not rewrite the underlying epistemic status.
+Reader Policy and Query Contract determine how eligible content is exposed; they do not rewrite the underlying epistemic status. Runtime Packs may include deterministic query-oriented materializations. Under the kOA profile, any table/index/columnar/read-only database representation embedded for performance is derived, non-authoritative and rebuildable from the referenced Kristal source artifact; it must not become the mutable application source of truth.
+
+## Operational ownership rule
+
+Orgo, Konnaxion and other products keep their mutable operational state in their own stores. Knowledge compilation starts from immutable source-owned exports/snapshots and produces separate Kristal artifacts with provenance. kOA does not require or permit a bidirectional operational-DB↔Kristal synchronization model as the authority boundary.
 
 ## kOA profile rule
 

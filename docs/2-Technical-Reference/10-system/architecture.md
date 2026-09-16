@@ -18,6 +18,24 @@ kOA is a system of independently owned systems and platform components. Integrat
 | target cross-system protocol/Profile semantics | Interaction Kernel, where explicitly adopted |
 | ecosystem-to-Kristal mapping/ACL | Da’at |
 
+## State and artifact planes
+
+kOA separates mutable operational state, epistemic artifacts and runtime/query materializations:
+
+```text
+Operational state (product-owned, mutable, transactional)
+        │ immutable export/snapshot + digest/revision
+        ▼
+Da’at mapping / ACL boundary
+        ▼
+Kristal knowledge artifact (content-addressed epistemic state/Exchange)
+        │ deterministic build
+        ▼
+Runtime Pack / query materialization (derived, read-oriented, rebuildable)
+```
+
+Ownership does not move upward through this pipeline. Orgo/Konnaxion remain authoritative for the live domain record. Kristal owns the resulting epistemic artifact. Runtime/query structures do not become a third authoritative copy. There is no required distributed transaction or bidirectional database synchronization across these layers.
+
 ## Release architecture
 
 kOA-Linux separates `system`, `services`, `governance` and `knowledge` release channels. A Release Set binds tested-compatible versions across channels.
