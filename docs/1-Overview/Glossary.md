@@ -1,136 +1,52 @@
 # Glossary
 
-## Activation
-Making a specific Runtime Pack the currently active pack for a target scope (environment/channel/cohort), typically as an atomic switch.
+## ArtifactRef
+Boundary reference to a source-owned artifact. It does not transfer ownership.
 
-## Artifact
-A versioned, typed output that crosses a component boundary (inputs/outputs/results/evidence). Artifacts are used to make runs reproducible and auditable.
+## Authority Recognition
+Kristal v5 scoped recognition decision, distinct from signature and validation.
 
-## Audit trail
-The recorded evidence showing what ran, what was produced, what was released, where it went, and why decisions were made.
+## Build Record
+Optional Digital Ecosystem correlation/reproducibility evidence referencing owner artifacts.
 
-## Blueprint
-An auditable plan for a run that declares required inputs, gates, determinism constraints, and rollback expectations.
+## Da’at
+Mapping/ACL boundary between ecosystem-facing integration and Kristal-native contracts.
 
-## Build
-A completed pipeline run that produced eligible outputs (e.g., a Runtime Pack) and recorded evidence about inputs, policies, gates, and results.
+## DecisionRecord
+Konnaxion-owned governance/decision handoff artifact.
 
-## Canonical truth
-The system’s authoritative, compiled knowledge state. It exists only after deterministic validation and compilation.
+## Interaction Kernel (IK)
+Target distributed cross-system protocol/Profile layer. Adoption is explicit and does not automatically replace kOA-Linux internal/component communication contracts.
 
-## Channel
-A named release lane (e.g., canary/stable/lts) that defines rollout behavior and guardrails.
+## Koali Spaces
+Optional presentation/composition subsystem owning Space lifecycle, routing/shell and admitted application surfaces, but not product business or epistemic authority.
 
-## Claim
-A proposed statement about the world (an assertion) produced by extraction, before validation/compilation.
+## Release Set
+kOA-Linux platform artifact binding tested-compatible versions across independent `system`, `services`, `governance` and `knowledge` channels.
 
-## Claim-IR
-A structured representation of claims intended for validation/compilation. Pre-truth.
+## kristal_runtime
+Native kOA-Linux component owning local Runtime Pack verification/compatibility, active Runtime Pack state, activation/rollback receipts and runtime health.
 
-## Cohort
-A subset of a channel (by tenant group, region, rollout percentage, etc.) used to ramp exposure gradually.
+## kOA Node Agent
+Native kOA-Linux component for narrow authorized node-local lifecycle/activation/recovery operations. It does not create release or epistemic authority.
 
-## Compile / Compilation
-Transforming validated knowledge into canonical truth artifacts and derived runtime artifacts (e.g., Runtime Packs).
+## Reader Policy
+Kristal v5 policy controlling eligible visible material while preserving labels.
 
-## Conformance
-Meeting the required integration and safety expectations (e.g., pinned dependencies, schema validation, fail-closed behavior, determinism).
+## Reference Exchange
+Kristal Exchange recognized as a reference for declared authority/scope.
 
-## Determinism
-The property that the same pinned inputs, policies, and configuration produce the same outputs (or canonically identical outputs).
+## Runtime Activation State
+Deprecated Digital Ecosystem compatibility concept for kOA-Linux. Use `kristal_runtime` owner records and relevant receipts instead.
 
-## Distribution
-Making a Runtime Pack available to runtime systems (fetch/cache) without implying activation.
+## Runtime Pack
+Kristal runtime projection admitted as a kOA-Linux `knowledge`-channel artifact when used on kOA-Linux.
 
-## Exchange
-A standardized bundle of artifacts used to move validated/compiled knowledge across boundaries (as defined by Kristal).
+## Space activation
+Koali Spaces presentation/application-composition state. It is not Runtime Pack activation.
 
-## Fail-closed
-If a required check cannot be completed or fails, the system must not proceed (e.g., no activation without verification).
+## Structured Epistemic State
+Primary Kristal v5 structured epistemic representation.
 
-## Feedback
-Signals or observations produced downstream (runtime/rendering/execution) that are turned into new governed work, not direct truth mutation.
-
-## Gate
-A pass/fail checkpoint that must succeed before moving to the next stage (e.g., validation gate, verification gate).
-
-## Ingest
-Capturing inputs as immutable, provenance-linked snapshots so they can be audited and replayed.
-
-## Integrity check
-Verification that an artifact/pack is unmodified and complete (e.g., hash/signature/manifest checks).
-
-## Kristal
-The truth compilation subsystem and the normative source for Kristal artifact contracts (schemas/canonicalization/signing rules).
-
-## Konnaxion
-The civic/public and platform system that hosts eThikos deliberation/decision flows and related application surfaces. A finalized eThikos decision can be handed directly to Orgo as governed-work input. Konnaxion may also provide Runtime Pack distribution/verification/activation capabilities in deployments that use that facet.
-
-## eThikos
-The Konnaxion deliberation and public decision pipeline. For Konnaxion-owned civic decisions, the finalized eThikos DecisionRecord is the authoritative source event for a direct handoff to Orgo. Smart Vote/EkoH outputs are readings/inputs unless the decision contract explicitly gives them another role.
-
-## UCKK
-An optional publication/distribution/learning surface in this integration context. UCKK may present or relay Konnaxion decisions, but it is not the owner of the eThikos decision and is not a mandatory hop between Konnaxion and Orgo.
-
-## Last-known-good (LKG)
-A known safe pack/version that can be selected deterministically as a rollback target.
-
-## Mandate Bundle
-The governance and policy context used to run and release safely (rules, constraints, approvals, and references).
-
-## Malkuth
-The runtime environment that serves queries and execution over the currently active pack in a safe, repeatable way.
-
-## Node
-A named component with a clear responsibility and defined artifact boundaries.
-
-## Orgo
-The control plane: orchestrates stage ordering, enforces gates, records operational evidence, and drives releases.
-
-## Pack / Runtime Pack
-A portable, offline-capable bundle of compiled knowledge and required runtime metadata used by runtime systems.
-
-## Pinning / Version pinning
-Locking dependencies, policies, or packs to a specific version/reference to prevent “floating latest” behavior.
-
-## Policy
-The rules and constraints that govern what is allowed (validation requirements, rollout rules, downgrade prevention, logging/redaction, etc.).
-
-## Provenance
-The recorded origin and lineage of inputs and outputs (what source data was used, how it was processed, and by which versions).
-
-## Renderer
-A component that produces user-facing outputs deterministically from the active pack and must not introduce new facts.
-
-## Resolution
-The process of mapping ambiguous surfaces to explicit identifiers and normalized literals, preserving ambiguity explicitly when unresolved.
-
-## Resolved Claim-IR
-Claim-IR after resolution: explicit identifiers/normalized literals plus explicit ambiguity and diagnostics as needed.
-
-## Release
-The operational act of distributing and activating a specific Runtime Pack in target environments/channels/cohorts.
-
-## Rollback
-Restoring a previous pack/version (typically LKG or pinned prior) via a controlled, atomic activation when a release fails or regresses.
-
-## Schema
-A formal contract describing artifact structure and validation requirements.
-
-## Stage spine
-The end-to-end lifecycle of stages from ingest through feedback, used as the shared mental model for the system.
-
-## Telemetry
-Operational signals emitted by components (metrics/logs/traces/events) used for monitoring, debugging, and audit support.
-
-## Tenant isolation
-Ensuring one tenant’s data, behavior, and failures cannot affect another tenant.
-
-## Trace
-A record linking a user-facing output back to the canonical sources/artifacts it was derived from (for transparency and auditability).
-
-## Validate / Validation
-Deterministic acceptance/rejection of resolved claims against rules and constraints, producing a validation report.
-
-## Verification
-Runtime-side checks (integrity/compatibility/policy) that must pass before activation is allowed.
+## Working Exchange
+Deterministically compiled Kristal Exchange that may precede final validation/recognition.

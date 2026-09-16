@@ -1,102 +1,19 @@
 # Observability
 
-This page defines the **minimum observability** needed to operate kOA safely: detect failures early, explain outcomes deterministically, and preserve evidence for audit and incident response.
+Observability follows authoritative owners rather than creating a synthetic global state.
 
-kOA treats observability as part of the pipeline: Orgo includes an explicit **Observe** stage (metrics/events/logs) before feedback/cases are created.
+## Runtime Pack
 
----
+Observe `kristal_runtime` verification, active Runtime Pack identity, activation/rollback receipts and runtime health. Observe kOA Node Agent receipts separately when a privileged host transition occurs.
 
-## Goals
+## Release
 
-1. **Fail fast, fail closed**: if the system cannot verify/validate, it must not proceed and must emit enough telemetry to diagnose without guesswork.  
-2. **Deterministic diagnosis**: failures should produce **stable reason codes** and repeatable outcomes.  
-3. **End-to-end correlation**: every signal ties back to a build/release/task and the active pack lineage.  
-4. **Audit-grade evidence**: key actions and decisions are reconstructable (especially activation, rollback, and trust events).
+Observe Release Set/channel compatibility independently from Runtime Pack verification/activation.
 
----
+## Koali Spaces
 
-## Correlation model (what every signal must reference)
+Observe Space activation, runtime registration, readiness and presentation state separately from product business state and Kristal Runtime Pack state.
 
-At minimum, emit correlation IDs for:
-- **Build** (pipeline execution)  
-- **Release** (promotion/publish action)
-- **Task** (Orgo Task identity + attempt identity)  
-- **Runtime Pack** (pack ID / manifest ref)  
-- **Target scope** (tenant / env / channel / cohort / device group), as applicable
+## Cross-system protocol
 
-Do not embed large payloads in-band; emit **references to logs/traces** and content-addressed artifacts instead.
-
----
-
-## Required telemetry (baseline)
-
-Integrations and operators should emit, at minimum:
-- build/release correlation IDs (from Orgo)
-- stage timing (start/end/fail)
-- stable error codes + human-readable summaries
-- references to logs/traces (not raw blobs in-band)
-
-If you operate Konnaxion, also emit **Konnaxion State** records and activation/rollback outcomes with health signals.
-
----
-
-## Signals by category
-
-### Metrics
-Use metrics to answer: “Is it healthy?” and “Is it getting worse?”
-
-Typical examples (not exhaustive):
-- Pipeline: stage success/failure rate; latency per stage; determinism/rebuild pass rate
-- Distribution/runtime (Konnaxion): fetch latency/failure, verification pass/fail by reason, activation success/time, rollback frequency/triggers, cache utilization and corruption detection, active-pack drift
-- Ingest (Chokmah): ingest req/success/failure, bytes/throughput, latency per connector/source type, retries/idempotency hits, quarantine/rejection rates by reason
-
-### Logs (structured)
-Logs must be structured and include correlation IDs and stable reason codes.  
-Example ingest log fields: request id, source descriptor hash, snapshot refs, policy decisions, failure codes, diagnostics pointers.
-
-### Traces
-Traces should connect:
-- Orgo stage execution → produced artifact refs → downstream distribution/activation attempts
-- Task dispatch (Orgo Task) → executor run → result + telemetry refs
-
-### Events (audit / operational)
-Emit explicit events for:
-- stage transitions (start/finish/fail) with reason codes
-- key activation actions (verify/activate/rollback/pin/unpin/revoke)
-- trust material events (key creation/rotation/revocation; verification failures)
-
-### Operational artifacts as observability
-Some observability is captured as **typed artifacts**, not just logs:
-- **Konnaxion State** (installed/active/pinned, last attempt status, health, telemetry refs)  
-- Orgo Case/Task audit trails for decisions and remediation work
-
----
-
-## Release and rollback observability (must-have)
-
-### During activation and rollback
-Emit, per target: activation attempt events, preflight outcomes (pass/fail + reason codes), post-activation health results, and final active pack ID.
-
-### Dashboards and alerts should include
-- rollback success rate by channel/environment
-- time-to-restore by incident
-- rollback loops (flapping)
-- divergence: reported active pack ID vs expected
-
----
-
-## Diagnostic standards
-
-- **Stable reason codes**: required for fail-closed behavior and repeatable triage.  
-- **Deterministic diagnostics** at activation boundaries (verification failures must produce stable reason codes).  
-- **Diagnostics pointers**: prefer `diagnostics_ref` / `telemetry_refs` over dumping blobs into control-plane records.
-
----
-
-## Minimal checklist
-
-- [ ] Every stage emits start/end/fail with duration and stable reason code.  
-- [ ] Every signal includes build/release/task correlation IDs.  
-- [ ] Konnaxion emits verification/activation/rollback signals and Konnaxion State updates.  
-- [ ] Rollback dashboards include success rate, TTR, flapping, and drift detection.  
-- [ ] Trust events (rotate/revoke/verify failures) are recorded and routed to security monitoring and incident response.
+Where Interaction Kernel Profiles are adopted, observe delivery/retry/idempotency/reconciliation independently from target-domain completion. Until product/platform adoption is explicit, do not label all kOA-Linux internal interactions as IK traffic.

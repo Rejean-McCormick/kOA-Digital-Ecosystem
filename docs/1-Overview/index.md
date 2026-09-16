@@ -1,97 +1,64 @@
 # kOA Digital Ecosystem
 
-kOA is a **contract-driven pipeline** that turns raw inputs into **validated, canonical knowledge** (via Kristal) and then safely **distributes and uses** that knowledge in **offline-capable** products and workflows.
+kOA is a system of systems connecting civic decisions, governed work, epistemic artifacts, platform/runtime controls and presentation composition through explicit contracts.
 
-This wiki focuses on **features**, **operational behavior**, and **how the pieces fit together**—without diving into schema-level technicalities.
+## System map
 
----
+```text
+Konnaxion  <------ target cross-system protocol ------>  Orgo
+    \                                                   /
+     +---------------------> Da’at ---------------------+
+                              |
+                       Kristal-native contracts
+                              |
+                           Kristal
+                              |
+                       Runtime Pack artifacts
+                              |
+          kOA-Linux knowledge channel / Release Set
+                              |
+                        kristal_runtime
+                              |
+             kOA Node Agent (privileged transition,
+                    only when required by profile)
 
-## System at a glance
-
-### The stage spine (end-to-end)
-
-1. **Ingest** raw inputs (snapshots + provenance)
-2. **Extract** structured proposals (claims)
-3. **Resolve** ambiguity (entities, properties, literals)
-4. **Validate** deterministically (accept/reject with a report)
-5. **Compile** canonical knowledge + a portable offline pack
-6. **Distribute** packs with fail-closed verification
-7. **Render** deterministic user-facing output with trace coverage
-8. **Execute** work (tasks) with telemetry
-9. **Feedback** becomes new governed work (never mutates canon)
-
-```mermaid
-flowchart TD
-  A[Mandate + Blueprint] --> B[Ingest Inputs]
-  B --> C[Extract -> Claim proposals]
-  C --> D[Resolve -> Explicit resolutions]
-  D --> E{Validate?}
-  E -- fail --> X[Stop: No Canon / No Pack / No Release]
-  E -- pass --> F[Compile -> Exchange + Runtime Pack]
-  F --> G{Verify for Activation?}
-  G -- fail --> Y[Reject: Fail-Closed / Rollback-or-Stay]
-  G -- pass --> H[Distribute Runtime Pack]
-  H --> I[Render -> Render Bundle + trace_map]
-  I --> J[Execute Tasks -> Telemetry]
-  J --> K[Feedback -> New Case/Task]
+Koali Spaces sits above admitted products as an optional presentation layer.
+It does not acquire their business, workflow, epistemic or host authority.
 ```
----
 
-## Core components (who does what)
+## Owners
 
-* **Orgo (control plane):** orchestrates stages, enforces gates, turns governed Signals into immutable WorkflowVersion-driven Cases/Tasks, records operational evidence, and drives durable external effects through IntegrationOperations/outbox delivery.
-* **SenTient (resolver):** turns ambiguous surfaces into explicit resolution outputs (keeps ambiguity explicit when unresolved).
-* **Kristal (truth pivot):** compiles canonical truth artifacts (Exchange) and derived offline artifacts (Runtime Pack).
-* **Konnaxion / eThikos (civic decision + platform):** structures deliberation and finalized decisions in eThikos, can push finalized decision handoffs directly to Orgo, and also provides distribution/runtime-pack capabilities where deployed.
-* **Architect (renderer):** produces deterministic outputs that cannot introduce new facts and must trace.
-* **SwarmCraft (execution):** executes tasks under constraints; emits telemetry.
+- **Konnaxion** — civic/public state and DecisionRecords.
+- **Orgo** — workflow/work state and durable external operations.
+- **Kristal** — epistemic artifacts and Runtime Pack semantics.
+- **kOA-Linux** — platform profiles, trust/policy/resources, artifact admission and release-channel coordination.
+- **kristal_runtime** — Runtime Pack verification, compatibility, active Runtime Pack selection/state, activation/rollback receipts and runtime health in kOA-Linux.
+- **kOA Node Agent** — narrow authorized node-local lifecycle and privileged host operations.
+- **Koali Spaces** — optional shell/presentation composition and Space lifecycle.
+- **Interaction Kernel** — target interoperability protocol/Profile layer where adopted.
+- **Da’at** — ecosystem/IK-to-Kristal mapping/ACL boundary.
 
----
+## Runtime Pack activation
 
-## The rules that keep the ecosystem safe
+The earlier statement “kOA-Linux owns Runtime Pack activation” is too broad. In the current kOA-Linux contracts:
 
-* **Truth boundary:** only validated + compiled artifacts become canonical; downstream does not mutate canon.
-* **No compile on fail:** failed validation blocks compilation/publication.
-* **Fail-closed distribution:** verification/compatibility must pass before activation; otherwise stay on current/last-known-good.
-* **Atomic activation + deterministic rollback:** no partial activation; rollback is explicit and reproducible.
-* **No new facts downstream:** rendering must trace to validated lineage or refuse deterministically.
+```text
+kristal_runtime
+  owns verification state + active Runtime Pack record + activation/rollback receipts
 
-See: [Principles & invariants](Principles-and-invariants.md)
+kOA Node Agent
+  can execute the narrow privileged host transition required by the active profile
 
----
+Release Set
+  binds compatible versions across release channels
+```
 
-## What this wiki covers (and what it doesn’t)
+Digital Ecosystem therefore references those owners rather than creating a separate global Runtime Activation State.
 
-### In scope here
+## Koali Spaces
 
-* What each component is responsible for, and how they cooperate
-* Operational behavior: gates, releases, rollback, observability, incident response
-* Integration expectations (without duplicating external specs)
+Koali Spaces is presentation infrastructure. Its Space/application activation is a UI/composition lifecycle and **must not be interpreted as Kristal Runtime Pack activation**.
 
-### Out of scope (by design)
+## Implementation status
 
-* Field-level Kristal schemas, canonicalization mechanics, signature formats, etc.
-
-See: [Non-goals](Non-goals.md)
-
----
-
-## How to navigate
-
-* Want the flow: [Lifecycle](Lifecycle.md)
-* Want the parts: [Components](Components.md)
-* Want what crosses boundaries: [Artifacts](Artifacts.md)
-* Want how it runs in production: [Operations](Operations.md)
-* Want external integration: [Integration](Integration.md)
-* Need vocabulary and quick answers: [Glossary](Glossary.md), [FAQ](FAQ.md)
-
----
-
-## Who this is for
-
-* **Implementers:** building services that produce/consume artifacts and participate in gates
-* **Integrators:** connecting external systems to ingestion, distribution, or rendering
-* **Operators:** running builds, releases, rollbacks, incident response, and audits
-* **Architects:** evolving contracts and invariants through ADRs
-
-
+Target architecture and product implementation evidence are distinct. Current Koali evidence includes a later successful Konnaxion pilot, while some product reference pages still describe that pilot as pending. Interaction Kernel remains target cross-system architecture until explicit adoption/conformance is published by the owning systems/platform.

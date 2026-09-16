@@ -1,67 +1,26 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "urn:koa:schema:build-record:1",
-  "title": "Build Record",
+  "$id": "urn:koa:schema:build-record:2",
+  "title": "kOA Build Record v2",
   "type": "object",
   "additionalProperties": false,
-  "required": [
-    "build_id",
-    "record_version",
-    "created_at",
-    "mandate_bundle_ref",
-    "inputs",
-    "pipeline",
-    "stages",
-    "outputs"
-  ],
+  "required": ["build_id", "record_version", "created_at", "owner_system", "inputs", "pipeline", "statuses", "stages", "outputs"],
   "properties": {
-    "build_id": {
-      "type": "string",
-      "minLength": 1,
-      "description": "kOA build identifier (control-plane identifier; not content-addressed)."
-    },
-    "record_version": {
-      "type": "string",
-      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
-      "description": "Version of this Build Record envelope."
-    },
-    "created_at": {
-      "type": "string",
-      "format": "date-time"
-    },
-    "trigger": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "type": {
-          "type": "string",
-          "enum": ["manual", "schedule", "webhook", "incident", "release", "other"]
-        },
-        "actor": { "type": "string" },
-        "reason": { "type": "string" },
-        "source_ref": { "$ref": "#/$defs/content_ref" }
-      }
-    },
-    "mandate_bundle_ref": {
-      "$ref": "#/$defs/content_ref",
-      "description": "Content-addressed reference to the kOA Mandate Bundle used for this build."
-    },
+    "build_id": {"type": "string", "minLength": 1},
+    "record_version": {"const": "2.0.0"},
+    "created_at": {"type": "string", "format": "date-time"},
+    "owner_system": {"type": "string", "minLength": 1},
+    "correlation_id": {"type": "string", "minLength": 1},
+    "interaction_profile": {"type": "string", "minLength": 1},
+    "idempotency_key": {"type": "string", "minLength": 1},
     "inputs": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["snapshots"],
+      "required": ["artifact_refs"],
       "properties": {
-        "snapshots": {
-          "type": "array",
-          "minItems": 1,
-          "items": { "$ref": "#/$defs/content_ref" },
-          "description": "Content-addressed references to immutable input snapshots."
-        },
-        "snapshot_manifest_ref": {
-          "$ref": "#/$defs/content_ref",
-          "description": "Optional content-addressed reference to a snapshot manifest (provenance/metadata)."
-        },
-        "notes": { "type": "string" }
+        "artifact_refs": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/artifact_ref"}},
+        "snapshot_refs": {"type": "array", "items": {"$ref": "#/$defs/artifact_ref"}},
+        "export_manifest_refs": {"type": "array", "items": {"$ref": "#/$defs/artifact_ref"}}
       }
     },
     "pipeline": {
@@ -69,117 +28,94 @@
       "additionalProperties": false,
       "required": ["pipeline_id", "toolchain"],
       "properties": {
-        "pipeline_id": {
-          "type": "string",
-          "minLength": 1,
-          "description": "Identifier for the pipeline definition used (e.g., a workflow name/version)."
-        },
-        "toolchain": {
+        "pipeline_id": {"type": "string", "minLength": 1},
+        "toolchain": {"type": "object", "additionalProperties": {"type": "string"}},
+        "source_commit": {"type": "string"},
+        "kristal_pin": {
           "type": "object",
           "additionalProperties": false,
+          "required": ["version", "tag", "commit", "canonicalization_profile", "canonicalization_version"],
           "properties": {
-            "orgo_version": { "type": "string" },
-            "compiler_version": { "type": "string" },
-            "validator_version": { "type": "string" },
-            "resolver_version": { "type": "string" },
-            "render_version": { "type": "string" }
-          },
-          "description": "Pinned toolchain versions used by the build."
-        },
-        "source": {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "repo": { "type": "string" },
-            "commit": { "type": "string" },
-            "branch": { "type": "string" },
-            "build_system": { "type": "string" }
-          }
-        },
-        "environment": {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "env": { "type": "string" },
-            "region": { "type": "string" },
-            "runner_id": { "type": "string" }
+            "version": {"type": "string"},
+            "tag": {"type": "string"},
+            "commit": {"type": "string", "minLength": 7},
+            "canonicalization_profile": {"type": "string"},
+            "canonicalization_version": {"type": "string"},
+            "schema_set_digest": {"type": "string"}
           }
         }
+      }
+    },
+    "statuses": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["compile_status", "validation_status", "recognition_status", "publication_status", "activation_status"],
+      "properties": {
+        "compile_status": {"enum": ["NOT_STARTED", "RUNNING", "SUCCEEDED", "FAILED", "SKIPPED"]},
+        "validation_status": {"enum": ["not_evaluated", "in_review", "validated", "conditionally_validated", "disputed", "rejected", "revoked", "not_applicable"]},
+        "recognition_status": {"enum": ["recognized", "conditionally_recognized", "under_review", "disputed", "rejected", "deprecated", "revoked", "not_evaluated", "not_applicable"]},
+        "publication_status": {"enum": ["NOT_REQUESTED", "PENDING", "PUBLISHED", "FAILED", "WITHDRAWN", "NOT_APPLICABLE"]},
+        "activation_status": {"enum": ["NOT_REQUESTED", "PENDING", "ACTIVE", "FAILED", "ROLLED_BACK", "NOT_APPLICABLE"]}
       }
     },
     "stages": {
       "type": "array",
-      "minItems": 1,
-      "items": { "$ref": "#/$defs/stage_record" },
-      "description": "Ordered stage execution records for the build."
+      "items": {"$ref": "#/$defs/stage_record"}
     },
     "outputs": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["validation", "kristal"],
+      "required": ["working_outputs", "reference_outputs", "validation_refs", "recognition_refs", "runtime_pack_refs"],
       "properties": {
-        "validation": {
-          "type": "object",
-          "additionalProperties": false,
-          "required": ["report_ref", "status"],
-          "properties": {
-            "report_ref": { "$ref": "#/$defs/content_ref" },
-            "status": { "type": "string", "enum": ["PASS", "FAIL"] }
-          },
-          "description": "Opaque reference to the validation report artifact produced by the validator."
-        },
-        "kristal": {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "exchange_ref": {
-              "$ref": "#/$defs/content_ref",
-              "description": "Opaque reference to the Kristal Exchange (or its manifest) produced by the Kristal compiler."
-            },
-            "runtime_pack_ref": {
-              "$ref": "#/$defs/content_ref",
-              "description": "Opaque reference to the Runtime Pack (or its manifest) produced by the Kristal compiler."
-            }
-          },
-          "description": "Kristal-produced artifacts referenced opaquely (no field-level duplication)."
-        },
-        "render_bundles": {
-          "type": "array",
-          "items": { "$ref": "#/$defs/content_ref" },
-          "description": "Optional content refs for deterministic Render Bundles produced downstream."
-        }
+        "working_outputs": {"type": "array", "items": {"$ref": "#/$defs/artifact_ref"}},
+        "reference_outputs": {"type": "array", "items": {"$ref": "#/$defs/artifact_ref"}},
+        "validation_refs": {"type": "array", "items": {"$ref": "#/$defs/artifact_ref"}},
+        "recognition_refs": {"type": "array", "items": {"$ref": "#/$defs/artifact_ref"}},
+        "runtime_pack_refs": {"type": "array", "items": {"$ref": "#/$defs/runtime_pack_ref"}},
+        "reader_policy_refs": {"type": "array", "items": {"$ref": "#/$defs/artifact_ref"}}
       }
     },
-    "checksums": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "build_record_hash": { "$ref": "#/$defs/hash_ref" }
-      },
-      "description": "Optional integrity data for this record as stored/transported."
-    }
+    "reason_codes": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+    "evidence_refs": {"type": "array", "items": {"$ref": "#/$defs/artifact_ref"}},
+    "record_hash": {"$ref": "#/$defs/hash_ref"}
   },
   "$defs": {
-    "content_ref": {
+    "artifact_ref": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["alg", "value"],
+      "required": ["owner", "artifact_type", "id"],
       "properties": {
-        "alg": {
-          "type": "string",
-          "minLength": 1,
-          "description": "Hash/identifier algorithm name (e.g., sha256)."
-        },
-        "value": {
-          "type": "string",
-          "minLength": 1,
-          "description": "Algorithm-specific value (e.g., hex digest, CID)."
-        },
-        "uri": {
-          "type": "string",
-          "format": "uri",
-          "description": "Optional retrieval location; not identity."
+        "owner": {"type": "string", "minLength": 1},
+        "artifact_type": {"type": "string", "minLength": 1},
+        "id": {"type": "string", "minLength": 1},
+        "digest": {"type": "string"},
+        "locator": {"type": "string"},
+        "contract_version": {"type": "string"}
+      }
+    },
+    "runtime_pack_ref": {
+      "allOf": [
+        {"$ref": "#/$defs/artifact_ref"},
+        {
+          "type": "object",
+          "properties": {
+            "source_artifact_status": {"enum": ["working", "under_review", "recognized", "reference", "deprecated", "superseded", "revoked"]}
+          }
         }
+      ]
+    },
+    "stage_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "status"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1},
+        "status": {"enum": ["PASS", "FAIL", "SKIP", "RUNNING"]},
+        "started_at": {"type": "string", "format": "date-time"},
+        "ended_at": {"type": "string", "format": "date-time"},
+        "artifacts_in": {"type": "array", "items": {"$ref": "#/$defs/artifact_ref"}},
+        "artifacts_out": {"type": "array", "items": {"$ref": "#/$defs/artifact_ref"}},
+        "reason_codes": {"type": "array", "items": {"type": "string"}}
       }
     },
     "hash_ref": {
@@ -187,39 +123,8 @@
       "additionalProperties": false,
       "required": ["alg", "value"],
       "properties": {
-        "alg": { "type": "string", "minLength": 1 },
-        "value": { "type": "string", "minLength": 1 }
-      }
-    },
-    "stage_record": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["name", "status"],
-      "properties": {
-        "name": {
-          "type": "string",
-          "minLength": 1,
-          "description": "Stage identifier (e.g., ingest, extract, resolve, validate, compile, distribute)."
-        },
-        "status": {
-          "type": "string",
-          "enum": ["PASS", "FAIL", "ERROR", "SKIP"]
-        },
-        "started_at": { "type": "string", "format": "date-time" },
-        "ended_at": { "type": "string", "format": "date-time" },
-        "inputs": {
-          "type": "array",
-          "items": { "$ref": "#/$defs/content_ref" }
-        },
-        "outputs": {
-          "type": "array",
-          "items": { "$ref": "#/$defs/content_ref" }
-        },
-        "metrics": {
-          "type": "object",
-          "additionalProperties": true
-        },
-        "notes": { "type": "string" }
+        "alg": {"type": "string"},
+        "value": {"type": "string"}
       }
     }
   }

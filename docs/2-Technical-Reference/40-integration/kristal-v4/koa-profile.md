@@ -1,3 +1,5 @@
+> **HISTORICAL — Kristal v4 integration is superseded by `../kristal-v5/`. Retained only for migration/history.**
+
 # kOA Profile for Kristal v4 (Pinned)
 
 **Normative for kOA:** YES  

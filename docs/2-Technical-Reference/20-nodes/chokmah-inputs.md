@@ -35,7 +35,7 @@ Chokmah MAY:
 Chokmah MUST NOT:
 
 - Interpret, enrich, or “fix” content in a way that changes meaning without recording it explicitly as a derived artifact.
-- Generate or alter canonical truth artifacts.
+- Generate or alter Kristal validation/recognition/reference artifacts.
 
 ---
 
@@ -167,4 +167,4 @@ Chokmah SHOULD emit:
 - `docs/2-Technical-Reference/50-operations/pipeline.md`
 - `docs/2-Technical-Reference/30-artifacts/build-record.md`
 - `docs/2-Technical-Reference/30-artifacts/mandate-bundle.md`
-- `docs/2-Technical-Reference/40-integration/kristal-v4/contract-pointers.md`
+- `docs/2-Technical-Reference/40-integration/kristal-v5/contract-pointers.md`

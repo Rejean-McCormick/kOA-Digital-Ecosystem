@@ -5,7 +5,7 @@ This page defines what kOA (and this wiki) intentionally does **not** try to be.
 ## 1) Not a restatement of Kristal
 
 - This wiki does **not** restate or re-implement Kristal’s normative artifact definitions (schemas, canonicalization, hashing, signing targets).
-- When Kristal details are needed, we **link** to the pinned Kristal v4 source and kOA’s integration pointers.
+- When Kristal details are needed, we **link** to the pinned Kristal v5 source and kOA’s integration pointers.
 
 ## 2) Not a schema catalog for boundary artifacts
 
@@ -29,7 +29,7 @@ This page defines what kOA (and this wiki) intentionally does **not** try to be.
 
 ## 6) Not a mutable truth store
 
-- Canonical truth is not hot-edited during incidents or runtime.
+- Published/reference Kristal artifacts are not hot-edited during incidents or runtime; changes produce new governed artifacts/versions.
 - Fixes happen by creating new governed work and producing new versions, not patching canon in place.
 
 ## 7) Not an ungoverned execution platform
@@ -41,6 +41,6 @@ This page defines what kOA (and this wiki) intentionally does **not** try to be.
 
 ## If you were looking for…
 
-- **Kristal schemas/contracts:** see **Integration → Kristal v4** (pinned dependency + contract pointers).
+- **Kristal schemas/contracts:** see **Integration → Kristal v5** (pinned dependency + contract pointers).
 - **What kOA does cover:** see **Architecture**, **How it works (Lifecycle)**, **Components**, **Artifacts**, and **Operations**.
 - **Operational safety rules:** see **Operations → Incident response**.

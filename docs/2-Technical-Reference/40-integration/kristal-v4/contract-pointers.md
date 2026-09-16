@@ -1,3 +1,5 @@
+> **HISTORICAL — Kristal v4 integration is superseded by `../kristal-v5/`. Retained only for migration/history.**
+
 # Kristal v4 — Contract Pointers (kOA integration)
 
 **Normative for kOA:** YES  

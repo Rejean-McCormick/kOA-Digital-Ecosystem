@@ -1,10 +1,10 @@
 # Keter: Mandate (Governance Source)
 
 **Normative for kOA:** YES  
-**External normative references:** Kristal v4 (pinned) for Kristal artifact contracts; none for Mandate Bundle (kOA-owned)
+**External normative references:** Kristal v5 (pinned) for Kristal artifact contracts; none for Mandate Bundle (kOA-owned)
 
 ## Purpose
-**Keter (Mandate)** is the ecosystem’s **governance source**: it defines the mission, scope, constraints, and enforceable policy bundles that guide the rest of the system. Keter does not produce canonical truth artifacts; it produces **governance artifacts** that constrain how truth is produced, distributed, rendered, and operationalized.
+**Keter (Mandate)** is the ecosystem’s **governance source**: it defines the mission, scope, constraints, and enforceable policy bundles that guide the rest of the system. Keter does not assign Kristal validation or recognition status; it produces **governance artifacts** that constrain how knowledge is processed, referenced, distributed, rendered and operationalized.
 
 Keter’s output is consumed by Orgo (pipeline governance), Kristal compilation gates, Konnaxion distribution policy, and Architect behavior policies.
 
@@ -19,7 +19,7 @@ Keter MUST:
 - Declare enforcement levels (MUST/SHOULD/MAY) and scope of each policy rule.
 
 Keter MUST NOT:
-- Directly alter canonical truth artifacts (Exchange) or derived distribution artifacts (Runtime Packs).
+- Directly alter Kristal Working/Reference Exchanges or derived Runtime Packs.
 - Override deterministic gates at runtime without a versioned mandate/policy change.
 
 ---
@@ -72,7 +72,7 @@ All mandate/policy changes must produce a new bundle version (immutable history)
 Given the same Mandate Bundle and policy selection, downstream components must interpret policy rules deterministically.
 
 3) **No runtime overrides**  
-Runtime behavior changes require a mandate/policy update; ad-hoc overrides are forbidden for anything affecting truth boundary, compile gates, activation gates, or rendering trace requirements.
+Runtime behavior changes require a mandate/policy update; ad-hoc overrides are forbidden for anything affecting reference eligibility, publication/activation gates, or rendering trace requirements.
 
 4) **Scope clarity**  
 Policies must declare where they apply (stages, artifacts, components) and how they are enforced.

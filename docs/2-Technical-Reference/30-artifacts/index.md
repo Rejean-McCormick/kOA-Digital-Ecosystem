@@ -1,58 +1,19 @@
-# kOA Artifacts
+# kOA-owned and referenced cross-system artifacts
 
-**Scope:** kOA-owned artifacts only (operational + distribution + governance).  
-**Non-goal:** This section does not redefine Kristal artifacts (Claim-IR, Resolved Claim-IR, Validation Report, Exchange, Runtime Pack). Those are normatively defined in Kristal v4 and referenced from `docs/2-Technical-Reference/40-integration/kristal-v4/`.
+The ecosystem should prefer owner-system artifacts over duplicate integration-layer authorities.
 
----
+## Active
 
-## What belongs here
+- **Build Record** — optional ecosystem correlation/reproducibility evidence; never replaces owner artifacts.
+- **kOA-Linux Release Set** — authoritative platform compatibility artifact across `system`, `services`, `governance`, and `knowledge` channels.
+- **Kristal Runtime owner records** — `runtime_pack_verification_record`, `active_runtime_pack_record`, activation/rollback receipts and runtime health, owned by `kristal_runtime`.
+- **kOA Node Agent receipts** — privileged node-local operation/activation/recovery evidence when applicable.
+- **Koali Space artifacts/state** — presentation composition and Space lifecycle owned by Koali Spaces.
 
-kOA artifacts are typed payloads that exist to operate, govern, distribute, and observe the ecosystem. Examples include:
+## Compatibility-only
 
-- **Orgo governance artifacts:** Case, Task, routing labels, audit objects
-- **Pipeline operational records:** Build Record, Release Record
-- **Distribution/runtime state:** Konnaxion State, Activation Record, Rollback Record, Cache Indexes
-- **Mandate/policy bundles (kOA deployment):** Mandate Bundle (pinned mandate/policy context used by Orgo/Konnaxion)
+- `Release Record v2` — deprecated as an authority; may be retained only as a projection that references Release Set/owner receipts.
+- `Runtime Activation State` — deprecated for kOA-Linux; do not create a parallel active-state authority beside `kristal_runtime`.
+- `Konnaxion State` — historical compatibility artifact from the older universal-Konnaxion activation model.
 
-Each artifact has:
-- A **documented contract** (human-readable)
-- A **JSON Schema** (machine-validated) under `docs/2-Technical-Reference/30-artifacts/schemas/`
-- **Versioning/compat** expectations (see `docs/2-Technical-Reference/10-system/determinism.md` and `docs/2-Technical-Reference/40-integration/kristal-v4/koa-profile.md`)
-
----
-
-## Artifact index
-
-### Governance (Orgo)
-- `orgo-case.md`
-- `orgo-task.md`
-
-### Pipeline records
-- `build-record.md`
-- `release-record.md`
-
-### Policy / mandate
-- `mandate-bundle.md`
-
-### Distribution/runtime
-- `konnaxion-state.md`
-
----
-
-## Schemas
-
-Schemas live in:
-- `docs/2-Technical-Reference/30-artifacts/schemas/`
-
-Naming rules:
-- One schema per artifact
-- `$id` must be stable and owned by kOA (do not use Kristal namespaces)
-- `additionalProperties: false` unless explicitly justified
-- Use semver for schema versioning inside the artifact where needed
-
----
-
-## References
-
-- Kristal v4 integration: `docs/2-Technical-Reference/40-integration/kristal-v4/`
-- System invariants: `docs/2-Technical-Reference/10-system/trust-boundaries.md`, `docs/2-Technical-Reference/10-system/determinism.md`
+Kristal artifacts are referenced according to the pinned Kristal v5 contracts and are not redefined here.

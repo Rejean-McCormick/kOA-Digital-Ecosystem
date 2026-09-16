@@ -1,7 +1,7 @@
 # Binah — Blueprint
 
 **Normative for kOA:** YES  
-**External normative reference:** Kristal v4 (pinned)
+**External normative reference:** Kristal v5 (pinned)
 
 Binah is the planning node that turns a **Mandate** + **available inputs** into a **Blueprint**: an explicit, auditable plan describing what will be built, how it will be grounded, and which downstream nodes execute each step.
 
@@ -19,7 +19,7 @@ Binah does **not** validate truth. It structures work so that truth validation d
 ### Binah does not own
 - Ground-truth resolution (SenTient)
 - Kristal artifact verification or publication (Daat)
-- Distribution/activation (Konnaxion)
+- Distribution/application intent (Konnaxion) and physical activation by the declared deployment owner
 - Governance approvals (Orgo), except to request them via work items
 
 ---

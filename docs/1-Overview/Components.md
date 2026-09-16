@@ -1,51 +1,23 @@
-# Components
+# Components and systems
 
-This page is a map of the ecosystem’s components, their responsibilities, and how they fit together. It is intentionally **not** a node spec and does **not** restate Kristal artifact schemas.
+| System / boundary | Owns | Does not own |
+|---|---|---|
+| **Konnaxion** | civic/public state, DecisionRecord, readings, product state | Orgo work state, Kristal epistemic state, Runtime Pack active state |
+| **Orgo** | Signal, Workflow, Case, Task, IntegrationOperation, outbox/reconciliation | Konnaxion civic outcomes, Kristal recognition, host privilege |
+| **Kristal** | Structured Epistemic State, Working/Reference Exchange, validation, recognition, Reader Policy, Runtime Pack semantics | platform Release Set, host privilege, Orgo/Konnaxion state |
+| **kOA-Linux** | platform profiles, trust/policy/resources, artifact admission, release channels, lifecycle contracts | subsystem business semantics |
+| **kristal_runtime** | Runtime Pack verification/compatibility state, active Runtime Pack record, activation/rollback receipts, runtime health | governance policy, resource scheduling, host privilege, workflow state |
+| **kOA Node Agent** | narrow node-local privileged lifecycle/activation/recovery operations | release authority, epistemic authority, business authority |
+| **Koali Spaces** | optional presentation composition, routing, shell, Space activation and admitted surfaces | product business authority, Kristal authority, host privilege |
+| **Da’at** | mapping/ACL at the Kristal integration boundary | Kristal core semantics or participant state |
+| **Interaction Kernel** | target envelope/Profile/reliability semantics where adopted | participant state; current kOA-Linux internal contract authority |
+| **SemantiK Architect** | language planning/realization | civic/workflow/epistemic authority |
+| **SenTient** | candidate extraction/resolution/reconciliation | reference recognition or activation authority |
 
-## Planes (system at a glance)
+## No global control plane
 
-- **Control plane:** Orgo (governance, orchestration, audit)
-- **Truth plane (canonical):** Kristal (Exchange + Runtime Pack)
-- **Resolution plane:** SenTient (Claim-IR → Resolved Claim-IR)
-- **Distribution + interface plane:** Konnaxion (verify/activate/rollback; offline delivery + navigation)
-- **Articulation plane:** Architect (Strategy + Render; deterministic outputs + trace)
-- **Execution plane:** SwarmCraft (governed execution + telemetry)
-- **Trust + impact plane (optional):** EkoH (signals/ledger; never mutates canon)
+No system automatically controls every ecosystem transition. Release-channel coordination, workflow state, epistemic state, Runtime Pack active state, privileged host operations and presentation state remain separate owners.
 
-## Where components sit in the lifecycle
+## kOA-Linux component/subsystem distinction
 
-```mermaid
-flowchart LR
-  A[Chokmah<br/>Ingest + provenance] --> B[Binah<br/>Blueprint planning]
-  B --> C[SenTient<br/>Resolve ambiguity]
-  C --> D[Kristal<br/>Compile canonical truth]
-  D --> E[Konnaxion<br/>Distribute + verify + activate]
-  E --> F[Malkuth<br/>Runtime query/serve]
-  F --> G[Architect<br/>Render with trace]
-  G --> H[SwarmCraft<br/>Execute governed tasks]
-  H --> I[Feedback -> Orgo<br/>New governed work]
-```
-## Component index (what to read next)
-
-| Component               | What it does (high-level)                                                                                                    | Wiki page                                                            |
-| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| **Orgo**                | Enforces stage order + hard gates; records operational evidence; drives releases/rollbacks                                   | [Components-Orgo](Components-Orgo.md)                                   |
-| **Chokmah**             | Ingest boundary: turns raw inputs into immutable, provenance-pinned snapshots                                                | [Components-Chokmah](Components-Chokmah.md)                             |
-| **Binah**               | Planning: converts mandate + available inputs into an auditable Blueprint (what will be built and how)                       | [Components-Binah](Components-Binah.md)                                 |
-| **SenTient**            | Resolution: produces explicit, deterministic resolution outputs while preserving ambiguity when needed                       | [Components-SenTient](Components-SenTient.md)                           |
-| **Kristal + Daat**      | Truth compilation + bridge: compile canonical Exchange + Runtime Pack; enforce pinned Kristal contracts at boundaries        | [Components-Kristal-and-Daat](Components-Kristal-and-Daat.md)           |
-| **Konnaxion + Malkuth** | Distribution/runtime: verify-before-activate (fail-closed), atomic activation, deterministic rollback; serve offline queries | [Components-Konnaxion-and-Malkuth](Components-Konnaxion-and-Malkuth.md) |
-| **Architect**           | Strategy + Render: propose governed work; render deterministic user-facing outputs with trace and “no new facts”             | [Components-Architect](Components-Architect.md)                         |
-| **SwarmCraft**          | Execution: runs governed tasks, emits telemetry, does not mutate canonical truth directly                                    | [Components-SwarmCraft](Components-SwarmCraft.md)                       |
-
-## Boundaries (what crosses between components)
-
-kOA components exchange **typed artifacts**, not implicit state. The main pipeline carries (by type): input snapshots, claim proposals, resolution outputs, validation evidence, canonical truth artifacts, derived runtime packs, render outputs with trace, and kOA operational artifacts (cases/tasks/records).
-
-## Where the detailed contracts live
-
-* Node-by-node interface specs: see [Architecture / Nodes](Components.md) (and each node page)
-* kOA-owned operational artifacts: see [Artifacts](Artifacts.md)
-* Kristal artifact contracts/schemas: see [Kristal v4 integration](Integration-Kristal-v4.md) (pinned references; not duplicated here)
-
-
+Konnaxion, Orgo, SemantiK Architect and Koali Spaces are subsystem/product boundaries relative to kOA-Linux. Native kOA-Linux components such as `kristal_runtime` and kOA Node Agent have distinct local contracts. Hosting a subsystem does not transfer its domain authority to kOA-Linux.

@@ -220,7 +220,7 @@ Why are we acting, under what mandate, and with what limits?
 * operating constraints
 * intended impact
 * non-domination
-* truth boundary
+* reference/recognition boundary
 * governance limits
 
 ### Inputs

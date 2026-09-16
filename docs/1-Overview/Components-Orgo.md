@@ -1,157 +1,43 @@
-# Orgo (Control Plane)
+# Orgo
 
-**Role:** Governance + pipeline control plane. 
-Orgo enforces the canonical stage spine (ingest → extract → resolve → validate → compile → distribute → render/execute), applies deterministic gates, and records an auditable trail of what happened and why. 
+Orgo is the **operational/workflow system** of the kOA ecosystem. It owns work represented inside Orgo: Signals, WorkflowVersions, Cases, Tasks, IntegrationOperations and its outbox/retry state.
 
-```mermaid
-flowchart LR
-  O[Orgo<br/>control plane] --> S[Stage spine<br/>orchestration + gates]
-  S --> BR[Build Record]
-  S --> RR[Release Record]
-  S --> D[Distribute/Activate<br/>(Konnaxion)]
-  S --> R[Render/Execute<br/>(Architect/SwarmCraft)]
-```
+It is not a global ecosystem control plane. Konnaxion retains civic/governance state, Kristal retains epistemic artifacts and policies, and kOA-Linux retains local host activation when deployed.
 
-## What Orgo owns (and what it doesn’t)
+## Responsibilities
 
-### Owns
+- accept governed work inputs through explicit integration contracts;
+- authorize and execute Orgo-owned workflows;
+- persist Cases, Tasks and IntegrationOperations;
+- make external effects reliable through outbox/idempotency/reconciliation;
+- expose operational status without taking ownership of source-system domain state.
 
-* **Stage orchestration:** enforce stage order; run stages with explicit inputs and pinned configs; idempotent retries. 
-* **Deterministic gating:** enforce “no compile on fail”; block downstream activation/release when integrity checks fail (fail-closed). 
-* **Governance workflow:** Cases/Tasks lifecycle and deterministic routing. 
-* **Audit + reproducibility evidence:** Build Record + Release Record; immutable audit logs for gate outcomes and governance changes. 
+## Interaction Kernel
 
-### Does not own
+The target ecosystem protocol is Interaction Kernel (IK).
 
-* Kristal artifact formats/schemas/canonicalization rules (treated as external, pinned contracts). 
+- `governance.decision.execute/1.0.0`: Konnaxion DecisionRecord/authority context -> Orgo governed-work input;
+- `accountability.impact.publish/1.0.0`: Orgo execution impact -> Konnaxion accountability/read model;
+- Kristal-related work uses IK Profiles toward Da'at; Da'at translates at the Kristal boundary.
 
-## Responsibilities (operator-facing)
+The current Orgo documentation defines a generic Orgo-owned integration bridge. That bridge is compatible with the architecture, but its existence does **not** by itself prove that a native Konnaxion or Kristal adapter is implemented or conformant.
 
-### 1) Enforce the stage spine
+## Kristal v5 gating
 
-Orgo enforces an ordered pipeline from ingest through activation and feedback. 
+Orgo must not impose the old universal `validation PASS -> compile` rule. Kristal v5 separates:
 
-### 2) Make “truth gating” non-negotiable
+1. compilation;
+2. validation/review;
+3. authority recognition;
+4. publication/distribution;
+5. activation.
 
-If validation fails, Orgo stops the pipeline and must not run compile (“no compile on fail”). 
+A Working Exchange can exist before final validation or recognition where the active policy permits. A kOA production Profile may impose stricter gates on **reference publication, release or activation**; those are policy gates, not a universal Kristal compile rule.
 
-### 3) Make releases controlled and auditable
+## Reliability
 
-Orgo ties an eligible build to a rollout intent (channels/cohorts/pins), monitors rollout, and drives rollback when needed—while recording the full decision trail in Release Records. 
+Cross-system delivery is at-least-once with idempotent processing and reconciliation. `accepted` is not equivalent to `succeeded`. Same idempotency key with different request content is a protocol conflict.
 
-## Inputs (what Orgo listens to)
+## Ownership boundary
 
-### Upstream signals
-
-* Finalized Konnaxion/eThikos decision handoffs that require governed operational work
-* Ingest/provenance signals (Chokmah) 
-* Blueprint/policy bundles (Keter/Binah) 
-* Resolution outputs (SenTient) 
-* Verification/activation telemetry (Konnaxion) 
-* Execution telemetry (SwarmCraft, if present) 
-
-### Operator actions
-
-* Create/triage/resolve Cases and Tasks; approve/pin/revoke releases; trigger rebuilds/rollbacks (within policy). 
-
-## Outputs (what Orgo produces)
-
-### kOA-native artifacts (owned by Orgo)
-
-* Orgo Case, Orgo Task, Build Record, Release Record. 
-
-Orgo persists a **Build Record** for every pipeline execution and a **Release Record** for every promotion/publish action. 
-
-## Deterministic gates (what Orgo blocks/permits)
-
-Orgo gates are policy-driven but must be deterministic for the same inputs/configuration. 
-
-Gate categories:
-
-1. **Schema/contract gates:** validate kOA-native artifacts against kOA schemas; validate Kristal artifacts against pinned Kristal v4 schemas. 
-2. **Stage dependency gates:** stages run only when dependencies are complete/valid; compile/release prohibited unless validation passes. 
-3. **Integrity gates:** distribution/activation must be fail-closed; rollback must be deterministic under policy. 
-
-## Invariants (must always hold)
-
-* **No compile on fail:** validation failure blocks compilation, release intent, and activation. 
-* **Explicit decisions are recorded:** policy/blueprint selection and overrides are recorded in Build/Release Records. 
-* **Auditability:** terminal failures include stable reason codes and traceable references. 
-* **Idempotent stage execution:** retries do not create ambiguous dual outputs; Orgo records what is authoritative. 
-* **Fail-closed rollout:** verification/compat uncertainty blocks activation unless policy explicitly overrides (and it’s recorded). 
-
-## Interfaces (recommended shapes)
-
-### Control-plane API
-
-* Case/Task CRUD + lifecycle transitions
-* Build orchestration (start/stop/retry stage, fetch build status)
-* Release orchestration (create intent, promote, pin, revoke, rollback)
-* Read-only audit endpoints (gate decisions, stage timeline, artifact refs) 
-
-### Event stream
-
-Orgo should emit events for stage start/finish/fail, gate pass/fail (with stable reason codes), Case/Task transitions, rollout milestones, rollback triggers/completion. 
-
-### Storage (non-negotiable)
-
-Orgo persists Case/Task history, Build/Release Records, gate outcomes, and operator actions with append-only or versioned history. 
-
-## Failure modes (classes)
-
-* Pipeline failures: missing/incorrect provenance; invalid extractor/resolver outputs; validation failures (must block compile/release). 
-* Governance failures: conflicting manual actions; inconsistent case/task state; intent drift vs rollout state. 
-* Safety failures (critical): attempted activation without verification; bypassed gates; unlogged admin changes. 
-
-## Observability (minimum)
-
-Metrics and logs should make it easy to answer:
-
-* What build/release is failing, where, and why?
-* Which reason codes are trending?
-* How often are rollbacks happening, and what triggered them?
-
-Minimum metrics: build throughput/durations, validation pass rate and top reasons, release success/time-to-rollout, rollback frequency, case/task lead time/backlog. 
-Minimum logs: gate decisions with reason codes and referenced artifact IDs; operator actions with before/after state. 
-Recommended traces: correlate build IDs across stage jobs and downstream distribution; correlate release IDs to activation/rollback and client health. 
-
-## Related pages
-
-* Pipeline operations (Orgo): `Operations-Builds` / `Operations` 
-* Orgo-native artifacts: Build Record / Release Record / Case / Task 
-
-## Konnaxion/eThikos decision ownership
-
-For civic/public decisions owned by Konnaxion, Orgo receives the **finalized eThikos DecisionRecord/handoff directly from Konnaxion**. Orgo validates/deduplicates that handoff and creates governed work; it does not become the owner of the civic decision.
-
-UCKK may independently publish/display the decision, but it is not a required relay to Orgo. Smart Vote/EkoH readings may inform the eThikos decision process but are not, by themselves, the Orgo execution trigger.
-
-## Operational coordination surface (current implementation)
-
-In addition to the stage spine above, the current Orgo implementation exposes an **operational coordination surface** for turning governed signals into traceable work and durable external effects:
-
-```mermaid
-flowchart LR
-  S[Signal] --> W[Published WorkflowVersion]
-  W --> C[Case]
-  W --> T[Tasks]
-  C --> IO[IntegrationOperation]
-  IO --> OB[OutboxMessage]
-  OB --> A[Provider adapter]
-  A --> R[Receipt]
-```
-
-The implementation-level vocabulary is:
-
-- **Signal** — normalized, deduplicated input to operational workflow evaluation.
-- **Published WorkflowVersion** — immutable workflow definition used for simulation/execution.
-- **Case / Task** — governed work created or updated by workflow actions.
-- **IntegrationOperation** — status record for a durable external publication or distribution request. Its status is independent from Case/Task status.
-- **OutboxMessage** — durable delivery record processed asynchronously by the Orgo worker.
-
-For durable provider calls, Orgo uses a transactional-outbox pattern. The business mutation and outbox message are committed first; the worker later invokes the provider adapter. A provider response of **`accepted`** means the provider durably accepted the request, not that publication is complete. The operation remains non-terminal until a final **`succeeded`** receipt is recorded. Failed/unavailable providers are retried and can reach a terminal failed/dead state that must be redriven through the Orgo control-plane API rather than by cross-system SQL.
-
-The current Orgo→Konnaxion implementation profile is documented in:
-
-- `docs/2-Technical-Reference/40-integration/orgo-konnaxion/index.md`
-- `docs/2-Technical-Reference/40-integration/orgo-konnaxion/uckk-a014-validation-2026-09-12.md`
+Orgo may request external actions, but the receiving system owns its own state transition. No integration grants Orgo direct writes into another system's database or authoritative state.

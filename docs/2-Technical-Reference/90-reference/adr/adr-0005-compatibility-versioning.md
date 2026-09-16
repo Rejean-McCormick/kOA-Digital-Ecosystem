@@ -26,8 +26,8 @@ kOA MUST treat Kristal as an external dependency and MUST pin:
 - the exact schema set used for validation and generation
 
 kOA documentation MUST reference Kristal via:
-- `docs/2-Technical-Reference/40-integration/kristal-v4/pinned-dependency.md`
-- `docs/2-Technical-Reference/40-integration/kristal-v4/contract-pointers.md`
+- `docs/2-Technical-Reference/40-integration/kristal-v5/pinned-dependency.md`
+- `docs/2-Technical-Reference/40-integration/kristal-v5/contract-pointers.md`
 
 kOA MUST NOT copy Kristal schemas as kOA-normative contracts.
 
@@ -59,7 +59,7 @@ If an artifact cannot be validated against:
 - a pinned external contract (Kristal),
 then kOA MUST fail-closed:
 - Orgo blocks downstream pipeline steps
-- Konnaxion blocks activation
+- the declared deployment activation owner blocks activation
 - the failure is recorded with a stable reason code
 
 ---
@@ -88,7 +88,7 @@ When introducing a breaking change:
 
 ### 4.2 Legacy spellings for external contracts
 Any tolerance for legacy spellings of Kristal-related fields must follow:
-- `docs/2-Technical-Reference/40-integration/kristal-v4/legacy-compat.md`
+- `docs/2-Technical-Reference/40-integration/kristal-v5/legacy-compat.md`
 
 ---
 

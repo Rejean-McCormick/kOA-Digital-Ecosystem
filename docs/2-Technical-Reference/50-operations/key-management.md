@@ -7,7 +7,7 @@ Define how the kOA Digital Ecosystem manages cryptographic keys used for:
 - authenticating internal services,
 - enforcing fail-closed activation and deterministic rollback.
 
-Kristal-owned artifact signing targets and signature field shapes are defined in the pinned Kristal v4 dependency. This document defines **kOA operational policy**: where keys live, how they rotate, how trust is anchored, and how verification gates behave.
+Kristal-owned artifact signing targets and signature field shapes are defined in the pinned Kristal v5 dependency. This document defines **kOA operational policy**: where keys live, how they rotate, how trust is anchored, and how verification gates behave.
 
 ## Scope
 
@@ -20,7 +20,7 @@ This doc covers:
 
 Not in scope:
 - Kristal schema definitions
-- exact signature object shapes for Kristal artifacts (refer to pinned Kristal v4)
+- exact signature object shapes for Kristal artifacts (refer to pinned Kristal v5)
 
 ## Key roles
 
@@ -30,7 +30,7 @@ Not in scope:
 - Access: highly restricted; dual control recommended.
 
 ### 2) Distribution signing keys (online)
-- Purpose: sign channel indexes or release metadata used by Konnaxion to decide what to fetch/activate.
+- Purpose: sign channel indexes or release metadata used by the distribution/application layer and declared activation owner to decide what is eligible to fetch/apply/activate.
 - Storage: online HSM / KMS.
 - Rotation: frequent compared to root (e.g., 30–180 days by policy).
 
@@ -147,5 +147,5 @@ Key compromise response SHOULD:
 
 - `docs/2-Technical-Reference/50-operations/rollback.md`
 - `docs/2-Technical-Reference/50-operations/releases.md`
-- `docs/2-Technical-Reference/40-integration/kristal-v4/conformance.md`
-- `docs/2-Technical-Reference/90-reference/adr/adr-0003-konnaxion-activation-rollback.md`
+- `docs/2-Technical-Reference/40-integration/kristal-v5/conformance.md`
+- `docs/2-Technical-Reference/90-reference/adr/adr-0009-runtime-pack-activation-owner.md`

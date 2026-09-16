@@ -1,3 +1,5 @@
+> **HISTORICAL — Kristal v4 integration is superseded by Kristal v5. Retained only for migration/history.**
+
 # Kristal v4 Integration (kOA)
 
 **Purpose:** Define how the kOA Digital Ecosystem integrates with **Kristal v4** without duplicating Kristal’s normative contracts.  

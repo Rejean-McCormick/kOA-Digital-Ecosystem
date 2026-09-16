@@ -1,67 +1,22 @@
 # FAQ
 
-## What is this wiki?
-This wiki explains the **kOA Digital Ecosystem**: what it does, its major components, and how it is operated in production.
+## Is Orgo the global control plane?
+No. Orgo owns workflow/operational state represented inside Orgo.
 
-## What is *not* in this wiki?
-This wiki does **not** re-specify **Kristal** artifact contracts (schemas, canonicalization rules, signature formats, etc.). Kristal v4 remains the external source of truth for those contracts.
+## Does every cross-system interaction already use Interaction Kernel?
+No. IK is the target cross-system Profile layer. kOA-Linux already has canonical internal/component contracts; explicit adoption/mapping is required before calling those interactions IK-conformant.
 
-## Where is the Kristal spec?
-See the pinned Kristal v4 reference and pointers in:
-- [Integration: Kristal v4](Integration-Kristal-v4.md)
+## Must Kristal validation pass before compilation?
+No. Kristal v5 may produce a Working Exchange before final validation/recognition when policy permits.
 
-## What is “canonical” vs “informative” here?
-- **Canonical for kOA**: ecosystem invariants, operational rules, component responsibilities, and **kOA-native** operational artifacts.
-- **External canonical**: Kristal artifacts and schemas (Exchange, Runtime Pack, Validation Report, Claim-IR, Resolved Claim-IR, etc.).
+## Who owns Runtime Pack activation on kOA-Linux?
+`kristal_runtime` owns Runtime Pack verification/compatibility, active Runtime Pack state and activation/rollback receipts. kOA Node Agent performs the narrow privileged host transition when required by the active profile/contract.
 
-## Which artifacts are “kOA-native”?
-Artifacts owned by kOA components, for example:
-- Orgo operational artifacts (Cases, Tasks, Build/Release Records)
-- Konnaxion operational state and rollout/activation records (where standardized here)
+## What does Release Set own?
+Release Set binds compatible versions across platform release channels. It does not replace Kristal validation, `kristal_runtime` active state or Koali Space state.
 
-Kristal artifacts remain externally specified.
+## Is Koali Space activation the same as Runtime Pack activation?
+No. Space activation changes presentation/application composition. Runtime Pack activation changes the active knowledge runtime state.
 
-## How do I know what schemas to validate against?
-- For **kOA-native artifacts**, validate against the schemas shipped with this repo (operational artifact schemas).
-- For **Kristal artifacts**, validate against the **pinned Kristal v4 schemas** referenced from the Kristal integration section.
-
-## Why is there a hard “no redundancy” rule?
-Duplicating normative contracts causes drift. kOA documentation stays stable by pointing to Kristal as the source of truth, and only documenting **kOA’s integration constraints, gates, and operational policies**.
-
-## Where do I start if I’m implementing?
-Start with:
-- [Home](index.md)
-- [Principles & invariants](Principles-and-invariants.md)
-- [Lifecycle](Lifecycle.md)
-- [Components](Components.md)
-- [Artifacts](Artifacts.md)
-- [Integration: Kristal v4](Integration-Kristal-v4.md)
-- [Operations](Operations.md)
-
-## Where do I start if I’m operating?
-Start with:
-- [Operations](Operations.md)
-- [Operations: Releases](Operations-Releases.md)
-- [Operations: Rollbacks](Operations-Rollbacks.md)
-- [Operations: Observability](Operations-Observability.md)
-- [Operations: Incident response](Operations-Incident-response.md)
-
-## How do changes get made safely?
-- Changes to **kOA** invariants/interfaces/operational contracts should be accompanied by an ADR and conformance updates.
-- Changes to **Kristal** contracts must happen in the pinned Kristal source of truth, and then kOA updates its Kristal integration profile/conformance accordingly.
-
-## What should I do if I find a mismatch between kOA and Kristal?
-Treat it as a **kOA integration issue** unless you are also changing the pinned Kristal version. Update:
-- [Integration: Kristal v4](Integration-Kristal-v4.md)
-- Any impacted operations or artifact pages that reference the integration behavior
-
-## Does kOA require online connectivity to use Kristal artifacts?
-No by default. Distribution/activation and runtime use are designed to be compatible with offline-first operation; connectivity is a deployment choice, not a contract requirement.
-
-## What are the core components?
-- **Orgo**: workflow/control plane + gating
-- **SenTient**: resolution/reconciliation
-- **Kristal**: truth pivot + compilation (externally specified)
-- **Konnaxion**: distribution/activation + rollback safety
-- **Architect**: deterministic rendering (no new facts)
-- **SwarmCraft**: governed execution (optional)
+## Is Konnaxion's Koali pilot still pending?
+The supplied Koali maturity report contains a later notice recording a successful Konnaxion pilot, although two Koali current-state reference pages still contain older “pilot pending” language. Digital Ecosystem treats those pages as product-documentation drift awaiting refresh.

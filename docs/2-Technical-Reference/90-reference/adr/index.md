@@ -1,39 +1,17 @@
-# ADR Index (kOA)
+# Architecture Decision Records
 
-**Purpose:** Architecture Decision Records (ADRs) capture **kOA-owned** decisions: invariants, operational policies, compatibility rules, governance behavior, and component splits.
+## Active
 
-**Rule:** ADRs must not duplicate Kristal’s normative artifact contracts. When a decision depends on Kristal, the ADR must reference the pinned Kristal v4 dependency (see `docs/2-Technical-Reference/40-integration/kristal-v4/pinned-dependency.md`) and point to the specific Kristal doc/schema section.
-
----
-
-## ADR workflow
-
-### When an ADR is required
-Create an ADR when you change:
-- kOA invariants (truth boundary, determinism policy, fail-closed rules)
-- kOA artifact schemas (Build Record, Release Record, Orgo Case/Task, etc.)
-- compatibility or versioning policy
-- activation/rollback policy
-- component boundaries and responsibilities
-- required conformance tests / gates
-
-### Status values
-- Draft
-- Accepted
-- Superseded
-- Rejected
-
-### Filename convention
-`adr-####-short-slug.md`
-
----
-
-## ADR list
-
-- `adr-0001-truth-boundary.md`
 - `adr-0002-determinism-policy.md`
-- `adr-0003-konnaxion-activation-rollback.md`
 - `adr-0004-architect-split.md`
 - `adr-0005-compatibility-versioning.md`
 - `adr-0006-common-identity-oidc.md`
 - `adr-0007-konnaxion-ethikos-decision-authority.md`
+- `adr-0008-kristal-v5-epistemic-lifecycle.md` — Working/Reference separation and stage-specific gates
+- `adr-0009-runtime-pack-activation-owner.md` — precise kOA-Linux Runtime Pack ownership: kristal_runtime state + Node Agent privileged transition
+- `adr-0010-interaction-kernel-boundary.md` — target distributed cross-system protocol; adoption is explicit/system-specific
+
+## Superseded
+
+- `adr-0001-truth-boundary.md` — superseded by ADR-0008
+- `adr-0003-konnaxion-activation-rollback.md` — superseded by ADR-0009

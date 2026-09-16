@@ -1,3 +1,5 @@
+> **HISTORICAL — superseded by `ALIGNEMENT_UPDATED_2026-09-16.md`.**
+
 # Alignement global de l'écosystème kOA / Kristal
 
 ## Statut

@@ -14,7 +14,7 @@ It answers the question:
 
 > What is this system allowed, required, and forbidden to do?
 
-This layer does not produce canonical truth. It does not execute work. It does not deliberate or decide specific cases. It defines the mandate under which all downstream layers operate.
+This layer does not assign Kristal validation, recognition, or Reference Exchange status. It does not execute work. It does not deliberate or decide specific cases. It defines the mandate under which all downstream layers operate.
 
 In the kOA Digital Ecosystem, this layer is technically anchored by **Keter: Mandate**, which publishes versioned governance artifacts used by Orgo, Kristal gates, Konnaxion distribution policy, and Architect behavior policies.
 
@@ -56,7 +56,7 @@ Related downstream components:
 
 - **Orgo** — consumes mandate constraints for pipeline governance
 - **Kristal gates** — apply mandate-bound validation constraints
-- **Konnaxion** — applies distribution and activation policies
+- **Konnaxion** — applies civic/application policy and may own desired Runtime Pack selection; physical activation belongs to the declared deployment owner
 - **Architect** — respects behavior policies and planning constraints
 
 ---

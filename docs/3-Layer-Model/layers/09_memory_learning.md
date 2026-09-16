@@ -214,7 +214,7 @@ Without Memory / Learning, kOA would still be able to act, but it would not beco
 
 This layer does **not**:
 
-* create canonical truth by itself;
+* assign Kristal validation/recognition/reference status by itself;
 * mutate Kristals directly;
 * bypass validation;
 * replace provenance;
@@ -297,7 +297,7 @@ For funders and social innovation partners:
 
 For technical partners:
 
-> This layer captures feedback, telemetry, release outcomes, and operational traces without allowing downstream systems to mutate canonical truth.
+> This layer captures feedback, telemetry, release outcomes, and operational traces without allowing downstream systems to mutate published/reference Kristal artifacts by side effect.
 
 ---
 

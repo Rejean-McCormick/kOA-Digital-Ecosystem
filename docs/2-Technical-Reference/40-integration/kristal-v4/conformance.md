@@ -1,3 +1,5 @@
+> **HISTORICAL — Kristal v4 integration is superseded by `../kristal-v5/`. Retained only for migration/history.**
+
 # Kristal v4 Conformance (kOA)
 
 **File:** `docs/2-Technical-Reference/40-integration/kristal-v4/conformance.md`  

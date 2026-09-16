@@ -1,6 +1,9 @@
 # Konnaxion/eThikos ↔ Orgo Decision and Durable Publish Profile
 
-**Normative for kOA:** NO — implementation/integration profile for the current Konnaxion↔Orgo bridge  
+> **2026-09-16 alignment note:** This profile is now mapped to Interaction Kernel. The inbound finalized DecisionRecord path corresponds to `governance.decision.execute/1.0.0`; the outbound durable impact/publication path corresponds to `accountability.impact.publish/1.0.0`. Historical bridge evidence is compatibility evidence, not proof that full IK adoption is complete. Konnaxion's current boundary/code-alignment docs classify external adapters as not implemented in the current code snapshot, so implementation status and Profile conformance must be verified in the owning repository before claiming conformance.
+
+
+**Normative for kOA:** YES for ecosystem mapping; product implementation remains owned by Konnaxion/Orgo  
 **External normative reference:** none; Konnaxion and Orgo own their respective runtime contracts
 
 ---

@@ -1,3 +1,5 @@
+> **HISTORICAL — Kristal v4 integration is superseded by `../kristal-v5/`. Retained only for migration/history.**
+
 # Legacy Compatibility (kOA ↔ Kristal v4)
 
 ## Purpose

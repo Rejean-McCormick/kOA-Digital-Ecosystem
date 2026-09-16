@@ -34,7 +34,7 @@ Chokmah **may**:
 Chokmah **must not**:
 
 - Interpret, enrich, or “fix” content in a way that changes meaning without recording it as a derived artifact.
-- Generate or alter canonical truth artifacts.
+- Generate or alter Kristal validation/recognition/reference artifacts.
 
 ---
 

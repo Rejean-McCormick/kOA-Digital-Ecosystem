@@ -1,57 +1,24 @@
-# System at a Glance
+# System at a glance
 
-**Purpose:** One-page mental model of the kOA ecosystem: what it is, what flows through it, and where “truth” lives.
+kOA is a system of independently owned systems and platform components.
 
-## What this system does
+| Domain | Owner |
+|---|---|
+| civic/public source state | Konnaxion |
+| workflow/work state | Orgo |
+| epistemic artifacts | Kristal |
+| platform/release-channel contracts | kOA-Linux |
+| Runtime Pack local verification/active-state/receipts | `kristal_runtime` |
+| privileged node-local transition | kOA Node Agent |
+| presentation/Space lifecycle | Koali Spaces |
+| target cross-system Profile semantics | Interaction Kernel where adopted |
+| ecosystem→Kristal mapping | Da’at |
 
-kOA turns messy inputs into **validated, canonical knowledge** and then safely distributes and uses that knowledge in offline-capable products and workflows.
+Key distinctions:
 
-## The stage spine (end-to-end)
-
-1. **Ingest** raw inputs (snapshots + provenance)
-2. **Extract** structured proposals (claims)
-3. **Resolve** ambiguity (entities, properties, literals)
-4. **Validate** deterministically (accept/reject with a report)
-5. **Compile** canonical knowledge + a portable offline pack
-6. **Distribute** packs with fail-closed verification
-7. **Render** deterministic user-facing output with trace coverage
-8. **Execute** work (tasks) with telemetry
-9. **Feedback** becomes new governed work (never mutates canon)
-
-## Core components (who does what)
-
-* **Orgo (control plane):** orchestrates stages, enforces gates, records operational evidence, drives releases.
-* **SenTient (resolver):** turns ambiguous surfaces into explicit, typed resolution outputs (keeps ambiguity explicit when unresolved).
-* **Kristal (truth pivot):** compiles canonical truth artifacts (Exchange) and derived offline artifacts (Runtime Pack).
-* **Konnaxion/eThikos (civic decision + platform):** owns Konnaxion deliberation/decision flows and finalized DecisionRecords, can hand decisions directly to Orgo, and also provides distribution/activation capabilities where deployed.
-* **Architect (renderer):** produces deterministic natural-language (or other outputs) that cannot introduce new facts and must trace.
-* **SwarmCraft (execution):** executes tasks into deliverables under constraints; emits telemetry.
-
-## Artifact families (what crosses boundaries)
-
-* **Pre-truth artifacts:** snapshots, claim proposals, resolution outputs, validation reports
-* **Canonical truth artifacts:** the compiled knowledge source of truth
-* **Derived distribution artifacts:** portable offline packs + indexes
-* **Operational artifacts:** cases/tasks, build/release records, activation/rollback records, telemetry events
-
-## Where “truth” lives
-
-* “Truth” exists only as **typed artifacts produced after deterministic validation + compilation**.
-* Downstream systems (rendering, execution, social/feedback) must not invent or mutate canonical truth.
-
-## What this repo is responsible for
-
-This repo documents:
-
-* kOA’s **system behavior**, responsibilities, operations, and kOA-owned artifacts (workflow + distribution + execution).
-* The **integration stance**: how kOA depends on Kristal (pinned version, compatibility expectations, conformance checks).
-
-This repo does **not** re-specify Kristal artifact formats/schemas.
-
-## Next reads
-
-* `docs/2-Technical-Reference/10-system/architecture.md`
-* `docs/2-Technical-Reference/10-system/lifecycle.md`
-* `docs/2-Technical-Reference/20-nodes/index.md`
-* `docs/2-Technical-Reference/40-integration/kristal-v4/index.md`
-* `docs/2-Technical-Reference/50-operations/pipeline.md`
+```text
+Release Set compatible       ≠ Runtime Pack active
+Runtime Pack active          ≠ Koali Space active
+kOA Node Agent receipt       ≠ active Runtime Pack ownership
+IK target architecture       ≠ current kOA-Linux internal contract unless adopted
+```

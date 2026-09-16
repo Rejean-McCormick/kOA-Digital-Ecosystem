@@ -1,0 +1,216 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:koa:schema:runtime-activation-state:1",
+  "title": "kOA Runtime Activation State",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "state_id",
+    "record_version",
+    "activation_owner",
+    "activation_domain",
+    "created_at",
+    "active",
+    "installed",
+    "last_attempt"
+  ],
+  "properties": {
+    "state_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "record_version": {
+      "const": "1.0.0"
+    },
+    "activation_owner": {
+      "type": "string",
+      "minLength": 1
+    },
+    "activation_domain": {
+      "type": "string",
+      "minLength": 1
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "desired_selection": {
+      "$ref": "#/$defs/selection"
+    },
+    "active": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/pack"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "last_known_good": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/pack"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "installed": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/pack"
+      }
+    },
+    "last_attempt": {
+      "$ref": "#/$defs/attempt"
+    },
+    "health": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "$defs": {
+    "selection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "requested_by",
+        "runtime_pack_id"
+      ],
+      "properties": {
+        "requested_by": {
+          "type": "string"
+        },
+        "runtime_pack_id": {
+          "type": "string"
+        },
+        "profile": {
+          "type": "string"
+        },
+        "correlation_id": {
+          "type": "string"
+        }
+      }
+    },
+    "pack": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "runtime_pack_id",
+        "manifest_ref",
+        "source_exchange_ref",
+        "source_artifact_status",
+        "status"
+      ],
+      "properties": {
+        "runtime_pack_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "runtime_pack_version": {
+          "type": "string"
+        },
+        "manifest_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_exchange_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_artifact_status": {
+          "enum": [
+            "working",
+            "under_review",
+            "recognized",
+            "reference",
+            "deprecated",
+            "superseded",
+            "revoked"
+          ]
+        },
+        "reader_policy_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "query_contract_ref": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "AVAILABLE",
+            "QUARANTINED",
+            "VERIFIED",
+            "STAGED",
+            "ACTIVE",
+            "REJECTED",
+            "REVOKED",
+            "ROLLED_BACK"
+          ]
+        },
+        "verified_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "activated_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "attempt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "status"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "VERIFY",
+            "STAGE",
+            "ACTIVATE",
+            "ROLLBACK",
+            "REVOKE"
+          ]
+        },
+        "target_runtime_pack_id": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "PENDING",
+            "RUNNING",
+            "SUCCEEDED",
+            "FAILED",
+            "REJECTED"
+          ]
+        },
+        "reason_code": {
+          "type": "string"
+        },
+        "started_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "finished_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  },
+  "description": "Deprecated for kOA-Linux. kristal_runtime owns authoritative Runtime Pack verification/active-state/activation/rollback records.",
+  "deprecated": true
+}

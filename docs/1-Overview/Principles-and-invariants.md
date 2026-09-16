@@ -1,79 +1,17 @@
-# Principles & invariants
+# Principles and invariants
 
-This page is the “non-negotiables” view of the system. If any of these are violated, treat it as a bug or an incident, not an acceptable tradeoff.
-
-## 1) Truth boundary
-
-- **Canonical truth exists only after compilation** into the canonical truth artifact (the “truth pivot”).
-- **Upstream outputs are proposals**, not truth (inputs, extracted claims, resolved claims, validation outputs).
-- **Validation is a hard gate**: if validation fails, canonical outputs must not be produced or distributed.
-
-## 2) No redundancy of external contracts
-
-- **Do not copy or restate external artifact contracts** (schemas, canonicalization rules, signing formats, etc.).
-- The system points to the pinned external spec and enforces it at boundaries.
-
-## 3) Typed boundaries (no hidden state)
-
-- Components exchange **typed artifacts**, not implicit shared state.
-- “Truth” cannot move through side channels; it must go through the declared pipeline and gates.
-
-## 4) Determinism over availability
-
-- Same **pinned inputs + pinned configuration + pinned policies** must yield **identical (or canonically identical)** results.
-- Determinism also applies to failure behavior: same pinned context → same class of failure + stable reasons.
-
-## 5) Fail-closed integrity and activation
-
-- If integrity is declared (hashes/signatures/compat rules), **verification is mandatory**.
-- If verification cannot be completed or fails, **activation must not proceed**.
-- Activation must be **atomic** (no partial activation).
-
-## 6) Immutable canon and governed change
-
-- Canonical artifacts are **immutable once published**.
-- Any canon-affecting change is a **new build**, producing new artifacts/IDs (no hot-edits).
-
-## 7) No new facts downstream
-
-- Rendering and execution layers must **not introduce new factual claims**.
-- They can only:
-  - trace outputs to canonical sources,
-  - omit/refuse deterministically under policy,
-  - emit governed feedback that becomes new work.
-
-## 8) Offline correctness
-
-- Correctness must not depend on live network calls at the moment of use.
-- Runtime behavior is based on verified, activated packs that can be used offline.
-
-## 9) Auditability as a first-class requirement
-
-- Every build/release must leave an auditable trail that can answer:
-  - what inputs were used,
-  - which policies/configuration applied,
-  - which gates ran and why they passed/failed,
-  - which outputs were produced and promoted.
-
-## 10) Tenant isolation and pinned trust roots
-
-- Trust roots and acceptance policy are **tenant-scoped** and **pinned**.
-- The system must resist downgrade/substitution and cross-tenant trust confusion.
-
-## Quick “invariant check” list
-
-If you’re reviewing a change, confirm:
-
-- Validation failure cannot produce publishable/activatable outputs.
-- Any declared integrity mismatch blocks publish/activation (no bypass).
-- A component cannot smuggle facts around validation/compile.
-- Output is deterministic under pinned context (including error behavior).
-- Rendering cannot invent facts and always provides trace coverage or deterministic refusal.
-- Activation is atomic and rollback target selection is deterministic.
-
-## 11) Decision authority stays with the decision owner
-
-- For Konnaxion civic/public decisions, the finalized decision is owned by **Konnaxion/eThikos**.
-- Orgo may receive that decision directly and turn it into governed work, but does not become the civic decision authority.
-- UCKK may publish/distribute/present the decision, but is optional and does not become a mandatory authority or relay.
-- Smart Vote/EkoH outputs are transparent readings/inputs unless the eThikos decision contract explicitly assigns them another role.
+1. **Unique authoritative owner.** Every authoritative state has one declared logical owner.
+2. **No direct cross-system writes.** Integrations use explicit versioned contracts and owner APIs.
+3. **Presentation is not authority.** Koali rendering, routing or Space activation does not transfer business, epistemic or host authority.
+4. **Integrity is not authority.** Valid bytes/signatures do not imply validation, recognition or activation eligibility.
+5. **Workflow state is not epistemic state.** Orgo statuses do not replace Kristal assertion/validation/recognition states.
+6. **Compilation is not validation.** Kristal v5 may compile Working Exchanges before final validation/recognition where policy permits.
+7. **Recognition is scoped.** Reference status is authority/scope-specific, not universal truth.
+8. **Reader Policy does not rewrite underlying state.** Visibility preserves labels and lineage.
+9. **Runtime Pack state has a precise owner.** On kOA-Linux, `kristal_runtime` owns verification/compatibility/active Runtime Pack state and activation/rollback receipts; Node Agent performs only the narrow privileged host transition when required.
+10. **Release Set is not activation state.** It binds compatible release-channel versions; it does not replace component active-state records.
+11. **Space activation is not Runtime Pack activation.** Koali Space lifecycle is presentation/application composition.
+12. **`accepted != succeeded`.** Durable asynchronous operations require terminal reconciliation.
+13. **Idempotency survives retry/redrive.** Same logical key with different semantic content is a conflict.
+14. **IK adoption is explicit.** Interaction Kernel is the target cross-system Profile layer, but it does not silently replace kOA-Linux internal/component contracts.
+15. **No forced Kristal hop.** Konnaxion↔Orgo remains direct unless an adopted Profile explicitly requires Kristal.

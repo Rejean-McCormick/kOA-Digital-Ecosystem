@@ -1,57 +1,43 @@
-# kOA Documentation
+# kOA Digital Ecosystem Documentation
 
-The repository uses three documentation layers with different purposes.
+This documentation defines the **system-of-systems boundary** for kOA. Product and platform repositories remain authoritative for their own state, contracts and implementation status.
 
-## Current status
+## Current alignment baseline
 
-For the latest implementation/validation state, start with [`status/index.md`](status/index.md). Status pages are descriptive snapshots; ADRs and technical contracts remain authoritative.
+- Kristal: `5.0.0-rc.1`, exact tag/commit/canonicalization pin.
+- kOA-Linux: current supplied docs/contracts snapshot, including Release Set, Runtime Pack, Kristal Runtime and subsystem contracts.
+- Koali Spaces: current supplied product/surface-layer snapshot.
+- Interaction Kernel: target distributed interoperability protocol/Profile layer.
 
-## 1. Overview
+## Authority boundaries
 
-`1-Overview/` is the readable entry point for the ecosystem: lifecycle, components, artifacts, operations, integrations, glossary, and FAQ. It explains the system without duplicating schema-level contracts.
+- Konnaxion owns civic/public source state.
+- Orgo owns workflow/work state.
+- Kristal owns epistemic artifact semantics.
+- kOA-Linux owns platform contracts and release-channel coordination.
+- `kristal_runtime` owns local Runtime Pack verification/active-state/rollback records in kOA-Linux.
+- kOA Node Agent owns narrow privileged node-local transitions assigned by its contract.
+- Koali Spaces owns presentation composition and Space lifecycle, not business or epistemic authority.
+- Interaction Kernel owns protocol/Profile semantics only when/where adopted; it is not a central service.
 
-Start with: [`1-Overview/index.md`](1-Overview/index.md)
-
-## 2. Technical Reference
-
-`2-Technical-Reference/` is the implementation-oriented reference for architecture, node responsibilities, kOA-native artifacts and schemas, integrations, operations, guides, and ADRs.
-
-Start with: [`2-Technical-Reference/index.md`](2-Technical-Reference/index.md)
-
-## 3. Layer Model
-
-`3-Layer-Model/` is the conceptual model that explains how kOA turns meaning into knowledge, decision, action, memory, and future capacity. It does not replace the technical contracts.
-
-Start with: [`3-Layer-Model/README.md`](3-Layer-Model/README.md)
-
-## Canonical documentation boundaries
-
-- Kristal v4 remains the external normative source for Kristal artifact contracts and schemas.
-- kOA technical contracts live under `2-Technical-Reference/`.
-- The Overview may summarize behavior but should not redefine technical contracts.
-- The Layer Model is conceptual and should reference, not duplicate, technical definitions.
-
-## Repository map
+## Key distinctions
 
 ```text
-docs/
-├── index.md
-├── status/
-├── 1-Overview/
-├── 2-Technical-Reference/
-│   ├── 00-overview/
-│   ├── 10-system/
-│   ├── 20-nodes/
-│   ├── 30-artifacts/
-│   ├── 40-integration/
-│   ├── 50-operations/
-│   ├── 60-guides/
-│   └── 90-reference/
-└── 3-Layer-Model/
-    └── layers/
+Space activation                ≠ Runtime Pack activation
+Release Set compatibility       ≠ Runtime Pack epistemic validation
+kristal_runtime active state    ≠ kOA Node Agent privilege authority
+IK target Profile               ≠ current kOA-Linux internal communication contract
+compile                         ≠ validate ≠ recognize ≠ publish ≠ activate
 ```
 
+## Start here
 
-## Decision-path correction (2026-09-12)
-
-For Konnaxion civic/public decisions, **Konnaxion/eThikos finalizes the decision and pushes the decision handoff directly to Orgo**. UCKK is optional for publication/distribution and is not a mandatory decision authority or relay. See `2-Technical-Reference/90-reference/adr/adr-0007-konnaxion-ethikos-decision-authority.md`.
+- [Overview](1-Overview/index.md)
+- [Components](1-Overview/Components.md)
+- [Artifacts](1-Overview/Artifacts.md)
+- [Lifecycle](1-Overview/Lifecycle.md)
+- [Integration](1-Overview/Integration.md)
+- [Koali Spaces integration](1-Overview/Integration-Koali-Spaces.md)
+- [Kristal v5 integration](1-Overview/Integration-Kristal-v5.md)
+- [Interaction Kernel integration](1-Overview/Integration-Interaction-Kernel.md)
+- [Current status](status/2026-09-16.md)
