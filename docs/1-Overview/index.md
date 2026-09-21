@@ -26,6 +26,10 @@ Koali Spaces sits above admitted products as an optional presentation layer.
 It does not acquire their business, workflow, epistemic or host authority.
 ```
 
+The system map describes ecosystem membership and ownership relationships. A specific kOA-Linux profile may activate only a subset of these systems; profile composition is not the same thing as ecosystem membership.
+
+**Control views:** [Authority map](../2-Technical-Reference/10-system/authority-map.md) · [Contract map](../2-Technical-Reference/40-integration/contract-map.md) · [Maturity map](../status/current.md)
+
 ## Owners
 
 - **Konnaxion** — civic/public state and DecisionRecords.
@@ -35,7 +39,7 @@ It does not acquire their business, workflow, epistemic or host authority.
 - **kristal_runtime** — Runtime Pack verification, compatibility, active Runtime Pack selection/state, activation/rollback receipts and runtime health in kOA-Linux.
 - **kOA Node Agent** — narrow authorized node-local lifecycle and privileged host operations.
 - **Koali Spaces** — optional shell/presentation composition and Space lifecycle.
-- **Interaction Kernel** — target interoperability protocol/Profile layer where adopted.
+- **Interaction Kernel** — selected interoperability protocol/Profile layer where explicitly adopted; Konnaxion↔Orgo currently has qualified adoption for two Profile/version pairs.
 - **Da’at** — ecosystem/IK-to-Kristal mapping/ACL boundary.
 
 ## Runtime Pack activation
@@ -61,4 +65,4 @@ Koali Spaces is presentation infrastructure. Its Space/application activation is
 
 ## Implementation status
 
-Target architecture and product implementation evidence are distinct. Current Koali evidence includes a later successful Konnaxion pilot, while some product reference pages still describe that pilot as pending. Interaction Kernel remains target cross-system architecture until explicit adoption/conformance is published by the owning systems/platform.
+See the current [maturity map](../status/current.md). Target architecture and product implementation evidence are distinct. Current Koali evidence includes a later successful Konnaxion pilot, while some product reference pages still describe that pilot as pending. Interaction Kernel adoption is selective: Konnaxion↔Orgo is qualified for two Profile/version pairs, while every other boundary still requires explicit owner adoption/conformance evidence.

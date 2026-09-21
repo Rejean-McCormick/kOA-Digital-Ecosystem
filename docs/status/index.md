@@ -1,6 +1,10 @@
-# kOA Digital Ecosystem alignment status — 2026-09-16
+# kOA Digital Ecosystem alignment status — 2026-09-21
 
 This page records ecosystem alignment against the supplied Konnaxion, Orgo, Kristal, Interaction Kernel, current kOA-Linux docs/contracts snapshot and current Koali Spaces docs snapshot.
+
+For the compact cross-system dashboard, see [`current.md`](./current.md). It keeps architecture, implementation, qualification, integration and production evidence as separate dimensions.
+
+Latest cross-product qualification evidence: [`2026-09-21-konnaxion-orgo-ik-e2e-qualification.md`](./2026-09-21-konnaxion-orgo-ik-e2e-qualification.md).
 
 ## Overall result
 
@@ -16,9 +20,9 @@ The ecosystem documentation is aligned at the ownership/contract level, but adop
 | Koali Space activation vs Runtime Pack activation | Aligned | Explicitly separate lifecycles |
 | Koali↔Konnaxion UI pilot | Later evidence present | 2026-09-08 notice records adapter 15/15, Konnaxion backend 148/148, Koali UI 29/29, readiness HTTP 200 and browser navigation verification |
 | Koali current-reference docs | Drift remains in owner repo | `01-product/04-current-vs-target.md` and `15-reference/04-current-implementation-snapshot.md` still say first Konnaxion onboarding is pending |
-| Interaction Kernel | Target architecture | Must not be presented as replacing current kOA-Linux internal/component contracts until explicit adoption/mapping is published |
-| Konnaxion↔Orgo IK handoff | Target/migration | Direct finalized DecisionRecord→Orgo path still requires explicit implementation/conformance evidence |
-| Orgo→Konnaxion durable publication | Target mapping + historical evidence | Product-level IK Profile conformance still required |
+| Interaction Kernel | Selective adoption qualified | Konnaxion↔Orgo is qualified for `governance.decision.execute/1.0.0` and `accountability.impact.publish/1.0.0`; no universal kOA-Linux or ecosystem-wide IK adoption is implied |
+| Konnaxion↔Orgo IK handoff | **QUALIFIED 2026-09-21** | Direct finalized DecisionRecord→Orgo Signal→Workflow→Case→Task path passed the integrated E2E qualification; see `2026-09-21-konnaxion-orgo-ik-e2e-qualification.md` |
+| Orgo→Konnaxion durable publication | **QUALIFIED 2026-09-21** | `IntegrationOperation`→`accountability.impact.publish/1.0.0`→Konnaxion impact ingress passed, including idempotent replay and divergent replay conflict |
 | Da’at→Kristal v5 | Target mapping | Migration/conformance evidence remains owner-repository work |
 
 ## Precise kOA-Linux ownership model
@@ -60,9 +64,9 @@ A Koali view of Kristal/Runtime Pack material must preserve relevant status, cer
 
 ## Interaction Kernel status
 
-Interaction Kernel remains the target cross-system protocol/Profile layer for selected ecosystem boundaries. Current kOA-Linux documentation already defines its own canonical interaction types and contracts; therefore Digital Ecosystem treats IK adoption as explicit and system-specific rather than already universal.
+Interaction Kernel is the selectively adopted cross-system protocol/Profile layer for explicit ecosystem boundaries. Current kOA-Linux documentation already defines its own canonical interaction types and contracts; therefore Digital Ecosystem treats IK adoption as explicit and system-specific rather than already universal.
 
-Claims such as `governance.decision.execute` or `accountability.impact.publish` describe target/mapped Profiles until the owning product/platform contracts publish matching conformance evidence.
+For the Konnaxion↔Orgo boundary, `governance.decision.execute/1.0.0` and `accountability.impact.publish/1.0.0` now have integrated runtime evidence dated 2026-09-21. Other IK mappings remain system-specific targets until their owners publish equivalent adoption and conformance evidence.
 
 ## Deprecated Digital Ecosystem authorities
 
@@ -77,6 +81,6 @@ The following are retained only for compatibility/history:
 
 1. **Koali Spaces:** update the two current-state reference pages that still say first real Konnaxion onboarding is pending; replace “Kristal: verrou de vérité” / “assertion canonique” terminology with v5 epistemic/authority language.
 2. **kOA-Linux:** mount/link official subsystem documentation at reserved subsystem paths; continue contract/code convergence items already identified in `CODE_ALIGNMENT_NOTES.md` (including language-pack discriminator compatibility and generator/validator alignment).
-3. **Konnaxion + Orgo:** publish explicit IK Profile adoption/conformance for the intended handoff/publication paths.
+3. **Konnaxion + Orgo:** keep the qualified IK Profile implementations and owner-repository tests aligned, and preserve the 2026-09-21 E2E scenario as a regression gate.
 4. **Da’at:** publish verified Kristal v5 mapping/conformance against the pinned release.
 5. **Digital Ecosystem:** future updates should reference owner contracts rather than introduce new authority records when a product/platform already owns the state.

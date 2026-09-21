@@ -2,10 +2,19 @@
 
 > System-of-systems documentation for the kOA ecosystem. This repository describes cross-system ownership, integration contracts, release/activation boundaries, and implementation-status evidence. Product repositories remain authoritative for their internal models and implementation status.
 
-**Alignment baseline:** 2026-09-16
+**Alignment baseline:** 2026-09-21
 **Kristal baseline:** `5.0.0-rc.1` / tag `v5.0.0-rc.1` / commit `af703bf02ee04a69a5f2ad6694fa8b8e56ae2b19`
-**kOA-Linux baseline:** current supplied docs/contracts snapshot generated 2026-09-16
-**Koali Spaces baseline:** current supplied docs snapshot generated 2026-09-16
+**kOA-Linux evidence baseline:** current supplied docs/contracts plus 2026-09-19 technical/runtime status
+**Koali Spaces evidence baseline:** qualified beta report dated 2026-09-06 plus later Konnaxion pilot evidence referenced by the owner report
+
+## Four control views
+
+Use these four views to navigate the system without turning this repository into a competing product authority:
+
+- **System map** — what exists and how the major systems relate: [`docs/1-Overview/index.md`](docs/1-Overview/index.md#system-map)
+- **Authority map** — who owns each state/decision: [`docs/2-Technical-Reference/10-system/authority-map.md`](docs/2-Technical-Reference/10-system/authority-map.md)
+- **Contract map** — which explicit boundaries connect owners: [`docs/2-Technical-Reference/40-integration/contract-map.md`](docs/2-Technical-Reference/40-integration/contract-map.md)
+- **Maturity map** — specified vs implemented vs qualified vs integrated vs production evidence: [`docs/status/current.md`](docs/status/current.md)
 
 ## Purpose
 
@@ -27,7 +36,7 @@ kOA is a system of independently owned systems. This documentation answers:
 | **kristal_runtime** | kOA-Linux native runtime component owning Runtime Pack verification/compatibility state, active Runtime Pack state, activation/rollback receipts and runtime health |
 | **kOA Node Agent** | narrow node-local privileged lifecycle/activation/recovery operations under authorization |
 | **Koali Spaces** | optional global experience/presentation composition; Space activation, routing, shell and admitted application surfaces |
-| **Interaction Kernel (IK)** | target cross-system interoperability protocol/Profile layer; not participant state |
+| **Interaction Kernel (IK)** | selected cross-system interoperability protocol/Profile layer where explicitly adopted; not participant state |
 | **Da’at** | mapping/ACL boundary between ecosystem/IK-facing requests and Kristal-native contracts |
 
 ## Core rules
@@ -41,7 +50,7 @@ kOA is a system of independently owned systems. This documentation answers:
 - **Release channels are distinct.** kOA-Linux separates `system`, `services`, `governance` and `knowledge` channels and binds compatible versions through a Release Set.
 - **Runtime Pack activation state is not a new Digital Ecosystem artifact.** In kOA-Linux deployments, `kristal_runtime` owns Runtime Pack verification/active-state/rollback records; kOA Node Agent can execute the narrow privileged host transition where required.
 - **Space activation is not Runtime Pack activation.** Koali Spaces activates presentation/application composition, not Kristal knowledge state.
-- **Interaction Kernel is the target system-of-systems protocol.** It must not be presented as already replacing kOA-Linux's canonical internal/component communication contracts until those contracts explicitly adopt it.
+- **Interaction Kernel adoption is explicit and boundary-specific.** Konnaxion↔Orgo is qualified for two Profile/version pairs; this must not be presented as replacing kOA-Linux's canonical internal/component communication contracts or as universal ecosystem adoption.
 - **`accepted` is not `succeeded`.** Durable asynchronous effects require terminal reconciliation.
 
 ## Principal flows
@@ -93,6 +102,6 @@ This is presentation state, not Kristal Runtime Pack activation.
 
 ## Current status
 
-The architecture and documentation are aligned, but target protocol adoption and product integration maturity are not uniform. Koali Spaces has later evidence for a real Konnaxion pilot, while some current Koali reference pages still describe that pilot as pending and therefore need product-side refresh. Interaction Kernel remains a target system-of-systems integration layer until explicit product/platform contract adoption is published.
+The architecture and documentation are aligned, but product/platform maturity remains non-uniform. Koali Spaces has later evidence for a real Konnaxion pilot, while some owner reference pages still describe that pilot as pending and therefore need product-side refresh. Interaction Kernel is selectively adopted: the Konnaxion↔Orgo boundary is qualified for `governance.decision.execute/1.0.0` and `accountability.impact.publish/1.0.0`; other boundaries still require explicit owner adoption and evidence.
 
-See [`docs/status/2026-09-16.md`](docs/status/2026-09-16.md).
+See the current maturity dashboard at [`docs/status/current.md`](docs/status/current.md) and the detailed alignment ledger at [`docs/status/index.md`](docs/status/index.md).

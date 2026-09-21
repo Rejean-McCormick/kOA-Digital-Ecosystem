@@ -11,7 +11,7 @@ This reference defines ecosystem-level mappings, boundaries and coordination rul
 - **`kristal_runtime`** — local Runtime Pack verification/compatibility/active-state/activation+rollback receipts/runtime health on kOA-Linux.
 - **kOA Node Agent** — narrow authorized node-local lifecycle/activation/recovery operations.
 - **Koali Spaces** — optional presentation/Space lifecycle and admitted application surfaces.
-- **Interaction Kernel** — target cross-system Profile/protocol layer where explicitly adopted.
+- **Interaction Kernel** — selected cross-system Profile/protocol layer where explicitly adopted; Konnaxion↔Orgo currently has qualified adoption for two Profile/version pairs.
 
 ## Kristal pin
 
@@ -21,10 +21,12 @@ Kristal `5.0.0-rc.1`, tag `v5.0.0-rc.1`, commit `af703bf02ee04a69a5f2ad6694fa8b8
 
 - `00-overview/system-at-a-glance.md`
 - `10-system/architecture.md`
+- `10-system/authority-map.md`
 - `10-system/lifecycle.md`
 - `10-system/trust-boundaries.md`
 - `30-artifacts/release-set-reference.md`
 - `30-artifacts/kristal-runtime-state.md`
+- `40-integration/contract-map.md`
 - `40-integration/interaction-kernel/index.md`
 - `40-integration/kristal-v5/index.md`
 - `40-integration/koali-spaces/index.md`

@@ -1,6 +1,8 @@
 # Konnaxion/eThikos ↔ Orgo Decision and Durable Publish Profile
 
-> **2026-09-16 alignment note:** This profile is now mapped to Interaction Kernel. The inbound finalized DecisionRecord path corresponds to `governance.decision.execute/1.0.0`; the outbound durable impact/publication path corresponds to `accountability.impact.publish/1.0.0`. Historical bridge evidence is compatibility evidence, not proof that full IK adoption is complete. Konnaxion's current boundary/code-alignment docs classify external adapters as not implemented in the current code snapshot, so implementation status and Profile conformance must be verified in the owning repository before claiming conformance.
+> **2026-09-21 qualification update:** The direct Konnaxion/eThikos ↔ Orgo path is now qualified in an integrated local runtime for `governance.decision.execute/1.0.0` and `accountability.impact.publish/1.0.0`. The run demonstrated durable DecisionRecord delivery into Orgo, Signal→Workflow→Case→Task execution, durable impact publication back to Konnaxion, idempotent replay, and divergent replay rejection. See `../../../status/2026-09-21-konnaxion-orgo-ik-e2e-qualification.md`.
+>
+> **Historical note:** The 2026-09-16 mapping and older UCKK-A014 evidence remain useful for migration traceability, but they are no longer the latest conformance state for this boundary.
 
 
 **Normative for kOA:** YES for ecosystem mapping; product implementation remains owned by Konnaxion/Orgo  
@@ -253,38 +255,42 @@ UCKK does not become authoritative merely because it displays or republishes a d
 
 ---
 
-## 10) Validation status of the historical A014 fixture
+## 10) Qualification status
 
-The historical A014 runs validate several **mechanical/runtime capabilities** while retaining a known inbound authority-model defect.
+### Current direct IK qualification — 2026-09-21
 
-### Confirmed mechanics
-
-The following capabilities have been exercised successfully:
-
-- Signal/workflow/Case/Task mechanics in Orgo under the historical fixture;
-- Konnaxion World `uckk-a014` / release `1` provider runtime;
-- authenticated Orgo worker → Konnaxion publish call;
-- canonical redrive of an existing `FAILED` IntegrationOperation / `DEAD` outbox delivery;
-- operation transition `RUNNING → SUCCEEDED` after provider recovery;
-- provider receipt `status = succeeded`;
-- exactly one Konnaxion Impact for `impact:UCKK-A014:day30:v1`.
-
-Therefore the **outbound Orgo→Konnaxion durable publish path is validated** for this fixture, including recovery from `PROVIDER_UNCONFIGURED`.
-
-### Still not accepted
-
-The original inbound path was modeled incorrectly as UCKK/Assembly → Orgo. Those historical inbound checkpoint passes are not acceptance evidence for the corrected decision architecture.
-
-Before declaring the vertical slice complete, it must be reworked and revalidated as:
+The corrected two-way path has now been exercised successfully through the real product runtimes:
 
 ```text
-Konnaxion/eThikos finalized decision
-→ direct authenticated Orgo handoff
-→ Orgo governed work
-→ Orgo impact publication back to Konnaxion
+Konnaxion/eThikos finalized DecisionRecord
+→ InteractionEmission
+→ governance.decision.execute/1.0.0
+→ Orgo Signal
+→ Published WorkflowVersion
+→ Case + Task
+→ IntegrationOperation
+→ accountability.impact.publish/1.0.0
+→ Konnaxion OrgoImpactPublication
 ```
 
-The outbound half is now proven. The direct Konnaxion/eThikos→Orgo half remains the primary gap.
+Observed terminal results:
+
+- Konnaxion emission: `delivered` in one attempt;
+- Orgo Signal: `PROCESSED`;
+- Orgo impact IntegrationOperation: `SUCCEEDED`;
+- Konnaxion impact publication: persisted and confirmed;
+- same-key/same-semantics replay: accepted without duplicate Signal or impact;
+- same-key/divergent-semantics replay: rejected with HTTP 409 / `IK_IDEMPOTENCY_CONFLICT`.
+
+Therefore the direct inbound decision path and the outbound durable impact path are both qualified for the Profile/version pairs named above in the tested local integrated runtime.
+
+Canonical evidence: `../../../status/2026-09-21-konnaxion-orgo-ik-e2e-qualification.md`.
+
+### Historical A014 evidence
+
+The older A014 runs remain historical evidence of Orgo workflow mechanics, Konnaxion provider behavior, retry/redrive, and durable publication recovery. They are retained for traceability but no longer represent the latest inbound authority model.
+
+UCKK remains optional to the qualified direct Konnaxion→Orgo path.
 
 ---
 
