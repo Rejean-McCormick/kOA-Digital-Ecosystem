@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "integration_id": "konstellation-0.4",
+  "contracts": {
+    "query_spec": "0.2",
+    "exploration_state": "0.2",
+    "kristal": "5.0",
+    "communication_request": "1.0",
+    "communication_result": "1.0",
+    "sa_gf": "1.0"
+  },
+  "reader_profiles": [
+    "konstellation:reader-json-v1"
+  ],
+  "communication": {
+    "profile": "konstellation-explorer-1",
+    "language": "fr",
+    "concrete": "KonstellationFre",
+    "release_status": "CANDIDATE",
+    "publication_gate": "verified Wordbench PGF + SA conformance + runtime validation"
+  },
+  "ownership": {
+    "selection": "Konstellation",
+    "epistemic_authority": "Kristal",
+    "realization": "SemantiK Architect",
+    "runtime_activation": "SemantiK Runtime Orchestrator",
+    "source_preparation": "EncyKlopedia"
+  }
+}

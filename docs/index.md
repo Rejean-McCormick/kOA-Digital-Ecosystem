@@ -49,3 +49,7 @@ compile                         ≠ validate ≠ recognize ≠ publish ≠ activ
 - [Interaction Kernel integration](1-Overview/Integration-Interaction-Kernel.md)
 - [Current maturity map](status/current.md)
 - [Detailed alignment status](status/index.md)
+
+## Intégration Konstellation
+
+[Contrat, versions et responsabilités](2-Technical-Reference/40-integration/konstellation/index.md).
