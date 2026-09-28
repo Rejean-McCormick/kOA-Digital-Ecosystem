@@ -17,4 +17,4 @@ For a kOA-Linux Runtime Pack:
 5. kOA Node Agent executes the narrow privileged transition when required;
 6. owner receipts/evidence are emitted.
 
-The deprecated Digital Ecosystem Release Record and Runtime Activation State are not authorities.
+Digital Ecosystem defines no parallel release or Runtime Pack active-state authority.

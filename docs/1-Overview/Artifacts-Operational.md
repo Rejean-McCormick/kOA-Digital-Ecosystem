@@ -22,7 +22,7 @@ Da’at may transform such an export into Structured Epistemic State or another 
 
 Release Set is the platform release compatibility artifact. It binds versions across independent release channels and carries compatibility/activation metadata under the kOA-Linux contract.
 
-Digital Ecosystem's former `Release Record v2` is deprecated as an authority. If retained for analytics/audit compatibility, it is only a projection that references `release_set_id` and owner receipts.
+Release compatibility is represented by the kOA-Linux Release Set and owner receipts; Digital Ecosystem defines no parallel release authority.
 
 ## Runtime Pack local state
 

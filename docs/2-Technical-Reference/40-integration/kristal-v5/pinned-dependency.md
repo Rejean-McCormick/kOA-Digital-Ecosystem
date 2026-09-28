@@ -1,16 +1,29 @@
-# Pinned Kristal dependency
+# Kristal dependency and contract baselines
 
-kOA pins the exact Kristal v5 release used by the current integration profile:
+kOA integrations must distinguish a **contract baseline** from an **immutable release pin**.
+
+## Current knowledge-contract baseline
 
 ```text
-version                  5.0.0-rc.1
-tag                      v5.0.0-rc.1
-commit                   af703bf02ee04a69a5f2ad6694fa8b8e56ae2b19
-canonicalization_profile kristal.v5:jcs-rfc8785
-canonicalization_version 1
-schema_set_digest        sha256:7a94a1e8a91d5c5267b73b7f1e98977faa548324bc937bb491cd08d49fdc8c92
+version                  5.0.0-rc.3
+status                   release-candidate
+referent registry        kristal.referent-registry/1.0.0
+knowledge-model bundle   sha256:07fe0527ab29a4b40870efdd0c9e0c67c91de919e5428047245b2a2c04f8ea98
+canonicalization         kristal.v5:jcs-rfc8785 / 1
 ```
 
-Integrations must not use floating references such as `main`, `latest` or `5.x` for conformance claims.
+The supplied rc.3 release metadata declares tag `v5.0.0-rc.3` but does **not** yet resolve it to an immutable commit SHA (`commit: null`). The knowledge boundary may therefore freeze the contract set while still refusing a claim that rc.3 is a fully resolved published release.
 
-The pin is independent of kOA release numbering and should be recorded in Build/Release evidence whenever Kristal artifacts are produced or consumed.
+## Existing immutable downstream locks
+
+Some downstream integrations may still pin an older immutable Kristal release. Those locks remain valid for their own scope until the owning integration explicitly updates and requalifies them. The new knowledge-projection baseline must not silently rewrite unrelated locks.
+
+## Rule
+
+For any conformance or release claim:
+
+1. identify the exact integration scope;
+2. identify the exact Kristal contract/release used by that scope;
+3. reject floating references such as `main`, `latest` or `5.x`;
+4. require tag + immutable commit for claims that depend on a published immutable release;
+5. record the contract-set/model digest where the boundary defines one.

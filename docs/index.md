@@ -1,41 +1,51 @@
 # kOA Digital Ecosystem Documentation
 
-This documentation defines the **system-of-systems boundary** for kOA. Product and platform repositories remain authoritative for their own state, contracts and implementation status.
+This repository is the **cross-system architecture map** for kOA. It does not replace owner repositories.
 
-## Current alignment baseline
+## Current baseline
 
-- Kristal: `5.0.0-rc.1`, exact tag/commit/canonicalization pin.
-- kOA-Linux: current supplied docs/contracts snapshot, including Release Set, Runtime Pack, Kristal Runtime and subsystem contracts.
-- Koali Spaces: current supplied product/surface-layer snapshot.
-- Interaction Kernel: selected distributed interoperability protocol/Profile layer with qualified Konnaxion↔Orgo adoption for two explicit Profile/version pairs; other adoption remains boundary-specific.
+The current knowledge boundary is:
+
+```text
+EncyKlopedia acquisition
+→ Da’at mapping
+→ Kristal epistemic canon
+→ rebuildable UCKK / Univers-Cité projection
+```
+
+Current frozen contract identifiers:
+
+- Kristal `5.0.0-rc.3` release-candidate contract set;
+- Referent Registry `kristal.referent-registry/1.0.0`;
+- `encyklopedia.corpus-harvest-handoff/1.0.0`;
+- IK `kristal.build.request/1.1.0` and `kristal.artifact.ready/1.1.0`;
+- `uckk.univers-cite-projection/1.0.0`.
+
+The rc.3 release metadata supplied with the update has no resolved commit SHA yet, so it is not represented here as a completed immutable release pin.
 
 ## Authority boundaries
 
 - Konnaxion owns civic/public source state.
 - Orgo owns workflow/work state.
-- Kristal owns epistemic artifact semantics.
+- EncyKlopedia owns acquisition evidence and source/provider resolution.
+- Da’at owns the mapping/ACL boundary into Kristal.
+- Kristal owns referent and epistemic artifact semantics.
+- UCKK / Univers-Cité owns consumer projection and campus/learning state, not Kristal assertions.
 - kOA-Linux owns platform contracts and release-channel coordination.
-- `kristal_runtime` owns local Runtime Pack verification/active-state/rollback records in kOA-Linux.
-- kOA Node Agent owns narrow privileged node-local transitions assigned by its contract.
-- Koali Spaces owns presentation composition and Space lifecycle, not business or epistemic authority.
-- Interaction Kernel owns protocol/Profile semantics only when/where adopted; Konnaxion↔Orgo has qualified adoption for two Profile/version pairs, and IK is not a central service.
-
-## Key distinctions
-
-```text
-Space activation                ≠ Runtime Pack activation
-Release Set compatibility       ≠ Runtime Pack epistemic validation
-kristal_runtime active state    ≠ kOA Node Agent privilege authority
-IK target Profile               ≠ current kOA-Linux internal communication contract
-compile                         ≠ validate ≠ recognize ≠ publish ≠ activate
-```
+- `kristal_runtime` owns local Runtime Pack verification/active-state/rollback records.
+- kOA Node Agent owns narrow privileged node-local transitions assigned by contract.
+- Koali Spaces owns presentation composition and Space lifecycle.
+- Interaction Kernel owns Profile/envelope semantics only where adopted.
+- SemantiK Architect owns communication realization; its runtime orchestrator owns release sequencing only.
 
 ## Control views
 
-- [System map](1-Overview/index.md#system-map)
+- [System map](1-Overview/index.md)
 - [Authority map](2-Technical-Reference/10-system/authority-map.md)
 - [Contract map](2-Technical-Reference/40-integration/contract-map.md)
-- [Maturity map](status/current.md)
+- [Knowledge acquisition/projection boundary](2-Technical-Reference/40-integration/knowledge-projection.md)
+- [Current maturity map](status/current.md)
+- [Conceptual Layer Model](3-Layer-Model/README.md)
 
 ## Start here
 
@@ -48,8 +58,7 @@ compile                         ≠ validate ≠ recognize ≠ publish ≠ activ
 - [Kristal v5 integration](1-Overview/Integration-Kristal-v5.md)
 - [Interaction Kernel integration](1-Overview/Integration-Interaction-Kernel.md)
 - [Current maturity map](status/current.md)
-- [Detailed alignment status](status/index.md)
 
-## Intégration Konstellation
+## Konstellation
 
-[Contrat, versions et responsabilités](2-Technical-Reference/40-integration/konstellation/index.md).
+[Contract, versions and responsibilities](2-Technical-Reference/40-integration/konstellation/index.md).

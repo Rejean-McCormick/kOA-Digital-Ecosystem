@@ -86,10 +86,6 @@ When introducing a breaking change:
 - emit canonical new versions
 - convert legacy forms at boundaries only when deterministic and lossless
 
-### 4.2 Legacy spellings for external contracts
-Any tolerance for legacy spellings of Kristal-related fields must follow:
-- `docs/2-Technical-Reference/40-integration/kristal-v5/legacy-compat.md`
-
 ---
 
 ## 5) Consequences

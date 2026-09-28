@@ -20,7 +20,7 @@ Claim-IR/Resolved Claim-IR may appear when an extractor/resolver Profile require
 
 ## Gates
 
-Do not use the historical universal rule “validation failure means compile must not run”. Instead record separate status and enforce the gate appropriate to the requested transition:
+Compilation, validation, recognition, publication and activation use separate stage-specific gates. Instead record separate status and enforce the gate appropriate to the requested transition:
 
 - compile eligibility;
 - reference eligibility;

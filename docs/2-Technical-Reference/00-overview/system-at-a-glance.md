@@ -6,19 +6,26 @@ kOA is a system of independently owned systems and platform components.
 |---|---|
 | civic/public source state | Konnaxion |
 | workflow/work state | Orgo |
-| epistemic artifacts | Kristal |
+| source discovery/acquisition evidence | EncyKlopedia |
+| ecosystem→Kristal mapping / ACL | Da’at |
+| referent + epistemic artifacts | Kristal |
+| Univers-Cité/Moodle consumer projection + local campus decisions | UCKK / Univers-Cité |
 | platform/release-channel contracts | kOA-Linux |
 | Runtime Pack local verification/active-state/receipts | `kristal_runtime` |
 | privileged node-local transition | kOA Node Agent |
 | presentation/Space lifecycle | Koali Spaces |
-| target cross-system Profile semantics | Interaction Kernel where adopted |
-| ecosystem→Kristal mapping | Da’at |
+| cross-system Profile semantics | Interaction Kernel where adopted |
+| human communication planning/realization | SemantiK Architect |
+| SemantiK RuntimeSet release sequencing | SemantiK Runtime Orchestrator |
 
 Key distinctions:
 
 ```text
+acquisition                  ≠ validation / recognition
+consumer projection          ≠ epistemic canon
+external identifier          ≠ authority
 Release Set compatible       ≠ Runtime Pack active
 Runtime Pack active          ≠ Koali Space active
-kOA Node Agent receipt       ≠ active Runtime Pack ownership
-IK target architecture       ≠ current kOA-Linux internal contract unless adopted
+IK Profile                   ≠ universal transport
+rc.3 contract baseline       ≠ immutable published rc.3 release
 ```

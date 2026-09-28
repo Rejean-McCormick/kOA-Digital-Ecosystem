@@ -10,4 +10,4 @@ Architect-Render produces human-facing representations from material allowed by 
 - do not write directly into Kristal Exchange state;
 - do not equate rendering with authority recognition.
 
-The historical “validated inputs only” rule is replaced by explicit Reader Policy eligibility. Production surfaces may still choose `reference_only` or another strict policy.
+Input eligibility is governed by explicit Reader Policy. Production surfaces may still choose `reference_only` or another strict policy.

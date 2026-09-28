@@ -1,0 +1,19 @@
+{
+  "format": "koa.knowledge-projection-contract-set/v1",
+  "as_of": "2026-09-28",
+  "kristal": {
+    "release": "5.0.0-rc.3",
+    "knowledge_model_bundle_sha256": "sha256:07fe0527ab29a4b40870efdd0c9e0c67c91de919e5428047245b2a2c04f8ea98",
+    "referent_profile": "kristal.referent-registry/1.0.0"
+  },
+  "encyklopedia": {
+    "handoff": "encyklopedia.corpus-harvest-handoff/1.0.0"
+  },
+  "interaction_kernel": {
+    "build_request": "kristal.build.request/1.1.0",
+    "artifact_ready": "kristal.artifact.ready/1.1.0"
+  },
+  "uckk": {
+    "projection": "uckk.univers-cite-projection/1.0.0"
+  }
+}

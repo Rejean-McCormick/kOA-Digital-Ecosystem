@@ -1,21 +1,18 @@
-# kOA-owned and referenced cross-system artifacts
+# Cross-system artifacts
 
-The ecosystem should prefer owner-system artifacts over duplicate integration-layer authorities.
+Prefer owner-system artifacts over duplicate integration-layer authorities.
 
-## Active
+## Active ecosystem references
 
-- **Build Record** — optional ecosystem correlation/reproducibility evidence; never replaces owner artifacts.
-- **kOA-Linux Release Set** — authoritative platform compatibility artifact across `system`, `services`, `governance`, and `knowledge` channels.
-- **Kristal Runtime owner records** — `runtime_pack_verification_record`, `active_runtime_pack_record`, activation/rollback receipts and runtime health, owned by `kristal_runtime`.
-- **kOA Node Agent receipts** — privileged node-local operation/activation/recovery evidence when applicable.
-- **Koali Space artifacts/state** — presentation composition and Space lifecycle owned by Koali Spaces.
+- **Build Record** — optional correlation/reproducibility evidence; never replaces owner artifacts.
+- **Mandate Bundle** — kOA-owned mandate/policy input where the documented flow uses it.
+- **Orgo Case / Task** — referenced owner artifacts; Orgo remains authoritative.
+- **kOA-Linux Release Set** — authoritative platform compatibility artifact across release channels.
+- **Kristal Runtime owner records** — Runtime Pack verification, active-state, activation/rollback receipts and health, owned by `kristal_runtime`.
+- **kOA Node Agent receipts** — privileged node-local operation evidence when applicable.
+- **Koali Space state** — presentation composition and Space lifecycle owned by Koali Spaces.
+- **Kristal artifacts** — referenced according to the Kristal owner contracts; not redefined here.
 
-## Compatibility-only
+Source product databases are not ecosystem artifacts. Immutable source exports/evidence may cross boundaries through explicit ArtifactRefs/exports while authority remains with the declared owner.
 
-- `Release Record v2` — deprecated as an authority; may be retained only as a projection that references Release Set/owner receipts.
-- `Runtime Activation State` — deprecated for kOA-Linux; do not create a parallel active-state authority beside `kristal_runtime`.
-- `Konnaxion State` — historical compatibility artifact from the older universal-Konnaxion activation model.
-
-Kristal artifacts are referenced according to the pinned Kristal v5 contracts and are not redefined here. Source product databases are not ecosystem artifacts and remain authoritative at their product owner. Immutable source exports/snapshots may be referenced by ArtifactRef/ExportManifest for compilation and provenance.
-
-Runtime Pack tables/indexes/columnar data/read-only database representations, when present under an adopted profile, are **derived query materializations** rather than new authoritative artifacts. They must remain tied to the source Kristal artifact and be rebuildable without changing authoritative knowledge state.
+Derived Runtime Pack indexes/tables/read models and UCKK/Moodle projections remain rebuildable, non-authoritative materializations.

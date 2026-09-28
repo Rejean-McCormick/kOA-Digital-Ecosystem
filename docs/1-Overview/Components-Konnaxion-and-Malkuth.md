@@ -19,4 +19,4 @@ In the current kOA-Linux contracts:
 - kOA Node Agent performs narrow privileged node-local transitions when required;
 - Release Set/channel compatibility belongs to kOA-Linux platform contracts.
 
-Therefore the former Digital Ecosystem `Runtime Activation State` and `Konnaxion State` are compatibility-only.
+Runtime Pack active state is owned by `kristal_runtime`; Konnaxion does not own platform activation state.

@@ -108,5 +108,5 @@ Binah must refuse to emit a Blueprint if any of the following are true:
 ## Related pages
 
 - Components: Orgo, Chokmah, SenTient, Daat, Konnaxion
-- Artifacts: Mandate Bundle, Build Record, Release Record
+- Artifacts: Mandate Bundle, Build Record, Release Set / owner receipts
 - Operations: Pipeline, Releases, Rollbacks

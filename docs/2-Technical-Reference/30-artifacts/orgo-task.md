@@ -179,7 +179,7 @@ Orgo Task commonly references:
 * `blueprint_id` / `blueprint_version`
 * upstream work: `plan_id` (if used)
 * external artifact refs (opaque IDs)
-* downstream artifacts: Build Record / Release Record IDs (kOA-owned)
+* downstream artifacts: Build Record / Release Set or owner receipt references (where applicable)
 
 ## Minimal example
 

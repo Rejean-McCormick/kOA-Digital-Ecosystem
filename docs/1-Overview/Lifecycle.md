@@ -8,35 +8,39 @@ Where Interaction Kernel is adopted:
 
 ```text
 sender-owned state
-→ versioned Profile/Envelope
+→ explicit versioned Profile
 → receiver authentication/authorization/admission
 → receiver-owned mutation/read
 → Receipt / Event / QueryResult
 → reconciliation
 ```
 
-Current kOA-Linux internal/component communication remains governed by its own canonical contracts until explicitly mapped to IK.
-
 ## Konnaxion decision → Orgo work
 
 ```text
 Konnaxion deliberation/readings
 → finalized DecisionRecord
-→ target cross-system handoff/Profile
+→ governance.decision.execute/1.0.0
 → Orgo Signal / WorkflowVersion / Case / Tasks
+→ accountability.impact.publish/1.0.0 when applicable
+→ Konnaxion impact/accountability state
 ```
 
-## Kristal v5 epistemic lifecycle
+## Knowledge acquisition → canon → projection
 
 ```text
-source / structured input
-→ Structured Epistemic State
+source/provider discovery
+→ EncyKlopedia acquisition evidence + referent candidates
+→ encyklopedia.corpus-harvest-handoff/1.0.0
+→ Da’at mapping / ACL
+→ Kristal Referent Registry + Structured Epistemic State
 → Working Exchange
-→ review / validation
-→ authority recognition when applicable
+→ validation / authority recognition as applicable
 → Reference Exchange when recognized
-→ Runtime Pack under policy
+→ Runtime Pack and/or UCKK consumer projection
 ```
+
+Acquisition, validation/recognition and consumer projection are separate lifecycles.
 
 ## kOA-Linux release and Runtime Pack lifecycle
 
@@ -46,12 +50,12 @@ Runtime Pack candidate
 → Release Set compatibility
 → kristal_runtime verification/compatibility
 → activation eligibility
-→ active_runtime_pack_record transition
+→ active-state transition
 → activation receipt / runtime health
-→ rollback receipt + last-valid restore when required
+→ rollback + last-valid restore when required
 ```
 
-A kOA Node Agent operation is used only for the privileged host-facing transition required by profile/contract.
+kOA Node Agent is used only for the privileged host-facing transition required by profile/contract.
 
 ## Koali Space lifecycle
 

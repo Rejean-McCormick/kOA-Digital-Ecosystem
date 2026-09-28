@@ -1,5 +1,7 @@
 # kOA Digital Ecosystem alignment status — 2026-09-21
 
+> **Newer reconciliation:** [`2026-09-28-document-corpus-reconciliation.md`](./2026-09-28-document-corpus-reconciliation.md) expands the evidence base to the supplied multi-repository documentation corpus. This page is retained as the 2026-09-21 alignment record and should not be rewritten as if its dated evidence occurred on 2026-09-28.
+
 This page records ecosystem alignment against the supplied Konnaxion, Orgo, Kristal, Interaction Kernel, current kOA-Linux docs/contracts snapshot and current Koali Spaces docs snapshot.
 
 For the compact cross-system dashboard, see [`current.md`](./current.md). It keeps architecture, implementation, qualification, integration and production evidence as separate dimensions.

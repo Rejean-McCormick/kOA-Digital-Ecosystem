@@ -1,18 +1,16 @@
 # Architecture Decision Records
 
-## Active
+Current accepted/amended ecosystem decisions:
 
-- `adr-0002-determinism-policy.md`
-- `adr-0004-architect-split.md`
-- `adr-0005-compatibility-versioning.md`
-- `adr-0006-common-identity-oidc.md`
-- `adr-0007-konnaxion-ethikos-decision-authority.md`
-- `adr-0008-kristal-v5-epistemic-lifecycle.md` — Working/Reference separation and stage-specific gates
-- `adr-0009-runtime-pack-activation-owner.md` — precise kOA-Linux Runtime Pack ownership: kristal_runtime state + Node Agent privileged transition
-- `adr-0010-interaction-kernel-boundary.md` — target distributed cross-system protocol; adoption is explicit/system-specific
-- `adr-0011-operational-kristal-materialization-boundary.md` — operational DB vs Kristal knowledge vs derived Runtime Pack/query materializations
+- `adr-0002-determinism-policy.md` — deterministic artifact/runtime policy
+- `adr-0004-architect-split.md` — Architect/SemantiK boundary, amended for Kristal v5
+- `adr-0005-compatibility-versioning.md` — compatibility and versioning
+- `adr-0006-common-identity-oidc.md` — common OIDC integration profile
+- `adr-0007-konnaxion-ethikos-decision-authority.md` — civic decision authority
+- `adr-0008-kristal-v5-epistemic-lifecycle.md` — Kristal v5 epistemic lifecycle
+- `adr-0009-runtime-pack-activation-owner.md` — Runtime Pack activation ownership
+- `adr-0010-interaction-kernel-boundary.md` — explicit boundary-specific IK adoption
+- `adr-0011-operational-kristal-materialization-boundary.md` — operational state vs Kristal vs derived materializations
+- `adr-0012-knowledge-acquisition-projection-boundary.md` — EncyKlopedia acquisition → Kristal canon → UCKK projection
 
-## Superseded
-
-- `adr-0001-truth-boundary.md` — superseded by ADR-0008
-- `adr-0003-konnaxion-activation-rollback.md` — superseded by ADR-0009
+Superseded decisions are intentionally not copied into this clean repository; Git history remains the historical record.

@@ -1,6 +1,6 @@
 # Determinism
 
-Determinism is required where kOA produces reproducible artifacts, signatures/digests, idempotent requests or release evidence. It does **not** imply the historical rule that validation must always precede compilation.
+Determinism is required where kOA produces reproducible artifacts, signatures/digests, idempotent requests or release evidence. It does **not** imply a universal validation-before-compilation gate.
 
 ## Kristal v5
 

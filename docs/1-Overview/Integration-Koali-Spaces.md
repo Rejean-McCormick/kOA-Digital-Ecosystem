@@ -1,27 +1,25 @@
 # Integration — Koali Spaces
 
-Koali Spaces is an optional presentation/composition subsystem hosted by kOA-Linux deployments when selected by profile/product configuration.
+Koali Spaces is an optional presentation/composition subsystem selected by deployment/profile configuration.
 
 ## Boundary
 
-Koali can compose admitted Konnaxion, Orgo, UCKK, SemantiK Architect and Kristal-related application surfaces, but it does not acquire their business or epistemic authority.
-
-Owner applications retain internal route and domain ownership beneath Koali outer namespaces such as `/apps/<owner>/...`.
+Koali can compose admitted application surfaces while preserving each owner's business, authorization and epistemic authority. Owner applications keep their internal route/domain ownership beneath Koali outer namespaces.
 
 ## Lifecycle distinction
 
 ```text
-Space activation / module admission / surface readiness
-≠
+Space activation / surface readiness
+!=
 Runtime Pack verification / activation
 ```
 
-Koali's lifecycle adapter must request owner/broker lifecycle actions rather than invoking privileged process control directly from the renderer/browser.
+Lifecycle actions use the applicable owner/broker boundary rather than granting renderer/browser code privileged process control.
 
 ## Kristal presentation rule
 
-A Koali view of Kristal/Runtime Pack material must preserve relevant status, certainty, authority and Reader Policy labels. Rendering does not compile, validate or recognize authority.
+A Koali view of Kristal material must preserve relevant status, certainty, authority and Reader Policy labels. Rendering does not compile, validate or recognize authority.
 
-## Current evidence
+## Current integration state
 
-The supplied Koali maturity report is a historical 2026-09-06 baseline with a later notice documenting a successful real Konnaxion pilot on 2026-09-08. Two current Koali reference pages still describe first Konnaxion onboarding as pending. Digital Ecosystem records this as a product-documentation drift to be corrected in Koali Spaces, not as evidence that every ecosystem integration is production-complete.
+A real Konnaxion pilot is documented. Other owner applications require explicit admission/onboarding and their own evidence.

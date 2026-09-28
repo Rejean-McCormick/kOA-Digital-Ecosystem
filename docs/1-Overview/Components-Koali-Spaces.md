@@ -7,27 +7,21 @@ Koali Spaces is the optional global experience/presentation layer used to compos
 - global shell and presentation composition;
 - Space definition/activation/rollback/deactivation;
 - admitted application/surface registry and route composition;
-- presentation preferences, shell state and public surface projection;
+- presentation preferences and shell state;
 - host-side ApplicationHost/renderer behavior within its contracts.
 
 ## Does not own
 
-- Konnaxion, Orgo or other product business state;
-- Kristal assertion/validation/recognition state;
-- Runtime Pack active state in `kristal_runtime`;
+- product business state or authorization;
+- Kristal assertions/validation/recognition;
+- Runtime Pack active state;
 - kOA-Linux privilege, policy or resource authority;
-- owner-application internal routes or domain authorization.
+- owner-application internal domain state.
 
-## Critical non-confusion rule
+## Critical rule
 
 ```text
-Koali Space activation
-≠
-Kristal Runtime Pack activation
+Koali Space activation != Kristal Runtime Pack activation
 ```
 
-Space activation changes presentation/application composition. Runtime Pack activation changes the active knowledge runtime state owned by `kristal_runtime` in kOA-Linux.
-
-## Current implementation evidence
-
-The supplied Koali snapshot contains historical baseline text that still says the first real Konnaxion owner application is pending, but its later maturity notice records a successful Konnaxion pilot. Digital Ecosystem records the later evidence and flags the stale Koali reference pages for product-side refresh instead of rewriting product authority here.
+Current owner evidence supports a real Konnaxion pilot while broader application onboarding remains owner/profile-specific. No blanket production-hosting claim is implied.

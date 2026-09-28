@@ -1,0 +1,543 @@
+{
+  "schema_version": "1.0",
+  "snapshot_date": "2026-09-28",
+  "purpose": "Source-corpus discovery registry. Presence does not imply ecosystem adoption, integration, authority, maturity, or deployment.",
+  "source_artifacts": [
+    "Rejean-McCormick.zip",
+    "github_repo_roots_final(1).json"
+  ],
+  "repository_count_in_corpus": 38,
+  "reference_repository_count": 41,
+  "repositories": [
+    {
+      "repository": "MA-Gustave/Ars-Magna-Lulli",
+      "match_status": "external_match",
+      "document_file_count": 1,
+      "entrypoint": "docs/ARCHITECTURE.md",
+      "source_docs_paths": [
+        "C:\\mycode\\Grammatical_Framework\\ars-magna-lulli\\ars-magna-lulli\\docs"
+      ],
+      "reference_description": "A monorepo connecting the Compendium, Wordbench, and Observatory for GF language engineering.",
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "MA-Gustave/Ars-Magna-Lulli/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "MA-Gustave/GF_Observatory",
+      "match_status": "external_match",
+      "document_file_count": 81,
+      "entrypoint": "GF_Observatory_Documentation_Frame/docs/00_START_HERE.md",
+      "source_docs_paths": [
+        "C:\\mycode\\Grammatical_Framework\\GF_Observatory\\GF_Observatory_Documentation_Frame\\docs",
+        "C:\\mycode\\Grammatical_Framework\\GF_Observatory\\GF_Observatory_Documentation_GitHub_Pages\\docs"
+      ],
+      "reference_description": "GF Observatory is a local-first, read-only companion to GF Wordbench that aggregates versioned evidence across workspaces, tracks health and readiness, and provides reproducible analysis through a canonical API, CLI, and evidence matrix.",
+      "reference_note": "The online repo root contains both GF_Observatory_Documentation_Frame and GF_Observatory_Documentation_GitHub_Pages.",
+      "corpus_prefix": "MA-Gustave/GF_Observatory/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "MA-Gustave/GF_Wordbench",
+      "match_status": "external_match",
+      "document_file_count": 119,
+      "entrypoint": "docs/00_START_HERE.md",
+      "source_docs_paths": [
+        "C:\\mycode\\Grammatical_Framework\\GF_Wordbench\\GF_Wordbench\\docs"
+      ],
+      "reference_description": null,
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "MA-Gustave/GF_Wordbench/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/EncyKlopedia",
+      "match_status": "owned_match",
+      "document_file_count": 16,
+      "entrypoint": "00_system/docs/kOA-reference/README.md",
+      "source_docs_paths": [
+        "C:\\mycode\\EncyKlopedia\\EncyKlopedia\\00_system\\docs"
+      ],
+      "reference_description": "People-first knowledge infrastructure for lossless Wikidata ingestion, provenance-preserving evidence, scoped entity discovery, and structured validation through Da’at and Kristal. Built with rebuildable indexes, explicit authority boundaries, and reproducible knowledge pipelines.",
+      "reference_note": "Resolved from user-provided GitHub repository URL and verified through GitHub.",
+      "corpus_prefix": "Rejean-McCormick/EncyKlopedia/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/Grammatical-Framework-Albanian",
+      "match_status": "owned_match",
+      "document_file_count": 604,
+      "entrypoint": "docs/00_PROJECT_START_HERE__PROJECT_DOCS.md",
+      "source_docs_paths": [
+        "C:\\mycode\\Grammatical_Framework\\Grammatical_Framework-Albanian\\docs"
+      ],
+      "reference_description": null,
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "Rejean-McCormick/Grammatical-Framework-Albanian/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/Interaction-Kernel",
+      "match_status": "owned_match",
+      "document_file_count": 21,
+      "entrypoint": "docs/README.md",
+      "source_docs_paths": [
+        "C:\\mycode\\Interaction-Kernel\\docs"
+      ],
+      "reference_description": "Interaction Kernel (IK) is a distributed interoperability protocol for autonomous systems. It standardizes Commands, Queries, Events, receipts, profiles, reliable delivery, and artifact exchange, while preserving domain ownership. Includes Konnaxion, Orgo, Da’at/Kristal adapters and conformance guidance.",
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "Rejean-McCormick/Interaction-Kernel/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/Kamel",
+      "match_status": "owned_match_local_git_verified",
+      "document_file_count": 42,
+      "entrypoint": "docs/00-contrat-et-index-kamel.md",
+      "source_docs_paths": [
+        "C:\\mycode\\Kamel\\Kamel\\docs"
+      ],
+      "reference_description": null,
+      "reference_note": "Resolved from local Git origin; git ls-remote confirmed the remote is online.",
+      "corpus_prefix": "Rejean-McCormick/Kamel/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/KeyFlow",
+      "match_status": "owned_match_local_git_verified",
+      "document_file_count": 9,
+      "entrypoint": "docs/00-overview/01-product-vision.md",
+      "source_docs_paths": [
+        "C:\\mycode\\KeyFlow(formulaires)\\docs"
+      ],
+      "reference_description": null,
+      "reference_note": "Resolved from local Git origin; git ls-remote confirmed the remote is online.",
+      "corpus_prefix": "Rejean-McCormick/KeyFlow/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/Koali-Control-Panel",
+      "match_status": "owned_match",
+      "document_file_count": 10,
+      "entrypoint": "docs/README.md",
+      "source_docs_paths": [
+        "C:\\mycode\\kOA-Linux\\Koali-Control-Panel\\docs"
+      ],
+      "reference_description": "Koali Control Panel is the development and orchestration console for kOA-Linux. It manages WSL environments, diagnostics, subsystem validation, Koali Spaces, Konnaxion, dev stacks, health checks, QEMU, system assembly, testing, and release workflows from one modular interface.",
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "Rejean-McCormick/Koali-Control-Panel/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/Koali-Scenario-Mosaic",
+      "match_status": "owned_match",
+      "document_file_count": 61,
+      "entrypoint": "docs/00_START_HERE.md",
+      "source_docs_paths": [
+        "C:\\mycode\\kOA-Linux\\Koali_Scenario_Mosaic\\docs"
+      ],
+      "reference_description": "Interface to explore usage scenarios",
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "Rejean-McCormick/Koali-Scenario-Mosaic/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/Koali-Spaces",
+      "match_status": "owned_match",
+      "document_file_count": 182,
+      "entrypoint": "docs/README.md",
+      "source_docs_paths": [
+        "C:\\mycode\\kOA-Linux\\koali-spaces\\docs"
+      ],
+      "reference_description": "Local-first, offline-capable user interface and experience layer for Koali, providing the global shell, module navigation, shared top bar, contextual sidebars, themes, and presentation runtime.",
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "Rejean-McCormick/Koali-Spaces/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/Konductor",
+      "match_status": "owned_match",
+      "document_file_count": 8,
+      "entrypoint": "docs/Konductor_Initial_Technical_Design.md",
+      "source_docs_paths": [
+        "C:\\mycode\\Konductor\\Konductor\\docs"
+      ],
+      "reference_description": "Agentic AI",
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "Rejean-McCormick/Konductor/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/Konnaxion",
+      "match_status": "owned_match",
+      "document_file_count": 165,
+      "entrypoint": "docs/README.md",
+      "source_docs_paths": [
+        "C:\\mycode\\Konnaxion\\Konnaxion\\docs",
+        "C:\\mycode\\Konnaxion\\Konnaxion\\backend\\docs"
+      ],
+      "reference_description": "Modular civic-tech platform that connects people, knowledge, and projects across learning, R&D, governance, and culture, with domain- and ethics-aware weighting (Ekoh + Smart Vote).",
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "Rejean-McCormick/Konnaxion/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/Konnaxion-Capsule-Manager",
+      "match_status": "owned_match",
+      "document_file_count": 26,
+      "entrypoint": "docs/DOC-00_Konnaxion_Canonical_Variables.md",
+      "source_docs_paths": [
+        "C:\\mycode\\Konnaxion\\Konnaxion_Capsule_Manager\\docs"
+      ],
+      "reference_description": "Konnaxion Capsule Manager packages Konnaxion v14 into signed, portable .kxcap capsules and runs them through a local Manager, privileged Agent, Docker Compose runtime, private-by-default network profiles, Security Gate checks, backups, restores, rollback, and the canonical kx CLI for appliance, intranet, tunnel, and VPS deployment.",
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "Rejean-McCormick/Konnaxion-Capsule-Manager/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/Konnaxion-LevelUpDiag",
+      "match_status": "owned_match",
+      "document_file_count": 5,
+      "entrypoint": "docs/I18N_VALIDATION.md",
+      "source_docs_paths": [
+        "C:\\mycode\\Konnaxion\\LevelUpDiag\\docs"
+      ],
+      "reference_description": "diagnostic and validation suite for Konnaxion",
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "Rejean-McCormick/Konnaxion-LevelUpDiag/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/Konnaxion-SecurityDiag",
+      "match_status": "owned_match",
+      "document_file_count": 13,
+      "entrypoint": "docs/CONFIG_REFERENCE.md",
+      "source_docs_paths": [
+        "C:\\mycode\\Konnaxion\\SecurityDiag\\docs"
+      ],
+      "reference_description": "Security qualification and deployment hardening toolkit for Konnaxion. Provides read-only security diagnostics, VPS/SSH/firewall/Docker checks, incident-recovery validation, Capsule Manager integration, evidence-based release gates, and external attack-surface verification.",
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "Rejean-McCormick/Konnaxion-SecurityDiag/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/Konnaxion-Worlds",
+      "match_status": "owned_match",
+      "document_file_count": 21,
+      "entrypoint": "docs/Technical-Reference/Worlds/00_CANONICAL_SPEC.md",
+      "source_docs_paths": [
+        "C:\\mycode\\Konnaxion\\Konnaxion_Worlds\\docs"
+      ],
+      "reference_description": "Multi-World orchestration layer for isolated civic and deliberative environments, with instant world switching, versioned releases, scoped identities, EkoH/Smart Vote isolation, rollback, snapshots, and strict anti-contamination guarantees.",
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "Rejean-McCormick/Konnaxion-Worlds/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/Kristal-Farms",
+      "match_status": "owned_match",
+      "document_file_count": 159,
+      "entrypoint": "docs/00-control/RELEASE_STATUS.md",
+      "source_docs_paths": [
+        "C:\\mycode\\Kristal_Farms\\kristal-farms\\docs"
+      ],
+      "reference_description": "Kristal Farms is a northern infrastructure platform for turning difficult-to-export renewable energy into secure cold-climate compute, fibre connectivity, useful heat, resilient communities, and internationally transferable expertise.",
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "Rejean-McCormick/Kristal-Farms/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/Kristal-Framework",
+      "match_status": "owned_match",
+      "document_file_count": 93,
+      "entrypoint": "docs/Technical-Reference/kristal-docs-v5/00-overview/specification-status.md",
+      "source_docs_paths": [
+        "C:\\mycode\\Kristal\\kristal-framework\\docs"
+      ],
+      "reference_description": "Modular framework for defining, compiling, validating, and versioning Kristals—knowledge artifacts used by AI systems like Sentient. Based on an enhanced Wikibase format, with offline usage, entity linking, and provenance traceability.",
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "Rejean-McCormick/Kristal-Framework/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/Kristal-Reference",
+      "match_status": "owned_match",
+      "document_file_count": 3,
+      "entrypoint": "docs/ADAPTER_CONTRACT.md",
+      "source_docs_paths": [
+        "C:\\mycode\\Kristal\\kristal-reference\\docs"
+      ],
+      "reference_description": "Non-normative reference implementation for Kristal v5. Reproduces official Exchange, Runtime Pack, canonicalization, signature, trust, and portable conformance vectors. Designed for executable validation against kristal-framework without redefining the specification.",
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "Rejean-McCormick/Kristal-Reference/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/LevelUpDiag",
+      "match_status": "owned_match_local_git_verified",
+      "document_file_count": 7,
+      "entrypoint": "docs/ADAPTATION_GUIDE.md",
+      "source_docs_paths": [
+        "C:\\mycode\\LevelUpDiag\\LevelUpDiag\\docs"
+      ],
+      "reference_description": null,
+      "reference_note": "Resolved from local Git origin; git ls-remote confirmed the remote is online.",
+      "corpus_prefix": "Rejean-McCormick/LevelUpDiag/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/LevelUpDiag-Kristal",
+      "match_status": "owned_match",
+      "document_file_count": 15,
+      "entrypoint": "docs/ADAPTATION_GUIDE.md",
+      "source_docs_paths": [
+        "C:\\mycode\\Kristal\\levelupdiag_kristal\\docs"
+      ],
+      "reference_description": "Standalone deep-validation repository for Kristal. Orchestrates conformance, reproducibility, security, negative mutation, manifest, archive, CI, and E2E tests while keeping all diagnostics and evidence outside the Kristal framework repository.",
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "Rejean-McCormick/LevelUpDiag-Kristal/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/LevelUpDiag-Orgo",
+      "match_status": "owned_match",
+      "document_file_count": 7,
+      "entrypoint": "docs/ADAPTATION_GUIDE.md",
+      "source_docs_paths": [
+        "C:\\mycode\\Orgo\\LevelUpDiag-Orgo\\docs"
+      ],
+      "reference_description": "Standalone diagnostic and validation suite for Orgo. Runs code quality, architecture, API, database, integration, and deployment-readiness checks against an external Orgo repository while keeping reports and tooling fully separate.",
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "Rejean-McCormick/LevelUpDiag-Orgo/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/LevelUpDiag-kOA-Linux",
+      "match_status": "owned_match",
+      "document_file_count": 9,
+      "entrypoint": "docs/README.md",
+      "source_docs_paths": [
+        "C:\\mycode\\kOA-Linux\\LevelUpDiag-Koali\\docs"
+      ],
+      "reference_description": "Companion development and validation tool for kOA-Linux. Runs ordered diagnostic levels, captures logs/results, and validates the target repository through public interfaces without modifying it.",
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "Rejean-McCormick/LevelUpDiag-kOA-Linux/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/LevelUpDiag_SemantiK-Architect",
+      "match_status": "owned_match",
+      "document_file_count": 11,
+      "entrypoint": "docs/ADAPTATION_GUIDE.md",
+      "source_docs_paths": [
+        "C:\\mycode\\SemantiK_Architect\\LevelUpDiag_SemantiK_Architect\\docs"
+      ],
+      "reference_description": "LevelUpDiag for SemantiK Architect is a deterministic diagnostic and conformance tool aligned with SA v1. It validates architecture locks, schemas, RuntimeSets, capability profiles, SA↔GF contracts, faithfulness invariants, public interfaces, release readiness, and fail-closed behavior.",
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "Rejean-McCormick/LevelUpDiag_SemantiK-Architect/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/MediKristal",
+      "match_status": "owned_match",
+      "document_file_count": 34,
+      "entrypoint": "docs/README.md",
+      "source_docs_paths": [
+        "C:\\mycode\\MediKristal\\MediKristal\\docs"
+      ],
+      "reference_description": "Medikristal is a semantic medical knowledge architecture that links symptoms, diseases, tests, treatments, and patient context into verifiable artifacts, then applies deterministic protocols to guide clinical reasoning with traceable sources.",
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "Rejean-McCormick/MediKristal/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/MediKristal-LevelUpDiag-",
+      "match_status": "owned_match",
+      "document_file_count": 9,
+      "entrypoint": "docs/ADAPTATION_GUIDE.md",
+      "source_docs_paths": [
+        "C:\\mycode\\MediKristal\\LevelUpDiag-MediKristal\\docs"
+      ],
+      "reference_description": "Progressive, evidence-driven repository validation framework. LevelUpDiag runs layered diagnostics for code quality, security, contracts, tests, packaging, reproducibility, and release readiness, producing structured reports and deterministic PASS/WARN/FAIL verdicts.",
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "Rejean-McCormick/MediKristal-LevelUpDiag-/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/Orgo",
+      "match_status": "owned_match",
+      "document_file_count": 62,
+      "entrypoint": "docs/README.md",
+      "source_docs_paths": [
+        "C:\\mycode\\Orgo\\Orgo\\docs"
+      ],
+      "reference_description": "Multi-tenant nervous system for organisations: turns signals into Cases and Tasks, routes them via labels and roles, tracks execution, and surfaces Insights.",
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "Rejean-McCormick/Orgo/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/Orgo-Worlds",
+      "match_status": "owned_match",
+      "document_file_count": 30,
+      "entrypoint": "world-packs/uckk-a014/docs/README.md",
+      "source_docs_paths": [
+        "C:\\mycode\\Orgo\\Orgo_Worlds\\docs",
+        "C:\\mycode\\Orgo\\Orgo_Worlds\\world-packs\\uckk-a014\\docs"
+      ],
+      "reference_description": "Standalone multi-world orchestration platform built on Orgo. Manages isolated Worlds, versioned releases, memberships, runtime context, World switching, scenario packs, and controlled data injection into Orgo through the Scenario Injector—without direct cross-system database writes.",
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "Rejean-McCormick/Orgo-Worlds/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/SemantiK-Architect",
+      "match_status": "owned_match",
+      "document_file_count": 48,
+      "entrypoint": "docs/00_START_HERE.md",
+      "source_docs_paths": [
+        "C:\\mycode\\SemantiK_Architect\\SemantiK_Architect\\docs"
+      ],
+      "reference_description": "Industrial-scale NLG toolkit for Abstract Wikipedia/Wikifunctions: family engines, lexica, constructions, QA.",
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "Rejean-McCormick/SemantiK-Architect/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/SemantiK_Runtime_Orchestrator",
+      "match_status": "owned_match",
+      "document_file_count": 3,
+      "entrypoint": "docs/ARCHITECTURE.md",
+      "source_docs_paths": [
+        "C:\\mycode\\SemantiK_Architect\\SemantiK_Runtime_Orchestrator\\docs"
+      ],
+      "reference_description": "Independent, fail-closed release orchestrator for SemantiK Architect RuntimeSets. Coordinates GF Wordbench artifacts, SA conformance and validation, optional GF Observatory evidence, LevelUpDiag gates, transactional promotion, rollback, and activation without owning linguistic or semantic logic.",
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "Rejean-McCormick/SemantiK_Runtime_Orchestrator/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/SenTient",
+      "match_status": "owned_match",
+      "document_file_count": 13,
+      "entrypoint": "Docs/00_ARCHITECTURE_BLUEPRINT.md",
+      "source_docs_paths": [
+        "C:\\mycode\\SenTient\\SenTient\\Docs"
+      ],
+      "reference_description": "Tool to deconstruct language and format it for Wikidata. Inspired by Falcon 2.0, OpenRefine and OpenTapioca.",
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "Rejean-McCormick/SenTient/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/UCKK",
+      "match_status": "owned_match",
+      "document_file_count": 60,
+      "entrypoint": "docs/00_master_execution_doctrine.md",
+      "source_docs_paths": [
+        "C:\\mycode\\UCKK\\uckk-moodle\\docs",
+        "C:\\mycode\\UCKK\\uckk-moodle\\mod\\uckkarchive\\docs"
+      ],
+      "reference_description": "Univers-Cité King Klown. For real.",
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "Rejean-McCormick/UCKK/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/UCKK-Ops-Console",
+      "match_status": "owned_match",
+      "document_file_count": 14,
+      "entrypoint": "docs/01_PRINCIPES_DE_L_APPLICATION (1).md",
+      "source_docs_paths": [
+        "C:\\mycode\\UCKK\\UCKK_ops_console\\docs"
+      ],
+      "reference_description": "Local operations console for the UCKK project. Provides guided, safer workflows to manage Moodle locally and on uckk.org, sync and publish code through Git, manage the media library and Moodle data, run checks and tests, and generate clear reports without relying on manual commands or legacy scripts.",
+      "reference_note": "Resolved from user-provided GitHub repository URL and verified through GitHub.",
+      "corpus_prefix": "Rejean-McCormick/UCKK-Ops-Console/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/VotingMachine",
+      "match_status": "owned_match",
+      "document_file_count": 10,
+      "entrypoint": "docs/Doc 3 — Technical Platform & Release Policy.md",
+      "source_docs_paths": [
+        "C:\\mycode\\VotingMachine\\VotingMachine\\docs"
+      ],
+      "reference_description": null,
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "Rejean-McCormick/VotingMachine/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/kOA-Digital-Ecosystem",
+      "match_status": "owned_match",
+      "document_file_count": 158,
+      "entrypoint": "repository/README.md",
+      "source_docs_paths": [
+        "C:\\mycode\\kOA\\kOA_Digital_Ecosystem\\docs"
+      ],
+      "reference_description": "A contract-driven knowledge system that converts raw inputs into immutable, canonical truth artifacts (Kristal Exchange) and portable runtime packs. Features deterministic rendering, governed execution, and strict auditability.",
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "Rejean-McCormick/kOA-Digital-Ecosystem/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "Rejean-McCormick/kOA-Linux-Koali",
+      "match_status": "owned_match",
+      "document_file_count": 546,
+      "entrypoint": "docs/README.md",
+      "source_docs_paths": [
+        "C:\\mycode\\kOA-Linux\\koa-linux\\docs"
+      ],
+      "reference_description": "Foundational specification and reference architecture for kOA Linux: an immutable, offline-capable, governable operating environment for Konnaxion, Orgo, and Kristal, with policy runtime, selective audit, signed releases, secure node profiles, rollback, recovery, portability, and tested exit.",
+      "reference_note": "Verified online match.",
+      "corpus_prefix": "Rejean-McCormick/kOA-Linux-Koali/",
+      "present_in_2026_09_28_corpus": true
+    },
+    {
+      "repository": "knstl/konstellation",
+      "match_status": "probable_external_match",
+      "document_file_count": 20,
+      "entrypoint": "docs/DESIGN-v0.2-README.md",
+      "source_docs_paths": [
+        "C:\\mycode\\Konstellation\\Konstellation_v0_4\\Konstellation\\docs"
+      ],
+      "reference_description": "Konstellation blockchain",
+      "reference_note": "Strong probable match: online repo has a 0.4.0/v0.4.1 release line and a docs directory.",
+      "corpus_prefix": "knstl/konstellation/",
+      "present_in_2026_09_28_corpus": true
+    }
+  ],
+  "reference_only_not_in_corpus": [
+    {
+      "repository": "moodle/moodle",
+      "match_status": "external_match",
+      "source_docs_paths": [
+        "C:\\mycode\\UCKK\\moodle\\moodle\\public\\docs"
+      ],
+      "reference_description": "Moodle - the world's open source learning platform",
+      "reference_note": "Verified online match.",
+      "present_in_2026_09_28_corpus": false
+    },
+    {
+      "repository": "opentapioca/opentapioca",
+      "match_status": "external_match",
+      "source_docs_paths": [
+        "C:\\mycode\\SenTient\\SenTient\\opentapioca\\docs"
+      ],
+      "reference_description": "Entity linking system for Wikidata updated by your edits in real time",
+      "reference_note": "Verified online match.",
+      "present_in_2026_09_28_corpus": false
+    },
+    {
+      "repository": "senigami/audiobook-studio",
+      "match_status": "probable_external_match",
+      "source_docs_paths": [
+        "C:\\mycode\\Voxtral_Audiobook_Studio\\Voxtral_Audiobook_Studio\\docs"
+      ],
+      "reference_description": "Professional local-first AI production pipeline for long-form narration. Clone voices and generate studio-grade audiobooks (M4B/MP3) using Coqui XTTS-v2 and support for Voxtral (cloud)",
+      "reference_note": "Strong probable match: online repo has docs and explicit Voxtral support.",
+      "present_in_2026_09_28_corpus": false
+    }
+  ]
+}

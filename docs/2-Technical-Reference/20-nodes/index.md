@@ -1,21 +1,24 @@
 # Ecosystem roles and participant boundaries
 
-The historical “node” names in this section are conceptual roles. They must not be read as a single mandatory global pipeline or as ownership transfers from the real systems.
+The role names in this section are **conceptual mappings**, not a mandatory global pipeline and not ownership transfers.
 
-Product/system authorities are:
+Current authorities include:
 
 - Konnaxion — civic/public state;
 - Orgo — workflow/work state;
-- Kristal — epistemic artifacts;
-- kOA-Linux — local platform state when deployed;
-- Interaction Kernel — cross-system protocol;
-- SemantiK Architect — NLG runtime.
+- EncyKlopedia — source acquisition/evidence;
+- Da’at — mapping/ACL into Kristal;
+- Kristal — referent + epistemic artifacts;
+- UCKK / Univers-Cité — consumer projection/campus state;
+- kOA-Linux — platform composition/release contracts;
+- Interaction Kernel — explicit cross-system Profiles;
+- SemantiK Architect — communication realization.
 
-Key pages:
+Key role pages:
 
 - `gevurah-orgo.md` — Orgo workflow/operational boundary
-- `chesed-konnaxion.md` — Konnaxion civic/distribution-intent boundary
-- `daat-kristal-bridge.md` — IK/Da’at ↔ Kristal v5 boundary
+- `chesed-konnaxion.md` — Konnaxion civic/distribution boundary
+- `daat-kristal-bridge.md` — ecosystem/IK ↔ Kristal boundary
 - `tiferet-sentient.md` — optional candidate extraction/resolution
-- `yesod-compiler.md` — compilation coordination without universal validation gating
-- `malkuth-runtime.md` — runtime query/serve boundary; activation is owned elsewhere
+- `yesod-compiler.md` — compilation coordination
+- `malkuth-runtime.md` — runtime query/serve boundary; activation owned elsewhere

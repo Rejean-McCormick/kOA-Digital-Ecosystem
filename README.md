@@ -1,107 +1,108 @@
 # kOA Digital Ecosystem
 
-> System-of-systems documentation for the kOA ecosystem. This repository describes cross-system ownership, integration contracts, release/activation boundaries, and implementation-status evidence. Product repositories remain authoritative for their internal models and implementation status.
+> Canonical system-of-systems map for kOA. This repository describes cross-system ownership, explicit integration contracts, release/activation boundaries and current maturity evidence. Product and platform repositories remain authoritative for their internal state, implementation and product-owned contracts.
 
-**Alignment baseline:** 2026-09-21
-**Kristal baseline:** `5.0.0-rc.1` / tag `v5.0.0-rc.1` / commit `af703bf02ee04a69a5f2ad6694fa8b8e56ae2b19`
-**kOA-Linux evidence baseline:** current supplied docs/contracts plus 2026-09-19 technical/runtime status
-**Koali Spaces evidence baseline:** qualified beta report dated 2026-09-06 plus later Konnaxion pilot evidence referenced by the owner report
+## Current baselines
 
-## Four control views
+- **Alignment:** 2026-09-28 current architecture.
+- **Knowledge-contract baseline:** Kristal `5.0.0-rc.3` release-candidate contract set, Referent Registry `1.0.0`, EncyKlopedia handoff `encyklopedia.corpus-harvest-handoff/1.0.0`, IK profiles `kristal.build.request/1.1.0` + `kristal.artifact.ready/1.1.0`, UCKK projection `uckk.univers-cite-projection/1.0.0`.
+- **Kristal release identity:** rc.3 declares tag `v5.0.0-rc.3`, but the supplied release metadata still has `commit: null`; this repository therefore treats rc.3 as a frozen contract baseline, not as a fully resolved immutable release pin.
+- **kOA-Linux:** platform composition authority for profiles, admission, release channels and lifecycle; independent subsystem implementations remain owner-controlled.
 
-Use these four views to navigate the system without turning this repository into a competing product authority:
+## Control views
 
-- **System map** — what exists and how the major systems relate: [`docs/1-Overview/index.md`](docs/1-Overview/index.md#system-map)
-- **Authority map** — who owns each state/decision: [`docs/2-Technical-Reference/10-system/authority-map.md`](docs/2-Technical-Reference/10-system/authority-map.md)
+Use these views together:
+
+- **System map** — what exists and how the major systems relate: [`docs/1-Overview/index.md`](docs/1-Overview/index.md)
+- **Authority map** — who owns each authoritative state or decision: [`docs/2-Technical-Reference/10-system/authority-map.md`](docs/2-Technical-Reference/10-system/authority-map.md)
 - **Contract map** — which explicit boundaries connect owners: [`docs/2-Technical-Reference/40-integration/contract-map.md`](docs/2-Technical-Reference/40-integration/contract-map.md)
-- **Maturity map** — specified vs implemented vs qualified vs integrated vs production evidence: [`docs/status/current.md`](docs/status/current.md)
+- **Maturity map** — specified vs implemented vs qualified vs integrated vs production-proven: [`docs/status/current.md`](docs/status/current.md)
+- **Layer model** — conceptual classification/orientation only: [`docs/3-Layer-Model/README.md`](docs/3-Layer-Model/README.md)
 
 ## Purpose
 
-kOA is a system of independently owned systems. This documentation answers:
+This repository answers four questions without becoming a competing product authority:
 
 1. Which system owns each authoritative state?
-2. What crosses a system boundary, under which contract?
-3. Which transition is occurring: workflow, epistemic compilation/validation/recognition, release-channel activation, Runtime Pack activation, or UI/Space activation?
-4. What is implemented now versus defined as a target integration?
+2. What crosses each system boundary, under which explicit contract/profile?
+3. Which lifecycle is involved: operational workflow, epistemic compilation/recognition, release/activation, presentation, or projection?
+4. What is actually implemented/qualified now versus merely specified?
 
 ## Ownership map
 
 | System / boundary | Primary ownership |
 |---|---|
-| **Konnaxion** | civic/public domain state, deliberation, consultations, readings, DecisionRecord and product surfaces |
+| **Konnaxion** | civic/public domain state, deliberation, finalized `DecisionRecord`, civic/accountability state |
 | **Orgo** | Signal, Workflow, Case, Task, IntegrationOperation, outbox and operational reconciliation |
-| **Kristal** | Structured Epistemic State, Working/Reference Exchanges, validation, authority recognition, Reader Policy and Runtime Pack semantics |
-| **kOA-Linux** | host/platform contracts: profiles, trust, policy, resources, artifact admission, release channels, privileged lifecycle operations |
-| **kristal_runtime** | kOA-Linux native runtime component owning Runtime Pack verification/compatibility state, active Runtime Pack state, activation/rollback receipts and runtime health |
-| **kOA Node Agent** | narrow node-local privileged lifecycle/activation/recovery operations under authorization |
-| **Koali Spaces** | optional global experience/presentation composition; Space activation, routing, shell and admitted application surfaces |
-| **Interaction Kernel (IK)** | selected cross-system interoperability protocol/Profile layer where explicitly adopted; not participant state |
-| **Da’at** | mapping/ACL boundary between ecosystem/IK-facing requests and Kristal-native contracts |
+| **EncyKlopedia** | source discovery/acquisition, provider resolution, lossless evidence and immutable corpus-harvest handoff |
+| **Da’at** | mapping/ACL boundary into Kristal-native contracts |
+| **Kristal** | referent identity semantics, Structured Epistemic State, Working/Reference Exchanges, validation/recognition, Reader Policy and Runtime Pack semantics |
+| **UCKK / Univers-Cité** | scoped consumer projections, Moodle materialization, derived glossaries, campus/learning state and institutional decisions |
+| **kOA-Linux** | platform profiles, trust/policy/resources, artifact admission, release channels and Release Sets |
+| **`kristal_runtime`** | Runtime Pack verification/compatibility, active Runtime Pack state, activation/rollback receipts and health |
+| **kOA Node Agent** | narrow authorized node-local privileged lifecycle/activation/recovery operations |
+| **Koali Spaces** | optional presentation composition, routing, shell and Space lifecycle |
+| **Interaction Kernel** | versioned cross-system envelope/Profile semantics only where explicitly adopted |
+| **SemantiK Architect** | faithful semantic-to-human communication planning/realization and SA↔GF boundary |
+| **SemantiK Runtime Orchestrator** | RuntimeSet release sequencing, promotion/rollback and activation ordering |
 
 ## Core rules
 
-- **One authoritative owner per state.** Hosting, rendering, transport or projection does not transfer ownership.
-- **No cross-system database writes.** Receivers mutate only their own authoritative state.
-- **Operational state stays with its product owner.** Orgo/Konnaxion databases remain the source of truth for mutable workflow, civic, identity and application state; Kristal is not a shared transactional database.
-- **Knowledge crosses the Kristal boundary as an immutable snapshot/export.** Da’at maps source-owned exports to Kristal-native epistemic artifacts; products retain ArtifactRefs/lineage rather than dual-writing the same authoritative record into Kristal.
-- **Runtime query materializations are derived.** A Runtime Pack may carry deterministic read/query structures (for example tables, indexes, Parquet, or a profile-defined read-only database), but they are non-authoritative and rebuildable from the pinned Kristal source artifact.
-- **Kristal v5 compilation is distinct from validation and recognition.** A Working Exchange can exist before final validation/recognition where policy permits.
-- **Release channels are distinct.** kOA-Linux separates `system`, `services`, `governance` and `knowledge` channels and binds compatible versions through a Release Set.
-- **Runtime Pack activation state is not a new Digital Ecosystem artifact.** In kOA-Linux deployments, `kristal_runtime` owns Runtime Pack verification/active-state/rollback records; kOA Node Agent can execute the narrow privileged host transition where required.
-- **Space activation is not Runtime Pack activation.** Koali Spaces activates presentation/application composition, not Kristal knowledge state.
-- **Interaction Kernel adoption is explicit and boundary-specific.** Konnaxion↔Orgo is qualified for two Profile/version pairs; this must not be presented as replacing kOA-Linux's canonical internal/component communication contracts or as universal ecosystem adoption.
+- **One authoritative owner per state.** Hosting, transport, projection or rendering does not transfer ownership.
+- **No cross-system database writes.** Receivers mutate only receiver-owned state.
+- **Projection is rebuildable.** A UCKK/Univers-Cité projection does not become the Kristal canon.
+- **Acquisition is not validation.** EncyKlopedia referent candidates and evidence do not become validated Kristal assertions merely by handoff.
+- **External identifiers do not transfer authority.** Wikidata, Gutenberg, VIAF and similar identifiers remain references/providers.
+- **Interaction Kernel carries contracts; it owns no participant state.** Adoption is explicit and boundary-specific.
+- **Space activation is not Runtime Pack activation.** Presentation and knowledge-runtime state are separate lifecycles.
 - **`accepted` is not `succeeded`.** Durable asynchronous effects require terminal reconciliation.
+- **Candidate contract baseline is not published immutable release.** rc.3 remains unresolved until its release tag maps to an immutable commit.
 
 ## Principal flows
 
+### Civic decision → governed work
+
 ```text
 Konnaxion finalized DecisionRecord
-        │
-        │ target IK profile: governance.decision.execute
-        ▼
-Orgo Signal → WorkflowVersion → Case / Tasks
-        │
-        │ target IK profile: accountability.impact.publish
-        ▼
-Konnaxion-owned accountability / impact state
+    → IK governance.decision.execute/1.0.0
+    → Orgo Signal / Workflow / Case / Tasks
+    → IK accountability.impact.publish/1.0.0
+    → Konnaxion-owned accountability / impact state
 ```
+
+### Knowledge acquisition → canon → Univers-Cité projection
 
 ```text
-Orgo/Konnaxion operational state
-        │ source-owned immutable export/snapshot
-        ▼
-Da’at mapping boundary
-        ▼
-Structured Epistemic State
-        ▼
-Working Exchange
-        ▼
-validation / review / authority recognition as applicable
-        ▼
-Reference Exchange when recognized
-        ▼
-Runtime Pack / deterministic query materializations
-        ▼
-kOA-Linux knowledge channel + Release Set compatibility
-        ▼
-kristal_runtime verification / active state
-        ▼
-kOA Node Agent privileged transition when required
+source discovery / acquisition
+    → EncyKlopedia immutable evidence + referent candidates
+    → encyklopedia.corpus-harvest-handoff/1.0.0
+    → Da’at mapping / ACL
+    → Kristal referent + epistemic contracts
+    → Working / Reference artifacts as policy permits
+    → kristal.artifact.ready/1.1.0
+    → uckk.univers-cite-projection/1.0.0
+    → rebuildable UCKK / Moodle / glossary / media presentation
 ```
+
+### Knowledge runtime activation
 
 ```text
-admitted product/application
-        ▼
-Koali Spaces registry / Space configuration
-        ▼
-Space activation / routing / presentation
-
-This is presentation state, not Kristal Runtime Pack activation.
+Kristal Runtime Pack
+    → kOA-Linux knowledge channel / Release Set compatibility
+    → kristal_runtime verification + active-state transition
+    → kOA Node Agent privileged host transition only when required
 ```
 
-## Current status
+### Presentation composition
 
-The architecture and documentation are aligned, but product/platform maturity remains non-uniform. Koali Spaces has later evidence for a real Konnaxion pilot, while some owner reference pages still describe that pilot as pending and therefore need product-side refresh. Interaction Kernel is selectively adopted: the Konnaxion↔Orgo boundary is qualified for `governance.decision.execute/1.0.0` and `accountability.impact.publish/1.0.0`; other boundaries still require explicit owner adoption and evidence.
+```text
+admitted application
+    → Koali Spaces manifest / runtime registration
+    → Space activation / routing / presentation
+```
 
-See the current maturity dashboard at [`docs/status/current.md`](docs/status/current.md) and the detailed alignment ledger at [`docs/status/index.md`](docs/status/index.md).
+## Start here
+
+- [`docs/index.md`](docs/index.md)
+- [`docs/2-Technical-Reference/40-integration/knowledge-projection.md`](docs/2-Technical-Reference/40-integration/knowledge-projection.md)
+- [`docs/status/current.md`](docs/status/current.md)

@@ -1,12 +1,10 @@
-# Build Record v2 (kOA-owned coordination artifact)
+# Build Record v2
 
-A Build Record records **what happened during a reproducible build/compile workflow** without collapsing independent lifecycle axes.
+A Build Record records **what happened during a reproducible build/compile workflow** without collapsing independent lifecycle axes. It is kOA-owned operational evidence; owner artifacts remain authoritative.
 
-It is kOA-owned operational evidence. Kristal artifact references remain opaque owner-defined references.
+## Principle
 
-## v2 principle
-
-The record must distinguish:
+The record distinguishes:
 
 ```text
 compile_status
@@ -16,39 +14,24 @@ publication_status
 activation_status
 ```
 
-A successful compile does not imply validation or recognition. A failed/rejected validation does not imply that no Working Exchange exists. Publication and activation are later transitions.
+A successful compile does not imply validation/recognition. Publication and activation are separate transitions.
 
 ## Required evidence
 
-A Build Record should answer:
+A Build Record should identify:
 
-- what inputs/source snapshots were used;
-- which toolchain and exact Kristal pin were used;
-- which Interaction Kernel Profile/correlation identity applied, if any;
-- which stages executed and their operational outcomes;
-- which Working artifacts were produced;
-- which validation and authority-recognition records apply;
-- which reference outputs were recognized, if any;
-- which Runtime Packs were produced and their source status;
-- whether publication/activation was requested or completed;
+- inputs/source snapshots/evidence used;
+- toolchain and exact applicable Kristal contract/release baseline;
+- Interaction Kernel Profile/correlation identity when applicable;
+- executed stages and outcomes;
+- produced Working/Reference artifacts;
+- validation and authority-recognition references;
+- Runtime Packs and source-artifact status;
+- publication/activation requests/outcomes;
 - stable reason codes for blocked/failed transitions.
 
-## Kristal v5 mapping
+## Kristal mapping
 
-Recommended opaque references include:
-
-- Structured Epistemic State refs;
-- Working Exchange refs;
-- Validation Report refs;
-- Authority Recognition refs;
-- Reference Exchange refs;
-- Runtime Pack Manifest refs;
-- Reader Policy refs.
-
-The Build Record does not re-declare the internal fields of those artifacts.
-
-## Compatibility
-
-Build Record v1 encoded a `PASS|FAIL` validation gate and a single `exchange_ref`. That model is deprecated. Readers may support v1 during migration, but new writers should emit v2.
+Recommended opaque references include Referent Registry entries, Structured Epistemic State, Working Exchange, Validation Report, Authority Recognition, Reference Exchange, Runtime Pack Manifest and Reader Policy. The Build Record does not duplicate their internal fields.
 
 Schema: `schemas/build-record.schema.json`.

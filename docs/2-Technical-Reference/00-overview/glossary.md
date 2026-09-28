@@ -1,17 +1,23 @@
 # Technical glossary
 
-**Interaction Kernel (IK)** — target distributed cross-system Profile/protocol layer; adoption is explicit.
+**EncyKlopedia** — source discovery/acquisition system owning provider resolution, evidence/provenance and immutable corpus-harvest handoff.
+
+**Da’at** — mapping/ACL boundary into Kristal-native contracts; not a second owner of source or Kristal state.
+
+**Referent Registry** — Kristal domain-neutral referent identity layer; current knowledge baseline uses `kristal.referent-registry/1.0.0`.
+
+**Interaction Kernel (IK)** — distributed cross-system Profile/protocol layer; adoption is explicit per boundary/version.
+
+**UCKK / Univers-Cité projection** — rebuildable scoped consumer view/materialization over pinned Kristal artifacts; not the epistemic canon.
 
 **Koali Spaces** — optional presentation/composition subsystem owning Space lifecycle and admitted UI surfaces only.
 
 **Release Set** — kOA-Linux artifact binding compatible versions across `system`, `services`, `governance` and `knowledge` release channels.
 
-**kristal_runtime** — native kOA-Linux component owning Runtime Pack verification/compatibility, active Runtime Pack state, activation/rollback receipts and runtime health.
+**`kristal_runtime`** — native kOA-Linux component owning Runtime Pack verification/compatibility, active Runtime Pack state, activation/rollback receipts and runtime health.
 
 **kOA Node Agent** — native component performing narrow authorized node-local lifecycle/activation/recovery operations.
 
-**Runtime Activation State** — deprecated Digital Ecosystem compatibility artifact for kOA-Linux; owner-component records are authoritative.
-
 **Space activation** — Koali presentation/application-composition lifecycle; not Runtime Pack activation.
 
-**Working Exchange / Reference Exchange / Reader Policy / Authority Recognition** — Kristal v5 concepts defined by the pinned Kristal specification.
+**Working Exchange / Reference Exchange / Reader Policy / Authority Recognition** — Kristal v5 epistemic concepts defined by the Kristal owner specification.

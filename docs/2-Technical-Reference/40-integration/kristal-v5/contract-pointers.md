@@ -1,13 +1,16 @@
 # Kristal v5 contract pointers
 
-The normative Kristal v5 corpus is under `docs/Technical-Reference/kristal-docs-v5/` in the pinned Kristal repository.
+The normative Kristal corpus lives in the Kristal owner repository. kOA references, rather than duplicates, those contracts.
 
-## Core
+## Core and referents
 
 - `01-core-spec/kristal-v5-core-spec.md`
 - `01-core-spec/structured-epistemic-state.md`
+- `01-core-spec/referents-and-domain-neutral-model.md`
+- `02-schemas/referent-registry.schema.json`
+- `knowledge-model-contract.v1.json`
 
-## Schemas
+## Epistemic schemas
 
 - `02-schemas/structured-epistemic-state.schema.json`
 - `02-schemas/assertion-status.schema.json`
@@ -25,15 +28,16 @@ The normative Kristal v5 corpus is under `docs/Technical-Reference/kristal-docs-
 - `03-reproducibility/deterministic-build-rules.md`
 - `03-reproducibility/allowed-runtime-pack-policies.md`
 - `04-query/reader-policy-profiles.md`
+- `04-query/query-contract.md`
 
-## Integration
+## Product integration
 
 - `06-integration/orgo-workflow-contract.md`
 - `06-integration/konnaxion-distribution-contract.md`
 - `06-integration/architect-rendering-contract.md`
 - `06-integration/sentient-resolution-contract.md`
 
-## Security/operations
+## Security / operations
 
 - `07-security/downgrade-rollback-policy.md`
 - `07-security/key-management-and-trust-roots.md`
