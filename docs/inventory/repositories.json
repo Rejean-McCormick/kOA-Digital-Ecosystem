@@ -1,0 +1,457 @@
+[
+  {
+    "local_root": "C:\\mycode\\EncyKlopedia\\EncyKlopedia",
+    "github_repo": "Rejean-McCormick/EncyKlopedia",
+    "github_url": "https://github.com/Rejean-McCormick/EncyKlopedia",
+    "status": "owned_match",
+    "description": "People-first knowledge infrastructure for lossless Wikidata ingestion, provenance-preserving evidence, scoped entity discovery, and structured validation through Da’at and Kristal. Built with rebuildable indexes, explicit authority boundaries, and reproducible knowledge pipelines.",
+    "source_docs_paths": [
+      "C:\\mycode\\EncyKlopedia\\EncyKlopedia\\00_system\\docs"
+    ],
+    "note": "Resolved from user-provided GitHub repository URL and verified through GitHub."
+  },
+  {
+    "local_root": "C:\\mycode\\Grammatical_Framework\\ars-magna-lulli\\ars-magna-lulli",
+    "github_repo": "MA-Gustave/Ars-Magna-Lulli",
+    "github_url": "https://github.com/MA-Gustave/Ars-Magna-Lulli",
+    "status": "external_match",
+    "description": "A monorepo connecting the Compendium, Wordbench, and Observatory for GF language engineering.",
+    "source_docs_paths": [
+      "C:\\mycode\\Grammatical_Framework\\ars-magna-lulli\\ars-magna-lulli\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\Grammatical_Framework\\GF_Observatory",
+    "github_repo": "MA-Gustave/GF_Observatory",
+    "github_url": "https://github.com/MA-Gustave/GF_Observatory",
+    "status": "external_match",
+    "description": "GF Observatory is a local-first, read-only companion to GF Wordbench that aggregates versioned evidence across workspaces, tracks health and readiness, and provides reproducible analysis through a canonical API, CLI, and evidence matrix.",
+    "source_docs_paths": [
+      "C:\\mycode\\Grammatical_Framework\\GF_Observatory\\GF_Observatory_Documentation_Frame\\docs",
+      "C:\\mycode\\Grammatical_Framework\\GF_Observatory\\GF_Observatory_Documentation_GitHub_Pages\\docs"
+    ],
+    "note": "The online repo root contains both GF_Observatory_Documentation_Frame and GF_Observatory_Documentation_GitHub_Pages."
+  },
+  {
+    "local_root": "C:\\mycode\\Grammatical_Framework\\GF_Wordbench\\GF_Wordbench",
+    "github_repo": "MA-Gustave/GF_Wordbench",
+    "github_url": "https://github.com/MA-Gustave/GF_Wordbench",
+    "status": "external_match",
+    "description": null,
+    "source_docs_paths": [
+      "C:\\mycode\\Grammatical_Framework\\GF_Wordbench\\GF_Wordbench\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\Grammatical_Framework\\Grammatical_Framework-Albanian",
+    "github_repo": "Rejean-McCormick/Grammatical-Framework-Albanian",
+    "github_url": "https://github.com/Rejean-McCormick/Grammatical-Framework-Albanian",
+    "status": "owned_match",
+    "description": null,
+    "source_docs_paths": [
+      "C:\\mycode\\Grammatical_Framework\\Grammatical_Framework-Albanian\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\Interaction-Kernel",
+    "github_repo": "Rejean-McCormick/Interaction-Kernel",
+    "github_url": "https://github.com/Rejean-McCormick/Interaction-Kernel",
+    "status": "owned_match",
+    "description": "Interaction Kernel (IK) is a distributed interoperability protocol for autonomous systems. It standardizes Commands, Queries, Events, receipts, profiles, reliable delivery, and artifact exchange, while preserving domain ownership. Includes Konnaxion, Orgo, Da’at/Kristal adapters and conformance guidance.",
+    "source_docs_paths": [
+      "C:\\mycode\\Interaction-Kernel\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\Kamel\\Kamel",
+    "github_repo": "Rejean-McCormick/Kamel",
+    "github_url": "https://github.com/Rejean-McCormick/Kamel",
+    "status": "owned_match_local_git_verified",
+    "description": null,
+    "source_docs_paths": [
+      "C:\\mycode\\Kamel\\Kamel\\docs"
+    ],
+    "note": "Resolved from local Git origin; git ls-remote confirmed the remote is online."
+  },
+  {
+    "local_root": "C:\\mycode\\KeyFlow(formulaires)",
+    "github_repo": "Rejean-McCormick/KeyFlow",
+    "github_url": "https://github.com/Rejean-McCormick/KeyFlow",
+    "status": "owned_match_local_git_verified",
+    "description": null,
+    "source_docs_paths": [
+      "C:\\mycode\\KeyFlow(formulaires)\\docs"
+    ],
+    "note": "Resolved from local Git origin; git ls-remote confirmed the remote is online."
+  },
+  {
+    "local_root": "C:\\mycode\\kOA-Linux\\koa-linux",
+    "github_repo": "Rejean-McCormick/kOA-Linux-Koali",
+    "github_url": "https://github.com/Rejean-McCormick/kOA-Linux-Koali",
+    "status": "owned_match",
+    "description": "Foundational specification and reference architecture for kOA Linux: an immutable, offline-capable, governable operating environment for Konnaxion, Orgo, and Kristal, with policy runtime, selective audit, signed releases, secure node profiles, rollback, recovery, portability, and tested exit.",
+    "source_docs_paths": [
+      "C:\\mycode\\kOA-Linux\\koa-linux\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\kOA-Linux\\Koali-Control-Panel",
+    "github_repo": "Rejean-McCormick/Koali-Control-Panel",
+    "github_url": "https://github.com/Rejean-McCormick/Koali-Control-Panel",
+    "status": "owned_match",
+    "description": "Koali Control Panel is the development and orchestration console for kOA-Linux. It manages WSL environments, diagnostics, subsystem validation, Koali Spaces, Konnaxion, dev stacks, health checks, QEMU, system assembly, testing, and release workflows from one modular interface.",
+    "source_docs_paths": [
+      "C:\\mycode\\kOA-Linux\\Koali-Control-Panel\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\kOA-Linux\\koali-spaces",
+    "github_repo": "Rejean-McCormick/Koali-Spaces",
+    "github_url": "https://github.com/Rejean-McCormick/Koali-Spaces",
+    "status": "owned_match",
+    "description": "Local-first, offline-capable user interface and experience layer for Koali, providing the global shell, module navigation, shared top bar, contextual sidebars, themes, and presentation runtime.",
+    "source_docs_paths": [
+      "C:\\mycode\\kOA-Linux\\koali-spaces\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\kOA-Linux\\Koali_Scenario_Mosaic",
+    "github_repo": "Rejean-McCormick/Koali-Scenario-Mosaic",
+    "github_url": "https://github.com/Rejean-McCormick/Koali-Scenario-Mosaic",
+    "status": "owned_match",
+    "description": "Interface to explore usage scenarios",
+    "source_docs_paths": [
+      "C:\\mycode\\kOA-Linux\\Koali_Scenario_Mosaic\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\kOA-Linux\\LevelUpDiag-Koali",
+    "github_repo": "Rejean-McCormick/LevelUpDiag-kOA-Linux",
+    "github_url": "https://github.com/Rejean-McCormick/LevelUpDiag-kOA-Linux",
+    "status": "owned_match",
+    "description": "Companion development and validation tool for kOA-Linux. Runs ordered diagnostic levels, captures logs/results, and validates the target repository through public interfaces without modifying it.",
+    "source_docs_paths": [
+      "C:\\mycode\\kOA-Linux\\LevelUpDiag-Koali\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\kOA\\kOA_Digital_Ecosystem",
+    "github_repo": "Rejean-McCormick/kOA-Digital-Ecosystem",
+    "github_url": "https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem",
+    "status": "owned_match",
+    "description": "A contract-driven knowledge system that converts raw inputs into immutable, canonical truth artifacts (Kristal Exchange) and portable runtime packs. Features deterministic rendering, governed execution, and strict auditability.",
+    "source_docs_paths": [
+      "C:\\mycode\\kOA\\kOA_Digital_Ecosystem\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\Konductor\\Konductor",
+    "github_repo": "Rejean-McCormick/Konductor",
+    "github_url": "https://github.com/Rejean-McCormick/Konductor",
+    "status": "owned_match",
+    "description": "Agentic AI",
+    "source_docs_paths": [
+      "C:\\mycode\\Konductor\\Konductor\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\Konnaxion\\Konnaxion",
+    "github_repo": "Rejean-McCormick/Konnaxion",
+    "github_url": "https://github.com/Rejean-McCormick/Konnaxion",
+    "status": "owned_match",
+    "description": "Modular civic-tech platform that connects people, knowledge, and projects across learning, R&D, governance, and culture, with domain- and ethics-aware weighting (Ekoh + Smart Vote).",
+    "source_docs_paths": [
+      "C:\\mycode\\Konnaxion\\Konnaxion\\docs",
+      "C:\\mycode\\Konnaxion\\Konnaxion\\backend\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\Konnaxion\\Konnaxion_Capsule_Manager",
+    "github_repo": "Rejean-McCormick/Konnaxion-Capsule-Manager",
+    "github_url": "https://github.com/Rejean-McCormick/Konnaxion-Capsule-Manager",
+    "status": "owned_match",
+    "description": "Konnaxion Capsule Manager packages Konnaxion v14 into signed, portable .kxcap capsules and runs them through a local Manager, privileged Agent, Docker Compose runtime, private-by-default network profiles, Security Gate checks, backups, restores, rollback, and the canonical kx CLI for appliance, intranet, tunnel, and VPS deployment.",
+    "source_docs_paths": [
+      "C:\\mycode\\Konnaxion\\Konnaxion_Capsule_Manager\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\Konnaxion\\Konnaxion_Worlds",
+    "github_repo": "Rejean-McCormick/Konnaxion-Worlds",
+    "github_url": "https://github.com/Rejean-McCormick/Konnaxion-Worlds",
+    "status": "owned_match",
+    "description": "Multi-World orchestration layer for isolated civic and deliberative environments, with instant world switching, versioned releases, scoped identities, EkoH/Smart Vote isolation, rollback, snapshots, and strict anti-contamination guarantees.",
+    "source_docs_paths": [
+      "C:\\mycode\\Konnaxion\\Konnaxion_Worlds\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\Konnaxion\\LevelUpDiag",
+    "github_repo": "Rejean-McCormick/Konnaxion-LevelUpDiag",
+    "github_url": "https://github.com/Rejean-McCormick/Konnaxion-LevelUpDiag",
+    "status": "owned_match",
+    "description": "diagnostic and validation suite for Konnaxion",
+    "source_docs_paths": [
+      "C:\\mycode\\Konnaxion\\LevelUpDiag\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\Konnaxion\\SecurityDiag",
+    "github_repo": "Rejean-McCormick/Konnaxion-SecurityDiag",
+    "github_url": "https://github.com/Rejean-McCormick/Konnaxion-SecurityDiag",
+    "status": "owned_match",
+    "description": "Security qualification and deployment hardening toolkit for Konnaxion. Provides read-only security diagnostics, VPS/SSH/firewall/Docker checks, incident-recovery validation, Capsule Manager integration, evidence-based release gates, and external attack-surface verification.",
+    "source_docs_paths": [
+      "C:\\mycode\\Konnaxion\\SecurityDiag\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\Konstellation\\Konstellation_v0_4\\Konstellation",
+    "github_repo": "knstl/konstellation",
+    "github_url": "https://github.com/knstl/konstellation",
+    "status": "probable_external_match",
+    "description": "Konstellation blockchain",
+    "source_docs_paths": [
+      "C:\\mycode\\Konstellation\\Konstellation_v0_4\\Konstellation\\docs"
+    ],
+    "note": "Strong probable match: online repo has a 0.4.0/v0.4.1 release line and a docs directory."
+  },
+  {
+    "local_root": "C:\\mycode\\Kristal\\kristal-framework",
+    "github_repo": "Rejean-McCormick/Kristal-Framework",
+    "github_url": "https://github.com/Rejean-McCormick/Kristal-Framework",
+    "status": "owned_match",
+    "description": "Modular framework for defining, compiling, validating, and versioning Kristals—knowledge artifacts used by AI systems like Sentient. Based on an enhanced Wikibase format, with offline usage, entity linking, and provenance traceability.",
+    "source_docs_paths": [
+      "C:\\mycode\\Kristal\\kristal-framework\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\Kristal\\kristal-reference",
+    "github_repo": "Rejean-McCormick/Kristal-Reference",
+    "github_url": "https://github.com/Rejean-McCormick/Kristal-Reference",
+    "status": "owned_match",
+    "description": "Non-normative reference implementation for Kristal v5. Reproduces official Exchange, Runtime Pack, canonicalization, signature, trust, and portable conformance vectors. Designed for executable validation against kristal-framework without redefining the specification.",
+    "source_docs_paths": [
+      "C:\\mycode\\Kristal\\kristal-reference\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\Kristal\\levelupdiag_kristal",
+    "github_repo": "Rejean-McCormick/LevelUpDiag-Kristal",
+    "github_url": "https://github.com/Rejean-McCormick/LevelUpDiag-Kristal",
+    "status": "owned_match",
+    "description": "Standalone deep-validation repository for Kristal. Orchestrates conformance, reproducibility, security, negative mutation, manifest, archive, CI, and E2E tests while keeping all diagnostics and evidence outside the Kristal framework repository.",
+    "source_docs_paths": [
+      "C:\\mycode\\Kristal\\levelupdiag_kristal\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\Kristal_Farms\\kristal-farms",
+    "github_repo": "Rejean-McCormick/Kristal-Farms",
+    "github_url": "https://github.com/Rejean-McCormick/Kristal-Farms",
+    "status": "owned_match",
+    "description": "Kristal Farms is a northern infrastructure platform for turning difficult-to-export renewable energy into secure cold-climate compute, fibre connectivity, useful heat, resilient communities, and internationally transferable expertise.",
+    "source_docs_paths": [
+      "C:\\mycode\\Kristal_Farms\\kristal-farms\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\LevelUpDiag\\LevelUpDiag",
+    "github_repo": "Rejean-McCormick/LevelUpDiag",
+    "github_url": "https://github.com/Rejean-McCormick/LevelUpDiag",
+    "status": "owned_match_local_git_verified",
+    "description": null,
+    "source_docs_paths": [
+      "C:\\mycode\\LevelUpDiag\\LevelUpDiag\\docs"
+    ],
+    "note": "Resolved from local Git origin; git ls-remote confirmed the remote is online."
+  },
+  {
+    "local_root": "C:\\mycode\\MediKristal\\LevelUpDiag-MediKristal",
+    "github_repo": "Rejean-McCormick/MediKristal-LevelUpDiag-",
+    "github_url": "https://github.com/Rejean-McCormick/MediKristal-LevelUpDiag-",
+    "status": "owned_match",
+    "description": "Progressive, evidence-driven repository validation framework. LevelUpDiag runs layered diagnostics for code quality, security, contracts, tests, packaging, reproducibility, and release readiness, producing structured reports and deterministic PASS/WARN/FAIL verdicts.",
+    "source_docs_paths": [
+      "C:\\mycode\\MediKristal\\LevelUpDiag-MediKristal\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\MediKristal\\MediKristal",
+    "github_repo": "Rejean-McCormick/MediKristal",
+    "github_url": "https://github.com/Rejean-McCormick/MediKristal",
+    "status": "owned_match",
+    "description": "Medikristal is a semantic medical knowledge architecture that links symptoms, diseases, tests, treatments, and patient context into verifiable artifacts, then applies deterministic protocols to guide clinical reasoning with traceable sources.",
+    "source_docs_paths": [
+      "C:\\mycode\\MediKristal\\MediKristal\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\Orgo\\LevelUpDiag-Orgo",
+    "github_repo": "Rejean-McCormick/LevelUpDiag-Orgo",
+    "github_url": "https://github.com/Rejean-McCormick/LevelUpDiag-Orgo",
+    "status": "owned_match",
+    "description": "Standalone diagnostic and validation suite for Orgo. Runs code quality, architecture, API, database, integration, and deployment-readiness checks against an external Orgo repository while keeping reports and tooling fully separate.",
+    "source_docs_paths": [
+      "C:\\mycode\\Orgo\\LevelUpDiag-Orgo\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\Orgo\\Orgo",
+    "github_repo": "Rejean-McCormick/Orgo",
+    "github_url": "https://github.com/Rejean-McCormick/Orgo",
+    "status": "owned_match",
+    "description": "Multi-tenant nervous system for organisations: turns signals into Cases and Tasks, routes them via labels and roles, tracks execution, and surfaces Insights.",
+    "source_docs_paths": [
+      "C:\\mycode\\Orgo\\Orgo\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\Orgo\\Orgo_Worlds",
+    "github_repo": "Rejean-McCormick/Orgo-Worlds",
+    "github_url": "https://github.com/Rejean-McCormick/Orgo-Worlds",
+    "status": "owned_match",
+    "description": "Standalone multi-world orchestration platform built on Orgo. Manages isolated Worlds, versioned releases, memberships, runtime context, World switching, scenario packs, and controlled data injection into Orgo through the Scenario Injector—without direct cross-system database writes.",
+    "source_docs_paths": [
+      "C:\\mycode\\Orgo\\Orgo_Worlds\\docs",
+      "C:\\mycode\\Orgo\\Orgo_Worlds\\world-packs\\uckk-a014\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\SemantiK_Architect\\LevelUpDiag_SemantiK_Architect",
+    "github_repo": "Rejean-McCormick/LevelUpDiag_SemantiK-Architect",
+    "github_url": "https://github.com/Rejean-McCormick/LevelUpDiag_SemantiK-Architect",
+    "status": "owned_match",
+    "description": "LevelUpDiag for SemantiK Architect is a deterministic diagnostic and conformance tool aligned with SA v1. It validates architecture locks, schemas, RuntimeSets, capability profiles, SA↔GF contracts, faithfulness invariants, public interfaces, release readiness, and fail-closed behavior.",
+    "source_docs_paths": [
+      "C:\\mycode\\SemantiK_Architect\\LevelUpDiag_SemantiK_Architect\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\SemantiK_Architect\\SemantiK_Architect",
+    "github_repo": "Rejean-McCormick/SemantiK-Architect",
+    "github_url": "https://github.com/Rejean-McCormick/SemantiK-Architect",
+    "status": "owned_match",
+    "description": "Industrial-scale NLG toolkit for Abstract Wikipedia/Wikifunctions: family engines, lexica, constructions, QA.",
+    "source_docs_paths": [
+      "C:\\mycode\\SemantiK_Architect\\SemantiK_Architect\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\SemantiK_Architect\\SemantiK_Runtime_Orchestrator",
+    "github_repo": "Rejean-McCormick/SemantiK_Runtime_Orchestrator",
+    "github_url": "https://github.com/Rejean-McCormick/SemantiK_Runtime_Orchestrator",
+    "status": "owned_match",
+    "description": "Independent, fail-closed release orchestrator for SemantiK Architect RuntimeSets. Coordinates GF Wordbench artifacts, SA conformance and validation, optional GF Observatory evidence, LevelUpDiag gates, transactional promotion, rollback, and activation without owning linguistic or semantic logic.",
+    "source_docs_paths": [
+      "C:\\mycode\\SemantiK_Architect\\SemantiK_Runtime_Orchestrator\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\SenTient\\SenTient",
+    "github_repo": "Rejean-McCormick/SenTient",
+    "github_url": "https://github.com/Rejean-McCormick/SenTient",
+    "status": "owned_match",
+    "description": "Tool to deconstruct language and format it for Wikidata. Inspired by Falcon 2.0, OpenRefine and OpenTapioca.",
+    "source_docs_paths": [
+      "C:\\mycode\\SenTient\\SenTient\\Docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\SenTient\\SenTient\\opentapioca",
+    "github_repo": "opentapioca/opentapioca",
+    "github_url": "https://github.com/opentapioca/opentapioca",
+    "status": "external_match",
+    "description": "Entity linking system for Wikidata updated by your edits in real time",
+    "source_docs_paths": [
+      "C:\\mycode\\SenTient\\SenTient\\opentapioca\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\UCKK\\moodle\\moodle",
+    "github_repo": "moodle/moodle",
+    "github_url": "https://github.com/moodle/moodle",
+    "status": "external_match",
+    "description": "Moodle - the world's open source learning platform",
+    "source_docs_paths": [
+      "C:\\mycode\\UCKK\\moodle\\moodle\\public\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\UCKK\\uckk-moodle",
+    "github_repo": "Rejean-McCormick/UCKK",
+    "github_url": "https://github.com/Rejean-McCormick/UCKK",
+    "status": "owned_match",
+    "description": "Univers-Cité King Klown. For real.",
+    "source_docs_paths": [
+      "C:\\mycode\\UCKK\\uckk-moodle\\docs",
+      "C:\\mycode\\UCKK\\uckk-moodle\\mod\\uckkarchive\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\UCKK\\UCKK_ops_console",
+    "github_repo": "Rejean-McCormick/UCKK-Ops-Console",
+    "github_url": "https://github.com/Rejean-McCormick/UCKK-Ops-Console",
+    "status": "owned_match",
+    "description": "Local operations console for the UCKK project. Provides guided, safer workflows to manage Moodle locally and on uckk.org, sync and publish code through Git, manage the media library and Moodle data, run checks and tests, and generate clear reports without relying on manual commands or legacy scripts.",
+    "source_docs_paths": [
+      "C:\\mycode\\UCKK\\UCKK_ops_console\\docs"
+    ],
+    "note": "Resolved from user-provided GitHub repository URL and verified through GitHub."
+  },
+  {
+    "local_root": "C:\\mycode\\VotingMachine\\VotingMachine",
+    "github_repo": "Rejean-McCormick/VotingMachine",
+    "github_url": "https://github.com/Rejean-McCormick/VotingMachine",
+    "status": "owned_match",
+    "description": null,
+    "source_docs_paths": [
+      "C:\\mycode\\VotingMachine\\VotingMachine\\docs"
+    ],
+    "note": "Verified online match."
+  },
+  {
+    "local_root": "C:\\mycode\\Voxtral_Audiobook_Studio\\Voxtral_Audiobook_Studio",
+    "github_repo": "senigami/audiobook-studio",
+    "github_url": "https://github.com/senigami/audiobook-studio",
+    "status": "probable_external_match",
+    "description": "Professional local-first AI production pipeline for long-form narration. Clone voices and generate studio-grade audiobooks (M4B/MP3) using Coqui XTTS-v2 and support for Voxtral (cloud)",
+    "source_docs_paths": [
+      "C:\\mycode\\Voxtral_Audiobook_Studio\\Voxtral_Audiobook_Studio\\docs"
+    ],
+    "note": "Strong probable match: online repo has docs and explicit Voxtral support."
+  }
+]

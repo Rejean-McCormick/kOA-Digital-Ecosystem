@@ -18,8 +18,11 @@ Use these views together:
 - **Contract map** — which explicit boundaries connect owners: [`docs/2-Technical-Reference/40-integration/contract-map.md`](docs/2-Technical-Reference/40-integration/contract-map.md)
 - **Maturity map** — specified vs implemented vs qualified vs integrated vs production-proven: [`docs/status/current.md`](docs/status/current.md)
 - **Layer model** — conceptual classification/orientation only: [`docs/3-Layer-Model/README.md`](docs/3-Layer-Model/README.md)
+- **Repository inventory** — local/GitHub repository discovery map: [`docs/inventory/README.md`](docs/inventory/README.md)
 
 ## Purpose
+
+The repository inventory additionally records where known repositories and documentation roots live; inventory membership is discovery metadata only.
 
 This repository answers four questions without becoming a competing product authority:
 

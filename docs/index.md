@@ -46,6 +46,7 @@ The rc.3 release metadata supplied with the update has no resolved commit SHA ye
 - [Knowledge acquisition/projection boundary](2-Technical-Reference/40-integration/knowledge-projection.md)
 - [Current maturity map](status/current.md)
 - [Conceptual Layer Model](3-Layer-Model/README.md)
+- [Repository inventory](inventory/README.md)
 
 ## Start here
 

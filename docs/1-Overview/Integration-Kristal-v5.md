@@ -4,10 +4,9 @@ kOA integrates against a pinned Kristal v5 release candidate. Kristal remains th
 
 ## Pin
 
-- version: `5.0.0-rc.3`
-- status: `release-candidate contract baseline`
-- tag: `v5.0.0-rc.3`
-- commit: unresolved (`null`) in the supplied release metadata
+- version: `5.0.0-rc.3 release-candidate contract baseline (immutable commit pending)
+- tag: `v5.0.0-rc.3 release-candidate contract baseline (immutable commit pending)
+- commit: `af703bf02ee04a69a5f2ad6694fa8b8e56ae2b19`
 - canonicalization: `kristal.v5:jcs-rfc8785`
 - canonicalization version: `1`
 - schema-set digest used by Interaction Kernel: `sha256:7a94a1e8a91d5c5267b73b7f1e98977faa548324bc937bb491cd08d49fdc8c92`
@@ -48,7 +47,9 @@ kOA may apply stricter deployment policies. For example, a production/reference 
 
 ## Upstream candidate note
 
-The 2026-09-28 reconciliation establishes `5.0.0-rc.3` as the current frozen contract baseline. The supplied release metadata still leaves the commit unresolved, so rc.3 must not be described as a completed immutable published release. Any downstream pin advance still requires explicit owner adoption and qualification.
+The 2026-09-28 reconciliation found a newer Kristal owner candidate, `5.0.0-rc.3 release-candidate contract baseline
+
+This does **not** change the active integration pin shown above. Any pin advance requires explicit downstream adoption and immutable release identity.
 
 
 ## Current knowledge boundary
