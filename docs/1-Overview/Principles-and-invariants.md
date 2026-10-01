@@ -5,7 +5,7 @@
 3. **Presentation is not authority.** Koali rendering, routing or Space activation does not transfer business, epistemic or host authority.
 4. **Integrity is not authority.** Valid bytes/signatures do not imply validation, recognition or activation eligibility.
 5. **Workflow state is not epistemic state.** Orgo statuses do not replace Kristal assertion/validation/recognition states.
-6. **Compilation is not validation.** Kristal v5 may compile Working Exchanges before final validation/recognition where policy permits.
+6. **Artifact status is not validation.** Kristal v6 keeps `artifact_status`, validation and authority recognition separate; derived projections do not upgrade the source state.
 7. **Recognition is scoped.** Reference status is authority/scope-specific, not universal truth.
 8. **Reader Policy does not rewrite underlying state.** Visibility preserves labels and lineage.
 9. **Runtime Pack state has a precise owner.** On kOA-Linux, `kristal_runtime` owns verification/compatibility/active Runtime Pack state and activation/rollback receipts; Node Agent performs only the narrow privileged host transition when required.
@@ -19,3 +19,5 @@
 17. **Operational-to-Kristal flow is snapshot/export based.** Knowledge compilation consumes immutable source-owned exports/references with provenance; it does not rely on cross-system database writes or distributed commits.
 18. **Runtime query stores are materializations.** Any Runtime Pack table/index/columnar/read-only database representation is derived, non-authoritative and deterministically rebuildable from the referenced Kristal artifact and declared build inputs.
 19. **No bidirectional authority synchronization.** Product state may produce knowledge and consume ArtifactRefs/projections, but the product database, Kristal Exchange and Runtime Pack do not form peer writable sources of truth.
+
+10. **Actionability is not execution authority.** Kristal v6 may classify an action as automatic or human-gated, but cross-system mutation still requires the receiving owner's explicit contract, admission and authority.

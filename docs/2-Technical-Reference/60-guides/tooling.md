@@ -4,7 +4,7 @@ Expected tooling capabilities include:
 
 - validate owner-system contracts and references;
 - verify exact Kristal pin/canonicalization;
-- validate Structured Epistemic State and Kristal manifests;
+- validate Kristal State and Kristal manifests;
 - inspect Working/Reference status and Reader Policy refs;
 - emit/validate Build Record correlation evidence when used;
 - validate/read kOA-Linux Release Set and release-channel compatibility;

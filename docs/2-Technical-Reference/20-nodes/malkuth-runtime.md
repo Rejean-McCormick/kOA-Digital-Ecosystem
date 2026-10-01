@@ -6,7 +6,7 @@ Malkuth is a conceptual runtime-consumption role, not an ownership grant.
 
 - query/serve the active Runtime Pack through its Query Contract;
 - apply Reader Policy;
-- preserve source/validation/recognition/certainty labels;
+- preserve source/validation/recognition/valuation labels;
 - expose deterministic query errors and bounded behavior.
 
 ## kOA-Linux mapping

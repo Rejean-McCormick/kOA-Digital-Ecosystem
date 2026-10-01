@@ -21,7 +21,7 @@ Operational impact can be published back using `accountability.impact.publish`.
 
 ## Kristal boundary
 
-Orgo can request Kristal work through an IK Profile routed to Da’at. Orgo does not reinterpret validation, certainty, authority recognition or Reader Policy.
+Orgo can request Kristal work through an IK Profile routed to Da’at. Orgo does not reinterpret validation, valuation, authority recognition or Reader Policy.
 
 ## Invariants
 

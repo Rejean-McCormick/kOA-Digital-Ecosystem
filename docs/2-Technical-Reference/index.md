@@ -8,7 +8,7 @@ This reference defines ecosystem-level mappings, boundaries and coordination rul
 - **Orgo** — workflow/work state and durable integration operations.
 - **EncyKlopedia** — source discovery/acquisition evidence and immutable handoff.
 - **Da’at** — mapping/ACL into Kristal-native contracts.
-- **Kristal v5** — referent identity + epistemic artifacts, validation/recognition, Reader Policy, Runtime Pack semantics.
+- **Kristal v6** — referent identity + Kristal State, typed valuations/applicability/roles/actionability, validation/recognition, Reader Policy and derived runtime semantics.
 - **UCKK / Univers-Cité** — consumer projection and local Moodle/campus state.
 - **kOA-Linux** — platform profiles, admission, release channels and Release Sets.
 - **`kristal_runtime`** — local Runtime Pack verification/active-state/rollback receipts.
@@ -20,9 +20,7 @@ This reference defines ecosystem-level mappings, boundaries and coordination rul
 
 ## Knowledge baseline
 
-The current knowledge boundary freezes Kristal `5.0.0-rc.3` release-candidate contracts, Referent Registry `1.0.0`, EncyKlopedia handoff `1.0.0`, IK build/artifact profiles `1.1.0` and UCKK projection `1.0.0`.
-
-The rc.3 release commit is unresolved in the supplied metadata. See [`40-integration/knowledge-projection.md`](40-integration/knowledge-projection.md).
+The current knowledge boundary freezes Kristal Standard `6.0.0`, Referent Registry `1.0.0`, EncyKlopedia handoff `1.0.0`, IK build/artifact profiles `2.0.0` and UCKK projection `1.0.0`. Kristal is pinned by its standard manifest and core contract digests. See [`40-integration/knowledge-projection.md`](40-integration/knowledge-projection.md).
 
 ## Start here
 
@@ -36,6 +34,6 @@ The rc.3 release commit is unresolved in the supplied metadata. See [`40-integra
 - `40-integration/contract-map.md`
 - `40-integration/knowledge-projection.md`
 - `40-integration/interaction-kernel/index.md`
-- `40-integration/kristal-v5/index.md`
+- `40-integration/kristal-v6/index.md`
 - `40-integration/koali-spaces/index.md`
 - `40-integration/orgo-konnaxion/index.md`

@@ -4,9 +4,9 @@
 
 ## Current baselines
 
-- **Alignment:** 2026-09-28 current architecture.
-- **Knowledge-contract baseline:** Kristal `5.0.0-rc.3` release-candidate contract set, Referent Registry `1.0.0`, EncyKlopedia handoff `encyklopedia.corpus-harvest-handoff/1.0.0`, IK profiles `kristal.build.request/1.1.0` + `kristal.artifact.ready/1.1.0`, UCKK projection `uckk.univers-cite-projection/1.0.0`.
-- **Kristal release identity:** rc.3 declares tag `v5.0.0-rc.3`, but the supplied release metadata still has `commit: null`; this repository therefore treats rc.3 as a frozen contract baseline, not as a fully resolved immutable release pin.
+- **Alignment:** 2026-10-01 current architecture.
+- **Knowledge-contract baseline:** Kristal Standard `6.0.0`, Referent Registry `1.0.0`, EncyKlopedia handoff `encyklopedia.corpus-harvest-handoff/1.0.0`, IK profiles `kristal.build.request/2.0.0` + `kristal.artifact.ready/2.0.0`, UCKK projection `uckk.univers-cite-projection/1.0.0`.
+- **Kristal standard identity:** v6 is pinned by its published standard-manifest SHA-256 and core contract digests; canonicalization is `kristal.v6:jcs-rfc8785`.
 - **kOA-Linux:** platform composition authority for profiles, admission, release channels and lifecycle; independent subsystem implementations remain owner-controlled.
 
 ## Control views
@@ -39,7 +39,7 @@ This repository answers four questions without becoming a competing product auth
 | **Orgo** | Signal, Workflow, Case, Task, IntegrationOperation, outbox and operational reconciliation |
 | **EncyKlopedia** | source discovery/acquisition, provider resolution, lossless evidence and immutable corpus-harvest handoff |
 | **Da’at** | mapping/ACL boundary into Kristal-native contracts |
-| **Kristal** | referent identity semantics, Structured Epistemic State, Working/Reference Exchanges, validation/recognition, Reader Policy and Runtime Pack semantics |
+| **Kristal** | referent identity semantics, Kristal State, typed valuations/coordinates/applicability, validation/recognition, Reader Policy, record-role/actionability semantics and knowledge-runtime projection semantics |
 | **UCKK / Univers-Cité** | scoped consumer projections, Moodle materialization, derived glossaries, campus/learning state and institutional decisions |
 | **kOA-Linux** | platform profiles, trust/policy/resources, artifact admission, release channels and Release Sets |
 | **`kristal_runtime`** | Runtime Pack verification/compatibility, active Runtime Pack state, activation/rollback receipts and health |
@@ -80,9 +80,9 @@ source discovery / acquisition
     → EncyKlopedia immutable evidence + referent candidates
     → encyklopedia.corpus-harvest-handoff/1.0.0
     → Da’at mapping / ACL
-    → Kristal referent + epistemic contracts
+    → Kristal referent + v6 state contracts
     → Working / Reference artifacts as policy permits
-    → kristal.artifact.ready/1.1.0
+    → kristal.artifact.ready/2.0.0
     → uckk.univers-cite-projection/1.0.0
     → rebuildable UCKK / Moodle / glossary / media presentation
 ```

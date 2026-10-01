@@ -4,7 +4,7 @@
 Boundary reference to a source-owned artifact. It does not transfer ownership.
 
 ## Authority Recognition
-Kristal v5 scoped recognition decision, distinct from signature and validation.
+Kristal v6 scoped recognition decision, distinct from signature and validation.
 
 ## Build Record
 Optional Digital Ecosystem correlation/reproducibility evidence referencing owner artifacts.
@@ -31,7 +31,7 @@ Native kOA-Linux component owning local Runtime Pack verification/compatibility,
 Native kOA-Linux component for narrow authorized node-local lifecycle/activation/recovery operations. It does not create release or epistemic authority.
 
 ## Reader Policy
-Kristal v5 policy controlling eligible visible material while preserving labels.
+Kristal v6 policy controlling eligible visible material while preserving labels.
 
 ## Reference Exchange
 Kristal Exchange recognized as a reference for declared authority/scope.
@@ -45,8 +45,14 @@ Kristal runtime projection admitted as a kOA-Linux `knowledge`-channel artifact 
 ## Space activation
 Koali Spaces presentation/application-composition state. It is not Runtime Pack activation.
 
-## Structured Epistemic State
-Primary Kristal v5 structured epistemic representation.
+## Kristal State
+Primary Kristal v6 canonical structured knowledge/state representation. It carries atomic assertions, typed valuations, coordinates, applicability, roles, provenance and optional actionability.
+
+## Valuation
+Typed v6 measurement/state attached to an assertion. The dimension and value semantics are explicit; `unknown` and `not_applicable` are value states, not zero.
+
+## Actionability
+Policy-oriented classification of whether an action is automatic, human-gated, manual/prohibited or lacks sufficient information. It never transfers execution authority.
 
 ## Working Exchange
 Deterministically compiled Kristal Exchange that may precede final validation/recognition.

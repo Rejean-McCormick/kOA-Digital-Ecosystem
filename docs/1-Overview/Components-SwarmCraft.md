@@ -6,7 +6,7 @@ It does not own Konnaxion civic state, Orgo workflow authority, Kristal validati
 
 ## Knowledge use
 
-SwarmCraft may consume Runtime Packs or other explicitly eligible artifacts. It must preserve epistemic/source status and must not silently turn Working, disputed or low-certainty material into recognized reference material.
+SwarmCraft may consume Runtime Packs or other explicitly eligible artifacts. It must preserve epistemic/source status and must not silently turn Working, disputed or low-valuation material into recognized reference material.
 
 New factual observations or claims produced during execution must return through an appropriate governed knowledge/provenance path; execution side effects do not directly mutate Kristal Reference Exchanges.
 

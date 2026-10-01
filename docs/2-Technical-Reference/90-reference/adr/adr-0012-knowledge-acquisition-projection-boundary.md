@@ -15,7 +15,9 @@
 
 ## Frozen contracts
 
-- Kristal `5.0.0-rc.3`; Referent Registry `1.0.0`.
+- Kristal Standard `6.0.0`; Referent Registry `1.0.0`.
 - EncyKlopedia `encyklopedia.corpus-harvest-handoff/1.0.0`.
 - UCKK `uckk.univers-cite-projection/1.0.0`.
-- IK `kristal.build.request/1.1.0` and `kristal.artifact.ready/1.1.0` for acquisition/projection consumers.
+- IK `kristal.build.request/2.0.0`, `kristal.artifact.ready/2.0.0` and `kristal.revision.request/2.0.0` for the v6 knowledge boundary.
+
+Amended by ADR-0013 for Kristal v6 generalized state roles and the actionability/execution-authority boundary.

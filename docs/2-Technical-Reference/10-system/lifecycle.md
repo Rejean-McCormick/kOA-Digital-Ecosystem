@@ -5,7 +5,7 @@ The ecosystem has multiple independent lifecycle axes.
 ## Kristal epistemic lifecycle
 
 ```text
-Structured Epistemic State
+Kristal State
 → Working Exchange
 → validation/review
 → authority recognition when applicable

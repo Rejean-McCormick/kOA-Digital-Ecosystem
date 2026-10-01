@@ -15,7 +15,7 @@ Owns source discovery/acquisition, provider resolution, lossless evidence/proven
 Owns the mapping/ACL boundary between ecosystem/IK-facing payloads and Kristal-native contracts. It does not own source operational state or Kristal authority semantics.
 
 ## Kristal
-Owns Referent Registry semantics, Structured Epistemic State, Working/Reference Exchanges, validation/recognition, Reader Policy and Runtime Pack semantics.
+Owns Referent Registry semantics, Kristal State, typed valuations/coordinates/applicability, validation/recognition, Reader Policy, record-role/actionability semantics and derived runtime projections.
 
 ## UCKK / Univers-Cité
 Owns consumer projection choices, Moodle/campus state, derived glossary/media presentation and local institutional decisions. Its projection is rebuildable from pinned Kristal artifacts and is not the epistemic canon.

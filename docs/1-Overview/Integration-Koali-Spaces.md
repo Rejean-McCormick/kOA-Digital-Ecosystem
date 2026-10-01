@@ -18,7 +18,7 @@ Lifecycle actions use the applicable owner/broker boundary rather than granting 
 
 ## Kristal presentation rule
 
-A Koali view of Kristal material must preserve relevant status, certainty, authority and Reader Policy labels. Rendering does not compile, validate or recognize authority.
+A Koali view of Kristal material must preserve relevant status, valuation, authority and Reader Policy labels. Rendering does not compile, validate or recognize authority.
 
 ## Current integration state
 

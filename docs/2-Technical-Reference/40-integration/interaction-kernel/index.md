@@ -28,8 +28,8 @@ Qualified Konnaxion↔Orgo:
 
 Current knowledge-contract baseline:
 
-- `kristal.build.request/1.1.0`
-- `kristal.artifact.ready/1.1.0`
+- `kristal.build.request/2.0.0`
+- `kristal.artifact.ready/2.0.0`
 
 Other profiles exist only where their owning boundaries explicitly adopt them.
 
@@ -40,3 +40,5 @@ Other profiles exist only where their owning boundaries explicitly adopt them.
 - participant owners commit mutable state locally; IK does not require distributed cross-owner DB transactions.
 - source-owned exports remain source-owned.
 - Profile/schema versions used for conformance are explicit and immutable within their published version.
+
+- `kristal.revision.request/2.0.0` is the aligned v6 revision boundary.

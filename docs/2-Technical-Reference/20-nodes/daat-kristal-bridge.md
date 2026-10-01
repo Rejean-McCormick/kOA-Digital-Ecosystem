@@ -1,11 +1,11 @@
-# Da’at — ecosystem/IK to Kristal v5 boundary
+# Da’at — ecosystem/IK to Kristal v6 boundary
 
 Da’at is the anti-corruption/mapping layer between ecosystem/IK-facing interactions and Kristal-native contracts. Kristal does not parse arbitrary external envelopes directly.
 
 ## Current knowledge baseline
 
 ```text
-Kristal                  5.0.0-rc.3 (release-candidate contract baseline)
+Kristal Standard         6.0.0
 Referent Registry        1.0.0
 knowledge-model bundle   sha256:07fe0527ab29a4b40870efdd0c9e0c67c91de919e5428047245b2a2c04f8ea98
 ```
@@ -36,3 +36,5 @@ Da’at does not:
 - treat derived query/projection stores as authoritative state.
 
 See [`../40-integration/knowledge-projection.md`](../40-integration/knowledge-projection.md).
+
+Kristal v6 actionability may guide routing, but Da’at does not execute source-owner mutations or infer authorization from `automatic`.

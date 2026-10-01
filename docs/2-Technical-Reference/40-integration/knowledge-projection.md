@@ -1,78 +1,90 @@
-# Knowledge acquisition → Kristal canon → consumer projection
+# Knowledge acquisition → Kristal v6 canon → consumer/action projection
 
-**Status:** current frozen cross-repository contract baseline
+**Status:** current frozen cross-repository contract baseline — 2026-10-01
 
 ## Authority direction
 
 ```text
-source acquisition
+source acquisition / owner snapshots
     → EncyKlopedia immutable evidence / referent candidates
     → Da’at mapping / ACL
-    → Kristal referent identity + epistemic canon
-    → rebuildable UCKK / Univers-Cité projection
+    → Kristal referent identity + Kristal State
+    → rebuildable UCKK / runtime projection
+    → optional authorized action request through an owner contract
 ```
 
 ## Current contract set
 
 | Surface | Current identifier |
 |---|---|
-| Kristal release-candidate contract baseline | `5.0.0-rc.3` |
+| Kristal Standard | `6.0.0` |
+| Canonicalization | `kristal.v6:jcs-rfc8785` |
 | Kristal Referent Registry | `kristal.referent-registry/1.0.0` |
-| Kristal knowledge-model bundle | `sha256:07fe0527ab29a4b40870efdd0c9e0c67c91de919e5428047245b2a2c04f8ea98` |
 | EncyKlopedia handoff | `encyklopedia.corpus-harvest-handoff/1.0.0` |
-| IK build request | `kristal.build.request/1.1.0` |
-| IK artifact ready | `kristal.artifact.ready/1.1.0` |
+| IK build request | `kristal.build.request/2.0.0` |
+| IK artifact ready | `kristal.artifact.ready/2.0.0` |
+| IK revision request | `kristal.revision.request/2.0.0` |
 | UCKK / Univers-Cité projection | `uckk.univers-cite-projection/1.0.0` |
 
 Machine-readable set: [`knowledge-projection-contract-set.json`](./knowledge-projection-contract-set.json).
+
+## Kristal v6 representation
+
+The boundary now maps knowledge into `kristal_state` rather than v5 Structured Epistemic State. The important generalized surfaces are:
+
+- `valuations[]`: typed boolean/categorical/ordinal/scalar/interval/probability/distribution/vector/partial-order/state/temporal values;
+- `coordinates`: domain geometry/context coordinates;
+- `applicability`: where/when/for whom an assertion applies;
+- `record_role`: authoritative constraint, observed state, organizational rule, derived state, decision, action, reference knowledge or structural record;
+- `actionability`: automation/human boundary, separate from measurement and separate from execution authority.
 
 ## Ownership
 
 ### EncyKlopedia
 
-Owns source discovery/acquisition, provider resolution, lossless evidence/provenance, referent candidates and the immutable handoff. A referent candidate is not automatically a validated claim or recognized referent.
+Owns acquisition evidence, provider/source resolution, immutable harvest handoff and referent candidates. Acquisition is not validation.
 
 ### Da’at
 
-Owns mapping/ACL behavior at the Kristal boundary. It adapts payloads without acquiring source authority or redefining Kristal semantics.
+Owns mapping/ACL behavior at the boundary. It maps source facts and rules into the declared Kristal v6 semantics without inventing authority or silently converting high valuations into automatic actionability.
 
 ### Kristal
 
-Owns domain-neutral referent identity semantics, assertions, evidence/provenance, validation/recognition and canonical epistemic artifacts. External identifiers remain evidence/identifiers, not authority.
+Owns the canonical Kristal State artifacts and their content-addressed semantics. It can preserve authoritative constraints, observations, organizational rules, derived states and actionability in one traceable model without becoming the mutable database or execution owner of the source applications.
 
-### UCKK / Univers-Cité
+### UCKK / consumers
 
-Owns consumer projection choices: scope membership, primary view, derived glossary, Moodle materialization and media-library presentation. A projection is rebuildable from pinned Kristal artifacts and never becomes the Kristal source of truth.
+Own projection/presentation state produced from pinned Kristal artifacts. Projections are rebuildable and do not become Kristal canon.
 
-### Interaction Kernel
+## Action projection rule
 
-Carries only explicitly adopted versioned profiles. It owns no participant operational or epistemic state.
-
-## Release-state caveat
-
-The supplied Kristal `kristal-release.json` declares:
+Actionability is deliberately **not** a direct actuator:
 
 ```text
-version  5.0.0-rc.3
-status   release-candidate
-tag      v5.0.0-rc.3
-commit   unresolved / null
+Kristal assertion/action candidate
+  actionability = automatic
+        ↓
+consumer/Da’at chooses the declared owner contract
+        ↓
+IK/profile admission + authority check
+        ↓
+owner-local operation
+        ↓
+receipt / observed state can return as new evidence
 ```
 
-Therefore:
-
-- the **contract baseline is frozen** for this knowledge boundary;
-- rc.3 must **not** be described as a completed immutable published release until the tag resolves to a commit;
-- existing downstream integrations locked to an older immutable Kristal release remain separately locked until their owners explicitly update them.
+This allows the ecosystem to automate deterministic work while preserving human review/decision where the Kristal State says it is required. It also creates a feedback loop: completed actions and human decisions can be captured as new observed/decision records and improve later artifacts.
 
 ## Non-confusions
 
 ```text
 acquisition evidence      ≠ validation
+valuation                 ≠ action threshold
+actionability             ≠ execution authority
+automatic                 ≠ permission to bypass admission
+record_role               ≠ ownership transfer
 referent candidate        ≠ recognized referent
-external identifier       ≠ authority
-Kristal artifact          ≠ Moodle record
+Kristal State             ≠ mutable application database
 consumer projection       ≠ source of truth
 IK transport              ≠ participant state
-contract baseline frozen  ≠ release commit resolved
 ```

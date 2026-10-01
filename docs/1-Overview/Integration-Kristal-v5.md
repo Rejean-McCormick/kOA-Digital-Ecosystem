@@ -1,5 +1,7 @@
 # Integration — Kristal v5
 
+**Status:** Historical baseline, superseded by [Kristal v6](Integration-Kristal-v6.md).
+
 kOA integrates against a pinned Kristal v5 release candidate. Kristal remains the sole normative authority for its schemas and epistemic semantics.
 
 ## Pin

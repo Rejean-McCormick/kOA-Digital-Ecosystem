@@ -24,7 +24,7 @@ Konnaxion does not create/update Orgo Task/Case rows directly.
 
 ## Kristal boundary
 
-Konnaxion may consume or distribute Kristal artifacts under explicit use cases. It must preserve source status, validation, certainty, authority recognition and Reader Policy metadata.
+Konnaxion may consume or distribute Kristal artifacts under explicit use cases. It must preserve source status, validation, valuation, authority recognition and Reader Policy metadata.
 
 ## Runtime Pack activation
 

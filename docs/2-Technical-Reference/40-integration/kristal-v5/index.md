@@ -1,5 +1,7 @@
 # Kristal v5 integration
 
+**Status:** Historical baseline, superseded by [`../kristal-v6/`](../kristal-v6/).
+
 **External normative authority:** Kristal v5 owner repository
 
 The current knowledge acquisition/projection boundary uses the Kristal `5.0.0-rc.3` **release-candidate contract set** and Referent Registry `1.0.0`. The supplied rc.3 release metadata has no resolved commit SHA yet, so this is a frozen contract baseline rather than a completed immutable release pin.

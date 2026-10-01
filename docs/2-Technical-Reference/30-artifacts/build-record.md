@@ -32,6 +32,6 @@ A Build Record should identify:
 
 ## Kristal mapping
 
-Recommended opaque references include Referent Registry entries, Structured Epistemic State, Working Exchange, Validation Report, Authority Recognition, Reference Exchange, Runtime Pack Manifest and Reader Policy. The Build Record does not duplicate their internal fields.
+Recommended opaque references include Referent Registry entries, Kristal State, Working Exchange, Validation Report, Authority Recognition, Reference Exchange, Runtime Pack Manifest and Reader Policy. The Build Record does not duplicate their internal fields.
 
 Schema: `schemas/build-record.schema.json`.

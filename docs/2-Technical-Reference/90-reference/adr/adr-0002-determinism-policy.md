@@ -5,7 +5,7 @@
 
 ## Context
 
-Determinism is required for content addressing, signatures, reproducible builds, reliable compatibility checks and idempotent cross-system operations. Kristal v5, however, separates deterministic compilation from validation and authority recognition.
+Determinism is required for content addressing, signatures, reproducible builds, reliable compatibility checks and idempotent cross-system operations. Kristal v6 separates deterministic content identity/projection from validation and authority recognition.
 
 ## Decision
 

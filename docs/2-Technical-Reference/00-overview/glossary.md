@@ -20,4 +20,8 @@
 
 **Space activation** — Koali presentation/application-composition lifecycle; not Runtime Pack activation.
 
-**Working Exchange / Reference Exchange / Reader Policy / Authority Recognition** — Kristal v5 epistemic concepts defined by the Kristal owner specification.
+**Working Exchange / Reference Exchange / Reader Policy / Authority Recognition** — Kristal v6 knowledge/reference concepts defined by the Kristal owner specification.
+
+**Kristal State** — canonical v6 artifact carrying assertions, typed valuations, coordinates, applicability, provenance and optional role/actionability semantics.
+
+**Actionability** — v6 automation/human-boundary metadata; it does not itself authorize execution.

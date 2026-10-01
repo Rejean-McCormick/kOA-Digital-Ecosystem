@@ -266,7 +266,7 @@
       "source_docs_paths": [
         "C:\\mycode\\Kristal\\kristal-reference\\docs"
       ],
-      "reference_description": "Non-normative reference implementation for Kristal v5. Reproduces official Exchange, Runtime Pack, canonicalization, signature, trust, and portable conformance vectors. Designed for executable validation against kristal-framework without redefining the specification.",
+      "reference_description": "Non-normative Kristal integration/reference implementation. Historical inventory description predates the active v6 contract; current ecosystem integration targets Kristal Standard 6.0.0.",
       "reference_note": "Verified online match.",
       "corpus_prefix": "Rejean-McCormick/Kristal-Reference/",
       "present_in_2026_09_28_corpus": true

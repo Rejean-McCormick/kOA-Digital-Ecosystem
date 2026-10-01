@@ -12,7 +12,7 @@ This page answers one question: **where does authoritative state live?** It is a
 | Workflow, Signal, WorkflowVersion, Case, Task, IntegrationOperation, outbox/reconciliation | **Orgo** | Other systems may trigger work or consume durable results | Konnaxion/Koali do not write Orgo work tables |
 | Source discovery, provider resolution, lossless acquisition evidence and immutable harvest handoff | **EncyKlopedia** | Da’at/Kristal consume pinned exports/evidence | Acquisition does not validate epistemic truth or own Moodle projections |
 | Ecosystem/IK-facing mapping into Kristal-native contracts | **Da’at** | Maps/adapts payloads under ACL while preserving provenance | Da’at owns neither source state nor Kristal authority semantics |
-| Referent Registry semantics, Structured Epistemic State, Working/Reference Exchanges, validation/recognition, Reader Policy, Runtime Pack semantics | **Kristal** | Consumers derive read/projection/runtime materializations | Kristal is not source acquisition, a live app DB, or UCKK presentation state |
+| Referent Registry semantics, Kristal State, typed valuations/coordinates/applicability, validation/recognition, Reader Policy, record-role/actionability semantics and derived runtime projections | **Kristal** | Consumers derive read/projection/runtime materializations | Kristal is not source acquisition, a live app DB, or UCKK presentation state |
 | Univers-Cité scope/projection configuration, Moodle/campus state, derived glossary/media presentation, local Assembly decisions | **UCKK / Univers-Cité** | Consumes pinned Kristal artifacts and optional external readings | UCKK does not own Kristal assertions/referents or Konnaxion civic decisions |
 | Platform profiles, trust/policy/resources, artifact admission, release channels and Release Sets | **kOA-Linux** | Admits/co-ordinates product artifacts under platform policy | Product apps do not acquire platform release authority |
 | Runtime Pack verification/compatibility, active Runtime Pack state, activation/rollback receipts, runtime health | **`kristal_runtime`** | Platform coordinates compatibility; Node Agent may execute narrow privilege | Digital Ecosystem does not create a parallel runtime-activation state |
@@ -44,7 +44,7 @@ accepted                 != succeeded
 source/provider
     → EncyKlopedia evidence + referent candidates
     → Da’at mapping/ACL
-    → Kristal-owned referent/epistemic artifact
+    → Kristal-owned referent/Kristal State artifact
     → derived Runtime Pack or UCKK projection
 ```
 
@@ -57,3 +57,7 @@ No step silently transfers ownership of the upstream state.
 - [`../40-integration/contract-map.md`](../40-integration/contract-map.md)
 - [`../40-integration/knowledge-projection.md`](../40-integration/knowledge-projection.md)
 - [`../../status/current.md`](../../status/current.md)
+
+## Kristal v6 actionability invariant
+
+Actionability classification is knowledge/policy metadata. It does not transfer execution authority from an operational owner to Kristal, Da’at or a consumer projection.

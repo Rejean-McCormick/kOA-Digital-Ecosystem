@@ -16,7 +16,7 @@ It should keep independent statuses for compilation, validation, recognition, pu
 
 An operational owner may publish an immutable export/snapshot for knowledge compilation or cross-system processing. The export remains evidence of source state at a declared revision/digest; it does not transfer ownership of the live source record.
 
-Da’at may transform such an export into Structured Epistemic State or another explicitly supported Kristal input. The resulting Kristal artifact is a new knowledge artifact with provenance back to the source export, not a replacement operational record.
+Da’at may transform such an export into Kristal State or another explicitly supported Kristal-native input. The resulting Kristal artifact is a new knowledge artifact with provenance back to the source export, not a replacement operational record.
 
 ## kOA-Linux Release Set
 

@@ -20,7 +20,7 @@ Keep source events/readings/DecisionRecord in Konnaxion. Cross-system adapters s
 
 ## Da’at/Kristal implementers
 
-Emit Structured Epistemic State or explicitly supported Kristal-native inputs. Never treat validation as a universal compile blocker. Keep source artifact status and recognition metadata explicit.
+Emit Kristal State or explicitly supported Kristal-native inputs. Never treat validation as a universal compile blocker. Keep source artifact status and recognition metadata explicit.
 
 ## Runtime/platform implementers
 

@@ -4,7 +4,7 @@ Architect-Render produces human-facing representations from material allowed by 
 
 ## Rules
 
-- preserve relevant artifact/assertion/certainty/validation/recognition labels;
+- preserve relevant artifact/assertion/valuation/validation/recognition labels;
 - do not invent new factual claims;
 - do not hide disputed/rejected/working status when material is shown;
 - do not write directly into Kristal Exchange state;

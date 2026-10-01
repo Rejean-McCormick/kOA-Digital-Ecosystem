@@ -1,6 +1,6 @@
 # Build operations
 
-Build operations use **Build Record v2** and Kristal v5 semantics.
+Build operations use **Build Record v2** and Kristal v6 semantics.
 
 ## Knowledge build sequence
 
@@ -8,7 +8,7 @@ A Profile may use:
 
 ```text
 native/source input
-  -> Structured Epistemic State
+  -> Kristal State
   -> Working Exchange
   -> validation/review
   -> authority recognition

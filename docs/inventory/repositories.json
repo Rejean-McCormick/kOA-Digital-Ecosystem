@@ -248,7 +248,7 @@
     "github_repo": "Rejean-McCormick/Kristal-Reference",
     "github_url": "https://github.com/Rejean-McCormick/Kristal-Reference",
     "status": "owned_match",
-    "description": "Non-normative reference implementation for Kristal v5. Reproduces official Exchange, Runtime Pack, canonicalization, signature, trust, and portable conformance vectors. Designed for executable validation against kristal-framework without redefining the specification.",
+    "description": "Non-normative Kristal integration/reference implementation. Historical inventory description predates the active v6 contract; current ecosystem integration targets Kristal Standard 6.0.0.",
     "source_docs_paths": [
       "C:\\mycode\\Kristal\\kristal-reference\\docs"
     ],

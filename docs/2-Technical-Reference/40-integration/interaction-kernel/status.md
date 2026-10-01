@@ -15,11 +15,13 @@ The demonstrated behavior includes DecisionRecord delivery, Orgo Signal/Workflow
 
 The knowledge acquisition/projection contract set references:
 
-- `kristal.build.request/1.1.0`;
-- `kristal.artifact.ready/1.1.0`.
+- `kristal.build.request/2.0.0`;
+- `kristal.artifact.ready/2.0.0`.
 
 These are explicit boundary contracts; they do not make IK owner of source acquisition, Kristal state or UCKK projection state.
 
 ## Additional adoption
 
 Any other boundary claiming IK conformance must publish the Profile ID/version, authority mapping, idempotency/authentication/receipt behavior and boundary-specific evidence.
+
+- `kristal.revision.request/2.0.0` is the aligned v6 revision boundary.

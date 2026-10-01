@@ -2,11 +2,11 @@
 
 | System / boundary | Owns | Does not own |
 |---|---|---|
-| **Konnaxion** | civic/public state, DecisionRecord, readings, product state | Orgo work state, Kristal epistemic state, Runtime Pack active state |
+| **Konnaxion** | civic/public state, DecisionRecord, readings, product state | Orgo work state, Kristal State, Runtime Pack active state |
 | **Orgo** | Signal, Workflow, Case, Task, IntegrationOperation, outbox/reconciliation | Konnaxion civic outcomes, Kristal recognition, host privilege |
 | **EncyKlopedia** | source discovery/acquisition, provider resolution, immutable evidence and corpus-harvest handoff | epistemic validation/recognition, Moodle projections |
 | **Da’at** | mapping/ACL at the Kristal integration boundary | source state, Kristal core semantics/authority |
-| **Kristal** | Referent Registry semantics, Structured Epistemic State, Working/Reference Exchange, validation, recognition, Reader Policy, Runtime Pack semantics | source acquisition, platform Release Set, Moodle materialization |
+| **Kristal** | Referent Registry semantics, Kristal State, valuations/coordinates/applicability, validation/recognition, Reader Policy, record-role/actionability semantics, derived knowledge-runtime semantics | source acquisition, platform Release Set, Moodle materialization |
 | **UCKK / Univers-Cité** | scoped consumer projections, Moodle/campus state, derived glossary/media presentation, local Assembly decisions | Kristal assertions/referent authority, Konnaxion civic state, host privilege |
 | **kOA-Linux** | platform profiles, trust/policy/resources, artifact admission, release channels, lifecycle contracts | subsystem business semantics |
 | **`kristal_runtime`** | Runtime Pack verification/compatibility state, active Runtime Pack record, activation/rollback receipts, runtime health | governance policy, resource scheduling, host privilege, workflow state |

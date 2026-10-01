@@ -19,10 +19,10 @@ Conformance testing should cover the actual boundaries rather than a single end-
 - outbound impact publication creates exactly one Konnaxion effect;
 - retry/redrive reuses existing durable operation.
 
-## Kristal v5
+## Kristal v6
 
 - exact pin/canonicalization verification;
-- Structured Epistemic State validation;
+- Kristal State validation;
 - Working Exchange compilation without forced final recognition where policy allows;
 - validation/recognition kept separate;
 - Runtime Pack preserves source status and Reader Policy refs.

@@ -7,7 +7,7 @@ Define how the kOA Digital Ecosystem manages cryptographic keys used for:
 - authenticating internal services,
 - enforcing fail-closed activation and deterministic rollback.
 
-Kristal-owned artifact signing targets and signature field shapes are defined in the pinned Kristal v5 dependency. This document defines **kOA operational policy**: where keys live, how they rotate, how trust is anchored, and how verification gates behave.
+Kristal-owned artifact signing targets and signature field shapes are defined in the pinned Kristal v6 dependency. This document defines **kOA operational policy**: where keys live, how they rotate, how trust is anchored, and how verification gates behave.
 
 ## Scope
 
@@ -20,7 +20,7 @@ This doc covers:
 
 Not in scope:
 - Kristal schema definitions
-- exact signature object shapes for Kristal artifacts (refer to pinned Kristal v5)
+- exact signature object shapes for Kristal artifacts (refer to pinned Kristal v6)
 
 ## Key roles
 

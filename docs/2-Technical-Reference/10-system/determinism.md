@@ -2,9 +2,9 @@
 
 Determinism is required where kOA produces reproducible artifacts, signatures/digests, idempotent requests or release evidence. It does **not** imply a universal validation-before-compilation gate.
 
-## Kristal v5
+## Kristal v6
 
-For the pinned Kristal version, canonicalization is `kristal.v5:jcs-rfc8785` version `1`.
+For the pinned Kristal version, canonicalization is `kristal.v6:jcs-rfc8785` version `1`.
 
 A deterministic compile can produce a **Working Exchange**. Validation/review and authority recognition are independent, scoped decisions. Reference publication, release or activation may be gated by stricter kOA Profiles.
 

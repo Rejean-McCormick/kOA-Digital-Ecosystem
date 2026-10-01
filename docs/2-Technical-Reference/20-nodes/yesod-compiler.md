@@ -2,12 +2,12 @@
 
 Yesod is a conceptual kOA role for coordinating deterministic compilation work. Kristal remains the owner of Kristal compilation semantics and artifact schemas.
 
-## Kristal v5 rule
+## Kristal v6 rule
 
 Compilation and validation are separate. A policy may allow:
 
 ```text
-Structured Epistemic State
+Kristal State
 → compile
 → Working Exchange
 ```

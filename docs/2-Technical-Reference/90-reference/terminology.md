@@ -31,3 +31,7 @@
 ## Kristal v5
 
 Use Referent Registry, Structured Epistemic State, Working Exchange, Validation Report, Authority Recognition, Reference Exchange, Reader Policy and Runtime Pack with their declared scope/status semantics.
+
+## Kristal v6
+
+Use **Kristal State**, `valuations[]`, `coordinates`, `applicability`, `record_role` and `actionability`. A valuation is not an action threshold; actionability is not execution authority; a record role is not ownership. Use Working/Reference only as `artifact_status` concepts or explicitly defined derived artifact names, not as an implicit separate universal pipeline stage.

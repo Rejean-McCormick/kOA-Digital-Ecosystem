@@ -33,7 +33,7 @@ source/provider discovery
 → EncyKlopedia acquisition evidence + referent candidates
 → encyklopedia.corpus-harvest-handoff/1.0.0
 → Da’at mapping / ACL
-→ Kristal Referent Registry + Structured Epistemic State
+→ Kristal Referent Registry + Kristal State
 → Working Exchange
 → validation / authority recognition as applicable
 → Reference Exchange when recognized

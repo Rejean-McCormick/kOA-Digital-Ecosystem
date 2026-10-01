@@ -1,7 +1,7 @@
 # Layer 05 — Validation / Reference
 
 **Layer status:** Conceptual layer  
-**Normative for Kristal contracts:** NO — Kristal v5 is normative.
+**Normative for Kristal contracts:** NO — Kristal v6 is normative.
 
 > Historical name: “Validation / Canon”. The active model uses validation, authority recognition and reference status as separate concepts.
 
@@ -14,7 +14,7 @@ It does **not** create truth by assertion and does not use a universal validatio
 ## Active lifecycle
 
 ```text
-Structured Epistemic State
+Kristal State
   -> Working Exchange
   -> validation / review
   -> authority recognition
@@ -40,7 +40,7 @@ Keep separate:
 
 ## Gating
 
-Kristal v5 validation is **not** a universal compile blocker. kOA production Profiles may require validated and/or recognized material before:
+Kristal v6 validation is **not** a universal compile blocker. kOA production Profiles may require validated and/or recognized material before:
 
 - Reference Exchange publication;
 - distribution;
@@ -54,3 +54,5 @@ Those requirements are explicit policy gates.
 A failed/rejected/unfinished validation can make an artifact ineligible for reference publication while leaving a Working Exchange available for diagnosis, research or review under an eligible Reader Policy.
 
 Feedback creates new governed work or new versions; it does not mutate published reference artifacts in place.
+
+Kristal v6 `actionability` is evaluated separately from validation/recognition. A validated assertion is not automatically executable, and an automatic action candidate still requires owner admission/authority.

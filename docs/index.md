@@ -9,19 +9,19 @@ The current knowledge boundary is:
 ```text
 EncyKlopedia acquisition
 → Da’at mapping
-→ Kristal epistemic canon
+→ Kristal v6 knowledge/state canon
 → rebuildable UCKK / Univers-Cité projection
 ```
 
 Current frozen contract identifiers:
 
-- Kristal `5.0.0-rc.3` release-candidate contract set;
+- Kristal Standard `6.0.0` (`kristal.v6:jcs-rfc8785`);
 - Referent Registry `kristal.referent-registry/1.0.0`;
 - `encyklopedia.corpus-harvest-handoff/1.0.0`;
-- IK `kristal.build.request/1.1.0` and `kristal.artifact.ready/1.1.0`;
+- IK `kristal.build.request/2.0.0` and `kristal.artifact.ready/2.0.0`;
 - `uckk.univers-cite-projection/1.0.0`.
 
-The rc.3 release metadata supplied with the update has no resolved commit SHA yet, so it is not represented here as a completed immutable release pin.
+The v6 standard is pinned by manifest and core-contract digests rather than by a release-candidate Git identity.
 
 ## Authority boundaries
 
@@ -56,7 +56,7 @@ The rc.3 release metadata supplied with the update has no resolved commit SHA ye
 - [Lifecycle](1-Overview/Lifecycle.md)
 - [Integration](1-Overview/Integration.md)
 - [Koali Spaces integration](1-Overview/Integration-Koali-Spaces.md)
-- [Kristal v5 integration](1-Overview/Integration-Kristal-v5.md)
+- [Kristal v6 integration](1-Overview/Integration-Kristal-v6.md)
 - [Interaction Kernel integration](1-Overview/Integration-Interaction-Kernel.md)
 - [Current maturity map](status/current.md)
 

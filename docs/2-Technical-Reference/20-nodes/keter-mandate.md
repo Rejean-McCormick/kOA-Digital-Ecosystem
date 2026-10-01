@@ -1,7 +1,7 @@
 # Keter: Mandate (Governance Source)
 
 **Normative for kOA:** YES  
-**External normative references:** Kristal v5 (pinned) for Kristal artifact contracts; none for Mandate Bundle (kOA-owned)
+**External normative references:** Kristal v6 (pinned) for Kristal artifact contracts; none for Mandate Bundle (kOA-owned)
 
 ## Purpose
 **Keter (Mandate)** is the ecosystem’s **governance source**: it defines the mission, scope, constraints, and enforceable policy bundles that guide the rest of the system. Keter does not assign Kristal validation or recognition status; it produces **governance artifacts** that constrain how knowledge is processed, referenced, distributed, rendered and operationalized.

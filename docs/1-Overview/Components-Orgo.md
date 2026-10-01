@@ -22,9 +22,9 @@ The target ecosystem protocol is Interaction Kernel (IK).
 
 The current Orgo documentation defines a generic Orgo-owned integration bridge. That bridge is compatible with the architecture, but its existence does **not** by itself prove that a native Konnaxion or Kristal adapter is implemented or conformant.
 
-## Kristal v5 gating
+## Kristal v6 gating
 
-Orgo must not impose the old universal `validation PASS -> compile` rule. Kristal v5 separates:
+Orgo must not impose the old universal `validation PASS -> compile` rule. Kristal v6 separates:
 
 1. compilation;
 2. validation/review;

@@ -1,33 +1,27 @@
-# Kristal v5 artifacts
+# Kristal v6 artifacts
 
-The kOA ecosystem consumes Kristal v5 artifacts without collapsing their epistemic distinctions.
+The kOA ecosystem consumes Kristal v6 artifacts without collapsing their distinctions between measurement, applicability, role, validation, recognition and actionability.
 
-| Artifact | Purpose |
+| Artifact / surface | Purpose |
 |---|---|
-| Structured Epistemic State | structured input/state with provenance and epistemic labels |
-| Claim-IR / Resolved Claim-IR | optional extractor/resolution profiles |
-| Working Exchange | deterministic compiled Exchange; not necessarily validated/recognized |
-| Validation Report | scoped validation decision/findings |
-| Authority Recognition | scoped authority recognition decision |
-| Reference Exchange | authority-recognized reference artifact for declared scope |
+| Kristal State | canonical atomic assertions with provenance, typed valuations, coordinates, applicability, roles and optional actionability |
+| Validation / recognition records | scoped findings and authority decisions referenced by state |
 | Reader Policy | controls which labeled material a consumer may read |
-| Runtime Pack | offline/runtime projection with explicit source artifact status |
+| Derived Runtime/query projection | deterministic read/runtime materialization tied to a source state |
+| Consumer projection | owner-specific rebuildable view such as UCKK/Moodle/glossary/media |
 
-Validation, recognition, publication and activation are separate transitions. A failed or incomplete validation does not universally mean that no Working Exchange may exist.
+`artifact_status`, validation and recognition are separate transitions. A state may be `working` or `under_review` without pretending to be reference material.
 
 ## What belongs in Kristal
 
-Kristal is the ecosystem's portable epistemic/knowledge artifact layer, not a shared application database. Kristal artifacts are appropriate for knowledge that needs explicit provenance, assertion status, certainty, validation/recognition state, authority scope, reader policy, conflicts/revocations or reproducible content addressing.
+Kristal is a portable knowledge/state artifact layer, not a shared application database. It is appropriate for information that benefits from atomic identity, explicit provenance/evidence, typed measurements or states, applicability, conflict/supersession, validation/recognition, Reader Policy and reproducible content addressing.
 
-Mutable product state remains with its product owner. Orgo Cases/Tasks/Workflow state and Konnaxion consultations/participants/votes/DecisionRecords do not move into Kristal merely because a knowledge artifact is produced from them. The source owner exports an immutable snapshot or referenced artifact; Da’at maps that input to Kristal-native semantics.
+Kristal v6 also distinguishes data roles: an official rule can be represented as `authoritative_constraint`, a captured fact as `observed_state`, an internal policy as `organizational_rule`, and a derived conclusion as `derived_state`. These roles preserve distinctions; they do not create authority by themselves.
 
-## Derived query materializations
+## Actionable knowledge
 
-A Runtime Pack may contain deterministic structures optimized for local reading/querying, including tables, dictionaries, indexes, columnar data and, when an adopted profile defines it, a read-only database representation. Such structures are **derived and non-authoritative**:
+`actionability` describes whether a represented action is eligible for automation, requires human review/decision, is manual/prohibited, or lacks enough information. It is intentionally not an execution API. Operational owners still mutate only their own state after admission under an explicit boundary contract.
 
-- they are tied to a source Exchange/content digest;
-- they must not be a writable operational store;
-- they must not redefine epistemic status;
-- they must be rebuildable deterministically from the referenced Kristal artifact and declared build inputs.
+## Derived materializations
 
-For production deployment, the kOA Profile may impose stricter eligibility rules (for example recognized/reference material only). Those rules must be declared as kOA deployment policy rather than attributed to Kristal's universal compile semantics.
+Tables, indexes, columnar stores, read-only databases and Runtime Packs remain derived and non-authoritative. They must be tied to a source state/content digest and rebuildable from declared inputs.

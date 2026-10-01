@@ -14,3 +14,5 @@ Current accepted/amended ecosystem decisions:
 - `adr-0012-knowledge-acquisition-projection-boundary.md` — EncyKlopedia acquisition → Kristal canon → UCKK projection
 
 Superseded decisions are intentionally not copied into this clean repository; Git history remains the historical record.
+
+- `adr-0013-kristal-v6-actionability-boundary.md` — Kristal v6 generalized state/actionability boundary

@@ -74,7 +74,7 @@ The standalone Klassification repository described several files as “Autorité
 - `10_glossaire.md` no longer overrides current owner or Digital Ecosystem terminology;
 - the old code index does not create runtime identifiers.
 
-The complete old repository is preserved under [`../../../archive/Klassification-v0.2/`](../../../archive/Klassification-v0.2/).
+The complete old repository is preserved externally under `archive/Klassification-v0.2/`; that archive is not included in this SmartSnap.
 
 ## Known legacy inconsistencies
 

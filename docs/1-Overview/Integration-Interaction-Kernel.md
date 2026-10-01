@@ -23,8 +23,8 @@ The qualified boundary covers durable delivery, Signal→Workflow→Case→Task 
 
 The current frozen knowledge-contract baseline uses:
 
-- `kristal.build.request/1.1.0`;
-- `kristal.artifact.ready/1.1.0`.
+- `kristal.build.request/2.0.0`;
+- `kristal.artifact.ready/2.0.0`.
 
 These profiles connect EncyKlopedia/Da’at/Kristal/UCKK contract surfaces. Their use does not transfer acquisition, epistemic or projection authority to IK.
 
@@ -36,3 +36,5 @@ These profiles connect EncyKlopedia/Da’at/Kristal/UCKK contract surfaces. Thei
 - Source-owned artifacts remain source-owned; ArtifactRefs identify immutable boundary artifacts without moving the live database record.
 - IK must not create a distributed transaction spanning participant databases.
 - Durable interactions preserve idempotency identity and terminal receipt semantics.
+
+- `kristal.revision.request/2.0.0` is the aligned v6 revision boundary.

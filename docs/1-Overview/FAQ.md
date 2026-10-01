@@ -7,7 +7,7 @@ No. Orgo owns workflow/operational state represented inside Orgo.
 No. IK is the target cross-system Profile layer. kOA-Linux already has canonical internal/component contracts; explicit adoption/mapping is required before calling those interactions IK-conformant.
 
 ## Must Kristal validation pass before compilation?
-No. Kristal v5 may produce a Working Exchange before final validation/recognition when policy permits.
+No. Kristal v6 may preserve a working Kristal State before final validation/recognition; artifact status, validation and recognition are separate.
 
 ## Who owns Runtime Pack activation on kOA-Linux?
 `kristal_runtime` owns Runtime Pack verification/compatibility, active Runtime Pack state and activation/rollback receipts. kOA Node Agent performs the narrow privileged host transition when required by the active profile/contract.

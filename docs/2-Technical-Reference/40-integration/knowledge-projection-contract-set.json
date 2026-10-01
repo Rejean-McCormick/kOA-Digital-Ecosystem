@@ -1,17 +1,21 @@
 {
-  "format": "koa.knowledge-projection-contract-set/v1",
-  "as_of": "2026-09-28",
+  "format": "koa.knowledge-projection-contract-set/v2",
+  "as_of": "2026-10-01",
   "kristal": {
-    "release": "5.0.0-rc.3",
-    "knowledge_model_bundle_sha256": "sha256:07fe0527ab29a4b40870efdd0c9e0c67c91de919e5428047245b2a2c04f8ea98",
+    "standard": "6.0.0",
+    "canonicalization_profile": "kristal.v6:jcs-rfc8785",
+    "standard_manifest_sha256": "sha256:1cc531c918d8c97c0caca8ced7560e54f9c8a98c5527fc90e32cb569dbdbb9b9",
+    "kristal_state_schema_sha256": "sha256:47e5cd7fd3a801adfd230a7591a70a62ff89a39d42023d87fe99851bc32725c5",
+    "reader_policy_schema_sha256": "sha256:e5b8f8741a1736e8a7ce1204cf0ce1e0345b1a7e4b2fa19b19980b9b66e34599",
     "referent_profile": "kristal.referent-registry/1.0.0"
   },
   "encyklopedia": {
     "handoff": "encyklopedia.corpus-harvest-handoff/1.0.0"
   },
   "interaction_kernel": {
-    "build_request": "kristal.build.request/1.1.0",
-    "artifact_ready": "kristal.artifact.ready/1.1.0"
+    "build_request": "kristal.build.request/2.0.0",
+    "artifact_ready": "kristal.artifact.ready/2.0.0",
+    "revision_request": "kristal.revision.request/2.0.0"
   },
   "uckk": {
     "projection": "uckk.univers-cite-projection/1.0.0"

@@ -1,13 +1,13 @@
 # Tiferet — SenTient candidate extraction and resolution
 
-SenTient is an optional, non-authoritative candidate producer. It is not the universal proposal boundary for Kristal v5.
+SenTient is an optional, non-authoritative candidate producer. It is not the universal proposal boundary for Kristal v6.
 
 ## Accepted input classes
 
 Depending on the selected profile, SenTient may receive:
 
 - Claim-IR;
-- Structured Epistemic State;
+- Kristal State;
 - Exchange fragments;
 - dataset records;
 - source-system statements.
@@ -17,10 +17,10 @@ Depending on the selected profile, SenTient may receive:
 It may produce:
 
 - Resolved Claim-IR;
-- Structured Epistemic State updates;
+- Kristal State updates;
 - resolution bundles;
 - candidate mappings/reconciliations.
 
-Outputs must preserve provenance, alternatives, uncertainty and method identity. They remain candidate/non-authoritative until admitted through the appropriate Kristal/workflow process.
+Outputs must preserve provenance, alternatives, unvaluation and method identity. They remain candidate/non-authoritative until admitted through the appropriate Kristal/workflow process.
 
 SenTient cannot grant authority recognition, activate a Runtime Pack, or directly mutate another system's authoritative store.

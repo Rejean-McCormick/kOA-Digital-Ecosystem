@@ -7,7 +7,7 @@ Artifacts remain authoritative at their owning system/component.
 | Civic/governance | Konnaxion | DecisionRecord, consultations, readings |
 | Operational/work | Orgo | Signal, WorkflowVersion, Case, Task, IntegrationOperation |
 | Acquisition evidence | EncyKlopedia | source/provider evidence, immutable harvest handoff, referent candidates |
-| Epistemic/reference | Kristal | Referent Registry entries, Structured Epistemic State, Working/Reference Exchange, Validation Report, Authority Recognition, Reader Policy, Runtime Pack manifest |
+| Knowledge/reference | Kristal | Referent Registry entries, Kristal State, validation/recognition references, Reader Policy, derived Runtime/query projection manifests |
 | Consumer projection | UCKK / Univers-Cité | scope/view configuration, Moodle materialization, derived glossary/media presentation |
 | Platform release | kOA-Linux | Release Set, registered release-channel/artifact contracts, lifecycle receipts |
 | Runtime Pack local state | `kristal_runtime` | verification record, active Runtime Pack record, activation/rollback receipts, runtime health |
@@ -22,8 +22,8 @@ Artifacts remain authoritative at their owning system/component.
 1. Acquisition evidence
    source/provider-owned facts + EncyKlopedia immutable handoff
        ↓
-2. Kristal epistemic artifacts
-   referents, assertions, validation/recognition, Working/Reference artifacts
+2. Kristal v6 knowledge artifacts
+   referents, assertions, valuations, applicability, roles, validation/recognition
        ↓
 3a. Runtime/query materialization
     Runtime Pack / derived indexes / read models

@@ -6,7 +6,7 @@ There is no single mandatory ecosystem stage spine. Operators coordinate indepen
 
 ```text
 source/export
-→ Structured Epistemic State
+→ Kristal State
 → compile Working Exchange
 → review/validation as applicable
 → authority recognition as applicable

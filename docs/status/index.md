@@ -14,7 +14,7 @@ The ecosystem documentation is aligned at the ownership/contract level, but adop
 
 | Area | Ecosystem documentation | Current evidence / remaining work |
 |---|---|---|
-| Kristal v5 epistemic model | Aligned | Structured Epistemic State, Working/Reference separation, Reader Policy and non-universal validation gate are preserved |
+| Kristal v6 generalized knowledge/state model | Aligned | Kristal State, typed valuations/applicability/roles/actionability, Reader Policy and separate validation/recognition are preserved |
 | kOA-Linux Runtime Pack ownership | Corrected | `kristal_runtime` owns verification/compatibility/active-state/activation+rollback receipts/runtime health; Node Agent is the narrow privileged host-transition path |
 | kOA-Linux release model | Corrected | Release Set binds compatible `system`, `services`, `governance`, `knowledge` channel versions; Digital Ecosystem Release Record is deprecated as authority |
 | Runtime Activation State | Corrected | Digital Ecosystem no longer creates a parallel authoritative state beside `kristal_runtime` |
@@ -25,7 +25,7 @@ The ecosystem documentation is aligned at the ownership/contract level, but adop
 | Interaction Kernel | Selective adoption qualified | Konnaxion↔Orgo is qualified for `governance.decision.execute/1.0.0` and `accountability.impact.publish/1.0.0`; no universal kOA-Linux or ecosystem-wide IK adoption is implied |
 | Konnaxion↔Orgo IK handoff | **QUALIFIED 2026-09-21** | Direct finalized DecisionRecord→Orgo Signal→Workflow→Case→Task path passed the integrated E2E qualification; see `2026-09-21-konnaxion-orgo-ik-e2e-qualification.md` |
 | Orgo→Konnaxion durable publication | **QUALIFIED 2026-09-21** | `IntegrationOperation`→`accountability.impact.publish/1.0.0`→Konnaxion impact ingress passed, including idempotent replay and divergent replay conflict |
-| Da’at→Kristal v5 | Target mapping | Migration/conformance evidence remains owner-repository work |
+| Da’at→Kristal v6 | Target mapping | Migration/conformance evidence remains owner-repository work |
 
 ## Precise kOA-Linux ownership model
 
@@ -84,5 +84,7 @@ The following are retained only for compatibility/history:
 1. **Koali Spaces:** update the two current-state reference pages that still say first real Konnaxion onboarding is pending; replace “Kristal: verrou de vérité” / “assertion canonique” terminology with v5 epistemic/authority language.
 2. **kOA-Linux:** mount/link official subsystem documentation at reserved subsystem paths; continue contract/code convergence items already identified in `CODE_ALIGNMENT_NOTES.md` (including language-pack discriminator compatibility and generator/validator alignment).
 3. **Konnaxion + Orgo:** keep the qualified IK Profile implementations and owner-repository tests aligned, and preserve the 2026-09-21 E2E scenario as a regression gate.
-4. **Da’at:** publish verified Kristal v5 mapping/conformance against the pinned release.
+4. **Da’at:** publish verified Kristal v6 mapping/conformance against the pinned release.
 5. **Digital Ecosystem:** future updates should reference owner contracts rather than introduce new authority records when a product/platform already owns the state.
+
+- [2026-10-01 — Kristal v6 ecosystem migration](2026-10-01-kristal-v6-migration.md)

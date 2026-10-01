@@ -9,7 +9,7 @@ Konnaxion <---- Interaction Kernel ----> Orgo
      \                                  /
       \------ IK Profiles to Da'at ----/
                          |
-                      Kristal v5
+                      Kristal v6
                          |
                   Runtime Pack / refs
                          |
