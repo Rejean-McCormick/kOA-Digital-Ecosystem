@@ -21,13 +21,19 @@ Historical duplication of external contracts causes drift and ambiguity. Therefo
 ## 2) Decision
 
 ### 2.1 Kristal pinning (normative)
-kOA MUST treat Kristal as an external dependency and MUST pin:
-- a specific Kristal version (tag/commit)
-- the exact schema set used for validation and generation
+kOA MUST treat Kristal as an external dependency and MUST pin the exact release/standard identity mechanism defined by the adopted Kristal line.
 
-kOA documentation MUST reference Kristal via:
-- `docs/2-Technical-Reference/40-integration/kristal-v5/pinned-dependency.md`
-- `docs/2-Technical-Reference/40-integration/kristal-v5/contract-pointers.md`
+For the active Kristal Standard `6.0.0` boundary, kOA MUST pin:
+- the exact standard version;
+- the standard-manifest SHA-256;
+- the required core-contract/schema SHA-256 digests;
+- the declared canonicalization profile/version.
+
+kOA documentation MUST reference the active Kristal boundary via:
+- `docs/2-Technical-Reference/40-integration/kristal-v6/pinned-dependency.md`
+- `docs/2-Technical-Reference/40-integration/kristal-v6/contract-pointers.md`
+
+Historical v5 integrations may retain their tag/commit-based pinning records for migration evidence, but they are not the active baseline.
 
 kOA MUST NOT copy Kristal schemas as kOA-normative contracts.
 

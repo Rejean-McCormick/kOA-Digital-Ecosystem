@@ -23,3 +23,6 @@ The migration does **not** make Kristal an orchestrator or shared operational da
 ## Validation
 
 The documentation snapshot parses all JSON documents and resolves all included relative Markdown links. Interaction Kernel validation is recorded in its companion snapshot `VALIDATION.md`.
+## Post-migration documentation cleanup
+
+The same snapshot cleanup also retires remaining active-doc v5 wording: the integrator guide, Konstellation integration, compatibility/pinning ADR, Architect ADR, ADR index and historical v5 integration pages now distinguish the v6 active baseline from v5 migration/history material.

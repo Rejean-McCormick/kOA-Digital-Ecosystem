@@ -4,7 +4,7 @@ Konstellation v0.4 est une application de lecture/exploration. Kristal reste res
 
 | Producteur | Contrat consommé | Responsabilité |
 |---|---|---|
-| Kristal | Runtime Pack v5 + profil `konstellation:reader-json-v1`, ou Parquet à mapping explicite | Identités, sources, politique et intégrité |
+| Kristal | Runtime Pack dérivé d’artefacts Kristal v6 + profil `konstellation:reader-json-v1`, ou Parquet à mapping explicite | Identités, sources, politique et intégrité; les projections restent dérivées |
 | Konstellation | QuerySpec/ExplorationState 0.2, CommunicationRequest 1.0 | Sélection, requête et portée de communication |
 | SA | `konstellation-explorer-1`, bridge 1.0, CommunicationResult 1.0 | Présentation structurée fidèle, labels français, couverture |
 | Runtime Orchestrator | pipeline.lock 1.0, conformance CLI, activation 1.0 | Vérification, qualification, promotion et activation |

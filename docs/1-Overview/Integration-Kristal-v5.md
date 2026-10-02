@@ -2,20 +2,21 @@
 
 **Status:** Historical baseline, superseded by [Kristal v6](Integration-Kristal-v6.md).
 
-kOA integrates against a pinned Kristal v5 release candidate. Kristal remains the sole normative authority for its schemas and epistemic semantics.
+This page records the retired v5 integration baseline. It is retained for migration/history only and is not the active kOA knowledge boundary. Kristal remains the sole normative authority for Kristal schemas and semantics.
 
-## Pin
+## Historical pin
 
-- version: `5.0.0-rc.3 release-candidate contract baseline (immutable commit pending)
-- tag: `v5.0.0-rc.3 release-candidate contract baseline (immutable commit pending)
-- commit: `af703bf02ee04a69a5f2ad6694fa8b8e56ae2b19`
-- canonicalization: `kristal.v5:jcs-rfc8785`
-- canonicalization version: `1`
-- schema-set digest used by Interaction Kernel: `sha256:7a94a1e8a91d5c5267b73b7f1e98977faa548324bc937bb491cd08d49fdc8c92`
+- version: `5.0.0-rc.3` release-candidate contract baseline;
+- tag: `v5.0.0-rc.3` (immutable release resolution was pending in the supplied v5 owner snapshot);
+- canonicalization: `kristal.v5:jcs-rfc8785`;
+- canonicalization version: `1`;
+- historical schema-set digest used by the then-current Integration Kernel boundary: `sha256:7a94a1e8a91d5c5267b73b7f1e98977faa548324bc937bb491cd08d49fdc8c92`.
 
-## Core model
+The active ecosystem pin is Kristal Standard `6.0.0`; see [Integration — Kristal v6](Integration-Kristal-v6.md).
 
-Kristal v5 separates:
+## Historical core model
+
+Kristal v5 separated:
 
 ```text
 artifact existence
@@ -29,31 +30,26 @@ publication
 activation
 ```
 
-The normative structured input is **Structured Epistemic State**. Claim-IR remains available as an optional extractor proposal profile rather than a universal mandatory stage.
+The normative structured input was **Structured Epistemic State**. Claim-IR remained available as an optional extractor proposal profile rather than a universal mandatory stage.
 
-A Structured Epistemic State may compile to a **Working Exchange** before final validation/recognition. A **Reference Exchange** is a recognized reference artifact under declared authority/scope.
+A Structured Epistemic State could compile to a **Working Exchange** before final validation/recognition. A **Reference Exchange** represented a recognized reference artifact under declared authority/scope.
 
 ## Runtime Packs
 
-A Runtime Pack declares at minimum its source Exchange reference and `source_artifact_status`. Packs derived from working and reference artifacts are not equivalent.
+A v5 Runtime Pack declared at minimum its source Exchange reference and `source_artifact_status`. Packs derived from working and reference artifacts were not equivalent.
 
-Reader Policy and Query Contract determine how eligible content is exposed; they do not rewrite the underlying epistemic status. Runtime Packs may include deterministic query-oriented materializations. Under the kOA profile, any table/index/columnar/read-only database representation embedded for performance is derived, non-authoritative and rebuildable from the referenced Kristal source artifact; it must not become the mutable application source of truth.
+Reader Policy and Query Contract determined how eligible content was exposed; they did not rewrite the underlying epistemic status. Runtime Packs could include deterministic query-oriented materializations. Under the kOA profile, any table/index/columnar/read-only database representation embedded for performance remained derived, non-authoritative and rebuildable from the referenced Kristal source artifact.
 
 ## Operational ownership rule
 
-Orgo, Konnaxion and other products keep their mutable operational state in their own stores. Knowledge compilation starts from immutable source-owned exports/snapshots and produces separate Kristal artifacts with provenance. kOA does not require or permit a bidirectional operational-DB↔Kristal synchronization model as the authority boundary.
+Orgo, Konnaxion and other products kept their mutable operational state in their own stores. Knowledge compilation started from immutable source-owned exports/snapshots and produced separate Kristal artifacts with provenance. kOA did not require or permit a bidirectional operational-DB↔Kristal synchronization model as the authority boundary.
 
 ## kOA profile rule
 
-kOA may apply stricter deployment policies. For example, a production/reference channel may require reference-derived packs before publication or activation. Such a restriction is a kOA/kOA-Linux policy, not a Kristal core rule.
+kOA could apply stricter deployment policies. For example, a production/reference channel could require reference-derived packs before publication or activation. Such a restriction was a kOA/kOA-Linux policy, not a Kristal core rule.
 
-## Upstream candidate note
+## Historical knowledge-boundary snapshot
 
-The 2026-09-28 reconciliation found a newer Kristal owner candidate, `5.0.0-rc.3 release-candidate contract baseline
+At retirement, the v5-era acquisition/projection boundary included Referent Registry `1.0.0`, EncyKlopedia handoff `encyklopedia.corpus-harvest-handoff/1.0.0`, IK `kristal.build.request/1.1.0` / `kristal.artifact.ready/1.1.0`, and UCKK projection `uckk.univers-cite-projection/1.0.0`.
 
-This does **not** change the active integration pin shown above. Any pin advance requires explicit downstream adoption and immutable release identity.
-
-
-## Current knowledge boundary
-
-The current knowledge acquisition/projection baseline adds Referent Registry `1.0.0`, EncyKlopedia handoff `encyklopedia.corpus-harvest-handoff/1.0.0`, IK `kristal.build.request/1.1.0` / `kristal.artifact.ready/1.1.0`, and UCKK projection `uckk.univers-cite-projection/1.0.0`. See the technical [knowledge projection boundary](../2-Technical-Reference/40-integration/knowledge-projection.md).
+For the active boundary, use IK `2.0.0` Kristal profiles with Kristal Standard `6.0.0`; see the technical [knowledge projection boundary](../2-Technical-Reference/40-integration/knowledge-projection.md).

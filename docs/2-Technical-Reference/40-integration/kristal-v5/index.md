@@ -4,7 +4,7 @@
 
 **External normative authority:** Kristal v5 owner repository
 
-The current knowledge acquisition/projection boundary uses the Kristal `5.0.0-rc.3` **release-candidate contract set** and Referent Registry `1.0.0`. The supplied rc.3 release metadata has no resolved commit SHA yet, so this is a frozen contract baseline rather than a completed immutable release pin.
+The retired v5 knowledge acquisition/projection boundary used the Kristal `5.0.0-rc.3` **release-candidate contract set** and Referent Registry `1.0.0`. The supplied rc.3 release metadata had no resolved commit SHA, so this record describes a frozen historical contract baseline rather than a completed immutable release pin. The active boundary is [`../kristal-v6/`](../kristal-v6/).
 
 Other downstream integrations may still hold older immutable Kristal locks until their owners explicitly update them. Digital Ecosystem never rewrites those locks implicitly.
 

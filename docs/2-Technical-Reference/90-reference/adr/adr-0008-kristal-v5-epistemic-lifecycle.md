@@ -1,6 +1,6 @@
 # ADR-0008: Kristal v5 epistemic lifecycle and stage-specific gates
 
-- **Status:** Accepted
+- **Status:** Superseded for the active baseline by ADR-0013; retained as the v5 historical decision
 - **Date:** 2026-09-16
 - **Supersedes:** ADR-0001 Truth Boundary
 - **Scope:** kOA interpretation of Kristal v5 lifecycle; does not redefine Kristal schemas
@@ -22,4 +22,4 @@ The former kOA model treated Kristal as a single truth boundary and required val
 
 ## Consequences
 
-The terms “canonical truth”, “truth plane”, “truth boundary” and universal “no compile on fail” are removed from active normative kOA documentation when they refer to Kristal v5 status.
+The terms “canonical truth”, “truth plane”, “truth boundary” and universal “no compile on fail” were removed from normative kOA documentation for the v5 era. For the active v6 baseline, use ADR-0013 and the Kristal v6 integration pages.

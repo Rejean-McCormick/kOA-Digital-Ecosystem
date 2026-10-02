@@ -28,9 +28,9 @@
 
 **Space activation** — presentation/application-composition lifecycle owned by Koali Spaces. It is not Runtime Pack activation.
 
-## Kristal v5
+## Kristal v5 — historical terminology
 
-Use Referent Registry, Structured Epistemic State, Working Exchange, Validation Report, Authority Recognition, Reference Exchange, Reader Policy and Runtime Pack with their declared scope/status semantics.
+For historical v5 records, use Referent Registry, Structured Epistemic State, Working Exchange, Validation Report, Authority Recognition, Reference Exchange, Reader Policy and Runtime Pack with their declared scope/status semantics. Do not use these v5 terms to describe the active v6 contract when a v6 term exists.
 
 ## Kristal v6
 

@@ -5,12 +5,10 @@
 
 This ADR captured the former Kristal v4-oriented model in which validation gated compilation and one canonical Exchange represented the truth boundary.
 
-It is retained for decision history only. It is **not** the active architecture for Kristal v5.
+It is retained for decision history only. It is **not** the active architecture. ADR-0008 subsequently replaced the v4 truth-boundary model for the v5 era; the active v6 interpretation is now defined by:
 
-Active rules are defined by:
-
-- `adr-0008-kristal-v5-epistemic-lifecycle.md`
-- `../..//40-integration/kristal-v5/`
+- `adr-0013-kristal-v6-actionability-boundary.md`
+- `../../40-integration/kristal-v6/`
 
 The retained historical assumptions that are no longer normative include:
 

@@ -1,7 +1,8 @@
+SmartSnap snapshot file index
+Files included: 173
+
 .gitattributes
 .gitignore
-LICENSE
-README.md
 docs/1-Overview/Artifacts-Kristal.md
 docs/1-Overview/Artifacts-Operational.md
 docs/1-Overview/Artifacts.md
@@ -17,6 +18,7 @@ docs/1-Overview/Components-SwarmCraft.md
 docs/1-Overview/Components.md
 docs/1-Overview/FAQ.md
 docs/1-Overview/Glossary.md
+docs/1-Overview/index.md
 docs/1-Overview/Integration-External-systems.md
 docs/1-Overview/Integration-Interaction-Kernel.md
 docs/1-Overview/Integration-Koali-Spaces.md
@@ -33,7 +35,6 @@ docs/1-Overview/Operations-Releases.md
 docs/1-Overview/Operations-Rollbacks.md
 docs/1-Overview/Operations.md
 docs/1-Overview/Principles-and-invariants.md
-docs/1-Overview/index.md
 docs/2-Technical-Reference/00-overview/faq.md
 docs/2-Technical-Reference/00-overview/glossary.md
 docs/2-Technical-Reference/00-overview/scope.md
@@ -136,13 +137,12 @@ docs/2-Technical-Reference/90-reference/adr/adr-0013-kristal-v6-actionability-bo
 docs/2-Technical-Reference/90-reference/adr/index.md
 docs/2-Technical-Reference/90-reference/terminology.md
 docs/2-Technical-Reference/index.md
-docs/3-Layer-Model/LAYER_INDEX.md
-docs/3-Layer-Model/LAYER_MODEL.md
-docs/3-Layer-Model/LAYER_TEMPLATE.md
-docs/3-Layer-Model/README.md
 docs/3-Layer-Model/klassification/CLASSIFICATION_VIEW.md
 docs/3-Layer-Model/klassification/MIGRATION_MATRIX.md
 docs/3-Layer-Model/klassification/README.md
+docs/3-Layer-Model/LAYER_INDEX.md
+docs/3-Layer-Model/LAYER_MODEL.md
+docs/3-Layer-Model/LAYER_TEMPLATE.md
 docs/3-Layer-Model/layers/00_separation_of_functions.md
 docs/3-Layer-Model/layers/01_orientation_mandate.md
 docs/3-Layer-Model/layers/02_semantics_meaning.md
@@ -157,6 +157,7 @@ docs/3-Layer-Model/layers/10_resilience_autonomy.md
 docs/3-Layer-Model/layers/11_learning_interface.md
 docs/3-Layer-Model/layers/12_narrative_adoption.md
 docs/3-Layer-Model/layers/13_deployment_translation.md
+docs/3-Layer-Model/README.md
 docs/generated/repository-corpus-2026-09-28.json
 docs/index.md
 docs/inventory/README.md
@@ -167,6 +168,11 @@ docs/status/2026-09-16.md
 docs/status/2026-09-21-konnaxion-orgo-ik-e2e-qualification.md
 docs/status/2026-09-28-document-corpus-reconciliation.md
 docs/status/2026-10-01-kristal-v6-migration.md
-docs/status/README.md
 docs/status/current.md
 docs/status/index.md
+docs/status/README.md
+LICENSE
+README.md
+SNAPSHOT_INDEX.txt
+
+Index file: SNAPSHOT_INDEX.txt

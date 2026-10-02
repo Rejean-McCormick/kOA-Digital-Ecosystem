@@ -10,7 +10,7 @@ Use an explicitly adopted Interaction Kernel Profile where available. Until prod
 
 ## Kristal
 
-Route ecosystem-facing Kristal work through the appropriate mapping boundary, preserve exact v5 pin and epistemic labels, and distinguish Working from Reference state.
+Route ecosystem-facing Kristal work through the appropriate mapping boundary, preserve the exact Kristal Standard `6.0.0` content-digest pin, and preserve v6 `kristal_state` semantics (`valuations[]`, `coordinates`, `applicability`, `record_role`, `actionability`, validation/recognition and `artifact_status`). Treat Working/Reference only as declared v6 artifact-status concepts or explicitly defined derived artifacts.
 
 ## kOA-Linux release/activation
 

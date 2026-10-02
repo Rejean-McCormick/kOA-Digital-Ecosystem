@@ -59,7 +59,7 @@ This repository answers four questions without becoming a competing product auth
 - **Interaction Kernel carries contracts; it owns no participant state.** Adoption is explicit and boundary-specific.
 - **Space activation is not Runtime Pack activation.** Presentation and knowledge-runtime state are separate lifecycles.
 - **`accepted` is not `succeeded`.** Durable asynchronous effects require terminal reconciliation.
-- **Candidate contract baseline is not published immutable release.** rc.3 remains unresolved until its release tag maps to an immutable commit.
+- **Historical RC records do not define the active standard.** Retained v5 release-candidate material is migration/history evidence only; the active Kristal v6 standard identity is the pinned manifest/core-contract digest set.
 
 ## Principal flows
 

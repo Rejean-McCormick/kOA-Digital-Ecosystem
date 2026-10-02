@@ -2,7 +2,7 @@
 
 kOA integrations must distinguish a **contract baseline** from an **immutable release pin**.
 
-## Current knowledge-contract baseline
+## Historical v5 knowledge-contract baseline
 
 ```text
 version                  5.0.0-rc.3
@@ -12,7 +12,7 @@ knowledge-model bundle   sha256:07fe0527ab29a4b40870efdd0c9e0c67c91de919e5428047
 canonicalization         kristal.v5:jcs-rfc8785 / 1
 ```
 
-The supplied rc.3 release metadata declares tag `v5.0.0-rc.3` but does **not** yet resolve it to an immutable commit SHA (`commit: null`). The knowledge boundary may therefore freeze the contract set while still refusing a claim that rc.3 is a fully resolved published release.
+The supplied rc.3 release metadata declared tag `v5.0.0-rc.3` but did **not** resolve it to an immutable commit SHA (`commit: null`). This historical boundary therefore froze the contract set without claiming rc.3 was a fully resolved published release. The active ecosystem baseline now uses Kristal Standard `6.0.0` pinned by content digest.
 
 ## Existing immutable downstream locks
 

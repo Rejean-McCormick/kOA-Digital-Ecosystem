@@ -81,7 +81,7 @@ The following are retained only for compatibility/history:
 
 ## Product-repository updates still required
 
-1. **Koali Spaces:** update the two current-state reference pages that still say first real Konnaxion onboarding is pending; replace “Kristal: verrou de vérité” / “assertion canonique” terminology with v5 epistemic/authority language.
+1. **Koali Spaces:** update the two current-state reference pages that still say first real Konnaxion onboarding is pending; replace “Kristal: verrou de vérité” / “assertion canonique” terminology with the active v6 state/valuation/authority vocabulary.
 2. **kOA-Linux:** mount/link official subsystem documentation at reserved subsystem paths; continue contract/code convergence items already identified in `CODE_ALIGNMENT_NOTES.md` (including language-pack discriminator compatibility and generator/validator alignment).
 3. **Konnaxion + Orgo:** keep the qualified IK Profile implementations and owner-repository tests aligned, and preserve the 2026-09-21 E2E scenario as a regression gate.
 4. **Da’at:** publish verified Kristal v6 mapping/conformance against the pinned release.
