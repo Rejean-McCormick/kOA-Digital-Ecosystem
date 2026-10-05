@@ -238,7 +238,7 @@
       "document_file_count": 159,
       "entrypoint": "docs/00-control/RELEASE_STATUS.md",
       "source_docs_paths": [
-        "C:\\mycode\\Kristal_Farms\\kristal-farms\\docs"
+        "C:\\mycode\\01-Text_Based_Git\\Kristal_Farms\\kristal-farms\\docs"
       ],
       "reference_description": "Kristal Farms is a northern infrastructure platform for turning difficult-to-export renewable energy into secure cold-climate compute, fibre connectivity, useful heat, resilient communities, and internationally transferable expertise.",
       "reference_note": "Verified online match.",
@@ -342,7 +342,7 @@
       "document_file_count": 34,
       "entrypoint": "docs/README.md",
       "source_docs_paths": [
-        "C:\\mycode\\MediKristal\\MediKristal\\docs"
+        "C:\\mycode\\Kristal\\Kristal-Kollection\\MediKristal\\MediKristal\\docs"
       ],
       "reference_description": "Medikristal is a semantic medical knowledge architecture that links symptoms, diseases, tests, treatments, and patient context into verifiable artifacts, then applies deterministic protocols to guide clinical reasoning with traceable sources.",
       "reference_note": "Verified online match.",
@@ -355,7 +355,7 @@
       "document_file_count": 9,
       "entrypoint": "docs/ADAPTATION_GUIDE.md",
       "source_docs_paths": [
-        "C:\\mycode\\MediKristal\\LevelUpDiag-MediKristal\\docs"
+        "C:\\mycode\\Kristal\\Kristal-Kollection\\MediKristal\\LevelUpDiag-MediKristal\\docs"
       ],
       "reference_description": "Progressive, evidence-driven repository validation framework. LevelUpDiag runs layered diagnostics for code quality, security, contracts, tests, packaging, reproducibility, and release readiness, producing structured reports and deterministic PASS/WARN/FAIL verdicts.",
       "reference_note": "Verified online match.",
@@ -500,7 +500,7 @@
       "document_file_count": 20,
       "entrypoint": "docs/DESIGN-v0.2-README.md",
       "source_docs_paths": [
-        "C:\\mycode\\Konstellation\\Konstellation_v0_4\\Konstellation\\docs"
+        "C:\\mycode\\Konstellation\\Konstellation\\docs"
       ],
       "reference_description": "Konstellation blockchain",
       "reference_note": "Strong probable match: online repo has a 0.4.0/v0.4.1 release line and a docs directory.",

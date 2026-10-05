@@ -200,35 +200,24 @@
     "note": "Verified online match."
   },
   {
-    "local_root": "C:\\mycode\\Konnaxion\\LevelUpDiag",
-    "github_repo": "Rejean-McCormick/Konnaxion-LevelUpDiag",
-    "github_url": "https://github.com/Rejean-McCormick/Konnaxion-LevelUpDiag",
+    "local_root": "C:\\mycode\\Konnaxion\\KonnaxionDiag",
+    "github_repo": "Rejean-McCormick/KonnaxionDiag",
+    "github_url": "https://github.com/Rejean-McCormick/KonnaxionDiag",
     "status": "owned_match",
-    "description": "diagnostic and validation suite for Konnaxion",
+    "description": "Consolidated diagnostic, validation, security qualification and release-assurance suite for Konnaxion, superseding the former Konnaxion-LevelUpDiag and Konnaxion-SecurityDiag repositories.",
     "source_docs_paths": [
-      "C:\\mycode\\Konnaxion\\LevelUpDiag\\docs"
+      "C:\\mycode\\Konnaxion\\KonnaxionDiag\\docs"
     ],
-    "note": "Verified online match."
+    "note": "Current consolidated repository; supersedes the former Konnaxion-LevelUpDiag and Konnaxion-SecurityDiag repositories."
   },
   {
-    "local_root": "C:\\mycode\\Konnaxion\\SecurityDiag",
-    "github_repo": "Rejean-McCormick/Konnaxion-SecurityDiag",
-    "github_url": "https://github.com/Rejean-McCormick/Konnaxion-SecurityDiag",
-    "status": "owned_match",
-    "description": "Security qualification and deployment hardening toolkit for Konnaxion. Provides read-only security diagnostics, VPS/SSH/firewall/Docker checks, incident-recovery validation, Capsule Manager integration, evidence-based release gates, and external attack-surface verification.",
-    "source_docs_paths": [
-      "C:\\mycode\\Konnaxion\\SecurityDiag\\docs"
-    ],
-    "note": "Verified online match."
-  },
-  {
-    "local_root": "C:\\mycode\\Konstellation\\Konstellation_v0_4\\Konstellation",
+    "local_root": "C:\\mycode\\Konstellation\\Konstellation",
     "github_repo": "knstl/konstellation",
     "github_url": "https://github.com/knstl/konstellation",
     "status": "probable_external_match",
     "description": "Konstellation blockchain",
     "source_docs_paths": [
-      "C:\\mycode\\Konstellation\\Konstellation_v0_4\\Konstellation\\docs"
+      "C:\\mycode\\Konstellation\\Konstellation\\docs"
     ],
     "note": "Strong probable match: online repo has a 0.4.0/v0.4.1 release line and a docs directory."
   },
@@ -266,13 +255,13 @@
     "note": "Verified online match."
   },
   {
-    "local_root": "C:\\mycode\\Kristal_Farms\\kristal-farms",
+    "local_root": "C:\\mycode\\01-Text_Based_Git\\Kristal_Farms\\kristal-farms",
     "github_repo": "Rejean-McCormick/Kristal-Farms",
     "github_url": "https://github.com/Rejean-McCormick/Kristal-Farms",
     "status": "owned_match",
     "description": "Kristal Farms is a northern infrastructure platform for turning difficult-to-export renewable energy into secure cold-climate compute, fibre connectivity, useful heat, resilient communities, and internationally transferable expertise.",
     "source_docs_paths": [
-      "C:\\mycode\\Kristal_Farms\\kristal-farms\\docs"
+      "C:\\mycode\\01-Text_Based_Git\\Kristal_Farms\\kristal-farms\\docs"
     ],
     "note": "Verified online match."
   },
@@ -288,24 +277,24 @@
     "note": "Resolved from local Git origin; git ls-remote confirmed the remote is online."
   },
   {
-    "local_root": "C:\\mycode\\MediKristal\\LevelUpDiag-MediKristal",
+    "local_root": "C:\\mycode\\Kristal\\Kristal-Kollection\\MediKristal\\LevelUpDiag-MediKristal",
     "github_repo": "Rejean-McCormick/MediKristal-LevelUpDiag-",
     "github_url": "https://github.com/Rejean-McCormick/MediKristal-LevelUpDiag-",
     "status": "owned_match",
     "description": "Progressive, evidence-driven repository validation framework. LevelUpDiag runs layered diagnostics for code quality, security, contracts, tests, packaging, reproducibility, and release readiness, producing structured reports and deterministic PASS/WARN/FAIL verdicts.",
     "source_docs_paths": [
-      "C:\\mycode\\MediKristal\\LevelUpDiag-MediKristal\\docs"
+      "C:\\mycode\\Kristal\\Kristal-Kollection\\MediKristal\\LevelUpDiag-MediKristal\\docs"
     ],
     "note": "Verified online match."
   },
   {
-    "local_root": "C:\\mycode\\MediKristal\\MediKristal",
+    "local_root": "C:\\mycode\\Kristal\\Kristal-Kollection\\MediKristal\\MediKristal",
     "github_repo": "Rejean-McCormick/MediKristal",
     "github_url": "https://github.com/Rejean-McCormick/MediKristal",
     "status": "owned_match",
     "description": "Medikristal is a semantic medical knowledge architecture that links symptoms, diseases, tests, treatments, and patient context into verifiable artifacts, then applies deterministic protocols to guide clinical reasoning with traceable sources.",
     "source_docs_paths": [
-      "C:\\mycode\\MediKristal\\MediKristal\\docs"
+      "C:\\mycode\\Kristal\\Kristal-Kollection\\MediKristal\\MediKristal\\docs"
     ],
     "note": "Verified online match."
   },

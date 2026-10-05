@@ -2,7 +2,7 @@
 
 > Discovery registry for repository locations and documentation roots. **Presence in this inventory does not mean integrated, admitted, enabled, qualified, released, or deployed.** Owner repositories and explicit contracts remain authoritative for those claims.
 
-Entries: **41**.
+Entries: **40**.
 
 ## Fields
 
@@ -34,16 +34,15 @@ Entries: **41**.
 | [Rejean-McCormick/Konnaxion](https://github.com/Rejean-McCormick/Konnaxion) | `C:\mycode\Konnaxion\Konnaxion` | `owned_match` | `C:\mycode\Konnaxion\Konnaxion\docs`<br>`C:\mycode\Konnaxion\Konnaxion\backend\docs` |
 | [Rejean-McCormick/Konnaxion-Capsule-Manager](https://github.com/Rejean-McCormick/Konnaxion-Capsule-Manager) | `C:\mycode\Konnaxion\Konnaxion_Capsule_Manager` | `owned_match` | `C:\mycode\Konnaxion\Konnaxion_Capsule_Manager\docs` |
 | [Rejean-McCormick/Konnaxion-Worlds](https://github.com/Rejean-McCormick/Konnaxion-Worlds) | `C:\mycode\Konnaxion\Konnaxion_Worlds` | `owned_match` | `C:\mycode\Konnaxion\Konnaxion_Worlds\docs` |
-| [Rejean-McCormick/Konnaxion-LevelUpDiag](https://github.com/Rejean-McCormick/Konnaxion-LevelUpDiag) | `C:\mycode\Konnaxion\LevelUpDiag` | `owned_match` | `C:\mycode\Konnaxion\LevelUpDiag\docs` |
-| [Rejean-McCormick/Konnaxion-SecurityDiag](https://github.com/Rejean-McCormick/Konnaxion-SecurityDiag) | `C:\mycode\Konnaxion\SecurityDiag` | `owned_match` | `C:\mycode\Konnaxion\SecurityDiag\docs` |
-| [knstl/konstellation](https://github.com/knstl/konstellation) | `C:\mycode\Konstellation\Konstellation_v0_4\Konstellation` | `probable_external_match` | `C:\mycode\Konstellation\Konstellation_v0_4\Konstellation\docs` |
+| [Rejean-McCormick/KonnaxionDiag](https://github.com/Rejean-McCormick/KonnaxionDiag) | `C:\mycode\Konnaxion\KonnaxionDiag` | `owned_match` | `C:\mycode\Konnaxion\KonnaxionDiag\docs` |
+| [knstl/konstellation](https://github.com/knstl/konstellation) | `C:\mycode\Konstellation\Konstellation` | `probable_external_match` | `C:\mycode\Konstellation\Konstellation\docs` |
 | [Rejean-McCormick/Kristal-Framework](https://github.com/Rejean-McCormick/Kristal-Framework) | `C:\mycode\Kristal\kristal-framework` | `owned_match` | `C:\mycode\Kristal\kristal-framework\docs` |
 | [Rejean-McCormick/Kristal-Reference](https://github.com/Rejean-McCormick/Kristal-Reference) | `C:\mycode\Kristal\kristal-reference` | `owned_match` | `C:\mycode\Kristal\kristal-reference\docs` |
 | [Rejean-McCormick/LevelUpDiag-Kristal](https://github.com/Rejean-McCormick/LevelUpDiag-Kristal) | `C:\mycode\Kristal\levelupdiag_kristal` | `owned_match` | `C:\mycode\Kristal\levelupdiag_kristal\docs` |
-| [Rejean-McCormick/Kristal-Farms](https://github.com/Rejean-McCormick/Kristal-Farms) | `C:\mycode\Kristal_Farms\kristal-farms` | `owned_match` | `C:\mycode\Kristal_Farms\kristal-farms\docs` |
+| [Rejean-McCormick/Kristal-Farms](https://github.com/Rejean-McCormick/Kristal-Farms) | `C:\mycode\01-Text_Based_Git\Kristal_Farms\kristal-farms` | `owned_match` | `C:\mycode\01-Text_Based_Git\Kristal_Farms\kristal-farms\docs` |
 | [Rejean-McCormick/LevelUpDiag](https://github.com/Rejean-McCormick/LevelUpDiag) | `C:\mycode\LevelUpDiag\LevelUpDiag` | `owned_match_local_git_verified` | `C:\mycode\LevelUpDiag\LevelUpDiag\docs` |
-| [Rejean-McCormick/MediKristal-LevelUpDiag-](https://github.com/Rejean-McCormick/MediKristal-LevelUpDiag-) | `C:\mycode\MediKristal\LevelUpDiag-MediKristal` | `owned_match` | `C:\mycode\MediKristal\LevelUpDiag-MediKristal\docs` |
-| [Rejean-McCormick/MediKristal](https://github.com/Rejean-McCormick/MediKristal) | `C:\mycode\MediKristal\MediKristal` | `owned_match` | `C:\mycode\MediKristal\MediKristal\docs` |
+| [Rejean-McCormick/MediKristal-LevelUpDiag-](https://github.com/Rejean-McCormick/MediKristal-LevelUpDiag-) | `C:\mycode\Kristal\Kristal-Kollection\MediKristal\LevelUpDiag-MediKristal` | `owned_match` | `C:\mycode\Kristal\Kristal-Kollection\MediKristal\LevelUpDiag-MediKristal\docs` |
+| [Rejean-McCormick/MediKristal](https://github.com/Rejean-McCormick/MediKristal) | `C:\mycode\Kristal\Kristal-Kollection\MediKristal\MediKristal` | `owned_match` | `C:\mycode\Kristal\Kristal-Kollection\MediKristal\MediKristal\docs` |
 | [Rejean-McCormick/LevelUpDiag-Orgo](https://github.com/Rejean-McCormick/LevelUpDiag-Orgo) | `C:\mycode\Orgo\LevelUpDiag-Orgo` | `owned_match` | `C:\mycode\Orgo\LevelUpDiag-Orgo\docs` |
 | [Rejean-McCormick/Orgo](https://github.com/Rejean-McCormick/Orgo) | `C:\mycode\Orgo\Orgo` | `owned_match` | `C:\mycode\Orgo\Orgo\docs` |
 | [Rejean-McCormick/Orgo-Worlds](https://github.com/Rejean-McCormick/Orgo-Worlds) | `C:\mycode\Orgo\Orgo_Worlds` | `owned_match` | `C:\mycode\Orgo\Orgo_Worlds\docs`<br>`C:\mycode\Orgo\Orgo_Worlds\world-packs\uckk-a014\docs` |
