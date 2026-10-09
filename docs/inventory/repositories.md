@@ -1,62 +1,147 @@
-# Repository inventory
+# Repository inventory — reconciled local observations
 
-> Discovery registry for repository locations and documentation roots. **Presence in this inventory does not mean integrated, admitted, enabled, qualified, released, or deployed.** Owner repositories and explicit contracts remain authoritative for those claims.
+> **Proposed replacement** based on the Windows directory tree from October 9, 2026 and the earlier GitSink Runner scan. This is a local discovery inventory, **not** a fresh GitHub remote or integrity verification.
 
-Entries: **40**.
+**Scope:** 66 repositories in the previous public list and 49 additional local/third-party/wiki checkout entries. Among these 115 entries, 100 distinct paths have a `.git` marker in the submitted tree. Six nested wiki caches were previously observed but are not freshly checked by that tree.
 
-## Fields
+**Excluded from anomaly follow-up:** `Omni-Wiki` and `OurAI`.
 
-- `local_root` — workstation path supplied in the reference inventory; host-specific and non-portable.
-- `github_repo` / `github_url` — mapped Git repository identity.
-- `status` — mapping/verification status from the supplied inventory, not a maturity or integration status.
-- `source_docs_paths` — known local documentation roots.
-- `description` / `note` — supplied discovery metadata.
+## Status meanings
 
-## Repositories
+- `local_git_marker_seen`: the submitted Windows tree explicitly marks the path with `[GIT]`. Repo name association comes from the earlier GitSink scan.
+- `previous_gitsink_observation_only`: previous runner identified a nested checkout, but the new tree stops at the outer `.git`.
+- `local_root_unknown`: no checkout confirmed at the expected location.
+- `legacy_path_not_found`: old candidate local folder not found; GitHub remote status was not checked.
+- `ambiguous_repository_identity`: a checkout was assigned to two different repos in older inventory; no authoritative assignment.
+- `excluded_from_followup`: explicitly excluded by user.
 
-| Repository | Local root | Status | Documentation roots |
-|---|---|---|---|
-| [Rejean-McCormick/EncyKlopedia](https://github.com/Rejean-McCormick/EncyKlopedia) | `C:\mycode\EncyKlopedia\EncyKlopedia` | `owned_match` | `C:\mycode\EncyKlopedia\EncyKlopedia\00_system\docs` |
-| [MA-Gustave/Ars-Magna-Lulli](https://github.com/MA-Gustave/Ars-Magna-Lulli) | `C:\mycode\Grammatical_Framework\ars-magna-lulli\ars-magna-lulli` | `external_match` | `C:\mycode\Grammatical_Framework\ars-magna-lulli\ars-magna-lulli\docs` |
-| [MA-Gustave/GF_Observatory](https://github.com/MA-Gustave/GF_Observatory) | `C:\mycode\Grammatical_Framework\GF_Observatory` | `external_match` | `C:\mycode\Grammatical_Framework\GF_Observatory\GF_Observatory_Documentation_Frame\docs`<br>`C:\mycode\Grammatical_Framework\GF_Observatory\GF_Observatory_Documentation_GitHub_Pages\docs` |
-| [MA-Gustave/GF_Wordbench](https://github.com/MA-Gustave/GF_Wordbench) | `C:\mycode\Grammatical_Framework\GF_Wordbench\GF_Wordbench` | `external_match` | `C:\mycode\Grammatical_Framework\GF_Wordbench\GF_Wordbench\docs` |
-| [Rejean-McCormick/Grammatical-Framework-Albanian](https://github.com/Rejean-McCormick/Grammatical-Framework-Albanian) | `C:\mycode\Grammatical_Framework\Grammatical_Framework-Albanian` | `owned_match` | `C:\mycode\Grammatical_Framework\Grammatical_Framework-Albanian\docs` |
-| [Rejean-McCormick/Interaction-Kernel](https://github.com/Rejean-McCormick/Interaction-Kernel) | `C:\mycode\Interaction-Kernel` | `owned_match` | `C:\mycode\Interaction-Kernel\docs` |
-| [Rejean-McCormick/Kamel](https://github.com/Rejean-McCormick/Kamel) | `C:\mycode\Kamel\Kamel` | `owned_match_local_git_verified` | `C:\mycode\Kamel\Kamel\docs` |
-| [Rejean-McCormick/KeyFlow](https://github.com/Rejean-McCormick/KeyFlow) | `C:\mycode\KeyFlow(formulaires)` | `owned_match_local_git_verified` | `C:\mycode\KeyFlow(formulaires)\docs` |
-| [Rejean-McCormick/kOA-Linux-Koali](https://github.com/Rejean-McCormick/kOA-Linux-Koali) | `C:\mycode\kOA-Linux\koa-linux` | `owned_match` | `C:\mycode\kOA-Linux\koa-linux\docs` |
-| [Rejean-McCormick/Koali-Control-Panel](https://github.com/Rejean-McCormick/Koali-Control-Panel) | `C:\mycode\kOA-Linux\Koali-Control-Panel` | `owned_match` | `C:\mycode\kOA-Linux\Koali-Control-Panel\docs` |
-| [Rejean-McCormick/Koali-Spaces](https://github.com/Rejean-McCormick/Koali-Spaces) | `C:\mycode\kOA-Linux\koali-spaces` | `owned_match` | `C:\mycode\kOA-Linux\koali-spaces\docs` |
-| [Rejean-McCormick/Koali-Scenario-Mosaic](https://github.com/Rejean-McCormick/Koali-Scenario-Mosaic) | `C:\mycode\kOA-Linux\Koali_Scenario_Mosaic` | `owned_match` | `C:\mycode\kOA-Linux\Koali_Scenario_Mosaic\docs` |
-| [Rejean-McCormick/LevelUpDiag-kOA-Linux](https://github.com/Rejean-McCormick/LevelUpDiag-kOA-Linux) | `C:\mycode\kOA-Linux\LevelUpDiag-Koali` | `owned_match` | `C:\mycode\kOA-Linux\LevelUpDiag-Koali\docs` |
-| [Rejean-McCormick/kOA-Digital-Ecosystem](https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem) | `C:\mycode\kOA\kOA_Digital_Ecosystem` | `owned_match` | `C:\mycode\kOA\kOA_Digital_Ecosystem\docs` |
-| [Rejean-McCormick/Konductor](https://github.com/Rejean-McCormick/Konductor) | `C:\mycode\Konductor\Konductor` | `owned_match` | `C:\mycode\Konductor\Konductor\docs` |
-| [Rejean-McCormick/Konnaxion](https://github.com/Rejean-McCormick/Konnaxion) | `C:\mycode\Konnaxion\Konnaxion` | `owned_match` | `C:\mycode\Konnaxion\Konnaxion\docs`<br>`C:\mycode\Konnaxion\Konnaxion\backend\docs` |
-| [Rejean-McCormick/Konnaxion-Capsule-Manager](https://github.com/Rejean-McCormick/Konnaxion-Capsule-Manager) | `C:\mycode\Konnaxion\Konnaxion_Capsule_Manager` | `owned_match` | `C:\mycode\Konnaxion\Konnaxion_Capsule_Manager\docs` |
-| [Rejean-McCormick/Konnaxion-Worlds](https://github.com/Rejean-McCormick/Konnaxion-Worlds) | `C:\mycode\Konnaxion\Konnaxion_Worlds` | `owned_match` | `C:\mycode\Konnaxion\Konnaxion_Worlds\docs` |
-| [Rejean-McCormick/KonnaxionDiag](https://github.com/Rejean-McCormick/KonnaxionDiag) | `C:\mycode\Konnaxion\KonnaxionDiag` | `owned_match` | `C:\mycode\Konnaxion\KonnaxionDiag\docs` |
-| [knstl/konstellation](https://github.com/knstl/konstellation) | `C:\mycode\Konstellation\Konstellation` | `probable_external_match` | `C:\mycode\Konstellation\Konstellation\docs` |
-| [Rejean-McCormick/Kristal-Framework](https://github.com/Rejean-McCormick/Kristal-Framework) | `C:\mycode\Kristal\kristal-framework` | `owned_match` | `C:\mycode\Kristal\kristal-framework\docs` |
-| [Rejean-McCormick/Kristal-Reference](https://github.com/Rejean-McCormick/Kristal-Reference) | `C:\mycode\Kristal\kristal-reference` | `owned_match` | `C:\mycode\Kristal\kristal-reference\docs` |
-| [Rejean-McCormick/LevelUpDiag-Kristal](https://github.com/Rejean-McCormick/LevelUpDiag-Kristal) | `C:\mycode\Kristal\levelupdiag_kristal` | `owned_match` | `C:\mycode\Kristal\levelupdiag_kristal\docs` |
-| [Rejean-McCormick/Kristal-Farms](https://github.com/Rejean-McCormick/Kristal-Farms) | `C:\mycode\01-Text_Based_Git\Kristal_Farms\kristal-farms` | `owned_match` | `C:\mycode\01-Text_Based_Git\Kristal_Farms\kristal-farms\docs` |
-| [Rejean-McCormick/LevelUpDiag](https://github.com/Rejean-McCormick/LevelUpDiag) | `C:\mycode\LevelUpDiag\LevelUpDiag` | `owned_match_local_git_verified` | `C:\mycode\LevelUpDiag\LevelUpDiag\docs` |
-| [Rejean-McCormick/MediKristal-LevelUpDiag-](https://github.com/Rejean-McCormick/MediKristal-LevelUpDiag-) | `C:\mycode\Kristal\Kristal-Kollection\MediKristal\LevelUpDiag-MediKristal` | `owned_match` | `C:\mycode\Kristal\Kristal-Kollection\MediKristal\LevelUpDiag-MediKristal\docs` |
-| [Rejean-McCormick/MediKristal](https://github.com/Rejean-McCormick/MediKristal) | `C:\mycode\Kristal\Kristal-Kollection\MediKristal\MediKristal` | `owned_match` | `C:\mycode\Kristal\Kristal-Kollection\MediKristal\MediKristal\docs` |
-| [Rejean-McCormick/LevelUpDiag-Orgo](https://github.com/Rejean-McCormick/LevelUpDiag-Orgo) | `C:\mycode\Orgo\LevelUpDiag-Orgo` | `owned_match` | `C:\mycode\Orgo\LevelUpDiag-Orgo\docs` |
-| [Rejean-McCormick/Orgo](https://github.com/Rejean-McCormick/Orgo) | `C:\mycode\Orgo\Orgo` | `owned_match` | `C:\mycode\Orgo\Orgo\docs` |
-| [Rejean-McCormick/Orgo-Worlds](https://github.com/Rejean-McCormick/Orgo-Worlds) | `C:\mycode\Orgo\Orgo_Worlds` | `owned_match` | `C:\mycode\Orgo\Orgo_Worlds\docs`<br>`C:\mycode\Orgo\Orgo_Worlds\world-packs\uckk-a014\docs` |
-| [Rejean-McCormick/LevelUpDiag_SemantiK-Architect](https://github.com/Rejean-McCormick/LevelUpDiag_SemantiK-Architect) | `C:\mycode\SemantiK_Architect\LevelUpDiag_SemantiK_Architect` | `owned_match` | `C:\mycode\SemantiK_Architect\LevelUpDiag_SemantiK_Architect\docs` |
-| [Rejean-McCormick/SemantiK-Architect](https://github.com/Rejean-McCormick/SemantiK-Architect) | `C:\mycode\SemantiK_Architect\SemantiK_Architect` | `owned_match` | `C:\mycode\SemantiK_Architect\SemantiK_Architect\docs` |
-| [Rejean-McCormick/SemantiK_Runtime_Orchestrator](https://github.com/Rejean-McCormick/SemantiK_Runtime_Orchestrator) | `C:\mycode\SemantiK_Architect\SemantiK_Runtime_Orchestrator` | `owned_match` | `C:\mycode\SemantiK_Architect\SemantiK_Runtime_Orchestrator\docs` |
-| [Rejean-McCormick/SenTient](https://github.com/Rejean-McCormick/SenTient) | `C:\mycode\SenTient\SenTient` | `owned_match` | `C:\mycode\SenTient\SenTient\Docs` |
-| [opentapioca/opentapioca](https://github.com/opentapioca/opentapioca) | `C:\mycode\SenTient\SenTient\opentapioca` | `external_match` | `C:\mycode\SenTient\SenTient\opentapioca\docs` |
-| [moodle/moodle](https://github.com/moodle/moodle) | `C:\mycode\UCKK\moodle\moodle` | `external_match` | `C:\mycode\UCKK\moodle\moodle\public\docs` |
-| [Rejean-McCormick/UCKK](https://github.com/Rejean-McCormick/UCKK) | `C:\mycode\UCKK\uckk-moodle` | `owned_match` | `C:\mycode\UCKK\uckk-moodle\docs`<br>`C:\mycode\UCKK\uckk-moodle\mod\uckkarchive\docs` |
-| [Rejean-McCormick/UCKK-Ops-Console](https://github.com/Rejean-McCormick/UCKK-Ops-Console) | `C:\mycode\UCKK\UCKK_ops_console` | `owned_match` | `C:\mycode\UCKK\UCKK_ops_console\docs` |
-| [Rejean-McCormick/VotingMachine](https://github.com/Rejean-McCormick/VotingMachine) | `C:\mycode\VotingMachine\VotingMachine` | `owned_match` | `C:\mycode\VotingMachine\VotingMachine\docs` |
-| [senigami/audiobook-studio](https://github.com/senigami/audiobook-studio) | `C:\mycode\Voxtral_Audiobook_Studio\Voxtral_Audiobook_Studio` | `probable_external_match` | `C:\mycode\Voxtral_Audiobook_Studio\Voxtral_Audiobook_Studio\docs` |
+## Public repository list (66)
 
-## Source of truth
+| GitHub repository | Local root | Status |
+|---|---|---|
+| [Rejean-McCormick/Ame-Artificielle](https://github.com/Rejean-McCormick/Ame-Artificielle) | `C:\mycode\02-Experimental\AmeArtificielle\Ame-Artificielle` | `local_git_marker_seen` |
+| [Rejean-McCormick/Book-Civilizational-Coherence](https://github.com/Rejean-McCormick/Book-Civilizational-Coherence) | `C:\mycode\01-Text_Based_Git\Civilisational_Coherence` | `local_git_marker_seen` |
+| [Rejean-McCormick/Book-Colin-Row](https://github.com/Rejean-McCormick/Book-Colin-Row) | `C:\mycode\01-Text_Based_Git\Colin_Row` | `local_git_marker_seen` |
+| [Rejean-McCormick/EncyKlopedia](https://github.com/Rejean-McCormick/EncyKlopedia) | `C:\mycode\EncyKlopedia\EncyKlopedia` | `local_git_marker_seen` |
+| [Rejean-McCormick/Freeze-Vote-Rebuild-Operational-Peace-Framework](https://github.com/Rejean-McCormick/Freeze-Vote-Rebuild-Operational-Peace-Framework) | `C:\mycode\01-Text_Based_Git\FreezeVoteRebuild\Freeze-Vote-Rebuild_Operational-Peace-Framework` | `local_git_marker_seen` |
+| [Rejean-McCormick/Grammatical-Framework-Albanian](https://github.com/Rejean-McCormick/Grammatical-Framework-Albanian) | `C:\mycode\Grammatical_Framework\Grammatical_Framework-Albanian` | `local_git_marker_seen` |
+| [Rejean-McCormick/Grammatical-Framework-audit](https://github.com/Rejean-McCormick/Grammatical-Framework-audit) | `` | `local_root_unknown` |
+| [Rejean-McCormick/HELLO-WORLD-Autopsie-d-un-Clown-Royal](https://github.com/Rejean-McCormick/HELLO-WORLD-Autopsie-d-un-Clown-Royal) | `C:\mycode\01-Text_Based_Git\HelloWorld(Suno)` | `local_git_marker_seen` |
+| [Rejean-McCormick/HomePage-initkoa.org](https://github.com/Rejean-McCormick/HomePage-initkoa.org) | `C:\mycode\HomePage\HomePage` | `local_git_marker_seen` |
+| [Rejean-McCormick/initkoa-docs](https://github.com/Rejean-McCormick/initkoa-docs) | `C:\mycode\HomePage\docs-initkoa-org` | `local_git_marker_seen` |
+| [Rejean-McCormick/Interaction-Kernel](https://github.com/Rejean-McCormick/Interaction-Kernel) | `C:\mycode\Interaction-Kernel\interaction_kernel` | `local_git_marker_seen` |
+| [Rejean-McCormick/King-Klown-Canon](https://github.com/Rejean-McCormick/King-Klown-Canon) | `C:\mycode\01-Text_Based_Git\King_Klown\king-clown-canon` | `local_git_marker_seen` |
+| [Rejean-McCormick/kOA-Digital-Ecosystem](https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem) | `C:\mycode\kOA_Digital_Ecosystem\kOA_Digital_Ecosystem` | `local_git_marker_seen` |
+| [Rejean-McCormick/kOA-Linux-Koali](https://github.com/Rejean-McCormick/kOA-Linux-Koali) | `C:\mycode\kOA-Linux\koa-linux` | `local_git_marker_seen` |
+| [Rejean-McCormick/kOA-Obama-Foundation-Briefing](https://github.com/Rejean-McCormick/kOA-Obama-Foundation-Briefing) | `C:\mycode\01-Text_Based_Git\kOA-Obama` | `local_git_marker_seen` |
+| [Rejean-McCormick/Koali-Control-Panel](https://github.com/Rejean-McCormick/Koali-Control-Panel) | `C:\mycode\kOA-Linux\Koali-Control-Panel` | `local_git_marker_seen` |
+| [Rejean-McCormick/Koali-Scenario-Mosaic](https://github.com/Rejean-McCormick/Koali-Scenario-Mosaic) | `C:\mycode\kOA-Linux\Koali_Scenario_Mosaic` | `local_git_marker_seen` |
+| [Rejean-McCormick/Koali-Spaces](https://github.com/Rejean-McCormick/Koali-Spaces) | `C:\mycode\kOA-Linux\koali-spaces` | `local_git_marker_seen` |
+| [Rejean-McCormick/Kompiler](https://github.com/Rejean-McCormick/Kompiler) | `C:\mycode\Kristal\Kompiler` | `local_git_marker_seen` |
+| [Rejean-McCormick/Konductor](https://github.com/Rejean-McCormick/Konductor) | `C:\mycode\Konductor\Konductor` | `local_git_marker_seen` |
+| [Rejean-McCormick/Konfid](https://github.com/Rejean-McCormick/Konfid) | `C:\mycode\Konfid\konfid` | `local_git_marker_seen` |
+| [Rejean-McCormick/Konnaxion](https://github.com/Rejean-McCormick/Konnaxion) | `C:\mycode\Konnaxion\Konnaxion` | `local_git_marker_seen` |
+| [Rejean-McCormick/Konnaxion-Ashoka-Systems-Change-Dossier](https://github.com/Rejean-McCormick/Konnaxion-Ashoka-Systems-Change-Dossier) | `C:\mycode\01-Text_Based_Git\Ashoka` | `local_git_marker_seen` |
+| [Rejean-McCormick/Konnaxion-Capsule-Manager](https://github.com/Rejean-McCormick/Konnaxion-Capsule-Manager) | `C:\mycode\Konnaxion\Konnaxion_Capsule_Manager` | `local_git_marker_seen` |
+| [Rejean-McCormick/Konnaxion-LevelUpDiag](https://github.com/Rejean-McCormick/Konnaxion-LevelUpDiag) | `` | `local_root_unknown` |
+| [Rejean-McCormick/Konnaxion-SecurityDiag](https://github.com/Rejean-McCormick/Konnaxion-SecurityDiag) | `` | `local_root_unknown` |
+| [Rejean-McCormick/Konnaxion-Worlds](https://github.com/Rejean-McCormick/Konnaxion-Worlds) | `C:\mycode\Konnaxion\Konnaxion_Worlds` | `local_git_marker_seen` |
+| [Rejean-McCormick/KonnaxionDiag](https://github.com/Rejean-McCormick/KonnaxionDiag) | `C:\mycode\Konnaxion\KonnaxionDiag` | `local_git_marker_seen` |
+| [Rejean-McCormick/Konstellation](https://github.com/Rejean-McCormick/Konstellation) | `C:\mycode\Konstellation\Konstellation` | `local_git_marker_seen` |
+| [Rejean-McCormick/Konstellation-Light](https://github.com/Rejean-McCormick/Konstellation-Light) | `C:\mycode\Konstellation\Konstellation-Light` | `local_git_marker_seen` |
+| [Rejean-McCormick/Kristal-Authoring-Kit](https://github.com/Rejean-McCormick/Kristal-Authoring-Kit) | `C:\mycode\Kristal\Kristal-Authoring-Kit` | `local_git_marker_seen` |
+| [Rejean-McCormick/Kristal-Farms](https://github.com/Rejean-McCormick/Kristal-Farms) | `C:\mycode\01-Text_Based_Git\Kristal_Farms\kristal-farms` | `local_git_marker_seen` |
+| [Rejean-McCormick/Kristal-Framework](https://github.com/Rejean-McCormick/Kristal-Framework) | `C:\mycode\Kristal\Kristal-Framework` | `local_git_marker_seen` |
+| [Rejean-McCormick/Kristal-Integration-Pack](https://github.com/Rejean-McCormick/Kristal-Integration-Pack) | `C:\mycode\Kristal\Kristal-Integration-Pack` | `local_git_marker_seen` |
+| [Rejean-McCormick/Kristal-Kollection](https://github.com/Rejean-McCormick/Kristal-Kollection) | `C:\mycode\Kristal\Kristal-Kollection` | `local_git_marker_seen` |
+| [Rejean-McCormick/Kristal-Manager](https://github.com/Rejean-McCormick/Kristal-Manager) | `C:\mycode\Kristal\Kristal-Manager` | `local_git_marker_seen` |
+| [Rejean-McCormick/kristal-public](https://github.com/Rejean-McCormick/kristal-public) | `C:\mycode\Kristal\kristal-public` | `local_git_marker_seen` |
+| [Rejean-McCormick/Kristal-Reference](https://github.com/Rejean-McCormick/Kristal-Reference) | `` | `legacy_path_not_found` |
+| [Rejean-McCormick/KristalDiag](https://github.com/Rejean-McCormick/KristalDiag) | `C:\mycode\Kristal\KristalDiag` | `local_git_marker_seen` |
+| [Rejean-McCormick/KristalV10](https://github.com/Rejean-McCormick/KristalV10) | `` | `legacy_path_not_found` |
+| [Rejean-McCormick/LevelUpDiag-kOA-Linux](https://github.com/Rejean-McCormick/LevelUpDiag-kOA-Linux) | `C:\mycode\kOA-Linux\LevelUpDiag-Koali` | `local_git_marker_seen` |
+| [Rejean-McCormick/LevelUpDiag-Kristal](https://github.com/Rejean-McCormick/LevelUpDiag-Kristal) | `` | `legacy_path_not_found` |
+| [Rejean-McCormick/LevelUpDiag-Orgo](https://github.com/Rejean-McCormick/LevelUpDiag-Orgo) | `C:\mycode\Orgo\LevelUpDiag-Orgo` | `local_git_marker_seen` |
+| [Rejean-McCormick/LevelUpDiag_SemantiK-Architect](https://github.com/Rejean-McCormick/LevelUpDiag_SemantiK-Architect) | `C:\mycode\SemantiK_Architect\LevelUpDiag_SemantiK_Architect` | `local_git_marker_seen` |
+| [Rejean-McCormick/Mediatheque](https://github.com/Rejean-McCormick/Mediatheque) | `C:\mycode\kOA_Mediatheque\mediatheque` | `local_git_marker_seen` |
+| [Rejean-McCormick/Mediatheque-blank](https://github.com/Rejean-McCormick/Mediatheque-blank) | `C:\mycode\kOA_Mediatheque\mediatheque-blank` | `local_git_marker_seen` |
+| [Rejean-McCormick/MediKristal](https://github.com/Rejean-McCormick/MediKristal) | `C:\mycode\Kristal\MediKristal\MediKristal` | `local_git_marker_seen` |
+| [Rejean-McCormick/MediKristal-LevelUpDiag-](https://github.com/Rejean-McCormick/MediKristal-LevelUpDiag-) | `C:\mycode\Kristal\MediKristal\LevelUpDiag-MediKristal` | `local_git_marker_seen` |
+| [Rejean-McCormick/Omni-Wiki](https://github.com/Rejean-McCormick/Omni-Wiki) | `` | `excluded_from_followup` |
+| [Rejean-McCormick/Omni-Wiki-Rejean-King-Klown](https://github.com/Rejean-McCormick/Omni-Wiki-Rejean-King-Klown) | `C:\mycode\OmniWiki\Omni-Wiki-Rejean-King-Klown` | `local_git_marker_seen` |
+| [Rejean-McCormick/Orgo](https://github.com/Rejean-McCormick/Orgo) | `C:\mycode\Orgo\Orgo` | `local_git_marker_seen` |
+| [Rejean-McCormick/Orgo-Worlds](https://github.com/Rejean-McCormick/Orgo-Worlds) | `C:\mycode\Orgo\Orgo_Worlds` | `local_git_marker_seen` |
+| [Rejean-McCormick/OurAI](https://github.com/Rejean-McCormick/OurAI) | `` | `excluded_from_followup` |
+| [Rejean-McCormick/Partners-for-Public-Good-Pressure-Test-Koali](https://github.com/Rejean-McCormick/Partners-for-Public-Good-Pressure-Test-Koali) | `C:\mycode\01-Text_Based_Git\PPG` | `local_git_marker_seen` |
+| [Rejean-McCormick/Pi-Theory](https://github.com/Rejean-McCormick/Pi-Theory) | `C:\mycode\01-Text_Based_Git\Pi-theory\Pi_Theory` | `local_git_marker_seen` |
+| [Rejean-McCormick/Power-Dynamics](https://github.com/Rejean-McCormick/Power-Dynamics) | `C:\mycode\01-Text_Based_Git\Power_Dynamics\power_dynamics` | `local_git_marker_seen` |
+| [Rejean-McCormick/Projet-ORPHEE-Walk-Straight](https://github.com/Rejean-McCormick/Projet-ORPHEE-Walk-Straight) | `C:\mycode\01-Text_Based_Git\Orphee(Prison)\orphee-walk-straight` | `local_git_marker_seen` |
+| [Rejean-McCormick/Rejean-McCormick](https://github.com/Rejean-McCormick/Rejean-McCormick) | `C:\mycode\Rejean_McCormick-OrganisationGit\Rejean-McCormick` | `local_git_marker_seen` |
+| [Rejean-McCormick/Science-Silk-Road-Koali](https://github.com/Rejean-McCormick/Science-Silk-Road-Koali) | `C:\mycode\01-Text_Based_Git\Science_Silk_Road\science_silk_road` | `local_git_marker_seen` |
+| [Rejean-McCormick/SemantiK-Architect](https://github.com/Rejean-McCormick/SemantiK-Architect) | `C:\mycode\SemantiK_Architect\SemantiK_Architect` | `local_git_marker_seen` |
+| [Rejean-McCormick/SemantiK_Runtime_Orchestrator](https://github.com/Rejean-McCormick/SemantiK_Runtime_Orchestrator) | `C:\mycode\SemantiK_Architect\SemantiK_Runtime_Orchestrator` | `local_git_marker_seen` |
+| [Rejean-McCormick/SenTient](https://github.com/Rejean-McCormick/SenTient) | `C:\mycode\SenTient\SenTient` | `local_git_marker_seen` |
+| [Rejean-McCormick/UCKK](https://github.com/Rejean-McCormick/UCKK) | `` | `ambiguous_repository_identity` |
+| [Rejean-McCormick/UCKK-Assets](https://github.com/Rejean-McCormick/UCKK-Assets) | `C:\mycode\UCKK\UCKK_Assets` | `local_git_marker_seen` |
+| [Rejean-McCormick/UCKK-Ops-Console](https://github.com/Rejean-McCormick/UCKK-Ops-Console) | `C:\mycode\UCKK\UCKK_ops_console` | `local_git_marker_seen` |
+| [Rejean-McCormick/VotingMachine](https://github.com/Rejean-McCormick/VotingMachine) | `C:\mycode\02-Experimental\VotingMachine\VotingMachine` | `local_git_marker_seen` |
 
-[`repositories.json`](repositories.json) is the complete machine-readable inventory used to generate this page. This Markdown view intentionally omits descriptions and notes from the table to stay readable; those fields remain in JSON.
+## Other local, external and wiki checkouts (49)
+
+| Repository | Local root | Status |
+|---|---|---|
+| `Rejean-McCormick/Business-Plan` | `C:\mycode\01-Text_Based_Git\Business-plan` | `local_git_marker_seen` |
+| `Rejean-McCormick/kOA-International-Strategy` | `C:\mycode\01-Text_Based_Git\International-Strategy` | `local_git_marker_seen` |
+| `Rejean-McCormick/king-klown-canon.wiki` | `C:\mycode\01-Text_Based_Git\King_Klown\king-klown-canon.wiki` | `local_git_marker_seen` |
+| `Rejean-McCormick/Kristal_Farms.wiki` | `C:\mycode\01-Text_Based_Git\Kristal_Farms\Kristal_Farms.wiki` | `local_git_marker_seen` |
+| `Rejean-McCormick/Pi-Theory.wiki` | `C:\mycode\01-Text_Based_Git\Pi-theory\Pi-Theory.wiki` | `local_git_marker_seen` |
+| `Rejean-McCormick/Power-Dynamics.wiki` | `C:\mycode\01-Text_Based_Git\Power_Dynamics\Power-Dynamics.wiki` | `local_git_marker_seen` |
+| `Rejean-McCormick/science-silk-road-koali.wiki` | `C:\mycode\01-Text_Based_Git\Science_Silk_Road\science-silk-road-koali.wiki` | `local_git_marker_seen` |
+| `Rejean-McCormick/Ame-Artificielle.wiki` | `C:\mycode\02-Experimental\AmeArtificielle\Ame-Artificielle.wiki` | `local_git_marker_seen` |
+| `Rejean-McCormick/Astro-App` | `C:\mycode\02-Experimental\Astro-App\astro_app` | `local_git_marker_seen` |
+| `Rejean-McCormick/Math-Challenges` | `C:\mycode\02-Experimental\MathChallenges` | `local_git_marker_seen` |
+| `Rejean-McCormick/Voxtral-Audiobook-Studio` | `C:\mycode\02-Experimental\Voxtral_Audiobook_Studio\Voxtral_Audiobook_Studio` | `local_git_marker_seen` |
+| `MA-Gustave/MA-Gustave` | `C:\mycode\03-Brands\Gustave\GitHub_Profile` | `local_git_marker_seen` |
+| `Rejean-McCormick/theophile-mini-site` | `C:\mycode\03-Brands\Theophile\theophile-mini-site` | `local_git_marker_seen` |
+| `Alfresco/alfresco-community-repo` | `C:\mycode\Alfresco\alfresco-community-repo` | `local_git_marker_seen` |
+| `Rejean-McCormick/Ariane` | `C:\mycode\Ariane\Ariane` | `local_git_marker_seen` |
+| `MA-Gustave/ars-magna-lulli` | `C:\mycode\Grammatical_Framework\ars-magna-lulli\ars-magna-lulli` | `local_git_marker_seen` |
+| `GrammaticalFramework/gf-core` | `C:\mycode\Grammatical_Framework\gf-core` | `local_git_marker_seen` |
+| `GrammaticalFramework/gf-rgl` | `C:\mycode\Grammatical_Framework\gf-rgl` | `local_git_marker_seen` |
+| `krangelov/gf-wikidata` | `C:\mycode\Grammatical_Framework\gf-wikidata_repos_source\gf-wikidata` | `local_git_marker_seen` |
+| `GrammaticalFramework/gf-wikidata-tools` | `C:\mycode\Grammatical_Framework\gf-wikidata_repos_source\gf-wikidata-tools` | `local_git_marker_seen` |
+| `foerstner-lab/GFF_to_Wikidata_importer` | `C:\mycode\Grammatical_Framework\gf-wikidata_repos_source\GFF_to_Wikidata_importer` | `local_git_marker_seen` |
+| `MA-Gustave/GF_Observatory` | `C:\mycode\Grammatical_Framework\GF_Observatory` | `local_git_marker_seen` |
+| `MA-Gustave/GF_RGL_AI_Compendium` | `C:\mycode\Grammatical_Framework\GF_RGL_AI_Compendium` | `local_git_marker_seen` |
+| `MA-Gustave/GF_Wordbench` | `C:\mycode\Grammatical_Framework\GF_Wordbench\GF_Wordbench` | `local_git_marker_seen` |
+| `Rejean-McCormick/kOA_Digital_Ecosystem.wiki` | `C:\mycode\HomePage\docs-initkoa-org\.wiki-cache\kOA Digital Ecosystem` | `previous_gitsink_observation_only` |
+| `Rejean-McCormick/Konnaxion.wiki` | `C:\mycode\HomePage\docs-initkoa-org\.wiki-cache\Konnaxion` | `previous_gitsink_observation_only` |
+| `Rejean-McCormick/kristal-framework.wiki` | `C:\mycode\HomePage\docs-initkoa-org\.wiki-cache\Kristal Framework` | `previous_gitsink_observation_only` |
+| `Rejean-McCormick/Orgo.wiki` | `C:\mycode\HomePage\docs-initkoa-org\.wiki-cache\Orgo` | `previous_gitsink_observation_only` |
+| `Rejean-McCormick/SemantiK_Architect.wiki` | `C:\mycode\HomePage\docs-initkoa-org\.wiki-cache\SemantiK Architect` | `previous_gitsink_observation_only` |
+| `Rejean-McCormick/SenTient.wiki` | `C:\mycode\HomePage\docs-initkoa-org\.wiki-cache\SenTient` | `previous_gitsink_observation_only` |
+| `Rejean-McCormick/Kamel` | `C:\mycode\Kamel\Kamel` | `local_git_marker_seen` |
+| `Rejean-McCormick/kOA-Linux_Koali.wiki` | `C:\mycode\kOA-Linux\koa-linux-wiki` | `local_git_marker_seen` |
+| `Rejean-McCormick/kOA_Digital_Ecosystem.wiki` | `C:\mycode\kOA_Digital_Ecosystem\kOA_Digital_Ecosystem.wiki` | `local_git_marker_seen` |
+| `Rejean-McCormick/Konfid.wiki` | `C:\mycode\Konfid\Konfid.wiki` | `local_git_marker_seen` |
+| `Rejean-McCormick/Konnaxion.wiki` | `C:\mycode\Konnaxion\Konnaxion.wiki` | `local_git_marker_seen` |
+| `Rejean-McCormick/kristal-framework.wiki` | `C:\mycode\Kristal\kristal-framework.wiki` | `local_git_marker_seen` |
+| `Rejean-McCormick/MediKristal.wiki` | `C:\mycode\Kristal\MediKristal\MediKristal.wiki` | `local_git_marker_seen` |
+| `Rejean-McCormick/LevelUpDiag` | `C:\mycode\LevelUpDiag\LevelUpDiag` | `local_git_marker_seen` |
+| `Rejean-McCormick/Orgo.wiki` | `C:\mycode\Orgo\Orgo.wiki` | `local_git_marker_seen` |
+| `GrammaticalFramework/gf-rgl` | `C:\mycode\SemantiK_Architect\gf-rgl` | `local_git_marker_seen` |
+| `Rejean-McCormick/SemantiK_Architect.wiki` | `C:\mycode\SemantiK_Architect\SemantiK_Architect.wiki` | `local_git_marker_seen` |
+| `Rejean-McCormick/SenTient.wiki` | `C:\mycode\SenTient\SenTient.wiki` | `local_git_marker_seen` |
+| `MA-Gustave/simdjson-rvv-vla` | `C:\mycode\Simdjson\simdjson-rvv-vla` | `local_git_marker_seen` |
+| `simdjson/simdjson` | `C:\mycode\Simdjson\simdjson-upstream` | `local_git_marker_seen` |
+| `Rejean-McCormick/SwarmCraft` | `C:\mycode\SwarmCraft\SwarmCraft` | `local_git_marker_seen` |
+| `Rejean-McCormick/tools` | `C:\mycode\Tools\toolz` | `local_git_marker_seen` |
+| `Rejean-McCormick/KeyFlow` | `C:\mycode\UCKK\KeyFlow(formulaires)` | `local_git_marker_seen` |
+| `moodle/moodle` | `C:\mycode\UCKK\moodle\moodle` | `local_git_marker_seen` |
+| `Rejean-McCormick/UCKK-Moodle` | `C:\mycode\UCKK\uckk-moodle` | `local_git_marker_seen` |
+
+## Source and interpretation
+
+Machine-readable inventory: [`repositories.json`](repositories.json).
+Preserved legacy entries that could not be safely reconciled are listed in the accompanying report, not silently reassigned.
+A `.git` marker is not proof of remote identity, clean state, push authorization, publication, activation or release qualification.
