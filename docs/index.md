@@ -63,3 +63,7 @@ The v6 standard is pinned by manifest and core-contract digests rather than by a
 ## Konstellation
 
 [Contract, versions and responsibilities](2-Technical-Reference/40-integration/konstellation/index.md).
+
+## Current owner-contract coordination (2026-10-08)
+
+The pinned Kristal v6 projection above remains the **frozen historical lane**. For the newer EncyKlopedia→Médiathèque source handoff and Kristal v9 identity / GitHub v10 read and publication lane, see [C0 orchestration coordination](2-Technical-Reference/40-integration/orchestration-c0/README.md). These newer integrations are documented as **pending qualification** until owner evidence establishes them.

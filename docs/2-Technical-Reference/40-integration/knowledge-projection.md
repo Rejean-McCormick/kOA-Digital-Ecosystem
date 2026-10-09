@@ -88,3 +88,7 @@ Kristal State             ≠ mutable application database
 consumer projection       ≠ source of truth
 IK transport              ≠ participant state
 ```
+
+## Note de coexistence — interface EncyK v2 et hébergement Kristal v10 (2026-10-08)
+
+The `Current contract set` above is the **frozen v6 knowledge projection** and its own historical EncyK handoff reference. EncyKlopedia 0.12.0 separately provides `encyk.source-evidence-handoff/2.0.0` to Médiathèque kOA. The latter interface targets `koa.source-catalog/2.0.0` and currently awaits a qualified receiving adapter; no drop-in compatibility with `encyklopedia.corpus-harvest-handoff/1.0.0` is asserted. The separate Kristal v10 GitHub read/sync/index path preserves v9 identity and requires independent qualification before public publication. See [C0](orchestration-c0/README.md).

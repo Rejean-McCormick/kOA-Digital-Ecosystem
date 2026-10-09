@@ -1,0 +1,171 @@
+{
+  "format": "koa.c0-interface-registry/0.1-candidate",
+  "as_of": "2026-10-08",
+  "description": "Non-normative discovery and qualification tracker; contracts remain owner-defined",
+  "entries": [
+    {
+      "id": "I01",
+      "lane": "historical-v6",
+      "producer": "EncyKlopedia (historical knowledge lane)",
+      "consumer": "Da’at / Kristal via IK",
+      "contract": "encyklopedia.corpus-harvest-handoff/1.0.0",
+      "evidence_status": "frozen_documented",
+      "qualification": "not_assessed_in_C0",
+      "owner_chantier": "C6",
+      "open_gate": "Confirm whether any live consumer still uses this contract; no implicit v1→v2 equivalence",
+      "evidence": [
+        "kOA_Digital_Ecosystem.zip:docs/2-Technical-Reference/40-integration/knowledge-projection-contract-set.json"
+      ],
+      "tested_commit": "not_pinned_in_snapshot",
+      "last_reviewed": "2026-10-08"
+    },
+    {
+      "id": "I02",
+      "lane": "source-storage",
+      "producer": "EncyKlopedia 0.12.0",
+      "consumer": "Médiathèque kOA 0.5.0",
+      "contract": "encyk.source-evidence-handoff/2.0.0 -> koa.source-catalog/2.0.0",
+      "evidence_status": "producer_implemented_consumer_unverified",
+      "qualification": "pending_real_consumer",
+      "owner_chantier": "C6",
+      "open_gate": "Map fields, idempotency, rejected/replayed handoff, checksums, durable acceptance receipt",
+      "evidence": [
+        "Code_snapshot_EncyKlopedia.zip:00_system/contracts/source-evidence-handoff/2.0.0/schema.json",
+        "mediatheque-blank.zip:mediatheque/schemas/sqlite/007_source_authority.sql"
+      ],
+      "tested_commit": "not_pinned_in_snapshot",
+      "last_reviewed": "2026-10-08"
+    },
+    {
+      "id": "I03",
+      "lane": "optional-admission-v6",
+      "producer": "IK kristal.build.request sender",
+      "consumer": "Da’at / Kristal",
+      "contract": "kristal.build.request/2.0.0 (portable v6)",
+      "evidence_status": "profile_documented",
+      "qualification": "not_tested_in_C0",
+      "owner_chantier": "C0 / C6",
+      "open_gate": "Do not infer adoption for GitHub v10; explicit use only",
+      "evidence": [
+        "interaction_kernel.zip:interaction_kernel/contracts/profiles/kristal/kristal.build.request/2.0.0/payload.schema.json"
+      ],
+      "tested_commit": "not_pinned_in_snapshot",
+      "last_reviewed": "2026-10-08"
+    },
+    {
+      "id": "I04",
+      "lane": "local-state",
+      "producer": "Kristal-Zoology local / Authoring Kit",
+      "consumer": "KristalDiag / independent verifier",
+      "contract": "kristal.portable-epistemic-state/6.0 + kristal.state/9.0",
+      "evidence_status": "local_tests_passed",
+      "qualification": "independent_v10_pending",
+      "owner_chantier": "C1",
+      "open_gate": "Independent qualification with immutable inputs, no change to state commitments",
+      "evidence": [
+        "Kristal-Zoology.zip:Kristal-Zoology/.kristal/v9/state-snapshot.json",
+        "Kristal-Zoology.zip:Kristal-Zoology/validation/validation-report.json"
+      ],
+      "tested_commit": "not_pinned_in_snapshot",
+      "last_reviewed": "2026-10-08"
+    },
+    {
+      "id": "I05",
+      "lane": "github-read-surface",
+      "producer": "Authoring Kit 3.2.4",
+      "consumer": "Manager / readers",
+      "contract": "kristal.github-read-surface/1.0",
+      "evidence_status": "owner_contract_and_example",
+      "qualification": "zoology_v10_surface_pending",
+      "owner_chantier": "C1 / C2",
+      "open_gate": "Build + schema-validate read surface for Zoology; independent qualification receipt needed",
+      "evidence": [
+        "Code_snapshot_Kristal-Framework(6).zip:profiles/github/examples/github-read-surface.example.json"
+      ],
+      "tested_commit": "not_pinned_in_snapshot",
+      "last_reviewed": "2026-10-08"
+    },
+    {
+      "id": "I06",
+      "lane": "github-sync",
+      "producer": "Kristal Manager 0.1.0-alpha.11",
+      "consumer": "GitHub node / Bootstrap",
+      "contract": "kristal.github-sync-manifest/1.0",
+      "evidence_status": "owner_contract_and_example",
+      "qualification": "full_chain_pending",
+      "owner_chantier": "C2",
+      "open_gate": "Approval with scoped files, qualification before any public push, and idempotent receipts",
+      "evidence": [
+        "Code_snapshot_Kristal-Framework(6).zip:profiles/github/examples/github-sync-manifest.example.json"
+      ],
+      "tested_commit": "not_pinned_in_snapshot",
+      "last_reviewed": "2026-10-08"
+    },
+    {
+      "id": "I07",
+      "lane": "github-collection-discovery",
+      "producer": "Qualified publisher / collection builder",
+      "consumer": "Konstellation Light / Kompiler reader",
+      "contract": "kristal.github-collection-index/1.0",
+      "evidence_status": "schema_exists_index_absent",
+      "qualification": "published_collection_pending",
+      "owner_chantier": "C3 / C4",
+      "open_gate": "Generate qualified collection index without conflating genesis root state and Zoology state",
+      "evidence": [
+        "Code_snapshot_Kristal-Framework(6).zip:profiles/github/examples/github-collection-index.example.json",
+        "Code_snapshot_kristal-public.zip:kristals/zoology/state/state-snapshot.json"
+      ],
+      "tested_commit": "not_pinned_in_snapshot",
+      "last_reviewed": "2026-10-08"
+    },
+    {
+      "id": "I08",
+      "lane": "public-light",
+      "producer": "Public immutable qualified Kristal releases",
+      "consumer": "Konstellation Light 0.1.0-standalone.1",
+      "contract": "konstellation.light-catalog/1.0 (derived)",
+      "evidence_status": "demo_only_manual_workflow",
+      "qualification": "zoology_end_to_end_pending",
+      "owner_chantier": "C4",
+      "open_gate": "Authenticated post-publication trigger + verified input pins; smoke test selection and revisions; preserve last valid deployment",
+      "evidence": [
+        "Code_snapshot_Konstellation-Light.zip:light/site/data/catalog.json",
+        "Code_snapshot_Konstellation-Light.zip:.github/workflows/konstellation-light-pages.yml"
+      ],
+      "tested_commit": "not_pinned_in_snapshot",
+      "last_reviewed": "2026-10-08"
+    },
+    {
+      "id": "I09",
+      "lane": "ai-context",
+      "producer": "Qualified Kristal v10 read surface",
+      "consumer": "Kompiler 0.8.0-alpha.1",
+      "contract": "Kompiler Kristal v10 read-only adapter / Context Pack (owner-defined)",
+      "evidence_status": "adapter_documented",
+      "qualification": "zoology_real_surface_pending",
+      "owner_chantier": "C5",
+      "open_gate": "Read-only, provenance and file/hash validation, reproducible Zoology query",
+      "evidence": [
+        "Code_snapshot_Kompiler(2).zip:docs/03-runtime/github-collection-reader.md"
+      ],
+      "tested_commit": "not_pinned_in_snapshot",
+      "last_reviewed": "2026-10-08"
+    },
+    {
+      "id": "I10",
+      "lane": "konstellation-kompiler-bridge",
+      "producer": "Kristal Integration Pack 0.1.0-alpha.1",
+      "consumer": "Kompiler 0.8.0-alpha.1 / Konstellation",
+      "contract": "Integration Pack historical Kompiler 0.7.0-alpha.3 bridge",
+      "evidence_status": "four_local_tests_on_previous_target",
+      "qualification": "updated_compatibility_pending",
+      "owner_chantier": "C5",
+      "open_gate": "Requalify against Kompiler 0.8 and current Konstellation interfaces",
+      "evidence": [
+        "Code_snapshot_Kristal-Integration-Pack.zip:docs/QUALIFICATION.md"
+      ],
+      "tested_commit": "not_pinned_in_snapshot",
+      "last_reviewed": "2026-10-08"
+    }
+  ]
+}

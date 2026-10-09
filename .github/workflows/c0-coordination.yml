@@ -1,0 +1,26 @@
+name: C0 coordination registry verification
+on:
+  pull_request:
+    paths:
+      - 'docs/2-Technical-Reference/40-integration/orchestration-c0/**'
+      - 'docs/2-Technical-Reference/40-integration/knowledge-projection-contract-set.json'
+      - 'docs/2-Technical-Reference/40-integration/contract-map.md'
+      - 'docs/status/current.md'
+      - 'README.md'
+      - 'docs/index.md'
+      - 'scripts/validate_c0_coordination.py'
+      - 'tests/test_c0_coordination.py'
+      - '.github/workflows/c0-coordination.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-c0:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python scripts/validate_c0_coordination.py
+      - run: python -m unittest discover -s tests -p 'test_c0_coordination.py' -v

@@ -61,3 +61,21 @@ No step silently transfers ownership of the upstream state.
 ## Kristal v6 actionability invariant
 
 Actionability classification is knowledge/policy metadata. It does not transfer execution authority from an operational owner to Kristal, Da’at or a consumer projection.
+
+## C0 ownership supplement — GitHub Kristal v10 (2026-10-08)
+
+This is an **interface coordination supplement**, not a reassignment of system authority:
+
+| State / decision | Owner | Coordination consequence |
+|---|---|---|
+| Source acquisition/candidates | EncyKlopedia | Not durable Médiathèque custody; not semantic identity |
+| Durable source/snapshot/representation acceptance | Médiathèque kOA | Receiver owns acceptance, replay and storage receipt |
+| Kristal semantic canon and commitments | Kristal owners under Framework contracts | v10 hosting cannot redefine v9 identity or v6 payload |
+| Local build/read surface | Authoring Kit | Read model is derived, must be verified against canonical commitments |
+| Independent conformity determination | KristalDiag / owner-designated qualifier | UI green checks alone are not release qualification |
+| GitHub sync/inventory | Kristal Manager | A sync is not an immutable release and not activation |
+| GitHub release and activation | Kristal GitHub Bootstrap / publisher | Separate explicit stages; per-Kristal permission before public writes |
+| Public explorer / IA Context Pack | Konstellation Light / Kompiler | Read-only projections, no canonical state modification |
+| Cross-owner version/evidence registry | **C0 in kOA Digital Ecosystem** | Coordination metadata only; does not approve or publish a Kristal |
+
+[Coordination register](../40-integration/orchestration-c0/README.md) records the owner contracts and outstanding tests.

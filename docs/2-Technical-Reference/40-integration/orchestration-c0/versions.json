@@ -1,0 +1,146 @@
+{
+  "format": "koa.c0-version-matrix/0.1-candidate",
+  "as_of": "2026-10-08",
+  "entries": [
+    {
+      "component": "Kristal Framework",
+      "observed_version": "10.0.0-draft.3.1",
+      "source_archive": "Code_snapshot_Kristal-Framework(6).zip",
+      "evidence_path": "contracts/v10-compatibility-lock.json",
+      "status": "snapshot_verified",
+      "gap": "v10 read/sync/index profiles; no automatic v6 contract replacement",
+      "workstream": "C1",
+      "exact_commit": "unresolved"
+    },
+    {
+      "component": "EncyKlopedia",
+      "observed_version": "0.12.0",
+      "source_archive": "Code_snapshot_EncyKlopedia.zip",
+      "evidence_path": "00_system/contracts/source-evidence-handoff/2.0.0/schema.json",
+      "status": "snapshot_verified",
+      "gap": "handoff 2.0 producer vs frozen 1.0 legacy doc",
+      "workstream": "C6",
+      "exact_commit": "unresolved"
+    },
+    {
+      "component": "Médiathèque kOA",
+      "observed_version": "0.5.0",
+      "source_archive": "mediatheque-blank.zip",
+      "evidence_path": "mediatheque/schemas/sqlite/007_source_authority.sql",
+      "status": "snapshot_reviewed",
+      "gap": "model/source catalog 2.0 present; handoff adapter unqualified",
+      "workstream": "C6",
+      "exact_commit": "unresolved"
+    },
+    {
+      "component": "Interaction Kernel",
+      "observed_version": "2.0.0-dev.2",
+      "source_archive": "interaction_kernel.zip",
+      "evidence_path": "contracts/profiles/kristal/kristal.build.request/2.0.0/payload.schema.json",
+      "status": "snapshot_verified",
+      "gap": "v6 request lane distinct from publication v10",
+      "workstream": "C0/C6",
+      "exact_commit": "unresolved"
+    },
+    {
+      "component": "Authoring Kit",
+      "observed_version": "3.2.4",
+      "source_archive": "Code_snapshot_Kristal-Authoring-Kit(5).zip",
+      "evidence_path": "docs/20_TOOLCHAIN_INTEROP.md",
+      "status": "snapshot_verified",
+      "gap": "Zoology packaged kit 3.2.2; qualify exact interoperability",
+      "workstream": "C1",
+      "exact_commit": "unresolved"
+    },
+    {
+      "component": "Kristal-Zoology",
+      "observed_version": "local-workspace/3.2.0 (embedded kit 3.2.2)",
+      "source_archive": "Kristal-Zoology.zip",
+      "evidence_path": "kristal.workspace.json",
+      "status": "source_verified",
+      "gap": "v6 payload preserved, v9 state preserved, AI disabled in original snapshot",
+      "workstream": "C1",
+      "exact_commit": "unresolved"
+    },
+    {
+      "component": "KristalDiag",
+      "observed_version": "version to pin at C1",
+      "source_archive": "Code_snapshot_KristalDiag(1).zip",
+      "evidence_path": "contracts/contract-manifest.json",
+      "status": "files_present",
+      "gap": "independent qualification target/commit not yet proved",
+      "workstream": "C1",
+      "exact_commit": "unresolved"
+    },
+    {
+      "component": "Manager",
+      "observed_version": "0.1.0-alpha.11",
+      "source_archive": "Code_snapshot_Kristal-Manager(2).zip",
+      "evidence_path": "kristal_manager/core.py",
+      "status": "snapshot_verified",
+      "gap": "sync manifest; no authorization gate proven for pipeline",
+      "workstream": "C2",
+      "exact_commit": "unresolved"
+    },
+    {
+      "component": "GitHub Bootstrap",
+      "observed_version": "1.1.0-alpha.11",
+      "source_archive": "Code_snapshot_Kristal-GitHub-Bootstrap(3).zip",
+      "evidence_path": "kristal_github_bootstrap/lifecycle.py",
+      "status": "snapshot_verified",
+      "gap": "qualify/publish/activate separated; gate integration pending",
+      "workstream": "C2/C3",
+      "exact_commit": "unresolved"
+    },
+    {
+      "component": "kristal-public",
+      "observed_version": "commit to pin at C3",
+      "source_archive": "Code_snapshot_kristal-public.zip",
+      "evidence_path": "kristals/zoology/state/state-snapshot.json",
+      "status": "files_present",
+      "gap": "root genesis state empty; collection index missing",
+      "workstream": "C3",
+      "exact_commit": "unresolved"
+    },
+    {
+      "component": "Konstellation Light",
+      "observed_version": "0.1.0-standalone.1",
+      "source_archive": "Code_snapshot_Konstellation-Light.zip",
+      "evidence_path": "light/site/data/catalog.json",
+      "status": "snapshot_verified",
+      "gap": "demo only; manual pages workflow no cross-repo fetch",
+      "workstream": "C4",
+      "exact_commit": "unresolved"
+    },
+    {
+      "component": "Kompiler",
+      "observed_version": "0.8.0-alpha.1",
+      "source_archive": "Code_snapshot_Kompiler(2).zip",
+      "evidence_path": "docs/03-runtime/github-collection-reader.md",
+      "status": "snapshot_verified",
+      "gap": "newer than Integration Pack historical target",
+      "workstream": "C5",
+      "exact_commit": "unresolved"
+    },
+    {
+      "component": "Integration Pack",
+      "observed_version": "0.1.0-alpha.1",
+      "source_archive": "Code_snapshot_Kristal-Integration-Pack.zip",
+      "evidence_path": "docs/QUALIFICATION.md",
+      "status": "snapshot_verified",
+      "gap": "old Kompiler 0.7.0-alpha.3 target; requalification required",
+      "workstream": "C5",
+      "exact_commit": "unresolved"
+    },
+    {
+      "component": "kOA Digital Ecosystem",
+      "observed_version": "snapshot 2026-10-08",
+      "source_archive": "kOA_Digital_Ecosystem.zip",
+      "evidence_path": "docs/2-Technical-Reference/40-integration/contract-map.md",
+      "status": "snapshot_reviewed",
+      "gap": "v6 frozen baseline MUST stay historical, supplemented by modern lane",
+      "workstream": "C0",
+      "exact_commit": "unresolved"
+    }
+  ]
+}

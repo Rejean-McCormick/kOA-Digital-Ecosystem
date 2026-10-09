@@ -48,3 +48,18 @@ Required semantics include owner-local mutation, durable delivery, stable idempo
 ## Actionability boundary
 
 Actionability metadata may select an automation path, but it never skips the producer/consumer contract shown in this map. An automatic Kristal action still requires the target owner's normal admission and authority checks.
+
+## Current owner-interface reconciliation — C0 (2026-10-08)
+
+**Scope separation:** the historical row `encyklopedia.corpus-harvest-handoff/1.0.0` above is part of the *frozen Kristal v6 / IK / UCKK knowledge projection*. Do **not** silently rename it to EncyK's newer handoff. The current EncyK source-storage producer emits `encyk.source-evidence-handoff/2.0.0` toward Médiathèque kOA (`koa.source-catalog/2.0.0`); the receiving adapter and acceptance receipts are **not yet qualified**.
+
+| Newer/parallel boundary | Producer | Owner-defined format | Consumer | C0 status |
+|---|---|---|---|---|
+| Raw source evidence → durable source catalogue | EncyKlopedia 0.12.0 | `encyk.source-evidence-handoff/2.0.0` | Médiathèque kOA | **Producer defined, real receiver pending** (C6) |
+| Portable v6 payload → v9 semantic state | Authoring Kit / Zoology | v6 artifact; `kristal.state/9.0` | KristalDiag / read surface generation | **Local rebuild tested; independent v10 qualification pending** (C1) |
+| Local read surface → hosted copy | Authoring Kit → Manager | `kristal.github-read-surface/1.0` and `kristal.github-sync-manifest/1.0` | Bootstrap / GitHub | **Contracts documented; integrated gates pending** (C1/C2) |
+| Published collection → discovery | GitHub collection | `kristal.github-collection-index/1.0` | Konstellation Light, Kompiler | **Index absent in current kristal-public snapshot** (C3/C4/C5) |
+| Published, qualified surface → Explorer | `kristal-public` public release | `konstellation.light-catalog/1.0` (derived) | Konstellation Light | **Demo only, cross-repo rebuild pending** (C4) |
+| Qualified surface → AI context | Kristal v10 read surface | Kompiler owner query/Context Pack contract | Kompiler | **Current-version end-to-end requalification pending** (C5) |
+
+References: [C0 registry, versions, acceptance and gates](orchestration-c0/README.md). The C0 table **does not** update the pinned legacy `knowledge-projection-contract-set.json`, nor does it claim v10 is the replacement for every v6 integration.

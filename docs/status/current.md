@@ -60,3 +60,19 @@ See [`../2-Technical-Reference/40-integration/knowledge-projection.md`](../2-Tec
 ## Update rule
 
 Advance a claim only with owner evidence appropriate to that scope. Do not infer production readiness from documentation completeness, repository presence, a release-candidate label or a successful local integration test.
+
+## C0 parallel integration status (2026-10-08 snapshot evidence)
+
+The qualified Konnaxion↔Orgo claims above remain in their existing scope. **The following are not new production claims**; they identify gaps between the frozen historical knowledge lane and the newer owner snapshots.
+
+| Workstream | Observed here | NOT yet established |
+|---|---|---|
+| C0 integration reference | C0 registry/versions and ownership gates introduced | Current exact GitHub commit pins for all owners; all E2E proofs |
+| C1 Zoology / Framework / Diag | v6 payload and v9 state available; local validation and build reproducible | Independent v10 qualified read surface with exact proof |
+| C2 Manager / Bootstrap | Github sync/publish contract families exist | Per-Kristal authorization-gated publishing end-to-end |
+| C3 `kristal-public` | Zoology v9 state present; root genesis state distinct | Valid v10 collection index and scoped qualified immutable Zoology publication |
+| C4 Konstellation Light | Demo catalog exists (`demo-v9-small`); manual GitHub Pages workflow | Verified published Zoology import and automatic post-release rebuild |
+| C5 Kompiler/Integration Pack | Reader and historical bridge tests available | Exact current Kompiler 0.8 bridge compatibility and Zoology Context Pack |
+| C6 EncyK→Médiathèque | EncyK handoff v2 defined; Médiathèque Source/Snapshot/Representation model | Consumer handoff v2 receipt, idempotent replay/rejection and old v1 mapping |
+
+**Global publication policy adopted:** first per-Kristal authorization, then optional automatic future qualified revisions *within unchanged scope*. Specific authorization for publishing Zoology content is still open. See [C0 register](../2-Technical-Reference/40-integration/orchestration-c0/README.md).

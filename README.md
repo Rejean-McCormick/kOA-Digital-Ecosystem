@@ -109,3 +109,9 @@ admitted application
 - [`docs/index.md`](docs/index.md)
 - [`docs/2-Technical-Reference/40-integration/knowledge-projection.md`](docs/2-Technical-Reference/40-integration/knowledge-projection.md)
 - [`docs/status/current.md`](docs/status/current.md)
+
+## C0 — Parallel integration coordination (2026-10-08)
+
+The **frozen Kristal v6/IK v2/UCKK baseline above is preserved**; it should not be read as a claim that the current EncyKlopedia 0.12.0 handoff still emits `encyklopedia.corpus-harvest-handoff/1.0.0`. Current owner contracts and the v10 GitHub publication route are tracked separately in the [C0 coordination register](docs/2-Technical-Reference/40-integration/orchestration-c0/README.md). The new handoff `encyk.source-evidence-handoff/2.0.0` is **not yet verified against a real Médiathèque receiver**.
+
+C0 records cross-system dependencies and evidence; each application remains authoritative for its contracts and releases. Zoology's publication automation policy requires first per-Kristal permission and mandatory independent qualification on every new revision; **the Zoology-specific authorization is not yet established**.
