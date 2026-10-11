@@ -79,3 +79,12 @@ This is an **interface coordination supplement**, not a reassignment of system a
 | Cross-owner version/evidence registry | **C0 in kOA Digital Ecosystem** | Coordination metadata only; does not approve or publish a Kristal |
 
 [Coordination register](../40-integration/orchestration-c0/README.md) records the owner contracts and outstanding tests.
+
+## Owner supplement — Skope / Ékole (October 2026)
+
+| State | Product owner | Explicit limit |
+| --- | --- | --- |
+| Scope recipe, convergence selections, local working snapshot | **Skope** | No validated assertion/semantic identity authority or platform admission |
+| Educational workspaces, pedagogy, site projections, preview/ops state | **Ékole** | No qualification or publication of Kristal v9/v10; no Moodle write without its owner bridge |
+
+See [integration supplement](../40-integration/skope-ekole/index.md). This records product-local ownership, not a new global control plane.

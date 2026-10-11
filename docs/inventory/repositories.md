@@ -1,8 +1,8 @@
 # Repository inventory — reconciled local observations
 
-> **Proposed replacement** based on the Windows directory tree from October 9, 2026 and the earlier GitSink Runner scan. This is a local discovery inventory, **not** a fresh GitHub remote or integrity verification.
+> **Inventory update — 2026-10-09:** Added BoKristal from the user's explicit Windows `.git` path and GitHub URL; this entry is **user-reported, not independently verified**. The existing reconciliation remains the historical baseline.
 
-**Scope:** 66 repositories in the previous public list and 49 additional local/third-party/wiki checkout entries. Among these 115 entries, 100 distinct paths have a `.git` marker in the submitted tree. Six nested wiki caches were previously observed but are not freshly checked by that tree.
+**Scope:** 66 repositories in the previous public list, 49 additional local/third-party/wiki checkout entries, and 1 newly reported BoKristal repository (**116 entries**). The earlier tree contains **100 independently observed `.git` markers**; the additional BoKristal marker was reported later by the user and was not counted in that scan. Six nested wiki caches were previously observed but are not freshly checked by that tree.
 
 **Excluded from anomaly follow-up:** `Omni-Wiki` and `OurAI`.
 
@@ -14,6 +14,7 @@
 - `legacy_path_not_found`: old candidate local folder not found; GitHub remote status was not checked.
 - `ambiguous_repository_identity`: a checkout was assigned to two different repos in older inventory; no authoritative assignment.
 - `excluded_from_followup`: explicitly excluded by user.
+- `user_reported_git_path`: repository and `.git` path explicitly supplied by user; neither checked locally nor independently associated through `git remote`.
 
 ## Public repository list (66)
 
@@ -85,6 +86,16 @@
 | [Rejean-McCormick/UCKK-Assets](https://github.com/Rejean-McCormick/UCKK-Assets) | `C:\mycode\UCKK\UCKK_Assets` | `local_git_marker_seen` |
 | [Rejean-McCormick/UCKK-Ops-Console](https://github.com/Rejean-McCormick/UCKK-Ops-Console) | `C:\mycode\UCKK\UCKK_ops_console` | `local_git_marker_seen` |
 | [Rejean-McCormick/VotingMachine](https://github.com/Rejean-McCormick/VotingMachine) | `C:\mycode\02-Experimental\VotingMachine\VotingMachine` | `local_git_marker_seen` |
+
+## Newly user-reported repository (1; pending verification)
+
+| GitHub repository | Local root | Status |
+|---|---|---|
+| [Rejean-McCormick/BoKristal](https://github.com/Rejean-McCormick/BoKristal) | `C:\mycode\BoKristal\BoKristal` | `user_reported_git_path` |
+
+Reported `.git` marker: `C:\mycode\BoKristal\BoKristal\.git`.
+
+**Verification:** GitHub access through the current connector returned HTTP 404 for this repository; this does not prove nonexistence, since it could be private or inaccessible. The Windows checkout and Git remote mapping were not inspected directly. The record's `scope` is `USER_REPORTED`, not `PUBLIC`.
 
 ## Other local, external and wiki checkouts (49)
 

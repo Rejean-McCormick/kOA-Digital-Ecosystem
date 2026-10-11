@@ -63,3 +63,16 @@ Actionability metadata may select an automation path, but it never skips the pro
 | Qualified surface → AI context | Kristal v10 read surface | Kompiler owner query/Context Pack contract | Kompiler | **Current-version end-to-end requalification pending** (C5) |
 
 References: [C0 registry, versions, acceptance and gates](orchestration-c0/README.md). The C0 table **does not** update the pinned legacy `knowledge-projection-contract-set.json`, nor does it claim v10 is the replacement for every v6 integration.
+
+## Skope and Ékole owner-boundary supplement (October 2026)
+
+The following are **candidate or local-prototype boundaries only**; they do not change the frozen v6 contract rows above.
+
+| Boundary | Producer | Consumer | Status / authority |
+| --- | --- | --- | --- |
+| Local Wikidata data → scoped working material | supported dump / Skope | Skope local UI / export | Implemented local prototype; **not** canon |
+| Reviewed Skope export → acquisition/mapping | Skope working snapshot | EncyKlopedia/Médiathèque, then Da’at/Authoring Kit as adopted | **Not integrated or qualified** |
+| Kristal artifacts → Ékole learning surfaces | Kristal owner | Ékole / UCKK | **Candidate;** workspaces are authoring stubs, v9/v10 E2E unqualified |
+| Ékole Moodle plan → Moodle | Ékole | local_uckk candidate | Dry run only; no confirmed Moodle writes |
+
+[Full supplement](skope-ekole/index.md). Port convention: Ékole 8765/8766 and Skope **8767**; Ékole teacher and OpsConsole still share 8766 by default.

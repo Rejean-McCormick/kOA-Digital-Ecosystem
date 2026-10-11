@@ -1,0 +1,56 @@
+{
+  "schema": "koa.ecosystem-app-snapshot/1.0-proposal",
+  "classification": "reconciled_from_owner_snapshots_not_release_qualification",
+  "evidence_date": "2026-10-10",
+  "applications": [
+    {
+      "name": "Skope",
+      "repo_slug": "Skope",
+      "github_url": null,
+      "repo_description_en": "Offline-first Wikidata scope explorer for Kristal. Search any QID, choose per-branch depth and relation filters, detect external convergence candidates, and export reproducible working graph snapshots. Generic Python/SQLite tool with external project recipes; no domain data or canonical promotion.",
+      "description_length": 298,
+      "primary_role": "generic_wikidata_scope_explorer_working_only",
+      "local_port": 8767,
+      "scope_authority": "application-owned local working recipe; no canon",
+      "snapshot_basis": "Split release Skope v0.2, tested 2026-10-10",
+      "status": "local_prototype"
+    },
+    {
+      "name": "Kristal Iroquoiens Working",
+      "repo_slug": "Kristal-Iroquoiens-Working",
+      "github_url": null,
+      "repo_description_en": "Working model for an Iroquoian-peoples Kristal anchored to Wikidata Q110654499. Owns scope recipes, editorial seeds, source archives, candidate axes, provenance and review workflows. Uses Skope as a separate generic tool to build an offline-capable non-canonical skeleton.",
+      "description_length": 272,
+      "primary_role": "domain_owned_iroquoian_kristal_working_model",
+      "scope_authority": "editorial subject scope; working only, no canonical validation",
+      "depends_on_tool": "Skope via --recipe and --db; no copy of skope code",
+      "status": "domain_prototype_non_canonical"
+    },
+    {
+      "name": "Ekole",
+      "repo_slug": "Ekole",
+      "github_url": null,
+      "repo_description_en": "Québec primary-school learning environment built around 202 Kristal authoring workspaces. Includes learner and teacher portals, a local operations console, derived catalogue and an offline-first Moodle projection planner. Editorial and v9/v10 qualification remain pending.",
+      "description_length": 272,
+      "primary_role": "educational_authoring_and_consumer_projection",
+      "local_ports": {
+        "core_student": 8765,
+        "teacher": 8766,
+        "opsconsole": 8766
+      },
+      "scope_authority": "editorial state and derived learning surfaces; no qualified Kristal canon",
+      "snapshot_basis": "znapshot_Ekole_10102254.zip",
+      "status": "local_applications_and_candidate_integrations"
+    },
+    {
+      "name": "kOA Digital Ecosystem",
+      "repo_slug": "kOA-Digital-Ecosystem",
+      "github_url": null,
+      "repo_description_en": "Cross-system architecture and integration map for kOA: ownership, versioned contracts, trust boundaries, maturity and release coordination across Kristal, EncyKlopedia, Da’at, UCKK, Koali and related applications including Skope and Ékole.",
+      "description_length": 239,
+      "primary_role": "cross-system_owner_boundary_documentation",
+      "status": "architecture_reconciliation",
+      "snapshot_basis": "Updated two-repo boundary 2026-10-10"
+    }
+  ]
+}

@@ -84,3 +84,31 @@ platform composition         ≠ ecosystem membership
 ## Control views
 
 [Authority map](../2-Technical-Reference/10-system/authority-map.md) · [Contract map](../2-Technical-Reference/40-integration/contract-map.md) · [Maturity map](../status/current.md) · [Layer Model](../3-Layer-Model/README.md)
+
+**Additional mapped applications:** [Skope & Ékole](Components-Skope-and-Ekole.md) (prototype/consumer roles; no new authority transfer).
+
+## Proposed Skope / Ékole flow (not qualified)
+
+```text
+Wikidata / local copy
+    │
+    ▼
+Skope (local, offline-capable)
+    └─ recipe + reviewed working snapshot [NO CANON]
+                    │
+                    ▼ proposed owner-governed handoff
+     EncyKlopedia / Médiathèque source custody
+                    │
+                    ▼
+            Da’at / Authoring Kit
+                    │ explicit validation & compilation
+                    ▼
+            Kristal epistemic canon
+                    │ qualified consumer projection
+                    ▼
+             Ékole / UCKK
+          ├─ learner/teacher portal
+          └─ candidate Moodle plan (no live writes)
+```
+
+All middle transitions shown as proposed remain **unqualified** in the supplied snapshots. See the [Skope/Ékole contract supplement](../2-Technical-Reference/40-integration/skope-ekole/index.md).

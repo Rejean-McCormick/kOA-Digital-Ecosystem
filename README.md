@@ -115,3 +115,10 @@ admitted application
 The **frozen Kristal v6/IK v2/UCKK baseline above is preserved**; it should not be read as a claim that the current EncyKlopedia 0.12.0 handoff still emits `encyklopedia.corpus-harvest-handoff/1.0.0`. Current owner contracts and the v10 GitHub publication route are tracked separately in the [C0 coordination register](docs/2-Technical-Reference/40-integration/orchestration-c0/README.md). The new handoff `encyk.source-evidence-handoff/2.0.0` is **not yet verified against a real Médiathèque receiver**.
 
 C0 records cross-system dependencies and evidence; each application remains authoritative for its contracts and releases. Zoology's publication automation policy requires first per-Kristal permission and mandatory independent qualification on every new revision; **the Zoology-specific authorization is not yet established**.
+
+## New mapped applications: Skope & Ékole (Oct 2026)
+
+- **Skope** defines a Wikidata-based Kristal working scope, using local graph extraction, branch depth controls and convergence review. It does **not** publish validated Kristal canon.
+- **Ékole** manages Québec primary-school educational workspaces and local student/teacher projections; 202 workspaces are authoring **stubs**, not 202 qualified semantic releases.
+
+See [application ownership and maturity](docs/1-Overview/Components-Skope-and-Ekole.md), [integration boundaries](docs/2-Technical-Reference/40-integration/skope-ekole/index.md), [local ports](docs/2-Technical-Reference/40-integration/skope-ekole/local-ports.md), and [GitHub descriptions](docs/inventory/GITHUB_DESCRIPTIONS.md). These additions do not alter frozen Kristal v6 contracts or qualify new E2E handoffs.

@@ -24,3 +24,10 @@ No system automatically controls every ecosystem transition. Acquisition, workfl
 ## kOA-Linux composition
 
 kOA-Linux is the operational composition root for selected profiles. Independent applications remain removable and independently authoritative. Hosting a subsystem does not transfer its domain authority to kOA-Linux.
+
+## Additional mapped applications (not core authority owners)
+
+| **Skope** | Local Wikidata selection/scope recipe and noncanonical working export | Kristal epistemic authority, EncyKlopedia source-custody authority, platform admission |
+| **Ékole** | Pedagogical authoring, catalogue, learner/teacher/operations local surfaces and derived projections | Kristal v9/v10 qualification, global source acquisition, live Moodle authority without an explicit bridge |
+
+For evidence, local port overlap and candidate handoffs see [Skope & Ékole](Components-Skope-and-Ekole.md).

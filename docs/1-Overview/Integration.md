@@ -34,3 +34,7 @@ See the [contract map](../2-Technical-Reference/40-integration/contract-map.md) 
 ## v6 actionability rule
 
 Kristal may describe actionability, but an `automatic` classification is not cross-system execution authority. Automation still crosses the explicit owner contract and admission boundary.
+
+## Skope and Ékole
+
+Skope supplies a **noncanonical** Wikidata scope/snapshot that may *eventually* enter governed acquisition/mapping before Kristal compilation. Ékole is a pedagogical **consumer/projection** over authoring workspaces, with candidate Moodle plans only. No direct Skope→Ékole link, automatic publishing, or new IK Profile is claimed. [Read the candidate handoff map](../2-Technical-Reference/40-integration/skope-ekole/index.md).

@@ -47,3 +47,11 @@ Retains candidate extraction/resolution/reconciliation responsibilities. Candida
 ## No global control plane
 
 No system automatically controls every ecosystem transition. Each lifecycle stays with its declared owner.
+
+## Additional application owners (October 2026 snapshots)
+
+### Skope
+Owns a local Wikidata subgraph selection recipe and working artifacts only. No canonical Kristal validation/promotion or EncyKlopedia source custody. [Boundary](../40-integration/skope-ekole/index.md).
+
+### Ékole
+Owns its 202 educational authoring workspaces, catalogues, local portals and candidate Moodle plans. Site projections are derived. No v9/v10 qualified Kristal release or live Moodle sync is established by the snapshot. [Boundary](../40-integration/skope-ekole/index.md).

@@ -76,3 +76,12 @@ The qualified Konnaxion↔Orgo claims above remain in their existing scope. **Th
 | C6 EncyK→Médiathèque | EncyK handoff v2 defined; Médiathèque Source/Snapshot/Representation model | Consumer handoff v2 receipt, idempotent replay/rejection and old v1 mapping |
 
 **Global publication policy adopted:** first per-Kristal authorization, then optional automatic future qualified revisions *within unchanged scope*. Specific authorization for publishing Zoology content is still open. See [C0 register](../2-Technical-Reference/40-integration/orchestration-c0/README.md).
+
+## Skope and Ékole (snapshot reconciliation, 2026-10-10)
+
+| System | Documented implementation | Qualification / boundary | Local surface |
+| --- | --- | --- | --- |
+| Skope | Python/SQLite offline working-scope explorer, synthetic-demo-tested; export/branch/convergence preview | No real D: clone conformance established; no Framework-v5 normative subset-recipe identity; no v9/v10 canonical promotion or kOA handoff | `127.0.0.1:8767` in updated repo |
+| Ékole | Core/Élève/Enseignant views, 202 authoring stubs, derived pedagogical graph, local OpsConsole, candidate Moodle-plan | No qualified 202 v9 states, no published v10 releases or confirmed Moodle write; no integrated Skope consumer | Core/Élève `8765`; Enseignant **or** OpsConsole `8766` by default |
+
+The owner snapshots establish application features, not a qualified cross-product production deployment. [Evidence & contracts](../2-Technical-Reference/40-integration/skope-ekole/index.md).

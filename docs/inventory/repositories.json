@@ -793,6 +793,18 @@
     "previous_local_root": "C:\\mycode\\VotingMachine\\VotingMachine"
   },
   {
+    "local_root": "C:\\mycode\\BoKristal\\BoKristal",
+    "github_repo": "Rejean-McCormick/BoKristal",
+    "github_url": "https://github.com/Rejean-McCormick/BoKristal",
+    "status": "user_reported_git_path",
+    "description": null,
+    "source_docs_paths": [],
+    "note": "User reports a Windows .git directory for this checkout and provides the GitHub URL. No direct Windows filesystem or git remote verification performed. GitHub connector returned HTTP 404 for this repository, which may be private or inaccessible to the current connection; do not infer that the repository is nonexistent.",
+    "scope": "USER_REPORTED",
+    "evidence": "2026-10-09 explicit user-provided Windows .git path and GitHub URL; unverified independently",
+    "git_marker_path": "C:\\mycode\\BoKristal\\BoKristal\\.git"
+  },
+  {
     "local_root": "C:\\mycode\\01-Text_Based_Git\\Business-plan",
     "github_repo": "Rejean-McCormick/Business-Plan",
     "github_url": "https://github.com/Rejean-McCormick/Business-Plan",
