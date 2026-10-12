@@ -32,3 +32,7 @@ Verify the machine-readable register using `python scripts/validate_c0_coordinat
 - C0 checks both sides of shared interfaces; proposals stay provisional until product owners accept them.
 - Update statuses with an exact proof pointer. `documented` / `tested-local` / `qualified-integrated` / `production-proven` are distinct.
 - Never assume a separate conversation can see another conversation's ZIPs; pass files and this directory explicitly.
+
+## 2026-10-12 supplement — C0 v10 harmonization
+
+The original ten-interface `interfaces.json` and frozen historical contract references remain intact. The newer **separate** [v10 alignment register](../kristal-v10-alignment/README.md) records repo-level tasks and blockers without reclassifying those ten interfaces as already qualified. **Konstellation owns interactive fleet and concept navigation; Manager owns the local instance registry; Arketype owns the structural catalogue.** No publication or activation is authorized here.

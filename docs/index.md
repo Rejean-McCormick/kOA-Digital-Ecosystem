@@ -1,5 +1,7 @@
 # kOA Digital Ecosystem Documentation
 
+> **2026-10-12:** The v6/IK/UCKK knowledge boundary described below is a **preserved historical contract**. For the newer v9 semantic-state and draft v10 GitHub hosting architecture, see [Kristal v10 harmonization](2-Technical-Reference/40-integration/kristal-v10-alignment/README.md). No current v10 deployment or publication is implied.
+
 This repository is the **cross-system architecture map** for kOA. It does not replace owner repositories.
 
 ## Current baseline
@@ -67,3 +69,7 @@ The v6 standard is pinned by manifest and core-contract digests rather than by a
 ## Current owner-contract coordination (2026-10-08)
 
 The pinned Kristal v6 projection above remains the **frozen historical lane**. For the newer EncyKlopedia→Médiathèque source handoff and Kristal v9 identity / GitHub v10 read and publication lane, see [C0 orchestration coordination](2-Technical-Reference/40-integration/orchestration-c0/README.md). These newer integrations are documented as **pending qualification** until owner evidence establishes them.
+
+## Newer Kristal v10 alignment and Konstellation fleet navigation
+
+The [v10 alignment pages](2-Technical-Reference/40-integration/kristal-v10-alignment/README.md) document owner responsibilities, current snapshot gaps, the proposed My Kristals navigation, and nonpublication gates. The historical v6 baseline above remains unchanged by design.

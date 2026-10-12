@@ -64,3 +64,17 @@ Koali Spaces sits above admitted applications as optional presentation infrastru
 ## Interaction Kernel placement
 
 IK is a target system-of-systems protocol/Profile layer for selected cross-product boundaries. kOA-Linux already has canonical internal/component communication contracts; Digital Ecosystem must not claim those have been replaced by IK until explicit adoption/mapping is published.
+
+## Kristal v9/v10 hosted-network overlay — C0 coordination (2026-10-12)
+
+The state and Runtime Pack planes above remain relevant. **Kristal v9 owns logical knowledge commitments**, and the Framework **v10 draft GitHub host profile** adds discovery and publication without replacing those commitments. This lane is distinct from kOA-Linux Runtime Pack activation and the historical v6 projection contract.
+
+```text
+Authoring Kit → state v9 → read-surface → Manager → controlled GitHub collection
+             independent C1  +  owner-scoped C2   → verified C3 publication
+                                                 → Konstellation / Kompiler readers
+Arketype → optional design-only archetype/pattern metadata
+Kristal-Kollection → legacy mapping only
+```
+
+**Navigation ownership:** Konstellation is the user-facing explorer **across** Kristals and **within** a selected Kristal; Manager maintains local instance inventory; Arketype catalogs structural types. The planned fleet aggregator is not yet implemented/qualified. Hosting topology is not generic semantic concept decoding. C0 tracks these contracts only; see [v10 alignment](../40-integration/kristal-v10-alignment/README.md).

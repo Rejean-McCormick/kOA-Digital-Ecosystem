@@ -24,7 +24,7 @@ This page maps important **cross-owner boundaries**. It does not duplicate owner
 
 ## Frozen knowledge-contract set
 
-The current cross-repository knowledge baseline is machine-readable in [`knowledge-projection-contract-set.json`](./knowledge-projection-contract-set.json). Human-readable ownership and release caveats are in [`knowledge-projection.md`](./knowledge-projection.md).
+The preserved historical cross-repository knowledge-projection baseline is machine-readable in [`knowledge-projection-contract-set.json`](./knowledge-projection-contract-set.json). Human-readable ownership and release caveats are in [`knowledge-projection.md`](./knowledge-projection.md).
 
 ## Qualified Konnaxion ↔ Orgo path
 
@@ -76,3 +76,19 @@ The following are **candidate or local-prototype boundaries only**; they do not 
 | Ékole Moodle plan → Moodle | Ékole | local_uckk candidate | Dry run only; no confirmed Moodle writes |
 
 [Full supplement](skope-ekole/index.md). Port convention: Ékole 8765/8766 and Skope **8767**; Ékole teacher and OpsConsole still share 8766 by default.
+
+## Kristal v10 cross-owner contract gate (2026-10-12)
+
+The table above preserves the historical v6/IK/UCKK rows. This newer **draft v10** coordination lane is **not** a replacement of the pinned `knowledge-projection-contract-set.json`.
+
+| Producer | Interface | Consumer | Qualification observed in supplied snapshots |
+|---|---|---|---|
+| Authoring Kit 3.2.4 | `kristal.github-read-surface/1.0` | Manager | Contract documented; live read/sync E2E pending |
+| Manager | `kristal.github-sync-manifest/1.0` | C3, Konstellation | Runtime absent from supplied Manager snapshot; pending |
+| Manager / GitHub collection | `kristal.github-collection-index/1.0` | Konstellation, Kompiler, Light | `kristal-public` index missing in supplied ZIP; BLOCKED |
+| C1 / KristalDiag | `kristal.c2-prepublic-qualification/0.1-candidate` | C2 / C3 | Candidate; independent exact-input proof unverified |
+| C2 / owner authorization | `kristal.c2-public-authorization/0.1-candidate` | Manager / Bootstrap / C3 | Candidate; no per-Kristal authorization inferred |
+| Manager local instance inventory | **Format to be agreed bilaterally** | Konstellation fleet viewer | **PROPOSED**, not an existing confirmed contract |
+| Arketype source catalogue | Design-only archetype metadata | Konstellation visual hints | **PROPOSED**, never semantics or state commitments |
+
+**No silent upgrade:** EncyK v2→Médiathèque and frozen EncyK v1→v6 knowledge routes retain separate consumer obligations. See the [v10 contract matrix](kristal-v10-alignment/contracts-and-versions.md).

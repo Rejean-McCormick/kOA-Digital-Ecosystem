@@ -1,10 +1,12 @@
 # kOA Digital Ecosystem
 
+> **Current coordination update (2026-10-12):** Kristal v10 hosting alignment is tracked separately from the **frozen historical v6 knowledge-projection contract set**. This repository coordinates contracts and ownership; it does not own semantic canon, publish Kristals, or activate runtimes. Start at [Kristal v10 alignment](docs/2-Technical-Reference/40-integration/kristal-v10-alignment/README.md) and the [2026-10-12 change report](docs/status/2026-10-12-kristal-v10-harmonization.md). The older "Current baselines" section below documents the previously pinned projection lane; it is **not** a statement that Kristal v6 is the newest Framework architecture.
+
 > Canonical system-of-systems map for kOA. This repository describes cross-system ownership, explicit integration contracts, release/activation boundaries and current maturity evidence. Product and platform repositories remain authoritative for their internal state, implementation and product-owned contracts.
 
-## Current baselines
+## Historical pinned knowledge-projection baseline (2026-10-01)
 
-- **Alignment:** 2026-10-01 current architecture.
+- **Historical projection alignment:** 2026-10-01 architecture; see the 2026-10-12 v10 coordination overlay.
 - **Knowledge-contract baseline:** Kristal Standard `6.0.0`, Referent Registry `1.0.0`, EncyKlopedia handoff `encyklopedia.corpus-harvest-handoff/1.0.0`, IK profiles `kristal.build.request/2.0.0` + `kristal.artifact.ready/2.0.0`, UCKK projection `uckk.univers-cite-projection/1.0.0`.
 - **Kristal standard identity:** v6 is pinned by its published standard-manifest SHA-256 and core contract digests; canonicalization is `kristal.v6:jcs-rfc8785`.
 - **kOA-Linux:** platform composition authority for profiles, admission, release channels and lifecycle; independent subsystem implementations remain owner-controlled.

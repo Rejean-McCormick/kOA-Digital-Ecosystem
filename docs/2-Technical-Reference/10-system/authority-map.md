@@ -88,3 +88,17 @@ This is an **interface coordination supplement**, not a reassignment of system a
 | Educational workspaces, pedagogy, site projections, preview/ops state | **Ékole** | No qualification or publication of Kristal v9/v10; no Moodle write without its owner bridge |
 
 See [integration supplement](../40-integration/skope-ekole/index.md). This records product-local ownership, not a new global control plane.
+
+## Updated C0 responsibilities — v10 and global navigation (2026-10-12)
+
+| Responsibility / decision | Owner | Boundary kept explicit |
+|---|---|---|
+| Local workspaces and local v9 builds/read surfaces | Authoring Kit | Does not grant public visibility or qualify truth |
+| Actual local Kristal instances and sync eligibility | Kristal Manager | Does not own domain canon or global visualization |
+| Independent C1 evidence | KristalDiag | Must concern the exact candidate/source revision |
+| GitHub admission, authorization and release gates | GitHub Bootstrap / C2/C3 | Approval must precede public write; sync != publication != activation |
+| Global Kristal fleet browser and selected-state conceptual navigation | **Konstellation** | Read-only, policy-first; unsupported semantic views remain unavailable |
+| Structural archetype and diagram patterns | **Arketype** | Descriptive hints only, not canonical or actual instance registry |
+| Historical registry crosswalk | **Kristal-Kollection** | Not a replacement for `kristal.github-collection-index/1.0` |
+
+[Detailed owner boundaries and gate register](../40-integration/kristal-v10-alignment/architecture.md).

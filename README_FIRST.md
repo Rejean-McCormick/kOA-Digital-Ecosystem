@@ -1,6 +1,6 @@
-# Proposed kOA Digital Ecosystem update — October 9, 2026
+# Historical inventory-update proposal — October 9, 2026
 
-**Prepared, not applied or pushed.** The paths in this ZIP are *relative to* the actual checkout:
+**Historical proposal status, not a live deployment assertion.** The paths in this ZIP are *relative to* the actual checkout:
 
 `C:\mycode\kOA_Digital_Ecosystem\kOA_Digital_Ecosystem`
 

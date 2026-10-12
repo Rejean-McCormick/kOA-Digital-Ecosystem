@@ -3,9 +3,12 @@ on:
   pull_request:
     paths:
       - 'docs/2-Technical-Reference/40-integration/orchestration-c0/**'
+      - 'docs/2-Technical-Reference/40-integration/kristal-v10-alignment/**'
       - 'docs/2-Technical-Reference/40-integration/knowledge-projection-contract-set.json'
       - 'docs/2-Technical-Reference/40-integration/contract-map.md'
       - 'docs/status/current.md'
+      - 'docs/2-Technical-Reference/10-system/architecture.md'
+      - 'docs/2-Technical-Reference/10-system/authority-map.md'
       - 'README.md'
       - 'docs/index.md'
       - 'scripts/validate_c0_coordination.py'

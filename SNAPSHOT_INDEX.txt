@@ -1,5 +1,5 @@
 ZmartZnap snapshot file index
-Files included: 190
+Files included: 198
 
 .gitattributes
 .github/workflows/c0-coordination.yml
@@ -15,6 +15,7 @@ docs/1-Overview/Components-Konnaxion-and-Malkuth.md
 docs/1-Overview/Components-Kristal-and-Daat.md
 docs/1-Overview/Components-Orgo.md
 docs/1-Overview/Components-SenTient.md
+docs/1-Overview/Components-Skope-and-Ekole.md
 docs/1-Overview/Components-SwarmCraft.md
 docs/1-Overview/Components.md
 docs/1-Overview/FAQ.md
@@ -121,6 +122,8 @@ docs/2-Technical-Reference/40-integration/orchestration-c0/source-evidence.md
 docs/2-Technical-Reference/40-integration/orchestration-c0/versions.json
 docs/2-Technical-Reference/40-integration/orgo-konnaxion/index.md
 docs/2-Technical-Reference/40-integration/orgo-konnaxion/uckk-a014-validation-2026-09-12.md
+docs/2-Technical-Reference/40-integration/skope-ekole/index.md
+docs/2-Technical-Reference/40-integration/skope-ekole/local-ports.md
 docs/2-Technical-Reference/50-operations/incident-response.md
 docs/2-Technical-Reference/50-operations/key-management.md
 docs/2-Technical-Reference/50-operations/pipeline.md
@@ -169,6 +172,8 @@ docs/3-Layer-Model/layers/13_deployment_translation.md
 docs/3-Layer-Model/README.md
 docs/generated/repository-corpus-2026-09-28.json
 docs/index.md
+docs/inventory/apps-skope-ekole.json
+docs/inventory/GITHUB_DESCRIPTIONS.md
 docs/inventory/README.md
 docs/inventory/repositories.json
 docs/inventory/repositories.md
@@ -184,12 +189,15 @@ Launch_MULTiSmartDump.lnk
 LICENSE
 README.md
 README_FIRST.md
+RELEASE_NOTES_SKOPE_EKOLE.md
+RELEASE_NOTES_SKOPE_SPLIT.md
 reports/GITHUB_PUBLIC_REPOS_66.csv
 reports/LEGACY_UNCONFIRMED.json
 reports/LOCAL_GIT_MARKERS_100.csv
 reports/RECONCILIATION_NOTES.md
 scripts/validate_c0_coordination.py
 tests/test_c0_coordination.py
+tests/test_skope_ekole_inventory.py
 ZmartZnap.pyw
 
 Index file: SNAPSHOT_INDEX.txt

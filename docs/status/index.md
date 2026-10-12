@@ -88,3 +88,5 @@ The following are retained only for compatibility/history:
 5. **Digital Ecosystem:** future updates should reference owner contracts rather than introduce new authority records when a product/platform already owns the state.
 
 - [2026-10-01 — Kristal v6 ecosystem migration](2026-10-01-kristal-v6-migration.md)
+
+- [2026-10-12 — Kristal v10 harmonization C0 change report](2026-10-12-kristal-v10-harmonization.md)

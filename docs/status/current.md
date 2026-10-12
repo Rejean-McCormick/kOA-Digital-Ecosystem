@@ -85,3 +85,19 @@ The qualified Konnaxion↔Orgo claims above remain in their existing scope. **Th
 | Ékole | Core/Élève/Enseignant views, 202 authoring stubs, derived pedagogical graph, local OpsConsole, candidate Moodle-plan | No qualified 202 v9 states, no published v10 releases or confirmed Moodle write; no integrated Skope consumer | Core/Élève `8765`; Enseignant **or** OpsConsole `8766` by default |
 
 The owner snapshots establish application features, not a qualified cross-product production deployment. [Evidence & contracts](../2-Technical-Reference/40-integration/skope-ekole/index.md).
+
+## Kristal hosted v10 harmonization — evidence review (2026-10-12)
+
+The earlier v6 table is a **frozen historical knowledge projection**, not a claim that Framework v6 is the latest release. Source snapshots identify Framework `10.0.0-draft.3.1` and Authoring Kit 3.2.4. They **do not establish end-to-end GitHub qualification**.
+
+| Workstream | Verified snapshot fact | Open gate / status |
+|---|---|---|
+| Framework / Kit | v10 draft.3.1 and Kit 3.2.4 described; tools validated locally in prior audit | Exact approved remote pins unresolved |
+| Manager / C2 | Manager files document sync/gating; snapshot lacks `kristal_manager` runtime | **BLOCKED** on complete checkout + authorized public gate |
+| GitHub collection / C3 | `kristal-public` has Zoology state but no collection index and required manifest/read surface | **BLOCKED**, staging E2E only |
+| Local workspaces | 126 distinct `state_ref` and 212 registered artifacts in snapshot | Per-workspace Kit/readiness review required |
+| Global navigator | Konstellation v10 host adapter and Kristal selector exist; seven isolated adapter tests passed | **PROPOSED** My Kristals fleet integration |
+| Templates | Arketype holds noncanonical structural types and neutral templates | Standalone software integration only; no publication authority |
+| Historical register | Kollection has legacy registry and UCKK stubs | Crosswalk before deprecation, no data deletion |
+
+Track the source facts and required receipts under the [C0 v10 readiness ledger](../2-Technical-Reference/40-integration/kristal-v10-alignment/readiness.md).

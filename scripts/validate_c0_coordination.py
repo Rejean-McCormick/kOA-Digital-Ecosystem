@@ -51,6 +51,74 @@ def validate(root=ROOT):
     for rel in ['README.md','docs/2-Technical-Reference/40-integration/contract-map.md','docs/status/current.md']:
         p=root/rel
         if not p.is_file() or 'orchestration-c0' not in p.read_text(encoding='utf-8'): issues.append('missing navigation link: '+rel)
+
+    # Separate, non-normative v10 workstream registry. It may not override the
+    # frozen v6 knowledge-projection contract set or fabricate release evidence.
+    v10path=root/'docs/2-Technical-Reference/40-integration/kristal-v10-alignment/workstreams.json'
+    try:
+        v10=json.loads(v10path.read_text(encoding='utf-8'))
+    except (OSError,ValueError) as exc:
+        issues.append(f'v10 workstreams: {exc}')
+        v10={}
+    if v10.get('format')!='koa.c0-kristal-v10-alignment/0.1-candidate':
+        issues.append('v10 workstreams: unexpected format')
+    if v10.get('authority')!='coordination_only_non_normative':
+        issues.append('v10 workstreams: incorrect authority')
+    if v10.get('no_implicit_publication_authorization') is not True:
+        issues.append('v10 workstreams: implicit publication is forbidden')
+    framework=v10.get('framework_baseline') or {}
+    if framework.get('version')!='10.0.0-draft.3.1' or framework.get('status')!='draft':
+        issues.append('v10 workstreams: invalid Framework draft baseline')
+    if framework.get('exact_commit')!='unverified' and not re.fullmatch('[a-f0-9]{40}',str(framework.get('exact_commit'))):
+        issues.append('v10 workstreams: invalid pinned Framework SHA')
+    if framework.get('contract_set_sha256')!='unverified' and not re.fullmatch('[a-f0-9]{64}',str(framework.get('contract_set_sha256'))):
+        issues.append('v10 workstreams: invalid contract-set SHA256')
+    entries=v10.get('entries') or []
+    ids=[]
+    for row in entries:
+        rid=row.get('id')
+        ids.append(rid)
+        if not isinstance(rid,str) or not re.fullmatch(r'[A-Z][A-Z0-9]*-\d\d',rid):
+            issues.append(f'v10 workstreams: invalid id {rid!r}')
+        if row.get('priority') not in ('P0','P1','P2','P3'):
+            issues.append(f'v10 workstreams: invalid priority {rid}')
+        if row.get('evidence_status') not in ('proposed','coordination_documented','observed_snapshot','blocked'):
+            issues.append(f'v10 workstreams: unsupported evidence status {rid}')
+        if row.get('implementation_status') not in ('not_verified','blocked','verified_local','qualified_integrated'):
+            issues.append(f'v10 workstreams: invalid implementation status {rid}')
+        if row.get('implementation_status')=='qualified_integrated' and row.get('remote_commit')=='unverified':
+            issues.append(f'v10 workstreams: unsupported qualified claim {rid}')
+        if row.get('remote_commit')!='unverified' and not re.fullmatch('[a-f0-9]{40}',str(row.get('remote_commit'))):
+            issues.append(f'v10 workstreams: invalid remote SHA {rid}')
+        for fld in ('owner_repository','summary','acceptance_gate'):
+            if not isinstance(row.get(fld),str) or not row[fld].strip():
+                issues.append(f'v10 workstreams: missing {fld} in {rid}')
+        if not isinstance(row.get('depends_on'),list):
+            issues.append(f'v10 workstreams: non-list dependencies for {rid}')
+    if len(ids)!=len(set(ids)) or len(ids)<20:
+        issues.append('v10 workstreams: duplicate IDs or incomplete coverage')
+    allids=set(ids)
+    for row in entries:
+        rid=row.get('id')
+        for dep in row.get('depends_on',[]):
+            if dep not in allids or dep==rid:
+                issues.append(f'v10 workstreams: invalid dependency {rid} -> {dep}')
+    # Reject recursive dependency cycles rather than accepting a plan that
+    # no owner could execute.
+    edges={r.get('id'):r.get('depends_on',[]) for r in entries}
+    marked=set(); active=set()
+    def visit(n):
+        if n in active:
+            issues.append(f'v10 workstreams: dependency cycle at {n}');return
+        if n in marked:return
+        active.add(n)
+        for dep in edges.get(n,[]):
+            if dep in edges:visit(dep)
+        active.remove(n);marked.add(n)
+    for rid in ids:
+        if rid in edges:visit(rid)
+    for required in ('C0-01','F-01','M-01','M-02','C3-01','C3-02','KNAV-01','KNAV-02','KNAV-03'):
+        if required not in allids: issues.append(f'v10 workstreams: required gate missing {required}')
     return issues
 
 if __name__=='__main__':

@@ -1,0 +1,335 @@
+{
+  "format": "koa.c0-kristal-v10-alignment/0.1-candidate",
+  "as_of": "2026-10-12",
+  "authority": "coordination_only_non_normative",
+  "source": "2026-10-12 cross-repository harmonization dossier and provided code snapshots",
+  "historical_projection_contract_set": "docs/2-Technical-Reference/40-integration/knowledge-projection-contract-set.json",
+  "framework_baseline": {
+    "version": "10.0.0-draft.3.1",
+    "status": "draft",
+    "exact_commit": "unverified",
+    "contract_set_sha256": "unverified"
+  },
+  "verified_implementation_status": "not_end_to_end_qualified",
+  "no_implicit_publication_authorization": true,
+  "entries": [
+    {
+      "id": "F-01",
+      "priority": "P0",
+      "owner_repository": "Kristal-Framework",
+      "summary": "Confirm the exact approved v10 draft.3.1 contract-set commit, compatibility lock and TCK.",
+      "depends_on": [
+        "C0-01"
+      ],
+      "evidence_status": "proposed",
+      "implementation_status": "not_verified",
+      "remote_commit": "unverified",
+      "acceptance_gate": "commit_and_contract_set_sha_verified"
+    },
+    {
+      "id": "A-01",
+      "priority": "P0",
+      "owner_repository": "Kristal-Authoring-Kit",
+      "summary": "Confirm Authoring Kit 3.2.4 read-surface output and independent contract validation.",
+      "depends_on": [
+        "F-01"
+      ],
+      "evidence_status": "proposed",
+      "implementation_status": "not_verified",
+      "remote_commit": "unverified",
+      "acceptance_gate": "read_surface_fixture_verifies"
+    },
+    {
+      "id": "D-01",
+      "priority": "P0",
+      "owner_repository": "KristalDiag",
+      "summary": "Verify independent C1 qualification and exact receipt scope against v10.",
+      "depends_on": [
+        "F-01"
+      ],
+      "evidence_status": "proposed",
+      "implementation_status": "not_verified",
+      "remote_commit": "unverified",
+      "acceptance_gate": "independent_exact_input_receipt_verifies"
+    },
+    {
+      "id": "B-01",
+      "priority": "P0",
+      "owner_repository": "Kristal-GitHub-Bootstrap",
+      "summary": "Reconcile GitHub Framework pins and managed-file fingerprint drift via plan/diff, not forced overwrite.",
+      "depends_on": [
+        "F-01"
+      ],
+      "evidence_status": "proposed",
+      "implementation_status": "not_verified",
+      "remote_commit": "unverified",
+      "acceptance_gate": "bootstrap_plan_no_unapproved_drift"
+    },
+    {
+      "id": "B-02",
+      "priority": "P0",
+      "owner_repository": "Kristal-GitHub-Bootstrap",
+      "summary": "Define and test C2 public sync/publish authorization, expiry, revocation, destination and file scope.",
+      "depends_on": [
+        "D-01"
+      ],
+      "evidence_status": "proposed",
+      "implementation_status": "not_verified",
+      "remote_commit": "unverified",
+      "acceptance_gate": "forged_expired_revoked_scope_blocked"
+    },
+    {
+      "id": "M-01",
+      "priority": "P0",
+      "owner_repository": "Kristal-Manager",
+      "summary": "Obtain the missing manager Python runtime in a complete checkout and execute its existing tests.",
+      "depends_on": [
+        "C0-01"
+      ],
+      "evidence_status": "proposed",
+      "implementation_status": "not_verified",
+      "remote_commit": "unverified",
+      "acceptance_gate": "manager_runtime_and_tests_available"
+    },
+    {
+      "id": "M-02",
+      "priority": "P0",
+      "owner_repository": "Kristal-Manager",
+      "summary": "Enforce C1/C2 before any public GitHub write, including sync, not only immutable publication.",
+      "depends_on": [
+        "M-01",
+        "B-02"
+      ],
+      "evidence_status": "proposed",
+      "implementation_status": "not_verified",
+      "remote_commit": "unverified",
+      "acceptance_gate": "unauthorized_public_write_blocked"
+    },
+    {
+      "id": "C3-01",
+      "priority": "P0",
+      "owner_repository": "kristal-public",
+      "summary": "Keep public release workflows fail-closed while the exact collection surface and grants are not qualified.",
+      "depends_on": [
+        "D-01",
+        "B-02"
+      ],
+      "evidence_status": "proposed",
+      "implementation_status": "not_verified",
+      "remote_commit": "unverified",
+      "acceptance_gate": "no_unguarded_public_release"
+    },
+    {
+      "id": "PVT-01",
+      "priority": "P0",
+      "owner_repository": "kristal-private",
+      "summary": "Obtain an authorized full checkout and inspect visibility/ACL; supplied dump was empty.",
+      "depends_on": [
+        "C0-01"
+      ],
+      "evidence_status": "proposed",
+      "implementation_status": "not_verified",
+      "remote_commit": "unverified",
+      "acceptance_gate": "private_repo_review_authorized"
+    },
+    {
+      "id": "L-01",
+      "priority": "P0",
+      "owner_repository": "locals",
+      "summary": "Inventory 126 local workspaces, tool versions, source paths, policy and state refs without canonical writes.",
+      "depends_on": [
+        "A-01"
+      ],
+      "evidence_status": "proposed",
+      "implementation_status": "not_verified",
+      "remote_commit": "unverified",
+      "acceptance_gate": "per_workspace_readiness_inventory"
+    },
+    {
+      "id": "C0-01",
+      "priority": "P0",
+      "owner_repository": "kOA_Digital_Ecosystem",
+      "summary": "Record owners, contract versions, evidence statuses, unresolved pins and no-implicit-publication policy.",
+      "depends_on": [],
+      "evidence_status": "coordination_documented",
+      "implementation_status": "not_verified",
+      "remote_commit": "unverified",
+      "acceptance_gate": "coordination_registry_validated"
+    },
+    {
+      "id": "M-03",
+      "priority": "P1",
+      "owner_repository": "Kristal-Manager",
+      "summary": "Derive exact sync manifest and collection index from ready Authoring Kit read surfaces in staging.",
+      "depends_on": [
+        "M-02",
+        "A-01"
+      ],
+      "evidence_status": "proposed",
+      "implementation_status": "not_verified",
+      "remote_commit": "unverified",
+      "acceptance_gate": "staging_index_manifest_integrity_pass"
+    },
+    {
+      "id": "C3-02",
+      "priority": "P1",
+      "owner_repository": "kristal-public",
+      "summary": "Create a correctly scoped test read surface, manifest and collection index using owner-generated inputs.",
+      "depends_on": [
+        "M-03",
+        "C3-01"
+      ],
+      "evidence_status": "proposed",
+      "implementation_status": "not_verified",
+      "remote_commit": "unverified",
+      "acceptance_gate": "c3_staging_validate_index_pass"
+    },
+    {
+      "id": "L-02",
+      "priority": "P1",
+      "owner_repository": "locals",
+      "summary": "On copies, compare embedded Kit 3.2.2/3.2.3 versus 3.2.4 without changing v9 commitments.",
+      "depends_on": [
+        "L-01",
+        "A-01"
+      ],
+      "evidence_status": "proposed",
+      "implementation_status": "not_verified",
+      "remote_commit": "unverified",
+      "acceptance_gate": "candidate_migration_has_semantic_diff_report"
+    },
+    {
+      "id": "AR-01",
+      "priority": "P1",
+      "owner_repository": "Arketype",
+      "summary": "Prepare an independent software repository with CI, wiki and no collection-publication credentials.",
+      "depends_on": [
+        "C0-01"
+      ],
+      "evidence_status": "proposed",
+      "implementation_status": "not_verified",
+      "remote_commit": "unverified",
+      "acceptance_gate": "software_repo_reviewed_and_ci_pass"
+    },
+    {
+      "id": "KOL-01",
+      "priority": "P1",
+      "owner_repository": "Kristal-Kollection",
+      "summary": "Produce a sourced legacy-to-local/hosted crosswalk; never equate 125 reported historical packages to 126 local instances.",
+      "depends_on": [
+        "L-01"
+      ],
+      "evidence_status": "proposed",
+      "implementation_status": "not_verified",
+      "remote_commit": "unverified",
+      "acceptance_gate": "all_aliases_evidenced_or_unresolved"
+    },
+    {
+      "id": "C5-01",
+      "priority": "P1",
+      "owner_repository": "Kompiler",
+      "summary": "Verify read-only v10 context adapter and provenance/coverage against exact source inputs.",
+      "depends_on": [
+        "C3-02"
+      ],
+      "evidence_status": "proposed",
+      "implementation_status": "not_verified",
+      "remote_commit": "unverified",
+      "acceptance_gate": "readonly_context_fixture_pass"
+    },
+    {
+      "id": "KNAV-01",
+      "priority": "P1",
+      "owner_repository": "Kristal-Manager",
+      "summary": "Offer safe read-only local instance registry metadata to Konstellation; no sensitive path leakage.",
+      "depends_on": [
+        "M-01"
+      ],
+      "evidence_status": "proposed",
+      "implementation_status": "not_verified",
+      "remote_commit": "unverified",
+      "acceptance_gate": "manager_local_registry_consumer_fixture"
+    },
+    {
+      "id": "KNAV-02",
+      "priority": "P1",
+      "owner_repository": "Konstellation",
+      "summary": "Add read-only fleet aggregation of authorized Manager instances and verified GitHub v10 collections.",
+      "depends_on": [
+        "KNAV-01"
+      ],
+      "evidence_status": "proposed",
+      "implementation_status": "not_verified",
+      "remote_commit": "unverified",
+      "acceptance_gate": "identity_and_source_scoped_fleet_view"
+    },
+    {
+      "id": "KNAV-03",
+      "priority": "P1",
+      "owner_repository": "Konstellation",
+      "summary": "Build My Kristals catalogue over existing Lens/Explorer; enter a selected Kristal and return with filters intact.",
+      "depends_on": [
+        "KNAV-02"
+      ],
+      "evidence_status": "proposed",
+      "implementation_status": "not_verified",
+      "remote_commit": "unverified",
+      "acceptance_gate": "user_navigation_e2e_pass"
+    },
+    {
+      "id": "KNAV-04",
+      "priority": "P2",
+      "owner_repository": "Konstellation",
+      "summary": "Use verified concept/read adapters where supported; label hosting topology vs semantic concepts and coverage.",
+      "depends_on": [
+        "KNAV-02",
+        "C5-01"
+      ],
+      "evidence_status": "proposed",
+      "implementation_status": "not_verified",
+      "remote_commit": "unverified",
+      "acceptance_gate": "no_misrepresented_semantic_structure"
+    },
+    {
+      "id": "AR-02",
+      "priority": "P2",
+      "owner_repository": "Arketype",
+      "summary": "Provide noncanonical archetype/pattern hints and optional read-only ecosystem compatibility diagnostics.",
+      "depends_on": [
+        "AR-01"
+      ],
+      "evidence_status": "proposed",
+      "implementation_status": "not_verified",
+      "remote_commit": "unverified",
+      "acceptance_gate": "patterns_are_explicit_not_inferred"
+    },
+    {
+      "id": "LIGHT-01",
+      "priority": "P2",
+      "owner_repository": "Konstellation-Light",
+      "summary": "Build public/static projections only from pinned and authorized qualified releases.",
+      "depends_on": [
+        "C3-02",
+        "B-02"
+      ],
+      "evidence_status": "proposed",
+      "implementation_status": "not_verified",
+      "remote_commit": "unverified",
+      "acceptance_gate": "unauthorized_public_site_rebuild_blocked"
+    },
+    {
+      "id": "KOL-02",
+      "priority": "P3",
+      "owner_repository": "Kristal-Kollection",
+      "summary": "Retire outdated operational registry functions only after documented crosswalk and consumer migration.",
+      "depends_on": [
+        "KOL-01",
+        "KNAV-03"
+      ],
+      "evidence_status": "proposed",
+      "implementation_status": "not_verified",
+      "remote_commit": "unverified",
+      "acceptance_gate": "legacy_archive_and_consumers_reconciled"
+    }
+  ]
+}

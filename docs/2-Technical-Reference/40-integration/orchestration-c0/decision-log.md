@@ -13,3 +13,12 @@
 | O-005 | **Open** | C5 | Current Integration Pack/Kompiler 0.8 compatibility after representative tests. |
 
 **Change control:** product owner acceptance is required before declaring a proposed owner interface normative or production qualified. Date is the coordination record's date, not a deployment timestamp.
+
+## Additional decisions / open items (2026-10-12)
+
+| Decision | Status | Authority | Summary |
+|---|---|---|---|
+| D-005 | **User decision (2026-10-12)** | User | Konstellation navigates across Kristals and their concepts; Manager supplies instance inventory; Arketype supplies archetypes/patterns. Integration work remains proposed. |
+| O-006 | **Open** | Framework + C0 | Pin exact v10 draft.3.1 source and contract set; current remote HEAD unknown. |
+| O-007 | **Open** | C1 + C2 + C3 | Authorize and qualify exact read surface before any public GitHub write. |
+| O-008 | **Open** | Manager + Konstellation | Confirm safe local-registry export and implement My Kristals without leaking private metadata. |

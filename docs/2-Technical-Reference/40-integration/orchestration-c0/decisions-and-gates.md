@@ -35,3 +35,7 @@ Activation = separate explicit decision; never inferred from publication.
 - Redacted/private source content reachable from a public artifact.
 
 **Current gate status for Zoology:** blocked for new public content. General policy decision is approved; *specific Zoology authorization and qualified release evidence remain pending*.
+
+## D-005 — Global navigation decision (2026-10-12)
+
+Konstellation is the sole Kristal fleet and in-Kristal navigator. Manager is the operational instance-inventory owner, Arketype the non-normative archetype/pattern library, and Kompiler a read-only context producer. Implementation has **not** been qualified and does not relax any C1/C2/C3 or Reader Policy gate. See [decisions and blockers](../kristal-v10-alignment/decisions.md).

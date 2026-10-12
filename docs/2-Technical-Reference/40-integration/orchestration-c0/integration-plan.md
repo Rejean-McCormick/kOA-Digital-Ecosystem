@@ -32,3 +32,9 @@ UNRESOLVED DECISIONS / APPROVAL NEEDED:
 C0 REGISTRY ROWS TO UPDATE:
 SAFE NEXT INTEGRATION:
 ```
+
+## Additional program lane — fleet navigation / harmonization
+
+`C0-01` → obtain exact owner commitments, complete Manager runtime, approve v10 pins. `KNAV-01` (Manager read-only inventory) → `KNAV-02` (Konstellation local + qualified GitHub fleet aggregation) → `KNAV-03` (My Kristals browsing/enter/return). `KNAV-04` (concept-level semantic adapter) requires Kompiler/semantic read contracts; `C3-02` is a prerequisite only for **hosted** entries, not a read-only local inventory pilot. Arketype contributes explicit noncanonical pattern hints, not a second instance registry.
+
+See [machine-readable v10 workstreams](../kristal-v10-alignment/workstreams.json) and [decision record](../kristal-v10-alignment/decisions.md). Existing C1–C6 release gates remain unchanged.

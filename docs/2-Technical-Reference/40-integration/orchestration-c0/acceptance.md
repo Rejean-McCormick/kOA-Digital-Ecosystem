@@ -19,3 +19,7 @@
 - Public repository snapshot currently contains Zoology **state only** and no `kristals/index.json` in the supplied copy; its root state is distinct and empty. Light still bundles `demo-v9-small`.
 
 Acceptance needs **results from the actual consuming and publishing interfaces**, not just a good-looking screenshot or a unit-test green badge.
+
+## Additional v10 navigation gate (2026-10-12)
+
+**A8: fleet navigation** — Konstellation can list **authorized** local instances via a Manager-provided read-only interface, keep private names/counts inaccessible to unauthorized users, distinguish local/hosted/unready/revision status, and enter/return from a selected Kristal. Until a fixture and browser E2E tests exist, **C0 cannot assert A8 passed**. Hosting-only v10 file topology is not generic semantic concept navigation.
