@@ -1,3 +1,7 @@
+> **Mise à jour opérationnelle GitSink — 17 octobre 2026, 22 h 39 :** `Kristal-Kollection` est `EXCLUDED` / `retired` ; pour `SenTient`, le push forcé reste une opération manuelle avec `--force-with-lease` et sauvegarde distante. Consulter [le guide opérationnel](docs/inventory/GITSINK_OPERATION_2026-10-17.md). Les 15 remotes publiques ont été validées par GitSink V8 avant cette édition.
+
+> **Mise à jour du 17 octobre 2026 :** les listes opérationnelles sont maintenant dans `docs/inventory/repositories.json`, `docs/inventory/repositories.md`, `reports/GITHUB_PUBLIC_REPOS_76.csv`, et `reports/LOCAL_GIT_SCAN_2026-10-17.csv`. Voir `UPDATE_REPOSITORIES_2026-10-17.md`. Les indications ci-dessous décrivent la proposition **historique** du 9 octobre, pas l'état courant.
+
 # Historical inventory-update proposal — October 9, 2026
 
 **Historical proposal status, not a live deployment assertion.** The paths in this ZIP are *relative to* the actual checkout:

@@ -1,5 +1,17 @@
 [
   {
+    "local_root": "C:\\mycode\\Ekole\\Akor\\Akor",
+    "github_repo": "Rejean-McCormick/Akor",
+    "github_url": "https://github.com/Rejean-McCormick/Akor",
+    "status": "github_and_local_remote_verified",
+    "description": null,
+    "source_docs_paths": [],
+    "note": "Dépôt confirmé sur GitHub et remote locale relevée dans le diagnostic RepoRadar.",
+    "scope": "PUBLIC",
+    "evidence": "2026-10-17 : liste GitHub connectée + diagnostic RepoRadar local; contrôle du chemin Windows à refaire avant utilisation",
+    "observed_remote": "https://github.com/Rejean-McCormick/Akor.git"
+  },
+  {
     "local_root": "C:\\mycode\\02-Experimental\\AmeArtificielle\\Ame-Artificielle",
     "github_repo": "Rejean-McCormick/Ame-Artificielle",
     "github_url": "https://github.com/Rejean-McCormick/Ame-Artificielle",
@@ -11,15 +23,28 @@
     "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check"
   },
   {
+    "local_root": "C:\\mycode\\Kristal\\Arketype\\arketype",
+    "github_repo": "Rejean-McCormick/Arketype",
+    "github_url": "https://github.com/Rejean-McCormick/Arketype",
+    "status": "github_and_local_remote_verified",
+    "description": null,
+    "source_docs_paths": [],
+    "note": "Dépôt confirmé sur GitHub et remote locale relevée dans le diagnostic RepoRadar.",
+    "scope": "PUBLIC",
+    "evidence": "2026-10-17 : liste GitHub connectée + diagnostic RepoRadar local; contrôle du chemin Windows à refaire avant utilisation",
+    "observed_remote": "https://github.com/Rejean-McCormick/Arketype.git"
+  },
+  {
     "local_root": "C:\\mycode\\01-Text_Based_Git\\Civilisational_Coherence",
     "github_repo": "Rejean-McCormick/Book-Civilizational-Coherence",
     "github_url": "https://github.com/Rejean-McCormick/Book-Civilizational-Coherence",
     "status": "local_git_marker_seen",
     "description": null,
     "source_docs_paths": [],
-    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote.",
+    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote. | 2026-10-17: ancienne URL origin dans le diagnostic local; utiliser strictement https://github.com/Rejean-McCormick/Book-Civilizational-Coherence.git après vérification de l’identité. Aucune redirection ne fait preuve de conformité. | 2026-10-17 22:31 (heure du journal) : Runner GitSink V8, après alignement local contrôlé, a confirmé PRET en simulation; la remote historique conservée dans observed_remote reste une observation datée, pas la remote actuelle.",
     "scope": "PUBLIC",
-    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check"
+    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check",
+    "observed_remote": "https://github.com/Rejean-McCormick/Book-Civilizational_Coherence.git"
   },
   {
     "local_root": "C:\\mycode\\01-Text_Based_Git\\Colin_Row",
@@ -28,9 +53,46 @@
     "status": "local_git_marker_seen",
     "description": null,
     "source_docs_paths": [],
-    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote.",
+    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote. | 2026-10-17: ancienne URL origin dans le diagnostic local; utiliser strictement https://github.com/Rejean-McCormick/Book-Colin-Row.git après vérification de l’identité. Aucune redirection ne fait preuve de conformité. | 2026-10-17 22:31 (heure du journal) : Runner GitSink V8, après alignement local contrôlé, a confirmé PRET en simulation; la remote historique conservée dans observed_remote reste une observation datée, pas la remote actuelle.",
     "scope": "PUBLIC",
-    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check"
+    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check",
+    "observed_remote": "https://github.com/Rejean-McCormick/Book-Colin_Row.git"
+  },
+  {
+    "local_root": "C:\\mycode\\Interaction-Kernel\\Daat",
+    "github_repo": "Rejean-McCormick/Daat",
+    "github_url": "https://github.com/Rejean-McCormick/Daat",
+    "status": "github_and_local_remote_verified",
+    "description": null,
+    "source_docs_paths": [],
+    "note": "Dépôt confirmé sur GitHub et remote locale relevée dans le diagnostic RepoRadar.",
+    "scope": "PUBLIC",
+    "evidence": "2026-10-17 : liste GitHub connectée + diagnostic RepoRadar local; contrôle du chemin Windows à refaire avant utilisation",
+    "observed_remote": "https://github.com/Rejean-McCormick/Daat.git"
+  },
+  {
+    "local_root": "C:\\mycode\\Ekole\\ekole",
+    "github_repo": "Rejean-McCormick/Ekole",
+    "github_url": "https://github.com/Rejean-McCormick/Ekole",
+    "status": "github_and_local_remote_verified",
+    "description": null,
+    "source_docs_paths": [],
+    "note": "Dépôt confirmé sur GitHub et remote locale relevée dans le diagnostic RepoRadar.",
+    "scope": "PUBLIC",
+    "evidence": "2026-10-17 : liste GitHub connectée + diagnostic RepoRadar local; contrôle du chemin Windows à refaire avant utilisation",
+    "observed_remote": "https://github.com/Rejean-McCormick/Ekole.git"
+  },
+  {
+    "local_root": "C:\\mycode\\Ekole\\ecole-pastorale",
+    "github_repo": "Rejean-McCormick/Ekole-Pastorale",
+    "github_url": "https://github.com/Rejean-McCormick/Ekole-Pastorale",
+    "status": "github_and_local_remote_verified",
+    "description": null,
+    "source_docs_paths": [],
+    "note": "Dépôt confirmé sur GitHub et remote locale relevée dans le diagnostic RepoRadar.",
+    "scope": "PUBLIC",
+    "evidence": "2026-10-17 : liste GitHub connectée + diagnostic RepoRadar local; contrôle du chemin Windows à refaire avant utilisation",
+    "observed_remote": "https://github.com/Rejean-McCormick/Ekole-Pastorale.git"
   },
   {
     "local_root": "C:\\mycode\\EncyKlopedia\\EncyKlopedia",
@@ -52,9 +114,10 @@
     "status": "local_git_marker_seen",
     "description": null,
     "source_docs_paths": [],
-    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote.",
+    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote. | 2026-10-17: ancienne URL origin dans le diagnostic local; utiliser strictement https://github.com/Rejean-McCormick/Freeze-Vote-Rebuild-Operational-Peace-Framework.git après vérification de l’identité. Aucune redirection ne fait preuve de conformité. | 2026-10-17 22:31 (heure du journal) : Runner GitSink V8, après alignement local contrôlé, a confirmé PRET en simulation; la remote historique conservée dans observed_remote reste une observation datée, pas la remote actuelle.",
     "scope": "PUBLIC",
-    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check"
+    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check",
+    "observed_remote": "https://github.com/Rejean-McCormick/Freeze-Vote-Rebuild_Operational-Peace-Framework.git"
   },
   {
     "local_root": "C:\\mycode\\Grammatical_Framework\\Grammatical_Framework-Albanian",
@@ -88,9 +151,10 @@
     "status": "local_git_marker_seen",
     "description": null,
     "source_docs_paths": [],
-    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote.",
+    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote. | 2026-10-17: ancienne URL origin dans le diagnostic local; utiliser strictement https://github.com/Rejean-McCormick/HELLO-WORLD-Autopsie-d-un-Clown-Royal.git après vérification de l’identité. Aucune redirection ne fait preuve de conformité. | 2026-10-17 22:31 (heure du journal) : Runner GitSink V8, après alignement local contrôlé, a confirmé PRET en simulation; la remote historique conservée dans observed_remote reste une observation datée, pas la remote actuelle.",
     "scope": "PUBLIC",
-    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check"
+    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check",
+    "observed_remote": "https://github.com/Rejean-McCormick/HELLO-WORLD---Autopsie-d-un-Clown-Royal.git"
   },
   {
     "local_root": "C:\\mycode\\HomePage\\HomePage",
@@ -99,9 +163,10 @@
     "status": "local_git_marker_seen",
     "description": null,
     "source_docs_paths": [],
-    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote.",
+    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote. | 2026-10-17: ancienne URL origin dans le diagnostic local; utiliser strictement https://github.com/Rejean-McCormick/HomePage-initkoa.org.git après vérification de l’identité. Aucune redirection ne fait preuve de conformité. | 2026-10-17 22:31 (heure du journal) : Runner GitSink V8, après alignement local contrôlé, a confirmé PRET en simulation; la remote historique conservée dans observed_remote reste une observation datée, pas la remote actuelle.",
     "scope": "PUBLIC",
-    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check"
+    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check",
+    "observed_remote": "https://github.com/Rejean-McCormick/HomePage"
   },
   {
     "local_root": "C:\\mycode\\HomePage\\docs-initkoa-org",
@@ -148,10 +213,11 @@
     "source_docs_paths": [
       "C:\\mycode\\kOA_Digital_Ecosystem\\kOA_Digital_Ecosystem\\docs"
     ],
-    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote. Documentation subpaths were rebased from old records; not verified on the Windows filesystem. Stale local_root corrected from previous kOA inventory: C:\\mycode\\kOA\\kOA_Digital_Ecosystem",
+    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote. Documentation subpaths were rebased from old records; not verified on the Windows filesystem. Stale local_root corrected from previous kOA inventory: C:\\mycode\\kOA\\kOA_Digital_Ecosystem | 2026-10-17: ancienne URL origin dans le diagnostic local; utiliser strictement https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem.git après vérification de l’identité. Aucune redirection ne fait preuve de conformité. | 2026-10-17 22:31 (heure du journal) : Runner GitSink V8, après alignement local contrôlé, a confirmé PRET en simulation; la remote historique conservée dans observed_remote reste une observation datée, pas la remote actuelle.",
     "scope": "PUBLIC",
     "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check",
-    "previous_local_root": "C:\\mycode\\kOA\\kOA_Digital_Ecosystem"
+    "previous_local_root": "C:\\mycode\\kOA\\kOA_Digital_Ecosystem",
+    "observed_remote": "https://github.com/Rejean-McCormick/kOA_Digital_Ecosystem.git"
   },
   {
     "local_root": "C:\\mycode\\kOA-Linux\\koa-linux",
@@ -162,9 +228,10 @@
     "source_docs_paths": [
       "C:\\mycode\\kOA-Linux\\koa-linux\\docs"
     ],
-    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote. Documentation subpaths were rebased from old records; not verified on the Windows filesystem.",
+    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote. Documentation subpaths were rebased from old records; not verified on the Windows filesystem. | 2026-10-17: ancienne URL origin dans le diagnostic local; utiliser strictement https://github.com/Rejean-McCormick/kOA-Linux-Koali.git après vérification de l’identité. Aucune redirection ne fait preuve de conformité. | 2026-10-17 22:31 (heure du journal) : Runner GitSink V8, après alignement local contrôlé, a confirmé PRET en simulation; la remote historique conservée dans observed_remote reste une observation datée, pas la remote actuelle.",
     "scope": "PUBLIC",
-    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check"
+    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check",
+    "observed_remote": "https://github.com/Rejean-McCormick/kOA-Linux.git"
   },
   {
     "local_root": "C:\\mycode\\01-Text_Based_Git\\kOA-Obama",
@@ -199,9 +266,10 @@
     "source_docs_paths": [
       "C:\\mycode\\kOA-Linux\\Koali_Scenario_Mosaic\\docs"
     ],
-    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote. Documentation subpaths were rebased from old records; not verified on the Windows filesystem.",
+    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote. Documentation subpaths were rebased from old records; not verified on the Windows filesystem. | 2026-10-17: ancienne URL origin dans le diagnostic local; utiliser strictement https://github.com/Rejean-McCormick/Koali-Scenario-Mosaic.git après vérification de l’identité. Aucune redirection ne fait preuve de conformité. | 2026-10-17 22:31 (heure du journal) : Runner GitSink V8, après alignement local contrôlé, a confirmé PRET en simulation; la remote historique conservée dans observed_remote reste une observation datée, pas la remote actuelle.",
     "scope": "PUBLIC",
-    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check"
+    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check",
+    "observed_remote": "https://github.com/Rejean-McCormick/Koali_use_mosaic.git"
   },
   {
     "local_root": "C:\\mycode\\kOA-Linux\\koali-spaces",
@@ -226,6 +294,17 @@
     "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote.",
     "scope": "PUBLIC",
     "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check"
+  },
+  {
+    "local_root": "C:\\mycode\\Ekole\\Kompose\\kompose",
+    "github_repo": "Rejean-McCormick/Kompose",
+    "github_url": "https://github.com/Rejean-McCormick/Kompose",
+    "status": "github_verified_local_remote_unverified",
+    "description": null,
+    "source_docs_paths": [],
+    "note": "Dépôt confirmé sur GitHub et dossier local vu par RepoRadar, MAIS aucune remote lisible. Lier et vérifier manuellement avant tout push.",
+    "scope": "PUBLIC",
+    "evidence": "2026-10-17 : liste GitHub connectée + diagnostic RepoRadar local; contrôle du chemin Windows à refaire avant utilisation"
   },
   {
     "local_root": "C:\\mycode\\Konductor\\Konductor",
@@ -285,9 +364,10 @@
     "source_docs_paths": [
       "C:\\mycode\\Konnaxion\\Konnaxion_Capsule_Manager\\docs"
     ],
-    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote. Documentation subpaths were rebased from old records; not verified on the Windows filesystem.",
+    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote. Documentation subpaths were rebased from old records; not verified on the Windows filesystem. | 2026-10-17: ancienne URL origin dans le diagnostic local; utiliser strictement https://github.com/Rejean-McCormick/Konnaxion-Capsule-Manager.git après vérification de l’identité. Aucune redirection ne fait preuve de conformité. | 2026-10-17 22:31 (heure du journal) : Runner GitSink V8, après alignement local contrôlé, a confirmé PRET en simulation; la remote historique conservée dans observed_remote reste une observation datée, pas la remote actuelle.",
     "scope": "PUBLIC",
-    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check"
+    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check",
+    "observed_remote": "https://github.com/Rejean-McCormick/Konnaxion_Capsule_Manager.git"
   },
   {
     "local_root": null,
@@ -320,9 +400,10 @@
     "source_docs_paths": [
       "C:\\mycode\\Konnaxion\\Konnaxion_Worlds\\docs"
     ],
-    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote. Documentation subpaths were rebased from old records; not verified on the Windows filesystem.",
+    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote. Documentation subpaths were rebased from old records; not verified on the Windows filesystem. | 2026-10-17: ancienne URL origin dans le diagnostic local; utiliser strictement https://github.com/Rejean-McCormick/Konnaxion-Worlds.git après vérification de l’identité. Aucune redirection ne fait preuve de conformité. | 2026-10-17 22:31 (heure du journal) : Runner GitSink V8, après alignement local contrôlé, a confirmé PRET en simulation; la remote historique conservée dans observed_remote reste une observation datée, pas la remote actuelle.",
     "scope": "PUBLIC",
-    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check"
+    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check",
+    "observed_remote": "https://github.com/Rejean-McCormick/Konnaxion_Worlds.git"
   },
   {
     "local_root": "C:\\mycode\\Konnaxion\\KonnaxionDiag",
@@ -360,6 +441,29 @@
     "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check"
   },
   {
+    "local_root": "C:\\mycode\\Kristal\\Kontainer",
+    "github_repo": "Rejean-McCormick/Kontainer",
+    "github_url": "https://github.com/Rejean-McCormick/Kontainer",
+    "status": "github_and_local_remote_verified",
+    "description": null,
+    "source_docs_paths": [],
+    "note": "Dépôt confirmé sur GitHub et remote locale relevée dans le diagnostic RepoRadar.",
+    "scope": "PUBLIC",
+    "evidence": "2026-10-17 : liste GitHub connectée + diagnostic RepoRadar local; contrôle du chemin Windows à refaire avant utilisation",
+    "observed_remote": "https://github.com/Rejean-McCormick/Kontainer.git"
+  },
+  {
+    "local_root": "C:\\mycode\\Ekole\\Kontexte\\Kontexte",
+    "github_repo": "Rejean-McCormick/Kontexte",
+    "github_url": "https://github.com/Rejean-McCormick/Kontexte",
+    "status": "github_verified_local_remote_unverified",
+    "description": null,
+    "source_docs_paths": [],
+    "note": "Dépôt confirmé sur GitHub et dossier local vu par RepoRadar, MAIS aucune remote lisible. Lier et vérifier manuellement avant tout push.",
+    "scope": "PUBLIC",
+    "evidence": "2026-10-17 : liste GitHub connectée + diagnostic RepoRadar local; contrôle du chemin Windows à refaire avant utilisation"
+  },
+  {
     "local_root": "C:\\mycode\\Kristal\\Kristal-Authoring-Kit",
     "github_repo": "Rejean-McCormick/Kristal-Authoring-Kit",
     "github_url": "https://github.com/Rejean-McCormick/Kristal-Authoring-Kit",
@@ -379,9 +483,10 @@
     "source_docs_paths": [
       "C:\\mycode\\01-Text_Based_Git\\Kristal_Farms\\kristal-farms\\docs"
     ],
-    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote. Documentation subpaths were rebased from old records; not verified on the Windows filesystem.",
+    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote. Documentation subpaths were rebased from old records; not verified on the Windows filesystem. | 2026-10-17: ancienne URL origin dans le diagnostic local; utiliser strictement https://github.com/Rejean-McCormick/Kristal-Farms.git après vérification de l’identité. Aucune redirection ne fait preuve de conformité. | 2026-10-17 22:31 (heure du journal) : Runner GitSink V8, après alignement local contrôlé, a confirmé PRET en simulation; la remote historique conservée dans observed_remote reste une observation datée, pas la remote actuelle.",
     "scope": "PUBLIC",
-    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check"
+    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check",
+    "observed_remote": "https://github.com/Rejean-McCormick/Kristal_Farms.git"
   },
   {
     "local_root": "C:\\mycode\\Kristal\\Kristal-Framework",
@@ -411,12 +516,13 @@
     "local_root": "C:\\mycode\\Kristal\\Kristal-Kollection",
     "github_repo": "Rejean-McCormick/Kristal-Kollection",
     "github_url": "https://github.com/Rejean-McCormick/Kristal-Kollection",
-    "status": "local_git_marker_seen",
+    "status": "retired",
     "description": null,
     "source_docs_paths": [],
-    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote.",
-    "scope": "PUBLIC",
-    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check"
+    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote. | 2026-10-17 : décision utilisateur — projet Kristal-Kollection retiré du périmètre de synchronisation GitSink. Ne pas exécuter GitSink.bat ni pousser ce checkout; conservation de l’entrée pour traçabilité. Ne préjuge pas de sa présence publique sur GitHub ou de son état actuel sur disque.",
+    "scope": "EXCLUDED",
+    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check",
+    "retirement_decision": "2026-10-17: exclude_from_gitsink_by_user"
   },
   {
     "local_root": "C:\\mycode\\Kristal\\Kristal-Manager",
@@ -621,9 +727,10 @@
       "C:\\mycode\\Orgo\\Orgo_Worlds\\docs",
       "C:\\mycode\\Orgo\\Orgo_Worlds\\world-packs\\uckk-a014\\docs"
     ],
-    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote. Documentation subpaths were rebased from old records; not verified on the Windows filesystem.",
+    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote. Documentation subpaths were rebased from old records; not verified on the Windows filesystem. | 2026-10-17: ancienne URL origin dans le diagnostic local; utiliser strictement https://github.com/Rejean-McCormick/Orgo-Worlds.git après vérification de l’identité. Aucune redirection ne fait preuve de conformité. | 2026-10-17 22:31 (heure du journal) : Runner GitSink V8, après alignement local contrôlé, a confirmé PRET en simulation; la remote historique conservée dans observed_remote reste une observation datée, pas la remote actuelle.",
     "scope": "PUBLIC",
-    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check"
+    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check",
+    "observed_remote": "https://github.com/Rejean-McCormick/Orgo_Worlds.git"
   },
   {
     "local_root": null,
@@ -643,9 +750,10 @@
     "status": "local_git_marker_seen",
     "description": null,
     "source_docs_paths": [],
-    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote.",
+    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote. | 2026-10-17: ancienne URL origin dans le diagnostic local; utiliser strictement https://github.com/Rejean-McCormick/Partners-for-Public-Good-Pressure-Test-Koali.git après vérification de l’identité. Aucune redirection ne fait preuve de conformité. | 2026-10-17 22:31 (heure du journal) : Runner GitSink V8, après alignement local contrôlé, a confirmé PRET en simulation; la remote historique conservée dans observed_remote reste une observation datée, pas la remote actuelle.",
     "scope": "PUBLIC",
-    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check"
+    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check",
+    "observed_remote": "https://github.com/Rejean-McCormick/partners-for-public-good_pressure-test-koali.git"
   },
   {
     "local_root": "C:\\mycode\\01-Text_Based_Git\\Pi-theory\\Pi_Theory",
@@ -676,9 +784,10 @@
     "status": "local_git_marker_seen",
     "description": null,
     "source_docs_paths": [],
-    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote.",
+    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote. | 2026-10-17: ancienne URL origin dans le diagnostic local; utiliser strictement https://github.com/Rejean-McCormick/Projet-ORPHEE-Walk-Straight.git après vérification de l’identité. Aucune redirection ne fait preuve de conformité. | 2026-10-17 22:31 (heure du journal) : Runner GitSink V8, après alignement local contrôlé, a confirmé PRET en simulation; la remote historique conservée dans observed_remote reste une observation datée, pas la remote actuelle.",
     "scope": "PUBLIC",
-    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check"
+    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check",
+    "observed_remote": "https://github.com/Rejean-McCormick/Projet_ORPHEE-Walk_Straight.git"
   },
   {
     "local_root": "C:\\mycode\\Rejean_McCormick-OrganisationGit\\Rejean-McCormick",
@@ -737,9 +846,34 @@
     "source_docs_paths": [
       "C:\\mycode\\SenTient\\SenTient\\Docs"
     ],
-    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote. Documentation subpaths were rebased from old records; not verified on the Windows filesystem.",
+    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote. Documentation subpaths were rebased from old records; not verified on the Windows filesystem. | 2026-10-17 : dernier push GitSink refusé (remote main en avance / non-fast-forward). Utilisateur autorise un remplacement manuel de main par la branche locale, uniquement après sauvegarde de la référence distante et avec --force-with-lease explicite. Voir docs/inventory/GITSINK_OPERATION_2026-10-17.md. Ce registre ne déclenche aucun push forcé et le Runner conserve son comportement normal.",
     "scope": "PUBLIC",
-    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check"
+    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check",
+    "push_recovery": "manual_force_with_lease_authorized_not_executed"
+  },
+  {
+    "local_root": "C:\\mycode\\Skope\\Skope",
+    "github_repo": "Rejean-McCormick/Skope",
+    "github_url": "https://github.com/Rejean-McCormick/Skope",
+    "status": "github_and_local_remote_verified",
+    "description": null,
+    "source_docs_paths": [],
+    "note": "Dépôt confirmé sur GitHub et remote locale relevée dans le diagnostic RepoRadar.",
+    "scope": "PUBLIC",
+    "evidence": "2026-10-17 : liste GitHub connectée + diagnostic RepoRadar local; contrôle du chemin Windows à refaire avant utilisation",
+    "observed_remote": "https://github.com/Rejean-McCormick/Skope.git"
+  },
+  {
+    "local_root": "C:\\mycode\\Spek_Semantic-publishing\\Spek",
+    "github_repo": "Rejean-McCormick/Spek",
+    "github_url": "https://github.com/Rejean-McCormick/Spek",
+    "status": "github_and_local_remote_verified",
+    "description": null,
+    "source_docs_paths": [],
+    "note": "Dépôt confirmé sur GitHub et remote locale relevée dans le diagnostic RepoRadar.",
+    "scope": "PUBLIC",
+    "evidence": "2026-10-17 : liste GitHub connectée + diagnostic RepoRadar local; contrôle du chemin Windows à refaire avant utilisation",
+    "observed_remote": "https://github.com/Rejean-McCormick/Spek.git"
   },
   {
     "local_root": null,
@@ -761,9 +895,10 @@
     "status": "local_git_marker_seen",
     "description": null,
     "source_docs_paths": [],
-    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote.",
+    "note": "Folder with .git marker seen in user-supplied depth-5 tree; repository association is from earlier GitSink inventory, not verified here by remote. | 2026-10-17: ancienne URL origin dans le diagnostic local; utiliser strictement https://github.com/Rejean-McCormick/UCKK-Assets.git après vérification de l’identité. Aucune redirection ne fait preuve de conformité. | 2026-10-17 22:31 (heure du journal) : Runner GitSink V8, après alignement local contrôlé, a confirmé PRET en simulation; la remote historique conservée dans observed_remote reste une observation datée, pas la remote actuelle.",
     "scope": "PUBLIC",
-    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check"
+    "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check",
+    "observed_remote": "https://github.com/Rejean-McCormick/UCKK_Assets.git"
   },
   {
     "local_root": "C:\\mycode\\UCKK\\UCKK_ops_console",
@@ -828,69 +963,76 @@
   },
   {
     "local_root": "C:\\mycode\\01-Text_Based_Git\\King_Klown\\king-klown-canon.wiki",
-    "github_repo": "Rejean-McCormick/king-klown-canon.wiki",
-    "github_url": "https://github.com/Rejean-McCormick/king-klown-canon.wiki",
+    "github_repo": "Rejean-McCormick/King-Klown-Canon.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/King-Klown-Canon/wiki",
     "status": "local_git_marker_seen",
     "description": null,
     "source_docs_paths": [],
-    "note": "Detected in both the newest [GIT] tree and earlier GitSink inventory.",
+    "note": "Detected in both the newest [GIT] tree and earlier GitSink inventory. | 2026-10-17: nom wiki basé sur le dépôt parent GitHub actuel ; remote Windows à valider/aligner, aucune redirection autorisée.",
     "scope": "LOCAL_OR_OTHER",
-    "evidence": "user-supplied tree + prior GitSink inventory"
+    "evidence": "user-supplied tree + prior GitSink inventory",
+    "github_clone_url": "https://github.com/Rejean-McCormick/King-Klown-Canon.wiki.git"
   },
   {
     "local_root": "C:\\mycode\\01-Text_Based_Git\\Kristal_Farms\\Kristal_Farms.wiki",
-    "github_repo": "Rejean-McCormick/Kristal_Farms.wiki",
-    "github_url": "https://github.com/Rejean-McCormick/Kristal_Farms.wiki",
-    "status": "local_git_marker_seen",
+    "github_repo": "Rejean-McCormick/Kristal-Farms.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/Kristal-Farms/wiki",
+    "status": "remote_alignment_required",
     "description": null,
     "source_docs_paths": [],
-    "note": "Detected in both the newest [GIT] tree and earlier GitSink inventory.",
+    "note": "Detected in both the newest [GIT] tree and earlier GitSink inventory. | 2026-10-17: nom wiki basé sur le dépôt parent GitHub actuel ; remote Windows à valider/aligner, aucune redirection autorisée. | 2026-10-17: remote Wiki observée différente du clone URL canonique, à corriger manuellement.",
     "scope": "LOCAL_OR_OTHER",
-    "evidence": "user-supplied tree + prior GitSink inventory"
+    "evidence": "user-supplied tree + prior GitSink inventory",
+    "github_clone_url": "https://github.com/Rejean-McCormick/Kristal-Farms.wiki.git",
+    "observed_remote": "https://github.com/Rejean-McCormick/Kristal_Farms.wiki.git"
   },
   {
     "local_root": "C:\\mycode\\01-Text_Based_Git\\Pi-theory\\Pi-Theory.wiki",
     "github_repo": "Rejean-McCormick/Pi-Theory.wiki",
-    "github_url": "https://github.com/Rejean-McCormick/Pi-Theory.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/Pi-Theory/wiki",
     "status": "local_git_marker_seen",
     "description": null,
     "source_docs_paths": [],
     "note": "Detected in both the newest [GIT] tree and earlier GitSink inventory.",
     "scope": "LOCAL_OR_OTHER",
-    "evidence": "user-supplied tree + prior GitSink inventory"
+    "evidence": "user-supplied tree + prior GitSink inventory",
+    "github_clone_url": "https://github.com/Rejean-McCormick/Pi-Theory.wiki.git"
   },
   {
     "local_root": "C:\\mycode\\01-Text_Based_Git\\Power_Dynamics\\Power-Dynamics.wiki",
     "github_repo": "Rejean-McCormick/Power-Dynamics.wiki",
-    "github_url": "https://github.com/Rejean-McCormick/Power-Dynamics.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/Power-Dynamics/wiki",
     "status": "local_git_marker_seen",
     "description": null,
     "source_docs_paths": [],
     "note": "Detected in both the newest [GIT] tree and earlier GitSink inventory.",
     "scope": "LOCAL_OR_OTHER",
-    "evidence": "user-supplied tree + prior GitSink inventory"
+    "evidence": "user-supplied tree + prior GitSink inventory",
+    "github_clone_url": "https://github.com/Rejean-McCormick/Power-Dynamics.wiki.git"
   },
   {
     "local_root": "C:\\mycode\\01-Text_Based_Git\\Science_Silk_Road\\science-silk-road-koali.wiki",
-    "github_repo": "Rejean-McCormick/science-silk-road-koali.wiki",
-    "github_url": "https://github.com/Rejean-McCormick/science-silk-road-koali.wiki",
+    "github_repo": "Rejean-McCormick/Science-Silk-Road-Koali.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/Science-Silk-Road-Koali/wiki",
     "status": "local_git_marker_seen",
     "description": null,
     "source_docs_paths": [],
-    "note": "Detected in both the newest [GIT] tree and earlier GitSink inventory.",
+    "note": "Detected in both the newest [GIT] tree and earlier GitSink inventory. | 2026-10-17: nom wiki basé sur le dépôt parent GitHub actuel ; remote Windows à valider/aligner, aucune redirection autorisée.",
     "scope": "LOCAL_OR_OTHER",
-    "evidence": "user-supplied tree + prior GitSink inventory"
+    "evidence": "user-supplied tree + prior GitSink inventory",
+    "github_clone_url": "https://github.com/Rejean-McCormick/Science-Silk-Road-Koali.wiki.git"
   },
   {
     "local_root": "C:\\mycode\\02-Experimental\\AmeArtificielle\\Ame-Artificielle.wiki",
     "github_repo": "Rejean-McCormick/Ame-Artificielle.wiki",
-    "github_url": "https://github.com/Rejean-McCormick/Ame-Artificielle.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/Ame-Artificielle/wiki",
     "status": "local_git_marker_seen",
     "description": null,
     "source_docs_paths": [],
     "note": "Detected in both the newest [GIT] tree and earlier GitSink inventory.",
     "scope": "LOCAL_OR_OTHER",
-    "evidence": "user-supplied tree + prior GitSink inventory"
+    "evidence": "user-supplied tree + prior GitSink inventory",
+    "github_clone_url": "https://github.com/Rejean-McCormick/Ame-Artificielle.wiki.git"
   },
   {
     "local_root": "C:\\mycode\\02-Experimental\\Astro-App\\astro_app",
@@ -915,20 +1057,21 @@
     "evidence": "user-supplied tree + prior GitSink inventory"
   },
   {
-    "local_root": "C:\\mycode\\02-Experimental\\Voxtral_Audiobook_Studio\\Voxtral_Audiobook_Studio",
-    "github_repo": "Rejean-McCormick/Voxtral-Audiobook-Studio",
-    "github_url": "https://github.com/Rejean-McCormick/Voxtral-Audiobook-Studio",
+    "local_root": "C:\\mycode\\02-Experimental\\MathChallenges\\math",
+    "github_repo": "openai/math",
+    "github_url": "https://github.com/openai/math",
     "status": "local_git_marker_seen",
     "description": null,
     "source_docs_paths": [],
-    "note": "Detected in both the newest [GIT] tree and earlier GitSink inventory.",
+    "note": "Scan RepoRadar du 17 octobre 2026. Clone externe (openai/math), hors des 76 dépôts du compte Rejean-McCormick. Ne confère aucune autorisation de synchronisation GitSink.",
     "scope": "LOCAL_OR_OTHER",
-    "evidence": "user-supplied tree + prior GitSink inventory"
+    "evidence": "2026-10-17 : diagnostic CSV RepoRadar transmis, chemin et remote lus dans le scan utilisateur; non reverifies sur Windows",
+    "observed_remote": "https://github.com/openai/math"
   },
   {
-    "local_root": "C:\\mycode\\03-Brands\\Gustave\\GitHub_Profile",
-    "github_repo": "MA-Gustave/MA-Gustave",
-    "github_url": "https://github.com/MA-Gustave/MA-Gustave",
+    "local_root": "C:\\mycode\\02-Experimental\\Voxtral_Audiobook_Studio\\Voxtral_Audiobook_Studio",
+    "github_repo": "Rejean-McCormick/Voxtral-Audiobook-Studio",
+    "github_url": "https://github.com/Rejean-McCormick/Voxtral-Audiobook-Studio",
     "status": "local_git_marker_seen",
     "description": null,
     "source_docs_paths": [],
@@ -970,17 +1113,69 @@
     "evidence": "user-supplied tree + prior GitSink inventory"
   },
   {
-    "local_root": "C:\\mycode\\Grammatical_Framework\\ars-magna-lulli\\ars-magna-lulli",
-    "github_repo": "MA-Gustave/ars-magna-lulli",
-    "github_url": "https://github.com/MA-Gustave/ars-magna-lulli",
+    "local_root": "C:\\mycode\\Ekole\\Akor\\Akor.wiki",
+    "github_repo": "Rejean-McCormick/Akor.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/Akor/wiki",
     "status": "local_git_marker_seen",
-    "description": "A monorepo connecting the Compendium, Wordbench, and Observatory for GF language engineering.",
-    "source_docs_paths": [
-      "C:\\mycode\\Grammatical_Framework\\ars-magna-lulli\\ars-magna-lulli\\docs"
-    ],
-    "note": "Detected in both the newest [GIT] tree and earlier GitSink inventory.",
+    "description": null,
+    "source_docs_paths": [],
+    "note": "Scan RepoRadar du 17 octobre 2026. Checkout GitHub Wiki distinct de la liste API des dépôts publics. Ne confère aucune autorisation de synchronisation GitSink.",
     "scope": "LOCAL_OR_OTHER",
-    "evidence": "user-supplied tree + prior GitSink inventory"
+    "evidence": "2026-10-17 : diagnostic CSV RepoRadar transmis, chemin et remote lus dans le scan utilisateur; non reverifies sur Windows",
+    "observed_remote": "https://github.com/Rejean-McCormick/Akor.wiki.git",
+    "github_clone_url": "https://github.com/Rejean-McCormick/Akor.wiki.git"
+  },
+  {
+    "local_root": "C:\\mycode\\Ekole\\Ekole-Pastorale.wiki",
+    "github_repo": "Rejean-McCormick/Ekole-Pastorale.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/Ekole-Pastorale/wiki",
+    "status": "local_git_marker_seen",
+    "description": null,
+    "source_docs_paths": [],
+    "note": "Scan RepoRadar du 17 octobre 2026. Checkout GitHub Wiki distinct de la liste API des dépôts publics. Ne confère aucune autorisation de synchronisation GitSink.",
+    "scope": "LOCAL_OR_OTHER",
+    "evidence": "2026-10-17 : diagnostic CSV RepoRadar transmis, chemin et remote lus dans le scan utilisateur; non reverifies sur Windows",
+    "observed_remote": "https://github.com/Rejean-McCormick/Ekole-Pastorale.wiki.git",
+    "github_clone_url": "https://github.com/Rejean-McCormick/Ekole-Pastorale.wiki.git"
+  },
+  {
+    "local_root": "C:\\mycode\\Ekole\\Ekole.wiki",
+    "github_repo": "Rejean-McCormick/Ekole.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/Ekole/wiki",
+    "status": "local_git_marker_seen",
+    "description": null,
+    "source_docs_paths": [],
+    "note": "Scan RepoRadar du 17 octobre 2026. Checkout GitHub Wiki distinct de la liste API des dépôts publics. Ne confère aucune autorisation de synchronisation GitSink.",
+    "scope": "LOCAL_OR_OTHER",
+    "evidence": "2026-10-17 : diagnostic CSV RepoRadar transmis, chemin et remote lus dans le scan utilisateur; non reverifies sur Windows",
+    "observed_remote": "https://github.com/Rejean-McCormick/Ekole.wiki.git",
+    "github_clone_url": "https://github.com/Rejean-McCormick/Ekole.wiki.git"
+  },
+  {
+    "local_root": "C:\\mycode\\Ekole\\Kompose\\Kompose.wiki",
+    "github_repo": "Rejean-McCormick/Kompose.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/Kompose/wiki",
+    "status": "local_git_marker_seen",
+    "description": null,
+    "source_docs_paths": [],
+    "note": "Scan RepoRadar du 17 octobre 2026. Checkout GitHub Wiki distinct de la liste API des dépôts publics. Ne confère aucune autorisation de synchronisation GitSink.",
+    "scope": "LOCAL_OR_OTHER",
+    "evidence": "2026-10-17 : diagnostic CSV RepoRadar transmis, chemin et remote lus dans le scan utilisateur; non reverifies sur Windows",
+    "observed_remote": "https://github.com/Rejean-McCormick/Kompose.wiki.git",
+    "github_clone_url": "https://github.com/Rejean-McCormick/Kompose.wiki.git"
+  },
+  {
+    "local_root": "C:\\mycode\\Ekole\\Kontexte\\Kontexte.wiki",
+    "github_repo": "Rejean-McCormick/Kontexte.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/Kontexte/wiki",
+    "status": "local_git_marker_seen",
+    "description": null,
+    "source_docs_paths": [],
+    "note": "Scan RepoRadar du 17 octobre 2026. Checkout GitHub Wiki distinct de la liste API des dépôts publics. Ne confère aucune autorisation de synchronisation GitSink.",
+    "scope": "LOCAL_OR_OTHER",
+    "evidence": "2026-10-17 : diagnostic CSV RepoRadar transmis, chemin et remote lus dans le scan utilisateur; non reverifies sur Windows",
+    "observed_remote": "https://github.com/Rejean-McCormick/Kontexte.wiki.git",
+    "github_clone_url": "https://github.com/Rejean-McCormick/Kontexte.wiki.git"
   },
   {
     "local_root": "C:\\mycode\\Grammatical_Framework\\gf-core",
@@ -1038,108 +1233,91 @@
     "evidence": "user-supplied tree + prior GitSink inventory"
   },
   {
-    "local_root": "C:\\mycode\\Grammatical_Framework\\GF_Observatory",
-    "github_repo": "MA-Gustave/GF_Observatory",
-    "github_url": "https://github.com/MA-Gustave/GF_Observatory",
-    "status": "local_git_marker_seen",
-    "description": "GF Observatory is a local-first, read-only companion to GF Wordbench that aggregates versioned evidence across workspaces, tracks health and readiness, and provides reproducible analysis through a canonical API, CLI, and evidence matrix.",
-    "source_docs_paths": [
-      "C:\\mycode\\Grammatical_Framework\\GF_Observatory\\GF_Observatory_Documentation_Frame\\docs",
-      "C:\\mycode\\Grammatical_Framework\\GF_Observatory\\GF_Observatory_Documentation_GitHub_Pages\\docs"
-    ],
-    "note": "Detected in both the newest [GIT] tree and earlier GitSink inventory.",
-    "scope": "LOCAL_OR_OTHER",
-    "evidence": "user-supplied tree + prior GitSink inventory"
-  },
-  {
-    "local_root": "C:\\mycode\\Grammatical_Framework\\GF_RGL_AI_Compendium",
-    "github_repo": "MA-Gustave/GF_RGL_AI_Compendium",
-    "github_url": "https://github.com/MA-Gustave/GF_RGL_AI_Compendium",
-    "status": "local_git_marker_seen",
-    "description": null,
-    "source_docs_paths": [],
-    "note": "Detected in both the newest [GIT] tree and earlier GitSink inventory.",
-    "scope": "LOCAL_OR_OTHER",
-    "evidence": "user-supplied tree + prior GitSink inventory"
-  },
-  {
-    "local_root": "C:\\mycode\\Grammatical_Framework\\GF_Wordbench\\GF_Wordbench",
-    "github_repo": "MA-Gustave/GF_Wordbench",
-    "github_url": "https://github.com/MA-Gustave/GF_Wordbench",
-    "status": "local_git_marker_seen",
-    "description": null,
-    "source_docs_paths": [
-      "C:\\mycode\\Grammatical_Framework\\GF_Wordbench\\GF_Wordbench\\docs"
-    ],
-    "note": "Detected in both the newest [GIT] tree and earlier GitSink inventory.",
-    "scope": "LOCAL_OR_OTHER",
-    "evidence": "user-supplied tree + prior GitSink inventory"
-  },
-  {
     "local_root": "C:\\mycode\\HomePage\\docs-initkoa-org\\.wiki-cache\\kOA Digital Ecosystem",
-    "github_repo": "Rejean-McCormick/kOA_Digital_Ecosystem.wiki",
-    "github_url": "https://github.com/Rejean-McCormick/kOA_Digital_Ecosystem.wiki",
-    "status": "previous_gitsink_observation_only",
+    "github_repo": "Rejean-McCormick/kOA-Digital-Ecosystem.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem/wiki",
+    "status": "remote_alignment_required",
     "description": null,
     "source_docs_paths": [],
-    "note": "Seen in earlier GitSink inventory, but not in the newest depth-limited tree because nested inside another Git root. Do not assert freshly verified.",
+    "note": "Seen in earlier GitSink inventory, but not in the newest depth-limited tree because nested inside another Git root. Do not assert freshly verified. | 2026-10-17: nom wiki basé sur le dépôt parent GitHub actuel ; remote Windows à valider/aligner, aucune redirection autorisée. | 2026-10-17: remote Wiki observée différente du clone URL canonique, à corriger manuellement.",
     "scope": "LOCAL_OR_OTHER",
-    "evidence": "prior GitSink inventory only"
+    "evidence": "prior GitSink inventory only",
+    "github_clone_url": "https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem.wiki.git",
+    "observed_remote": "https://github.com/Rejean-McCormick/kOA_Digital_Ecosystem.wiki.git"
   },
   {
     "local_root": "C:\\mycode\\HomePage\\docs-initkoa-org\\.wiki-cache\\Konnaxion",
     "github_repo": "Rejean-McCormick/Konnaxion.wiki",
-    "github_url": "https://github.com/Rejean-McCormick/Konnaxion.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/Konnaxion/wiki",
     "status": "previous_gitsink_observation_only",
     "description": null,
     "source_docs_paths": [],
     "note": "Seen in earlier GitSink inventory, but not in the newest depth-limited tree because nested inside another Git root. Do not assert freshly verified.",
     "scope": "LOCAL_OR_OTHER",
-    "evidence": "prior GitSink inventory only"
+    "evidence": "prior GitSink inventory only",
+    "github_clone_url": "https://github.com/Rejean-McCormick/Konnaxion.wiki.git"
   },
   {
     "local_root": "C:\\mycode\\HomePage\\docs-initkoa-org\\.wiki-cache\\Kristal Framework",
-    "github_repo": "Rejean-McCormick/kristal-framework.wiki",
-    "github_url": "https://github.com/Rejean-McCormick/kristal-framework.wiki",
+    "github_repo": "Rejean-McCormick/Kristal-Framework.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/Kristal-Framework/wiki",
     "status": "previous_gitsink_observation_only",
     "description": null,
     "source_docs_paths": [],
-    "note": "Seen in earlier GitSink inventory, but not in the newest depth-limited tree because nested inside another Git root. Do not assert freshly verified.",
+    "note": "Seen in earlier GitSink inventory, but not in the newest depth-limited tree because nested inside another Git root. Do not assert freshly verified. | 2026-10-17: nom wiki basé sur le dépôt parent GitHub actuel ; remote Windows à valider/aligner, aucune redirection autorisée.",
     "scope": "LOCAL_OR_OTHER",
-    "evidence": "prior GitSink inventory only"
+    "evidence": "prior GitSink inventory only",
+    "github_clone_url": "https://github.com/Rejean-McCormick/Kristal-Framework.wiki.git"
   },
   {
     "local_root": "C:\\mycode\\HomePage\\docs-initkoa-org\\.wiki-cache\\Orgo",
     "github_repo": "Rejean-McCormick/Orgo.wiki",
-    "github_url": "https://github.com/Rejean-McCormick/Orgo.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/Orgo/wiki",
     "status": "previous_gitsink_observation_only",
     "description": null,
     "source_docs_paths": [],
     "note": "Seen in earlier GitSink inventory, but not in the newest depth-limited tree because nested inside another Git root. Do not assert freshly verified.",
     "scope": "LOCAL_OR_OTHER",
-    "evidence": "prior GitSink inventory only"
+    "evidence": "prior GitSink inventory only",
+    "github_clone_url": "https://github.com/Rejean-McCormick/Orgo.wiki.git"
   },
   {
     "local_root": "C:\\mycode\\HomePage\\docs-initkoa-org\\.wiki-cache\\SemantiK Architect",
-    "github_repo": "Rejean-McCormick/SemantiK_Architect.wiki",
-    "github_url": "https://github.com/Rejean-McCormick/SemantiK_Architect.wiki",
-    "status": "previous_gitsink_observation_only",
+    "github_repo": "Rejean-McCormick/SemantiK-Architect.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/SemantiK-Architect/wiki",
+    "status": "remote_alignment_required",
     "description": null,
     "source_docs_paths": [],
-    "note": "Seen in earlier GitSink inventory, but not in the newest depth-limited tree because nested inside another Git root. Do not assert freshly verified.",
+    "note": "Seen in earlier GitSink inventory, but not in the newest depth-limited tree because nested inside another Git root. Do not assert freshly verified. | 2026-10-17: nom wiki basé sur le dépôt parent GitHub actuel ; remote Windows à valider/aligner, aucune redirection autorisée. | 2026-10-17: remote Wiki observée différente du clone URL canonique, à corriger manuellement.",
     "scope": "LOCAL_OR_OTHER",
-    "evidence": "prior GitSink inventory only"
+    "evidence": "prior GitSink inventory only",
+    "github_clone_url": "https://github.com/Rejean-McCormick/SemantiK-Architect.wiki.git",
+    "observed_remote": "https://github.com/Rejean-McCormick/SemantiK_Architect.wiki.git"
   },
   {
     "local_root": "C:\\mycode\\HomePage\\docs-initkoa-org\\.wiki-cache\\SenTient",
     "github_repo": "Rejean-McCormick/SenTient.wiki",
-    "github_url": "https://github.com/Rejean-McCormick/SenTient.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/SenTient/wiki",
     "status": "previous_gitsink_observation_only",
     "description": null,
     "source_docs_paths": [],
     "note": "Seen in earlier GitSink inventory, but not in the newest depth-limited tree because nested inside another Git root. Do not assert freshly verified.",
     "scope": "LOCAL_OR_OTHER",
-    "evidence": "prior GitSink inventory only"
+    "evidence": "prior GitSink inventory only",
+    "github_clone_url": "https://github.com/Rejean-McCormick/SenTient.wiki.git"
+  },
+  {
+    "local_root": "C:\\mycode\\Interaction-Kernel\\Daat.wiki",
+    "github_repo": "Rejean-McCormick/Daat.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/Daat/wiki",
+    "status": "local_git_marker_seen",
+    "description": null,
+    "source_docs_paths": [],
+    "note": "Scan RepoRadar du 17 octobre 2026. Checkout GitHub Wiki distinct de la liste API des dépôts publics. Ne confère aucune autorisation de synchronisation GitSink.",
+    "scope": "LOCAL_OR_OTHER",
+    "evidence": "2026-10-17 : diagnostic CSV RepoRadar transmis, chemin et remote lus dans le scan utilisateur; non reverifies sur Windows",
+    "observed_remote": "https://github.com/Rejean-McCormick/Daat.wiki.git",
+    "github_clone_url": "https://github.com/Rejean-McCormick/Daat.wiki.git"
   },
   {
     "local_root": "C:\\mycode\\Kamel\\Kamel",
@@ -1156,69 +1334,129 @@
   },
   {
     "local_root": "C:\\mycode\\kOA-Linux\\koa-linux-wiki",
-    "github_repo": "Rejean-McCormick/kOA-Linux_Koali.wiki",
-    "github_url": "https://github.com/Rejean-McCormick/kOA-Linux_Koali.wiki",
-    "status": "local_git_marker_seen",
+    "github_repo": "Rejean-McCormick/kOA-Linux-Koali.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/kOA-Linux-Koali/wiki",
+    "status": "remote_alignment_required",
     "description": null,
     "source_docs_paths": [],
-    "note": "Detected in both the newest [GIT] tree and earlier GitSink inventory.",
+    "note": "Detected in both the newest [GIT] tree and earlier GitSink inventory. | 2026-10-17: nom wiki basé sur le dépôt parent GitHub actuel ; remote Windows à valider/aligner, aucune redirection autorisée. | 2026-10-17: remote Wiki observée différente du clone URL canonique, à corriger manuellement.",
     "scope": "LOCAL_OR_OTHER",
-    "evidence": "user-supplied tree + prior GitSink inventory"
+    "evidence": "user-supplied tree + prior GitSink inventory",
+    "github_clone_url": "https://github.com/Rejean-McCormick/kOA-Linux-Koali.wiki.git",
+    "observed_remote": "https://github.com/Rejean-McCormick/kOA-Linux_Koali.wiki.git"
   },
   {
     "local_root": "C:\\mycode\\kOA_Digital_Ecosystem\\kOA_Digital_Ecosystem.wiki",
-    "github_repo": "Rejean-McCormick/kOA_Digital_Ecosystem.wiki",
-    "github_url": "https://github.com/Rejean-McCormick/kOA_Digital_Ecosystem.wiki",
-    "status": "local_git_marker_seen",
+    "github_repo": "Rejean-McCormick/kOA-Digital-Ecosystem.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem/wiki",
+    "status": "remote_alignment_required",
     "description": null,
     "source_docs_paths": [],
-    "note": "Detected in both the newest [GIT] tree and earlier GitSink inventory.",
+    "note": "Detected in both the newest [GIT] tree and earlier GitSink inventory. | 2026-10-17: nom wiki basé sur le dépôt parent GitHub actuel ; remote Windows à valider/aligner, aucune redirection autorisée. | 2026-10-17: remote Wiki observée différente du clone URL canonique, à corriger manuellement.",
     "scope": "LOCAL_OR_OTHER",
-    "evidence": "user-supplied tree + prior GitSink inventory"
+    "evidence": "user-supplied tree + prior GitSink inventory",
+    "github_clone_url": "https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem.wiki.git",
+    "observed_remote": "https://github.com/Rejean-McCormick/kOA_Digital_Ecosystem.wiki.git"
   },
   {
     "local_root": "C:\\mycode\\Konfid\\Konfid.wiki",
     "github_repo": "Rejean-McCormick/Konfid.wiki",
-    "github_url": "https://github.com/Rejean-McCormick/Konfid.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/Konfid/wiki",
     "status": "local_git_marker_seen",
     "description": null,
     "source_docs_paths": [],
     "note": "Detected in both the newest [GIT] tree and earlier GitSink inventory.",
     "scope": "LOCAL_OR_OTHER",
-    "evidence": "user-supplied tree + prior GitSink inventory"
+    "evidence": "user-supplied tree + prior GitSink inventory",
+    "github_clone_url": "https://github.com/Rejean-McCormick/Konfid.wiki.git"
   },
   {
     "local_root": "C:\\mycode\\Konnaxion\\Konnaxion.wiki",
     "github_repo": "Rejean-McCormick/Konnaxion.wiki",
-    "github_url": "https://github.com/Rejean-McCormick/Konnaxion.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/Konnaxion/wiki",
     "status": "local_git_marker_seen",
     "description": null,
     "source_docs_paths": [],
     "note": "Detected in both the newest [GIT] tree and earlier GitSink inventory.",
     "scope": "LOCAL_OR_OTHER",
-    "evidence": "user-supplied tree + prior GitSink inventory"
+    "evidence": "user-supplied tree + prior GitSink inventory",
+    "github_clone_url": "https://github.com/Rejean-McCormick/Konnaxion.wiki.git"
+  },
+  {
+    "local_root": "C:\\mycode\\Konstellation\\Konstellation.wiki",
+    "github_repo": "Rejean-McCormick/Konstellation.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/Konstellation/wiki",
+    "status": "local_git_marker_seen",
+    "description": null,
+    "source_docs_paths": [],
+    "note": "Scan RepoRadar du 17 octobre 2026. Checkout GitHub Wiki distinct de la liste API des dépôts publics. Ne confère aucune autorisation de synchronisation GitSink.",
+    "scope": "LOCAL_OR_OTHER",
+    "evidence": "2026-10-17 : diagnostic CSV RepoRadar transmis, chemin et remote lus dans le scan utilisateur; non reverifies sur Windows",
+    "observed_remote": "https://github.com/Rejean-McCormick/Konstellation.wiki.git",
+    "github_clone_url": "https://github.com/Rejean-McCormick/Konstellation.wiki.git"
+  },
+  {
+    "local_root": "C:\\mycode\\Kristal\\Arketype\\Arketype.wiki",
+    "github_repo": "Rejean-McCormick/Arketype.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/Arketype/wiki",
+    "status": "local_git_marker_seen",
+    "description": null,
+    "source_docs_paths": [],
+    "note": "Scan RepoRadar du 17 octobre 2026. Checkout GitHub Wiki distinct de la liste API des dépôts publics. Ne confère aucune autorisation de synchronisation GitSink.",
+    "scope": "LOCAL_OR_OTHER",
+    "evidence": "2026-10-17 : diagnostic CSV RepoRadar transmis, chemin et remote lus dans le scan utilisateur; non reverifies sur Windows",
+    "observed_remote": "https://github.com/Rejean-McCormick/Arketype.wiki.git",
+    "github_clone_url": "https://github.com/Rejean-McCormick/Arketype.wiki.git"
+  },
+  {
+    "local_root": "C:\\mycode\\Kristal\\Kontainer.wiki",
+    "github_repo": "Rejean-McCormick/Kontainer.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/Kontainer/wiki",
+    "status": "local_git_marker_seen",
+    "description": null,
+    "source_docs_paths": [],
+    "note": "Scan RepoRadar du 17 octobre 2026. Checkout GitHub Wiki distinct de la liste API des dépôts publics. Ne confère aucune autorisation de synchronisation GitSink.",
+    "scope": "LOCAL_OR_OTHER",
+    "evidence": "2026-10-17 : diagnostic CSV RepoRadar transmis, chemin et remote lus dans le scan utilisateur; non reverifies sur Windows",
+    "observed_remote": "https://github.com/Rejean-McCormick/Kontainer.wiki.git",
+    "github_clone_url": "https://github.com/Rejean-McCormick/Kontainer.wiki.git"
   },
   {
     "local_root": "C:\\mycode\\Kristal\\kristal-framework.wiki",
-    "github_repo": "Rejean-McCormick/kristal-framework.wiki",
-    "github_url": "https://github.com/Rejean-McCormick/kristal-framework.wiki",
+    "github_repo": "Rejean-McCormick/Kristal-Framework.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/Kristal-Framework/wiki",
     "status": "local_git_marker_seen",
     "description": null,
     "source_docs_paths": [],
-    "note": "Detected in both the newest [GIT] tree and earlier GitSink inventory.",
+    "note": "Detected in both the newest [GIT] tree and earlier GitSink inventory. | 2026-10-17: nom wiki basé sur le dépôt parent GitHub actuel ; remote Windows à valider/aligner, aucune redirection autorisée.",
     "scope": "LOCAL_OR_OTHER",
-    "evidence": "user-supplied tree + prior GitSink inventory"
+    "evidence": "user-supplied tree + prior GitSink inventory",
+    "github_clone_url": "https://github.com/Rejean-McCormick/Kristal-Framework.wiki.git"
+  },
+  {
+    "local_root": "C:\\mycode\\Kristal\\Kristal-Integration-Pack.wiki",
+    "github_repo": "Rejean-McCormick/Kristal-Integration-Pack.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/Kristal-Integration-Pack/wiki",
+    "status": "local_git_marker_seen",
+    "description": null,
+    "source_docs_paths": [],
+    "note": "Scan RepoRadar du 17 octobre 2026. Checkout GitHub Wiki distinct de la liste API des dépôts publics. Ne confère aucune autorisation de synchronisation GitSink.",
+    "scope": "LOCAL_OR_OTHER",
+    "evidence": "2026-10-17 : diagnostic CSV RepoRadar transmis, chemin et remote lus dans le scan utilisateur; non reverifies sur Windows",
+    "observed_remote": "https://github.com/Rejean-McCormick/Kristal-Integration-Pack.wiki.git",
+    "github_clone_url": "https://github.com/Rejean-McCormick/Kristal-Integration-Pack.wiki.git"
   },
   {
     "local_root": "C:\\mycode\\Kristal\\MediKristal\\MediKristal.wiki",
     "github_repo": "Rejean-McCormick/MediKristal.wiki",
-    "github_url": "https://github.com/Rejean-McCormick/MediKristal.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/MediKristal/wiki",
     "status": "local_git_marker_seen",
     "description": null,
     "source_docs_paths": [],
     "note": "Detected in both the newest [GIT] tree and earlier GitSink inventory.",
     "scope": "LOCAL_OR_OTHER",
-    "evidence": "user-supplied tree + prior GitSink inventory"
+    "evidence": "user-supplied tree + prior GitSink inventory",
+    "github_clone_url": "https://github.com/Rejean-McCormick/MediKristal.wiki.git"
   },
   {
     "local_root": "C:\\mycode\\LevelUpDiag\\LevelUpDiag",
@@ -1236,13 +1474,14 @@
   {
     "local_root": "C:\\mycode\\Orgo\\Orgo.wiki",
     "github_repo": "Rejean-McCormick/Orgo.wiki",
-    "github_url": "https://github.com/Rejean-McCormick/Orgo.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/Orgo/wiki",
     "status": "local_git_marker_seen",
     "description": null,
     "source_docs_paths": [],
     "note": "Detected in both the newest [GIT] tree and earlier GitSink inventory.",
     "scope": "LOCAL_OR_OTHER",
-    "evidence": "user-supplied tree + prior GitSink inventory"
+    "evidence": "user-supplied tree + prior GitSink inventory",
+    "github_clone_url": "https://github.com/Rejean-McCormick/Orgo.wiki.git"
   },
   {
     "local_root": "C:\\mycode\\SemantiK_Architect\\gf-rgl",
@@ -1257,36 +1496,28 @@
   },
   {
     "local_root": "C:\\mycode\\SemantiK_Architect\\SemantiK_Architect.wiki",
-    "github_repo": "Rejean-McCormick/SemantiK_Architect.wiki",
-    "github_url": "https://github.com/Rejean-McCormick/SemantiK_Architect.wiki",
-    "status": "local_git_marker_seen",
+    "github_repo": "Rejean-McCormick/SemantiK-Architect.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/SemantiK-Architect/wiki",
+    "status": "remote_alignment_required",
     "description": null,
     "source_docs_paths": [],
-    "note": "Detected in both the newest [GIT] tree and earlier GitSink inventory.",
+    "note": "Detected in both the newest [GIT] tree and earlier GitSink inventory. | 2026-10-17: nom wiki basé sur le dépôt parent GitHub actuel ; remote Windows à valider/aligner, aucune redirection autorisée. | 2026-10-17: remote Wiki observée différente du clone URL canonique, à corriger manuellement.",
     "scope": "LOCAL_OR_OTHER",
-    "evidence": "user-supplied tree + prior GitSink inventory"
+    "evidence": "user-supplied tree + prior GitSink inventory",
+    "github_clone_url": "https://github.com/Rejean-McCormick/SemantiK-Architect.wiki.git",
+    "observed_remote": "https://github.com/Rejean-McCormick/SemantiK_Architect.wiki.git"
   },
   {
     "local_root": "C:\\mycode\\SenTient\\SenTient.wiki",
     "github_repo": "Rejean-McCormick/SenTient.wiki",
-    "github_url": "https://github.com/Rejean-McCormick/SenTient.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/SenTient/wiki",
     "status": "local_git_marker_seen",
     "description": null,
     "source_docs_paths": [],
     "note": "Detected in both the newest [GIT] tree and earlier GitSink inventory.",
     "scope": "LOCAL_OR_OTHER",
-    "evidence": "user-supplied tree + prior GitSink inventory"
-  },
-  {
-    "local_root": "C:\\mycode\\Simdjson\\simdjson-rvv-vla",
-    "github_repo": "MA-Gustave/simdjson-rvv-vla",
-    "github_url": "https://github.com/MA-Gustave/simdjson-rvv-vla",
-    "status": "local_git_marker_seen",
-    "description": null,
-    "source_docs_paths": [],
-    "note": "Detected in both the newest [GIT] tree and earlier GitSink inventory.",
-    "scope": "LOCAL_OR_OTHER",
-    "evidence": "user-supplied tree + prior GitSink inventory"
+    "evidence": "user-supplied tree + prior GitSink inventory",
+    "github_clone_url": "https://github.com/Rejean-McCormick/SenTient.wiki.git"
   },
   {
     "local_root": "C:\\mycode\\Simdjson\\simdjson-upstream",
@@ -1298,6 +1529,32 @@
     "note": "Detected in both the newest [GIT] tree and earlier GitSink inventory.",
     "scope": "LOCAL_OR_OTHER",
     "evidence": "user-supplied tree + prior GitSink inventory"
+  },
+  {
+    "local_root": "C:\\mycode\\Skope\\Skope.wiki",
+    "github_repo": "Rejean-McCormick/Skope.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/Skope/wiki",
+    "status": "local_git_marker_seen",
+    "description": null,
+    "source_docs_paths": [],
+    "note": "Scan RepoRadar du 17 octobre 2026. Checkout GitHub Wiki distinct de la liste API des dépôts publics. Ne confère aucune autorisation de synchronisation GitSink.",
+    "scope": "LOCAL_OR_OTHER",
+    "evidence": "2026-10-17 : diagnostic CSV RepoRadar transmis, chemin et remote lus dans le scan utilisateur; non reverifies sur Windows",
+    "observed_remote": "https://github.com/Rejean-McCormick/Skope.wiki.git",
+    "github_clone_url": "https://github.com/Rejean-McCormick/Skope.wiki.git"
+  },
+  {
+    "local_root": "C:\\mycode\\Spek_Semantic-publishing\\Spek.wiki",
+    "github_repo": "Rejean-McCormick/Spek.wiki",
+    "github_url": "https://github.com/Rejean-McCormick/Spek/wiki",
+    "status": "local_git_marker_seen",
+    "description": null,
+    "source_docs_paths": [],
+    "note": "Scan RepoRadar du 17 octobre 2026. Checkout GitHub Wiki distinct de la liste API des dépôts publics. Ne confère aucune autorisation de synchronisation GitSink.",
+    "scope": "LOCAL_OR_OTHER",
+    "evidence": "2026-10-17 : diagnostic CSV RepoRadar transmis, chemin et remote lus dans le scan utilisateur; non reverifies sur Windows",
+    "observed_remote": "https://github.com/Rejean-McCormick/Spek.wiki.git",
+    "github_clone_url": "https://github.com/Rejean-McCormick/Spek.wiki.git"
   },
   {
     "local_root": "C:\\mycode\\SwarmCraft\\SwarmCraft",

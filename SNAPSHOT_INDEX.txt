@@ -1,9 +1,10 @@
 ZmartZnap snapshot file index
-Files included: 198
+Files included: 211
 
 .gitattributes
 .github/workflows/c0-coordination.yml
 .gitignore
+AGENTS.md
 docs/1-Overview/Artifacts-Kristal.md
 docs/1-Overview/Artifacts-Operational.md
 docs/1-Overview/Artifacts.md
@@ -95,6 +96,12 @@ docs/2-Technical-Reference/40-integration/knowledge-projection.md
 docs/2-Technical-Reference/40-integration/koali-spaces/index.md
 docs/2-Technical-Reference/40-integration/konstellation/index.md
 docs/2-Technical-Reference/40-integration/konstellation/integration.json
+docs/2-Technical-Reference/40-integration/kristal-v10-alignment/architecture.md
+docs/2-Technical-Reference/40-integration/kristal-v10-alignment/contracts-and-versions.md
+docs/2-Technical-Reference/40-integration/kristal-v10-alignment/decisions.md
+docs/2-Technical-Reference/40-integration/kristal-v10-alignment/readiness.md
+docs/2-Technical-Reference/40-integration/kristal-v10-alignment/README.md
+docs/2-Technical-Reference/40-integration/kristal-v10-alignment/workstreams.json
 docs/2-Technical-Reference/40-integration/kristal-v4/conformance.md
 docs/2-Technical-Reference/40-integration/kristal-v4/contract-pointers.md
 docs/2-Technical-Reference/40-integration/kristal-v4/index.md
@@ -182,6 +189,7 @@ docs/status/2026-09-16.md
 docs/status/2026-09-21-konnaxion-orgo-ik-e2e-qualification.md
 docs/status/2026-09-28-document-corpus-reconciliation.md
 docs/status/2026-10-01-kristal-v6-migration.md
+docs/status/2026-10-12-kristal-v10-harmonization.md
 docs/status/current.md
 docs/status/index.md
 docs/status/README.md
@@ -192,12 +200,17 @@ README_FIRST.md
 RELEASE_NOTES_SKOPE_EKOLE.md
 RELEASE_NOTES_SKOPE_SPLIT.md
 reports/GITHUB_PUBLIC_REPOS_66.csv
+reports/GITHUB_PUBLIC_REPOS_76.csv
+reports/history/GITHUB_PUBLIC_REPOS_66_2026-10-09.csv
+reports/history/LOCAL_GIT_MARKERS_100_2026-10-09.csv
 reports/LEGACY_UNCONFIRMED.json
 reports/LOCAL_GIT_MARKERS_100.csv
+reports/LOCAL_GIT_SCAN_2026-10-17.csv
 reports/RECONCILIATION_NOTES.md
 scripts/validate_c0_coordination.py
 tests/test_c0_coordination.py
 tests/test_skope_ekole_inventory.py
+UPDATE_REPOSITORIES_2026-10-17.md
 ZmartZnap.pyw
 
 Index file: SNAPSHOT_INDEX.txt
