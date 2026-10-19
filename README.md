@@ -112,6 +112,10 @@ admitted application
 - [`docs/2-Technical-Reference/40-integration/knowledge-projection.md`](docs/2-Technical-Reference/40-integration/knowledge-projection.md)
 - [`docs/status/current.md`](docs/status/current.md)
 
+## Selected first tandem deployment profile (2026-10-18)
+
+**User decision:** the first final Konnaxion + Orgo target is a **Linux VPS with Docker and the Konnaxion Capsule Agent**. [C0 profile / owner gates](docs/2-Technical-Reference/40-integration/tandem-vps-capsule-agent/README.md) records this *target*, not a deployment authorization. Local FakePlant IK E2E is verified; Agent signed ReleaseSet admission (**Lot 1C**) and real VPS deployment remain unqualified. kOA-Linux stays an optional separate platform profile.
+
 ## C0 — Parallel integration coordination (2026-10-08)
 
 The **frozen Kristal v6/IK v2/UCKK baseline above is preserved**; it should not be read as a claim that the current EncyKlopedia 0.12.0 handoff still emits `encyklopedia.corpus-harvest-handoff/1.0.0`. Current owner contracts and the v10 GitHub publication route are tracked separately in the [C0 coordination register](docs/2-Technical-Reference/40-integration/orchestration-c0/README.md). The new handoff `encyk.source-evidence-handoff/2.0.0` is **not yet verified against a real Médiathèque receiver**.

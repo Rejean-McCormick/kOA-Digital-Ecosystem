@@ -1,0 +1,62 @@
+{
+  "schema": "koa-tandem-vps-c0-overlay/v1",
+  "source_archive": "kOA_Digital_Ecosystem_Code_snapshot(1).zip",
+  "files": {
+    "README.md": {
+      "before": "f484d9155007a2cf5a9eeeddd5774c8d8f445a05a5ac8ffa0e41f00e556a5b0b",
+      "after": "2661df619cb5b63df931ecaf672fe8a56fb27787b8a2197c3e387b5ab692b1f1"
+    },
+    "docs/index.md": {
+      "before": "ccbdaee3f8fb026f711b565a1d4d7e8e66be2bb01c46988219149ec09a2079bf",
+      "after": "6ee3413f9ce7dce1f692fe887206f0b42f78701fdeb5e0e10757ee64125493b4"
+    },
+    "docs/status/current.md": {
+      "before": "1d85413724736ae2c1e4e51a41e18c7b74bbe66083ab6f3e9fd813070a54a0e9",
+      "after": "75a5cbed23e693b7b15a3a8a53e89e7ecddf7ab6fcd1f860212eb52df60e31a9"
+    },
+    "docs/2-Technical-Reference/50-operations/releases.md": {
+      "before": "43933296ffbe8e8b792df161e64003c1716a4a1a1247291b801e2bea1b2a0fe8",
+      "after": "e10f0c00e3f98fc162030f6dbd52043a15dbebbd01732f7278e68e64637000c2"
+    },
+    "docs/2-Technical-Reference/10-system/authority-map.md": {
+      "before": "a6a01bb8ba90ebac0df380903f5e47ef699d86455e9af087e8a4d0aaf97c208c",
+      "after": "33a117faaa4d213fcb7a9170cd76d8f2f3b97a66f6854fa6e1842ebe94a30b6d"
+    },
+    "docs/2-Technical-Reference/index.md": {
+      "before": "01cfd4492743a0f386f8ab21f0d35172b13d242bbc5a985eca8868c78bbad0bc",
+      "after": "cdb9b7fc99453d686d5ea17943cf4f4f8ab7f2b8c226164353791f88ae2e5cad"
+    },
+    ".github/workflows/c0-coordination.yml": {
+      "before": "934472529b426a9d20ee9f382ef26e7dff11bbf0e6d7fbefcc5746248e7d641d",
+      "after": "be7a24a9b07a132ada7d5293724fa4eaf039e599eaf391c91b1c62043d76de0a"
+    },
+    "docs/2-Technical-Reference/40-integration/tandem-vps-capsule-agent/README.md": {
+      "before": null,
+      "after": "d1271e686c551d5d51640de07fa9078ef3dd6bb54cb26f912a8fc8c6070cb91f"
+    },
+    "docs/2-Technical-Reference/40-integration/tandem-vps-capsule-agent/deployment-profile.json": {
+      "before": null,
+      "after": "99deb0ca1d2ffac677266393d3c1e1cb5f4ff156a87bc6e3f5ac2d54c3786c19"
+    },
+    "docs/2-Technical-Reference/40-integration/tandem-vps-capsule-agent/acceptance.md": {
+      "before": null,
+      "after": "a29de2a94a944d46e2928e50255939bb60d903bf7b17b598ac3ea6916f6a45e0"
+    },
+    "docs/2-Technical-Reference/40-integration/tandem-vps-capsule-agent/evidence-ledger.md": {
+      "before": null,
+      "after": "a7682bd7c6e64fe8a906e170caad58f1b8c6c283e0fda8bbdb06681403344279"
+    },
+    "docs/2-Technical-Reference/40-integration/tandem-vps-capsule-agent/decision-log.md": {
+      "before": null,
+      "after": "b36906348a655ee33a67bfb516ffab2e3854d8dae3390af1ab0bbad7d23366ac"
+    },
+    "scripts/validate_tandem_vps_profile.py": {
+      "before": null,
+      "after": "4fffeea2d3ad821ca573faabd42541ee82628e8a4bb461ace7cb68c47e1e837a"
+    },
+    "tests/test_tandem_vps_profile.py": {
+      "before": null,
+      "after": "f31e277f1340cd1adf4bf54563ffda457d1103f71f6ad58984a673d31c83a052"
+    }
+  }
+}

@@ -6,6 +6,10 @@ kOA-Linux separates `system`, `services`, `governance` and `knowledge` release c
 
 A Release Set is authoritative for platform release compatibility, not for Kristal epistemic validation or Runtime Pack active state.
 
+## Tandem Konnaxion + Orgo — VPS-specific deployment track
+
+The first tandem candidate is **VPS Linux + Docker + Konnaxion Capsule Agent**, not a default kOA-Linux Runtime Pack deployment. [C0 coordination profile and blocking gates](../40-integration/tandem-vps-capsule-agent/README.md) records the user's selected target and exact-owner handoffs. **Capsule Agent owns its own protected host operations and admission PEP for this profile**, while KonnaxionDiag independently verifies exact signed release authorization. This profile does not transfer the `kristal_runtime`/kOA-Linux active-state or release-channel authority described below. No VPS activation or approval is claimed.
+
 ## Runtime Pack activation
 
 For a kOA-Linux Runtime Pack:

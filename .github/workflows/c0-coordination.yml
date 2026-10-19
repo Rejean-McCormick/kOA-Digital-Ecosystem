@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'docs/2-Technical-Reference/40-integration/orchestration-c0/**'
+      - 'docs/2-Technical-Reference/40-integration/tandem-vps-capsule-agent/**'
       - 'docs/2-Technical-Reference/40-integration/kristal-v10-alignment/**'
       - 'docs/2-Technical-Reference/40-integration/knowledge-projection-contract-set.json'
       - 'docs/2-Technical-Reference/40-integration/contract-map.md'
@@ -12,7 +13,9 @@ on:
       - 'README.md'
       - 'docs/index.md'
       - 'scripts/validate_c0_coordination.py'
+      - 'scripts/validate_tandem_vps_profile.py'
       - 'tests/test_c0_coordination.py'
+      - 'tests/test_tandem_vps_profile.py'
       - '.github/workflows/c0-coordination.yml'
   workflow_dispatch:
 permissions:
@@ -26,4 +29,5 @@ jobs:
         with:
           python-version: '3.11'
       - run: python scripts/validate_c0_coordination.py
-      - run: python -m unittest discover -s tests -p 'test_c0_coordination.py' -v
+      - run: python scripts/validate_tandem_vps_profile.py
+      - run: python -m unittest discover -s tests -v

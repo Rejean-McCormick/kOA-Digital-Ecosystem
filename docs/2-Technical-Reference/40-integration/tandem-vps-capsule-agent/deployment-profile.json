@@ -1,0 +1,149 @@
+{
+  "format": "koa.c0-tandem-deployment-profile/0.1-candidate",
+  "id": "tandem-konnaxion-orgo-vps-linux-docker-capsule-agent",
+  "authority": "coordination_only_non_normative",
+  "decision": {
+    "id": "TANDEM-D01",
+    "status": "USER_DECIDED",
+    "date": "2026-10-18",
+    "value": "vps-linux-docker-capsule-agent",
+    "scope": "first_priority_target_only",
+    "not_a_production_approval": true
+  },
+  "target": {
+    "platform": "linux-vps",
+    "container_runtime": "docker",
+    "deployment_executor": "Konnaxion_Capsule_Manager/kx_agent",
+    "orchestration": "docker-compose-or-equivalent-owner-supported-profile",
+    "application_components": ["Konnaxion", "Orgo"],
+    "data_owners": ["Konnaxion PostgreSQL", "Orgo PostgreSQL"],
+    "identity_mode": "standalone_first_optional_common_oidc",
+    "world_scoping": "strict_world_and_release",
+    "optional_platform": ["kOA-Linux", "kOA Node Agent"],
+    "public_exposure": "NOT_DECIDED",
+    "vps_vendor": "NOT_DECIDED",
+    "hostname": "NOT_DECIDED",
+    "oidc_provider": "NOT_DECIDED"
+  },
+  "safety": {
+    "allow_runtime_activation": false,
+    "allow_publication": false,
+    "allow_automatic_schema_migration": false,
+    "allow_cross_tenant_writes": false,
+    "allow_security_gate_bypass": false,
+    "no_private_keys_in_repository": true,
+    "product_sessions_and_authorizations_remain_local": true,
+    "composite_rollback_is_not_cross_database_atomic": true
+  },
+  "observations": [
+    {
+      "id": "IK-FAKEPLANT-20261018",
+      "owner": "Konnaxion+Orgo+Interaction Kernel",
+      "status": "USER_REPORTED_LOCAL_E2E_VERIFIED",
+      "scope": "Windows local + Neon + Orgo Docker / synthetic FakePlant only",
+      "evidence": "User-run FINALISER_TANDEM_IK_FAKEPLANT.cmd; complete=true; decision=1; impact=2; one of each",
+      "not_production": true
+    },
+    {
+      "id": "LOT1A-20261018",
+      "owner": "Konnaxion_Capsule_Manager",
+      "status": "USER_REPORTED_LOCAL_TESTED",
+      "scope": "Local Windows Agent/Manager source only, not remote Linux Agent",
+      "evidence": "User-run PREVIEW/INSTALL/VERIFIER LOT1; 40 targeted tests passed; SHA256 verified",
+      "not_production": true
+    },
+    {
+      "id": "LOT1B-20261018",
+      "owner": "KonnaxionDiag",
+      "status": "USER_REPORTED_LOCAL_TESTED",
+      "scope": "Local KonnaxionDiag 4.2.5 strict verify-activation CLI, not integrated into Agent",
+      "evidence": "User-run PREVIEW/INSTALL/VERIFY KDIAG LOT1B; 71 tests passed; SHA256 verified",
+      "not_production": true
+    }
+  ],
+  "owner_workstreams": [
+    {
+      "id": "TANDEM-W0",
+      "owner_repository": "kOA_Digital_Ecosystem",
+      "status": "DOCUMENTED_PROFILE",
+      "summary": "Record selected target profile, exact owner commits and runtime image pins; maintain evidence ledger",
+      "acceptance": "G0: signed-off environment profile, exact pins for all owners and observed server inventory",
+      "depends_on": []
+    },
+    {
+      "id": "TANDEM-W1C",
+      "owner_repository": "Konnaxion_Capsule_Manager",
+      "consumer_repository": "KonnaxionDiag",
+      "status": "NOT_INTEGRATED",
+      "summary": "Agent PEP independently measures target ReleaseSet, verifies Ed25519 and policy via KonnaxionDiag verify-activation, denies all activation bypass routes",
+      "acceptance": "G1: Agent-local and VPS Linux negative tests, trust root/key rotation and exact measured-digest binding",
+      "depends_on": ["TANDEM-W0"]
+    },
+    {
+      "id": "TANDEM-W2",
+      "owner_repository": "Konnaxion",
+      "consumer_repository": "Orgo+Konfid+IdP",
+      "status": "NOT_QUALIFIED",
+      "summary": "Test existing per-app sessions/OIDC optional link and local RBAC; human actor claims do not inherit service IK token scopes",
+      "acceptance": "G2: linked test human, issuer+sub binding, DENY/STEP_UP/intertenant and non-interactive persona proofs",
+      "depends_on": ["TANDEM-W0"]
+    },
+    {
+      "id": "TANDEM-W3",
+      "owner_repository": "interaction_kernel",
+      "consumer_repository": "Konnaxion+Orgo+World engines",
+      "status": "LOCAL_E2E_ONLY",
+      "summary": "Carry FakePlant receipt into permanent regressions and qualify negative/replay/timeout and other tenants",
+      "acceptance": "G3: exact participant owner traces, replay/idempotence/timeout reconciliation and denial evidence",
+      "depends_on": ["TANDEM-W0"]
+    },
+    {
+      "id": "TANDEM-W4",
+      "owner_repository": "Konnaxion_Capsule_Manager",
+      "consumer_repository": "Konnaxion+Orgo",
+      "status": "NOT_IMPLEMENTED_OR_NOT_DEMONSTRATED",
+      "summary": "Composite stage/admit/deploy/verify/promote/reconcile/rollback with distinct databases; no blind restart of outbox",
+      "acceptance": "G4: real VPS staged deployment and independently tested restore with Last-Known-Good",
+      "depends_on": ["TANDEM-W1C"]
+    },
+    {
+      "id": "TANDEM-W5",
+      "owner_repository": "KonnaxionDiag",
+      "consumer_repository": "LevelUpDiag-Orgo+Agent+CI",
+      "status": "NOT_QUALIFIED",
+      "summary": "Pin full diagnostics, OCI image digests, SBOM, provenance, signature, trust policy, TLS, firewall and backup drills",
+      "acceptance": "G5/G6/G7: exact release evidence and verified restore in the VPS profile",
+      "depends_on": ["TANDEM-W1C", "TANDEM-W4"]
+    },
+    {
+      "id": "TANDEM-W6",
+      "owner_repository": "Konnaxion_Capsule_Manager",
+      "consumer_repository": "release operator",
+      "status": "BLOCKED",
+      "summary": "No protected GO LIVE until all mandatory G0-G8 gates have fresh exact-input evidence and approval",
+      "acceptance": "G8: independent go/no-go and rollback evidence for the exact activated release",
+      "depends_on": ["TANDEM-W2", "TANDEM-W3", "TANDEM-W5"]
+    }
+  ],
+  "release_gates": [
+    {"id": "G0", "state": "IN_PROGRESS", "source": "Profile selected; exact git/OCI/migration heads unverified"},
+    {"id": "G1", "state": "BLOCKED", "source": "Lot1A and Lot1B local only; Lot1C Agent PEP not connected"},
+    {"id": "G2", "state": "NOT_QUALIFIED", "source": "Existing SSO/ACL mechanisms not yet qualified for human profile"},
+    {"id": "G3", "state": "LOCAL_E2E_ONLY", "source": "FakePlant E2E complete=true, negative multi-tenant tests pending"},
+    {"id": "G4", "state": "BLOCKED", "source": "Composite deployment/rollback on real VPS not demonstrated"},
+    {"id": "G5", "state": "NOT_QUALIFIED", "source": "Current exact-input KonnaxionDiag and OrgoDiag campaigns pending"},
+    {"id": "G6", "state": "NOT_QUALIFIED", "source": "Runtime OCI digests, provenance and trust anchors not pinned"},
+    {"id": "G7", "state": "NOT_QUALIFIED", "source": "Independent restore drills for both databases not observed"},
+    {"id": "G8", "state": "BLOCKED", "source": "No production operator approval"}
+  ],
+  "pins": {
+    "konnaxion_commit": "UNVERIFIED",
+    "orgo_commit": "UNVERIFIED",
+    "capsule_manager_commit": "UNVERIFIED",
+    "konnaxiondiag_commit": "UNVERIFIED",
+    "interaction_kernel_contract_set_digest": "UNVERIFIED",
+    "release_set_digest": "UNVERIFIED",
+    "image_digests": "UNVERIFIED",
+    "migration_heads": "UNVERIFIED"
+  }
+}

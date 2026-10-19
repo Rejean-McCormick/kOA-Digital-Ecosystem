@@ -24,6 +24,10 @@ This page answers one question: **where does authoritative state live?** It is a
 | Federated identity credentials/assertions | **Identity Provider** for IdP assertions | Apps map identity into local accounts | IdP identity does not imply cross-product roles |
 | Local memberships, roles, permissions, sessions and app audit | **Each application** | OIDC may authenticate; app authorizes locally | No universal role table |
 
+## Tandem Linux VPS / Capsule Agent owner supplement (2026-10-18)
+
+The user selected **Linux VPS + Docker + Capsule Agent** as the first Konnaxion↔Orgo deployment target. [C0 profile](../40-integration/tandem-vps-capsule-agent/README.md). The **Capsule Manager** is the nonprivileged orchestration/UI layer; the **Capsule Agent** is the actual VPS-side privileged PEP for its typed Docker/Compose operations; **KonnaxionDiag** owns independent qualification/Ed25519 `verify-activation`. Manager claims and a signature alone cannot replace Agent-controlled measurement. The original kOA-Linux/Node Agent and `kristal_runtime` owners remain unchanged for their own release/Runtime Pack profiles.
+
 ## Non-transfer rules
 
 ```text

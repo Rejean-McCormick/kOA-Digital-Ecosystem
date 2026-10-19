@@ -28,6 +28,10 @@ specified / architected
 | **SemantiK Architect** | Planner-centered communication contracts + SA↔GF boundary | Owner status states canonical v1 core implemented | kOA-Linux admission is profile-specific | Production render requires admitted real RuntimeSet artifacts |
 | **SemantiK Runtime Orchestrator** | Owner-preserving release-control boundary | Coordinates release/gates/promotion/rollback/activation | Integrates independent GF/SA/diagnostic authorities through external contracts | Sequencing is not grammar/semantic/diagnostic authority |
 
+## First-priority tandem VPS profile (operator decision, 2026-10-18)
+
+**Target selected:** Linux VPS, Docker, Konnaxion Capsule Agent. [Profile and verification gaps](../2-Technical-Reference/40-integration/tandem-vps-capsule-agent/README.md). **Local evidence:** FakePlant IK E2E `complete=true` (synthetic); Capsule Manager Lot1A local fail-closed (40 tests) and KonnaxionDiag Lot1B local `verify-activation` (71 tests) reported by the operator. **Not yet integrated:** Agent-owned measured ReleaseSet + KonnaxionDiag PEP invocation (**Lot1C**); real VPS, composite release application, recovery, human ACL and production are not qualified. These local observations do not advance the broad ecosystem maturity table to a production claim.
+
 ## Qualified Konnaxion ↔ Orgo boundary
 
 | Boundary | Version | State |
