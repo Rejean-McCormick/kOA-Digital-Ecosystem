@@ -441,6 +441,17 @@
     "evidence": "2026-10-09 local tree and earlier GitSink inventory; no live Git remote check"
   },
   {
+    "local_root": "C:\\mycode\\Konstellation\\Konstellation-Publisher",
+    "github_repo": "Rejean-McCormick/Konstellation-Publisher",
+    "github_url": "https://github.com/Rejean-McCormick/Konstellation-Publisher",
+    "status": "github_verified_local_remote_unverified",
+    "description": "Safety-first desktop packaging and preflight tool for Konstellation 1.x. Version 0.2.0-alpha.1 blocks remote publication until release, authorization, rollout and rollback gates are independently validated.",
+    "source_docs_paths": [],
+    "note": "Chemin du dossier .git indiqué par l’utilisateur le 2026-10-27 ; présence du checkout et URL de son origin non contrôlées. Le dépôt public GitHub est confirmé, mais son contenu distant était vide lors du contrôle. Publisher 0.2.0-alpha.1 interdit le déploiement public ; aucune admission GitSink ni autorisation de push n’est accordée.",
+    "scope": "PUBLIC",
+    "evidence": "2026-10-27 : dépôt public Rejean-McCormick/Konstellation-Publisher confirmé via API GitHub ; chemin local déclaré par l’utilisateur, sans examen de son répertoire .git ; package local 0.2.0-alpha.1 fourni précédemment."
+  },
+  {
     "local_root": "C:\\mycode\\Kristal\\Kontainer",
     "github_repo": "Rejean-McCormick/Kontainer",
     "github_url": "https://github.com/Rejean-McCormick/Kontainer",

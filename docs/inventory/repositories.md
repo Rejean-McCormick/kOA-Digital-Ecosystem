@@ -1,15 +1,15 @@
 # Inventaire des dépôts — kOA Digital Ecosystem
 
-**État des sources : 17 octobre 2026.** Inventaire de travail dérivé du snapshot du 17 octobre à 20 h 32 et du dernier diagnostic RepoRadar partagé. La vérification GitHub du compte connecté a confirmé **76 dépôts publics** ; la validité en temps réel des chemins `C:\mycode` n'est **pas vérifiée ici**.
+**Référence initiale : 17 octobre 2026 ; ajout ciblé : 27 octobre 2026.** Le socle est dérivé du snapshot du 17 octobre à 20 h 32 et du diagnostic RepoRadar partagé : **76 dépôts publics** vérifiés alors. Le 27 octobre, **Konstellation-Publisher** a été confirmé séparément sur GitHub ; la validité des chemins `C:\mycode` et de leurs remotes n'est **pas vérifiée ici**.
 
-- **133 entrées :** 76 dépôts publics `Rejean-McCormick`, 56 entrées locales / tierces / Wiki, 1 dépôt signalé par l'utilisateur (`BoKristal`, non confirmé sur GitHub).
-- **10 dépôts publics ajoutés**, tous présents dans le diagnostic local.
+- **134 entrées :** 77 dépôts publics `Rejean-McCormick` répertoriés (76 au relevé du 17 octobre + Publisher confirmé le 27), 56 entrées locales / tierces / Wiki, 1 dépôt signalé par l'utilisateur (`BoKristal`, non confirmé sur GitHub).
+- **10 dépôts publics ajoutés au relevé du 17 octobre**, tous présents dans son diagnostic local ; **+1 Publisher le 27 octobre** (chemin Git déclaré, non scanné).
 - **13 entrées locales ajoutées**, soit 12 checkouts Wiki et un dépôt externe (`openai/math`).
 - **6 anciennes entrées MA-Gustave exclues**, et 16 lignes Gustave omises du rapport de scan local.
 - **15 remotes de dépôts publics et 6 remotes Wiki historiques à aligner** avec leurs adresses GitHub actuelles. Aucun alias ou mécanisme de redirection n'est présent dans l'inventaire.
 - **2 associations non confirmées** : `Kontexte` et `Kompose` disposent d'un dossier Git observé mais sans remote lisible.
 
-> **Important :** `local_git_marker_seen` signifie que le scan a identifié un dossier Git à cette date ; cela ne garantit ni sa présence aujourd'hui ni une autorisation GitSink. Les entrées `*.wiki` sont des checkouts Git Wiki, **pas** des repos supplémentaires dans les 76 dépôts GitHub. Une URL GitHub Wiki est déduite du nom canonique du dépôt parent et doit être validée localement avant synchronisation.
+> **Important :** `local_git_marker_seen` signifie que le scan a identifié un dossier Git à cette date ; cela ne garantit ni sa présence aujourd'hui ni une autorisation GitSink. Les entrées `*.wiki` sont des checkouts Git Wiki, **pas** des repos supplémentaires dans la liste des dépôts GitHub. Une URL GitHub Wiki est déduite du nom canonique du dépôt parent et doit être validée localement avant synchronisation.
 
 ## Statuts et règles de preuve
 
@@ -21,7 +21,7 @@
 - `retired` avec `scope=EXCLUDED` : projet connu mais **exclu du Runner GitSink** par décision explicite ; sa présence dans le CSV GitHub n’accorde aucun droit de push.
 - `local_root_unknown`, `legacy_path_not_found`, `ambiguous_repository_identity`, `excluded_from_followup`, `user_reported_git_path` : statuts préexistants conservés ; pas de supposition de validité ou de suppression.
 
-## Dépôts du compte GitHub (76 : 75 dans le périmètre PUBLIC, 1 retiré de GitSink)
+## Dépôts du compte GitHub (77 répertoriés : 76 dans le périmètre PUBLIC, 1 retiré de GitSink)
 
 | Dépôt GitHub | Racine locale observée / historique | Statut |
 |---|---|---|
@@ -61,6 +61,7 @@
 | [`Rejean-McCormick/KonnaxionDiag`](https://github.com/Rejean-McCormick/KonnaxionDiag) | `C:\mycode\Konnaxion\KonnaxionDiag` | `local_git_marker_seen` |
 | [`Rejean-McCormick/Konstellation`](https://github.com/Rejean-McCormick/Konstellation) | `C:\mycode\Konstellation\Konstellation` | `local_git_marker_seen` |
 | [`Rejean-McCormick/Konstellation-Light`](https://github.com/Rejean-McCormick/Konstellation-Light) | `C:\mycode\Konstellation\Konstellation-Light` | `local_git_marker_seen` |
+| [`Rejean-McCormick/Konstellation-Publisher`](https://github.com/Rejean-McCormick/Konstellation-Publisher) | `C:\mycode\Konstellation\Konstellation-Publisher` *(déclaré, non scanné)* | `github_verified_local_remote_unverified` |
 | [`Rejean-McCormick/Kontainer`](https://github.com/Rejean-McCormick/Kontainer) | `C:\mycode\Kristal\Kontainer` | `github_and_local_remote_verified` |
 | [`Rejean-McCormick/Kontexte`](https://github.com/Rejean-McCormick/Kontexte) | `C:\mycode\Ekole\Kontexte\Kontexte` | `github_verified_local_remote_unverified` |
 | [`Rejean-McCormick/Kristal-Authoring-Kit`](https://github.com/Rejean-McCormick/Kristal-Authoring-Kit) | `C:\mycode\Kristal\Kristal-Authoring-Kit` | `local_git_marker_seen` |
@@ -108,7 +109,7 @@
 |---|---|---|
 | [`Rejean-McCormick/BoKristal`](https://github.com/Rejean-McCormick/BoKristal) | `C:\mycode\BoKristal\BoKristal` | `user_reported_git_path` |
 
-`BoKristal` n'apparaît pas dans les 76 dépôts publics accessibles ; il peut s'agir d'un dépôt privé, supprimé ou inaccessible. Cette ligne **ne constitue pas** une confirmation de visibilité GitHub.
+`BoKristal` n'apparaissait pas dans le relevé des 76 dépôts publics du 17 octobre ; il peut s'agir d'un dépôt privé, supprimé ou inaccessible. Cette ligne **ne constitue pas** une confirmation de visibilité GitHub.
 
 ## Checkouts locaux, tiers et GitHub Wiki (56)
 
@@ -171,9 +172,11 @@
 | [`moodle/moodle`](https://github.com/moodle/moodle) | `C:\mycode\UCKK\moodle\moodle` | `local_git_marker_seen` |
 | [`Rejean-McCormick/UCKK-Moodle`](https://github.com/Rejean-McCormick/UCKK-Moodle) | `C:\mycode\UCKK\uckk-moodle` | `local_git_marker_seen` |
 
-## Dépôts publics ajoutés (10)
+## Dépôts publics ajoutés (10 au 17 octobre ; +1 au 27 octobre)
 
 `Akor`, `Arketype`, `Daat`, `Ekole`, `Ekole-Pastorale`, `Kompose`, `Kontainer`, `Kontexte`, `Skope`, `Spek`.
+
+**27 octobre 2026 — `Konstellation-Publisher` :** dépôt public GitHub confirmé ; racine `C:\mycode\Konstellation\Konstellation-Publisher` déclarée via son dossier `.git`, non sondée sur Windows. Publisher 0.2.0-alpha.1 est un outil de préparation locale : publication et déploiement distant **bloqués**. **Aucune permission GitSink ni validation de `origin` n'est implicite.** Voir [intégration Publisher](../2-Technical-Reference/40-integration/konstellation/publisher.md).
 
 ## Suites à effectuer sur Windows
 
@@ -188,6 +191,6 @@ Le scan du 17 octobre a relevé **15 `origin` périmées pour les dépôts publi
 ## Sources
 
 - `repositories.json` : registre de travail et observations, sans alias.
-- [`../../reports/GITHUB_PUBLIC_REPOS_76.csv`](../../reports/GITHUB_PUBLIC_REPOS_76.csv) : les 76 repos publics de GitHub, noms directs.
+- [`../../reports/GITHUB_PUBLIC_REPOS_76.csv`](../../reports/GITHUB_PUBLIC_REPOS_76.csv) : relevé historique des 76 repos publics GitHub au 17 octobre ; Publisher, confirmé le 27, n'y est pas ajouté rétroactivement.
 - [`../../reports/LOCAL_GIT_SCAN_2026-10-17.csv`](../../reports/LOCAL_GIT_SCAN_2026-10-17.csv) : diagnostic RepoRadar filtré sans Gustave, avec ses 131 résultats (dont 7 sans chemin).
 - `docs/generated/repository-corpus-2026-09-28.json` et `docs/2-Technical-Reference/10-system/repository-corpus.md` sont des **archives historiques** (2026-09-28), pas la liste opérationnelle actuelle.

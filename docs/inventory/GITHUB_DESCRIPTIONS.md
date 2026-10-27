@@ -6,6 +6,7 @@ These are suggested descriptions. They have **not** been written to GitHub setti
 | --- | --- | ---: |
 | `Skope` | Offline-first Wikidata scope explorer for Kristal. Traverse QID/PID graphs with per-branch depth, preview and approve convergence-based expansions, and export reproducible working snapshots with provenance. Local Python/SQLite prototype; no canonical Kristal promotion. | 269 |
 | `Ekole` | Québec primary-school learning environment built around 202 Kristal authoring workspaces. Includes learner and teacher portals, a local operations console, derived catalogue and an offline-first Moodle projection planner. Editorial and v9/v10 qualification remain pending. | 272 |
+| [`Konstellation-Publisher`](https://github.com/Rejean-McCormick/Konstellation-Publisher) | Safety-first desktop packaging and preflight tool for Konstellation 1.x. Validates local sources and prepares Docker/Compose artifacts. The 0.2.0-alpha.1 candidate blocks remote publication pending independent authorization, release qualification, deployment and rollback gates. | 278 |
 | `kOA Digital Ecosystem` | Cross-system architecture and integration map for kOA: ownership, versioned contracts, trust boundaries, maturity and release coordination across Kristal, EncyKlopedia, Da’at, UCKK, Koali and related applications including Skope and Ékole. | 239 |
 
 Machine-readable source: [`apps-skope-ekole.json`](apps-skope-ekole.json).

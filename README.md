@@ -128,3 +128,7 @@ C0 records cross-system dependencies and evidence; each application remains auth
 - **Ékole** manages Québec primary-school educational workspaces and local student/teacher projections; 202 workspaces are authoring **stubs**, not 202 qualified semantic releases.
 
 See [application ownership and maturity](docs/1-Overview/Components-Skope-and-Ekole.md), [integration boundaries](docs/2-Technical-Reference/40-integration/skope-ekole/index.md), [local ports](docs/2-Technical-Reference/40-integration/skope-ekole/local-ports.md), and [GitHub descriptions](docs/inventory/GITHUB_DESCRIPTIONS.md). These additions do not alter frozen Kristal v6 contracts or qualify new E2E handoffs.
+
+## Konstellation Publisher — registry addition (2026-10-27)
+
+[`Konstellation-Publisher`](https://github.com/Rejean-McCormick/Konstellation-Publisher) is recorded as a distinct public GitHub repository in the [repository inventory](docs/inventory/repositories.md) ([JSON source](docs/inventory/repositories.json)). Its Windows checkout root was reported as `C:\mycode\Konstellation\Konstellation-Publisher`, but its local `origin` has **not** been verified. The supplied `0.2.0-alpha.1` code is a local packaging/preflight candidate: **remote publication remains blocked**. See [Publisher boundaries](docs/2-Technical-Reference/40-integration/konstellation/publisher.md). Listing is not GitSink enrollment or deployment approval.
