@@ -1,15 +1,17 @@
-# Konstellation Publisher — intégration documentaire
+# Konstellation Publisher — documentation integration
 
-**État : 27 octobre 2026.** Référence descriptive, non admission opérationnelle.
+**Recorded state: 2026-10-27.** Descriptive documentation; not an operational admission or a deployment authorization.
 
-- **Dépôt propriétaire :** [`Rejean-McCormick/Konstellation-Publisher`](https://github.com/Rejean-McCormick/Konstellation-Publisher) (public GitHub confirmé).
-- **Racine locale déclarée :** `C:\mycode\Konstellation\Konstellation-Publisher`, dérivée du chemin `.git` communiqué par l’utilisateur ; existence et `origin` non vérifiés sur Windows.
-- **Version du code fournie pour revue :** `0.2.0-alpha.1`, archive locale fournie séparément ; la présence du code dans le dépôt GitHub n’est pas établie par l’existence du dépôt.
-- **Responsabilité :** interface Windows de pré-vérification des sources Konstellation 1.x, préparation de paquets à partir d’une liste autorisée de fichiers, gabarits Docker/Compose et rapports locaux.
-- **État de déploiement :** publication distante volontairement désactivée. Les tests d’UI Windows, de staging VPS, de routage TLS/Traefik, de bascule et de restauration restent non qualifiés.
+- **Owning repository:** [`Rejean-McCormick/Konstellation-Publisher`](https://github.com/Rejean-McCormick/Konstellation-Publisher). Its public GitHub repository was reported/verified in the snapshot review; **the presence of the candidate code on that remote is not established**.
+- **Declared local root:** `C:\mycode\Konstellation\Konstellation-Publisher`, derived from the path supplied by the operator. Local checkout existence and `origin` were not independently verified in this snapshot.
+- **Code reviewed:** `0.2.0-alpha.1` local candidate supplied separately; do not infer publication from repository existence.
+- **Responsibility:** Windows preflight interface for Konstellation 1.x sources, package preparation from an authorized allowlist, Docker/Compose template generation and local reports.
+- **Deployment status:** remote publication is intentionally disabled. Windows UI qualification, VPS staging, TLS/Traefik routing, promotion and tested rollback remain open.
 
-## Frontières et garde-fous
+## Authority boundaries and gates
 
-Le Publisher **n’est ni une autorité sur les données Kristal ni une autorité d’approbation de publication**. Un manifeste, un hash, une visibilité GitHub, un profil Compose ou une case cochée par l’opérateur ne remplacent pas les contrôles d’autorisation et de qualification. Les barrières C1/C2/C3, les reçus immuables et un déploiement transactionnel avec rollback vérifié sont des préalables à toute future activation distante.
+Publisher does **not** own Kristal data, semantic/epistemic authority or the approval to publish. A manifest, checksum, public repository, Compose profile or operator checkbox is not a substitute for independent authorization and qualification.
 
-Cette page ne modifie aucun contrat figé Kristal/IK, ne déclare aucune release de production et n’autorise ni GitSink ni une opération sur le VPS. Voir [l’index du registre de dépôts](../../../inventory/repositories.md) et [la fiche Konstellation](index.md).
+C1/C2/C3 gates, immutable receipts, independently qualified exact input and transactional deployment/rollback verification remain prerequisites before any remote activation or publication may be proposed. This page changes no frozen Kristal/IK contract, makes no production release claim, and authorizes neither GitSink nor any VPS operation.
+
+See [repository inventory](../../../inventory/repositories.md) and [Konstellation integration](index.md).

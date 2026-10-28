@@ -99,6 +99,12 @@ admitted application
     → Space activation / routing / presentation
 ```
 
+## Wiki and documentation maintenance
+
+The [GitHub Wiki](https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem/wiki) is a navigational explanation of this repository, **not a separate source of truth**. For current engineering claims, consult `docs/status/current.md` and the owner-specific contract/evidence pages. Keep dated wiki status pages as historical records; do not reinterpret the frozen Kristal v6/IK v2/UCKK lane as the latest v9/v10 release.
+
+The 2026-10-27 documentation reconciliation is summarized in [wiki synchronization notes](docs/status/wiki-synchronization-2026-10-27.md). Remote wiki publication and current GitHub HEAD are **not verified** by the supplied ZIP snapshots.
+
 ## Start here
 
 - [`docs/index.md`](docs/index.md)

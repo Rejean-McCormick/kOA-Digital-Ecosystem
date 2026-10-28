@@ -1,21 +1,25 @@
-# Konstellation — intégration versionnée
+# Konstellation — versioned integration
 
-Konstellation v0.4 est une application de lecture/exploration. Kristal reste responsable des données, de leur provenance et des métadonnées épistémiques. SA réalise une demande sémantique explicite; l'orchestrateur gère la qualification et l'activation du runtime.
+Konstellation v0.4 is documented as a **reading and exploration application** in this contract view. Kristal retains authority over knowledge, provenance and epistemic metadata. SemantiK Architect (SA) fulfills an explicit communication request; the runtime orchestrator controls qualification and runtime activation. This page describes the recorded integration candidate, not a guarantee that every listed product is currently installed or integrated.
 
-| Producteur | Contrat consommé | Responsabilité |
+| Producer / owner | Contract or artifact | Responsibility |
 |---|---|---|
-| Kristal | Runtime Pack dérivé d’artefacts Kristal v6 + profil `konstellation:reader-json-v1`, ou Parquet à mapping explicite | Identités, sources, politique et intégrité; les projections restent dérivées |
-| Konstellation | QuerySpec/ExplorationState 0.2, CommunicationRequest 1.0 | Sélection, requête et portée de communication |
-| SA | `konstellation-explorer-1`, bridge 1.0, CommunicationResult 1.0 | Présentation structurée fidèle, labels français, couverture |
-| Runtime Orchestrator | pipeline.lock 1.0, conformance CLI, activation 1.0 | Vérification, qualification, promotion et activation |
-| EncyKlopedia | Handoff explicite vers le producteur Kristal | Préparer les données, sans inventer une validation |
+| Kristal | Runtime Pack derived from Kristal v6 artifacts with `konstellation:reader-json-v1`, or Parquet with an explicit mapping | Identity, sources, policy and integrity; read projections remain derived |
+| Konstellation | QuerySpec/ExplorationState 0.2, CommunicationRequest 1.0 | Selection, query and communication scope |
+| SemantiK Architect | `konstellation-explorer-1`, bridge 1.0, CommunicationResult 1.0 | Faithful structured realization, French labels and coverage |
+| Runtime Orchestrator | pipeline.lock 1.0, conformance CLI, activation 1.0 | Verification, qualification, promotion and activation |
+| EncyKlopedia | Explicit handoff to the Kristal producer | Source preparation, **not** epistemic validation |
 
-La formulation est désactivée tant que SA ne publie pas le runtime/profil/langue demandés. Le profil livré est candidat jusqu'à compilation GF et conformité sur le vrai PGF. La commande de conformité candidate ne crée aucune publication; elle est réservée au pipeline hors ligne.
+The realization feature remains disabled until SA publishes the requested runtime/profile/language combination. The supplied profile is a **candidate** pending GF compilation and conformance against the actual PGF. A candidate conformance command does not publish content; it is reserved for the offline pipeline.
 
-Les cas de test provenant de Konstellation couvrent les critères, pages, entités et filtres négatifs. Les métadonnées ne sont pas réduites à une validation binaire. Les déclarations de capacité incompatibles sont refusées plutôt que remplacées par un résultat vide ou un texte de repli.
+Konstellation's tests cover criteria, pages, entities and negative filters. Metadata is not reduced to a yes/no validation flag. Incompatible capabilities must be rejected rather than silently converted to an empty result or fallback text.
 
-Aucune modification du bus Interaction Kernel n'est nécessaire pour la lecture locale. Les connexions HTTP sont explicites et configurées par l'opérateur; les URI de service et credentials n'appartiennent pas aux requêtes utilisateur.
+Local reading does not require a new Interaction Kernel bus. HTTP connections are explicitly operator-configured; service URIs and credentials are not part of end-user queries.
 
-## Publisher — préparation locale, sans publication distante
+## Publisher — local preparation only
 
-[`Konstellation-Publisher`](publisher.md) est un outil distinct de Konstellation Reader. Le dépôt GitHub public est confirmé depuis le 27 octobre 2026 ; le chemin du checkout local a été fourni mais aucune remote locale n’a été vérifiée. La version candidate 0.2.0-alpha.1 valide et prépare des paquets localement ; elle **bloque tout déploiement distant** en attendant la qualification indépendante des autorisations, du rollout et du rollback. Cette documentation n’accorde aucune autorité de publication.
+[`Konstellation-Publisher`](publisher.md) is a separate tool from Konstellation Reader. Its public GitHub repository was confirmed as an identifier as of 2026-10-27, but the local checkout remote and publication of the reviewed code were not verified. Candidate `0.2.0-alpha.1` prepares and preflights packages **locally**; it blocks remote deployment pending independent permission, rollout and rollback qualification. This page grants no publication authority.
+
+## Later C0 / v10 coordination
+
+The v6 reader-profile mapping above is a preserved **versioned integration view**. The later [v10 harmonization](../kristal-v10-alignment/README.md) separately describes Konstellation as a navigator of Kristal fleets and concepts, while Manager owns the real instance registry and publication/read-surface synchronization. Neither this view nor the v10 proposal verifies a live fleet integration.

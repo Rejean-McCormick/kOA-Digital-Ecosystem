@@ -40,6 +40,10 @@ The v6 standard is pinned by manifest and core-contract digests rather than by a
 - Interaction Kernel owns Profile/envelope semantics only where adopted.
 - SemantiK Architect owns communication realization; its runtime orchestrator owns release sequencing only.
 
+## Wiki synchronization
+
+The GitHub Wiki is a secondary navigation surface. The [2026-10-27 wiki reconciliation notes](status/wiki-synchronization-2026-10-27.md) identify the source status, historical baselines, correction scope and remaining verification gates. Current status, owner authority and integration profiles are maintained in this repository, not inferred from a wiki date.
+
 ## Control views
 
 - [System map](1-Overview/index.md)
