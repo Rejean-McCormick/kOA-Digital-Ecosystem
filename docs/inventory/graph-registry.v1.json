@@ -1,0 +1,195 @@
+{
+  "format": "koa.graph.registry.v1",
+  "source_date": "2026-10-31",
+  "owner_repository": "Rejean-McCormick/kOA-Digital-Ecosystem",
+  "reference_inventory": "docs/inventory/repositories.json",
+  "reference_count": 49,
+  "additional_repositories": [
+    {
+      "github_repo": "Rejean-McCormick/Kolor",
+      "admission": "discovered_not_admitted",
+      "evidence_state": "github_repository_observed",
+      "role": "not_yet_mapped"
+    },
+    {
+      "github_repo": "Rejean-McCormick/Karacter",
+      "admission": "discovered_not_admitted",
+      "evidence_state": "github_repository_observed",
+      "role": "not_yet_mapped"
+    }
+  ],
+  "systems": [
+    {
+      "id": "konnaxion",
+      "label": "Konnaxion",
+      "github_repo": "Rejean-McCormick/Konnaxion",
+      "responsibility": "Civic decisions",
+      "group": "civic",
+      "evidence_state": "documented_responsibility",
+      "source": "docs/1-Overview/Components.md"
+    },
+    {
+      "id": "orgo",
+      "label": "Orgo",
+      "github_repo": "Rejean-McCormick/Orgo",
+      "responsibility": "Governed work",
+      "group": "civic",
+      "evidence_state": "documented_responsibility",
+      "source": "docs/1-Overview/Components.md"
+    },
+    {
+      "id": "encyklopedia",
+      "label": "EncyKlopedia",
+      "github_repo": "Rejean-McCormick/EncyKlopedia",
+      "responsibility": "Source acquisition",
+      "group": "knowledge",
+      "evidence_state": "documented_responsibility",
+      "source": "docs/1-Overview/Components.md"
+    },
+    {
+      "id": "daat",
+      "label": "Da’at",
+      "github_repo": "Rejean-McCormick/Daat",
+      "responsibility": "Mapping / ACL",
+      "group": "knowledge",
+      "evidence_state": "documented_responsibility",
+      "source": "docs/1-Overview/Components.md"
+    },
+    {
+      "id": "kristal",
+      "label": "Kristal",
+      "github_repo": "Rejean-McCormick/Kristal-Framework",
+      "responsibility": "Epistemic authority",
+      "group": "knowledge",
+      "evidence_state": "documented_responsibility",
+      "source": "docs/1-Overview/Components.md"
+    },
+    {
+      "id": "linux",
+      "label": "kOA-Linux",
+      "github_repo": "Rejean-McCormick/kOA-Linux-Koali",
+      "responsibility": "Platform admission",
+      "group": "platform",
+      "evidence_state": "documented_responsibility",
+      "source": "docs/1-Overview/Components.md"
+    },
+    {
+      "id": "spaces",
+      "label": "Koali Spaces",
+      "github_repo": "Rejean-McCormick/Koali-Spaces",
+      "responsibility": "Presentation / shell",
+      "group": "platform",
+      "evidence_state": "documented_responsibility",
+      "source": "docs/1-Overview/Components.md"
+    },
+    {
+      "id": "ik",
+      "label": "Interaction Kernel",
+      "github_repo": "Rejean-McCormick/Interaction-Kernel",
+      "responsibility": "Versioned envelopes",
+      "group": "protocol",
+      "evidence_state": "documented_responsibility",
+      "source": "docs/1-Overview/Components.md"
+    },
+    {
+      "id": "architect",
+      "label": "SemantiK Architect",
+      "github_repo": "Rejean-McCormick/SemantiK-Architect",
+      "responsibility": "Language realization",
+      "group": "language",
+      "evidence_state": "documented_responsibility",
+      "source": "docs/1-Overview/Components.md"
+    },
+    {
+      "id": "orchestrator",
+      "label": "Runtime Orchestrator",
+      "github_repo": "Rejean-McCormick/SemantiK_Runtime_Orchestrator",
+      "responsibility": "RuntimeSet sequencing",
+      "group": "language",
+      "evidence_state": "documented_responsibility",
+      "source": "docs/1-Overview/Components.md"
+    },
+    {
+      "id": "sentient",
+      "label": "SenTient",
+      "github_repo": "Rejean-McCormick/SenTient",
+      "responsibility": "Candidate resolution",
+      "group": "knowledge",
+      "evidence_state": "documented_responsibility",
+      "source": "docs/1-Overview/Components.md"
+    },
+    {
+      "id": "skope",
+      "label": "Skope",
+      "github_repo": "Rejean-McCormick/Skope",
+      "responsibility": "Local scope / recipe",
+      "group": "knowledge",
+      "evidence_state": "documented_responsibility",
+      "source": "docs/1-Overview/Components.md"
+    }
+  ],
+  "relations": [
+    {
+      "from": "konnaxion",
+      "to": "orgo",
+      "label": "Decision profile / governed handoff",
+      "evidence_state": "documented_passage",
+      "verification": "not_certified",
+      "source": "docs/1-Overview/Integration.md"
+    },
+    {
+      "from": "orgo",
+      "to": "daat",
+      "label": "Immutable exports, as needed",
+      "evidence_state": "documented_passage",
+      "verification": "not_certified",
+      "source": "docs/1-Overview/Integration.md"
+    },
+    {
+      "from": "encyklopedia",
+      "to": "daat",
+      "label": "Evidence / candidate handoff",
+      "evidence_state": "documented_passage",
+      "verification": "not_certified",
+      "source": "docs/1-Overview/Integration.md"
+    },
+    {
+      "from": "daat",
+      "to": "kristal",
+      "label": "Kristal-native contract",
+      "evidence_state": "documented_passage",
+      "verification": "not_certified",
+      "source": "docs/1-Overview/Integration.md"
+    },
+    {
+      "from": "kristal",
+      "to": "linux",
+      "label": "Runtime Pack / platform admission",
+      "evidence_state": "documented_passage",
+      "verification": "not_certified",
+      "source": "docs/1-Overview/Integration.md"
+    },
+    {
+      "from": "architect",
+      "to": "orchestrator",
+      "label": "Owner-preserving release sequencing",
+      "evidence_state": "documented_passage",
+      "verification": "not_certified",
+      "source": "docs/1-Overview/Integration.md"
+    },
+    {
+      "from": "skope",
+      "to": "encyklopedia",
+      "label": "Candidate handoff; not qualified",
+      "evidence_state": "proposed",
+      "verification": "not_certified",
+      "source": "docs/1-Overview/Integration.md"
+    }
+  ],
+  "principles": [
+    "A repository is not necessarily an application, and an application can involve multiple repositories.",
+    "Documented owner responsibilities and proposed passages do not certify an integration or runtime.",
+    "Optional composition does not transfer application business, data, or authorization authority.",
+    "Publication is explicit and pinned to a dated release; do not read live repositories from the public site."
+  ]
+}
