@@ -2,9 +2,9 @@
 
 Ce dossier décrit **ce qui figure actuellement dans le périmètre kOA**, sans mélanger l'inventaire avec des archives de relevés, des clones tiers ou des projets personnels.
 
+- [`GRAPH_FOCUS.md`](GRAPH_FOCUS.md) — mode d’emploi des parcours focalisés.
+- [`graph-focus.v1.json`](graph-focus.v1.json) — parcours focalisés typés, branches, contrats, preuves documentaires et niveaux de maturité (indépendants de la qualification des applications).
 - [`repositories.json`](repositories.json) — **source de référence machine**, 49 dépôts retenus.
-- [`graph-registry.v1.json`](graph-registry.v1.json) — responsabilités et relations sourcées pour le graphe publié, avec les dépôts repérés séparément.
-- [`GRAPH_REGISTRY.md`](GRAPH_REGISTRY.md) — gouvernance de ce registre.
 - [`repositories.md`](repositories.md) — vue humaine générée du même périmètre.
 - [`GITHUB_DESCRIPTIONS.md`](GITHUB_DESCRIPTIONS.md) — descriptions proposées pour les applications concernées.
 - [`apps-skope-ekole.json`](apps-skope-ekole.json) — métadonnées applicatives Skope / Ékole.
