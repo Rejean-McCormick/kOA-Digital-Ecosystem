@@ -19,7 +19,7 @@ class DikKristalizerRegistrationTests(unittest.TestCase):
 
     def test_repository_roots_from_smartdump(self):
         byrepo={r['github_repo']:r for r in self.registry}
-        self.assertEqual(len(self.registry),51)
+        self.assertEqual(len(self.registry),53)
         for name,path in [('diK',r'C:\mycode\diK\diK'),('Kristalizer',r'C:\mycode\Kristal\Kristalizer')]:
             row=byrepo['Rejean-McCormick/'+name]
             self.assertEqual(row['local_root'],path)

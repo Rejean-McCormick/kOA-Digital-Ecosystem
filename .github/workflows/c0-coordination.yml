@@ -8,11 +8,28 @@ on:
       - 'docs/2-Technical-Reference/40-integration/knowledge-projection-contract-set.json'
       - 'docs/2-Technical-Reference/40-integration/contract-map.md'
       - 'docs/status/current.md'
+      - 'docs/target/**'
+      - 'docs/wiki/**'
+      - 'docs/evidence/**'
+      - 'docs/inventory/code-snapshots-53.v1.json'
+      - 'docs/inventory/repositories.json'
+      - 'docs/inventory/repositories.md'
+      - 'docs/inventory/GRAPH_FOCUS.md'
+      - 'docs/2-Technical-Reference/10-system/authority-map.md'
+      - 'AGENTS.md'
       - 'docs/2-Technical-Reference/10-system/architecture.md'
       - 'docs/2-Technical-Reference/10-system/authority-map.md'
       - 'README.md'
       - 'docs/index.md'
       - 'scripts/validate_c0_coordination.py'
+      - 'scripts/validate_target_architecture.py'
+      - 'scripts/render_target_wiki.py'
+      - 'scripts/render_target_portfolio.py'
+      - 'scripts/render_target_boundaries.py'
+      - 'scripts/render_repository_inventory.py'
+      - 'tests/test_target_architecture.py'
+      - 'tests/test_wiki_mirror.py'
+      - 'tests/test_functional_chains.py'
       - 'scripts/validate_tandem_vps_profile.py'
       - 'tests/test_c0_coordination.py'
       - 'tests/test_tandem_vps_profile.py'
@@ -30,4 +47,9 @@ jobs:
           python-version: '3.11'
       - run: python scripts/validate_c0_coordination.py
       - run: python scripts/validate_tandem_vps_profile.py
+      - run: python scripts/validate_target_architecture.py
+      - run: python scripts/render_target_wiki.py --validate
+      - run: python scripts/render_target_portfolio.py --check
+      - run: python scripts/render_repository_inventory.py --check
+      - run: python scripts/render_target_boundaries.py --check
       - run: python -m unittest discover -s tests -v

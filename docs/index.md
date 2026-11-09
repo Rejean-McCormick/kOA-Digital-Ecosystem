@@ -1,44 +1,25 @@
 # kOA Digital Ecosystem Documentation
 
-> **2026-10-12:** The v6/IK/UCKK knowledge boundary described below is a **preserved historical contract**. For the newer v9 semantic-state and draft v10 GitHub hosting architecture, see [Kristal v10 harmonization](2-Technical-Reference/40-integration/kristal-v10-alignment/README.md). No current v10 deployment or publication is implied.
+The central documentation is organized around the **intended final system**, not around prior implementation generations. The source repositories remain the owners of their code, exact contracts and releases.
 
-This repository is the **cross-system architecture map** for kOA. It does not replace owner repositories.
+## Final-system entry point
 
-## Current baseline
+- **[Cumulative functional architecture (24 chains)](target/functional-chains/README.md)** — complete destination model, dependencies, 53-repository coverage and acceptance scenarios
 
-The current knowledge boundary is:
+- [Architecture, responsibilities and end-state ownership](target/architecture.md)
+- [End-to-end target journeys](target/journeys.md)
+- [26 target cross-owner boundaries](target/BOUNDARIES.md)
+- [53-repository role catalogue](target/PORTFOLIO.md) (machine-readable [source](target/portfolio.v1.json))
+- [Cross-repository code alignment instructions](target/CODE_ALIGNMENT_INSTRUCTIONS.md)
+- [Implementation evidence and qualification](status/current.md)
 
-```text
-EncyKlopedia acquisition
-→ Da’at mapping
-→ Kristal v6 knowledge/state canon
-→ rebuildable UCKK / Univers-Cité projection
-```
+The target architecture deliberately distinguishes **design** from **observed implementation**, **independent qualification** and **actual runtime deployment**. Current owner READMEs describe Framework v11, Kit v4, Skope-integrated EncyK acquisition and an EncyKlopedia read-only product; the retained older v6/IK/UCKK knowledge contracts are available for compatibility reference, not the organizing architecture.
 
-Current frozen contract identifiers:
+- [GitHub Wiki export and synchronization](wiki/README.md) — generated reader pages, controlled publish process
 
-- Kristal Standard `6.0.0` (`kristal.v6:jcs-rfc8785`);
-- Referent Registry `kristal.referent-registry/1.0.0`;
-- `encyklopedia.corpus-harvest-handoff/1.0.0`;
-- IK `kristal.build.request/2.0.0` and `kristal.artifact.ready/2.0.0`;
-- `uckk.univers-cite-projection/1.0.0`.
+## Technical compatibility references (not target design)
 
-The v6 standard is pinned by manifest and core-contract digests rather than by a release-candidate Git identity.
-
-## Authority boundaries
-
-- Konnaxion owns civic/public source state.
-- Orgo owns workflow/work state.
-- EncyKlopedia owns acquisition evidence and source/provider resolution.
-- Da’at owns the mapping/ACL boundary into Kristal.
-- Kristal owns referent and epistemic artifact semantics.
-- UCKK / Univers-Cité owns consumer projection and campus/learning state, not Kristal assertions.
-- kOA-Linux owns platform contracts and release-channel coordination.
-- `kristal_runtime` owns local Runtime Pack verification/active-state/rollback records.
-- kOA Node Agent owns narrow privileged node-local transitions assigned by contract.
-- Koali Spaces owns presentation composition and Space lifecycle.
-- Interaction Kernel owns Profile/envelope semantics only where adopted.
-- SemantiK Architect owns communication realization; its runtime orchestrator owns release sequencing only.
+The [frozen v6 knowledge-contract set](2-Technical-Reference/40-integration/knowledge-projection-contract-set.json) and [v10 coordination ledger](2-Technical-Reference/40-integration/kristal-v10-alignment/README.md) remain available because some implementation and tests still depend on their exact IDs. **Do not** infer that the old EncyKlopedia acquisition role describes the final EncyKlopedia product.
 
 ## Wiki synchronization
 

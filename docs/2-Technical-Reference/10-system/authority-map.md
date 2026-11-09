@@ -1,6 +1,6 @@
 # Ecosystem authority map
 
-**Status:** current ecosystem-level reference map
+**Status:** coordination reference with dated implementation lanes; the [final-system target authority model](../../target/architecture.md) is the primary design view
 
 This page answers one question: **where does authoritative state live?** It is an index, not a competing source of truth.
 
@@ -10,7 +10,9 @@ This page answers one question: **where does authoritative state live?** It is a
 |---|---|---|---|
 | Civic/public domain state, participation, deliberation, finalized `DecisionRecord` | **Konnaxion** | Consumers may receive authenticated projections/events | Orgo, Kristal, Koali and IK do not become civic-state owners |
 | Workflow, Signal, WorkflowVersion, Case, Task, IntegrationOperation, outbox/reconciliation | **Orgo** | Other systems may trigger work or consume durable results | Konnaxion/Koali do not write Orgo work tables |
-| Source discovery, provider resolution, lossless acquisition evidence and immutable harvest handoff | **EncyKlopedia** | Da’at/Kristal consume pinned exports/evidence | Acquisition does not validate epistemic truth or own Moodle projections |
+| Scope discovery, source acquisition and noncanonical evidence intake | **Skope / integrated EncyK** | Médiathèque and approved mapping consumers may accept explicit exports | Research candidates never validate semantic truth or acquire Moodle authority |
+| Durable source, snapshot, representation and physical file custody | **Médiathèque** | Accepted immutable source references may support semantic authoring | Custody does not own KQ/KP identity or learning decisions |
+| Multilingual read-only encyclopedia/articles | **EncyKlopedia** | Admitted derived read surfaces supply searchable presentation | EncyKlopedia does not acquire raw sources or approve semantic truth |
 | Ecosystem/IK-facing mapping into Kristal-native contracts | **Da’at** | Maps/adapts payloads under ACL while preserving provenance | Da’at owns neither source state nor Kristal authority semantics |
 | Referent Registry semantics, Kristal State, typed valuations/coordinates/applicability, validation/recognition, Reader Policy, record-role/actionability semantics and derived runtime projections | **Kristal** | Consumers derive read/projection/runtime materializations | Kristal is not source acquisition, a live app DB, or UCKK presentation state |
 | Univers-Cité scope/projection configuration, Moodle/campus state, derived glossary/media presentation, local Assembly decisions | **UCKK / Univers-Cité** | Consumes pinned Kristal artifacts and optional external readings | UCKK does not own Kristal assertions/referents or Konnaxion civic decisions |
@@ -46,8 +48,9 @@ accepted                 != succeeded
 
 ```text
 source/provider
-    → EncyKlopedia evidence + referent candidates
-    → Da’at mapping/ACL
+    → Skope / EncyK acquisition candidates
+    → Médiathèque accepted source evidence
+    → DaaT mapping/ACL
     → Kristal-owned referent/Kristal State artifact
     → derived Runtime Pack or UCKK projection
 ```
@@ -72,7 +75,7 @@ This is an **interface coordination supplement**, not a reassignment of system a
 
 | State / decision | Owner | Coordination consequence |
 |---|---|---|
-| Source acquisition/candidates | EncyKlopedia | Not durable Médiathèque custody; not semantic identity |
+| Source acquisition/candidates | Skope / integrated EncyK | Not durable Médiathèque custody; not semantic identity |
 | Durable source/snapshot/representation acceptance | Médiathèque kOA | Receiver owns acceptance, replay and storage receipt |
 | Kristal semantic canon and commitments | Kristal owners under Framework contracts | v10 hosting cannot redefine v9 identity or v6 payload |
 | Local build/read surface | Authoring Kit | Read model is derived, must be verified against canonical commitments |

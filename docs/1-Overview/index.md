@@ -1,4 +1,6 @@
-# kOA Digital Ecosystem
+# kOA Digital Ecosystem — earlier system map
+
+> For the **final-system target**, see [architecture and owner roles](../target/architecture.md) and [cross-system journeys](../target/journeys.md). The diagram below is an earlier technical mapping, not the target authority map; in particular modern **EncyKlopedia is read-only**, while Skope integrates the EncyK acquisition engine.
 
 kOA is a system of independently owned systems connected through explicit contracts.
 

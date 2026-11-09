@@ -1,8 +1,10 @@
 # kOA ecosystem maturity map
 
-**Purpose:** current cross-system engineering view backed by owner evidence. This page does not replace owner status/release documents.
+**Purpose:** time-scoped cross-system engineering evidence view; for the final-system design see [target architecture](../target/README.md). This page does not replace owner status/release documents.
 
-## Reading the map**New evidence (2026-11-06):** diK 1.0.0-alpha.7 and Kristalizer 1.2.2 were found in user-supplied SmartDump code snapshots. Their local source roots are now registered; the Git remotes, Framework/Kit compatibility, end-to-end integration and public publication remain **unverified**. [Read the integration note](../2-Technical-Reference/40-integration/dik-kristalizer/README.md).
+## Reading the map
+
+**New evidence (2026-11-06):** diK 1.0.0-alpha.7 and Kristalizer 1.2.2 were found in user-supplied SmartDump code snapshots. Their local source roots are now registered; the Git remotes, Framework/Kit compatibility, end-to-end integration and public publication remain **unverified**. [Read the integration note](../2-Technical-Reference/40-integration/dik-kristalizer/README.md).
 
 
 

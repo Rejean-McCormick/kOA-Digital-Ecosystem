@@ -125,7 +125,7 @@ def validate(root=ROOT):
         repos=json.loads((root/'docs/inventory/repositories.json').read_text(encoding='utf-8'))
         graph=json.loads((root/'docs/inventory/graph-registry.v1.json').read_text(encoding='utf-8'))
         toolmap=json.loads((root/'docs/2-Technical-Reference/40-integration/dik-kristalizer/coordination.json').read_text(encoding='utf-8'))
-        if len(repos)!=51 or graph.get('reference_count')!=len(repos):
+        if len(repos)!=53 or graph.get('reference_count')!=len(repos):
             issues.append('diK/Kristalizer: inventory/graph counts are not consistent')
         repoids=[row.get('github_repo') for row in repos]
         if len(repoids)!=len(set(repoids)):

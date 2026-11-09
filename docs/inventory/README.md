@@ -1,10 +1,13 @@
 # Inventaire courant des dépôts kOA
 
+For **all repository roles in the final-system design**, see the [target portfolio](../target/PORTFOLIO.md) and [target architecture](../target/architecture.md). This inventory remains an identity and declared-path registry, not evidence of integration.
+
 Ce dossier décrit **ce qui figure actuellement dans le périmètre kOA**, sans mélanger l'inventaire avec des archives de relevés, des clones tiers ou des projets personnels.
 
 - [`GRAPH_FOCUS.md`](GRAPH_FOCUS.md) — mode d’emploi des parcours focalisés.
 - [`graph-focus.v1.json`](graph-focus.v1.json) — parcours focalisés typés, branches, contrats, preuves documentaires et niveaux de maturité (indépendants de la qualification des applications).
-- [`repositories.json`](repositories.json) — **source de référence machine**, 51 dépôts retenus.
+- [`repositories.json`](repositories.json) — **source de référence machine**, 53 dépôts retenus.
+- [`code-snapshots-53.v1.json`](code-snapshots-53.v1.json) — manifestes SHA-256 des 53 archives de code hors Git et état d’audit `NOT_EVALUATED`.
 - [`repositories.md`](repositories.md) — vue humaine générée du même périmètre.
 - [diK/Kristalizer integration coordination](../2-Technical-Reference/40-integration/dik-kristalizer/README.md) — source-root evidence and the separate owner-boundary workstream.
 - [`GITHUB_DESCRIPTIONS.md`](GITHUB_DESCRIPTIONS.md) — descriptions proposées pour les applications concernées.

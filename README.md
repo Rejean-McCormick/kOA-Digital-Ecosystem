@@ -1,14 +1,14 @@
 # kOA Digital Ecosystem
 
-This repository describes **the current kOA system-of-systems scope**: ownership, integration contracts, explicit authority boundaries, release and activation gates, and the qualification evidence available today. It does not archive every previously observed checkout or treat a proposal as deployed software.
+This repository documents **the intended final kOA system-of-systems architecture**: products, responsibilities, interfaces, user journeys, release and activation gates, and the code changes required to reach that design. It remains a **C0 coordination repository**, not the owner of a product’s semantic or operational state.
 
-Consult [current maturity](docs/status/current.md), [authority map](docs/2-Technical-Reference/10-system/authority-map.md), [contract map](docs/2-Technical-Reference/40-integration/contract-map.md), and [Kristal v10 alignment](docs/2-Technical-Reference/40-integration/kristal-v10-alignment/README.md).
+**Start with [the cumulative final-system functional chains](docs/target/functional-chains/README.md)**, [the final-system architecture](docs/target/README.md), [the target ownership model](docs/target/architecture.md), [all 53 repository roles](docs/target/PORTFOLIO.md), [26 target interfaces](docs/target/BOUNDARIES.md), and [the code-alignment instructions](docs/target/CODE_ALIGNMENT_INSTRUCTIONS.md), plus [the 53-snapshot reconciliation](docs/target/SNAPSHOT_RECONCILIATION.md). **Target design is not proof of deployment**; compare [the available maturity evidence](docs/status/current.md) before asserting that an integration is operational.
 
 ## Control views
 
 Use these views together:
 
-- **System map** — what exists and how the major systems relate: [`docs/1-Overview/index.md`](docs/1-Overview/index.md)
+- **System map (earlier evidence)** — dated technical view; consult the final-system design first: [`docs/1-Overview/index.md`](docs/1-Overview/index.md)
 - **Authority map** — who owns each authoritative state or decision: [`docs/2-Technical-Reference/10-system/authority-map.md`](docs/2-Technical-Reference/10-system/authority-map.md)
 - **Contract map** — which explicit boundaries connect owners: [`docs/2-Technical-Reference/40-integration/contract-map.md`](docs/2-Technical-Reference/40-integration/contract-map.md)
 - **Maturity map** — specified vs implemented vs qualified vs integrated vs production-proven: [`docs/status/current.md`](docs/status/current.md)
@@ -33,7 +33,9 @@ This repository answers four questions without becoming a competing product auth
 |---|---|
 | **Konnaxion** | civic/public domain state, deliberation, finalized `DecisionRecord`, civic/accountability state |
 | **Orgo** | Signal, Workflow, Case, Task, IntegrationOperation, outbox and operational reconciliation |
-| **EncyKlopedia** | source discovery/acquisition, provider resolution, lossless evidence and immutable corpus-harvest handoff |
+| **Skope / integrated EncyK** | local research, source acquisition and noncanonical candidate/evidence intake |
+| **Médiathèque** | durable source, snapshot and representation custody, with independent instance data |
+| **EncyKlopedia** | read-only multilingual encyclopedia and public knowledge presentation |
 | **Da’at** | mapping/ACL boundary into Kristal-native contracts |
 | **Kristal** | referent identity semantics, Kristal State, typed valuations/coordinates/applicability, validation/recognition, Reader Policy, record-role/actionability semantics and knowledge-runtime projection semantics |
 | **UCKK / Univers-Cité** | scoped consumer projections, Moodle materialization, derived glossaries, campus/learning state and institutional decisions |
@@ -50,12 +52,12 @@ This repository answers four questions without becoming a competing product auth
 - **One authoritative owner per state.** Hosting, transport, projection or rendering does not transfer ownership.
 - **No cross-system database writes.** Receivers mutate only receiver-owned state.
 - **Projection is rebuildable.** A UCKK/Univers-Cité projection does not become the Kristal canon.
-- **Acquisition is not validation.** EncyKlopedia referent candidates and evidence do not become validated Kristal assertions merely by handoff.
+- **Acquisition is not validation.** Skope/EncyK research candidates and Médiathèque-preserved source evidence do not become validated Kristal assertions merely by handoff.
 - **External identifiers do not transfer authority.** Wikidata, Gutenberg, VIAF and similar identifiers remain references/providers.
 - **Interaction Kernel carries contracts; it owns no participant state.** Adoption is explicit and boundary-specific.
 - **Space activation is not Runtime Pack activation.** Presentation and knowledge-runtime state are separate lifecycles.
 - **`accepted` is not `succeeded`.** Durable asynchronous effects require terminal reconciliation.
-- **Historical RC records do not define the active standard.** Retained v5 release-candidate material is migration/history evidence only; the active Kristal v6 standard identity is the pinned manifest/core-contract digest set.
+- **Target identity is versioned.** Strict Framework v11 namespace identities and lexical separation are the intended design; observed owner drafts require explicit compatibility checks before adoption. Preserved v6 contract identifiers remain scoped to the older lane, not the final-system default.
 
 ## Principal flows
 
@@ -69,19 +71,19 @@ Konnaxion finalized DecisionRecord
     → Konnaxion-owned accountability / impact state
 ```
 
-### Knowledge acquisition → canon → Univers-Cité projection
+### Final-system knowledge journey (target, not E2E-qualified)
 
 ```text
-source discovery / acquisition
-    → EncyKlopedia immutable evidence + referent candidates
-    → encyklopedia.corpus-harvest-handoff/1.0.0
-    → Da’at mapping / ACL
-    → Kristal referent + v6 state contracts
-    → Working / Reference artifacts as policy permits
-    → kristal.artifact.ready/2.0.0
-    → uckk.univers-cite-projection/1.0.0
-    → rebuildable UCKK / Moodle / glossary / media presentation
+Skope / integrated EncyK — reviewed research and acquisition candidates
+    → Médiathèque — durable source/snapshot/representation receipt
+    → DaaT, diK or Kristalizer — explicit mapping/review boundary where adopted
+    → Framework + Authoring Kit — canonical identity and validated local build
+    → independent qualification and owner authorization
+    → immutable publication / derived read surface (optional)
+    → Konstellation / Kompiler / EncyKlopedia / Ekole / UCKK (read consumers)
 ```
+
+These are **separate owner-governed transitions**, not a claim that one automatic pipeline exists. [Detailed inputs, receipts and gates](docs/target/journeys.md).
 
 ### Knowledge runtime activation
 
@@ -102,13 +104,19 @@ admitted application
 
 ## Wiki and documentation maintenance
 
+The [offline v4 integration report](docs/integration/FINAL_SYSTEM_INTEGRATION_2026-11-09.md) records the central/wiki reconciliation and its limits.
+
+The final-system corpus under [`docs/target/functional-chains/`](docs/target/functional-chains/README.md) is also exportable as **47 linked GitHub Wiki pages** without forking the source of truth. See the [wiki synchronization and publication procedure](docs/wiki/README.md) and run `python scripts/render_target_wiki.py --validate` before publishing either repository. The wiki is a second Git repository and will not update merely because the central repository changes.
+
 The [GitHub Wiki](https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem/wiki) is a navigational explanation of this repository, **not a separate source of truth**. For current engineering claims, consult `docs/status/current.md` and the owner-specific contract/evidence pages. Keep dated wiki status pages as historical records; do not reinterpret the frozen Kristal v6/IK v2/UCKK lane as the latest v9/v10 release.
 
 The 2026-10-27 documentation reconciliation is summarized in [wiki synchronization notes](docs/status/wiki-synchronization-2026-10-27.md). Remote wiki publication and current GitHub HEAD are **not verified** by the supplied ZIP snapshots.
 
 ## Start here
 
-- [`docs/index.md`](docs/index.md)
+- [`docs/target/functional-chains/README.md`](docs/target/functional-chains/README.md) — cumulative functional system specification (24 chains, 53-repository coverage, test gates)
+- [`docs/target/README.md`](docs/target/README.md) — final-system entry point
+- [`docs/index.md`](docs/index.md) — technical/implementation references
 - [`docs/2-Technical-Reference/40-integration/knowledge-projection.md`](docs/2-Technical-Reference/40-integration/knowledge-projection.md)
 - [`docs/status/current.md`](docs/status/current.md)
 

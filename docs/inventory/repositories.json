@@ -70,6 +70,13 @@
     "status": "local_git_marker_seen"
   },
   {
+    "github_repo": "Rejean-McCormick/Karacter",
+    "github_url": "https://github.com/Rejean-McCormick/Karacter",
+    "local_root": "C:\\mycode\\Ekole\\Karacter",
+    "scope": "PUBLIC",
+    "status": "source_root_observed_in_smartdump_remote_unverified"
+  },
+  {
     "github_repo": "Rejean-McCormick/kOA-Digital-Ecosystem",
     "github_url": "https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem",
     "local_root": "C:\\mycode\\kOA_Digital_Ecosystem\\kOA_Digital_Ecosystem",
@@ -103,6 +110,13 @@
     "local_root": "C:\\mycode\\kOA-Linux\\koali-spaces",
     "scope": "PUBLIC",
     "status": "local_git_marker_seen"
+  },
+  {
+    "github_repo": "Rejean-McCormick/Kolor",
+    "github_url": "https://github.com/Rejean-McCormick/Kolor",
+    "local_root": "C:\\mycode\\Ekole\\Kolor",
+    "scope": "PUBLIC",
+    "status": "source_root_observed_in_smartdump_remote_unverified"
   },
   {
     "github_repo": "Rejean-McCormick/Kompiler",

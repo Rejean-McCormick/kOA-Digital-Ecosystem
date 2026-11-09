@@ -1,0 +1,162 @@
+{
+  "schema": "koa-doc-code-audit/1.0",
+  "repo": "Rejean-McCormick/kOA-Digital-Ecosystem",
+  "source_root": "C:\\mycode\\kOA_Digital_Ecosystem\\kOA_Digital_Ecosystem",
+  "snapshot_zip": "kOA_Digital_Ecosystem_Code_snapshot.zip",
+  "snapshot_sha256": "c83b7338336b82dfeae40a65359cec82e2a2044f074ce32a871e76b93bf88ada",
+  "git_revision": null,
+  "branch_state": "PRET_A_RELIRE",
+  "claims": [
+    {
+      "id": "C0-53-001",
+      "documentation_path": "docs/inventory/repositories.json",
+      "affirmation": "The consolidated declared owner perimeter contains 53 repository identities.",
+      "classification": "CONFIRMEE_SOURCE",
+      "evidence": [
+        "KITS_BRANCHE_53_REPOS(2).zip::REGISTRE_CANONIQUE_PROPOSE_53.json (repo_count=53)",
+        "docs/inventory/code-snapshots-53.v1.json (53 matching IDs and verified ZIP SHA-256)"
+      ],
+      "resolution": "Recorded two additional owner identities, Kolor and Karacter, without inventing integrations."
+    },
+    {
+      "id": "C0-53-002",
+      "documentation_path": "docs/target/portfolio.v1.json",
+      "affirmation": "HomePage-initkoa.org, initkoa-docs and Koali-Scenario-Mosaic have no owner-source evidence available.",
+      "classification": "OBSOLETE",
+      "evidence": [
+        "SmartDump_20261109_113255(2).zip::HomePage_Code_snapshot.zip::package.json",
+        "SmartDump_20261109_113255(2).zip::docs-initkoa-org_Code_snapshot.zip::docs/index.md",
+        "SmartDump_20261109_113255(2).zip::Koali_Scenario_Mosaic_Code_snapshot.zip::README.md"
+      ],
+      "resolution": "Replaced source_absent evidence placeholders with exact offline member/file hashes; did not upgrade qualification."
+    },
+    {
+      "id": "C0-53-003",
+      "documentation_path": "docs/target/adjacent-projects.md",
+      "affirmation": "Kolor and Karacter remain unregistered neighboring projects.",
+      "classification": "OBSOLETE",
+      "evidence": [
+        "SmartDump_20261109_113255(2).zip::Kolor_Code_snapshot.zip::README.md",
+        "SmartDump_20261109_113255(2).zip::Karacter_Code_snapshot.zip::README.md"
+      ],
+      "resolution": "Registered the two creative-tool owners and kept the remaining 22 project folders separate."
+    },
+    {
+      "id": "C0-53-004",
+      "documentation_path": "docs/target/SNAPSHOT_RECONCILIATION.md",
+      "affirmation": "The 53 owner repositories have all passed functional, integration and deployment checks.",
+      "classification": "NON_VERIFIABLE",
+      "evidence": [
+        "Matrice_audit_kOA_53_repos_2026-11-09 (1)(1).xlsx::Matrice 53 (53 status cells NON ÉVALUÉ)",
+        "KITS_BRANCHE_53_REPOS(2).zip::BRANCH_REPORT_TEMPLATE_12_kOA-Digital-Ecosystem.json (empty claims and validations)"
+      ],
+      "resolution": "Explicitly record NOT_EVALUATED and NOT_RUN for all 53 captured code snapshots; report C0 local tests separately."
+    },
+    {
+      "id": "C0-53-005",
+      "documentation_path": "docs/target/portfolio.v1.json",
+      "affirmation": "Koali-Scenario-Mosaic currently provides 36 bilingual scenarios.",
+      "classification": "CONFIRMEE_SOURCE",
+      "evidence": [
+        "SmartDump_20261109_113255(2).zip::Koali_Scenario_Mosaic_Code_snapshot.zip::README.md",
+        "Same snapshot: 36 `src/content/scenarios/en/SCN-*.md` and 36 `fr/SCN-*.md`"
+      ],
+      "resolution": "Record current source-derived role; older documentation describing 120 items is an owner-level documentation consistency request."
+    }
+  ],
+  "changed_files": [
+    ".github/workflows/c0-coordination.yml",
+    "AGENTS.md",
+    "README.md",
+    "docs/evidence/BRANCH_REPORT_C0_2026-11-09.json",
+    "docs/inventory/GRAPH_FOCUS.md",
+    "docs/inventory/GRAPH_REGISTRY.md",
+    "docs/inventory/README.md",
+    "docs/inventory/code-snapshots-53.v1.json",
+    "docs/inventory/graph-registry.v1.json",
+    "docs/inventory/repositories.json",
+    "docs/inventory/repositories.md",
+    "docs/target/CODE_ALIGNMENT_INSTRUCTIONS.md",
+    "docs/target/PORTFOLIO.md",
+    "docs/target/README.md",
+    "docs/target/SNAPSHOT_RECONCILIATION.md",
+    "docs/target/adjacent-projects.md",
+    "docs/target/architecture.md",
+    "docs/target/portfolio.v1.json",
+    "scripts/render_repository_inventory.py",
+    "scripts/render_target_portfolio.py",
+    "scripts/validate_c0_coordination.py",
+    "scripts/validate_target_architecture.py",
+    "tests/test_dik_kristalizer_inventory.py",
+    "tests/test_target_architecture.py"
+  ],
+  "validations": [
+    {
+      "name": "53 SmartDump ZIP SHA-256 comparisons",
+      "status": "PASS",
+      "evidence": "All 53 nested code snapshots checked against the SHA-256 values from the proposed 53-repo register (2026-11-09 local intake)."
+    },
+    {
+      "name": "C0 coordination validator",
+      "status": "PASS",
+      "evidence": "python scripts/validate_c0_coordination.py — PASS, local worktree"
+    },
+    {
+      "name": "Target architecture validator",
+      "status": "PASS",
+      "evidence": "python scripts/validate_target_architecture.py — PASS, local worktree"
+    },
+    {
+      "name": "VPS profile validator",
+      "status": "PASS",
+      "evidence": "python scripts/validate_tandem_vps_profile.py — PASS, local worktree"
+    },
+    {
+      "name": "Generated register checks",
+      "status": "PASS",
+      "evidence": "python scripts/render_target_portfolio.py --check; render_target_boundaries.py --check; render_repository_inventory.py --check — PASS"
+    },
+    {
+      "name": "C0 unit test suite",
+      "status": "PASS",
+      "evidence": "python -m unittest discover -s tests -v — 36 tests, OK, local Python environment on 2026-11-09"
+    },
+    {
+      "name": "53 owners functional/integration test suites",
+      "status": "NOT_RUN",
+      "evidence": "Only archive SHA-256 and selective source reading were performed. No owner test or deployment qualification."
+    },
+    {
+      "name": "Current GitHub HEAD / deployment evidence",
+      "status": "NOT_RUN",
+      "evidence": "Offline user-supplied ZIP snapshots, not Git clones and not a runtime environment."
+    }
+  ],
+  "cross_repo_requests": [
+    {
+      "owner": "Rejean-McCormick/Mediatheque",
+      "subject": "Check real receiver acceptance and replay/receipt behavior for source-evidence handoff v2 from integrated Skope/EncyK.",
+      "contract_revision": "encyk.source-evidence-handoff/2.0.0 ↔ koa.source-catalog/2.0.0",
+      "gate": "Owner acceptance + dual-endpoint test with exact revisions"
+    },
+    {
+      "owner": "Rejean-McCormick/Kristal-Authoring-Kit",
+      "subject": "Resolve Framework v11 draft pin compatibility for diK alpha.7 versus Kristalizer 1.2.2 local Kit route.",
+      "contract_revision": "Framework 11.0.0-draft.3 / 11.0.0-draft.4; Kit 4.0.0-draft.4",
+      "gate": "Pinned contract set + independent compatibility tests"
+    },
+    {
+      "owner": "Rejean-McCormick/Kontexte",
+      "subject": "Verify Kolor reviewed asset manifest import/export compatibility, no implied runtime activation.",
+      "contract_revision": "Kolor reviewed exports (version not pinned)",
+      "gate": "Exact schema + owner-approved sample + import test"
+    },
+    {
+      "owner": "Rejean-McCormick/Koali-Scenario-Mosaic",
+      "subject": "Reconcile current 36-scenario source content with older 120-item documentation lanes; do not delete reference history without product review.",
+      "contract_revision": "Scenario Mosaic V2 source content",
+      "gate": "Owner-approved current README/docs alignment"
+    }
+  ],
+  "notes": "Local C0 snapshot refactor v1 → v2 reconciliation; only C0 local files edited. Owner product code and GitHub remotes untouched. Source fingerprints are from user-provided offline ZIPs, not current GitHub HEAD. Supplemental C0 tests were executed in this local worktree."
+}
