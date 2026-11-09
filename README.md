@@ -14,6 +14,7 @@ Use these views together:
 - **Maturity map** — specified vs implemented vs qualified vs integrated vs production-proven: [`docs/status/current.md`](docs/status/current.md)
 - **Layer model** — conceptual classification/orientation only: [`docs/3-Layer-Model/README.md`](docs/3-Layer-Model/README.md)
 - **Repository inventory** — current kOA repository perimeter: [`docs/inventory/README.md`](docs/inventory/README.md)
+- **diK & Kristalizer mapping** — snapshot-backed local roots and proposed lexical/authoring handoffs: [`docs/2-Technical-Reference/40-integration/dik-kristalizer/README.md`](docs/2-Technical-Reference/40-integration/dik-kristalizer/README.md)
 
 ## Purpose
 

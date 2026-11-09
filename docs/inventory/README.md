@@ -4,8 +4,9 @@ Ce dossier décrit **ce qui figure actuellement dans le périmètre kOA**, sans 
 
 - [`GRAPH_FOCUS.md`](GRAPH_FOCUS.md) — mode d’emploi des parcours focalisés.
 - [`graph-focus.v1.json`](graph-focus.v1.json) — parcours focalisés typés, branches, contrats, preuves documentaires et niveaux de maturité (indépendants de la qualification des applications).
-- [`repositories.json`](repositories.json) — **source de référence machine**, 49 dépôts retenus.
+- [`repositories.json`](repositories.json) — **source de référence machine**, 51 dépôts retenus.
 - [`repositories.md`](repositories.md) — vue humaine générée du même périmètre.
+- [diK/Kristalizer integration coordination](../2-Technical-Reference/40-integration/dik-kristalizer/README.md) — source-root evidence and the separate owner-boundary workstream.
 - [`GITHUB_DESCRIPTIONS.md`](GITHUB_DESCRIPTIONS.md) — descriptions proposées pour les applications concernées.
 - [`apps-skope-ekole.json`](apps-skope-ekole.json) — métadonnées applicatives Skope / Ékole.
 

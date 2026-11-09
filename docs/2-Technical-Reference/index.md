@@ -37,6 +37,7 @@ The current knowledge boundary freezes Kristal Standard `6.0.0`, Referent Regist
 - `30-artifacts/kristal-runtime-state.md`
 - `40-integration/contract-map.md`
 - `40-integration/knowledge-projection.md`
+- `40-integration/dik-kristalizer/README.md` (2026-11-06 snapshot mapping; candidate-only)
 - `40-integration/interaction-kernel/index.md`
 - `40-integration/kristal-v6/index.md`
 - `40-integration/koali-spaces/index.md`

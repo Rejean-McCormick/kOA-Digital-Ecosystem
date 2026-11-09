@@ -2,13 +2,14 @@
 
 Ce registre présente les dépôts **retenus dans le périmètre documentaire et d’intégration kOA**. Il ne constitue ni un historique, ni une liste de tous les clones du disque, ni une instruction GitSink.
 
-**Source structurée :** [`repositories.json`](repositories.json). **Entrées : 49**. Les identités et chemins reflètent le dernier inventaire communiqué; l'existence du dossier, la concordance du remote et la synchronisation doivent être revérifiées sur la machine cible.
+**Source structurée :** [`repositories.json`](repositories.json). **Entrées : 51**. Les identités et chemins reflètent le dernier inventaire communiqué; l'existence du dossier, la concordance du remote et la synchronisation doivent être revérifiées sur la machine cible.
 
 | Dépôt | État de vérification enregistré | Racine locale déclarée |
 | --- | --- | --- |
 | [`Akor`](https://github.com/Rejean-McCormick/Akor) | `github_and_local_remote_verified` | `C:\mycode\Ekole\Akor\Akor` |
 | [`Arketype`](https://github.com/Rejean-McCormick/Arketype) | `github_and_local_remote_verified` | `C:\mycode\Kristal\Arketype\arketype` |
 | [`Daat`](https://github.com/Rejean-McCormick/Daat) | `github_and_local_remote_verified` | `C:\mycode\Interaction-Kernel\Daat` |
+| [`diK`](https://github.com/Rejean-McCormick/diK) | `source_root_observed_in_smartdump_remote_unverified` | `C:\mycode\diK\diK` |
 | [`Ekole`](https://github.com/Rejean-McCormick/Ekole) | `github_and_local_remote_verified` | `C:\mycode\Ekole\ekole` |
 | [`Ekole-Pastorale`](https://github.com/Rejean-McCormick/Ekole-Pastorale) | `github_and_local_remote_verified` | `C:\mycode\Ekole\ecole-pastorale` |
 | [`EncyKlopedia`](https://github.com/Rejean-McCormick/EncyKlopedia) | `local_git_marker_seen` | `C:\mycode\EncyKlopedia\EncyKlopedia` |
@@ -39,6 +40,7 @@ Ce registre présente les dépôts **retenus dans le périmètre documentaire et
 | [`Kristal-Manager`](https://github.com/Rejean-McCormick/Kristal-Manager) | `local_git_marker_seen` | `C:\mycode\Kristal\Kristal-Manager` |
 | [`kristal-public`](https://github.com/Rejean-McCormick/kristal-public) | `local_git_marker_seen` | `C:\mycode\Kristal\kristal-public` |
 | [`KristalDiag`](https://github.com/Rejean-McCormick/KristalDiag) | `local_git_marker_seen` | `C:\mycode\Kristal\KristalDiag` |
+| [`Kristalizer`](https://github.com/Rejean-McCormick/Kristalizer) | `source_root_observed_in_smartdump_remote_unverified` | `C:\mycode\Kristal\Kristalizer` |
 | [`LevelUpDiag-kOA-Linux`](https://github.com/Rejean-McCormick/LevelUpDiag-kOA-Linux) | `local_git_marker_seen` | `C:\mycode\kOA-Linux\LevelUpDiag-Koali` |
 | [`LevelUpDiag-Orgo`](https://github.com/Rejean-McCormick/LevelUpDiag-Orgo) | `local_git_marker_seen` | `C:\mycode\Orgo\LevelUpDiag-Orgo` |
 | [`LevelUpDiag_SemantiK-Architect`](https://github.com/Rejean-McCormick/LevelUpDiag_SemantiK-Architect) | `local_git_marker_seen` | `C:\mycode\SemantiK_Architect\LevelUpDiag_SemantiK_Architect` |
@@ -65,3 +67,5 @@ Ce registre présente les dépôts **retenus dans le périmètre documentaire et
 ## Limite d'autorité
 
 Les dépôts restent maîtres de leurs propres contrats, composants et releases. L’inscription ici ne confère **aucun droit de commit, push, merge, publication ou déploiement**. Les vérifications Git doivent être faites au moment de toute opération.
+
+**New snapshot-backed entries (2026-11-06):** `diK` and `Kristalizer` paths are copied from the corresponding SmartDump `source_root` lines. Their local Git `origin`, worktree HEAD and deployment are **not verified** by the snapshot. See [diK/Kristalizer integration](../2-Technical-Reference/40-integration/dik-kristalizer/README.md).

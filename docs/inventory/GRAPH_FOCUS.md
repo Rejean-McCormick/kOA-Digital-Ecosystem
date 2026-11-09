@@ -19,7 +19,7 @@ plusieurs fois dans un chemin sans devenir plusieurs applications.
 
 - `paths[]` : trois parcours sélectionnables, `spine[]`, liens consécutifs `spine_links[]`,
   `branches[]` ancrées sur une étape du chemin central et placées au-dessus ou au-dessous ;
-- `repo` : référence explicite à un dépôt de l'inventaire public des 49 ; pour un artefact ou
+- `repo` : référence explicite à un dépôt de l'inventaire public des 51 ; pour un artefact ou
   une interface, `repo` peut être nul ;
 - `contract` : identifiant exact de l'interface lorsque documenté (ne vaut pas adoption universelle) ;
 - `evidence` : `repo` et `path` d'un document source, sans URL fabriquée depuis un dossier Windows ;

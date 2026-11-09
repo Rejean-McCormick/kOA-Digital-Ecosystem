@@ -1,0 +1,123 @@
+{
+  "name": "OVERLAY_kOA_Digital_Ecosystem_diK_Kristalizer_20261106",
+  "target_root": "C:\\mycode\\kOA_Digital_Ecosystem\\kOA_Digital_Ecosystem",
+  "based_on": "znapshot_kOA_Digital_Ecosystem_11061318.zip",
+  "source_evidence": "SmartDump_20261106_131708.zip",
+  "safe_to_commit": false,
+  "requires_local_diff_review": true,
+  "modified_new_files": [
+    {
+      "path": "README.md",
+      "operation": "modify",
+      "original_sha256": "3b0e3aba458fc29d79a537c6f0be01fc093fcec5eb356e2efd814b2bc172bab2",
+      "overlay_sha256": "33b722f283024a9ea2490fce14d1dc6266cb4d1789b5026a0c8dccd495004e40",
+      "bytes": 10399
+    },
+    {
+      "path": "README_UPDATE_DIK_KRISTALIZER_20261106.md",
+      "operation": "add",
+      "original_sha256": null,
+      "overlay_sha256": "9f606d2595e1c271fa0fc8ec167152b816b4990fbda074d7577265d1fd74cf1f",
+      "bytes": 3221
+    },
+    {
+      "path": "docs/1-Overview/index.md",
+      "operation": "modify",
+      "original_sha256": "88ca65c129dde28ad6159a015c24a24fcf2d228320b0c879e1be445951d90af7",
+      "overlay_sha256": "95387f5cdac407f3b7655326e03b08d17d9ad05322c3a3851e3f0e7778f78e9a",
+      "bytes": 6046
+    },
+    {
+      "path": "docs/2-Technical-Reference/40-integration/contract-map.md",
+      "operation": "modify",
+      "original_sha256": "df1c7f33cf8b4f2f6c264efea695066590536b6dcda5ef3af965af32a20e06fa",
+      "overlay_sha256": "7052d2f39e1c5a6e93befb5da430391950d683810194f8eef5af80f2c735d7cb",
+      "bytes": 9802
+    },
+    {
+      "path": "docs/2-Technical-Reference/40-integration/dik-kristalizer/README.md",
+      "operation": "add",
+      "original_sha256": null,
+      "overlay_sha256": "b021150e6dff35ab349f8479a2328c0435b7a390d9d4c1567dfa148ff6906610",
+      "bytes": 6297
+    },
+    {
+      "path": "docs/2-Technical-Reference/40-integration/dik-kristalizer/coordination.json",
+      "operation": "add",
+      "original_sha256": null,
+      "overlay_sha256": "fe2b73cdfcf7a09d8bc1e2cae7ac1c5a80594605fe4be3ad11f0e622fb9f170a",
+      "bytes": 4154
+    },
+    {
+      "path": "docs/2-Technical-Reference/index.md",
+      "operation": "modify",
+      "original_sha256": "cdb9b7fc99453d686d5ea17943cf4f4f8ab7f2b8c226164353791f88ae2e5cad",
+      "overlay_sha256": "a0d19da025a46537affd8f21966bc3e906835a69c2a0ff0d23c63c63627e74be",
+      "bytes": 2452
+    },
+    {
+      "path": "docs/inventory/GRAPH_FOCUS.md",
+      "operation": "modify",
+      "original_sha256": "1e5e8577e782cc325235f7cb310bc81e7b950100cd2bef7e695bfde20fe90a13",
+      "overlay_sha256": "e89cc84cffb8ad30b2412718540b1890844091b8da1563c7405451435c3cffa0",
+      "bytes": 3631
+    },
+    {
+      "path": "docs/inventory/GRAPH_REGISTRY.md",
+      "operation": "modify",
+      "original_sha256": "93cf2ea5c11feefa7329d96a4f2f4cd8cde3d44f43a019cf8126b3a525f54593",
+      "overlay_sha256": "070823e6845fad5154c6fdb9070050571b5048e18f1fa63b0e3f64831e3408eb",
+      "bytes": 1599
+    },
+    {
+      "path": "docs/inventory/README.md",
+      "operation": "modify",
+      "original_sha256": "d953cb118794262008f8fa523d1dab4801d9f26c3ce888f022a4ea921e9c4527",
+      "overlay_sha256": "a702442bb75ad086061fb6aac173dee0bf665ccc31d09ad1037269fd76e7949d",
+      "bytes": 2291
+    },
+    {
+      "path": "docs/inventory/graph-registry.v1.json",
+      "operation": "modify",
+      "original_sha256": "7e5529fe336d1c329223d05f4986f72d5d0a51cb6b47ea8ddcc99476cc2c737a",
+      "overlay_sha256": "58f9b74c8e31cb7a40889b0c61f0f64ede1cba287835572e770134ba05806a9e",
+      "bytes": 8456
+    },
+    {
+      "path": "docs/inventory/repositories.json",
+      "operation": "modify",
+      "original_sha256": "0fff4ea743dc4f25f9069c1b3094b904eab9929f51f0e761e7390ff3ae4aa546",
+      "overlay_sha256": "78f6e21f73ec10c14d122eba64dd4f9ea058b013649c53ec9c5074fa723d1d53",
+      "bytes": 13193
+    },
+    {
+      "path": "docs/inventory/repositories.md",
+      "operation": "modify",
+      "original_sha256": "cac390f3dcae00a9b06ee4fd2c1deae45b220375606ecf4fcfe195f9c757086e",
+      "overlay_sha256": "ca465ac79c7646aa68f53a3ae0e7f089b8edc82a1068362e1f9f057c90c629b3",
+      "bytes": 9011
+    },
+    {
+      "path": "docs/status/current.md",
+      "operation": "modify",
+      "original_sha256": "75a5cbed23e693b7b15a3a8a53e89e7ecddf7ab6fcd1f860212eb52df60e31a9",
+      "overlay_sha256": "52e7e0f0338882f7ff88585acf876140814691895863b49b21473952d7a99b68",
+      "bytes": 10596
+    },
+    {
+      "path": "scripts/validate_c0_coordination.py",
+      "operation": "modify",
+      "original_sha256": "d9ec9586ea4bcceeeb6498503fb0fe65d2e80e88e1da82953848d33542c5e74b",
+      "overlay_sha256": "21a578e17e3ce0604e6e9bd384608d2c4471a366410a5e375c94a971e015288b",
+      "bytes": 11216
+    },
+    {
+      "path": "tests/test_dik_kristalizer_inventory.py",
+      "operation": "add",
+      "original_sha256": null,
+      "overlay_sha256": "bf09ed5494e97ba808ae73c691621accd374869ef5ef626575ce7fee7bdd324a",
+      "bytes": 4212
+    }
+  ],
+  "untouched_originals": 208
+}

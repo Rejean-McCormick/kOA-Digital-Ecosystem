@@ -21,6 +21,13 @@
     "status": "github_and_local_remote_verified"
   },
   {
+    "github_repo": "Rejean-McCormick/diK",
+    "github_url": "https://github.com/Rejean-McCormick/diK",
+    "local_root": "C:\\mycode\\diK\\diK",
+    "scope": "PUBLIC",
+    "status": "source_root_observed_in_smartdump_remote_unverified"
+  },
+  {
     "github_repo": "Rejean-McCormick/Ekole",
     "github_url": "https://github.com/Rejean-McCormick/Ekole",
     "local_root": "C:\\mycode\\Ekole\\ekole",
@@ -229,6 +236,13 @@
     "local_root": "C:\\mycode\\Kristal\\KristalDiag",
     "scope": "PUBLIC",
     "status": "local_git_marker_seen"
+  },
+  {
+    "github_repo": "Rejean-McCormick/Kristalizer",
+    "github_url": "https://github.com/Rejean-McCormick/Kristalizer",
+    "local_root": "C:\\mycode\\Kristal\\Kristalizer",
+    "scope": "PUBLIC",
+    "status": "source_root_observed_in_smartdump_remote_unverified"
   },
   {
     "github_repo": "Rejean-McCormick/LevelUpDiag-kOA-Linux",

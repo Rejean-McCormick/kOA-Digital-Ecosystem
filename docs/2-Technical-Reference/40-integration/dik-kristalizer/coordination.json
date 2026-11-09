@@ -1,0 +1,83 @@
+{
+  "format": "koa.c0-dik-kristalizer-coordination/0.1-candidate",
+  "record_date": "2026-11-06",
+  "authority": "coordination_only_non_normative",
+  "source_archive": "SmartDump_20261106_131708.zip",
+  "origin_evidence": "SmartDump_20261106_131708/{diK,Kristalizer}_Index_Code_snapshot.txt source_root fields; inner project pyproject.toml, README.md, VERSION",
+  "no_canonical_authority_transfer": true,
+  "no_implicit_publication_authorization": true,
+  "no_live_git_state_verified": true,
+  "components": [
+    {
+      "id": "dik",
+      "repository": "Rejean-McCormick/diK",
+      "local_root": "C:\\mycode\\diK\\diK",
+      "observed_version": "1.0.0-alpha.7",
+      "framework_target": "11.0.0-draft.3",
+      "source_version": "pyproject.toml version 1.0.0a7, README.md",
+      "role": "Offline lexical catalogs, Wikidata observations, label coverage, reversible noncanonical projections",
+      "implementation_status": "observed_snapshot",
+      "integration_qualification": "not_verified"
+    },
+    {
+      "id": "kristalizer",
+      "repository": "Rejean-McCormick/Kristalizer",
+      "local_root": "C:\\mycode\\Kristal\\Kristalizer",
+      "observed_version": "1.2.2",
+      "framework_target": "11.0.0-draft.4 via external Kit 4.0.0-draft.4",
+      "source_version": "VERSION, README.md",
+      "role": "Analysis of Kristal workspaces, KQ/QID and KP/PID candidates, review CSV, staging builds through independent Kit",
+      "implementation_status": "observed_snapshot",
+      "integration_qualification": "not_verified"
+    }
+  ],
+  "handoffs": [
+    {
+      "id": "DK-01",
+      "producer": "diK",
+      "consumer": "Kristal v11 dictionary layers / Authoring Kit",
+      "kind": "reviewed lexical catalog and candidate crosswalk",
+      "state": "proposed_not_qualified",
+      "gate": "Pin compatible Framework/Kit revisions and verify direct/fallback/missing lexical coverage with exact IDs; human approvals remain external"
+    },
+    {
+      "id": "DK-02",
+      "producer": "diK",
+      "consumer": "SemantiK Architect / GF WordBench",
+      "kind": "dik.wikidata-lexeme-observations/0.1-candidate to semantik.knowledge.json 1.1 (candidate handoff)",
+      "state": "documented_candidate_not_qualified",
+      "gate": "Verify source licenses, sense mapping and reviewed GF function bindings; RuntimeSet conformance and promotion separate"
+    },
+    {
+      "id": "KZ-01",
+      "producer": "Skope / EncyK/Wikidata local sources",
+      "consumer": "Kristalizer",
+      "kind": "read-only QID/identity suggestions",
+      "state": "observed_local_capability_cross_repo_unqualified",
+      "gate": "Use unchanged source snapshots; inspect and approve crosswalk decisions, with evidence refs to actual KS"
+    },
+    {
+      "id": "KZ-02",
+      "producer": "Kristalizer",
+      "consumer": "Independent Kristal Authoring Kit (staging copies only)",
+      "kind": "approved decisions / v11 validation, local build and activation",
+      "state": "documented_local_workflow_not_qualified",
+      "gate": "Pin exact Kit/Framework versions, run check-v11/check/build-v9 on staged copies; activation is not GitHub publication"
+    },
+    {
+      "id": "PUB-01",
+      "producer": "Qualified Kristal reading view / SemantiK / Spek",
+      "consumer": "EncyKlopedia / kristal-public",
+      "kind": "proposed articles in selected languages",
+      "state": "blocked",
+      "gate": "Exact public artifacts, source/license/redaction audit, independent C1/C2/C3/C4 release authorization; do not push source dumps or unapproved candidates"
+    }
+  ],
+  "compatibility_blockers": [
+    "diK targets Framework v11 draft.3 whereas Kristalizer requires an external Kit pinned to Framework v11 draft.4; no automatic cross-version qualification",
+    "Kristalizer does not bulk-convert Wikidata statements into domain KA/KS",
+    "diK GF handoff contains only candidate lexeme knowledge and cannot certify 14 runtime language channels",
+    "Publication pipeline and release gates are not unlocked by repository registration"
+  ],
+  "frozen_v6_contract_unchanged": "docs/2-Technical-Reference/40-integration/knowledge-projection-contract-set.json"
+}

@@ -2,7 +2,7 @@
 
 Ce registre est **la source architecturale** consommée lors des publications datées de `kOA-Digital-Ecosystem-GitHub-Audit`. Il ne déploie ni ne qualifie une application.
 
-- [`repositories.json`](repositories.json) : inventaire de référence (49 dépôts), **inchangé**.
+- [`repositories.json`](repositories.json) : inventaire de référence (51 dépôts), avec diK et Kristalizer ajoutés sur preuves de snapshot.
 - [`graph-registry.v1.json`](graph-registry.v1.json) : propriétaires et relations documentés; deux dépôts supplémentaires (`Kolor`, `Karacter`) restent **repérés, non admis** à l'inventaire de référence.
 - Les descriptions de rôles sont issues de [`Components.md`](../1-Overview/Components.md). Les passages figurent dans [`Integration.md`](../1-Overview/Integration.md). Les relations indiquent `documented_passage` ou `proposed`, jamais `qualified` par défaut.
 
@@ -13,4 +13,4 @@ Ce registre est **la source architecturale** consommée lors des publications da
 3. Publier ensuite dans GitHub Audit via le workflow manuel. La version publique conserve le commit source et ne change pas au gré des branches de développement.
 4. Ne jamais inférer des permissions, contrats ou connexions depuis la seule ressemblance des noms de dépôts.
 
-Cette première version est une **extraction prudente** des 12 propriétaires et 7 passages déjà représentés dans l'ancien graphe public. Elle ne prétend pas couvrir toutes les composantes des 51 dépôts.
+Cette version garde les **12 systèmes et 7 passages historiques**, et ajoute **diK / Kristalizer** avec quatre **passages proposés, non qualifiés**. Elle ne prétend pas couvrir toutes les composantes des 51 dépôts.

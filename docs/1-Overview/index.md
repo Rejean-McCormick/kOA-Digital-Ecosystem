@@ -87,6 +87,8 @@ platform composition         ≠ ecosystem membership
 
 **Additional mapped applications:** [Skope & Ékole](Components-Skope-and-Ekole.md) (prototype/consumer roles; no new authority transfer).
 
+**Snapshot-mapped tooling:** [diK & Kristalizer](../2-Technical-Reference/40-integration/dik-kristalizer/README.md) (lexical governance and candidate Wikidata reconciliation; no new canonical authority, no public-release permission).
+
 ## Proposed Skope / Ékole flow (not qualified)
 
 ```text

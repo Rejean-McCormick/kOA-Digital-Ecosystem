@@ -119,6 +119,54 @@ def validate(root=ROOT):
         if rid in edges:visit(rid)
     for required in ('C0-01','F-01','M-01','M-02','C3-01','C3-02','KNAV-01','KNAV-02','KNAV-03'):
         if required not in allids: issues.append(f'v10 workstreams: required gate missing {required}')
+    # 2026-11-06 snapshot-only diK/Kristalizer registration. Never confuse a
+    # SmartDump source_root with live Git or cross-repository qualification.
+    try:
+        repos=json.loads((root/'docs/inventory/repositories.json').read_text(encoding='utf-8'))
+        graph=json.loads((root/'docs/inventory/graph-registry.v1.json').read_text(encoding='utf-8'))
+        toolmap=json.loads((root/'docs/2-Technical-Reference/40-integration/dik-kristalizer/coordination.json').read_text(encoding='utf-8'))
+        if len(repos)!=51 or graph.get('reference_count')!=len(repos):
+            issues.append('diK/Kristalizer: inventory/graph counts are not consistent')
+        repoids=[row.get('github_repo') for row in repos]
+        if len(repoids)!=len(set(repoids)):
+            issues.append('diK/Kristalizer: duplicate repository IDs')
+        byrepo={row['github_repo']:row for row in repos}
+        for name,local in [
+            ('Rejean-McCormick/diK',r'C:\mycode\diK\diK'),
+            ('Rejean-McCormick/Kristalizer',r'C:\mycode\Kristal\Kristalizer')]:
+            row=byrepo.get(name) or {}
+            if row.get('local_root')!=local:
+                issues.append('diK/Kristalizer: wrong local root for '+name)
+            if row.get('status')!='source_root_observed_in_smartdump_remote_unverified':
+                issues.append('diK/Kristalizer: source_root improperly promoted for '+name)
+        if toolmap.get('format')!='koa.c0-dik-kristalizer-coordination/0.1-candidate':
+            issues.append('diK/Kristalizer: unexpected coordination format')
+        if toolmap.get('authority')!='coordination_only_non_normative':
+            issues.append('diK/Kristalizer: false authority transfer')
+        for required in ('no_canonical_authority_transfer','no_implicit_publication_authorization','no_live_git_state_verified'):
+            if toolmap.get(required) is not True:
+                issues.append('diK/Kristalizer: unsafe flag '+required)
+        if set(row.get('id') for row in toolmap.get('components',[]))!={'dik','kristalizer'}:
+            issues.append('diK/Kristalizer: component registry differs')
+        for row in toolmap.get('handoffs',[]):
+            if row.get('state') not in ('proposed_not_qualified','documented_candidate_not_qualified',
+                                        'observed_local_capability_cross_repo_unqualified',
+                                        'documented_local_workflow_not_qualified','blocked'):
+                issues.append('diK/Kristalizer: illicit qualified handoff '+str(row.get('id')))
+        nodes={x.get('id') for x in graph.get('systems',[])}
+        if not {'dik','kristalizer'}.issubset(nodes):
+            issues.append('diK/Kristalizer: missing graph systems')
+        for edge in graph.get('relations',[]):
+            if edge.get('from') not in nodes or edge.get('to') not in nodes:
+                issues.append('diK/Kristalizer: dangling graph edge')
+            if edge.get('from') in ('dik','kristalizer') or edge.get('to') in ('dik','kristalizer'):
+                if edge.get('verification')!='not_certified':
+                    issues.append('diK/Kristalizer: false certified passage')
+        note=root/'docs/2-Technical-Reference/40-integration/dik-kristalizer/README.md'
+        if not note.is_file() or '11.0.0-draft.3' not in note.read_text(encoding='utf-8') or '11.0.0-draft.4' not in note.read_text(encoding='utf-8'):
+            issues.append('diK/Kristalizer: missing compatibility warning')
+    except (OSError,ValueError,KeyError,TypeError) as exc:
+        issues.append('diK/Kristalizer: incomplete or malformed registry: '+str(exc))
     return issues
 
 if __name__=='__main__':

@@ -1,9 +1,9 @@
 {
   "format": "koa.graph.registry.v1",
-  "source_date": "2026-10-31",
+  "source_date": "2026-11-06",
   "owner_repository": "Rejean-McCormick/kOA-Digital-Ecosystem",
   "reference_inventory": "docs/inventory/repositories.json",
-  "reference_count": 49,
+  "reference_count": 51,
   "additional_repositories": [
     {
       "github_repo": "Rejean-McCormick/Kolor",
@@ -126,6 +126,24 @@
       "group": "knowledge",
       "evidence_state": "documented_responsibility",
       "source": "docs/1-Overview/Components.md"
+    },
+    {
+      "id": "dik",
+      "label": "diK",
+      "github_repo": "Rejean-McCormick/diK",
+      "responsibility": "Lexical catalogs, dictionary coverage and reviewed external mapping proposals (not semantic canon)",
+      "group": "language",
+      "evidence_state": "documented_responsibility",
+      "source": "docs/2-Technical-Reference/40-integration/dik-kristalizer/README.md"
+    },
+    {
+      "id": "kristalizer",
+      "label": "Kristalizer",
+      "github_repo": "Rejean-McCormick/Kristalizer",
+      "responsibility": "Candidate Wikidata reconciliation and controlled Kit staging (not independent canonical authority)",
+      "group": "knowledge",
+      "evidence_state": "documented_responsibility",
+      "source": "docs/2-Technical-Reference/40-integration/dik-kristalizer/README.md"
     }
   ],
   "relations": [
@@ -184,6 +202,38 @@
       "evidence_state": "proposed",
       "verification": "not_certified",
       "source": "docs/1-Overview/Integration.md"
+    },
+    {
+      "from": "skope",
+      "to": "kristalizer",
+      "label": "Optional research evidence / scope handoff (not qualified)",
+      "evidence_state": "proposed",
+      "verification": "not_certified",
+      "source": "docs/2-Technical-Reference/40-integration/dik-kristalizer/README.md"
+    },
+    {
+      "from": "kristalizer",
+      "to": "kristal",
+      "label": "Approved crosswalk candidates through an independently installed Authoring Kit, not direct canon write",
+      "evidence_state": "proposed",
+      "verification": "not_certified",
+      "source": "docs/2-Technical-Reference/40-integration/dik-kristalizer/README.md"
+    },
+    {
+      "from": "dik",
+      "to": "kristal",
+      "label": "Lexical catalogs and reviewed identity mappings, never automatic KQ/KP approval",
+      "evidence_state": "proposed",
+      "verification": "not_certified",
+      "source": "docs/2-Technical-Reference/40-integration/dik-kristalizer/README.md"
+    },
+    {
+      "from": "dik",
+      "to": "architect",
+      "label": "Candidate lexical knowledge handoff for SemantiK/GF; language binding unqualified",
+      "evidence_state": "proposed",
+      "verification": "not_certified",
+      "source": "docs/2-Technical-Reference/40-integration/dik-kristalizer/README.md"
     }
   ],
   "principles": [

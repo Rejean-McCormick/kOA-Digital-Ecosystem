@@ -4,6 +4,8 @@
 
 This page maps important **cross-owner boundaries**. It does not duplicate owner contracts.
 
+**Additive November 2026 coordination:** [diK & Kristalizer](dik-kristalizer/README.md) supplements the legacy v6 and v10 rows below. Neither tool owns KQ/KP semantic canon or grants public release, and the v6 contract set remains frozen. The new routes are **PROPOSED / NOT QUALIFIED**, not additional certified contracts.
+
 ## Contract map
 
 | Boundary | Producer | Contract / profile | Consumer | Authority preserved | Current state |
