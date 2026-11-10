@@ -1,4 +1,4 @@
-"""Snapshot-only C0 registration for diK and Kristalizer (no live Git writes)."""
+"""Snapshot C0 registration; local GitSink enrollment is not qualification."""
 from pathlib import Path
 import json
 import shutil
@@ -23,7 +23,8 @@ class DikKristalizerRegistrationTests(unittest.TestCase):
         for name,path in [('diK',r'C:\mycode\diK\diK'),('Kristalizer',r'C:\mycode\Kristal\Kristalizer')]:
             row=byrepo['Rejean-McCormick/'+name]
             self.assertEqual(row['local_root'],path)
-            self.assertEqual(row['status'],'source_root_observed_in_smartdump_remote_unverified')
+            self.assertIn(row['status'], ('source_root_observed_in_smartdump_remote_unverified',
+                                         'local_git_marker_seen'))
             self.assertEqual(row['scope'],'PUBLIC')
 
     def test_source_versions_and_unresolved_cross_version_gate(self):
@@ -67,6 +68,9 @@ class DikKristalizerRegistrationTests(unittest.TestCase):
             inv=copy/'docs/inventory/repositories.json';rows=json.loads(inv.read_text(encoding='utf8'))
             next(x for x in rows if x['github_repo']=='Rejean-McCormick/diK')['status']='github_and_local_remote_verified'
             inv.write_text(json.dumps(rows),encoding='utf8')
-            self.assertTrue(any('improperly promoted' in e for e in c0.validate(copy)))
+            self.assertTrue(any('invalid inventory status' in e for e in c0.validate(copy)))
+            next(x for x in rows if x['github_repo']=='Rejean-McCormick/diK')['status']='local_git_marker_seen'
+            inv.write_text(json.dumps(rows),encoding='utf8')
+            self.assertFalse(any('invalid inventory status' in e for e in c0.validate(copy)))
 
 if __name__=='__main__':unittest.main()

@@ -1,5 +1,5 @@
 ZmartZnap snapshot file index
-Files included: 224
+Files included: 244
 
 .gitattributes
 .github/workflows/c0-coordination.yml
@@ -184,8 +184,15 @@ docs/3-Layer-Model/layers/11_learning_interface.md
 docs/3-Layer-Model/layers/12_narrative_adoption.md
 docs/3-Layer-Model/layers/13_deployment_translation.md
 docs/3-Layer-Model/README.md
+docs/evidence/BRANCH_REPORT_C0_2026-11-09.json
 docs/index.md
+docs/integration/2026-11-09-branch-consolidation.md
+docs/integration/2026-11-09-overlay-handoffs.md
+docs/integration/branch10-inputs.v1.json
+docs/integration/BRANCH10_PUBLIC_ARCHITECTURE_2026-11-09.md
+docs/integration/FINAL_SYSTEM_INTEGRATION_2026-11-09.md
 docs/inventory/apps-skope-ekole.json
+docs/inventory/code-snapshots-53.v1.json
 docs/inventory/GITHUB_DESCRIPTIONS.md
 docs/inventory/graph-focus.v1.json
 docs/inventory/graph-registry.v1.json
@@ -204,6 +211,8 @@ docs/status/current.md
 docs/status/index.md
 docs/status/README.md
 docs/status/wiki-synchronization-2026-10-27.md
+docs/wiki/README.md
+HANDOFF_BRANCH10.md
 INSTALL_KOA_TANDEM_VPS_PROFILE.cmd
 Launch_MULTiSmartDump.lnk
 LICENSE
@@ -215,13 +224,24 @@ README_UPDATE_KOA_TANDEM_VPS_PROFILE_V1.md
 RELEASE_NOTES_SKOPE_EKOLE.md
 RELEASE_NOTES_SKOPE_SPLIT.md
 ROLLBACK_KOA_TANDEM_VPS_PROFILE.cmd
+scripts/export_public_architecture.py
+scripts/render_repository_inventory.py
+scripts/render_target_boundaries.py
+scripts/render_target_portfolio.py
+scripts/render_target_wiki.py
 scripts/SenTient_ForceWithLease.ps1
 scripts/validate_c0_coordination.py
 scripts/validate_tandem_vps_profile.py
+scripts/validate_target_architecture.py
+SMARTDUMP_INDEX.txt
 tests/test_c0_coordination.py
 tests/test_dik_kristalizer_inventory.py
+tests/test_functional_chains.py
+tests/test_public_architecture.py
 tests/test_skope_ekole_inventory.py
 tests/test_tandem_vps_profile.py
+tests/test_target_architecture.py
+tests/test_wiki_mirror.py
 tools/koa_tandem_vps/installer.py
 tools/koa_tandem_vps/manifest.json
 VERIFY_KOA_TANDEM_VPS_PROFILE.cmd

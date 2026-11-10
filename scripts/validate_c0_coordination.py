@@ -137,8 +137,13 @@ def validate(root=ROOT):
             row=byrepo.get(name) or {}
             if row.get('local_root')!=local:
                 issues.append('diK/Kristalizer: wrong local root for '+name)
-            if row.get('status')!='source_root_observed_in_smartdump_remote_unverified':
-                issues.append('diK/Kristalizer: source_root improperly promoted for '+name)
+            # A GitSink inventory promotion is permitted only after independent
+            # local Git verification. This is NOT an integration/release claim.
+            if row.get('status') not in (
+                'source_root_observed_in_smartdump_remote_unverified',
+                'local_git_marker_seen',
+            ):
+                issues.append('diK/Kristalizer: invalid inventory status for '+name)
         if toolmap.get('format')!='koa.c0-dik-kristalizer-coordination/0.1-candidate':
             issues.append('diK/Kristalizer: unexpected coordination format')
         if toolmap.get('authority')!='coordination_only_non_normative':
