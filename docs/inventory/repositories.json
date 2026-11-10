@@ -25,7 +25,7 @@
     "github_url": "https://github.com/Rejean-McCormick/diK",
     "local_root": "C:\\mycode\\diK\\diK",
     "scope": "PUBLIC",
-    "status": "source_root_observed_in_smartdump_remote_unverified"
+    "status": "local_git_marker_seen"
   },
   {
     "github_repo": "Rejean-McCormick/Ekole",
@@ -74,7 +74,7 @@
     "github_url": "https://github.com/Rejean-McCormick/Karacter",
     "local_root": "C:\\mycode\\Ekole\\Karacter",
     "scope": "PUBLIC",
-    "status": "source_root_observed_in_smartdump_remote_unverified"
+    "status": "local_git_marker_seen"
   },
   {
     "github_repo": "Rejean-McCormick/kOA-Digital-Ecosystem",
@@ -116,7 +116,7 @@
     "github_url": "https://github.com/Rejean-McCormick/Kolor",
     "local_root": "C:\\mycode\\Ekole\\Kolor",
     "scope": "PUBLIC",
-    "status": "source_root_observed_in_smartdump_remote_unverified"
+    "status": "local_git_marker_seen"
   },
   {
     "github_repo": "Rejean-McCormick/Kompiler",
@@ -256,7 +256,7 @@
     "github_url": "https://github.com/Rejean-McCormick/Kristalizer",
     "local_root": "C:\\mycode\\Kristal\\Kristalizer",
     "scope": "PUBLIC",
-    "status": "source_root_observed_in_smartdump_remote_unverified"
+    "status": "local_git_marker_seen"
   },
   {
     "github_repo": "Rejean-McCormick/LevelUpDiag-kOA-Linux",
