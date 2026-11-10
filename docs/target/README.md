@@ -13,8 +13,6 @@
 7. [Code-alignment instructions](CODE_ALIGNMENT_INSTRUCTIONS.md) and [functional backlog](functional-chains/07-code-alignment-backlog.md).
 8. [Code snapshot evidence and limitations](SNAPSHOT_RECONCILIATION.md); [adjacent projects](adjacent-projects.md); [actual implementation maturity](../status/current.md).
 
-9. [Dated source-delivery evidence across branches](functional-chains/12-implementation-evidence-2026-11-09.md) — nine offline source deliveries, missing branch 05, no production claims.
-
 ## Design rules
 
 C0 owns documentation and safe evidence navigation, **not** operational or canonical product state. Research, custody, mapping, semantic authoring, diagnostics, release permission, public publication, runtime activation and presentation are separate decisions. Konnaxion owns finalized civic decisions; Orgo owns real Cases/Tasks. Source evidence and external Q/P never automatically become canonical KQ/KP.
