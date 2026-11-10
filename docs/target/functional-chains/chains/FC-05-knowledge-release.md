@@ -1,51 +1,49 @@
-# FC-05 — Knowledge diagnostics, instance management and authorized release
+# FC-05 — Independent qualification and immutable knowledge publication
 
-**Classification:** `TARGET_DESIGN` — a destination specification, **not proof of integration or deployment**.
+**Classification:** `TARGET_DESIGN` — final-system requirement, **not proof of integration or deployment**.
 
-**Builds on:** [FC-04](FC-04-semantic-authoring.md), [FC-18](FC-18-diagnostics-and-audit.md), [FC-19](FC-19-offline-portability.md)  
-**Inherits:** [system model](../00-system-model.md), [owner authority](../01-authority-and-ownership.md), [contract/receipts](../02-contract-and-receipts.md), [failure semantics](../03-state-trust-and-failure.md).
+**Inherits:** [System model](../00-system-model.md), [authority](../01-authority-and-ownership.md), [contracts and receipts](../02-contract-and-receipts.md), [failure rules](../03-state-trust-and-failure.md).
 
 ## Functional promise
 
-**Initiator:** An author submits an exact local semantic build to independent validation, then separately requests release to a named audience and target.
+**Owner(s):** KristalDiag / Kristal-Manager / kristal-public / Konstellation-Publisher.
 
-**Expected final outcome:** An approved immutable release and/or eligible local instance reference, with separate qualification, authorization, publication and host lifecycle receipts.
+**Initiator:** An owner submits an exact local build for independent checks and a separate scoped release decision.
 
-**Owner(s) of state and decisions:** KristalDiag for independent checks; Kristal Manager for instance/sync eligibility; explicit content owner for approval; kristal-public / authorized publisher for hosted output.
+**Expected result:** Immutable authorized release reference or an explicit denial, with qualification and publication receipts separate.
 
 ## Nominal end-to-end behavior
 
-| # | Stage | Responsible party | Input → output | Acceptance/meaning |
-|---|---|---|---|---|
-| 1 | Register local instance | Kristal Manager | workspace/Kit build reference → owner instance inventory | Instance registration carries no public release permission |
-| 2 | Qualify candidate | KristalDiag / independent checks | exact build and dependency pins → scoped diagnostic evidence | Verifier version, failed checks and source digests retained |
-| 3 | Request release | Content owner | qualified artifact + intended collection/visibility → authorization decision | Scope, audience, license, privacy and release channel explicit |
-| 4 | Publish immutably | Authorized publisher / kristal-public | approved package → versioned collection index and derived outputs | Atomic publication with digest, manifest and recovery handle |
-| 5 | Report receipt | Publisher and release owner | published revision → immutable reference, delivery evidence | Downstream readers can pin; no automatic host activation |
-| 6 | Withdraw/supersede | Release owner | revocation/supersession request → corrected visibility and new index | Rollback preserves audit; privacy procedures handled explicitly |
+| Step | Stage | Required outcome |
+|---|---|---|
+| 1 | Register candidate | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 2 | independent verify | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 3 | request permission | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 4 | publish atomically | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 5 | reconcile or withdraw. | Scoped owner state and evidence receipt; no hidden mutation of other systems |
 
 ## Interfaces and authority gates
 
-`B-KNOW-07/08/09` are target links; the Manager→public edge is a proposal path and does not authorize automated pushing. Public Git commits can disclose bytes and require explicit per-Kristal consent. Konstellation-Publisher owner README describes rehearsal rather than proof of live deploy.
+**Target boundary references:** B-KNOW-07 to B-KNOW-09. These identify candidate or scoped adopted contracts; they do not certify complete multi-owner deployment. Producer disclosure and receiving-owner admission are separate decisions.
+
+Where no exact interface is adopted, keep `TBD` rather than inventing a protocol ID. All privileged effects must be checked at the actual enforcing owner.
 
 ## Failure, privacy and forbidden shortcuts
 
-Reject unpinned builds, missing independent checks, mismatched input hashes, unsupported license or private scope, stale approval and destinations outside authorized target; never auto-promote from Git sync.
+Green build/diagnostic never grants public permission; private bytes and wrong revision block release.
+
+Owner-specific tenant/actor identity, source classification, integrity checks, replay and correction must be preserved. No debug dashboard or public documentation site may disclose private content.
 
 ## Definition of done — acceptance and negative tests
 
-Test private-vs-public classification, subject digest mismatch, approval expiry, publication atomicity, duplicate release, unauthorized public destination, immutable index import, manual withdrawal and rollback/supersession.
+Exact-subject approval, no-grant rejection, idempotent publication and recovery fixtures.
+
+To qualify the full chain, pin both producer and consumer revisions and execute negative fixtures, recovery and idempotency scenarios. An owner code snapshot alone does not demonstrate running behavior.
 
 ## Required code and contract alignment
 
-Owner implementation: prove a complete exact-input local qualification-to-publication lane with a mock public target before live permission; gate each distinct instance and scope.
-
-## Product-specific notes
-
-An approved hosted collection can remain read-only without any kOA-Linux deployment or Koali shell activation.
+Implement verified build→authorization→publisher boundaries with no automatic Git remote write.
 
 ## Source anchors and verification boundary
 
-KristalDiag, Manager, kristal-public, Konstellation-Publisher and Kontainer owner READMEs; B-KNOW-07/08/09.
-
-The cited owner files are from the **supplied November 2026 snapshots**; the fact that a file exists is not evidence that this full final journey is running. Exact source-member names, hashes and repository roles are recorded in [the portfolio registry](../../portfolio.v1.json), [the portfolio guide](../../PORTFOLIO.md) and [snapshot reconciliation](../../SNAPSHOT_RECONCILIATION.md). Contract identifiers absent from [BOUNDARIES](../../BOUNDARIES.md) remain subject to owner agreement.
+See the [53-repository portfolio](../../PORTFOLIO.md) and [snapshot reconciliation](../../SNAPSHOT_RECONCILIATION.md) for source member names, hashes, declared local roots and evidence limitations. Contract boundaries are catalogued in [the C0 target ledger](../../BOUNDARIES.md). This is intended final behavior, not evidence of a currently operational multi-repository integration.

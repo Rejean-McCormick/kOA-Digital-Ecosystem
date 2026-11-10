@@ -1,51 +1,50 @@
-# FC-10 — Situation design, learning capsules and supervised missions
+# FC-10 — Pedagogical situations, plans and supervised missions
 
-**Classification:** `TARGET_DESIGN` — a destination specification, **not proof of integration or deployment**.
+**Classification:** `TARGET_DESIGN` — final-system requirement, **not proof of integration or deployment**.
 
-**Builds on:** [FC-21](FC-21-creative-assets.md), [FC-14](FC-14-identity-and-policy.md)  
-**Inherits:** [system model](../00-system-model.md), [owner authority](../01-authority-and-ownership.md), [contract/receipts](../02-contract-and-receipts.md), [failure semantics](../03-state-trust-and-failure.md).
+**Inherits:** [System model](../00-system-model.md), [authority](../01-authority-and-ownership.md), [contracts and receipts](../02-contract-and-receipts.md), [failure rules](../03-state-trust-and-failure.md).
 
 ## Functional promise
 
-**Initiator:** An educator selects an age/context-appropriate situation, prepares a capsule and decides whether to keep it simulated or request supervised real work.
+**Owner(s):** Kontexte / Kompose / Akor.
 
-**Expected final outcome:** A reviewed situation/lesson/mission blueprint with safe roles, assessment intent, non-executable preview and optional authorized Orgo intent.
+**Initiator:** A teacher selects a situation and drafts a lesson, preview or collaborative mission.
 
-**Owner(s) of state and decisions:** Kontexte for reusable situations; Kompose for pedagogy, plan/simulation; Akor for collaborative role missions; educators for approval.
+**Expected result:** Reviewed learning plan, simulated capsule or separately approved real-work intent.
 
 ## Nominal end-to-end behavior
 
-| # | Stage | Responsible party | Input → output | Acceptance/meaning |
-|---|---|---|---|---|
-| 1 | Design situation | Kontexte | source scenario, cultural scope, inclusion rules → situation model | Versioned owner context; student-sensitive data minimized |
-| 2 | Compose lesson | Kompose | Kontexte situation + curriculum goals → capsule/plan and simulation | Simulation explicitly marked; no real Task in preview |
-| 3 | Assign mission roles | Akor | approved capsule → role-specific, accessible mission previews | Participant visibility and collaboration rules enforced |
-| 4 | Teacher review | Educator / institution | previews → approved/rejected learning intent | Only explicitly authorized actor can switch to real execution |
-| 5 | Optionally request work | Kompose/Akor → Orgo | approved intent → request for real Case/Task | Orgo independently authorizes and creates owner-owned work |
-| 6 | Reflect/assess | Educational owner | supervised outcomes → learning review | Assessment is educational data, not semantic canon or Orgo execution truth |
+| Step | Stage | Required outcome |
+|---|---|---|
+| 1 | Select scenario | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 2 | compose plan | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 3 | assign learning roles | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 4 | preview | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 5 | teacher approval | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 6 | optional Orgo request. | Scoped owner state and evidence receipt; no hidden mutation of other systems |
 
 ## Interfaces and authority gates
 
-`B-EDU-01/02/03` are proposed. Contracts must distinguish preview, dry-run, intent and real action; do not import the civic DecisionRecord profile as a shortcut.
+**Target boundary references:** B-EDU-01 to B-EDU-03. These identify candidate or scoped adopted contracts; they do not certify complete multi-owner deployment. Producer disclosure and receiving-owner admission are separate decisions.
+
+Where no exact interface is adopted, keep `TBD` rather than inventing a protocol ID. All privileged effects must be checked at the actual enforcing owner.
 
 ## Failure, privacy and forbidden shortcuts
 
-No direct Orgo database write, no automatic autonomous mission activation, no exposed minor/student data, and no confused roles between learning participation and administrative execution.
+Simulation is not real work; underage privacy and mismatched teacher authority block effects.
+
+Owner-specific tenant/actor identity, source classification, integrity checks, replay and correction must be preserved. No debug dashboard or public documentation site may disclose private content.
 
 ## Definition of done — acceptance and negative tests
 
-Test diverse group participation, declined teacher approval, false-positive simulated activity, idempotent intent replay, partial mission completion, child-safe content classification and blocked unauthorized Orgo invocation.
+No Case/Task after preview; teacher denial and role isolation, accepted supervised intent.
+
+To qualify the full chain, pin both producer and consumer revisions and execute negative fixtures, recovery and idempotency scenarios. An owner code snapshot alone does not demonstrate running behavior.
 
 ## Required code and contract alignment
 
-Owner implementation: formalize Kontexte→Kompose capsule schema, Kompose/Akor→Orgo intent schemas and institution-specific permissions; make dry-run mandatory in previews.
-
-## Product-specific notes
-
-Education modules can be independent components within an Ékole experience; this diagram does not require a microservice per classroom component.
+Agree Kontexte→Kompose and Kompose/Akor→Orgo minimal schema and dry-run enforcement.
 
 ## Source anchors and verification boundary
 
-Kontexte, Kompose and Akor READMEs plus Ekole teacher-preview owner specs; B-EDU-01/02/03.
-
-The cited owner files are from the **supplied November 2026 snapshots**; the fact that a file exists is not evidence that this full final journey is running. Exact source-member names, hashes and repository roles are recorded in [the portfolio registry](../../portfolio.v1.json), [the portfolio guide](../../PORTFOLIO.md) and [snapshot reconciliation](../../SNAPSHOT_RECONCILIATION.md). Contract identifiers absent from [BOUNDARIES](../../BOUNDARIES.md) remain subject to owner agreement.
+See the [53-repository portfolio](../../PORTFOLIO.md) and [snapshot reconciliation](../../SNAPSHOT_RECONCILIATION.md) for source member names, hashes, declared local roots and evidence limitations. Contract boundaries are catalogued in [the C0 target ledger](../../BOUNDARIES.md). This is intended final behavior, not evidence of a currently operational multi-repository integration.

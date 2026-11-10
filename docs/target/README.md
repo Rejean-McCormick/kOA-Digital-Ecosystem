@@ -1,44 +1,22 @@
-# Final-system reference architecture — kOA Digital Ecosystem
+# Final-system architecture — C0 coordination
 
-**Document status:** `TARGET_DESIGN` — architectural destination, not a report of deployed functionality, a new owner contract, or authorization to publish. **Owner:** C0 / kOA Digital Ecosystem. **Source review:** user-supplied repository and wiki snapshots, 2026-11-09; no live Git state verified.
+**Classification:** `TARGET_DESIGN`. This directory documents the **intended final kOA system** and how its owner-governed capabilities compose. It is not a claim of deployment, a superseding owner contract or permission to publish.
 
-This is the **primary navigation for the intended final system**. It describes the stable functional shape to achieve; historical versions are not the organizing principle. The other documentation views retain their own purpose: owner source documents define product behavior, and [the maturity map](../status/current.md) records available implementation evidence. A desirable architecture must not be mistaken for tested integration.
+## Start here
 
-## First read
+1. [Complete functional-chain specification](functional-chains/README.md) — 24 bounded capabilities and shared rules.
+2. [Target architecture and authority](architecture.md) — functional zones, owners, trust boundaries.
+3. [Cross-owner journeys](journeys.md) and [functional scenarios](functional-chains/04-cross-chain-compositions.md).
+4. [53-repository portfolio](PORTFOLIO.md), [machine-readable source](portfolio.v1.json), [chain coverage](functional-chains/05-repository-coverage.md).
+5. [26 target boundaries](BOUNDARIES.md) and [full interface traceability](functional-chains/11-boundary-traceability.md).
+6. [Independent qualification](functional-chains/06-qualification-and-acceptance.md), [release/deployment profiles](functional-chains/09-reference-deployment-profiles.md).
+7. [Code-alignment instructions](CODE_ALIGNMENT_INSTRUCTIONS.md) and [functional backlog](functional-chains/07-code-alignment-backlog.md).
+8. [Code snapshot evidence and limitations](SNAPSHOT_RECONCILIATION.md); [adjacent projects](adjacent-projects.md); [actual implementation maturity](../status/current.md).
 
-0. **[Cumulative functional chains](functional-chains/README.md)**: full English functional specification across 24 bounded capabilities, including [53-repository coverage](functional-chains/05-repository-coverage.md), [cross-chain scenarios](functional-chains/04-cross-chain-compositions.md), [acceptance tests](functional-chains/06-qualification-and-acceptance.md), and [code alignment work](functional-chains/07-code-alignment-backlog.md).
+9. [Dated source-delivery evidence across branches](functional-chains/12-implementation-evidence-2026-11-09.md) — nine offline source deliveries, missing branch 05, no production claims.
 
-1. [Architecture and ownership](architecture.md): system boundaries, responsibility split, the authority model and release lifecycle.
-2. [End-to-end journeys](journeys.md): how content, operational decisions, learning and runtime releases are intended to move across owners.
-3. [Target owner-to-owner boundaries](BOUNDARIES.md): 26 typed design edges, independent of the dated publication graph.
-4. [Portfolio of 53 repositories](PORTFOLIO.md): one role per registered repository; flags and source pointers are preserved in [the JSON registry](portfolio.v1.json).
-5. [Code snapshot reconciliation](SNAPSHOT_RECONCILIATION.md): code-snapshot evidence for the 53-owner target model, with integration gates and source references.
-6. [Adjacent project survey](adjacent-projects.md): 22 additional archive folders that must not be silently omitted or automatically admitted.
-7. [Implementation instructions](CODE_ALIGNMENT_INSTRUCTIONS.md): executable follow-up tasks for code and documents, acceptance tests and which repository must change.
-8. [Maturity and qualification](../status/current.md): what was verified for specific versions and boundaries; it is not the target specification.
+## Design rules
 
-## Architectural operating rules
+C0 owns documentation and safe evidence navigation, **not** operational or canonical product state. Research, custody, mapping, semantic authoring, diagnostics, release permission, public publication, runtime activation and presentation are separate decisions. Konnaxion owns finalized civic decisions; Orgo owns real Cases/Tasks. Source evidence and external Q/P never automatically become canonical KQ/KP.
 
-- **One owner per mutable authoritative state**; read models and UI do not inherit owner privileges.
-- **Framework identity is distinct from language and external references**. The strict v11 profile uses KQ/KP/KA/KS namespace identifiers, separate lexical dictionaries, and reviewed Wikidata crosswalks. Exact draft compatibility must be qualified.
-- **Research, custody, semantic validation, publication and rendering are independent functions.** No ingestion step canonizes a candidate, and no build automatically becomes a public release.
-- **Independent qualification and explicit release authorization** gate public writes and live activation; diagnostics alone do not enforce a decision.
-- **Interaction Kernel is an adopted protocol where needed, not a mandatory global bus**; direct owner contracts remain valid.
-- **Koali Spaces is optional**. Apps remain individually operable and authoritative for their business logic.
-- **The C0 repo documents and validates coordination only**. It must never create its own duplicate registries of live users, tasks, Kristal canons or app instances.
-
-## Design status versus implementation evidence
-
-| Value | Meaning |
-|---|---|
-| `TARGET_DESIGN` | Intended end-state responsibility or journey described here; adoption still needs approval from the owner. |
-| `OWNER_SNAPSHOT` | Owner repository docs/code included in the supplied archive, not live GitHub HEAD. |
-| `QUALIFIED_BOUNDARY` | Exact producer/consumer revision and independent evidence exists for the scoped boundary. |
-| `DEPLOYED_OBSERVED` | Runtime/operational evidence at a named environment, not assumed from a local test. |
-| `NOT_VERIFIED` | The repository archive does not establish the property. |
-
-The 53-repository inventory does **not** imply 51 independent services: several repositories contain diagnostics, assets, content, adapters, design models, or instance templates. Likewise, folders not in the inventory are not automatically irrelevant: inclusion is a separate portfolio decision.
-
-## Minimum definition of done for the final architecture
-
-For every participating owner: a concise purpose, input/output contracts, owned state, forbidden responsibilities, security context, failure behavior, compatibility policy, evidence links and tests. For every *cross-owner* journey: producer and consumer release pins, schema compatibility checks, replay/idempotency where needed, authorization, observability and rollback/rebuild strategy. See the [instructions](CODE_ALIGNMENT_INSTRUCTIONS.md).
+**Evidence discipline:** a file hash proves supplied bytes; a product test proves only its named environment and version. Exact bilateral fixtures, owner approval and host observations are required before integration or deployment claims. The supplied new central snapshot omitted this `docs/target/` source tree even though its README and tests referenced it; this branch restores a fresh target set and records provenance in [the reconciliation note](SNAPSHOT_RECONCILIATION.md).

@@ -1,16 +1,16 @@
 {
   "format": "koa.target-portfolio.v1",
   "intent": "final_system_design_non_normative_coordination",
-  "as_of": "2026-11-09",
   "inventory": "docs/inventory/repositories.json",
-  "source_bundle": "repos(1).zip + SmartDump_20261109_113255(2).zip (user-supplied; SHA-256 per referenced source)",
-  "warning": "Target roles are design intent. Evidence paths establish input provenance only; no automated cross-repository compatibility, successful tests, GitHub HEAD, deployment, or public release is implied.",
+  "as_of": "2026-11-09",
+  "source_bundle": "SmartDump_20261109_113255(2).zip",
+  "code_snapshot_ledger": "docs/inventory/code-snapshots-53.v1.json",
   "repositories": [
     {
       "repository": "Rejean-McCormick/Akor",
       "family": "education",
-      "target_role": "Collaborative learner missions with complementary roles; runtime tasks remain governed by Orgo.",
-      "source_member": "repos/Akor/README.md",
+      "target_role": "Collaborative educational missions and role-based learning experiences; real operational Tasks remain owned by Orgo.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/Akor_Code_snapshot.zip::README.md",
       "source_sha256": "9eb4b62b88efa78519e7029540adfb2dd62fd194c256dd5c84872dfb75345a3b",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -18,8 +18,8 @@
     {
       "repository": "Rejean-McCormick/Arketype",
       "family": "knowledge_design",
-      "target_role": "Non-normative archetypes, structural templates and visual plans for Kristal workspaces.",
-      "source_member": "repos/Arketype/README.md",
+      "target_role": "Non-normative modeling and template material for Kristal authoring; cannot define canonical identity.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/arketype_Code_snapshot.zip::README.md",
       "source_sha256": "bb42a563a7f3579a07826e3818b4f08e509915e86dcaff53fda0f8bb12556a54",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -27,8 +27,8 @@
     {
       "repository": "Rejean-McCormick/Daat",
       "family": "interoperability",
-      "target_role": "Authenticated, authorized and explicitly versioned mapping boundary into owner-native contracts.",
-      "source_member": "repos/Daat/README.md",
+      "target_role": "Versioned external semantic mapping, identity and policy-boundary adapters with owner-injected security gates.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/Daat_Code_snapshot.zip::README.md",
       "source_sha256": "3a90d90d2de99ba7022c49277e591f3a59470795855cbcbdac5a2f85083e9d9b",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -36,8 +36,8 @@
     {
       "repository": "Rejean-McCormick/diK",
       "family": "lexical",
-      "target_role": "Offline multilingual dictionaries, language-coverage audits and reviewed external identifier mapping proposals.",
-      "source_member": "repos/diK/README.md",
+      "target_role": "Multilingual lexical dictionaries and reviewed semantic language bindings, separate from KQ/KP identity.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/diK_Code_snapshot.zip::README.md",
       "source_sha256": "80dc8150a1c767a9cfff2c3662fbf97634e62b290f5e7572df52d493947ba6f7",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -45,8 +45,8 @@
     {
       "repository": "Rejean-McCormick/Ekole",
       "family": "education",
-      "target_role": "Reusable neutral educational engine and learner/teacher surfaces, separate from curriculum packs.",
-      "source_member": "repos/Ekole/README.md",
+      "target_role": "Curriculum-neutral learning engine and student/teacher experience; institution and Moodle data stay separate.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/ekole_Code_snapshot.zip::README.md",
       "source_sha256": "1f628f662f7a4523c693427de693135da76cb6da0b1ff7587689f6a4ad04ceba",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -54,8 +54,8 @@
     {
       "repository": "Rejean-McCormick/Ekole-Pastorale",
       "family": "education",
-      "target_role": "Independent pastoral educational content pack consumed by the neutral Ekole engine.",
-      "source_member": "repos/Ekole-Pastorale/README.md",
+      "target_role": "Independent pastoral content pack and learning material consumed by the neutral Ekole engine.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/ecole-pastorale_Code_snapshot.zip::README.md",
       "source_sha256": "11df8a9125f422ce1df115f22e11757a36ec8a344a2c2906dc38d511d8159416",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -63,8 +63,8 @@
     {
       "repository": "Rejean-McCormick/EncyKlopedia",
       "family": "knowledge_delivery",
-      "target_role": "Read-only multilingual encyclopedia/public knowledge-delivery application, not the acquisition engine.",
-      "source_member": "repos/EncyKlopedia/README.md",
+      "target_role": "Read-only multilingual encyclopedia and public derived knowledge exploration; not a source acquirer.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/EncyKlopedia_Code_snapshot.zip::README.md",
       "source_sha256": "e1289db19af19546069e66cf9d79a47676ea345ba16badfbecbf96eb1c9fddd8",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -72,7 +72,7 @@
     {
       "repository": "Rejean-McCormick/HomePage-initkoa.org",
       "family": "public_presence",
-      "target_role": "Next.js public site and initiative/reading portal with site-owned pages and build scripts; not the owner of authoritative domain data or canonical Kristal knowledge.",
+      "target_role": "Public initiative website and editorial discovery routes; no normative authority over product software.",
       "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/HomePage_Code_snapshot.zip::package.json",
       "source_sha256": "36aeeeb43404fc15de67ab602e4914b7e655a88321040241e26988375731586c",
       "evidence": "owner_snapshot",
@@ -81,7 +81,7 @@
     {
       "repository": "Rejean-McCormick/initkoa-docs",
       "family": "public_presence",
-      "target_role": "MkDocs Material ecosystem documentation portal that aggregates owner wiki documentation for navigation; not a normative owner or code source of truth.",
+      "target_role": "MkDocs documentation portal aggregating approved owner wiki and final-system read-only documentation.",
       "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/docs-initkoa-org_Code_snapshot.zip::docs/index.md",
       "source_sha256": "f93b9e743c90f3576961346a6a031e6b422bb33bdc5aeeeca54bfde72e49bac9",
       "evidence": "owner_snapshot",
@@ -90,8 +90,8 @@
     {
       "repository": "Rejean-McCormick/Interaction-Kernel",
       "family": "interoperability",
-      "target_role": "Versioned interoperability envelopes, profiles and portable runtimes; no participant business state.",
-      "source_member": "repos/Interaction-Kernel/README.md",
+      "target_role": "Opt-in typed envelope and cross-owner contract profiles; no ownership of participant business state.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/interaction_kernel_Code_snapshot.zip::README.md",
       "source_sha256": "aaf4b0402f060e0e7ef894398e6c79132a73f8d9194bbec6c5f565677fad5793",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -99,7 +99,7 @@
     {
       "repository": "Rejean-McCormick/Karacter",
       "family": "creative_tooling",
-      "target_role": "Offline-first bilingual fictional-character creation studio with author-controlled stories, explainable character simulations, visual prompts and local exports; not a psychology diagnostic or Kristal canon owner.",
+      "target_role": "Author-controlled fictional character design and narrative creative studio, not clinical or semantic canon.",
       "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/Karacter_Code_snapshot.zip::README.md",
       "source_sha256": "a5060d1d590e75c117e28f6d2240101eeef16e37462836e4a14c885bf90814b2",
       "evidence": "owner_snapshot",
@@ -108,8 +108,8 @@
     {
       "repository": "Rejean-McCormick/kOA-Digital-Ecosystem",
       "family": "coordination",
-      "target_role": "Architecture of the final system: roles, boundaries, contracts, target journeys and acceptance gates; C0 only.",
-      "source_member": "znapshot_kOA_Digital_Ecosystem_11091005.zip::README.md",
+      "target_role": "C0 coordination, final-system design, evidence and contract traceability; no product state authority.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/kOA_Digital_Ecosystem_Code_snapshot.zip::README.md",
       "source_sha256": "33b722f283024a9ea2490fce14d1dc6266cb4d1789b5026a0c8dccd495004e40",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -117,8 +117,8 @@
     {
       "repository": "Rejean-McCormick/kOA-Linux-Koali",
       "family": "platform",
-      "target_role": "Local-first workload platform, release/admission profiles, trust and system composition.",
-      "source_member": "repos/kOA-Linux-Koali/README.md",
+      "target_role": "Platform profiles, release admission, runtime policies and host-specific deployment authorization.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/koa-linux_Code_snapshot.zip::README.md",
       "source_sha256": "beae6816db560ea0df1fbcfc3a1edbea48355ed94c8149f4a8e5d34221b87491",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -126,8 +126,8 @@
     {
       "repository": "Rejean-McCormick/Koali-Control-Panel",
       "family": "platform",
-      "target_role": "Operator/developer console for preparing, starting and observing builds without owning product state.",
-      "source_member": "repos/Koali-Control-Panel/README.md",
+      "target_role": "Operator and developer workflow UI for safe local build and platform admission preparation.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/Koali-Control-Panel_Code_snapshot.zip::README.md",
       "source_sha256": "8c3cf851e5a48463d58346456adda1218796d9e2392ff2f42adf5f45a9676882",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -135,7 +135,7 @@
     {
       "repository": "Rejean-McCormick/Koali-Scenario-Mosaic",
       "family": "presentation",
-      "target_role": "Astro bilingual static-first scenario mosaic presenting 36 documented sociotechnical problems and their Koali response patterns; an editorial interface, not an operational workflow owner.",
+      "target_role": "Bilingual scenario mosaic and explanatory public interface; does not own real workflow effects.",
       "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/Koali_Scenario_Mosaic_Code_snapshot.zip::README.md",
       "source_sha256": "850234f7191880f260f23ce2695d82199dd0442f9d2327a8a9cfa60be71e8c18",
       "evidence": "owner_snapshot",
@@ -144,8 +144,8 @@
     {
       "repository": "Rejean-McCormick/Koali-Spaces",
       "family": "presentation",
-      "target_role": "Optional application surface composition, routing and presentation; no product business-data authority.",
-      "source_member": "repos/Koali-Spaces/README.md",
+      "target_role": "Optional product presentation shell, navigation and Space lifecycle, separate from business state.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/koali-spaces_Code_snapshot.zip::README.md",
       "source_sha256": "9ac8bf0df107731460306bfabfe3eab6fae775e168ac3467a871982a14308fe9",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -153,7 +153,7 @@
     {
       "repository": "Rejean-McCormick/Kolor",
       "family": "creative_tooling",
-      "target_role": "Bilingual desktop character-sheet and palette production studio with reviewed pose/asset exports for Kontexte and Ekole layouts; not a semantic canon or application runtime owner.",
+      "target_role": "Character-sheet, palette and visual studio with reviewed media exports for educational content.",
       "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/Kolor_Code_snapshot.zip::README.md",
       "source_sha256": "96d181db2e97337b1d9ae77fb801f18c084fb71e218530e1debd4f653e4e66b8",
       "evidence": "owner_snapshot",
@@ -162,8 +162,8 @@
     {
       "repository": "Rejean-McCormick/Kompiler",
       "family": "knowledge_consumption",
-      "target_role": "Read-only context preparation from approved, derived Kristal read views.",
-      "source_member": "repos/Kompiler/README.md",
+      "target_role": "Local context-pack compiler from pinned derived, permitted knowledge views.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/Kompiler_Code_snapshot.zip::README.md",
       "source_sha256": "fdfb62163b9c886de10b50c6e33149ed796cd676bab73719dc8dec84d32ac949",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -171,8 +171,8 @@
     {
       "repository": "Rejean-McCormick/Kompose",
       "family": "education",
-      "target_role": "Educational capsule design, checking and local simulation; Orgo alone executes real operational work.",
-      "source_member": "repos/Kompose/README.md",
+      "target_role": "Educational scenario composition, lesson-plan preview and simulation; no direct Orgo Tasks.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/Kompose_Code_snapshot.zip::README.md",
       "source_sha256": "8a0353c82aac7c1607bae004fd942a5cb7223debefee63f83598fed918c261fd",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -180,8 +180,8 @@
     {
       "repository": "Rejean-McCormick/Konductor",
       "family": "agentic_runtime",
-      "target_role": "Durable control plane for bounded AI workflows, checkpoints, approvals and recovery.",
-      "source_member": "repos/Konductor/README.md",
+      "target_role": "Bounded agent jobs, checkpoints, operator review and mediated external action requests.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/Konductor_Code_snapshot.zip::README.md",
       "source_sha256": "669c96b1ae0a48964eb2657eafbe14e816e8a19e25f923a72c2d573a2c5332c1",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -189,8 +189,8 @@
     {
       "repository": "Rejean-McCormick/Konfid",
       "family": "security",
-      "target_role": "Cross-product policy decision, scoped authorization and governed containment, without super-admin authority.",
-      "source_member": "repos/Konfid/README.md",
+      "target_role": "Scoped identity/policy decisions requiring verification at each product effect-point enforcement port.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/konfid_Code_snapshot.zip::README.md",
       "source_sha256": "3253112c726fad6e716c7d9024268c1332497a5c5dd1733ae3145d4e0430eb4a",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -198,8 +198,8 @@
     {
       "repository": "Rejean-McCormick/Konnaxion",
       "family": "civic",
-      "target_role": "Owner of civic/public participation, deliberation and finalized decisions.",
-      "source_member": "repos/Konnaxion-8a246f9f/README.md",
+      "target_role": "Civic decisions, participation, finalization and accountability state, never Orgo Case/Task ownership.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/Konnaxion_Code_snapshot.zip::README.md",
       "source_sha256": "1cda3ebaa9de6e3f3a66487bb4d06de7ef44c8883db610cc18f3fc61a7a1138e",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -207,8 +207,8 @@
     {
       "repository": "Rejean-McCormick/Konnaxion-Capsule-Manager",
       "family": "civic_operations",
-      "target_role": "Nonprivileged capsule-management and deployment coordination, subject to independent enforcement.",
-      "source_member": "repos/Konnaxion-Capsule-Manager/README.md",
+      "target_role": "Scoped capsule deployment orchestration, platform admission and privileged agent handoff.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/Konnaxion_Capsule_Manager_Code_snapshot.zip::README.md",
       "source_sha256": "34bbcd09ebe46063d42618641971bee25b1cfd5910ea1659093bccb841781976",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -216,8 +216,8 @@
     {
       "repository": "Rejean-McCormick/Konnaxion-Worlds",
       "family": "civic",
-      "target_role": "Canonical Universe/World control plane and isolated WorldRelease lifecycle for Konnaxion.",
-      "source_member": "repos/Konnaxion-Worlds/README.md",
+      "target_role": "World and Universe release/context authority for the Konnaxion civic domain.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/Konnaxion_Worlds_Code_snapshot.zip::README.md",
       "source_sha256": "2f8cfd9c3fc1f871a53778422cafa9f589a7924a99574bf8356c6456f453798d",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -225,8 +225,8 @@
     {
       "repository": "Rejean-McCormick/KonnaxionDiag",
       "family": "diagnostics",
-      "target_role": "Independent functional/security diagnostic campaigns and signed admission evidence for Konnaxion.",
-      "source_member": "repos/KonnaxionDiag/README.md",
+      "target_role": "Independent diagnostics over pinned Konnaxion and capsule/deployment revisions.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/KonnaxionDiag_Code_snapshot.zip::README.md",
       "source_sha256": "cafe7e69a7dde1fb75fb70d254114d20d9f6df66c07698a14e37589d12d72e8d",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -234,8 +234,8 @@
     {
       "repository": "Rejean-McCormick/Konstellation",
       "family": "knowledge_consumption",
-      "target_role": "Read-only navigation and visual exploration of authorized Kristal views and collections.",
-      "source_member": "repos/Konstellation/README.md",
+      "target_role": "Navigation and read-only exploration of approved semantic collections and source views.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/Konstellation_Code_snapshot.zip::README.md",
       "source_sha256": "bb3f96c01fe73e353c67f0be5499ffcd984a73a185bcb3e9a43a190edca1b85c",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -243,8 +243,8 @@
     {
       "repository": "Rejean-McCormick/Konstellation-Light",
       "family": "knowledge_consumption",
-      "target_role": "Standalone local/static reader of verified derived collection views, without publication authority.",
-      "source_member": "repos/Konstellation-Light/README.md",
+      "target_role": "Lightweight static or offline read-only exploration of pinned knowledge artifacts.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/Konstellation-Light_Code_snapshot.zip::README.md",
       "source_sha256": "025bc71459d890d02d5f366268d7366e81b241bb4f2e1d12d0f8ac4154f5f3fb",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -252,8 +252,8 @@
     {
       "repository": "Rejean-McCormick/Konstellation-Publisher",
       "family": "release_tooling",
-      "target_role": "Fail-closed packaging and transaction rehearsal; actual remote deployment requires independent gates.",
-      "source_member": "repos/Konstellation-Publisher/README.md",
+      "target_role": "Publication transaction rehearsal and safe packaging; not implicit live deployment permission.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/Konstellation-Publisher_Code_snapshot.zip::README.md",
       "source_sha256": "8053ddfb1aa618c7bd04aada0b36f203870cfc4876c002845885534d47fee2f8",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -261,8 +261,8 @@
     {
       "repository": "Rejean-McCormick/Kontainer",
       "family": "knowledge_packaging",
-      "target_role": "Portable, integrity-checked and optionally encrypted single-file Kristal packaging.",
-      "source_member": "repos/Kontainer/README.md",
+      "target_role": "Integrity-checked, optionally encrypted portable knowledge and artifact containers.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/Kontainer_Code_snapshot.zip::README.md",
       "source_sha256": "fbd3428acd01afe2ca6379d9017911040fd0976aa6619dc4fc7bffa1da06173f",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -270,8 +270,8 @@
     {
       "repository": "Rejean-McCormick/Kontexte",
       "family": "education",
-      "target_role": "Reusable situation/scenario definitions for learning; not a second task orchestrator.",
-      "source_member": "repos/Kontexte/README.md",
+      "target_role": "Reusable culturally scoped pedagogical situations for composition and supervised simulations.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/Kontexte_Code_snapshot.zip::README.md",
       "source_sha256": "b309db601d764371095d6912339e3cee26310cc733ad3a22490ec99639699280",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -279,8 +279,8 @@
     {
       "repository": "Rejean-McCormick/Kristal-Authoring-Kit",
       "family": "knowledge_authoring",
-      "target_role": "Owner of local Kristal workspace authoring, structural checks and builds; not public activation.",
-      "source_member": "repos/Kristal-Authoring-Kit/README.md",
+      "target_role": "Local semantic authoring workspace, profile-bound validation and deterministic Kristal build tooling.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/Kristal-Authoring-Kit_Code_snapshot.zip::README.md",
       "source_sha256": "7ba9edfb4250c9be4ac85bb5db20ccc61e89c0b031dd0f7ceb11ad2524247b76",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -288,8 +288,8 @@
     {
       "repository": "Rejean-McCormick/Kristal-Framework",
       "family": "knowledge_core",
-      "target_role": "Owner of canonical Kristal semantic identity, state/contract semantics and conformance rules.",
-      "source_member": "repos/Kristal-Framework-c325f677/README.md",
+      "target_role": "Canonical Kristal semantic identity, KQ/KP/KA/KS rules and versioned conformance profile.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/Kristal-Framework_Code_snapshot.zip::README.md",
       "source_sha256": "a71539948a331a1dbc6bb959edf9a2287dfe6eea61845408dfc355b55778babd",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -297,8 +297,8 @@
     {
       "repository": "Rejean-McCormick/Kristal-Integration-Pack",
       "family": "interoperability",
-      "target_role": "Non-authoritative, version-pinned bridges and derived Framework v11 read-view handoffs.",
-      "source_member": "repos/Kristal-Integration-Pack/README.md",
+      "target_role": "Versioned derived read views and consumer adapters without canonical state ownership.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/Kristal-Integration-Pack_Code_snapshot.zip::README.md",
       "source_sha256": "947e8c37183a505ab5c9b794cd29b31bae3223a403bf636acdd50b82fd98db35",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -306,8 +306,8 @@
     {
       "repository": "Rejean-McCormick/Kristal-Manager",
       "family": "knowledge_operations",
-      "target_role": "Inventory and management of actual local Kristal instances and their controlled sync eligibility.",
-      "source_member": "repos/Kristal-Manager/README.md",
+      "target_role": "Local instance inventory, coordination and eligible synchronization scope; not an implicit publisher.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/Kristal-Manager_Code_snapshot.zip::README.md",
       "source_sha256": "f3bb9e4c9c1e38639718e8d64f6768e766ff4f5561652029698819b4ed095e35",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -315,8 +315,8 @@
     {
       "repository": "Rejean-McCormick/kristal-public",
       "family": "knowledge_publication",
-      "target_role": "Read-only hosted collection of specifically authorized and qualified Kristal releases.",
-      "source_member": "repos/kristal-public/README.md",
+      "target_role": "Authorized immutable public knowledge collection and read release hosting.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/kristal-public_Code_snapshot.zip::README.md",
       "source_sha256": "82c6ecf6bf59c9832fda93e4a6c05e80a1e866704ad134f8d3a832606f1c20fa",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -324,8 +324,8 @@
     {
       "repository": "Rejean-McCormick/KristalDiag",
       "family": "diagnostics",
-      "target_role": "Independent Kristal conformance and release-candidate diagnostic evidence.",
-      "source_member": "repos/KristalDiag/README.md",
+      "target_role": "Independent semantic build/release diagnostics on exact pinned source and verifier revisions.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/KristalDiag_Code_snapshot.zip::README.md",
       "source_sha256": "ad510e8001ffbf3d2b3c79c86916e672b263f0eaa55bf656552f0a53b0a925bd",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -333,8 +333,8 @@
     {
       "repository": "Rejean-McCormick/Kristalizer",
       "family": "knowledge_authoring",
-      "target_role": "Candidate identity reconciliation and controlled staging toward the separately installed Kit.",
-      "source_member": "repos/Kristalizer/README.md",
+      "target_role": "Reviewed mapping, identity candidate reconciliation and staged authoring import proposals.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/Kristalizer_Code_snapshot.zip::README.md",
       "source_sha256": "3d98a1fea4e0c619d194316cb8a45042d9e29d60f856cf2eab45f04f261366c3",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -342,8 +342,8 @@
     {
       "repository": "Rejean-McCormick/LevelUpDiag-kOA-Linux",
       "family": "diagnostics",
-      "target_role": "Independent system and release qualification campaigns for kOA-Linux.",
-      "source_member": "repos/LevelUpDiag-kOA-Linux/README.md",
+      "target_role": "Independent platform profile and release-readiness diagnostics; no permission to deploy.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/LevelUpDiag-Koali_Code_snapshot.zip::README.md",
       "source_sha256": "70fda79959938b46c2c39a2b8d208cdff7f0a58666854dd7104c2e2c80d1a6da",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -351,8 +351,8 @@
     {
       "repository": "Rejean-McCormick/LevelUpDiag-Orgo",
       "family": "diagnostics",
-      "target_role": "Independent operational/software validation campaigns for Orgo.",
-      "source_member": "repos/LevelUpDiag-Orgo/README.md",
+      "target_role": "Independent tests and diagnostics of Orgo operational effects and task lifecycles.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/LevelUpDiag-Orgo_Code_snapshot.zip::README.md",
       "source_sha256": "15646199387e03d3e08580cef16534dce1475bc87d6a8c67b9925c5a3d4b25c4",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -360,8 +360,8 @@
     {
       "repository": "Rejean-McCormick/LevelUpDiag_SemantiK-Architect",
       "family": "diagnostics",
-      "target_role": "Independent verification of SemantiK Architect and its contracts.",
-      "source_member": "repos/LevelUpDiag_SemantiK-Architect/README.md",
+      "target_role": "Independent tests and language-runtime qualification for SemantiK Architect profiles.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/LevelUpDiag_SemantiK_Architect_Code_snapshot.zip::README.md",
       "source_sha256": "1797f9dd05626c0edb8e16394c8d3fd0c913bac0fd9328dd58260702e05f3479",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -369,8 +369,8 @@
     {
       "repository": "Rejean-McCormick/Mediatheque",
       "family": "source_custody",
-      "target_role": "Shared engine for durable source, snapshot, representation and file-version custody.",
-      "source_member": "repos/mediatheque/README.md",
+      "target_role": "Durable source, snapshot, representation and file custody with instance-scoped source receipts.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/mediatheque_Code_snapshot.zip::README.md",
       "source_sha256": "1a4965f0cb529b85c1045be3dc88e9fc31b8a3ca695078e8d7f644f0d8f3a00b",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -378,8 +378,8 @@
     {
       "repository": "Rejean-McCormick/Mediatheque-blank",
       "family": "source_custody",
-      "target_role": "Empty isolated library-instance template using the shared Médiathèque engine.",
-      "source_member": "repos/Mediatheque-blank/README.md",
+      "target_role": "Isolated source library instance template using the shared Mediatheque custody engine.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/mediatheque-blank_Code_snapshot.zip::README.md",
       "source_sha256": "f5096949837218bcf434aff029e1a57b98046cd7a7b8bc2851d5fcb618cb17fc",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -387,8 +387,8 @@
     {
       "repository": "Rejean-McCormick/MediKristal",
       "family": "domain_application",
-      "target_role": "Independent medical knowledge/pathway platform with explicit interfaces; not clinically qualified.",
-      "source_member": "repos/MediKristal/README.md",
+      "target_role": "Medical-domain knowledge/pathways and local domain decisions; requires independent clinical authorization.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/MediKristal_Code_snapshot.zip::README.md",
       "source_sha256": "3fe4f40c233e257d4fa70d3a689466db912b66f81f5f2bcdfad402be31654790",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -396,8 +396,8 @@
     {
       "repository": "Rejean-McCormick/MediKristal-LevelUpDiag-",
       "family": "diagnostics",
-      "target_role": "Independent engineering diagnostics for MediKristal, not medical validation.",
-      "source_member": "repos/MediKristal-LevelUpDiag/README.md",
+      "target_role": "Engineering verification of MediKristal domain software, not medical certification.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/LevelUpDiag-MediKristal_Code_snapshot.zip::README.md",
       "source_sha256": "52c9d855f0671617ad9ea81cb7c271c3592f3f7fbbcaee7a7140aa1020113e61",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -405,8 +405,8 @@
     {
       "repository": "Rejean-McCormick/Orgo",
       "family": "operations",
-      "target_role": "Owner of governed Signals, Workflows, Cases, Tasks and durable execution reconciliation.",
-      "source_member": "repos/Orgo-a6379623/README.md",
+      "target_role": "Durable operational Signals, Workflows, Cases, Tasks, outbox, real effects and terminal reconciliation.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/Orgo_Code_snapshot.zip::README.md",
       "source_sha256": "0c302e53d55a587433d098341b9489db48f5b3d220a82abee397dc6a1820280b",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -414,26 +414,26 @@
     {
       "repository": "Rejean-McCormick/Orgo-Worlds",
       "family": "operations",
-      "target_role": "Orgo-owned world model and integrations; exact target contracts reviewed via owner technical specification.",
-      "source_member": "repos/Orgo-Worlds/docs/Technical-Reference/Worlds/00_CANONICAL_SPEC.md",
-      "source_sha256": "0f80cb9a9812b13d0eee9c6869f30c054493ac8cc94538c10c9a16b381c1e6c7",
+      "target_role": "Operational World context and release definitions under the Orgo domain owner.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/Orgo_Worlds_Code_snapshot.zip::package.json",
+      "source_sha256": "1861ff839d15082b061138d8b730530cda2e8fd814e2772442d721624ccd2dc0",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
     },
     {
       "repository": "Rejean-McCormick/SemantiK-Architect",
       "family": "language",
-      "target_role": "Deterministic semantic-to-human communication planning and realization over approved inputs.",
-      "source_member": "repos/SemantiK-Architect-a60c12de/README.md",
+      "target_role": "Typed semantic-to-language planning and faithful grammatical realization under pinned runtime sets.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/SemantiK_Architect_Code_snapshot.zip::README.md",
       "source_sha256": "b6363cbf206a4e5dc59fe8840b2cd6a9835d921413cd6c3b06f455d85800ee9b",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
     },
     {
       "repository": "Rejean-McCormick/SemantiK_Runtime_Orchestrator",
-      "family": "release_tooling",
-      "target_role": "RuntimeSet release sequencing, integrity gates, promotion, activation and rollback.",
-      "source_member": "repos/SemantiK_Runtime_Orchestrator/README.md",
+      "family": "language",
+      "target_role": "Versioned linguistic RuntimeSet qualification sequencing, promotion and rollback without source truth ownership.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/SemantiK_Runtime_Orchestrator_Code_snapshot.zip::README.md",
       "source_sha256": "f1162e15626a10cdb40bab35b6c4b988f350997845391353d366276a4ddd4f7b",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -441,8 +441,8 @@
     {
       "repository": "Rejean-McCormick/SenTient",
       "family": "research",
-      "target_role": "Experimental entity candidate generation and reconciliation; no semantic-canon approval.",
-      "source_member": "repos/SenTient-c582cd7e/README.md",
+      "target_role": "Experimental extraction and evidence-derived semantic candidates subject to explicit review.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/SenTient_Code_snapshot.zip::README.md",
       "source_sha256": "04f15e81cea2b276f867dd096b9e9c6b37752a02a6dc0200d868eda38ca8dc9b",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -450,8 +450,8 @@
     {
       "repository": "Rejean-McCormick/Skope",
       "family": "research",
-      "target_role": "Local research scopes and the integrated EncyK source-acquisition/intake engine; no canonical promotion.",
-      "source_member": "repos/Skope/README.md",
+      "target_role": "Research scope selection and integrated EncyK source acquisition for noncanonical candidate/evidence packages.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/Skope_Code_snapshot.zip::README.md",
       "source_sha256": "4c1e14aeed5fa56a1589aca42aa4f19f96f129be82efa6ecb4b056f1eaae8d3a",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -459,8 +459,8 @@
     {
       "repository": "Rejean-McCormick/Spek",
       "family": "publication",
-      "target_role": "Independent multilingual document composition and editorial layout from typed semantic units.",
-      "source_member": "repos/Spek/README.md",
+      "target_role": "Reviewed editorial and semantic publishing layout, distinct from canonical source authorization.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/Spek_Code_snapshot.zip::README.md",
       "source_sha256": "6e8e8180c1020f3b7370e62baea415e6760762253f18c2cba9458d16a3a8222c",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -468,8 +468,8 @@
     {
       "repository": "Rejean-McCormick/UCKK-Assets",
       "family": "education",
-      "target_role": "UCKK canonical educational/cultural content and public assets, not application or Moodle code.",
-      "source_member": "repos/UCKK-Assets/README.md",
+      "target_role": "Independent institutional educational media and asset packs with provenance and usage rights.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/UCKK_Assets_Code_snapshot.zip::README.md",
       "source_sha256": "49864191c88b4ec03ddbbd281d79faad0433f0cf764dcfac05d20571f4385479",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
@@ -477,12 +477,11 @@
     {
       "repository": "Rejean-McCormick/UCKK-Ops-Console",
       "family": "education",
-      "target_role": "Local console for UCKK operations and bridges; no independent Moodle or Kristal authority.",
-      "source_member": "repos/UCKK-Ops-Console/README.md",
+      "target_role": "Institutional learning/Moodle operations and approval console, not a canonical semantic owner.",
+      "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/UCKK_ops_console_Code_snapshot.zip::README.md",
       "source_sha256": "ff916a9aab248211c568f365d18dfadcbd1c5f535db5ede67e93d34edb45f994",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
     }
-  ],
-  "code_snapshot_ledger": "docs/inventory/code-snapshots-53.v1.json"
+  ]
 }

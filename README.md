@@ -4,6 +4,8 @@ This repository documents **the intended final kOA system-of-systems architectur
 
 **Start with [the cumulative final-system functional chains](docs/target/functional-chains/README.md)**, [the final-system architecture](docs/target/README.md), [the target ownership model](docs/target/architecture.md), [all 53 repository roles](docs/target/PORTFOLIO.md), [26 target interfaces](docs/target/BOUNDARIES.md), and [the code-alignment instructions](docs/target/CODE_ALIGNMENT_INSTRUCTIONS.md), plus [the 53-snapshot reconciliation](docs/target/SNAPSHOT_RECONCILIATION.md). **Target design is not proof of deployment**; compare [the available maturity evidence](docs/status/current.md) before asserting that an integration is operational.
 
+[November 2026 owner-branch source consolidation](docs/integration/2026-11-09-branch-consolidation.md) records nine offline deliveries covering 46 registered repositories, the missing branch 05 and still-unqualified owner handoffs. This is not a deployment status update.
+
 ## Control views
 
 Use these views together:
@@ -101,6 +103,10 @@ admitted application
     → Koali Spaces manifest / runtime registration
     → Space activation / routing / presentation
 ```
+
+## Public architecture consumer contract
+
+The [public target metadata export](docs/target/public-architecture.v1.json) is generated from the canonical 24-chain/53-owner/26-boundary design by `scripts/export_public_architecture.py`. It is a **design-only read projection**, not running application state. The docs portal, Homepage and Koali Scenario Mosaic may mirror this safe metadata after independent editorial approval. [Branch-10 integration and limitations](docs/integration/BRANCH10_PUBLIC_ARCHITECTURE_2026-11-09.md).
 
 ## Wiki and documentation maintenance
 

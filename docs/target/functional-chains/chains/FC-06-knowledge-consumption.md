@@ -1,51 +1,49 @@
-# FC-06 — Derived knowledge, context preparation and exploration
+# FC-06 — Read-only knowledge consumers and context views
 
-**Classification:** `TARGET_DESIGN` — a destination specification, **not proof of integration or deployment**.
+**Classification:** `TARGET_DESIGN` — final-system requirement, **not proof of integration or deployment**.
 
-**Builds on:** [FC-04](FC-04-semantic-authoring.md), [FC-05](FC-05-knowledge-release.md)  
-**Inherits:** [system model](../00-system-model.md), [owner authority](../01-authority-and-ownership.md), [contract/receipts](../02-contract-and-receipts.md), [failure semantics](../03-state-trust-and-failure.md).
+**Inherits:** [System model](../00-system-model.md), [authority](../01-authority-and-ownership.md), [contracts and receipts](../02-contract-and-receipts.md), [failure rules](../03-state-trust-and-failure.md).
 
 ## Functional promise
 
-**Initiator:** A reader, application or local tool requests a particular authorized semantic collection or derived view at a pinned revision.
+**Owner(s):** Kristal-Integration-Pack / Kompiler / EncyKlopedia / Konstellation / Konstellation-Light.
 
-**Expected final outcome:** Read-only, provenance-preserving navigation, context packs, encyclopedia articles or static views that never modify canonical Kristal state.
+**Initiator:** A reader chooses an authorized immutable release revision and locale.
 
-**Owner(s) of state and decisions:** Kristal Integration Pack for read transforms; Kompiler for context; Konstellation/Light for navigation; EncyKlopedia for public encyclopedia reading.
+**Expected result:** Provenance-preserving rebuildable read view, context pack or encyclopedia navigation without canonical write.
 
 ## Nominal end-to-end behavior
 
-| # | Stage | Responsible party | Input → output | Acceptance/meaning |
-|---|---|---|---|---|
-| 1 | Resolve collection | Reader or context client | collection reference + access context → admissible pinned release | Visibility and exact release index validated |
-| 2 | Project read schema | Integration Pack | Framework v11 semantic graph → approved derived read view | Retains semantic IDs, owner provenance, explicit lexical resolution state |
-| 3 | Prepare context | Kompiler | approved derived view + scoped task → bounded Context Pack | No truth certification, semantic writeback or unbounded model context |
-| 4 | Navigate | Konstellation / Light | authorized collection → graph search/read navigation | Private/public limits, namespace and static/offline compatibility enforced |
-| 5 | Serve encyclopedia | EncyKlopedia | approved read products → multilingual article/search API | Separate acquisition engine remains Skope/EncyK |
-| 6 | Refresh safely | Consumer | new authorized revision → validated rebuild/swap | Never silently replace a pinned view with incompatible source |
+| Step | Stage | Required outcome |
+|---|---|---|
+| 1 | Validate release index | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 2 | derive view | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 3 | apply permission filters | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 4 | render locale coverage | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 5 | rebuild when admitted. | Scoped owner state and evidence receipt; no hidden mutation of other systems |
 
 ## Interfaces and authority gates
 
-B-KNOW-10 through B-KNOW-13 are target. Consumer implementations may opt in separately; EncyKlopedia is not required to be a consumer of every canonical Kristal collection.
+**Target boundary references:** B-KNOW-10 to B-KNOW-13. These identify candidate or scoped adopted contracts; they do not certify complete multi-owner deployment. Producer disclosure and receiving-owner admission are separate decisions.
+
+Where no exact interface is adopted, keep `TBD` rather than inventing a protocol ID. All privileged effects must be checked at the actual enforcing owner.
 
 ## Failure, privacy and forbidden shortcuts
 
-No consumer may mint KQ/KP, validate canon, publish on behalf of an owner, expose private metadata, or call lexical fallback a verified human translation.
+No private/stale index, unknown digest, unapproved fallback or writeback; EncyKlopedia does not acquire sources.
+
+Owner-specific tenant/actor identity, source classification, integrity checks, replay and correction must be preserved. No debug dashboard or public documentation site may disclose private content.
 
 ## Definition of done — acceptance and negative tests
 
-Test same IDs across locales/clients, direct/fallback/missing label handling, private filtering, stale view visibility, invalid signature/digest/schema denial, offline static import and rebuild without changing source.
+Three independent consumer imports and negative privacy/fallback fixtures.
+
+To qualify the full chain, pin both producer and consumer revisions and execute negative fixtures, recovery and idempotency scenarios. An owner code snapshot alone does not demonstrate running behavior.
 
 ## Required code and contract alignment
 
-Owner implementation: adopt one exact read-index/read-view compatibility matrix and run independent Pack→Kompiler, Pack→EncyKlopedia, public→Konstellation/Light fixtures.
-
-## Product-specific notes
-
-Public encyclopedic content may be editorially curated; such curation needs an explicit editorial owner and is not a rewrite of semantic canon.
+Align one derived read-view schema across Integration Pack and independently adopted clients.
 
 ## Source anchors and verification boundary
 
-Integration Pack, Kompiler, Konstellation, Konstellation-Light and EncyKlopedia owner READMEs; B-KNOW-10/11/12/13.
-
-The cited owner files are from the **supplied November 2026 snapshots**; the fact that a file exists is not evidence that this full final journey is running. Exact source-member names, hashes and repository roles are recorded in [the portfolio registry](../../portfolio.v1.json), [the portfolio guide](../../PORTFOLIO.md) and [snapshot reconciliation](../../SNAPSHOT_RECONCILIATION.md). Contract identifiers absent from [BOUNDARIES](../../BOUNDARIES.md) remain subject to owner agreement.
+See the [53-repository portfolio](../../PORTFOLIO.md) and [snapshot reconciliation](../../SNAPSHOT_RECONCILIATION.md) for source member names, hashes, declared local roots and evidence limitations. Contract boundaries are catalogued in [the C0 target ledger](../../BOUNDARIES.md). This is intended final behavior, not evidence of a currently operational multi-repository integration.

@@ -1,51 +1,50 @@
-# FC-15 — Bounded, inspectable AI workflows and owner-mediated actions
+# FC-15 — Bounded agentic planning and approved owner effects
 
-**Classification:** `TARGET_DESIGN` — a destination specification, **not proof of integration or deployment**.
+**Classification:** `TARGET_DESIGN` — final-system requirement, **not proof of integration or deployment**.
 
-**Builds on:** [FC-14](FC-14-identity-and-policy.md), [FC-08](FC-08-governed-execution.md), [FC-18](FC-18-diagnostics-and-audit.md)  
-**Inherits:** [system model](../00-system-model.md), [owner authority](../01-authority-and-ownership.md), [contract/receipts](../02-contract-and-receipts.md), [failure semantics](../03-state-trust-and-failure.md).
+**Inherits:** [System model](../00-system-model.md), [authority](../01-authority-and-ownership.md), [contracts and receipts](../02-contract-and-receipts.md), [failure rules](../03-state-trust-and-failure.md).
 
 ## Functional promise
 
-**Initiator:** An authorized operator submits a bounded agent job with tools, data classifications, budget, allowed effects and explicit review points.
+**Owner(s):** Konductor / owner adapters.
 
-**Expected final outcome:** An inspectable job trace and approved action requests; any real operational changes occur only after the receiving product admits them.
+**Initiator:** An operator submits a limited AI job with tools, purpose, budget and review checkpoints.
 
-**Owner(s) of state and decisions:** Konductor for proposed agent plans, jobs, checkpoints and review; each external product for authoritative effects; Konfid/owner PEP for permission.
+**Expected result:** Inspectible plan, approved typed external request and terminal owner receipt when relevant.
 
 ## Nominal end-to-end behavior
 
-| # | Stage | Responsible party | Input → output | Acceptance/meaning |
-|---|---|---|---|---|
-| 1 | Declare job | Konductor | goal, scope, budget, tools, caller → immutable job intent | Allowed tools and data limits enumerated; no arbitrary host execution |
-| 2 | Plan | Agent under Konductor | job intent → proposed steps and evidence requests | Model output treated as untrusted candidate |
-| 3 | Checkpoint | Konductor / reviewer | proposals → approved, revised or stopped plan | Human gates required where risk or owner policy demands |
-| 4 | Request effect | Konductor → owner adapter | approved command → typed owner request | Owner reauthenticates and enforces; no direct database write |
-| 5 | Observe effect | Target owner → Konductor | accepted/pending/terminal receipt → job checkpoint | Success asserted only on terminal owner evidence |
-| 6 | Recover | Konductor | interruption → bounded resume/cancel | Replays use owner idempotency; uncertain effects reconcile |
+| Step | Stage | Required outcome |
+|---|---|---|
+| 1 | Define job | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 2 | propose | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 3 | reviewer checkpoint | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 4 | owner-admitted action | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 5 | reconcile | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 6 | resume/cancel. | Scoped owner state and evidence receipt; no hidden mutation of other systems |
 
 ## Interfaces and authority gates
 
-No adopted generic Konductor→Orgo interface ID is registered in BOUNDARIES. If a real work operation is needed, define a separate accepted Orgo intent profile rather than bypassing Orgo through agent tools.
+**Target boundary references:** TBD; no general adopted Konductor→Orgo profile. These identify candidate or scoped adopted contracts; they do not certify complete multi-owner deployment. Producer disclosure and receiving-owner admission are separate decisions.
+
+Where no exact interface is adopted, keep `TBD` rather than inventing a protocol ID. All privileged effects must be checked at the actual enforcing owner.
 
 ## Failure, privacy and forbidden shortcuts
 
-No broad credentials in prompts, no autonomous irreversible execution without approval, no confusion of a model confidence score with qualification, no claim that a design repository is a deployed service.
+Model text is a proposal; prompt-injection instructions cannot execute privileged actions.
+
+Owner-specific tenant/actor identity, source classification, integrity checks, replay and correction must be preserved. No debug dashboard or public documentation site may disclose private content.
 
 ## Definition of done — acceptance and negative tests
 
-Test tool allowlists, prompt injection resistance, sensitive-data redaction, approval expiration, model hallucinated identifiers, duplicate action replay, crash/restart checkpoint durability and owner denial.
+Tool allowlists, spoofed resource, interrupted job, duplicate request and owner denial tests.
+
+To qualify the full chain, pin both producer and consumer revisions and execute negative fixtures, recovery and idempotency scenarios. An owner code snapshot alone does not demonstrate running behavior.
 
 ## Required code and contract alignment
 
-Owner implementation: prioritize a minimal verifiable job-state executor plus one synthetic owner adapter; add real capabilities only after code tests and policy approval.
-
-## Product-specific notes
-
-An agent may prepare documentation or propose a change without becoming a separate Orgo Case manager or Kristal canonical author.
+Implement a narrow job-state executor and one independently admitted owner adapter before generalization.
 
 ## Source anchors and verification boundary
 
-Konductor README and Initial Technical Design in owner snapshot; code snapshot contains primarily design/reference content rather than a demonstrated deployed control plane.
-
-The cited owner files are from the **supplied November 2026 snapshots**; the fact that a file exists is not evidence that this full final journey is running. Exact source-member names, hashes and repository roles are recorded in [the portfolio registry](../../portfolio.v1.json), [the portfolio guide](../../PORTFOLIO.md) and [snapshot reconciliation](../../SNAPSHOT_RECONCILIATION.md). Contract identifiers absent from [BOUNDARIES](../../BOUNDARIES.md) remain subject to owner agreement.
+See the [53-repository portfolio](../../PORTFOLIO.md) and [snapshot reconciliation](../../SNAPSHOT_RECONCILIATION.md) for source member names, hashes, declared local roots and evidence limitations. Contract boundaries are catalogued in [the C0 target ledger](../../BOUNDARIES.md). This is intended final behavior, not evidence of a currently operational multi-repository integration.

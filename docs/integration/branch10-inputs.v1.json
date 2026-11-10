@@ -1,0 +1,38 @@
+{
+  "format": "koa.branch10-input-snapshots.v1",
+  "date": "2026-11-09",
+  "inputs": [
+    {
+      "repository": "Rejean-McCormick/initkoa-docs",
+      "uploaded_filename": "docs-initkoa-org_Code_snapshot(1).zip",
+      "zip_sha256": "aa6edb04b169bfeee5bfd2ab835eb55964c2863e7510c5ec92a689e2f1a7159b",
+      "zip_members": 8,
+      "uncompressed_bytes": 27384,
+      "basis": "offline ZIP snapshot; exact Git revision and remote deployment unverified"
+    },
+    {
+      "repository": "Rejean-McCormick/HomePage-initkoa.org",
+      "uploaded_filename": "HomePage_Code_snapshot(1).zip",
+      "zip_sha256": "3943c395aadbfb521540acda7bb397fdd404547d55fc7ec6c23aac0813df61dc",
+      "zip_members": 636,
+      "uncompressed_bytes": 29128658,
+      "basis": "offline ZIP snapshot; exact Git revision and remote deployment unverified"
+    },
+    {
+      "repository": "Rejean-McCormick/kOA-Digital-Ecosystem",
+      "uploaded_filename": "kOA_Digital_Ecosystem_Code_snapshot(7).zip",
+      "zip_sha256": "877dfec4b313391851f4f0c00870e2bd7b4d085f9d203b96477d72125c006bea",
+      "zip_members": 238,
+      "uncompressed_bytes": 906414,
+      "basis": "offline ZIP snapshot; exact Git revision and remote deployment unverified"
+    },
+    {
+      "repository": "Rejean-McCormick/Koali-Scenario-Mosaic",
+      "uploaded_filename": "Koali_Scenario_Mosaic_Code_snapshot(1).zip",
+      "zip_sha256": "0e465a0e28b73687e673db1f5b9feb389917269712c55d81c7bcd98b05eaa21d",
+      "zip_members": 279,
+      "uncompressed_bytes": 1814719,
+      "basis": "offline ZIP snapshot; exact Git revision and remote deployment unverified"
+    }
+  ]
+}

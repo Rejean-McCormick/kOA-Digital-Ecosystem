@@ -1,51 +1,49 @@
-# FC-18 — Independent qualification, exact evidence and C0 audit publication
+# FC-18 — Independent diagnostics and time-scoped evidence
 
-**Classification:** `TARGET_DESIGN` — a destination specification, **not proof of integration or deployment**.
+**Classification:** `TARGET_DESIGN` — final-system requirement, **not proof of integration or deployment**.
 
-**Builds on:** [FC-14](FC-14-identity-and-policy.md)  
-**Inherits:** [system model](../00-system-model.md), [owner authority](../01-authority-and-ownership.md), [contract/receipts](../02-contract-and-receipts.md), [failure semantics](../03-state-trust-and-failure.md).
+**Inherits:** [System model](../00-system-model.md), [authority](../01-authority-and-ownership.md), [contracts and receipts](../02-contract-and-receipts.md), [failure rules](../03-state-trust-and-failure.md).
 
 ## Functional promise
 
-**Initiator:** An owner or independent reviewer chooses an exact product revision, target profile, risk level and diagnostic campaign.
+**Owner(s):** KristalDiag / KonnaxionDiag / LevelUpDiag tools / kOA C0.
 
-**Expected final outcome:** A scoped, reproducible qualification verdict with complete evidence links and explicit negative findings; optionally a public-safe dated audit projection.
+**Initiator:** An owner requests a qualification campaign against an exact source, dependency and verifier revision.
 
-**Owner(s) of state and decisions:** KristalDiag, KonnaxionDiag, LevelUpDiag-kOA-Linux, LevelUpDiag-Orgo, LevelUpDiag_SemantiK-Architect, MediKristal-LevelUpDiag-; kOA Digital Ecosystem C0 and GitHub Audit as consumers.
+**Expected result:** Scoped diagnostic verdict and safe evidence metadata, not a release or deploy permission.
 
 ## Nominal end-to-end behavior
 
-| # | Stage | Responsible party | Input → output | Acceptance/meaning |
-|---|---|---|---|---|
-| 1 | Pin target | Diagnostic caller | exact source revision, profile and dependency locks → test subject | Target cannot silently change mid-campaign |
-| 2 | Run independent checks | Diagnostic owner | pinned subject → checks, logs and fixtures | Verifier revision, isolated environment and synthetic/real distinction recorded |
-| 3 | Issue evidence | Diagnostic engine | results → signed/hashed report and failures | Verdict always scoped to subject and campaign |
-| 4 | Review gaps | Owner/security | diagnostic evidence → remediation/admission recommendation | Green check is neither publication approval nor production evidence |
-| 5 | Coordinate | C0 | safe evidence metadata → portfolio/maturity/contract map | No copy of private subject data and no blind completion of branch kits |
-| 6 | Publish audit view | GitHub Audit / docs portal | selected C0 projection → dated public report | Public-safe, pinned source and interpretation |
+| Step | Stage | Required outcome |
+|---|---|---|
+| 1 | Pin subject | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 2 | run checks/negative fixtures | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 3 | publish verdict | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 4 | owner review | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 5 | safe C0 projection. | Scoped owner state and evidence receipt; no hidden mutation of other systems |
 
 ## Interfaces and authority gates
 
-The 53 branch kits are **work instructions**, not finished diagnostic reports. The 53 matching SHA-256 snapshot records prove capture identity only; they do not prove successful code tests or integrated release.
+**Target boundary references:** B-KNOW-07. These identify candidate or scoped adopted contracts; they do not certify complete multi-owner deployment. Producer disclosure and receiving-owner admission are separate decisions.
+
+Where no exact interface is adopted, keep `TBD` rather than inventing a protocol ID. All privileged effects must be checked at the actual enforcing owner.
 
 ## Failure, privacy and forbidden shortcuts
 
-Never issue a global green status from partial campaign, use synthetic tests as real-world proof, or expose source bytes or sensitive logs through the public dashboard.
+A code snapshot, workflow or empty branch report cannot be labeled tested/deployed.
+
+Owner-specific tenant/actor identity, source classification, integrity checks, replay and correction must be preserved. No debug dashboard or public documentation site may disclose private content.
 
 ## Definition of done — acceptance and negative tests
 
-Test verifier independence, tampered subject/reports, negative fixtures, data classification filtering, stale evidence invalidation, Git commit pin mismatch and proof-to-claim scope consistency.
+Verifier independence, negative fixtures and altered evidence rejection; no secret audit publication.
+
+To qualify the full chain, pin both producer and consumer revisions and execute negative fixtures, recovery and idempotency scenarios. An owner code snapshot alone does not demonstrate running behavior.
 
 ## Required code and contract alignment
 
-Owner implementation: expand diagnostic suites per product and have C0 ingest only explicitly qualified, source-pinned and classified results. Enforce publication signoff of audit projections.
-
-## Product-specific notes
-
-The audit system may reveal uncertainty and blockers. It must not manufacture confidence by filling empty template fields or counting files as capabilities.
+Standardize owner-specific receipts and let C0 publish only evidence classified for its audience.
 
 ## Source anchors and verification boundary
 
-Owner diagnostic READMEs, C0 snapshots-53 ledger and KITS_BRANCHE_53_REPOS; central tests/validation scripts; B-KNOW-07.
-
-The cited owner files are from the **supplied November 2026 snapshots**; the fact that a file exists is not evidence that this full final journey is running. Exact source-member names, hashes and repository roles are recorded in [the portfolio registry](../../portfolio.v1.json), [the portfolio guide](../../PORTFOLIO.md) and [snapshot reconciliation](../../SNAPSHOT_RECONCILIATION.md). Contract identifiers absent from [BOUNDARIES](../../BOUNDARIES.md) remain subject to owner agreement.
+See the [53-repository portfolio](../../PORTFOLIO.md) and [snapshot reconciliation](../../SNAPSHOT_RECONCILIATION.md) for source member names, hashes, declared local roots and evidence limitations. Contract boundaries are catalogued in [the C0 target ledger](../../BOUNDARIES.md). This is intended final behavior, not evidence of a currently operational multi-repository integration.

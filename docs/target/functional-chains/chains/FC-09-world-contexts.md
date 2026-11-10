@@ -1,50 +1,49 @@
-# FC-09 — Universe, World and domain-context lifecycle
+# FC-09 — World and Universe context releases
 
-**Classification:** `TARGET_DESIGN` — a destination specification, **not proof of integration or deployment**.
+**Classification:** `TARGET_DESIGN` — final-system requirement, **not proof of integration or deployment**.
 
-**Builds on:** [FC-14](FC-14-identity-and-policy.md), [FC-16](FC-16-platform-lifecycle.md)  
-**Inherits:** [system model](../00-system-model.md), [owner authority](../01-authority-and-ownership.md), [contract/receipts](../02-contract-and-receipts.md), [failure semantics](../03-state-trust-and-failure.md).
+**Inherits:** [System model](../00-system-model.md), [authority](../01-authority-and-ownership.md), [contracts and receipts](../02-contract-and-receipts.md), [failure rules](../03-state-trust-and-failure.md).
 
 ## Functional promise
 
-**Initiator:** A product owner proposes a change to a specific World/context with an explicit membership, tenant and runtime target.
+**Owner(s):** Konnaxion-Worlds / Orgo-Worlds.
 
-**Expected final outcome:** A versioned, owner-admitted WorldRelease or operational context, without any implicit transfer between application domains.
+**Initiator:** An owner proposes a versioned context affecting a defined product and tenant.
 
-**Owner(s) of state and decisions:** Konnaxion-Worlds for canonical Konnaxion Universe/World context and WorldRelease; Orgo-Worlds for its distinct operational domain context.
+**Expected result:** Approved owner WorldRelease with active context reference and safe rollback.
 
 ## Nominal end-to-end behavior
 
-| # | Stage | Responsible party | Input → output | Acceptance/meaning |
-|---|---|---|---|---|
-| 1 | Model context | World owner | Universe/World definition + policies → candidate immutable context | Identity and inheritance rules are explicit and scoped |
-| 2 | Review | World owner/security | candidate → approved/rejected WorldRelease | No release without defined authority, version and affected tenants |
-| 3 | Qualify | Owner diagnostics | WorldRelease + referenced modules → compatibility result | Reproducible exact owner revision and negative fixtures |
-| 4 | Admit | Konnaxion or Orgo as appropriate | approved WorldRelease → active app-context reference | Context cannot silently overwrite independent Orgo/Konnaxion business state |
-| 5 | Roll back | World owner | invalid new context → pinned earlier WorldRelease | Active business effects are reconciled by their real owner, not "undone" by config |
+| Step | Stage | Required outcome |
+|---|---|---|
+| 1 | Define scope | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 2 | review context | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 3 | qualify version | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 4 | admit to correct app | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 5 | observe or revert. | Scoped owner state and evidence receipt; no hidden mutation of other systems |
 
 ## Interfaces and authority gates
 
-`B-CIVIC-03` explicitly proposes Konnaxion-Worlds→Konnaxion. A separate Orgo-Worlds→Orgo boundary still needs owner-proposed interface and tests; the worlds are not a shared monolith.
+**Target boundary references:** B-CIVIC-03. These identify candidate or scoped adopted contracts; they do not certify complete multi-owner deployment. Producer disclosure and receiving-owner admission are separate decisions.
+
+Where no exact interface is adopted, keep `TBD` rather than inventing a protocol ID. All privileged effects must be checked at the actual enforcing owner.
 
 ## Failure, privacy and forbidden shortcuts
 
-World identity, participant roles and decision scope must be bound in every downstream intent. Never treat an environment name or UI route as authorization.
+World cannot grant global permissions; stale context must not rewrite existing Case/Decision history.
+
+Owner-specific tenant/actor identity, source classification, integrity checks, replay and correction must be preserved. No debug dashboard or public documentation site may disclose private content.
 
 ## Definition of done — acceptance and negative tests
 
-Test incompatible WorldRelease, tenant mismatch, actor not admitted, version rollback, stale context in long-running Case/Task, data isolation and World-aware audit traces.
+Wrong context/tenant and rollback tests preserve owner business state.
+
+To qualify the full chain, pin both producer and consumer revisions and execute negative fixtures, recovery and idempotency scenarios. An owner code snapshot alone does not demonstrate running behavior.
 
 ## Required code and contract alignment
 
-Owner implementation: pin per-product WorldRelease contract and migration rules; qualify the Orgo-Worlds interface before adding a new registry edge.
-
-## Product-specific notes
-
-This chain is optional for standalone offline tools. A World can group participants and resources without owning every state stored by the participating products.
+Define an additional Orgo-Worlds→Orgo owner contract before registering its new boundary.
 
 ## Source anchors and verification boundary
 
-Konnaxion-Worlds owner README and Konnaxion dependency docs; Orgo-Worlds technical descriptions in owner snapshots; B-CIVIC-03.
-
-The cited owner files are from the **supplied November 2026 snapshots**; the fact that a file exists is not evidence that this full final journey is running. Exact source-member names, hashes and repository roles are recorded in [the portfolio registry](../../portfolio.v1.json), [the portfolio guide](../../PORTFOLIO.md) and [snapshot reconciliation](../../SNAPSHOT_RECONCILIATION.md). Contract identifiers absent from [BOUNDARIES](../../BOUNDARIES.md) remain subject to owner agreement.
+See the [53-repository portfolio](../../PORTFOLIO.md) and [snapshot reconciliation](../../SNAPSHOT_RECONCILIATION.md) for source member names, hashes, declared local roots and evidence limitations. Contract boundaries are catalogued in [the C0 target ledger](../../BOUNDARIES.md). This is intended final behavior, not evidence of a currently operational multi-repository integration.

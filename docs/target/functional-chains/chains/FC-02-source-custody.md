@@ -1,50 +1,49 @@
-# FC-02 — Source custody, snapshots and media preservation
+# FC-02 — Durable source, snapshot and representation custody
 
-**Classification:** `TARGET_DESIGN` — a destination specification, **not proof of integration or deployment**.
+**Classification:** `TARGET_DESIGN` — final-system requirement, **not proof of integration or deployment**.
 
-**Builds on:** [FC-01](FC-01-research-and-acquisition.md)  
-**Inherits:** [system model](../00-system-model.md), [owner authority](../01-authority-and-ownership.md), [contract/receipts](../02-contract-and-receipts.md), [failure semantics](../03-state-trust-and-failure.md).
+**Inherits:** [System model](../00-system-model.md), [authority](../01-authority-and-ownership.md), [contracts and receipts](../02-contract-and-receipts.md), [failure rules](../03-state-trust-and-failure.md).
 
 ## Functional promise
 
-**Initiator:** An admitted source provider deposits source evidence or an instance administrator imports a local collection.
+**Owner(s):** Mediatheque / Mediatheque-blank.
 
-**Expected final outcome:** Durable custody objects with verified source identity, snapshot and representation records, hashes, permissions and a receiver-owned acceptance receipt.
+**Initiator:** A permitted source provider deposits reviewed evidence into the selected library instance.
 
-**Owner(s) of state and decisions:** Médiathèque shared engine; independently controlled Médiathèque library instances, including `Mediatheque-blank`; depositing owner.
+**Expected result:** Custody receipt and immutable source/snapshot/representation references under library ACL.
 
 ## Nominal end-to-end behavior
 
-| # | Stage | Responsible party | Input → output | Acceptance/meaning |
-|---|---|---|---|---|
-| 1 | Admit | Library instance owner | source package, owner/tenant identity → admission decision | Policy and library/instance boundary checked before writing |
-| 2 | Validate | Médiathèque engine | candidate source/snapshot/files → digest and structure check | Fail closed on invalid bytes, unsupported format or ownership scope |
-| 3 | Preserve | Médiathèque instance | validated source → Source/Snapshot/Representation/FileVersion references | One stable source identity; versioned immutable evidence and checksums |
-| 4 | Acknowledge | Médiathèque instance | accepted write → durable custody receipt | Duplicate with same intent returns prior receipt; conflicting replay denied |
-| 5 | Serve references | Médiathèque instance → authorized consumers | custody identifiers → permission-filtered references | No silent source download or raw media disclosure |
+| Step | Stage | Required outcome |
+|---|---|---|
+| 1 | Authorize deposit | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 2 | checksum source | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 3 | preserve version | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 4 | issue receiver receipt | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 5 | serve permission-filtered references. | Scoped owner state and evidence receipt; no hidden mutation of other systems |
 
 ## Interfaces and authority gates
 
-`B-KNOW-01` for Skope intake and `B-KNOW-02` for reference presentation are target edges; other consumers such as UCKK/Ékole require separately adopted library adapter contracts.
+**Target boundary references:** B-KNOW-01, B-KNOW-02. These identify candidate or scoped adopted contracts; they do not certify complete multi-owner deployment. Producer disclosure and receiving-owner admission are separate decisions.
+
+Where no exact interface is adopted, keep `TBD` rather than inventing a protocol ID. All privileged effects must be checked at the actual enforcing owner.
 
 ## Failure, privacy and forbidden shortcuts
 
-A storage receipt is neither a quality judgment nor semantic canon; application/tenant library isolation must survive operator tools and template instances.
+Reject modified bytes, conflicting replay and cross-instance private reads; custody never validates epistemic truth.
+
+Owner-specific tenant/actor identity, source classification, integrity checks, replay and correction must be preserved. No debug dashboard or public documentation site may disclose private content.
 
 ## Definition of done — acceptance and negative tests
 
-Prove accepted/duplicate/conflicting import, checksum corruption, blocked inter-instance access, unauthorized private source fetch, backup/recovery, and referential integrity of Snapshot/Representation versions.
+Same-intent replay yields same receipt; divergent replay denied; permissioned recovery works.
+
+To qualify the full chain, pin both producer and consumer revisions and execute negative fixtures, recovery and idempotency scenarios. An owner code snapshot alone does not demonstrate running behavior.
 
 ## Required code and contract alignment
 
-Owner implementation: define one version-pinned package and durable receipt between Skope and the Médiathèque receiver; test `Mediatheque-blank` isolation and instance-local storage.
-
-## Product-specific notes
-
-The shared engine is code; each library instance owns its data. A source can remain private forever even after it becomes available for controlled semantic authoring.
+Pin Skope sender and Mediatheque receiver schema and prove durable storage plus isolated library instance.
 
 ## Source anchors and verification boundary
 
-Médiathèque engine and blank-instance owner READMEs; B-KNOW-01 and B-KNOW-02; supplied code has import/export tooling.
-
-The cited owner files are from the **supplied November 2026 snapshots**; the fact that a file exists is not evidence that this full final journey is running. Exact source-member names, hashes and repository roles are recorded in [the portfolio registry](../../portfolio.v1.json), [the portfolio guide](../../PORTFOLIO.md) and [snapshot reconciliation](../../SNAPSHOT_RECONCILIATION.md). Contract identifiers absent from [BOUNDARIES](../../BOUNDARIES.md) remain subject to owner agreement.
+See the [53-repository portfolio](../../PORTFOLIO.md) and [snapshot reconciliation](../../SNAPSHOT_RECONCILIATION.md) for source member names, hashes, declared local roots and evidence limitations. Contract boundaries are catalogued in [the C0 target ledger](../../BOUNDARIES.md). This is intended final behavior, not evidence of a currently operational multi-repository integration.

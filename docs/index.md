@@ -17,6 +17,9 @@ The target architecture deliberately distinguishes **design** from **observed im
 
 - [GitHub Wiki export and synchronization](wiki/README.md) — generated reader pages, controlled publish process
 
+- [Consolidated owner-branch delivery evidence (9 November 2026)](integration/2026-11-09-branch-consolidation.md) — delivered files, source status and missing branch 05
+- [Cross-owner handoff matrix](integration/2026-11-09-overlay-handoffs.md) — bilateral work remaining
+
 ## Technical compatibility references (not target design)
 
 The [frozen v6 knowledge-contract set](2-Technical-Reference/40-integration/knowledge-projection-contract-set.json) and [v10 coordination ledger](2-Technical-Reference/40-integration/kristal-v10-alignment/README.md) remain available because some implementation and tests still depend on their exact IDs. **Do not** infer that the old EncyKlopedia acquisition role describes the final EncyKlopedia product.

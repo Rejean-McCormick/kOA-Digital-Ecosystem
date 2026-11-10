@@ -2,9 +2,7 @@
   "format": "koa.code-snapshot-ledger/1.0",
   "as_of": "2026-11-09",
   "source_archive": "SmartDump_20261109_113255(2).zip",
-  "provenance": "user_supplied_offline_smartdump_not_live_git_head",
   "claim_level": "structural_inventory_sha256_only_no_source_behavior_or_execution_qualification",
-  "verification": "53 ZIP members SHA-256 checked against the independent 53-repository audit register on intake",
   "repositories": [
     {
       "repository": "Rejean-McCormick/Akor",

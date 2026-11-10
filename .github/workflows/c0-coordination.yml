@@ -24,11 +24,13 @@ on:
       - 'scripts/validate_c0_coordination.py'
       - 'scripts/validate_target_architecture.py'
       - 'scripts/render_target_wiki.py'
+      - 'scripts/export_public_architecture.py'
       - 'scripts/render_target_portfolio.py'
       - 'scripts/render_target_boundaries.py'
       - 'scripts/render_repository_inventory.py'
       - 'tests/test_target_architecture.py'
       - 'tests/test_wiki_mirror.py'
+      - 'tests/test_public_architecture.py'
       - 'tests/test_functional_chains.py'
       - 'scripts/validate_tandem_vps_profile.py'
       - 'tests/test_c0_coordination.py'
@@ -49,6 +51,7 @@ jobs:
       - run: python scripts/validate_tandem_vps_profile.py
       - run: python scripts/validate_target_architecture.py
       - run: python scripts/render_target_wiki.py --validate
+      - run: python scripts/export_public_architecture.py --check
       - run: python scripts/render_target_portfolio.py --check
       - run: python scripts/render_repository_inventory.py --check
       - run: python scripts/render_target_boundaries.py --check

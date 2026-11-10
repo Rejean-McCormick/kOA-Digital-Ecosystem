@@ -1,50 +1,49 @@
-# FC-14 — Identity, authorization, security policy and real enforcement
+# FC-14 — Scoped identity, policy and actual enforcement
 
-**Classification:** `TARGET_DESIGN` — a destination specification, **not proof of integration or deployment**.
+**Classification:** `TARGET_DESIGN` — final-system requirement, **not proof of integration or deployment**.
 
-**Builds on:** [FC-23](FC-23-external-interop.md)  
-**Inherits:** [system model](../00-system-model.md), [owner authority](../01-authority-and-ownership.md), [contract/receipts](../02-contract-and-receipts.md), [failure semantics](../03-state-trust-and-failure.md).
+**Inherits:** [System model](../00-system-model.md), [authority](../01-authority-and-ownership.md), [contracts and receipts](../02-contract-and-receipts.md), [failure rules](../03-state-trust-and-failure.md).
 
 ## Functional promise
 
-**Initiator:** A caller requests to read, write, publish, deploy or execute against a resource in a precisely defined tenant, audience and purpose.
+**Owner(s):** Konfid / Daat / each owner PEP.
 
-**Expected final outcome:** A deny-by-default decision bound to principal, resource, action and intent digest, followed by a separate observed enforcement receipt for permitted effects.
+**Initiator:** A workload requests a specific action on a resource within a tenant and purpose.
 
-**Owner(s) of state and decisions:** Actual IdP/trust provider for authentication; Konfid for scoped policy decisions; DaaT and every product for enforcing PEPs; platform/agent for host effects.
+**Expected result:** Bound allow/deny decision and separate effect-point enforcement receipt.
 
 ## Nominal end-to-end behavior
 
-| # | Stage | Responsible party | Input → output | Acceptance/meaning |
-|---|---|---|---|---|
-| 1 | Authenticate | Trusted identity source | workload/actor credentials → validated claims | No credentials from user-supplied text or untrusted app metadata |
-| 2 | Build request | Caller / owner PEP | principal, tenant, resource, action, digest → policy request | Identity and digest are exact and bounded |
-| 3 | Decide | Konfid or selected owner policy engine | policy request → allow/deny and obligations | Scoped, time-bounded, no universal administrator bypass |
-| 4 | Enforce | DaaT or other actual PEP | decision + exact effect → permit or deny | Recheck freshness, actor, tenant, resource and obligations |
-| 5 | Audit/reconcile | Enforcing owner | effect attempt → durable audit/receipt | Successful policy decision is not proof of successful effect |
+| Step | Stage | Required outcome |
+|---|---|---|
+| 1 | Authenticate | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 2 | bind actor/resource/digest | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 3 | decide policy | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 4 | enforce at PEP | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 5 | journal result. | Scoped owner state and evidence receipt; no hidden mutation of other systems |
 
 ## Interfaces and authority gates
 
-`B-SEC-01` is proposed; DaaT currently documents host-injected identity/policy/audit dependencies and is **not** a self-contained deployed security service. Every other product must maintain local enforcement even if central decisions are consulted.
+**Target boundary references:** B-SEC-01. These identify candidate or scoped adopted contracts; they do not certify complete multi-owner deployment. Producer disclosure and receiving-owner admission are separate decisions.
+
+Where no exact interface is adopted, keep `TBD` rather than inventing a protocol ID. All privileged effects must be checked at the actual enforcing owner.
 
 ## Failure, privacy and forbidden shortcuts
 
-On absent audit sink, expired policy, unknown actor, replay/digest mismatch, cross-tenant request, stale delegation or unenforced obligations, fail closed.
+Expired policy, missing identity/audit provider, wrong tenant and substituted digest fail closed.
+
+Owner-specific tenant/actor identity, source classification, integrity checks, replay and correction must be preserved. No debug dashboard or public documentation site may disclose private content.
 
 ## Definition of done — acceptance and negative tests
 
-Test allow/deny, expired decision, invalid workload binding, substituted resource digest, revoked actor, PEP bypass prevention, tenant isolation, lost Konfid availability and minimal nonsecret audit trail.
+Permission/denial and bypass tests prove no effect on a rejected request.
+
+To qualify the full chain, pin both producer and consumer revisions and execute negative fixtures, recovery and idempotency scenarios. An owner code snapshot alone does not demonstrate running behavior.
 
 ## Required code and contract alignment
 
-Owner implementation: connect real trusted policy transport and each PEP; prove actual effect suppression on denial, not just a "deny" response returned to UI.
-
-## Product-specific notes
-
-No policy engine gets automatic global authority over civic, semantic, clinical, student or host data; each actual owner remains responsible for effect scope.
+Connect Konfid/host-injected Daat rules to actual enforcing products, never a universal root permission.
 
 ## Source anchors and verification boundary
 
-Konfid owner README and DaaT 0.3.0 offline security-gate docs; Konfid→DaaT proposed B-SEC-01.
-
-The cited owner files are from the **supplied November 2026 snapshots**; the fact that a file exists is not evidence that this full final journey is running. Exact source-member names, hashes and repository roles are recorded in [the portfolio registry](../../portfolio.v1.json), [the portfolio guide](../../PORTFOLIO.md) and [snapshot reconciliation](../../SNAPSHOT_RECONCILIATION.md). Contract identifiers absent from [BOUNDARIES](../../BOUNDARIES.md) remain subject to owner agreement.
+See the [53-repository portfolio](../../PORTFOLIO.md) and [snapshot reconciliation](../../SNAPSHOT_RECONCILIATION.md) for source member names, hashes, declared local roots and evidence limitations. Contract boundaries are catalogued in [the C0 target ledger](../../BOUNDARIES.md). This is intended final behavior, not evidence of a currently operational multi-repository integration.

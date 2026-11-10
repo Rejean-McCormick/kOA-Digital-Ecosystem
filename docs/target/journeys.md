@@ -1,84 +1,25 @@
-# Final-system journeys: inputs, ownership, receipts and failure gates
+# Intended final-system journeys
 
-**Status:** `TARGET_DESIGN`. A journey is a desired connected capability, not a claim that each handoff is implemented. **Detailed cumulative specification:** [24 functional chains](functional-chains/README.md), [complete scenarios](functional-chains/04-cross-chain-compositions.md) and [acceptance criteria](functional-chains/06-qualification-and-acceptance.md). Follow links to [ownership](architecture.md), [repository roles](PORTFOLIO.md) and [required code alignment](CODE_ALIGNMENT_INSTRUCTIONS.md).
+**Status:** `TARGET_DESIGN` — desired capabilities, not asserted end-to-end deployments. The authoritative details, owners and negative tests for each stage live in the linked [24-chain specification](functional-chains/README.md).
 
-## A. Knowledge: external source to a usable, governed read surface
+## J1 — Research source to governed public knowledge
 
-| Step | Owner | Input → output in the final system | Acceptance requirement |
-|---|---|---|---|
-| 1. Select research perimeter | Skope | Selected local scope/profile → reproducible bounded research batch | Explicit selected source, safety bounds, audit log; nothing promoted to canon |
-| 2. Acquire evidence | Skope-integrated EncyK | Reviewed QID candidates/source extract → noncanonical evidence package | Provider identity, bytes/source references, digest; replay-safe export |
-| 3. Preserve | Médiathèque | Evidence package → accepted Source/Snapshot/Representation and receipt | Durable custody, unique source identity, checksum, idempotency, rejection rules |
-| 4. Propose mappings | DaaT, diK, Kristalizer as relevant | Preserved source references + lexical/external candidates → reviewed mapping proposal | Separation of Wikidata Q/P from KQ/KP; no automatic canon write |
-| 5. Author semantic state | Kristal Authoring Kit under Framework | Approved mappings + workspace → validated local Kristal semantic state | Exact Framework profile, KQ/KP/KA/KS identity, separate dictionary/catalog, provenance |
-| 6. Qualify | Owner-selected independent diagnostics | Local build + pinned inputs → independently inspectable qualification verdict | Reproducible source hash, verifier identity, full failing checks retained |
-| 7. Authorize release | Kristal owner and release-policy authority | Qualified artifact + scoped approval → publishable immutable release | Approval for exact target scope, absence of implicit GitHub release |
-| 8. Publish / make readable | Owner-authorized publisher, kristal-public as one host | Release → immutable collection reference + derived reader artifacts | Atomicity, version/digest and rollback/recovery information |
-| 9. Consume | Integration Pack, Kompiler, Konstellation, EncyKlopedia, UCKK | Pinned read surface → read-only views, context or educational projection | Reader never becomes semantic authority; language fallback disclosed |
+[FC-01 acquisition](functional-chains/chains/FC-01-research-and-acquisition.md) → [FC-02 custody](functional-chains/chains/FC-02-source-custody.md) → [FC-03 mapping](functional-chains/chains/FC-03-mapping-and-lexical-preparation.md) → [FC-04 authoring](functional-chains/chains/FC-04-semantic-authoring.md) → [FC-05 release](functional-chains/chains/FC-05-knowledge-release.md) → [FC-06 reading](functional-chains/chains/FC-06-knowledge-consumption.md). Candidate QIDs and extracted labels must be reviewed before semantic authoring. A local build remains private until independently qualified and explicitly authorized for a named publication destination.
 
-**Failure behavior:** reject an unrecognized mapping, source digest mismatch, invalid Framework profile, unapproved public target or unpinned derived view; retain an actionable receipt; no hidden partial publish or automatic promotion. The v11 owner documents establish the intended semantics, **not proof** of this complete pipeline.
+## J2 — Finalized civic decision to reconciled accountable work
 
-## B. Civic decision to governed execution and impact
+[FC-07 Konnaxion](functional-chains/chains/FC-07-civic-deliberation.md) → [FC-23 adopted IK profile](functional-chains/chains/FC-23-external-interop.md) → [FC-08 Orgo](functional-chains/chains/FC-08-governed-execution.md) → terminal impact receipt. Accepted work is not completed work; replay must not double-execute an effect.
 
-```text
-Konnaxion finalized DecisionRecord
-   └─ (adopted IK governance.decision.execute/1.0.0)
-      Orgo Signal / Workflow / Case / Task
-         └─ durable outbox, idempotent effects and terminal reconciliation
-            (adopted IK accountability.impact.publish/1.0.0)
-               Konnaxion-owned accountability result
-```
+## J3 — Educational design to optional real work or Moodle projection
 
-The target preserves the already documented owner split: **Konnaxion owns decisions**; **Orgo owns operational state**. Konnaxion-Worlds and Orgo-Worlds retain separate scopes. A successful command acceptance is not a completed external effect. Cross-owner communication requires explicit tenant identity, authorization, versioned schema, idempotency and replay safety.
+[FC-10 scenario](functional-chains/chains/FC-10-education-design.md) → [FC-11 learning](functional-chains/chains/FC-11-learning-delivery.md), optionally Orgo under separately approved teacher/institution authority. A simulation/preview creates no real Case/Task or Moodle write. For licensed creative media, include [FC-21](functional-chains/chains/FC-21-creative-assets.md).
 
-## C. Educational design, classroom work and learning projections
+## J4 — Language, editorial and public discovery
 
-```text
-Kontexte scenario → Kompose educational plan/simulation → Akor learning mission
-                                       |                        |
-                                    approved                 supervised
-                                       v                        v
-                                      Orgo governed actual work
-                                                 |
-                            Ekole engine + independent content pack
-                                                 |
-                                  UCKK-owned learning/Moodle projection
-```
+Approved typed input → [FC-12 SemantiK runtime](functional-chains/chains/FC-12-language-runtime.md) → [FC-13 Spek editorial](functional-chains/chains/FC-13-editorial-publishing.md) → [FC-22 public presence](functional-chains/chains/FC-22-public-presence.md). RuntimeSet qualification, human review, release permission and public site deployment are separate controls.
 
-This is a *target composition*, not a requirement that every classroom module run as a microservice. Kontexte owns reusable scenario definitions; Kompose owns design/simulation; Akor owns collaborative learning experience; Orgo alone owns real Cases/Tasks. Ékole Core remains curriculum-neutral; content packs stay independent; UCKK maintains local institutional/Moodle authority. No automatic Moodle write is inferred from a candidate plan.
+## J5 — Platform admission and recovery
 
-## D. Immutable knowledge publication and runtime activation
+[FC-14 identity](functional-chains/chains/FC-14-identity-and-policy.md), [FC-18 independent diagnostics](functional-chains/chains/FC-18-diagnostics-and-audit.md), [FC-16 host lifecycle](functional-chains/chains/FC-16-platform-lifecycle.md) and [FC-24 recovery](functional-chains/chains/FC-24-operations-and-recovery.md). Koali Spaces is an **optional presentation shell**, not a requirement for domain applications or semantic authoring.
 
-1. **Build** locally under the owner Framework/Kit version and commit.
-2. **Independently qualify** exact output and dependency lock; a report is evidence, not permission.
-3. **Authorize** the exact publication scope and selected target (human/owner rule).
-4. **Publish** immutable release metadata and derived read surfaces, with receipts and rollback paths.
-5. **Admit** a deployable runtime using kOA-Linux profile/release policies if runtime activation is required.
-6. **Activate** via the correct runtime owner/privileged agent; collect host-side measured receipts.
-7. **Render** through Koali Spaces only if that product surface is admitted and explicitly adopted.
-
-`kristal_runtime`, a node agent, the product app, and Koali Spaces have **separate state machines**. Never infer Space activation from artifact publication, or release qualification from a green UI badge.
-
-## E. Language and accessible publication
-
-```text
-Approved semantic / math input → SemantiK Architect planner / explicit ACL
-  → versioned language/lexical binding → GF/realizer RuntimeSet (qualified)
-  → faithful human communication
-
-Typed semantic units + reviewed short realizations → Spek editorial layout
-  → independently approved multilingual publication
-```
-
-The SemantiK Runtime Orchestrator sequences RuntimeSet qualification, promotion and rollback without owning source semantics or grammar truth. `diK` may prepare lexical resources subject to an explicitly adopted contract; lexical availability is **not** a guarantee of translator/conformance quality. Spek is an independent editorial product, not a hidden semantic validator.
-
-## Cross-cutting requirements for every journey
-
-- **Identity and authorization:** tenant/workload identity and owner-local permissions, explicit Konfid/PEP contracts where adopted, least privilege.
-- **Evidence:** exact input and output hashes, source/canonical version, validator version, timestamp, bounded result scope.
-- **Failure and retry:** idempotency tokens, divergent replay rejection, quarantine of invalid artifacts, visible receipt state.
-- **Observability:** owner-specific correlation IDs, authorized logs, and no leakage of private corpus or identities into public docs.
-- **UX:** one clear entry point per product; global navigation may link products but cannot silently federate rights.
-- **Language:** lexical direct/fallback/missing status disclosed; never call fallback a certified translation.
-
-Only qualify an end-to-end journey when the **whole scoped path** has exact producer/consumer evidence. A qualified local subpath does not qualify other branches.
+Each journey needs exact versioned owners, producer/consumer acceptance fixtures, owner authorization and terminal receipts before the maturity ledger can claim qualification. See [cross-chain compositions](functional-chains/04-cross-chain-compositions.md).

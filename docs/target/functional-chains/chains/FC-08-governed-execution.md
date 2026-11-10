@@ -1,50 +1,50 @@
-# FC-08 — Governed operations, durable tasks and civic accountability
+# FC-08 — Durable operational execution and accountability
 
-**Classification:** `TARGET_DESIGN` — a destination specification, **not proof of integration or deployment**.
+**Classification:** `TARGET_DESIGN` — final-system requirement, **not proof of integration or deployment**.
 
-**Builds on:** [FC-07](FC-07-civic-deliberation.md), [FC-14](FC-14-identity-and-policy.md), [FC-23](FC-23-external-interop.md), [FC-18](FC-18-diagnostics-and-audit.md)  
-**Inherits:** [system model](../00-system-model.md), [owner authority](../01-authority-and-ownership.md), [contract/receipts](../02-contract-and-receipts.md), [failure semantics](../03-state-trust-and-failure.md).
+**Inherits:** [System model](../00-system-model.md), [authority](../01-authority-and-ownership.md), [contracts and receipts](../02-contract-and-receipts.md), [failure rules](../03-state-trust-and-failure.md).
 
 ## Functional promise
 
-**Initiator:** An authenticated civic/education/agent owner submits an approved intent that can legitimately create real work.
+**Owner(s):** Orgo / Konnaxion / Interaction-Kernel.
 
-**Expected final outcome:** Accepted operational work reaches an observed terminal state, or remains explicitly pending/failed, with owner-scoped accountability.
+**Initiator:** A trusted owner submits a typed intent for real work under actual permission.
 
-**Owner(s) of state and decisions:** Orgo for Signals, Workflows, Cases, Tasks, outbox, IntegrationOperation and effect reconciliation; Konnaxion for returned civic impact.
+**Expected result:** Receiver-owned Case/Task and reconciled terminal effects; optional civic accountability.
 
 ## Nominal end-to-end behavior
 
-| # | Stage | Responsible party | Input → output | Acceptance/meaning |
-|---|---|---|---|---|
-| 1 | Admit intent | Orgo | owner-authenticated typed request → accepted/rejected Signal | Exact tenant, actor, contract and effect permissions validated |
-| 2 | Create work | Orgo | admitted Signal → Workflow/Case/Task with independent identities | No external direct writes to Orgo persistence |
-| 3 | Execute and journal | Orgo | Tasks → scoped actions and durable outbox | Idempotent effect keys; state changes recorded before external side effects |
-| 4 | Reconcile | Orgo | effect receipts → terminal succeeded/failed/pending state | Acceptance cannot masquerade as terminal success |
-| 5 | Publish impact | Orgo → Konnaxion when applicable | terminal result → admitted impact record | IK accountability profile and Konnaxion-owned interpretation |
+| Step | Stage | Required outcome |
+|---|---|---|
+| 1 | Validate intent | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 2 | create Signal/Case/Tasks | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 3 | journal outbox | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 4 | execute | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 5 | reconcile | Scoped owner state and evidence receipt; no hidden mutation of other systems |
+| 6 | publish terminal impact. | Scoped owner state and evidence receipt; no hidden mutation of other systems |
 
 ## Interfaces and authority gates
 
-Konnaxion/Orgo IK `governance.decision.execute/1.0.0` and `accountability.impact.publish/1.0.0` are documented as selected qualified local boundaries. Education and agents need separately adopted profiles: do not reuse civic semantics by name alone.
+**Target boundary references:** B-CIVIC-01, B-CIVIC-02, B-EDU-02, B-EDU-03. These identify candidate or scoped adopted contracts; they do not certify complete multi-owner deployment. Producer disclosure and receiving-owner admission are separate decisions.
+
+Where no exact interface is adopted, keep `TBD` rather than inventing a protocol ID. All privileged effects must be checked at the actual enforcing owner.
 
 ## Failure, privacy and forbidden shortcuts
 
-Failure mid-effect requires terminal reconciliation; timeout/unknown result must not cause double action. Consumer status and operator UI must show pending/degraded, not always green.
+Acceptance is not success; retries cannot duplicate external effects; unauthorized preview produces no Task.
+
+Owner-specific tenant/actor identity, source classification, integrity checks, replay and correction must be preserved. No debug dashboard or public documentation site may disclose private content.
 
 ## Definition of done — acceptance and negative tests
 
-Test duplicate acceptance, changed-intent replay, outbox crash/recovery, unauthorized tenant, partial fan-out, terminal failure, slow dependencies, and Konnaxion acknowledgement of the correct DecisionRecord.
+Crash/replay, changed-intent conflict, owner PEP denial and terminal impact tests.
+
+To qualify the full chain, pin both producer and consumer revisions and execute negative fixtures, recovery and idempotency scenarios. An owner code snapshot alone does not demonstrate running behavior.
 
 ## Required code and contract alignment
 
-Owner implementation: retain Orgo sole Task/Case authority; add separately approved educational/agentic intents with scoped access and durable receipts.
-
-## Product-specific notes
-
-No additional exceptions. Refer to the global contract and lifecycle rules.
+Preserve Orgo ownership and two-sided IK test fixtures; adopt separate educational intent only with owner approval.
 
 ## Source anchors and verification boundary
 
-Orgo and Konnaxion owner docs; targeted local IK contract evidence in `docs/2-Technical-Reference/40-integration/orgo-konnaxion/`.
-
-The cited owner files are from the **supplied November 2026 snapshots**; the fact that a file exists is not evidence that this full final journey is running. Exact source-member names, hashes and repository roles are recorded in [the portfolio registry](../../portfolio.v1.json), [the portfolio guide](../../PORTFOLIO.md) and [snapshot reconciliation](../../SNAPSHOT_RECONCILIATION.md). Contract identifiers absent from [BOUNDARIES](../../BOUNDARIES.md) remain subject to owner agreement.
+See the [53-repository portfolio](../../PORTFOLIO.md) and [snapshot reconciliation](../../SNAPSHOT_RECONCILIATION.md) for source member names, hashes, declared local roots and evidence limitations. Contract boundaries are catalogued in [the C0 target ledger](../../BOUNDARIES.md). This is intended final behavior, not evidence of a currently operational multi-repository integration.

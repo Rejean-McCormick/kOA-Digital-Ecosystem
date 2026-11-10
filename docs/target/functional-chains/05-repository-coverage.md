@@ -1,73 +1,61 @@
-# 05 — Complete repository-to-chain coverage
+# 05 — Full 53-repository functional coverage
 
-**Classification:** `TARGET_DESIGN` based on the **53 registered repository identities** in [`portfolio.v1.json`](../portfolio.v1.json). This is a functional inclusion map, not a claim that every repository is a running service.
+**Status:** `TARGET_DESIGN`. A named chain means a target responsibility, not a tested service.
 
-Each repository is assigned at least one **primary or supporting functional chain**. An entry means a responsibility in the target architecture; it does not prove a tested integration. A supporting tool such as a diagnostic, content pack, documentation portal or local template remains a separate project, not an independently required runtime.
-
-| Registered repository | Functional chains | Source-backed target role (abbreviated) |
+| Repository | Chain assignments | Target role |
 |---|---|---|
-| `Akor` | [FC-10](chains/FC-10-education-design.md), [FC-11](chains/FC-11-learning-delivery.md) | Collaborative learner missions with complementary roles; runtime tasks remain governed by Orgo. |
-| `Arketype` | [FC-03](chains/FC-03-mapping-and-lexical-preparation.md), [FC-04](chains/FC-04-semantic-authoring.md) | Non-normative archetypes, structural templates and visual plans for Kristal workspaces. |
-| `Daat` | [FC-03](chains/FC-03-mapping-and-lexical-preparation.md), [FC-14](chains/FC-14-identity-and-policy.md), [FC-23](chains/FC-23-external-interop.md) | Authenticated, authorized and explicitly versioned mapping boundary into owner-native contracts. |
-| `diK` | [FC-03](chains/FC-03-mapping-and-lexical-preparation.md), [FC-04](chains/FC-04-semantic-authoring.md), [FC-12](chains/FC-12-language-runtime.md) | Offline multilingual dictionaries, language-coverage audits and reviewed external identifier mapping proposals. |
-| `Ekole` | [FC-11](chains/FC-11-learning-delivery.md), [FC-10](chains/FC-10-education-design.md) | Reusable neutral educational engine and learner/teacher surfaces, separate from curriculum packs. |
-| `Ekole-Pastorale` | [FC-11](chains/FC-11-learning-delivery.md) | Independent pastoral educational content pack consumed by the neutral Ekole engine. |
-| `EncyKlopedia` | [FC-06](chains/FC-06-knowledge-consumption.md), [FC-13](chains/FC-13-editorial-publishing.md) | Read-only multilingual encyclopedia/public knowledge-delivery application, not the acquisition engine. |
-| `HomePage-initkoa.org` | [FC-22](chains/FC-22-public-presence.md), [FC-13](chains/FC-13-editorial-publishing.md) | Next.js public site and initiative/reading portal with site-owned pages and build scripts; not the owner of authoritative domain data or canonical Kristal knowledge. |
-| `initkoa-docs` | [FC-22](chains/FC-22-public-presence.md), [FC-18](chains/FC-18-diagnostics-and-audit.md) | MkDocs Material ecosystem documentation portal that aggregates owner wiki documentation for navigation; not a normative owner or code source of truth. |
-| `Interaction-Kernel` | [FC-23](chains/FC-23-external-interop.md), [FC-07](chains/FC-07-civic-deliberation.md), [FC-08](chains/FC-08-governed-execution.md) | Versioned interoperability envelopes, profiles and portable runtimes; no participant business state. |
-| `Karacter` | [FC-21](chains/FC-21-creative-assets.md), [FC-10](chains/FC-10-education-design.md) | Offline-first bilingual fictional-character creation studio with author-controlled stories, explainable character simulations, visual prompts and local exports; not a psychology diagnostic or Kristal canon owner. |
-| `kOA-Digital-Ecosystem` | [FC-18](chains/FC-18-diagnostics-and-audit.md), [FC-22](chains/FC-22-public-presence.md), [FC-24](chains/FC-24-operations-and-recovery.md) | Architecture of the final system: roles, boundaries, contracts, target journeys and acceptance gates; C0 only. |
-| `kOA-Linux-Koali` | [FC-16](chains/FC-16-platform-lifecycle.md), [FC-17](chains/FC-17-application-composition.md), [FC-24](chains/FC-24-operations-and-recovery.md) | Local-first workload platform, release/admission profiles, trust and system composition. |
-| `Koali-Control-Panel` | [FC-16](chains/FC-16-platform-lifecycle.md), [FC-17](chains/FC-17-application-composition.md) | Operator/developer console for preparing, starting and observing builds without owning product state. |
-| `Koali-Scenario-Mosaic` | [FC-22](chains/FC-22-public-presence.md) | Astro bilingual static-first scenario mosaic presenting 36 documented sociotechnical problems and their Koali response patterns; an editorial interface, not an operational workflow owner. |
-| `Koali-Spaces` | [FC-17](chains/FC-17-application-composition.md), [FC-16](chains/FC-16-platform-lifecycle.md) | Optional application surface composition, routing and presentation; no product business-data authority. |
-| `Kolor` | [FC-21](chains/FC-21-creative-assets.md), [FC-10](chains/FC-10-education-design.md) | Bilingual desktop character-sheet and palette production studio with reviewed pose/asset exports for Kontexte and Ekole layouts; not a semantic canon or application runtime owner. |
-| `Kompiler` | [FC-06](chains/FC-06-knowledge-consumption.md) | Read-only context preparation from approved, derived Kristal read views. |
-| `Kompose` | [FC-10](chains/FC-10-education-design.md), [FC-08](chains/FC-08-governed-execution.md) | Educational capsule design, checking and local simulation; Orgo alone executes real operational work. |
-| `Konductor` | [FC-15](chains/FC-15-agentic-workflows.md), [FC-08](chains/FC-08-governed-execution.md) | Durable control plane for bounded AI workflows, checkpoints, approvals and recovery. |
-| `Konfid` | [FC-14](chains/FC-14-identity-and-policy.md), [FC-23](chains/FC-23-external-interop.md) | Cross-product policy decision, scoped authorization and governed containment, without super-admin authority. |
-| `Konnaxion` | [FC-07](chains/FC-07-civic-deliberation.md), [FC-08](chains/FC-08-governed-execution.md) | Owner of civic/public participation, deliberation and finalized decisions. |
-| `Konnaxion-Capsule-Manager` | [FC-16](chains/FC-16-platform-lifecycle.md), [FC-07](chains/FC-07-civic-deliberation.md) | Nonprivileged capsule-management and deployment coordination, subject to independent enforcement. |
-| `Konnaxion-Worlds` | [FC-09](chains/FC-09-world-contexts.md), [FC-07](chains/FC-07-civic-deliberation.md) | Canonical Universe/World control plane and isolated WorldRelease lifecycle for Konnaxion. |
-| `KonnaxionDiag` | [FC-18](chains/FC-18-diagnostics-and-audit.md), [FC-16](chains/FC-16-platform-lifecycle.md) | Independent functional/security diagnostic campaigns and signed admission evidence for Konnaxion. |
-| `Konstellation` | [FC-06](chains/FC-06-knowledge-consumption.md) | Read-only navigation and visual exploration of authorized Kristal views and collections. |
-| `Konstellation-Light` | [FC-06](chains/FC-06-knowledge-consumption.md), [FC-19](chains/FC-19-offline-portability.md) | Standalone local/static reader of verified derived collection views, without publication authority. |
-| `Konstellation-Publisher` | [FC-05](chains/FC-05-knowledge-release.md), [FC-19](chains/FC-19-offline-portability.md) | Fail-closed packaging and transaction rehearsal; actual remote deployment requires independent gates. |
-| `Kontainer` | [FC-19](chains/FC-19-offline-portability.md), [FC-05](chains/FC-05-knowledge-release.md) | Portable, integrity-checked and optionally encrypted single-file Kristal packaging. |
-| `Kontexte` | [FC-10](chains/FC-10-education-design.md) | Reusable situation/scenario definitions for learning; not a second task orchestrator. |
-| `Kristal-Authoring-Kit` | [FC-04](chains/FC-04-semantic-authoring.md), [FC-05](chains/FC-05-knowledge-release.md) | Owner of local Kristal workspace authoring, structural checks and builds; not public activation. |
-| `Kristal-Framework` | [FC-04](chains/FC-04-semantic-authoring.md), [FC-03](chains/FC-03-mapping-and-lexical-preparation.md) | Owner of canonical Kristal semantic identity, state/contract semantics and conformance rules. |
-| `Kristal-Integration-Pack` | [FC-06](chains/FC-06-knowledge-consumption.md), [FC-04](chains/FC-04-semantic-authoring.md), [FC-23](chains/FC-23-external-interop.md) | Non-authoritative, version-pinned bridges and derived Framework v11 read-view handoffs. |
-| `Kristal-Manager` | [FC-05](chains/FC-05-knowledge-release.md), [FC-04](chains/FC-04-semantic-authoring.md) | Inventory and management of actual local Kristal instances and their controlled sync eligibility. |
-| `kristal-public` | [FC-05](chains/FC-05-knowledge-release.md), [FC-06](chains/FC-06-knowledge-consumption.md) | Read-only hosted collection of specifically authorized and qualified Kristal releases. |
-| `KristalDiag` | [FC-18](chains/FC-18-diagnostics-and-audit.md), [FC-05](chains/FC-05-knowledge-release.md) | Independent Kristal conformance and release-candidate diagnostic evidence. |
-| `Kristalizer` | [FC-03](chains/FC-03-mapping-and-lexical-preparation.md), [FC-04](chains/FC-04-semantic-authoring.md) | Candidate identity reconciliation and controlled staging toward the separately installed Kit. |
-| `LevelUpDiag-kOA-Linux` | [FC-18](chains/FC-18-diagnostics-and-audit.md), [FC-16](chains/FC-16-platform-lifecycle.md) | Independent system and release qualification campaigns for kOA-Linux. |
-| `LevelUpDiag-Orgo` | [FC-18](chains/FC-18-diagnostics-and-audit.md), [FC-08](chains/FC-08-governed-execution.md) | Independent operational/software validation campaigns for Orgo. |
-| `LevelUpDiag_SemantiK-Architect` | [FC-18](chains/FC-18-diagnostics-and-audit.md), [FC-12](chains/FC-12-language-runtime.md) | Independent verification of SemantiK Architect and its contracts. |
-| `Mediatheque` | [FC-02](chains/FC-02-source-custody.md), [FC-11](chains/FC-11-learning-delivery.md) | Shared engine for durable source, snapshot, representation and file-version custody. |
-| `Mediatheque-blank` | [FC-02](chains/FC-02-source-custody.md) | Empty isolated library-instance template using the shared Médiathèque engine. |
-| `MediKristal` | [FC-20](chains/FC-20-medical-domain.md) | Independent medical knowledge/pathway platform with explicit interfaces; not clinically qualified. |
-| `MediKristal-LevelUpDiag-` | [FC-18](chains/FC-18-diagnostics-and-audit.md), [FC-20](chains/FC-20-medical-domain.md) | Independent engineering diagnostics for MediKristal, not medical validation. |
-| `Orgo` | [FC-08](chains/FC-08-governed-execution.md), [FC-24](chains/FC-24-operations-and-recovery.md) | Owner of governed Signals, Workflows, Cases, Tasks and durable execution reconciliation. |
-| `Orgo-Worlds` | [FC-09](chains/FC-09-world-contexts.md), [FC-08](chains/FC-08-governed-execution.md) | Orgo-owned world model and integrations; exact target contracts reviewed via owner technical specification. |
-| `SemantiK-Architect` | [FC-12](chains/FC-12-language-runtime.md), [FC-13](chains/FC-13-editorial-publishing.md) | Deterministic semantic-to-human communication planning and realization over approved inputs. |
-| `SemantiK_Runtime_Orchestrator` | [FC-12](chains/FC-12-language-runtime.md), [FC-16](chains/FC-16-platform-lifecycle.md) | RuntimeSet release sequencing, integrity gates, promotion, activation and rollback. |
-| `SenTient` | [FC-03](chains/FC-03-mapping-and-lexical-preparation.md) | Experimental entity candidate generation and reconciliation; no semantic-canon approval. |
-| `Skope` | [FC-01](chains/FC-01-research-and-acquisition.md), [FC-02](chains/FC-02-source-custody.md) | Local research scopes and the integrated EncyK source-acquisition/intake engine; no canonical promotion. |
-| `Spek` | [FC-13](chains/FC-13-editorial-publishing.md), [FC-22](chains/FC-22-public-presence.md) | Independent multilingual document composition and editorial layout from typed semantic units. |
-| `UCKK-Assets` | [FC-11](chains/FC-11-learning-delivery.md), [FC-21](chains/FC-21-creative-assets.md) | UCKK canonical educational/cultural content and public assets, not application or Moodle code. |
-| `UCKK-Ops-Console` | [FC-11](chains/FC-11-learning-delivery.md), [FC-02](chains/FC-02-source-custody.md) | Local console for UCKK operations and bridges; no independent Moodle or Kristal authority. |
+| `Akor` | [FC-10](chains/FC-10-education-design.md), [FC-11](chains/FC-11-learning-delivery.md) | Collaborative educational missions and role-based learning experiences; real operational Tasks remain owned by Orgo. |
+| `Arketype` | [FC-03](chains/FC-03-mapping-and-lexical-preparation.md), [FC-04](chains/FC-04-semantic-authoring.md) | Non-normative modeling and template material for Kristal authoring; cannot define canonical identity. |
+| `Daat` | [FC-03](chains/FC-03-mapping-and-lexical-preparation.md), [FC-14](chains/FC-14-identity-and-policy.md), [FC-23](chains/FC-23-external-interop.md) | Versioned external semantic mapping, identity and policy-boundary adapters with owner-injected security gates. |
+| `diK` | [FC-03](chains/FC-03-mapping-and-lexical-preparation.md), [FC-04](chains/FC-04-semantic-authoring.md), [FC-12](chains/FC-12-language-runtime.md) | Multilingual lexical dictionaries and reviewed semantic language bindings, separate from KQ/KP identity. |
+| `Ekole` | [FC-11](chains/FC-11-learning-delivery.md), [FC-10](chains/FC-10-education-design.md) | Curriculum-neutral learning engine and student/teacher experience; institution and Moodle data stay separate. |
+| `Ekole-Pastorale` | [FC-11](chains/FC-11-learning-delivery.md) | Independent pastoral content pack and learning material consumed by the neutral Ekole engine. |
+| `EncyKlopedia` | [FC-06](chains/FC-06-knowledge-consumption.md), [FC-13](chains/FC-13-editorial-publishing.md) | Read-only multilingual encyclopedia and public derived knowledge exploration; not a source acquirer. |
+| `HomePage-initkoa.org` | [FC-22](chains/FC-22-public-presence.md), [FC-13](chains/FC-13-editorial-publishing.md) | Public initiative website and editorial discovery routes; no normative authority over product software. |
+| `initkoa-docs` | [FC-22](chains/FC-22-public-presence.md), [FC-18](chains/FC-18-diagnostics-and-audit.md) | MkDocs documentation portal aggregating approved owner wiki and final-system read-only documentation. |
+| `Interaction-Kernel` | [FC-23](chains/FC-23-external-interop.md), [FC-07](chains/FC-07-civic-deliberation.md), [FC-08](chains/FC-08-governed-execution.md) | Opt-in typed envelope and cross-owner contract profiles; no ownership of participant business state. |
+| `Karacter` | [FC-21](chains/FC-21-creative-assets.md), [FC-10](chains/FC-10-education-design.md) | Author-controlled fictional character design and narrative creative studio, not clinical or semantic canon. |
+| `kOA-Digital-Ecosystem` | [FC-18](chains/FC-18-diagnostics-and-audit.md), [FC-22](chains/FC-22-public-presence.md), [FC-24](chains/FC-24-operations-and-recovery.md) | C0 coordination, final-system design, evidence and contract traceability; no product state authority. |
+| `kOA-Linux-Koali` | [FC-16](chains/FC-16-platform-lifecycle.md), [FC-17](chains/FC-17-application-composition.md), [FC-24](chains/FC-24-operations-and-recovery.md) | Platform profiles, release admission, runtime policies and host-specific deployment authorization. |
+| `Koali-Control-Panel` | [FC-16](chains/FC-16-platform-lifecycle.md), [FC-17](chains/FC-17-application-composition.md) | Operator and developer workflow UI for safe local build and platform admission preparation. |
+| `Koali-Scenario-Mosaic` | [FC-22](chains/FC-22-public-presence.md) | Bilingual scenario mosaic and explanatory public interface; does not own real workflow effects. |
+| `Koali-Spaces` | [FC-17](chains/FC-17-application-composition.md), [FC-16](chains/FC-16-platform-lifecycle.md) | Optional product presentation shell, navigation and Space lifecycle, separate from business state. |
+| `Kolor` | [FC-21](chains/FC-21-creative-assets.md), [FC-10](chains/FC-10-education-design.md) | Character-sheet, palette and visual studio with reviewed media exports for educational content. |
+| `Kompiler` | [FC-06](chains/FC-06-knowledge-consumption.md) | Local context-pack compiler from pinned derived, permitted knowledge views. |
+| `Kompose` | [FC-10](chains/FC-10-education-design.md), [FC-08](chains/FC-08-governed-execution.md) | Educational scenario composition, lesson-plan preview and simulation; no direct Orgo Tasks. |
+| `Konductor` | [FC-15](chains/FC-15-agentic-workflows.md), [FC-08](chains/FC-08-governed-execution.md) | Bounded agent jobs, checkpoints, operator review and mediated external action requests. |
+| `Konfid` | [FC-14](chains/FC-14-identity-and-policy.md), [FC-23](chains/FC-23-external-interop.md) | Scoped identity/policy decisions requiring verification at each product effect-point enforcement port. |
+| `Konnaxion` | [FC-07](chains/FC-07-civic-deliberation.md), [FC-08](chains/FC-08-governed-execution.md) | Civic decisions, participation, finalization and accountability state, never Orgo Case/Task ownership. |
+| `Konnaxion-Capsule-Manager` | [FC-16](chains/FC-16-platform-lifecycle.md), [FC-07](chains/FC-07-civic-deliberation.md) | Scoped capsule deployment orchestration, platform admission and privileged agent handoff. |
+| `Konnaxion-Worlds` | [FC-09](chains/FC-09-world-contexts.md), [FC-07](chains/FC-07-civic-deliberation.md) | World and Universe release/context authority for the Konnaxion civic domain. |
+| `KonnaxionDiag` | [FC-18](chains/FC-18-diagnostics-and-audit.md), [FC-16](chains/FC-16-platform-lifecycle.md) | Independent diagnostics over pinned Konnaxion and capsule/deployment revisions. |
+| `Konstellation` | [FC-06](chains/FC-06-knowledge-consumption.md) | Navigation and read-only exploration of approved semantic collections and source views. |
+| `Konstellation-Light` | [FC-06](chains/FC-06-knowledge-consumption.md), [FC-19](chains/FC-19-offline-portability.md) | Lightweight static or offline read-only exploration of pinned knowledge artifacts. |
+| `Konstellation-Publisher` | [FC-05](chains/FC-05-knowledge-release.md), [FC-19](chains/FC-19-offline-portability.md) | Publication transaction rehearsal and safe packaging; not implicit live deployment permission. |
+| `Kontainer` | [FC-19](chains/FC-19-offline-portability.md), [FC-05](chains/FC-05-knowledge-release.md) | Integrity-checked, optionally encrypted portable knowledge and artifact containers. |
+| `Kontexte` | [FC-10](chains/FC-10-education-design.md) | Reusable culturally scoped pedagogical situations for composition and supervised simulations. |
+| `Kristal-Authoring-Kit` | [FC-04](chains/FC-04-semantic-authoring.md), [FC-05](chains/FC-05-knowledge-release.md) | Local semantic authoring workspace, profile-bound validation and deterministic Kristal build tooling. |
+| `Kristal-Framework` | [FC-04](chains/FC-04-semantic-authoring.md), [FC-03](chains/FC-03-mapping-and-lexical-preparation.md) | Canonical Kristal semantic identity, KQ/KP/KA/KS rules and versioned conformance profile. |
+| `Kristal-Integration-Pack` | [FC-06](chains/FC-06-knowledge-consumption.md), [FC-04](chains/FC-04-semantic-authoring.md), [FC-23](chains/FC-23-external-interop.md) | Versioned derived read views and consumer adapters without canonical state ownership. |
+| `Kristal-Manager` | [FC-05](chains/FC-05-knowledge-release.md), [FC-04](chains/FC-04-semantic-authoring.md) | Local instance inventory, coordination and eligible synchronization scope; not an implicit publisher. |
+| `kristal-public` | [FC-05](chains/FC-05-knowledge-release.md), [FC-06](chains/FC-06-knowledge-consumption.md) | Authorized immutable public knowledge collection and read release hosting. |
+| `KristalDiag` | [FC-18](chains/FC-18-diagnostics-and-audit.md), [FC-05](chains/FC-05-knowledge-release.md) | Independent semantic build/release diagnostics on exact pinned source and verifier revisions. |
+| `Kristalizer` | [FC-03](chains/FC-03-mapping-and-lexical-preparation.md), [FC-04](chains/FC-04-semantic-authoring.md) | Reviewed mapping, identity candidate reconciliation and staged authoring import proposals. |
+| `LevelUpDiag-kOA-Linux` | [FC-18](chains/FC-18-diagnostics-and-audit.md), [FC-16](chains/FC-16-platform-lifecycle.md) | Independent platform profile and release-readiness diagnostics; no permission to deploy. |
+| `LevelUpDiag-Orgo` | [FC-18](chains/FC-18-diagnostics-and-audit.md), [FC-08](chains/FC-08-governed-execution.md) | Independent tests and diagnostics of Orgo operational effects and task lifecycles. |
+| `LevelUpDiag_SemantiK-Architect` | [FC-18](chains/FC-18-diagnostics-and-audit.md), [FC-12](chains/FC-12-language-runtime.md) | Independent tests and language-runtime qualification for SemantiK Architect profiles. |
+| `Mediatheque` | [FC-02](chains/FC-02-source-custody.md), [FC-11](chains/FC-11-learning-delivery.md) | Durable source, snapshot, representation and file custody with instance-scoped source receipts. |
+| `Mediatheque-blank` | [FC-02](chains/FC-02-source-custody.md) | Isolated source library instance template using the shared Mediatheque custody engine. |
+| `MediKristal` | [FC-20](chains/FC-20-medical-domain.md) | Medical-domain knowledge/pathways and local domain decisions; requires independent clinical authorization. |
+| `MediKristal-LevelUpDiag-` | [FC-18](chains/FC-18-diagnostics-and-audit.md), [FC-20](chains/FC-20-medical-domain.md) | Engineering verification of MediKristal domain software, not medical certification. |
+| `Orgo` | [FC-08](chains/FC-08-governed-execution.md), [FC-24](chains/FC-24-operations-and-recovery.md) | Durable operational Signals, Workflows, Cases, Tasks, outbox, real effects and terminal reconciliation. |
+| `Orgo-Worlds` | [FC-09](chains/FC-09-world-contexts.md), [FC-08](chains/FC-08-governed-execution.md) | Operational World context and release definitions under the Orgo domain owner. |
+| `SemantiK-Architect` | [FC-12](chains/FC-12-language-runtime.md), [FC-13](chains/FC-13-editorial-publishing.md) | Typed semantic-to-language planning and faithful grammatical realization under pinned runtime sets. |
+| `SemantiK_Runtime_Orchestrator` | [FC-12](chains/FC-12-language-runtime.md), [FC-16](chains/FC-16-platform-lifecycle.md) | Versioned linguistic RuntimeSet qualification sequencing, promotion and rollback without source truth ownership. |
+| `SenTient` | [FC-03](chains/FC-03-mapping-and-lexical-preparation.md) | Experimental extraction and evidence-derived semantic candidates subject to explicit review. |
+| `Skope` | [FC-01](chains/FC-01-research-and-acquisition.md), [FC-02](chains/FC-02-source-custody.md) | Research scope selection and integrated EncyK source acquisition for noncanonical candidate/evidence packages. |
+| `Spek` | [FC-13](chains/FC-13-editorial-publishing.md), [FC-22](chains/FC-22-public-presence.md) | Reviewed editorial and semantic publishing layout, distinct from canonical source authorization. |
+| `UCKK-Assets` | [FC-11](chains/FC-11-learning-delivery.md), [FC-21](chains/FC-21-creative-assets.md) | Independent institutional educational media and asset packs with provenance and usage rights. |
+| `UCKK-Ops-Console` | [FC-11](chains/FC-11-learning-delivery.md), [FC-02](chains/FC-02-source-custody.md) | Institutional learning/Moodle operations and approval console, not a canonical semantic owner. |
 
-## Coverage integrity
-
-- **53/53** registered repositories have at least one functional assignment; the assignment can be revised without changing the owner registry.
-- Each owner source is recorded with its evidence path and SHA-256 in [the machine-readable portfolio](../portfolio.v1.json). A provided snapshot identifies supplied bytes, not currently deployed status.
-- The target chain set also describes **cross-cutting capabilities** (identity, incident handling, release, diagnostics) that span repositories but do not become new C0-owned operational services.
-- The [adjacent-project survey](../adjacent-projects.md) includes additional projects such as GF Wordbench and `uckk-moodle`. These may be important adapters or evidence sources, but are *not automatically inserted into the 53-repository register*.
-- [Boundary registry](../BOUNDARIES.md) contains 26 proposed/selected target edges, fewer than all conceivable connections described here. Cross-owner interfaces without adopted identifiers are blocked pending owner decisions.
-
-## Coverage maintenance rule
-
-When a repository enters/leaves the registered portfolio, regenerate or manually update this table from the authoritative registry and fail validation if the identities differ. When a chain changes owner, update its owner documentation, code alignment ticket and proof gates together. **Never** make a missing service look implemented merely by assigning it to a functional row.
+All 53 recorded owners are present exactly once in this table. Their implementation and deployment evidence is tracked separately from this architecture.

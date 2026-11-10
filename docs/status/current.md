@@ -2,6 +2,10 @@
 
 **Purpose:** time-scoped cross-system engineering evidence view; for the final-system design see [target architecture](../target/README.md). This page does not replace owner status/release documents.
 
+## Offline source consolidation (2026-11-09; not a production status upgrade)
+
+The supplied nine branch deliveries cover **46 registered owner repositories** (branches 01–04 and 06–10). Source modifications, selected unit/fixture checks and reports are available, but live Git revisions, all bilateral acceptance gates and deployment are **not automatically qualified**. The seven Branch 05 civic/execution owners have **no delivery in this overlay**; earlier scoped IK Konnaxion↔Orgo evidence below is preserved, not newly revalidated. See the [consolidation matrix](../integration/2026-11-09-branch-consolidation.md), [handoff gates](../integration/2026-11-09-overlay-handoffs.md) and [target chain evidence](../target/functional-chains/12-implementation-evidence-2026-11-09.md).
+
 ## Reading the map
 
 **New evidence (2026-11-06):** diK 1.0.0-alpha.7 and Kristalizer 1.2.2 were found in user-supplied SmartDump code snapshots. Their local source roots are now registered; the Git remotes, Framework/Kit compatibility, end-to-end integration and public publication remain **unverified**. [Read the integration note](../2-Technical-Reference/40-integration/dik-kristalizer/README.md).
