@@ -35,7 +35,7 @@ class LocalVerificationTests(unittest.TestCase):
             self.rows.append({'github_repo': repo, 'github_url': 'https://github.com/' + repo,
                               'local_root': str(folder), 'scope': 'PUBLIC',
                               'status': verifier.SNAPSHOT_ONLY})
-        for i in range(49):
+        for i in range(51):
             name = 'Rejean-McCormick/other-' + str(i)
             self.rows.append({'github_repo': name, 'github_url': 'https://github.com/' + name,
                               'local_root': str(self.root / ('other-' + str(i))),

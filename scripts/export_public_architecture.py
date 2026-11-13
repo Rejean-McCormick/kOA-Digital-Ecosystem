@@ -27,19 +27,20 @@ def build(root: Path = ROOT) -> dict:
                            'outcome':outcome.group(1).rstrip('.'),
                            'source_path':file.relative_to(root).as_posix(),
                            'state':'target_design_not_qualified'})
-    owners=json.loads((root/'docs/target/portfolio.v1.json').read_text(encoding='utf8'))['repositories']
+    portfolio=json.loads((root/'docs/target/portfolio.v1.json').read_text(encoding='utf8'))
+    owners=portfolio['repositories']
     edges=json.loads((root/'docs/target/boundaries.v1.json').read_text(encoding='utf8'))['links']
-    assert len(owners)==53 and len(edges)==26
+    assert len(edges)==26
     items=[{'repository':r['repository'],'family':r['family'],'role':r['target_role']} for r in owners]
     boundary_items=[{'id':b['id'],'journey':b['journey'],'producer':b['producer'],
                      'consumer':b['consumer'],'state':b['state']} for b in edges]
     digest=hashlib.sha256((''.join(f.read_text(encoding='utf8') for f in chain_files)).encode('utf8')).hexdigest()
-    return {'format':'koa.public-architecture.v1','as_of':'2026-11-09',
+    return {'format':'koa.public-architecture.v1','as_of':portfolio['as_of'],
             'classification':'PUBLIC_DESIGN_METADATA_ONLY',
             'status':'TARGET_DESIGN_NOT_DEPLOYMENT_EVIDENCE',
             'source':'kOA-Digital-Ecosystem/docs/target',
             'source_sha256':digest,
-            'scope':{'chain_count':24,'repository_count':53,'boundary_count':26},
+            'scope':{'chain_count':24,'repository_count':len(owners),'boundary_count':26},
             'chains':all_chains,'repositories':items,'boundaries':boundary_items}
 
 def main() -> int:

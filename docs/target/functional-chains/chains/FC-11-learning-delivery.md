@@ -6,7 +6,7 @@
 
 ## Functional promise
 
-**Owner(s):** Ekole / Ekole-Pastorale / UCKK-Assets / UCKK-Ops-Console.
+**Owner(s):** Ekole / Ekole-Pastorale / Ekole-Quebec / UCKK-Assets / UCKK-Ops-Console.
 
 **Initiator:** An educational authority approves a content pack and optional institutional projection.
 
@@ -25,6 +25,8 @@
 
 ## Interfaces and authority gates
 
+Ekole owns the curriculum-neutral loader and learner/teacher experience. Ekole-Quebec and Ekole-Pastorale each own their source content and derived pack. The supplied pack manifests declare `ekole.content-pack/0.1`, the format described by the Core schema. The launcher selects one pack explicitly when both are installed. Institutional consent and the Moodle projection remain separate from local pack loading.
+
 **Target boundary references:** B-EDU-04. These identify candidate or scoped adopted contracts; they do not certify complete multi-owner deployment. Producer disclosure and receiving-owner admission are separate decisions.
 
 Where no exact interface is adopted, keep `TBD` rather than inventing a protocol ID. All privileged effects must be checked at the actual enforcing owner.
@@ -37,7 +39,7 @@ Owner-specific tenant/actor identity, source classification, integrity checks, r
 
 ## Definition of done — acceptance and negative tests
 
-Idempotent approved import and denial of unapproved course/tenant operations.
+Idempotent approved import and denial of unapproved course/tenant operations. Verify that the same pinned Core revision accepts each approved pack independently, that missing or malformed packs are rejected, and that a request with two discovered packs requires explicit selection.
 
 To qualify the full chain, pin both producer and consumer revisions and execute negative fixtures, recovery and idempotency scenarios. An owner code snapshot alone does not demonstrate running behavior.
 
@@ -47,4 +49,4 @@ Pin content-pack, media and institutional write/projection contracts with owner 
 
 ## Source anchors and verification boundary
 
-See the [53-repository portfolio](../../PORTFOLIO.md) and [snapshot reconciliation](../../SNAPSHOT_RECONCILIATION.md) for source member names, hashes, declared local roots and evidence limitations. Contract boundaries are catalogued in [the C0 target ledger](../../BOUNDARIES.md). This is intended final behavior, not evidence of a currently operational multi-repository integration.
+See the [repository portfolio](../../PORTFOLIO.md) and [snapshot reconciliation](../../SNAPSHOT_RECONCILIATION.md) for source member names, hashes, declared local roots and evidence limitations. Contract boundaries are catalogued in [the C0 target ledger](../../BOUNDARIES.md). This is intended final behavior, not evidence of a currently operational multi-repository integration.

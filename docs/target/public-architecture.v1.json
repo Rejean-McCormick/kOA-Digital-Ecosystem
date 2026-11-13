@@ -1,13 +1,13 @@
 {
   "format": "koa.public-architecture.v1",
-  "as_of": "2026-11-09",
+  "as_of": "2026-11-12",
   "classification": "PUBLIC_DESIGN_METADATA_ONLY",
   "status": "TARGET_DESIGN_NOT_DEPLOYMENT_EVIDENCE",
   "source": "kOA-Digital-Ecosystem/docs/target",
-  "source_sha256": "d25789c3e10702e4a17902ae7f83da6a09648605033b5b4462248963520d83b4",
+  "source_sha256": "8eaff88ad8f0e52ac7e0cd2d7948bc2f14453b4073ed56098405a60c3e881442",
   "scope": {
     "chain_count": 24,
-    "repository_count": 53,
+    "repository_count": 55,
     "boundary_count": 26
   },
   "chains": [
@@ -94,7 +94,7 @@
     {
       "id": "FC-11",
       "title": "Neutral education engine and institutional projections",
-      "owners": "Ekole / Ekole-Pastorale / UCKK-Assets / UCKK-Ops-Console",
+      "owners": "Ekole / Ekole-Pastorale / Ekole-Quebec / UCKK-Assets / UCKK-Ops-Console",
       "outcome": "Rebuildable learning experience and permissioned Moodle/institution receipt",
       "source_path": "docs/target/functional-chains/chains/FC-11-learning-delivery.md",
       "state": "target_design_not_qualified"
@@ -174,7 +174,7 @@
     {
       "id": "FC-21",
       "title": "Licensed characters, palettes and educational media",
-      "owners": "Karacter / Kolor / UCKK-Assets",
+      "owners": "Karacter / Kolor / Ekole-Atelier-Images / UCKK-Assets",
       "outcome": "Versioned attributable media with reviewed rights and optional content-pack reference",
       "source_path": "docs/target/functional-chains/chains/FC-21-creative-assets.md",
       "state": "target_design_not_qualified"
@@ -231,9 +231,19 @@
       "role": "Curriculum-neutral learning engine and student/teacher experience; institution and Moodle data stay separate."
     },
     {
+      "repository": "Rejean-McCormick/Ekole-Atelier-Images",
+      "family": "creative_tooling",
+      "role": "Educational illustration studio for prompt and palette preparation, batch generation, review, and export of media for Ekole content packs."
+    },
+    {
       "repository": "Rejean-McCormick/Ekole-Pastorale",
       "family": "education",
       "role": "Independent pastoral content pack and learning material consumed by the neutral Ekole engine."
+    },
+    {
+      "repository": "Rejean-McCormick/Ekole-Quebec",
+      "family": "education",
+      "role": "Independent Québec primary education content pack for Ekole Core, with candidate courses, learning pathways, and Kristal authoring sources."
     },
     {
       "repository": "Rejean-McCormick/EncyKlopedia",

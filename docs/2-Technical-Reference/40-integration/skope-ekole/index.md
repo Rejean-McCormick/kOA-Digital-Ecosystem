@@ -18,7 +18,7 @@ Skope (generic tool): external project recipe + QID -> typed scope -> approved c
                                                 -> consumer read surface (Ékole / UCKK / Konstellation)
 ```
 
-No endpoint/API contract between Skope and Ékole is implemented or accepted merely by their inclusion in this map. Skope extracts/suggests; Ékole structures educational content and read-only projections. Kristal preserves epistemic ownership.
+No endpoint/API contract between Skope and Ékole is implemented or accepted merely by their inclusion in this map. Skope extracts/suggests. Ekole loads content and provides learning surfaces. Ekole-Quebec and Ekole-Pastorale own their respective courses, pathways and pack manifests. Kristal preserves epistemic ownership.
 
 ## Contract status
 
@@ -39,7 +39,7 @@ Frozen historical v6 contract names in `contract-map.md` remain **unaltered**. C
 - **Domain recipe ≠ Skope code.** The QID for an Iroquoian prototype is held in `Kristal-Iroquoiens-Working`, never in the generic Skope code.
 - **Skope working ≠ Kristal canon.** The snapshot retains source provenance and original QIDs; it does not validate history.
 - **Snapshot ID ≠ semantic commitment.** JCS v5 recipe equivalence and v9/v10 qualifications require their owner gate.
-- **Education ≠ publication.** Ékole 202 authoring stubs and website do not imply 202 qualified v9 states.
+- **Education ≠ publication.** The 202 Québec courses are candidate content. The 32 pastoral courses are a separate local prototype.
 - **Projection ≠ Moodle write.** A planned projection does not create course IDs or evaluation banks.
 - **Local ports ≠ service discovery contract.** Only bind to loopback in standalone mode; admission by Koali/kOA-Linux is separate.
 - **Indigenous cultural claims** require contextual sourcing and appropriate cultural review; model output alone is not validation.

@@ -3,7 +3,7 @@
 > **Generated file:** edit `repositories.json` and run `python scripts/render_repository_inventory.py`.
 > Snapshot-derived local roots do not verify Git remote, HEAD, public visibility, integration or deployment.
 
-**Repositories in the declared C0 perimeter:** 53.
+**Repositories in the declared C0 perimeter:** 55.
 Source-of-truth for this list: [`repositories.json`](repositories.json).
 Offline code snapshot digests: [`code-snapshots-53.v1.json`](code-snapshots-53.v1.json).
 
@@ -14,7 +14,9 @@ Offline code snapshot digests: [`code-snapshots-53.v1.json`](code-snapshots-53.v
 | [Daat](https://github.com/Rejean-McCormick/Daat) | `github_and_local_remote_verified` | `C:\mycode\Interaction-Kernel\Daat` |
 | [diK](https://github.com/Rejean-McCormick/diK) | `local_git_marker_seen` | `C:\mycode\diK\diK` |
 | [Ekole](https://github.com/Rejean-McCormick/Ekole) | `github_and_local_remote_verified` | `C:\mycode\Ekole\ekole` |
+| [Ekole-Atelier-Images](https://github.com/Rejean-McCormick/Ekole-Atelier-Images) | `github_verified_local_origin_unverified` | `C:\mycode\Ekole\Atelier-Images` |
 | [Ekole-Pastorale](https://github.com/Rejean-McCormick/Ekole-Pastorale) | `github_and_local_remote_verified` | `C:\mycode\Ekole\ecole-pastorale` |
+| [Ekole-Quebec](https://github.com/Rejean-McCormick/Ekole-Quebec) | `local_git_marker_seen` | `C:\mycode\Ekole\ekole-quebec` |
 | [EncyKlopedia](https://github.com/Rejean-McCormick/EncyKlopedia) | `local_git_marker_seen` | `C:\mycode\EncyKlopedia\EncyKlopedia` |
 | [HomePage-initkoa.org](https://github.com/Rejean-McCormick/HomePage-initkoa.org) | `local_git_marker_seen` | `C:\mycode\HomePage\HomePage` |
 | [initkoa-docs](https://github.com/Rejean-McCormick/initkoa-docs) | `local_git_marker_seen` | `C:\mycode\HomePage\docs-initkoa-org` |
@@ -67,6 +69,7 @@ Offline code snapshot digests: [`code-snapshots-53.v1.json`](code-snapshots-53.v
 
 - `source_root_observed_in_smartdump_remote_unverified`: local path recorded by a snapshot, not proof of current GitHub origin or permissions.
 - `local_git_marker_seen`: a Git marker was previously reported, not proof of current remote or revision.
+- `github_verified_local_origin_unverified`: GitHub identity checked separately from the reported checkout path.
 - `github_and_local_remote_verified`: historical investigation label; re-verify before any Git operation.
 - Repository inclusion defines C0 architectural scope only. Product implementations, contracts and releases belong to their owners.
 - No push, publication, privilege, runtime activation or public-content release follows from this inventory.

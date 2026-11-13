@@ -76,7 +76,11 @@ def validate(root: Path = ROOT) -> list[str]:
         source = row.get('source_member')
         digest = row.get('source_sha256')
         if ev == 'owner_snapshot':
-            if not isinstance(source, str) or not (source.startswith('repos/') or source.startswith('znapshot_kOA_Digital_Ecosystem_11091005.zip::') or source.startswith('SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/')):
+            if not isinstance(source, str) or not (
+                source.startswith(('repos/', 'znapshot_kOA_Digital_Ecosystem_11091005.zip::',
+                                   'SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/'))
+                or re.fullmatch(r'znapshot_[A-Za-z0-9_-]+_\d{8}\.zip::README\.md', source)
+            ):
                 issues.append(f'{slug}: invalid owner snapshot path')
             elif '..' in Path(source).parts or '\\' in source:
                 issues.append(f'{slug}: unsafe source path')
@@ -144,8 +148,15 @@ def validate(root: Path = ROOT) -> list[str]:
             issues.append('code snapshot ledger: repositories must be a list')
             snapshots = []
         snap_ids = [r.get('repository') for r in snapshots if isinstance(r, dict)]
-        if len(snap_ids) != 53 or len(snap_ids) != len(set(snap_ids)) or set(snap_ids) != set(canon):
-            issues.append('code snapshot ledger: must cover exactly 53 canonical repositories without duplicates')
+        historical_prefix = 'SmartDump_20261109_113255(2).zip::'
+        historical_ids = {
+            row.get('repository') for row in rows if isinstance(row, dict)
+            and isinstance(row.get('source_member'), str)
+            and row['source_member'].startswith(historical_prefix)
+        }
+        if (len(snap_ids) != 53 or len(snap_ids) != len(set(snap_ids))
+                or set(snap_ids) != historical_ids or not historical_ids.issubset(canon)):
+            issues.append('code snapshot ledger: must match the 53 historical SmartDump owners without duplicates')
         for row in snapshots:
             if not isinstance(row, dict):
                 issues.append('code snapshot ledger: row must be an object')

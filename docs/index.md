@@ -4,12 +4,12 @@ The central documentation is organized around the **intended final system**, not
 
 ## Final-system entry point
 
-- **[Cumulative functional architecture (24 chains)](target/functional-chains/README.md)** — complete destination model, dependencies, 53-repository coverage and acceptance scenarios
+- **[Cumulative functional architecture (24 chains)](target/functional-chains/README.md)** — complete destination model, dependencies, 55-repository coverage and acceptance scenarios
 
 - [Architecture, responsibilities and end-state ownership](target/architecture.md)
 - [End-to-end target journeys](target/journeys.md)
 - [26 target cross-owner boundaries](target/BOUNDARIES.md)
-- [53-repository role catalogue](target/PORTFOLIO.md) (machine-readable [source](target/portfolio.v1.json))
+- [55-repository role catalogue](target/PORTFOLIO.md) (machine-readable [source](target/portfolio.v1.json))
 - [Cross-repository code alignment instructions](target/CODE_ALIGNMENT_INSTRUCTIONS.md)
 - [Implementation evidence and qualification](status/current.md)
 

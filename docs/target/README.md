@@ -7,7 +7,7 @@
 1. [Complete functional-chain specification](functional-chains/README.md) — 24 bounded capabilities and shared rules.
 2. [Target architecture and authority](architecture.md) — functional zones, owners, trust boundaries.
 3. [Cross-owner journeys](journeys.md) and [functional scenarios](functional-chains/04-cross-chain-compositions.md).
-4. [53-repository portfolio](PORTFOLIO.md), [machine-readable source](portfolio.v1.json), [chain coverage](functional-chains/05-repository-coverage.md).
+4. [55-repository portfolio](PORTFOLIO.md), [machine-readable source](portfolio.v1.json), [chain coverage](functional-chains/05-repository-coverage.md).
 5. [26 target boundaries](BOUNDARIES.md) and [full interface traceability](functional-chains/11-boundary-traceability.md).
 6. [Independent qualification](functional-chains/06-qualification-and-acceptance.md), [release/deployment profiles](functional-chains/09-reference-deployment-profiles.md).
 7. [Code-alignment instructions](CODE_ALIGNMENT_INSTRUCTIONS.md) and [functional backlog](functional-chains/07-code-alignment-backlog.md).

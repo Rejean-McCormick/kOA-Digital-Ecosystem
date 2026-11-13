@@ -17,23 +17,30 @@
 - **Relation :** appelle Skope par `--db` + `--recipe` externe. Aucun code Skope copié et aucun couplage entre l’UI générique et la racine iroquoienne.
 - **Statut :** projet non canonique; démonstration synthétique; vraie extraction depuis le clone utilisateur `D:` non établie.
 
-## Ékole
+## Ekole
 
-- **Owner:** Ékole repository.
-- **Role:** Québec primary-school authoring/catalogue and learner/teacher projections over 202 Kristal authoring workspaces.
-- **Evidence in supplied snapshot:** 202 workspaces identified as Authoring Kit stubs, derived pedagogical catalogue and graph (252 relations), Core/Élève and Enseignant applications, OpsConsole, local build/preview, Moodle projection **plan** (`moodle-plan`).
-- **Does not own:** Kristal authority or v9/v10 qualification, live Moodle course IDs, global source acquisition, host privileges or publication authority.
-- **State:** documented local applications and checks; **no verified published v10 states**, Moodle write path or qualified Skope→Ékole handoff.
+| Repository | Ownership in the November 12 snapshots |
+| --- | --- |
+| [Ekole](https://github.com/Rejean-McCormick/Ekole) | Curriculum-neutral engine, pack loader, learner portal and teacher editor. |
+| [Ekole-Quebec](https://github.com/Rejean-McCormick/Ekole-Quebec) | Québec primary-school corpus with 202 candidate courses, six pathways and its own Kristal authoring sources. |
+| [Ekole-Pastorale](https://github.com/Rejean-McCormick/Ekole-Pastorale) | Independent Catholic pastoral corpus with 32 prototype courses and seven pathways. |
+
+Both content repositories provide their own `pack.json` using `ekole.content-pack/0.1`. Install them beside the `ekole` checkout and use the launcher of the desired pack. The [FC-11 design](../target/functional-chains/chains/FC-11-learning-delivery.md) describes the owner boundary. Editorial review and institutional or Moodle qualification remain open.
+
+## Atelier Images
+
+[Ekole-Atelier-Images](https://github.com/Rejean-McCormick/Ekole-Atelier-Images) is the illustration studio associated with Ekole. Its documented workflow covers scene prompts, palettes, batch generation using ComfyUI or Cloudflare, and review before export. The content repository owns the decision to adopt an illustration. See [FC-21](../target/functional-chains/chains/FC-21-creative-assets.md).
 
 ## Local coexistence
 
 | Service | Default | Notes |
 | --- | --- | --- |
-| Ékole Core + Élève | `127.0.0.1:8765` | Portal `/`, learner `/eleve/` |
-| Ékole Enseignant | `127.0.0.1:8766` | Launched from Ékole three-app batch |
+| Ekole Québec learner portal | `127.0.0.1:8765` | Portal `/`, learner `/eleve/` |
+| Ekole Québec teacher editor | `127.0.0.1:8766` | Started by the Québec pack launcher |
 | Ékole OpsConsole | `127.0.0.1:8766` | Alternative/admin launch; **collides with Enseignant** when both use defaults |
+| Ekole Pastorale learner portal and teacher editor | `127.0.0.1:8775` / `127.0.0.1:8776` | Started by the pastoral pack launcher |
 | Skope | `127.0.0.1:8767` | Default in accompanying updated Skope repo; overridable |
 
-The port convention is local documentation, **not** an OIDC/Koali/IK service registration or an assertion that every Ékole interface can run concurrently. Only Ékole can resolve the internal teacher/OpsConsole collision.
+The port convention is local documentation, **not** an OIDC/Koali/IK service registration or an assertion that every Ékole interface can run concurrently. The historical OpsConsole default overlaps the Québec teacher editor port.
 
 See [contracts & evidence](../2-Technical-Reference/40-integration/skope-ekole/index.md) and [app inventory](../inventory/apps-skope-ekole.json).

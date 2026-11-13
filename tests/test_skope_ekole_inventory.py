@@ -31,4 +31,12 @@ class SkopeEkoleInventoryTests(unittest.TestCase):
         self.assertIn('proposed',text.lower())
         self.assertIn('202', (ROOT/'docs/1-Overview/Components-Skope-and-Ekole.md').read_text(encoding='utf8'))
 
+    def test_atelier_images_matches_repository_inventory(self):
+        app = self.apps['Atelier Images']
+        repositories = json.loads((ROOT/'docs/inventory/repositories.json').read_text(encoding='utf-8'))
+        row = next(row for row in repositories if row['github_repo'] == 'Rejean-McCormick/Ekole-Atelier-Images')
+        self.assertEqual(app['github_url'], row['github_url'])
+        self.assertEqual(row['status'], 'github_verified_local_origin_unverified')
+        self.assertIsNone(app['snapshot_basis'])
+
 if __name__=='__main__':unittest.main()

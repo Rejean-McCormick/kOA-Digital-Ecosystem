@@ -2,8 +2,8 @@
 
 Ce registre est **la source architecturale** consommée lors des publications datées de `kOA-Digital-Ecosystem-GitHub-Audit`. Il ne déploie ni ne qualifie une application.
 
-- [`repositories.json`](repositories.json) : inventaire de référence (53 dépôts), dont les 53 identités sont maintenant rapprochées avec le manifeste SmartDump du 9 novembre 2026.
-- [`graph-registry.v1.json`](graph-registry.v1.json) : propriétaires et relations documentés; le graphe est **une sélection de 14 systèmes** et ne prétend pas représenter individuellement les 53 dépôts. `Kolor` et `Karacter` sont désormais inscrits au portefeuille, sans relations inter-produit qualifiées par cette seule inscription.
+- [`repositories.json`](repositories.json) is the 55-repository inventory. The November 9 SmartDump ledger covers the original 53 entries. Ekole-Quebec and Ekole-Atelier-Images were recorded on November 12.
+- [`graph-registry.v1.json`](graph-registry.v1.json) : propriétaires et relations documentés; le graphe est **une sélection de 14 systèmes** et ne prétend pas représenter individuellement les 55 dépôts. `Kolor` et `Karacter` sont désormais inscrits au portefeuille, sans relations inter-produit qualifiées par cette seule inscription.
 - Les descriptions de rôles sont issues de [`Components.md`](../1-Overview/Components.md). Les passages figurent dans [`Integration.md`](../1-Overview/Integration.md). Les relations indiquent `documented_passage` ou `proposed`, jamais `qualified` par défaut.
 
 ## Gouvernance

@@ -1,6 +1,6 @@
 # Final-system reference architecture
 
-**Status:** `TARGET_DESIGN`. The ecosystem is a federation of **53 registered repository identities**, not 53 mandatory running services. Each product retains the final authority for its mutable state and accepted contracts.
+**Status:** `TARGET_DESIGN`. The ecosystem is a federation of **55 registered repository identities**, with deployment profiles defining which services run together. Each product retains the final authority for its mutable state and accepted contracts.
 
 ## Functional topology
 

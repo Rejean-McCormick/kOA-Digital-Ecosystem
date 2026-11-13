@@ -1,7 +1,7 @@
 {
   "schema": "koa.ecosystem-app-snapshot/1.0-proposal",
   "classification": "reconciled_from_owner_snapshots_not_release_qualification",
-  "evidence_date": "2026-10-10",
+  "evidence_date": "2026-11-12",
   "applications": [
     {
       "name": "Skope",
@@ -24,23 +24,66 @@
       "primary_role": "domain_owned_iroquoian_kristal_working_model",
       "scope_authority": "editorial subject scope; working only, no canonical validation",
       "depends_on_tool": "Skope via --recipe and --db; no copy of skope code",
-      "status": "domain_prototype_non_canonical"
+      "status": "domain_prototype_non_canonical",
+      "snapshot_basis": "Separated working-model snapshot, 2026-10-10"
     },
     {
       "name": "Ekole",
       "repo_slug": "Ekole",
-      "github_url": null,
-      "repo_description_en": "Québec primary-school learning environment built around 202 Kristal authoring workspaces. Includes learner and teacher portals, a local operations console, derived catalogue and an offline-first Moodle projection planner. Editorial and v9/v10 qualification remain pending.",
-      "description_length": 272,
-      "primary_role": "educational_authoring_and_consumer_projection",
+      "github_url": "https://github.com/Rejean-McCormick/Ekole",
+      "repo_description_en": "Curriculum-neutral learning engine for independent content packs. Provides local learner and teacher portals, an editor, and JSON APIs for course and pathway delivery.",
+      "description_length": 167,
+      "primary_role": "curriculum_neutral_learning_engine",
       "local_ports": {
         "core_student": 8765,
         "teacher": 8766,
         "opsconsole": 8766
       },
-      "scope_authority": "editorial state and derived learning surfaces; no qualified Kristal canon",
-      "snapshot_basis": "znapshot_Ekole_10102254.zip",
+      "scope_authority": "pack loading, learner and teacher applications",
+      "snapshot_basis": "znapshot_ekole_11121216.zip",
       "status": "local_applications_and_candidate_integrations"
+    },
+    {
+      "name": "Atelier Images",
+      "repo_slug": "Ekole-Atelier-Images",
+      "github_url": "https://github.com/Rejean-McCormick/Ekole-Atelier-Images",
+      "repo_description_en": "A local illustration studio for educational content. Generate batches with ComfyUI or Cloudflare, customize color palettes, compare results, and review, approve, and export illustrations for Ekole.",
+      "description_length": 197,
+      "primary_role": "educational_illustration_studio",
+      "scope_authority": "draft prompts, palettes, generated illustrations and review decisions",
+      "snapshot_basis": null,
+      "evidence_basis": "Documented local project workflow and verified GitHub repository identity",
+      "status": "local_workflow_reported_source_unverified"
+    },
+    {
+      "name": "Ekole-Quebec",
+      "repo_slug": "Ekole-Quebec",
+      "github_url": "https://github.com/Rejean-McCormick/Ekole-Quebec",
+      "repo_description_en": "A primary education content pack for Ekole, aligned with Québec’s curriculum. It organizes learning goals, lessons, exercises, and themed activities into reusable Kristals for multilingual publishing.",
+      "description_length": 200,
+      "primary_role": "quebec_primary_education_content_pack",
+      "local_ports": {
+        "core_student": 8765,
+        "teacher": 8766
+      },
+      "scope_authority": "pack-owned educational content and authoring sources",
+      "snapshot_basis": "znapshot_ekole-quebec_11121216.zip",
+      "status": "candidate_content"
+    },
+    {
+      "name": "Ekole-Pastorale",
+      "repo_slug": "Ekole-Pastorale",
+      "github_url": "https://github.com/Rejean-McCormick/Ekole-Pastorale",
+      "repo_description_en": "An independent Catholic pastoral education content pack for Ekole. Includes French-language courses, pathways, and Kristal sources for Scripture, tradition, saints, virtues, and pastoral practice.",
+      "description_length": 196,
+      "primary_role": "catholic_pastoral_education_content_pack",
+      "local_ports": {
+        "core_student": 8775,
+        "teacher": 8776
+      },
+      "scope_authority": "pack-owned educational content and authoring sources",
+      "snapshot_basis": "znapshot_ecole-pastorale_11121216.zip",
+      "status": "local_prototype"
     },
     {
       "name": "kOA Digital Ecosystem",

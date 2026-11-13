@@ -9,7 +9,7 @@
 3. [Contracts and receipts](02-contract-and-receipts.md) — handoff schema and idempotency.
 4. [State, trust and failure](03-state-trust-and-failure.md) — lifecycle and denial.
 5. Each functional chain below, then [cross-chain scenarios](04-cross-chain-compositions.md).
-6. [53-repository coverage](05-repository-coverage.md), [qualification](06-qualification-and-acceptance.md), [code alignment](07-code-alignment-backlog.md), [glossary](08-glossary.md), [deployment profiles](09-reference-deployment-profiles.md), [quality requirements](10-quality-attributes.md) and [boundary traceability](11-boundary-traceability.md).
+6. [55-repository coverage](05-repository-coverage.md), [qualification](06-qualification-and-acceptance.md), [code alignment](07-code-alignment-backlog.md), [glossary](08-glossary.md), [deployment profiles](09-reference-deployment-profiles.md), [quality requirements](10-quality-attributes.md) and [boundary traceability](11-boundary-traceability.md).
 
 ## Functional chain catalogue
 

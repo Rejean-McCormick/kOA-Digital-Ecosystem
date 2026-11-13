@@ -35,11 +35,25 @@
     "status": "github_and_local_remote_verified"
   },
   {
+    "github_repo": "Rejean-McCormick/Ekole-Atelier-Images",
+    "github_url": "https://github.com/Rejean-McCormick/Ekole-Atelier-Images",
+    "local_root": "C:\\mycode\\Ekole\\Atelier-Images",
+    "scope": "PUBLIC",
+    "status": "github_verified_local_origin_unverified"
+  },
+  {
     "github_repo": "Rejean-McCormick/Ekole-Pastorale",
     "github_url": "https://github.com/Rejean-McCormick/Ekole-Pastorale",
     "local_root": "C:\\mycode\\Ekole\\ecole-pastorale",
     "scope": "PUBLIC",
     "status": "github_and_local_remote_verified"
+  },
+  {
+    "github_repo": "Rejean-McCormick/Ekole-Quebec",
+    "github_url": "https://github.com/Rejean-McCormick/Ekole-Quebec",
+    "local_root": "C:\\mycode\\Ekole\\ekole-quebec",
+    "scope": "PUBLIC",
+    "status": "local_git_marker_seen"
   },
   {
     "github_repo": "Rejean-McCormick/EncyKlopedia",

@@ -107,10 +107,10 @@ def verify_checkout(repo: str, local_root: str) -> str:
 
 
 def promotion_plan(inventory: list[dict], *, targets: dict[str, str] | None = None) -> tuple[dict[str, str], list[dict]]:
-    """All-or-nothing plan; preserve exactly 53 entries and unrelated metadata."""
+    """All-or-nothing plan; preserve exactly 55 entries and unrelated metadata."""
     targets = TARGETS if targets is None else targets
-    if len(inventory) != 53:
-        raise ValueError('expected exactly 53 inventory entries')
+    if len(inventory) != 55:
+        raise ValueError('expected exactly 55 inventory entries')
     keys = [row.get('github_repo') for row in inventory]
     if len(set(keys)) != len(keys):
         raise ValueError('duplicate repository identities')

@@ -2,8 +2,10 @@
 
 | Local app | URL | Evidence |
 | --- | --- | --- |
-| Ékole Core & Élève | `http://127.0.0.1:8765/` and `/eleve/` | Ékole `README.md`, `LANCER_EKOLE_3_APPS.bat` |
-| Ékole Enseignant | `http://127.0.0.1:8766/` | Ékole `README_EKOLE_3_APPS_v8.md`, launch batch |
+| Ekole Québec learner portal | `http://127.0.0.1:8765/` and `/eleve/` | `ekole-quebec/LANCER_EKOLE_QUEBEC.bat` |
+| Ekole Québec teacher editor | `http://127.0.0.1:8766/` | Same Québec launcher |
+| Ekole Pastorale learner portal | `http://127.0.0.1:8775/` | `ecole-pastorale/LANCER_PASTORALE.bat` |
+| Ekole Pastorale teacher editor | `http://127.0.0.1:8776/` | Same pastoral launcher |
 | Ékole OpsConsole | `http://127.0.0.1:8766/` | Ékole `opsconsole/README.md`, `opsconsole/ekole_ops.py` |
 | Skope | `http://127.0.0.1:8767/` | Updated Skope `skope/config.py` default |
 
@@ -16,9 +18,10 @@ Commands:
 py -3 -m skope demo
 # Open http://127.0.0.1:8767/
 
-# Ékole (separate repository)
-py -3 tools\ekole.py preview
-# Open http://127.0.0.1:8765/
+# Ekole Core, from its checkout. Choose one pack explicitly.
+py -3 launcher.py --contenu ..\ekole-quebec --ouvrir
+# For the pastoral pack, use its launcher to select ports 8775/8776.
+..\ecole-pastorale\LANCER_PASTORALE.bat
 
 # To use OpsConsole, avoid running Ékole Enseignant on the same default port
 py -3 opsconsole\ekole_ops.py

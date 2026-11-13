@@ -46,13 +46,13 @@ class FunctionalChainsTests(unittest.TestCase):
                     self.assertIn(section, text)
                 self.assertIn('not proof of integration or deployment', text.lower())
 
-    def test_53_repo_coverage_matches_registry(self):
+    def test_repository_coverage_matches_registry(self):
         content = (F / '05-repository-coverage.md').read_text(encoding='utf-8')
         names = [r['repository'].rsplit('/', 1)[-1] for r in self.portfolio['repositories']]
-        self.assertEqual(len(names), 53)
+        self.assertEqual(len(names), 55)
         rows = [line for line in content.splitlines() if line.startswith('| `')]
         found = [re.match(r'^\| `([^`]+)` \|', r).group(1) for r in rows]
-        self.assertEqual(len(found), 53)
+        self.assertEqual(len(found), len(names))
         self.assertEqual(set(found), set(names))
         for row in rows:
             self.assertRegex(row, r'\[FC-\d\d\]\(chains/FC-\d\d-')

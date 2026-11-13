@@ -1,4 +1,4 @@
-# 05 — Full 53-repository functional coverage
+# 05 — Full 55-repository functional coverage
 
 **Status:** `TARGET_DESIGN`. A named chain means a target responsibility, not a tested service.
 
@@ -9,7 +9,9 @@
 | `Daat` | [FC-03](chains/FC-03-mapping-and-lexical-preparation.md), [FC-14](chains/FC-14-identity-and-policy.md), [FC-23](chains/FC-23-external-interop.md) | Versioned external semantic mapping, identity and policy-boundary adapters with owner-injected security gates. |
 | `diK` | [FC-03](chains/FC-03-mapping-and-lexical-preparation.md), [FC-04](chains/FC-04-semantic-authoring.md), [FC-12](chains/FC-12-language-runtime.md) | Multilingual lexical dictionaries and reviewed semantic language bindings, separate from KQ/KP identity. |
 | `Ekole` | [FC-11](chains/FC-11-learning-delivery.md), [FC-10](chains/FC-10-education-design.md) | Curriculum-neutral learning engine and student/teacher experience; institution and Moodle data stay separate. |
+| `Ekole-Atelier-Images` | [FC-21](chains/FC-21-creative-assets.md) | Educational illustration studio for prompt and palette preparation, batch generation, review, and export of media for Ekole content packs. |
 | `Ekole-Pastorale` | [FC-11](chains/FC-11-learning-delivery.md) | Independent pastoral content pack and learning material consumed by the neutral Ekole engine. |
+| `Ekole-Quebec` | [FC-11](chains/FC-11-learning-delivery.md) | Independent Québec primary education content pack for Ekole Core, with candidate courses, learning pathways, and Kristal authoring sources. |
 | `EncyKlopedia` | [FC-06](chains/FC-06-knowledge-consumption.md), [FC-13](chains/FC-13-editorial-publishing.md) | Read-only multilingual encyclopedia and public derived knowledge exploration; not a source acquirer. |
 | `HomePage-initkoa.org` | [FC-22](chains/FC-22-public-presence.md), [FC-13](chains/FC-13-editorial-publishing.md) | Public initiative website and editorial discovery routes; no normative authority over product software. |
 | `initkoa-docs` | [FC-22](chains/FC-22-public-presence.md), [FC-18](chains/FC-18-diagnostics-and-audit.md) | MkDocs documentation portal aggregating approved owner wiki and final-system read-only documentation. |
@@ -58,4 +60,4 @@
 | `UCKK-Assets` | [FC-11](chains/FC-11-learning-delivery.md), [FC-21](chains/FC-21-creative-assets.md) | Independent institutional educational media and asset packs with provenance and usage rights. |
 | `UCKK-Ops-Console` | [FC-11](chains/FC-11-learning-delivery.md), [FC-02](chains/FC-02-source-custody.md) | Institutional learning/Moodle operations and approval console, not a canonical semantic owner. |
 
-All 53 recorded owners are present exactly once in this table. Their implementation and deployment evidence is tracked separately from this architecture.
+All 55 recorded owners are present exactly once in this table. Their implementation and deployment evidence is tracked separately from this architecture.

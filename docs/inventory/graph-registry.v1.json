@@ -3,7 +3,7 @@
   "source_date": "2026-11-06",
   "owner_repository": "Rejean-McCormick/kOA-Digital-Ecosystem",
   "reference_inventory": "docs/inventory/repositories.json",
-  "reference_count": 53,
+  "reference_count": 55,
   "additional_repositories": [
     {
       "github_repo": "Rejean-McCormick/Kolor",

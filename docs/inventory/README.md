@@ -6,12 +6,16 @@ Ce dossier décrit **ce qui figure actuellement dans le périmètre kOA**, sans 
 
 - [`GRAPH_FOCUS.md`](GRAPH_FOCUS.md) — mode d’emploi des parcours focalisés.
 - [`graph-focus.v1.json`](graph-focus.v1.json) — parcours focalisés typés, branches, contrats, preuves documentaires et niveaux de maturité (indépendants de la qualification des applications).
-- [`repositories.json`](repositories.json) — **source de référence machine**, 53 dépôts retenus.
+- [`repositories.json`](repositories.json) — **Canonical machine-readable inventory**, 55 registered repositories.
 - [`code-snapshots-53.v1.json`](code-snapshots-53.v1.json) — manifestes SHA-256 des 53 archives de code hors Git et état d’audit `NOT_EVALUATED`.
 - [`repositories.md`](repositories.md) — vue humaine générée du même périmètre.
 - [diK/Kristalizer integration coordination](../2-Technical-Reference/40-integration/dik-kristalizer/README.md) — source-root evidence and the separate owner-boundary workstream.
 - [`GITHUB_DESCRIPTIONS.md`](GITHUB_DESCRIPTIONS.md) — descriptions proposées pour les applications concernées.
 - [`apps-skope-ekole.json`](apps-skope-ekole.json) — métadonnées applicatives Skope / Ékole.
+
+The [Ekole ownership map](../1-Overview/Components-Skope-and-Ekole.md#ekole) links Ekole Core to its two independent content repositories. The November 12 registration records a user-reported local Git marker for Ekole-Quebec. Its GitHub identity was checked separately.
+
+[Atelier Images](https://github.com/Rejean-McCormick/Ekole-Atelier-Images) is registered under its GitHub name, `Ekole-Atelier-Images`. The documented Windows installation is `C:\mycode\Ekole\Atelier-Images`. GitHub identity was checked separately. The local `origin` and an exact source revision remain unverified.
 
 ## Règle de périmètre
 

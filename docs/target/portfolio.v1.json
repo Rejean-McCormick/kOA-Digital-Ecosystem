@@ -2,7 +2,7 @@
   "format": "koa.target-portfolio.v1",
   "intent": "final_system_design_non_normative_coordination",
   "inventory": "docs/inventory/repositories.json",
-  "as_of": "2026-11-09",
+  "as_of": "2026-11-12",
   "source_bundle": "SmartDump_20261109_113255(2).zip",
   "code_snapshot_ledger": "docs/inventory/code-snapshots-53.v1.json",
   "repositories": [
@@ -52,11 +52,29 @@
       "target_state": "design_intent_not_a_deployment_claim"
     },
     {
+      "repository": "Rejean-McCormick/Ekole-Atelier-Images",
+      "family": "creative_tooling",
+      "target_role": "Educational illustration studio for prompt and palette preparation, batch generation, review, and export of media for Ekole content packs.",
+      "source_member": null,
+      "source_sha256": null,
+      "evidence": "source_absent",
+      "target_state": "design_intent_not_a_deployment_claim"
+    },
+    {
       "repository": "Rejean-McCormick/Ekole-Pastorale",
       "family": "education",
       "target_role": "Independent pastoral content pack and learning material consumed by the neutral Ekole engine.",
       "source_member": "SmartDump_20261109_113255(2).zip::SmartDump_20261109_113255/ecole-pastorale_Code_snapshot.zip::README.md",
       "source_sha256": "11df8a9125f422ce1df115f22e11757a36ec8a344a2c2906dc38d511d8159416",
+      "evidence": "owner_snapshot",
+      "target_state": "design_intent_not_a_deployment_claim"
+    },
+    {
+      "repository": "Rejean-McCormick/Ekole-Quebec",
+      "family": "education",
+      "target_role": "Independent Québec primary education content pack for Ekole Core, with candidate courses, learning pathways, and Kristal authoring sources.",
+      "source_member": "znapshot_ekole-quebec_11121216.zip::README.md",
+      "source_sha256": "dfcccc54f3cd803b09d1ed6e1bd94c510d1b4d073877fcd76d80ff076d341176",
       "evidence": "owner_snapshot",
       "target_state": "design_intent_not_a_deployment_claim"
     },

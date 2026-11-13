@@ -1,10 +1,10 @@
-# Final-system portfolio — 53 registered repositories
+# Final-system portfolio — 55 registered repositories
 
 > **Generated file** — edit `portfolio.v1.json` and run `python scripts/render_target_portfolio.py`.
 > This is **TARGET_DESIGN**, not proof of production, contract adoption, GitHub HEAD or authorization.
 > Roles are C0 descriptions inferred from each available owner snapshot; primary authority stays in that owner repository.
 
-**Registered repositories:** 53. Owner-source files in supplied snapshots: 53. Sources unavailable: 0.
+**Registered repositories:** 55. Owner-source files in supplied snapshots: 54. Sources unavailable: 1.
 
 | Repository | Target function / responsibility | Family | Documentation basis |
 |---|---|---|---|
@@ -13,7 +13,9 @@
 | [Daat](https://github.com/Rejean-McCormick/Daat) | Versioned external semantic mapping, identity and policy-boundary adapters with owner-injected security gates. | `interoperability` | Owner archive snapshot |
 | [diK](https://github.com/Rejean-McCormick/diK) | Multilingual lexical dictionaries and reviewed semantic language bindings, separate from KQ/KP identity. | `lexical` | Owner archive snapshot |
 | [Ekole](https://github.com/Rejean-McCormick/Ekole) | Curriculum-neutral learning engine and student/teacher experience; institution and Moodle data stay separate. | `education` | Owner archive snapshot |
+| [Ekole-Atelier-Images](https://github.com/Rejean-McCormick/Ekole-Atelier-Images) | Educational illustration studio for prompt and palette preparation, batch generation, review, and export of media for Ekole content packs. | `creative_tooling` | **No owner source in supplied archive** |
 | [Ekole-Pastorale](https://github.com/Rejean-McCormick/Ekole-Pastorale) | Independent pastoral content pack and learning material consumed by the neutral Ekole engine. | `education` | Owner archive snapshot |
+| [Ekole-Quebec](https://github.com/Rejean-McCormick/Ekole-Quebec) | Independent Québec primary education content pack for Ekole Core, with candidate courses, learning pathways, and Kristal authoring sources. | `education` | Owner archive snapshot |
 | [EncyKlopedia](https://github.com/Rejean-McCormick/EncyKlopedia) | Read-only multilingual encyclopedia and public derived knowledge exploration; not a source acquirer. | `knowledge_delivery` | Owner archive snapshot |
 | [HomePage-initkoa.org](https://github.com/Rejean-McCormick/HomePage-initkoa.org) | Public initiative website and editorial discovery routes; no normative authority over product software. | `public_presence` | Owner archive snapshot |
 | [initkoa-docs](https://github.com/Rejean-McCormick/initkoa-docs) | MkDocs documentation portal aggregating approved owner wiki and final-system read-only documentation. | `public_presence` | Owner archive snapshot |

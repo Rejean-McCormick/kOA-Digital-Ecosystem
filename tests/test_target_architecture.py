@@ -20,8 +20,8 @@ class TargetArchitectureTests(unittest.TestCase):
 
     def test_valid_target_portfolio(self):
         self.assertEqual(validate(ROOT), [])
-        self.assertEqual(len(self.target['repositories']), 53)
-        self.assertEqual(sum(r['evidence'] == 'owner_snapshot' for r in self.target['repositories']), 53)
+        self.assertEqual(len(self.target['repositories']), 55)
+        self.assertEqual(sum(r['evidence'] == 'owner_snapshot' for r in self.target['repositories']), 54)
 
     def test_exact_canonical_set(self):
         source = json.loads((ROOT / 'docs/inventory/repositories.json').read_text(encoding='utf-8'))
@@ -47,14 +47,16 @@ class TargetArchitectureTests(unittest.TestCase):
     def test_sources_absent_are_explicit(self):
         missing = {r['repository'].split('/')[-1] for r in self.target['repositories']
                    if r['evidence'] == 'source_absent'}
-        self.assertEqual(missing, set())
+        self.assertEqual(missing, {'Ekole-Atelier-Images'})
 
     def test_code_snapshot_ledger_is_structural_and_complete(self):
         ledger = json.loads((ROOT / 'docs/inventory/code-snapshots-53.v1.json').read_text(encoding='utf-8'))
         rows = ledger['repositories']
         self.assertEqual(len(rows), 53)
         self.assertEqual({r['repository'] for r in rows},
-                         {r['repository'] for r in self.target['repositories']})
+                         {r['repository'] for r in self.target['repositories']
+                          if r['repository'] not in {'Rejean-McCormick/Ekole-Quebec',
+                                                     'Rejean-McCormick/Ekole-Atelier-Images'}})
         for r in rows:
             self.assertEqual(r['evidence_level'], 'OBSERVED_SNAPSHOT')
             self.assertEqual(r['doc_code_conformity'], 'NOT_EVALUATED')

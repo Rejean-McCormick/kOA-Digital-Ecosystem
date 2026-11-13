@@ -31,6 +31,7 @@ def render(root: Path = ROOT) -> str:
         '', '## Interpretation and authority', '',
         '- `source_root_observed_in_smartdump_remote_unverified`: local path recorded by a snapshot, not proof of current GitHub origin or permissions.',
         '- `local_git_marker_seen`: a Git marker was previously reported, not proof of current remote or revision.',
+        '- `github_verified_local_origin_unverified`: GitHub identity checked separately from the reported checkout path.',
         '- `github_and_local_remote_verified`: historical investigation label; re-verify before any Git operation.',
         '- Repository inclusion defines C0 architectural scope only. Product implementations, contracts and releases belong to their owners.',
         '- No push, publication, privilege, runtime activation or public-content release follows from this inventory.', '',

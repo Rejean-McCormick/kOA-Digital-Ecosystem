@@ -2,7 +2,7 @@
 
 This repository documents **the intended final kOA system-of-systems architecture**: products, responsibilities, interfaces, user journeys, release and activation gates, and the code changes required to reach that design. It remains a **C0 coordination repository**, not the owner of a product’s semantic or operational state.
 
-**Start with [the cumulative final-system functional chains](docs/target/functional-chains/README.md)**, [the final-system architecture](docs/target/README.md), [the target ownership model](docs/target/architecture.md), [all 53 repository roles](docs/target/PORTFOLIO.md), [26 target interfaces](docs/target/BOUNDARIES.md), and [the code-alignment instructions](docs/target/CODE_ALIGNMENT_INSTRUCTIONS.md), plus [the 53-snapshot reconciliation](docs/target/SNAPSHOT_RECONCILIATION.md). **Target design is not proof of deployment**; compare [the available maturity evidence](docs/status/current.md) before asserting that an integration is operational.
+**Start with [the cumulative final-system functional chains](docs/target/functional-chains/README.md)**, [the final-system architecture](docs/target/README.md), [the target ownership model](docs/target/architecture.md), [all 55 repository roles](docs/target/PORTFOLIO.md), [26 target interfaces](docs/target/BOUNDARIES.md), and [the code-alignment instructions](docs/target/CODE_ALIGNMENT_INSTRUCTIONS.md), plus [the 53-snapshot reconciliation](docs/target/SNAPSHOT_RECONCILIATION.md). **Target design is not proof of deployment**; compare [the available maturity evidence](docs/status/current.md) before asserting that an integration is operational.
 
 [November 2026 owner-branch source consolidation](docs/integration/2026-11-09-branch-consolidation.md) records nine offline deliveries covering 46 registered repositories, the missing branch 05 and still-unqualified owner handoffs. This is not a deployment status update.
 
@@ -106,7 +106,7 @@ admitted application
 
 ## Public architecture consumer contract
 
-The [public target metadata export](docs/target/public-architecture.v1.json) is generated from the canonical 24-chain/53-owner/26-boundary design by `scripts/export_public_architecture.py`. It is a **design-only read projection**, not running application state. The docs portal, Homepage and Koali Scenario Mosaic may mirror this safe metadata after independent editorial approval. [Branch-10 integration and limitations](docs/integration/BRANCH10_PUBLIC_ARCHITECTURE_2026-11-09.md).
+The [public target metadata export](docs/target/public-architecture.v1.json) is generated from the canonical 24-chain/55-owner/26-boundary design by `scripts/export_public_architecture.py`. It is a **design-only read projection**, not running application state. The docs portal, Homepage and Koali Scenario Mosaic may mirror this safe metadata after independent editorial approval. [Branch-10 integration and limitations](docs/integration/BRANCH10_PUBLIC_ARCHITECTURE_2026-11-09.md).
 
 ## Wiki and documentation maintenance
 
@@ -120,7 +120,7 @@ The 2026-10-27 documentation reconciliation is summarized in [wiki synchronizati
 
 ## Start here
 
-- [`docs/target/functional-chains/README.md`](docs/target/functional-chains/README.md) — cumulative functional system specification (24 chains, 53-repository coverage, test gates)
+- [`docs/target/functional-chains/README.md`](docs/target/functional-chains/README.md) — cumulative functional system specification (24 chains, 55-repository coverage, test gates)
 - [`docs/target/README.md`](docs/target/README.md) — final-system entry point
 - [`docs/index.md`](docs/index.md) — technical/implementation references
 - [`docs/2-Technical-Reference/40-integration/knowledge-projection.md`](docs/2-Technical-Reference/40-integration/knowledge-projection.md)
@@ -139,7 +139,8 @@ C0 records cross-system dependencies and evidence; each application remains auth
 ## New mapped applications: Skope & Ékole (Oct 2026)
 
 - **Skope** defines a Wikidata-based Kristal working scope, using local graph extraction, branch depth controls and convergence review. It does **not** publish validated Kristal canon.
-- **Ékole** manages Québec primary-school educational workspaces and local student/teacher projections; 202 workspaces are authoring **stubs**, not 202 qualified semantic releases.
+- **Ekole Core** provides the curriculum-neutral learner and teacher applications. **Ekole-Quebec** owns the Québec primary-school corpus, and **Ekole-Pastorale** owns the independent Catholic pastoral corpus. Both packs are loaded explicitly by the Core launcher. See the [education delivery chain](docs/target/functional-chains/chains/FC-11-learning-delivery.md).
+- **[Atelier Images](https://github.com/Rejean-McCormick/Ekole-Atelier-Images)** supports prompt preparation, palette selection, batch generation, review, and export of illustrations for Ekole. See the [creative-assets chain](docs/target/functional-chains/chains/FC-21-creative-assets.md).
 
 See [application ownership and maturity](docs/1-Overview/Components-Skope-and-Ekole.md), [integration boundaries](docs/2-Technical-Reference/40-integration/skope-ekole/index.md), [local ports](docs/2-Technical-Reference/40-integration/skope-ekole/local-ports.md), and [GitHub descriptions](docs/inventory/GITHUB_DESCRIPTIONS.md). These additions do not alter frozen Kristal v6 contracts or qualify new E2E handoffs.
 

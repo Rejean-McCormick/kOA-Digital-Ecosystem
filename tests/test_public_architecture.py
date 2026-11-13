@@ -16,7 +16,7 @@ class PublicArchitectureTests(unittest.TestCase):
         self.assertEqual(self.data['status'],'TARGET_DESIGN_NOT_DEPLOYMENT_EVIDENCE')
         self.assertEqual(self.data['classification'],'PUBLIC_DESIGN_METADATA_ONLY')
         self.assertEqual(len(self.data['chains']),24)
-        self.assertEqual(len(self.data['repositories']),53)
+        self.assertEqual(len(self.data['repositories']),55)
         self.assertEqual(len(self.data['boundaries']),26)
         data=json.dumps(self.data)
         for secret in ('local_root','source_member','snapshot_member','password','git_revision','C:\\mycode\\'):

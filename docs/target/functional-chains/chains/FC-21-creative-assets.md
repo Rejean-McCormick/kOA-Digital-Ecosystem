@@ -6,7 +6,7 @@
 
 ## Functional promise
 
-**Owner(s):** Karacter / Kolor / UCKK-Assets.
+**Owner(s):** Karacter / Kolor / Ekole-Atelier-Images / UCKK-Assets.
 
 **Initiator:** An author creates fictional narrative or visual assets for approved educational reuse.
 
@@ -23,6 +23,8 @@
 | 5 | importer approval. | Scoped owner state and evidence receipt; no hidden mutation of other systems |
 
 ## Interfaces and authority gates
+
+Atelier Images prepares prompts and palettes, runs image batches, and lets authors compare and approve outputs. Exported images are candidates for inclusion in an Ekole content pack. The receiving pack owner decides which images become course assets and records their provenance and usage rights. The workflow is documented from project history. A versioned handoff and exact source revision remain unverified.
 
 **Target boundary references:** TBD; no adopted cross-studio API. These identify candidate or scoped adopted contracts; they do not certify complete multi-owner deployment. Producer disclosure and receiving-owner admission are separate decisions.
 
@@ -42,8 +44,8 @@ To qualify the full chain, pin both producer and consumer revisions and execute 
 
 ## Required code and contract alignment
 
-Agree creative manifest and safe content-pack import with Kontexte/Ekole owners.
+Agree creative manifest and safe content-pack import with Kontexte/Ekole owners. For Atelier Images, verify export and import against pinned revisions and check that drafts require review before admission.
 
 ## Source anchors and verification boundary
 
-See the [53-repository portfolio](../../PORTFOLIO.md) and [snapshot reconciliation](../../SNAPSHOT_RECONCILIATION.md) for source member names, hashes, declared local roots and evidence limitations. Contract boundaries are catalogued in [the C0 target ledger](../../BOUNDARIES.md). This is intended final behavior, not evidence of a currently operational multi-repository integration.
+See the [repository portfolio](../../PORTFOLIO.md) and [snapshot reconciliation](../../SNAPSHOT_RECONCILIATION.md) for source member names, hashes, declared local roots and evidence limitations. Contract boundaries are catalogued in [the C0 target ledger](../../BOUNDARIES.md). This is intended final behavior, not evidence of a currently operational multi-repository integration.
