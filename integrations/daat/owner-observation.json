@@ -1,0 +1,20 @@
+{
+  "schema": "koa.daat-owner-observation/0.1.0-local",
+  "subject": "DaAT 0.4.3 local review-handoff (not an owner-adopted profile)",
+  "repository": "kOA_Digital_Ecosystem",
+  "role": "c0",
+  "authority": "coordination, target architecture and evidence status",
+  "evidence_status": "OBSERVED_SNAPSHOT",
+  "markers": [
+    "AGENTS.md",
+    "docs/inventory/repositories.json",
+    "docs/2-Technical-Reference/40-integration/knowledge-projection-contract-set.json"
+  ],
+  "read_only": true,
+  "prototype_consumer_adopted": false,
+  "ik_ingress_approved": false,
+  "canonical_write_authorized": false,
+  "publication_authorized": false,
+  "boundary": "This is an observational registry, not a transport hub, GitHub publisher or authorizer of Kristals. Preserve v6 history and separate target design from observed evidence.",
+  "acceptance_gate": "C0 records owner contracts, exact revisions, bilateral test reports and explicit decisions from each owner. No proposed item is auto-promoted."
+}
