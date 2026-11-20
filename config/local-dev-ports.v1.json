@@ -1,0 +1,318 @@
+{
+  "schema_version": 1,
+  "registry_id": "koa-c0-local-development-ports",
+  "decision_status": "proposed",
+  "scope": "developer-loopback-only",
+  "host": "127.0.0.1",
+  "transport": "tcp",
+  "pool": {
+    "start": 21100,
+    "end": 21199
+  },
+  "policy": {
+    "fallback_to_next_free_port": false,
+    "collision_action": "fail-with-diagnostics",
+    "runtime_owner": "individual-service-repository",
+    "coordination_owner": "kOA-Digital-Ecosystem/C0",
+    "production_ports_in_scope": false,
+    "requires_owner_adoption": true
+  },
+  "blocks": [
+    {
+      "owner": "local-edge",
+      "start": 21100,
+      "end": 21109,
+      "description": "Optional local reverse proxy (not deployed)"
+    },
+    {
+      "owner": "orgo",
+      "start": 21110,
+      "end": 21119
+    },
+    {
+      "owner": "initkoa",
+      "start": 21120,
+      "end": 21129
+    },
+    {
+      "owner": "konnaxion",
+      "start": 21130,
+      "end": 21139
+    },
+    {
+      "owner": "skope",
+      "start": 21140,
+      "end": 21149
+    },
+    {
+      "owner": "ekole",
+      "start": 21150,
+      "end": 21159
+    },
+    {
+      "owner": "integrations",
+      "start": 21160,
+      "end": 21169
+    },
+    {
+      "owner": "koali",
+      "start": 21170,
+      "end": 21179
+    },
+    {
+      "owner": "shared-tools",
+      "start": 21180,
+      "end": 21189
+    },
+    {
+      "owner": "unallocated",
+      "start": 21190,
+      "end": 21199
+    }
+  ],
+  "services": [
+    {
+      "id": "orgo-web",
+      "owner": "orgo",
+      "purpose": "frontend",
+      "port": 21110,
+      "adoption": "proposed",
+      "legacy_observed": []
+    },
+    {
+      "id": "orgo-api",
+      "owner": "orgo",
+      "purpose": "API",
+      "port": 21111,
+      "adoption": "proposed",
+      "legacy_observed": []
+    },
+    {
+      "id": "initkoa-web",
+      "owner": "initkoa",
+      "purpose": "HomePage Next.js frontend",
+      "port": 21120,
+      "adoption": "proposed",
+      "legacy_observed": []
+    },
+    {
+      "id": "konnaxion-web",
+      "owner": "konnaxion",
+      "purpose": "frontend",
+      "port": 21130,
+      "adoption": "proposed",
+      "legacy_observed": []
+    },
+    {
+      "id": "skope-web",
+      "owner": "skope",
+      "purpose": "research explorer",
+      "port": 21140,
+      "adoption": "proposed",
+      "legacy_observed": [
+        8767
+      ]
+    },
+    {
+      "id": "ekole-quebec-learner",
+      "owner": "ekole",
+      "purpose": "Québec learner",
+      "port": 21150,
+      "adoption": "proposed",
+      "legacy_observed": [
+        8765
+      ]
+    },
+    {
+      "id": "ekole-quebec-teacher",
+      "owner": "ekole",
+      "purpose": "Québec teacher",
+      "port": 21151,
+      "adoption": "proposed",
+      "legacy_observed": [
+        8766
+      ]
+    },
+    {
+      "id": "ekole-opsconsole",
+      "owner": "ekole",
+      "purpose": "OpsConsole",
+      "port": 21152,
+      "adoption": "proposed",
+      "legacy_observed": [
+        8766
+      ]
+    },
+    {
+      "id": "ekole-pastorale-learner",
+      "owner": "ekole",
+      "purpose": "Pastorale learner",
+      "port": 21153,
+      "adoption": "proposed",
+      "legacy_observed": [
+        8775
+      ]
+    },
+    {
+      "id": "ekole-pastorale-teacher",
+      "owner": "ekole",
+      "purpose": "Pastorale teacher",
+      "port": 21154,
+      "adoption": "proposed",
+      "legacy_observed": [
+        8776
+      ]
+    },
+    {
+      "id": "konnaxion-api",
+      "owner": "konnaxion",
+      "purpose": "Django API (direct host, Docker host-published 21131:8000)",
+      "port": 21131,
+      "adoption": "proposed",
+      "legacy_observed": [
+        8000
+      ]
+    },
+    {
+      "id": "konnaxion-capsule-agent-local",
+      "owner": "konnaxion",
+      "purpose": "Developer-machine Agent only; not remote droplet Agent",
+      "port": 21132,
+      "adoption": "proposed",
+      "legacy_observed": [
+        8765
+      ]
+    },
+    {
+      "id": "konnaxion-capsule-manager-local",
+      "owner": "konnaxion",
+      "purpose": "Developer-machine Capsule Manager",
+      "port": 21133,
+      "adoption": "proposed",
+      "legacy_observed": [
+        8714,
+        8780
+      ]
+    },
+    {
+      "id": "konnaxion-koali-web",
+      "owner": "konnaxion",
+      "purpose": "Koali-managed second frontend instance",
+      "port": 21134,
+      "adoption": "proposed",
+      "legacy_observed": [
+        4301
+      ]
+    },
+    {
+      "id": "konnaxion-koali-api",
+      "owner": "konnaxion",
+      "purpose": "Koali-managed second Django instance",
+      "port": 21135,
+      "adoption": "proposed",
+      "legacy_observed": [
+        8302
+      ]
+    },
+    {
+      "id": "orgo-worlds-web",
+      "owner": "orgo",
+      "purpose": "Orgo Worlds standalone UI",
+      "port": 21112,
+      "adoption": "proposed",
+      "legacy_observed": [
+        3100
+      ]
+    },
+    {
+      "id": "orgo-worlds-api",
+      "owner": "orgo",
+      "purpose": "Orgo Worlds standalone API",
+      "port": 21113,
+      "adoption": "proposed",
+      "legacy_observed": [
+        4100
+      ]
+    },
+    {
+      "id": "orgo-koali-web",
+      "owner": "orgo",
+      "purpose": "Koali-managed second Orgo frontend instance",
+      "port": 21114,
+      "adoption": "proposed",
+      "legacy_observed": [
+        4302
+      ]
+    },
+    {
+      "id": "orgo-koali-api",
+      "owner": "orgo",
+      "purpose": "Koali-managed second Orgo API instance",
+      "port": 21115,
+      "adoption": "proposed",
+      "legacy_observed": [
+        4303
+      ]
+    },
+    {
+      "id": "orgo-koali-pglite",
+      "owner": "orgo",
+      "purpose": "Koali-managed local PGlite listening on loopback only",
+      "port": 21116,
+      "adoption": "proposed",
+      "legacy_observed": [
+        55432
+      ]
+    },
+    {
+      "id": "koali-spaces-web",
+      "owner": "koali",
+      "purpose": "Koali Spaces shell frontend",
+      "port": 21170,
+      "adoption": "proposed",
+      "legacy_observed": [
+        4173
+      ]
+    }
+  ],
+  "clients": [
+    {
+      "id": "initkoa-audit",
+      "target_service": "initkoa-web",
+      "note": "Audit consumes the same port; it does not allocate a fallback port."
+    },
+    {
+      "id": "orgo-to-konnaxion-ik",
+      "target_service": "konnaxion-api",
+      "note": "Docker-host clients must verify host.docker.internal reachability; do not weaken inbound token/loopback security."
+    },
+    {
+      "id": "konnaxion-to-orgo-ik",
+      "target_service": "orgo-api",
+      "note": "HTTP allowed only where IK transport dev policy permits; keep production HTTPS."
+    },
+    {
+      "id": "koali-levelupdiag",
+      "target_service": "koali-spaces-web",
+      "note": "Readiness checks consume shared C0 port; no independent allocation."
+    },
+    {
+      "id": "konnaxion-levelupdiag-backend",
+      "target_service": "konnaxion-api",
+      "note": "Django runtime probe is not a new service."
+    }
+  ],
+  "unresolved_observations": [
+    {
+      "system": "orgo-konnaxion-bridge",
+      "port": 8011,
+      "source": "docs/2-Technical-Reference/40-integration/orgo-konnaxion/uckk-a014-validation-2026-09-12.md",
+      "status": "historical-observation-only; owner and target port to confirm"
+    }
+  ],
+  "evidence": [
+    "docs/2-Technical-Reference/40-integration/skope-ekole/local-ports.md",
+    "docs/inventory/apps-skope-ekole.json",
+    "docs/2-Technical-Reference/40-integration/orgo-konnaxion/uckk-a014-validation-2026-09-12.md"
+  ]
+}

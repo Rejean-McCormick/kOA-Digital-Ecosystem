@@ -11,6 +11,8 @@
 
 **Coexistence warning:** Enseignant and OpsConsole both default to `8766`; launching both with their defaults will collide. This update **does not patch Ékole**, only records the conflict. Skope supports `--port` override, e.g. `py -3 -m skope demo --port 8790`.
 
+**Proposed future target:** C0 now documents a [central local-development port registry](../../50-operations/local-development-ports.md). The values above remain snapshot observations until owner adoption; do not replace this evidence with the proposed 211xx targets.
+
 Commands:
 
 ```powershell

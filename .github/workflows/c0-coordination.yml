@@ -19,6 +19,14 @@ on:
       - 'AGENTS.md'
       - 'docs/2-Technical-Reference/10-system/architecture.md'
       - 'docs/2-Technical-Reference/10-system/authority-map.md'
+      - 'config/local-dev-ports.v1.json'
+      - 'scripts/dev_ports.py'
+      - 'tests/test_dev_ports.py'
+      - 'docs/2-Technical-Reference/50-operations/local-development-ports.md'
+      - 'docs/2-Technical-Reference/50-operations/owner-port-migration.md'
+      - 'docs/2-Technical-Reference/90-reference/adr/adr-0014-local-development-ports.md'
+      - 'docs/2-Technical-Reference/90-reference/adr/index.md'
+      - 'docs/2-Technical-Reference/40-integration/skope-ekole/local-ports.md'
       - 'README.md'
       - 'docs/index.md'
       - 'scripts/validate_c0_coordination.py'
@@ -47,6 +55,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - run: python scripts/dev_ports.py validate
       - run: python scripts/validate_c0_coordination.py
       - run: python scripts/validate_tandem_vps_profile.py
       - run: python scripts/validate_target_architecture.py

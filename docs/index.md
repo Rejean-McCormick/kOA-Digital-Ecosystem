@@ -11,6 +11,7 @@ The central documentation is organized around the **intended final system**, not
 - [26 target cross-owner boundaries](target/BOUNDARIES.md)
 - [55-repository role catalogue](target/PORTFOLIO.md) (machine-readable [source](target/portfolio.v1.json))
 - [Cross-repository code alignment instructions](target/CODE_ALIGNMENT_INSTRUCTIONS.md)
+- [Proposed local development port registry and owner migration plan](2-Technical-Reference/50-operations/local-development-ports.md) — C0 coordination target; not runtime proof
 - [Implementation evidence and qualification](status/current.md)
 
 The target architecture deliberately distinguishes **design** from **observed implementation**, **independent qualification** and **actual runtime deployment**. Current owner READMEs describe Framework v11, Kit v4, Skope-integrated EncyK acquisition and an EncyKlopedia read-only product; the retained older v6/IK/UCKK knowledge contracts are available for compatibility reference, not the organizing architecture.

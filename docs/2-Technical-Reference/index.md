@@ -22,7 +22,13 @@ This reference defines ecosystem-level mappings, boundaries and coordination rul
 
 The current knowledge boundary freezes Kristal Standard `6.0.0`, Referent Registry `1.0.0`, EncyKlopedia handoff `1.0.0`, IK build/artifact profiles `2.0.0` and UCKK projection `1.0.0`. Kristal is pinned by its standard manifest and core contract digests. See [`40-integration/knowledge-projection.md`](40-integration/knowledge-projection.md).
 
+## Local development port coordination
+
+- [Target port registry and collision policy](50-operations/local-development-ports.md) — **proposed**, not a running service declaration.
+- [Owner-repository migration](50-operations/owner-port-migration.md) — adoption gates across independent repositories.
+
 ## Deployment profile coordination
+
 
 - [Tandem Konnaxion↔Orgo, VPS Linux + Docker + Capsule Agent](40-integration/tandem-vps-capsule-agent/README.md) — user-selected first target, owner gates and evidence limits (not a GO LIVE approval).
 

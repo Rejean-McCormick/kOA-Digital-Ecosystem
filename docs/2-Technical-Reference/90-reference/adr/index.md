@@ -1,5 +1,9 @@
 # Architecture Decision Records
 
+Proposed coordination decision (not yet adopted by owner repos):
+
+- `adr-0014-local-development-ports.md` — versioned local-loopback port allocation and explicit owner migration gates.
+
 Current accepted/amended ecosystem decisions:
 
 - `adr-0002-determinism-policy.md` — deterministic artifact/runtime policy

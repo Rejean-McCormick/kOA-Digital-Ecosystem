@@ -16,6 +16,7 @@ Use these views together:
 - **Maturity map** — specified vs implemented vs qualified vs integrated vs production-proven: [`docs/status/current.md`](docs/status/current.md)
 - **Layer model** — conceptual classification/orientation only: [`docs/3-Layer-Model/README.md`](docs/3-Layer-Model/README.md)
 - **Repository inventory** — current kOA repository perimeter: [`docs/inventory/README.md`](docs/inventory/README.md)
+- **Local development ports (proposed)** — C0 [versioned registry](config/local-dev-ports.v1.json), [policy](docs/2-Technical-Reference/50-operations/local-development-ports.md) and [owner migration gates](docs/2-Technical-Reference/50-operations/owner-port-migration.md). These are target allocations, not deployed listeners.
 - **diK & Kristalizer mapping** — snapshot-backed local roots and proposed lexical/authoring handoffs: [`docs/2-Technical-Reference/40-integration/dik-kristalizer/README.md`](docs/2-Technical-Reference/40-integration/dik-kristalizer/README.md)
 
 ## Purpose
