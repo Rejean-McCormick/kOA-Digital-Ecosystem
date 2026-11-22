@@ -1,0 +1,78 @@
+{
+  "format": "koa.ecosystem.companion-tools.v1",
+  "as_of": "2026-11-22",
+  "owner_repository": "Rejean-McCormick/kOA-Digital-Ecosystem",
+  "relationship_to_c0_inventory": "Supplementary documentation and observation tooling; not members of the frozen 55-role final-system design or the GitSink canonical inventory.",
+  "github_identity_verification": "Both repository identities verified on GitHub on 2026-11-22. Local .git directory locations were reported by the user; local remote URLs and exact checked-out commits were not inspected.",
+  "repositories": [
+    {
+      "name": "kOA Doc Server",
+      "github_repo": "Rejean-McCormick/kOA-Doc-Server",
+      "github_url": "https://github.com/Rejean-McCormick/kOA-Doc-Server",
+      "local_root": "C:\\mycode\\DocServer\\kOA-Doc-Server",
+      "evidence": "Verified GitHub repository identity; user-reported .git checkout path; separate 1.3.1 runtime verification and English update prepared in November 2026",
+      "identity_status": "github_repository_verified_local_git_marker_reported_origin_unverified",
+      "role": "Local documentation browser, AI documentation viewer, wiki reader, RepoSurveyor launcher and provenance-aware ZIP exporter",
+      "authority": "Derived read and export surface; cannot certify applications, publish an owner release, or promote evidence",
+      "reads": [
+        "kOA Digital Ecosystem C0 repository inventory",
+        "owner repository documents and local wiki checkouts",
+        "RepoSurveyor on-demand profiles"
+      ],
+      "writes": "Its own reports and exports; the separate Docs IA installer writes opt-in additions to owner repositories",
+      "installed_application_root": "C:\\mycode\\DocServer\\kOA-Doc-Server-1.3.0"
+    },
+    {
+      "name": "kOADiag",
+      "github_repo": "Rejean-McCormick/kOADiag",
+      "github_url": "https://github.com/Rejean-McCormick/kOADiag",
+      "local_root": "C:\\mycode\\kOA_Digital_Ecosystem\\kOADiag",
+      "evidence": "Verified GitHub repository identity and user-reported .git checkout path; v5.7.0 source snapshot, November 2026",
+      "identity_status": "github_repository_verified_local_git_marker_reported_origin_unverified",
+      "role": "Cross-repository static boundaries, API and event observations, C0 port probes, IK contract checks, provenance-scoped E2E evidence and optional isolated test-only validation",
+      "authority": "Diagnostic observation only; any owner release/qualification remains independent",
+      "reads": [
+        "C0 inventory and graph references",
+        "local repository code and declared contracts",
+        "optional owner-provided evidence exports"
+      ],
+      "writes": "Its own diagnostic reports and opt-in private audit exports; explicitly authorized isolated E2E tests may change test data"
+    }
+  ],
+  "related_hinges": [
+    {
+      "name": "kOA Digital Ecosystem",
+      "role": "C0 architecture, authority map, declared inventory, target design and noncertifying status",
+      "reference": "README.md"
+    },
+    {
+      "name": "Kristal-kOA-Ecosystem",
+      "role": "Semantic discovery/categorization for the local documentation workspace (separate owner)",
+      "reference": "docs/2-Technical-Reference/10-system/authority-map.md"
+    },
+    {
+      "name": "RepoSurveyor",
+      "role": "Independent engineering profiles and AI navigation briefs, launched on demand by Doc Server",
+      "reference": "docs/inventory/ECOSYSTEM_TOOLING.md"
+    },
+    {
+      "name": "Kompiler",
+      "role": "Semantic context pack compilation, not equivalent to Doc Server ZIP exports",
+      "reference": "docs/1-Overview/Components-Kristal-and-Daat.md"
+    },
+    {
+      "name": "initkoa-docs",
+      "role": "Independent docs portal and derived MkDocs/Wiki views; not owner of C0 truth",
+      "reference": "docs/wiki/README.md"
+    },
+    {
+      "name": "kOA-Digital-Ecosystem-GitHub-Audit",
+      "role": "Manual dated public audit snapshots, no direct promotion from Doc Server or kOADiag",
+      "reference": "docs/inventory/GRAPH_REGISTRY.md"
+    }
+  ],
+  "notes": [
+    "These tools are supplementary entries and do not change docs/inventory/repositories.json or the 53-role target portfolio.",
+    "A verified GitHub repository identity is not a verification of a local Git origin, branch HEAD, version, release, or installed state."
+  ]
+}

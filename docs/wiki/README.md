@@ -20,7 +20,7 @@
 - `docs/status/current.md` → `Implementation-Status.md`.
 - `docs/inventory/README.md` → `Repository-Inventory.md`.
 
-The export retains the Markdown content, rewrites local links to wiki page slugs, and replaces links to non-mirrored source files/JSON with repository code links. Each generated page includes the canonical source path and a SHA-256 of its source. The site navigation (`Home.md`, `_Sidebar.md`, `_Footer.md`) is maintained separately. Older wiki pages and older version-specific contract descriptions remain available but should not be presented as the final-system target.
+The export retains the Markdown content, rewrites local links to wiki page slugs, and replaces links to non-mirrored source files/JSON with repository code links. Each generated page includes the canonical source path and a SHA-256 of its source. The site navigation (`Home.md`, `_Sidebar.md`, `_Footer.md`) is maintained separately. The handwritten `Ecosystem-Tooling.md` page summarizes verified GitHub links for kOA Doc Server and kOADiag; its canonical references live in `docs/inventory/ECOSYSTEM_TOOLING.md` and `companion-tools.v1.json`. Do not edit `Repository-Inventory.md` directly: regenerate it from `docs/inventory/README.md` with the same renderer as the other 46 pages. Older wiki pages and version-specific contracts remain available without being presented as current final-system proof.
 
 ## Repeatable offline update
 
