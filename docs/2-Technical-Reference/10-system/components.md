@@ -1,6 +1,9 @@
 # Systems and boundary components
 
 This page is an ecosystem-level ownership map. Owner repositories remain authoritative for internal behavior.
+## Documentation and diagnostic companions (not product owners)
+
+[kOA Doc Server and kOADiag](../../inventory/ECOSYSTEM_TOOLING.md) help readers navigate documentation and inspect cross-repository observations. They are deliberately **not added to this owner map** as new semantic, business, runtime, release or security authorities. Doc Server also launches the independent RepoSurveyor profiler. No observation, export or profile automatically qualifies a boundary.
 
 ## Konnaxion
 Owns civic/public state and finalized DecisionRecords.

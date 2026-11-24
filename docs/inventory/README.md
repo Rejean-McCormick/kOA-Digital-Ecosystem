@@ -9,6 +9,8 @@ This directory documents **the currently declared kOA repository perimeter**, ke
 - [`repositories.json`](repositories.json) — **Canonical machine-readable inventory**, 55 registered repositories.
 - [**Key ecosystem repositories and tooling**](ECOSYSTEM_TOOLING.md) and [`companion-tools.v1.json`](companion-tools.v1.json) — verified GitHub links for **[kOA Doc Server](https://github.com/Rejean-McCormick/kOA-Doc-Server)** and **[kOADiag](https://github.com/Rejean-McCormick/kOADiag)**, declared local checkouts, and their hinge roles. These companion tools do not change the 55-entry canonical inventory.
 - [`code-snapshots-53.v1.json`](code-snapshots-53.v1.json) — SHA-256 ledger for 53 offline code archives, with audit status `NOT_EVALUATED`.
+- [`code-snapshots-55-2026-11-23.v1.json`](code-snapshots-55-2026-11-23.v1.json) — separately dated SHA-256 ledger for 55 supplied offline code snapshots from 23 November 2026; this does **not** supersede the historical 53-snapshot ledger or prove code/documentation conformity.
+- [23 November documentation/code issue compilation](../audit/2026-11-23-documentation-drift.md) — triaged owner issues; diK deferred during its owner update.
 - [`repositories.md`](repositories.md) — human-readable generated view of the same declared perimeter.
 - [diK/Kristalizer integration coordination](../2-Technical-Reference/40-integration/dik-kristalizer/README.md) — source-root evidence and the separate owner-boundary workstream.
 - [`GITHUB_DESCRIPTIONS.md`](GITHUB_DESCRIPTIONS.md) — proposed GitHub descriptions for related applications.

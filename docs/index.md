@@ -13,6 +13,8 @@ The central documentation is organized around the **intended final system**, not
 - [Cross-repository code alignment instructions](target/CODE_ALIGNMENT_INSTRUCTIONS.md)
 - [Proposed local development port registry and owner migration plan](2-Technical-Reference/50-operations/local-development-ports.md) — C0 coordination target; not runtime proof
 - [Implementation evidence and qualification](status/current.md)
+- [23 November 2026 documentation/code drift audit](audit/2026-11-23-documentation-drift.md) — owner-scoped issues and deferred diK work; no contract or release authority
+- [23 November 2026 offline 55-snapshot provenance ledger](inventory/code-snapshots-55-2026-11-23.v1.json) — SHA-256 evidence only, preserving the earlier 53-snapshot baseline
 
 The target architecture deliberately distinguishes **design** from **observed implementation**, **independent qualification** and **actual runtime deployment**. Current owner READMEs describe Framework v11, Kit v4, Skope-integrated EncyK acquisition and an EncyKlopedia read-only product; the retained older v6/IK/UCKK knowledge contracts are available for compatibility reference, not the organizing architecture.
 

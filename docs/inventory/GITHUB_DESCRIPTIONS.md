@@ -13,3 +13,11 @@ These are suggested descriptions. They have **not** been written to GitHub setti
 | `kOA Digital Ecosystem` | Cross-system architecture and integration map for kOA: ownership, versioned contracts, trust boundaries, maturity and release coordination across Kristal, EncyKlopedia, Da’at, UCKK, Koali and related applications including Skope and Ékole. | 239 |
 
 Machine-readable source: [`apps-skope-ekole.json`](apps-skope-ekole.json).
+## Companion tools (GitHub repository identity pending)
+
+| Tool | Suggested GitHub description | Characters |
+|---|---|---:|
+| kOADiag | Local-first diagnostics for the kOA ecosystem. Inspect cross-repository boundaries, API routes, events, dependency drift, Interaction Kernel contracts, C0 ports, and E2E evidence. Generate scoped reports and audit exports. Passive by default; test-stack execution requires explicit authorization. | 296 |
+| kOA Doc Server | Local-first documentation workspace for the kOA ecosystem. Browse repositories and wikis, read AI documentation and RepoSurveyor profiles, export provenance-aware ZIP packages, and inspect diagnostics without modifying source repositories or promoting evidence. | 261 |
+
+These descriptions are text proposals only. The exact GitHub repositories for the two companion tools were **not verified** by the accompanying source snapshot. See [companion-tool registry](ECOSYSTEM_TOOLING.md).

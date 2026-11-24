@@ -2,6 +2,8 @@
 
 **Purpose:** time-scoped cross-system engineering evidence view; for the final-system design see [target architecture](../target/README.md). This page does not replace owner status/release documents.
 
+**Later offline evidence (2026-11-23):** [55 code snapshots](../inventory/code-snapshots-55-2026-11-23.v1.json) and the [documentation/code divergence register](../audit/2026-11-23-documentation-drift.md) are available as structural and documentary observations only. They do not re-qualify the owner interactions below. diK findings are deferred while its owner updates the application. The C0 ZIP omitted `docs/target/`, but the GitHub main tree separately contains it.
+
 ## Offline source consolidation (2026-11-09; not a production status upgrade)
 
 The supplied nine branch deliveries cover **46 registered owner repositories** (branches 01–04 and 06–10). Source modifications, selected unit/fixture checks and reports are available, but live Git revisions, all bilateral acceptance gates and deployment are **not automatically qualified**. The seven Branch 05 civic/execution owners have **no delivery in this overlay**; earlier scoped IK Konnaxion↔Orgo evidence below is preserved, not newly revalidated. See the [consolidation matrix](../integration/2026-11-09-branch-consolidation.md), [handoff gates](../integration/2026-11-09-overlay-handoffs.md) and [target chain evidence](../target/functional-chains/12-implementation-evidence-2026-11-09.md).

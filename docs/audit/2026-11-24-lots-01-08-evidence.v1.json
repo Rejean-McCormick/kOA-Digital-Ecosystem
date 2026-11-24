@@ -1,0 +1,901 @@
+{
+  "schema": "koa.c0.lots-01-08-evidence.v1",
+  "as_of": "2026-11-24",
+  "classification": "DATED_OFFLINE_COORDINATION_RECORD",
+  "c0_role": "C0 coordination only, not canonical owner of domain state, a publisher, or release authority",
+  "evidence_policy": {
+    "source": "Eight source-matched overlay ZIP manifests, dated offline audits and owner-provided PowerShell installation output in the conversation",
+    "local_installation_status": "USER_REPORTED_APPLIED",
+    "post_install_sha256_readback": "NOT_PERFORMED_BY_C0",
+    "owner_exact_git_revision": "UNKNOWN",
+    "owner_cross_repo_integration": "NOT_GLOBALLY_QUALIFIED",
+    "live_production_status": "NOT_ATTESTED",
+    "release_authorization": "NOT_GRANTED",
+    "dik_target_writes": "NONE",
+    "snapshot_inventory_policy": "55-entry C0 inventory and historical 53-entry ledger unchanged"
+  },
+  "totals": {
+    "lots": 8,
+    "files_from_overlay_manifests": 74,
+    "user_reported_applied": 74,
+    "user_reported_unchanged": 0,
+    "user_reported_conflicts": 0,
+    "unique_owner_repositories": 25,
+    "post_install_sha256_readbacks": 0
+  },
+  "lots": [
+    {
+      "lot": 1,
+      "scope": "Ecole Pastorale / initial C0 audit",
+      "overlay_zip": "koa_overlay_ekole_pastorale_2026-11-23.zip",
+      "overlay_zip_sha256": "550861f47818c11b3f636fc621a9af3bfd0cdb0fb326d03aee828a0e2ca70ed7",
+      "audit_source": "audit_ekole_pastorale_2026-11-23.md",
+      "audit_source_sha256": "9f09a7b7cf52759fa404c1eb2234d761eb1983e24196f43ead4a15703bc09e31",
+      "reported_applied": 10,
+      "reported_unchanged": 0,
+      "reported_conflicts": 0,
+      "installation_state": "USER_REPORTED_APPLIED",
+      "confirmation_basis": "conversation owner report / pasted PowerShell output; not re-read from Windows by this C0 consolidation",
+      "installation_backup_identifier": null,
+      "reported_changes": "10 files in Pastorale; initial C0 documentary overlay separately observed 10/10 in post-overlay snapshot",
+      "test_evidence_scope": "Pastorale: 35 v9 states; 14 targeted tests on Windows per user report; no global cross-repo qualification.",
+      "target_files": [
+        {
+          "repository": "ecole-pastorale",
+          "root": "C:\\mycode\\Ekole\\ecole-pastorale",
+          "path": "outils/projeter_ekole.py",
+          "expected_post_install_sha256": "015b4e4d30f8a2b6edf4805ba589da15ee4253b5ce17884e923ea876e2fa064c",
+          "snapshot_pre_install_sha256": "b9c8950341b2675dd25bb451852c9916d0b41e7075a8335965461ca6cf93d224"
+        },
+        {
+          "repository": "ecole-pastorale",
+          "root": "C:\\mycode\\Ekole\\ecole-pastorale",
+          "path": "tests/test_depot_frere.py",
+          "expected_post_install_sha256": "382cfe7eaf1b35cb2aec68714c60d31d5a2731d71738bee57298b3e7be7734a0",
+          "snapshot_pre_install_sha256": "d74cfbf716d5c4525db5961b9f54f14406d7f521d00148ac6d17c4f7a5e0df7e"
+        },
+        {
+          "repository": "ecole-pastorale",
+          "root": "C:\\mycode\\Ekole\\ecole-pastorale",
+          "path": "README.md",
+          "expected_post_install_sha256": "75f7c82c18abf3cbb2975ea9a03950e917839d57a4e10ac4d1edca7f94c9eea6",
+          "snapshot_pre_install_sha256": "e875215b2e9d44470aff5dfaa713f29f1ac9424f9f01646e7e6256a9dedb91c4"
+        },
+        {
+          "repository": "ecole-pastorale",
+          "root": "C:\\mycode\\Ekole\\ecole-pastorale",
+          "path": "DEMARRAGE.md",
+          "expected_post_install_sha256": "6cc57ff702522e1e32aa05c3db5c4f9640da938855b3e5a999ea2a8a89a17ca8",
+          "snapshot_pre_install_sha256": "3974ec8a72e675e105173a88f375db424734452f378b8acab9fa6e757a0e2b5b"
+        },
+        {
+          "repository": "ecole-pastorale",
+          "root": "C:\\mycode\\Ekole\\ecole-pastorale",
+          "path": "docs/INSTALLATION_REPO_FRERE.md",
+          "expected_post_install_sha256": "c7536eb791ec6a634354f985fcb2becbbca6ce6a65113ecd16576e9f411b102b",
+          "snapshot_pre_install_sha256": "a3bed603b49860e4bdf96622476da0af49bf19bc71a4a2d21bb56706a61cf72a"
+        },
+        {
+          "repository": "ecole-pastorale",
+          "root": "C:\\mycode\\Ekole\\ecole-pastorale",
+          "path": "docs/WIKI_GAPS.md",
+          "expected_post_install_sha256": "4dc35b101bcb4425295cd101e9c4009bd49e60d0c9ea2ef4a1abe7d8fcd09577",
+          "snapshot_pre_install_sha256": "79eead840681263c60c766e53228c24fa9ad90f20147543f600e654d77f21e4f"
+        },
+        {
+          "repository": "ecole-pastorale",
+          "root": "C:\\mycode\\Ekole\\ecole-pastorale",
+          "path": "curriculum/visuels-themes.json",
+          "expected_post_install_sha256": "3eb4ae413aba5968791f52efec8eb0cef1cdacc42fb0982a134da8ada2661df2",
+          "snapshot_pre_install_sha256": null
+        },
+        {
+          "repository": "ecole-pastorale",
+          "root": "C:\\mycode\\Ekole\\ecole-pastorale",
+          "path": "docs/TESTING_AND_VALIDATION.md",
+          "expected_post_install_sha256": "706a15dfa75856e146e2ab3d6158f542401075eddc4648e15ffaab1c291d4fed",
+          "snapshot_pre_install_sha256": null
+        },
+        {
+          "repository": "ecole-pastorale",
+          "root": "C:\\mycode\\Ekole\\ecole-pastorale",
+          "path": "docs/DOCUMENTATION_HOME.md",
+          "expected_post_install_sha256": "ebc7fdeb6cd6eca944238bf09b044cdda3ea80800d94ca10aba7c3a0cb88007d",
+          "snapshot_pre_install_sha256": null
+        },
+        {
+          "repository": "ecole-pastorale",
+          "root": "C:\\mycode\\Ekole\\ecole-pastorale",
+          "path": "docs/WIKI_PUBLICATION_POLICY.md",
+          "expected_post_install_sha256": "4d0da1c286447cd34fd75357f26ce7f8ad3031610daf823b3d8325e0b7ebf78d",
+          "snapshot_pre_install_sha256": null
+        }
+      ]
+    },
+    {
+      "lot": 2,
+      "scope": "Foundations / integrated owners",
+      "overlay_zip": "koa_overlay_correctif_lot2_2026-11-23.zip",
+      "overlay_zip_sha256": "9661f171200571933cf74335c694e749f69431b32ffac694ed0f3491cbd78fca",
+      "audit_source": "koa_lot2_audit_2026-11-23.md",
+      "audit_source_sha256": "31f3d03c6b66c290774020a85678810330e2ea92d1d8a4f4a34f1d5e5984a5d6",
+      "reported_applied": 10,
+      "reported_unchanged": 0,
+      "reported_conflicts": 0,
+      "installation_state": "USER_REPORTED_APPLIED",
+      "confirmation_basis": "conversation owner report / pasted PowerShell output; not re-read from Windows by this C0 consolidation",
+      "installation_backup_identifier": null,
+      "reported_changes": "Release manifests, routes, links and validation documentation corrected",
+      "test_evidence_scope": "Focused source suites, Kristal Framework pin checks, Skope–Mediatheque synthetic handoff; live owner pair tests pending.",
+      "target_files": [
+        {
+          "repository": "Koali-Control-Panel",
+          "root": "C:\\mycode\\kOA-Linux\\Koali-Control-Panel",
+          "path": "README.md",
+          "expected_post_install_sha256": "62d89d977802f2df4fa6a2c53524a375184b963d81f1d8d4200361564d2b59ec",
+          "snapshot_pre_install_sha256": "a8574ab6c728414c73672d8ee4586c59d4a41a78a6dc25ff8632825b891e2bd0"
+        },
+        {
+          "repository": "Kristal-Integration-Pack",
+          "root": "C:\\mycode\\Kristal\\Kristal-Integration-Pack",
+          "path": "MANIFEST.sha256.json",
+          "expected_post_install_sha256": "38e9ec0eb59efd7100139aba16677993318c61080fd6b527f480425293bd5444",
+          "snapshot_pre_install_sha256": "630a3d6f03a862c36981374832d18faf0463e8d522dfa0e24bd8d7f5431f7075"
+        },
+        {
+          "repository": "Kristal-Integration-Pack",
+          "root": "C:\\mycode\\Kristal\\Kristal-Integration-Pack",
+          "path": "docs/RELEASE_VERIFICATION.md",
+          "expected_post_install_sha256": "18204af3fb0bdec9316d8aeaf91fd3f4354874b25e5edb80d0faecdb77896087",
+          "snapshot_pre_install_sha256": "7e93e3b15b622ecff7b00cda08b01e748e7e036afdb72b209454f13863d2b80f"
+        },
+        {
+          "repository": "Kristal-Integration-Pack",
+          "root": "C:\\mycode\\Kristal\\Kristal-Integration-Pack",
+          "path": "tools/release_package.py",
+          "expected_post_install_sha256": "37e8d915273b1f5c756d828e0b1bf6db3025e274c3d7f4d80d0cd127a1fb3e4b",
+          "snapshot_pre_install_sha256": "544861bc1204a55bada9fcb2e19f9b1b65656d19919341011c060224402940fd"
+        },
+        {
+          "repository": "Kristalizer",
+          "root": "C:\\mycode\\Kristal\\Kristalizer",
+          "path": "PACKAGE_MANIFEST.json",
+          "expected_post_install_sha256": "383c12d832e298274a296008e8f86c51a9587025f86aacbdae15d851c80d6521",
+          "snapshot_pre_install_sha256": "fc152b29ce5c33eccea763c041b55494d3031d8d9d655fa8e8287cf94d47c39a"
+        },
+        {
+          "repository": "LevelUpDiag-Koali",
+          "root": "C:\\mycode\\kOA-Linux\\LevelUpDiag-Koali",
+          "path": "FINAL_VALIDATION.md",
+          "expected_post_install_sha256": "0ad282f6f2b73c95469d201ce551de9e2458f596d234e0afcbca8bc75441b897",
+          "snapshot_pre_install_sha256": "b9ced70353561553e512b9720dbd90a93e7937416b55c1134a399f31b7d14d2b"
+        },
+        {
+          "repository": "Orgo",
+          "root": "C:\\mycode\\Orgo\\Orgo",
+          "path": "docs/Technical-Reference/API_IMPLEMENTED.md",
+          "expected_post_install_sha256": "0364aa5d4fece3a02549347ed5ca96c7d3b637e2ca3277c2da3b8a12ba030762",
+          "snapshot_pre_install_sha256": "caa06fbbc9845095b170e649922cd6ca549cf53108ce03ad6e240e48374100c6"
+        },
+        {
+          "repository": "Orgo",
+          "root": "C:\\mycode\\Orgo\\Orgo",
+          "path": "docs/ai/AI_CONTEXT.md",
+          "expected_post_install_sha256": "d472fc631536dac3900159709face07c94713c94eceb4b1d5ed6fdc282eac805",
+          "snapshot_pre_install_sha256": "8eb1a49331022efd60c249f36e336cb8ba50537d118c2a0ab3d8539d69248b2c"
+        },
+        {
+          "repository": "Skope",
+          "root": "C:\\mycode\\Skope\\Skope",
+          "path": "docs/README_FR_STANDALONE_ARCHIVE.md",
+          "expected_post_install_sha256": "ba4b262a4031adb072873244d108a3f76eda4899ae7d37f1ada2bf309a2c1c1c",
+          "snapshot_pre_install_sha256": "c6c175e790fa2911fdbcb2c894d27f05301c138a854bf6bdc814b40aedfab0e6"
+        },
+        {
+          "repository": "Skope",
+          "root": "C:\\mycode\\Skope\\Skope",
+          "path": "docs/README_STANDALONE_014_ARCHIVE.md",
+          "expected_post_install_sha256": "6afc4725c859562034700bee1afcfecc3e068bbbc064b880fa9ae4a43d4b3f5e",
+          "snapshot_pre_install_sha256": "aed522d0b702d254868c5fd296a1f74d4c237615b36106c563a796d4c82bb6e8"
+        }
+      ]
+    },
+    {
+      "lot": 3,
+      "scope": "Kristal extended",
+      "overlay_zip": "koa_overlay_correctif_lot3_2026-11-23.zip",
+      "overlay_zip_sha256": "d65a9411420c6ca41b8d444e6ab2b3f5d7cc186359fb9f1225bb1ea664f96cdb",
+      "audit_source": "koa_lot3_audit_2026-11-23.md",
+      "audit_source_sha256": "da176174ca97e22f4f2d1ad1e0ace099954ee1988a56b80c82024351934a45bb",
+      "reported_applied": 6,
+      "reported_unchanged": 0,
+      "reported_conflicts": 0,
+      "installation_state": "USER_REPORTED_APPLIED",
+      "confirmation_basis": "conversation owner report / pasted PowerShell output; not re-read from Windows by this C0 consolidation",
+      "installation_backup_identifier": null,
+      "reported_changes": "Kompiler, kristal-public and Arketype targeted repairs",
+      "test_evidence_scope": "Targeted unit/contract checks; owner pin and public release qualification remain separate.",
+      "target_files": [
+        {
+          "repository": "Arketype",
+          "root": "C:\\mycode\\Kristal\\Arketype\\arketype",
+          "path": "README.md",
+          "expected_post_install_sha256": "5a88aa9298c314f9fb0431c618fde67b80634c6dc3c769db43daea680b26e1d8",
+          "snapshot_pre_install_sha256": "31c2373c166aeeb40ed67f69a39e4c998b62797401c0bc1b75dbbda4c184ccac"
+        },
+        {
+          "repository": "Kompiler",
+          "root": "C:\\mycode\\Kristal\\Kompiler",
+          "path": "REPO_MANIFEST.json",
+          "expected_post_install_sha256": "47842207cf571ca0153217bcfefb924920f16f7b7e7feb88bf60bccb14849641",
+          "snapshot_pre_install_sha256": "e6f11019f28f74bd3b790dcbd0321f51eaeaa1842431f105e378363f40ff2ae8"
+        },
+        {
+          "repository": "Kompiler",
+          "root": "C:\\mycode\\Kristal\\Kompiler",
+          "path": "docs-manifest.json",
+          "expected_post_install_sha256": "da68fb0b67bf50b71a6694f575ed06794c9957f33d5cd52b3261378c895da511",
+          "snapshot_pre_install_sha256": "95fcc0499ea37de7f4ca969eefc8a77051f841716627681bbd58bc933d836252"
+        },
+        {
+          "repository": "Kompiler",
+          "root": "C:\\mycode\\Kristal\\Kompiler",
+          "path": "docs/09-reference/implementation-status.md",
+          "expected_post_install_sha256": "37c367f31ba1b0a13d8471b6802455e545af7c24287234e27ca556aedfa69ab1",
+          "snapshot_pre_install_sha256": "ed2f8c137a3fc5a930faa457d3d96f7e65b5a9dc47933c11edec0a354f37b076"
+        },
+        {
+          "repository": "Kompiler",
+          "root": "C:\\mycode\\Kristal\\Kompiler",
+          "path": "scripts/build_manifest.py",
+          "expected_post_install_sha256": "a17d92c266c30bec8d87a0acbfe399aa2e6ffd700a259f91dd738f9b78bde220",
+          "snapshot_pre_install_sha256": "cade85c0752c55f08d5186d11ef7ef1f7b7fa9abc77b209348a1ca335ec637d4"
+        },
+        {
+          "repository": "kristal-public",
+          "root": "C:\\mycode\\Kristal\\kristal-public",
+          "path": "docs/RELEASE_GATES.md",
+          "expected_post_install_sha256": "38e17e6f45384bc910ac694aed5675ec981fe8024751fd094b358d96cf431b4e",
+          "snapshot_pre_install_sha256": "786eca2611a797f5af8910b06010dcadcacf5b3b641d956bfe07959f4bcba0e2"
+        }
+      ]
+    },
+    {
+      "lot": 4,
+      "scope": "Ekole extended",
+      "overlay_zip": "koa_overlay_correctif_lot4_2026-11-23.zip",
+      "overlay_zip_sha256": "b4282bdb3e1aac5e4971173b5c5f277ebfcc59fa0b972991fd434ff5f19cac81",
+      "audit_source": "koa_lot4_audit_2026-11-23.md",
+      "audit_source_sha256": "541f3a7a8d9a13c506283d9d7c4e4b51f7590d8044e20153e2015ce6ef12ef32",
+      "reported_applied": 14,
+      "reported_unchanged": 0,
+      "reported_conflicts": 0,
+      "installation_state": "USER_REPORTED_APPLIED",
+      "confirmation_basis": "conversation owner report / pasted PowerShell output; not re-read from Windows by this C0 consolidation",
+      "installation_backup_identifier": "lot4_20261123_202556_550",
+      "reported_changes": "14 corrections across four owner repositories",
+      "test_evidence_scope": "Atelier-Images 64/64 after corrections; courses 202/202 hashes; sibling-based full integration and pedagogy decisions pending.",
+      "target_files": [
+        {
+          "repository": "Atelier-Images",
+          "root": "C:\\mycode\\Ekole\\Atelier-Images",
+          "path": "tests/test_comparaison_pastorale_4grades.py",
+          "expected_post_install_sha256": "dcb2dd802bcd5e0f756bc65ae80c26e14772786bb42e72fb429500fa7c708ccb",
+          "snapshot_pre_install_sha256": "9e7632c7e67224520aac19449f6fcf40bc0ceb07ca613d6ea2cd0261955de7c4"
+        },
+        {
+          "repository": "Atelier-Images",
+          "root": "C:\\mycode\\Ekole\\Atelier-Images",
+          "path": "tests/test_compagnons_38x8.py",
+          "expected_post_install_sha256": "907f5d74c849f057642e1853551192ac5de8d90411eb0538ef9477760972864d",
+          "snapshot_pre_install_sha256": "2fff2dc940ece3c9451fba7a0cfff1b9f35d7d9c35cb7360d7b57eb9937b1485"
+        },
+        {
+          "repository": "Atelier-Images",
+          "root": "C:\\mycode\\Ekole\\Atelier-Images",
+          "path": "tests/test_genres_couts_608.py",
+          "expected_post_install_sha256": "c94f9e33f70a5abdddd7c295f8396afe1ad4d9d5b9612124cf512050c1ebf3fb",
+          "snapshot_pre_install_sha256": "4db0d7161d10a27f67815dd920e8f27951ce90ad75f90c614d3ccd3bd48b05d7"
+        },
+        {
+          "repository": "Atelier-Images",
+          "root": "C:\\mycode\\Ekole\\Atelier-Images",
+          "path": "tests/test_modeles_economiques.py",
+          "expected_post_install_sha256": "11213bdf5d70004d42afb8b0e0c9ed0bb60ce75919277043c15d2d6a21b8f7b6",
+          "snapshot_pre_install_sha256": "9998318a4250640f0399bf0734d45df312ed005af1835cd6a2afdc65d2eefcef"
+        },
+        {
+          "repository": "Atelier-Images",
+          "root": "C:\\mycode\\Ekole\\Atelier-Images",
+          "path": "tests/test_prompts_editables_ui.py",
+          "expected_post_install_sha256": "b838dbdff29050d6e7eb56af50b1f1656bd5bda4723aec4d00ce48230a60fd7c",
+          "snapshot_pre_install_sha256": "b8c1856688b0f4243a143033e076ed7b909222f45aa0e0d4a75ce1ee071369d3"
+        },
+        {
+          "repository": "Atelier-Images",
+          "root": "C:\\mycode\\Ekole\\Atelier-Images",
+          "path": "MODULE_PERSONNAGES_EKOLE.md",
+          "expected_post_install_sha256": "8d520b3c7d55c82161006d5cdcc4a0dc79449f9499d74b4c8773bfecea2510f8",
+          "snapshot_pre_install_sha256": "1231b231e7e72fb03e017d9a36b1a6fef68fe3f31ca23cc8fd70c3297e778d69"
+        },
+        {
+          "repository": "Atelier-Images",
+          "root": "C:\\mycode\\Ekole\\Atelier-Images",
+          "path": "LISEZ-MOI.md",
+          "expected_post_install_sha256": "d64822373afe1b987866ddf0c1db05f5be684814b02510b71769f4c5da6a403c",
+          "snapshot_pre_install_sha256": "185c70a262b1a76fcbfed5fcb0289bf76ec1f6432b265395cd20228995068916"
+        },
+        {
+          "repository": "Atelier-Images",
+          "root": "C:\\mycode\\Ekole\\Atelier-Images",
+          "path": "MODE_LIBRE_304.md",
+          "expected_post_install_sha256": "3ab5e817e778ed5214ab77e036eeb4f9379272ee7cc93f6c074d8a9687b80fd9",
+          "snapshot_pre_install_sha256": "88db3b8b0eb6dae172c2f6b774d5d68230d262b06acc316e70612da7726c0ee2"
+        },
+        {
+          "repository": "Atelier-Images",
+          "root": "C:\\mycode\\Ekole\\Atelier-Images",
+          "path": "CONTRAT_MODES_PERSONNAGES_2026-11-23.md",
+          "expected_post_install_sha256": "158e94204895ea98c6d45983d3f1a33c0ab9e766fefde88203995f7eb7cb7a86",
+          "snapshot_pre_install_sha256": null
+        },
+        {
+          "repository": "ekole",
+          "root": "C:\\mycode\\Ekole\\ekole",
+          "path": "tests/test_personnages.py",
+          "expected_post_install_sha256": "750f220fb83269deef46733ed556e07934ffde51d775d80096ded61821aa08c4",
+          "snapshot_pre_install_sha256": "a744d15cc36cd39c8448ba46412ddc4742f02fad33bbbe372c6ec2edfe888889"
+        },
+        {
+          "repository": "ekole",
+          "root": "C:\\mycode\\Ekole\\ekole",
+          "path": "docs/VALIDATION_LOT4_INTERDEPOTS_2026-11-23.md",
+          "expected_post_install_sha256": "14ead88151a42fea7f23777494860b27e6001fff7a39c46084cd6e4c6ae7d5c6",
+          "snapshot_pre_install_sha256": null
+        },
+        {
+          "repository": "Kontexte",
+          "root": "C:\\mycode\\Ekole\\Kontexte",
+          "path": "MANIFEST.sha256",
+          "expected_post_install_sha256": "5797fd8f11eab5de09a0017e339ee9be85bb9351ae290c3956122b39e5e7930a",
+          "snapshot_pre_install_sha256": "d1308f1bfd132092757575efbece3dff03f650350326ebe0b1829ed76fb1343a"
+        },
+        {
+          "repository": "Kontexte",
+          "root": "C:\\mycode\\Ekole\\Kontexte",
+          "path": "docs/RECONCILIATION_MANIFEST_SHA256_2026-11-23.md",
+          "expected_post_install_sha256": "020927c3165ed6df9d0de523b024cc7cd8315ede40c62442f2ef07cddb6c67e3",
+          "snapshot_pre_install_sha256": null
+        },
+        {
+          "repository": "ekole-quebec",
+          "root": "C:\\mycode\\Ekole\\ekole-quebec",
+          "path": "references/gouvernance_v1.2/HISTORIQUE_Spec_v1.1/LIRE_ARCHIVE_NORMALISEE_2026-11-23.md",
+          "expected_post_install_sha256": "9d0a365404abbf5f6c5474f384d1f8f00a2160b67315f6657d4f0330241d2baa",
+          "snapshot_pre_install_sha256": null
+        }
+      ]
+    },
+    {
+      "lot": 5,
+      "scope": "Konnaxion / Orgo Worlds",
+      "overlay_zip": "koa_overlay_correctif_lot5_2026-11-23.zip",
+      "overlay_zip_sha256": "7182f9985cb91642527bbcbfc24b145e68d55018889ec86a8f93daebe2403386",
+      "audit_source": "koa_lot5_audit_2026-11-23.md",
+      "audit_source_sha256": "c4d0649615a932232b1c75644014cb88c2d8fcf3be1805c4d56a6621b9ab7856",
+      "reported_applied": 10,
+      "reported_unchanged": 0,
+      "reported_conflicts": 0,
+      "installation_state": "USER_REPORTED_APPLIED",
+      "confirmation_basis": "conversation owner report / pasted PowerShell output; not re-read from Windows by this C0 consolidation",
+      "installation_backup_identifier": "lot5_20261123_205018_377",
+      "reported_changes": "10 test and documentation corrections across four owner repositories",
+      "test_evidence_scope": "Capsule Manager targeted 102; LevelUpDiag-Orgo 95; KonnaxionDiag 81; Orgo Worlds Node 34; full services and deployment not qualified.",
+      "target_files": [
+        {
+          "repository": "Konnaxion_Capsule_Manager",
+          "root": "C:\\mycode\\Konnaxion\\Konnaxion_Capsule_Manager",
+          "path": "tests/test_capsule_verify.py",
+          "expected_post_install_sha256": "a0dba8b5d235423dd123223475b0eb151b61445becd858d880d4480606253a86",
+          "snapshot_pre_install_sha256": "0d58bc37a44ffa75563c1237fb8ac636d8a29cb4b99e3d85d0c6b23cd2039e5e"
+        },
+        {
+          "repository": "Konnaxion_Capsule_Manager",
+          "root": "C:\\mycode\\Konnaxion\\Konnaxion_Capsule_Manager",
+          "path": "README.md",
+          "expected_post_install_sha256": "949f347a37a3f0a448a798a94e07e6a1fe2409719c8b749d7234312bb6c2031e",
+          "snapshot_pre_install_sha256": "407275eba6d78827872fcea08b05f2b9bded3f728e95113efa46a8895b8dfa90"
+        },
+        {
+          "repository": "Konnaxion_Capsule_Manager",
+          "root": "C:\\mycode\\Konnaxion\\Konnaxion_Capsule_Manager",
+          "path": "docs/BRANCH08_RELEASE_ADMISSION.md",
+          "expected_post_install_sha256": "bea13bd8c3549df1505345dad8f539b712e3c593bab42b86a71ebb8032af867f",
+          "snapshot_pre_install_sha256": "70c63095be6a229bf24d41d20de76c54904f7fa7fdac55d81b11d1e7f387fd88"
+        },
+        {
+          "repository": "Konnaxion_Capsule_Manager",
+          "root": "C:\\mycode\\Konnaxion\\Konnaxion_Capsule_Manager",
+          "path": "docs/NETCUP_PREPRODUCTION_CHECKLIST.md",
+          "expected_post_install_sha256": "ba7f533f84c7cdcfc6cc56303e531edd6085e7b14fd81f7c98a8383808c400a0",
+          "snapshot_pre_install_sha256": null
+        },
+        {
+          "repository": "Konnaxion_Worlds",
+          "root": "C:\\mycode\\Konnaxion\\Konnaxion_Worlds",
+          "path": "README.md",
+          "expected_post_install_sha256": "8ce9a3daecd0970cee78267baa498f67bc18738811c5eac843be6b93a3550fd5",
+          "snapshot_pre_install_sha256": "2f8cfd9c3fc1f871a53778422cafa9f589a7924a99574bf8356c6456f453798d"
+        },
+        {
+          "repository": "LevelUpDiag-Orgo",
+          "root": "C:\\mycode\\Orgo\\LevelUpDiag-Orgo",
+          "path": "tools/tandem_tour7/payload/README.md",
+          "expected_post_install_sha256": "1f762282080b5df703367731769aae3a7c783b372236c27fa4ec8d3d719fbfac",
+          "snapshot_pre_install_sha256": "15646199387e03d3e08580cef16534dce1475bc87d6a8c67b9925c5a3d4b25c4"
+        },
+        {
+          "repository": "LevelUpDiag-Orgo",
+          "root": "C:\\mycode\\Orgo\\LevelUpDiag-Orgo",
+          "path": "tools/tandem_tour7/manifest.json",
+          "expected_post_install_sha256": "d1371a0e9587359dbd8589ce0e30f2413ebb03260311183ea2c7d6b33ab1a0f1",
+          "snapshot_pre_install_sha256": "264f48f336a2a04db36e7fce56616a5ddd47517cf7d4b6019c3108d23d538b16"
+        },
+        {
+          "repository": "LevelUpDiag-Orgo",
+          "root": "C:\\mycode\\Orgo\\LevelUpDiag-Orgo",
+          "path": "tools/tandem_tour7_v2/payload/README.md",
+          "expected_post_install_sha256": "1f762282080b5df703367731769aae3a7c783b372236c27fa4ec8d3d719fbfac",
+          "snapshot_pre_install_sha256": "15646199387e03d3e08580cef16534dce1475bc87d6a8c67b9925c5a3d4b25c4"
+        },
+        {
+          "repository": "LevelUpDiag-Orgo",
+          "root": "C:\\mycode\\Orgo\\LevelUpDiag-Orgo",
+          "path": "tools/tandem_tour7_v2/manifest.json",
+          "expected_post_install_sha256": "edd941af488b4bfe9555d87eea737478d0d6adffe00e9a0b4fe350ab811119dc",
+          "snapshot_pre_install_sha256": "50dcad3c3de249d3e478e74c0fd6c1ad440f5bf5ac652d02e818d0423fa44a26"
+        },
+        {
+          "repository": "Orgo_Worlds",
+          "root": "C:\\mycode\\Orgo\\Orgo_Worlds",
+          "path": "fakeplant/README.md",
+          "expected_post_install_sha256": "a7fa7e7ed8b966822c7037dfdda1d4b2681e9bbb123953b19288bd58f7f50160",
+          "snapshot_pre_install_sha256": "347243109f6f5454a20250a9fee022a3b314db7c2b131b8f96ec3a0e63296ced"
+        }
+      ]
+    },
+    {
+      "lot": 6,
+      "scope": "Publishing / diK V5.9-compatible",
+      "overlay_zip": "koa_overlay_correctif_lot6_compatible_dik_v59_2026-11-24.zip",
+      "overlay_zip_sha256": "00206aa9a41def32ccc6bbbf6f248e8a72a1f62a868f2dc5c291453b2056dba5",
+      "audit_source": "koa_lot6_audit_2026-11-23.md",
+      "audit_source_sha256": "c9280ce8a21caaffbab32fedbc944b0901ca5664ddcd3f37125e55786e9bdc6b",
+      "reported_applied": 6,
+      "reported_unchanged": 0,
+      "reported_conflicts": 0,
+      "installation_state": "USER_REPORTED_APPLIED",
+      "confirmation_basis": "conversation owner report / pasted PowerShell output; not re-read from Windows by this C0 consolidation",
+      "installation_backup_identifier": "lot6_v59_20261124_20261124_081711_988",
+      "reported_changes": "6 changes in EncyKlopedia, Konstellation-Light, Publisher; 6/6 V5.9 guards matched at install",
+      "test_evidence_scope": "Ency V32 30/30 on copy; 3 V5.9 preflight; C4 publish gate remains BLOCKED.",
+      "target_files": [
+        {
+          "repository": "EncyKlopedia",
+          "root": "C:\\mycode\\EncyKlopedia\\EncyKlopedia",
+          "path": "tests_v32/test_end_to_end.py",
+          "expected_post_install_sha256": "8fa4dc9c0b04f3cc0bd3e16a8a9269ad3cf596369dc2475088350f67230dcf36",
+          "snapshot_pre_install_sha256": "e58613ea996dfb4d2dfff72fc2fc5ab2681e125cb48a824b33857970e86a1aec"
+        },
+        {
+          "repository": "EncyKlopedia",
+          "root": "C:\\mycode\\EncyKlopedia\\EncyKlopedia",
+          "path": "tests_v32/test_reliability_v322.py",
+          "expected_post_install_sha256": "491840e2862a5b99241d770cab770e61919255c2d02f270b91db1528e9d97314",
+          "snapshot_pre_install_sha256": "d20b6dcdaa872caf258b81479461389e702333bd6b258e291ccec54a91306f77"
+        },
+        {
+          "repository": "EncyKlopedia",
+          "root": "C:\\mycode\\EncyKlopedia\\EncyKlopedia",
+          "path": "encyk_v32/doctor.py",
+          "expected_post_install_sha256": "84e96d692dc93d15bfbc2af66e21e6b4c938e827877568347c40cbcd64655e3e",
+          "snapshot_pre_install_sha256": "724541c1cff5e6004ca603c1516b043beb54b24b65ea2bc47751f844f7a83582"
+        },
+        {
+          "repository": "EncyKlopedia",
+          "root": "C:\\mycode\\EncyKlopedia\\EncyKlopedia",
+          "path": "docs/v32/docs/13_DIK_INTEROP/01_LOT6_REGRESSION_V32_APRES_V59_2026-11-24.md",
+          "expected_post_install_sha256": "7343c8d6880fad54be25b6de249ed55ef28bd79ff3c8a557e38b6c8e039ad886",
+          "snapshot_pre_install_sha256": null
+        },
+        {
+          "repository": "Konstellation-Light",
+          "root": "C:\\mycode\\Konstellation\\Konstellation-Light",
+          "path": "docs/LIGHT_UX_V191_20261123.md",
+          "expected_post_install_sha256": "c03caa60685f935f58eeb533b5db427a3eb80f3d6d4971ddefcfe2d2d72e8c63",
+          "snapshot_pre_install_sha256": "5155f8542642c033cd32d7845b34cc9e1f84400a6693011c236ccb10d5c70932"
+        },
+        {
+          "repository": "Konstellation-Publisher",
+          "root": "C:\\mycode\\Konstellation\\Konstellation-Publisher",
+          "path": "docs/SOURCE_SHA256_LOT6_REVIEW_2026-11-24.md",
+          "expected_post_install_sha256": "9051e11e214cc39c7ad8bb1b66dc4048335520232243270e0f83b84b1f344e2c",
+          "snapshot_pre_install_sha256": null
+        }
+      ]
+    },
+    {
+      "lot": 7,
+      "scope": "Infrastructure",
+      "overlay_zip": "koa_overlay_correctif_lot7_2026-11-24.zip",
+      "overlay_zip_sha256": "19fd51c58ac6f8db089c435b477c0b9c828cbd5ca5475b857b8b63a85f9796f9",
+      "audit_source": "koa_lot7_audit_2026-11-24.md",
+      "audit_source_sha256": "7823eeba6686ddb829ad4c61a98669f3215f70ddf758d72c990a0c171b6b3768",
+      "reported_applied": 11,
+      "reported_unchanged": 0,
+      "reported_conflicts": 0,
+      "installation_state": "USER_REPORTED_APPLIED",
+      "confirmation_basis": "conversation owner report / pasted PowerShell output; not re-read from Windows by this C0 consolidation",
+      "installation_backup_identifier": "lot7_20261124_20261124_094650_804",
+      "reported_changes": "11 architecture, documentation and encoding corrections in koa-linux and Konductor; Koali lock separately checked",
+      "test_evidence_scope": "267 Python tests passed, 2 skipped on copy; 21 doc validations; QEMU/PostgreSQL live excluded; Koali pnpm lock SHA checked on Windows.",
+      "target_files": [
+        {
+          "repository": "koa-linux",
+          "root": "C:\\mycode\\kOA-Linux\\koa-linux",
+          "path": ".koa/file-architecture.lock.json",
+          "expected_post_install_sha256": "83bda000afe8d506c7d5153408440ea715e117762b16daa2969724a42c305000",
+          "snapshot_pre_install_sha256": "ff5bdbec0734a6f247231ea4e411caa8a6f81d3547d795ff0f35e4d01a7ca2fc"
+        },
+        {
+          "repository": "koa-linux",
+          "root": "C:\\mycode\\kOA-Linux\\koa-linux",
+          "path": "docs/02-system/code-and-filesystem-architecture/25-internal-components-node-trust-governance.md",
+          "expected_post_install_sha256": "d0c0522dbb517281d15c0ec2ca20522dd2179619acda90c7fb349f2bd7feec64",
+          "snapshot_pre_install_sha256": "ce4784ad87f717759f6000ff81e0c85e30f62520308d11e416ba6cb0202ecb0c"
+        },
+        {
+          "repository": "koa-linux",
+          "root": "C:\\mycode\\kOA-Linux\\koa-linux",
+          "path": "docs/02-system/code-and-filesystem-architecture/27-independent-subsystem-integrations.md",
+          "expected_post_install_sha256": "56d1539f1ace408d74618df5c5b59fa5120b24967fe14f136870ff482b10d8ee",
+          "snapshot_pre_install_sha256": "034bb13a730905d60b999f1933757d8610a4c5a20c59e79bdc28adf7343ad707"
+        },
+        {
+          "repository": "koa-linux",
+          "root": "C:\\mycode\\kOA-Linux\\koa-linux",
+          "path": "docs/02-system/code-and-filesystem-architecture/29-host-platform-files.md",
+          "expected_post_install_sha256": "fede8887e82d8362e9b6294534b625deceb6821c5ff1b7637a3cb5fb4281a0ce",
+          "snapshot_pre_install_sha256": "4f97c302d634f41c7a877da7bd805c0bcaf92a1e45677d1b3cb596601d89c62c"
+        },
+        {
+          "repository": "koa-linux",
+          "root": "C:\\mycode\\kOA-Linux\\koa-linux",
+          "path": "docs/02-system/code-and-filesystem-architecture/30-assembly-profiles-packaging-and-release.md",
+          "expected_post_install_sha256": "c608c0bdfdf9fd3dfda7d27a58519fac87fc1c5662a97e5c516065169772d3e6",
+          "snapshot_pre_install_sha256": "76d9b84a53fd9a596dc78f6d7b729ecb97d76409388ee5cc5fd678c6b2518e70"
+        },
+        {
+          "repository": "koa-linux",
+          "root": "C:\\mycode\\kOA-Linux\\koa-linux",
+          "path": "docs/02-system/code-and-filesystem-architecture/31-operations-tests-tools-development-and-ci.md",
+          "expected_post_install_sha256": "b9e80a7ac80f39ae9323cb2ee5bfc7ab320ba525f82e449bfcc4ee6d3fd16928",
+          "snapshot_pre_install_sha256": "ea4e858515c11ca81d83d563d724b175b12fb253f425899630a634140e27d21f"
+        },
+        {
+          "repository": "koa-linux",
+          "root": "C:\\mycode\\kOA-Linux\\koa-linux",
+          "path": "tests/conformance/test_filesystem_architecture.py",
+          "expected_post_install_sha256": "0d17093db0edb2324c7d51f5e7ca2d24707dacda450a0d78a6c053f9a18a95ba",
+          "snapshot_pre_install_sha256": "f5830a968df9b59e37e8985826fb4cf62eb981ff3be5ce0f0aeb4e6c0eed865b"
+        },
+        {
+          "repository": "Konductor",
+          "root": "C:\\mycode\\Konductor\\Konductor",
+          "path": "README.md",
+          "expected_post_install_sha256": "cee258657f8643ac098d705d95aa9fcdabfebf9114a75c6c6e60b177a4083e86",
+          "snapshot_pre_install_sha256": "669c96b1ae0a48964eb2657eafbe14e816e8a19e25f923a72c2d573a2c5332c1"
+        },
+        {
+          "repository": "koa-linux",
+          "root": "C:\\mycode\\kOA-Linux\\koa-linux",
+          "path": "docs/Integration-Verification-2026-10-27.md",
+          "expected_post_install_sha256": "655f3bc70b0449d9e2edb3775aa0ded36683e6c34f845a15e0e01c03bd8c1b19",
+          "snapshot_pre_install_sha256": "0e9b2c83614eba988506c07bc595b5af4f9d875d1ea8c1607d8ef2f8e57a8ae3"
+        },
+        {
+          "repository": "koa-linux",
+          "root": "C:\\mycode\\kOA-Linux\\koa-linux",
+          "path": "docs/ai/AI_CONTEXT.md",
+          "expected_post_install_sha256": "64df465f57d83293ee0ee5b5047b9e2a62f4e3cff376eda2af75dbd692c91a3a",
+          "snapshot_pre_install_sha256": "ebaa847ad07725d1d73371bb2843f394dc7fc5c6cb2acd7c6e5247843ca1dd19"
+        },
+        {
+          "repository": "koa-linux",
+          "root": "C:\\mycode\\kOA-Linux\\koa-linux",
+          "path": "docs/ai/INDEX.md",
+          "expected_post_install_sha256": "8644ccd5afb92c0b23e177dc1369bf659c0f6e86a9cef98d8b2463494a6db46e",
+          "snapshot_pre_install_sha256": "4eb8d5dbba6f6fa2bc3e1d9ae214cc25a3a514a365ac12bfe8d750214d3fbc24"
+        }
+      ]
+    },
+    {
+      "lot": 8,
+      "scope": "UCKK / SemantiK / SenTient",
+      "overlay_zip": "koa_overlay_correctif_lot8_2026-11-24.zip",
+      "overlay_zip_sha256": "07876dddf4efc111c777f308c270fe1f21baba792ca65bb2b5678ec7d8efca0b",
+      "audit_source": "koa_lot8_audit_2026-11-24.md",
+      "audit_source_sha256": "512df287f716dd6a503f4a7478ec53d28d6ab5c81b2b1195ae6551adb5b2fc54",
+      "reported_applied": 7,
+      "reported_unchanged": 0,
+      "reported_conflicts": 0,
+      "installation_state": "USER_REPORTED_APPLIED",
+      "confirmation_basis": "conversation owner report / pasted PowerShell output; not re-read from Windows by this C0 consolidation",
+      "installation_backup_identifier": "lot8_20261124_115411_560",
+      "reported_changes": "7 diagnostic and documentation fixes across LevelUpDiag SemantiK and UCKK Assets",
+      "test_evidence_scope": "LevelUpDiag 30/30 on copy; SemantiK Architect 144; RuntimeSet PGF release remains FAIL/BLOCKED.",
+      "target_files": [
+        {
+          "repository": "LevelUpDiag_SemantiK_Architect",
+          "root": "C:\\mycode\\SemantiK_Architect\\LevelUpDiag_SemantiK_Architect",
+          "path": "levelupdiag_core/runner.py",
+          "expected_post_install_sha256": "25b11bfbc3973247555e630f03c9f415f99572ab4df485793b789b07441a0c67",
+          "snapshot_pre_install_sha256": "f2ce3c2b4807a8ee476ae1559b8bf7625851db8d0b362636040cd0b07bb68832"
+        },
+        {
+          "repository": "LevelUpDiag_SemantiK_Architect",
+          "root": "C:\\mycode\\SemantiK_Architect\\LevelUpDiag_SemantiK_Architect",
+          "path": "levelupdiag.config.json",
+          "expected_post_install_sha256": "14548745a25acc496998d74df364d65aba501f7f421e18fef014ff2ad041bb2f",
+          "snapshot_pre_install_sha256": "75c5445e3da390edd8eccd8fd224af48ce8116b1c0dcc985bca3adf88530b066"
+        },
+        {
+          "repository": "LevelUpDiag_SemantiK_Architect",
+          "root": "C:\\mycode\\SemantiK_Architect\\LevelUpDiag_SemantiK_Architect",
+          "path": "levels/s10_semantik_architecture_lock.py",
+          "expected_post_install_sha256": "519554fefd817d86fdc4474dcfb4558e5de16fcb502db647a816c9f224dd230e",
+          "snapshot_pre_install_sha256": "15ed78c9d23fce2d4a03edbb31205fafb6f8c10c1467790a7929df8adf074ca7"
+        },
+        {
+          "repository": "LevelUpDiag_SemantiK_Architect",
+          "root": "C:\\mycode\\SemantiK_Architect\\LevelUpDiag_SemantiK_Architect",
+          "path": "levels/s30_semantik_contracts.py",
+          "expected_post_install_sha256": "2288e421cd600d72fd6000cd02f38b6071cf0ea0e451004d2072fc72023c78d3",
+          "snapshot_pre_install_sha256": "e9d1afd17389ec24ebd451fc67685b145f9d3aafc76037e90de4effa5a612373"
+        },
+        {
+          "repository": "LevelUpDiag_SemantiK_Architect",
+          "root": "C:\\mycode\\SemantiK_Architect\\LevelUpDiag_SemantiK_Architect",
+          "path": "docs/CONFIG_REFERENCE.md",
+          "expected_post_install_sha256": "ac6d008ac061a1a28da95b69bf4daddb8e5c8917b25a3307e10fdc4e36638430",
+          "snapshot_pre_install_sha256": "a14af767555c42ddc7849836aba2c65d7cc58bd816f63bbc852c8fbf7d99e97b"
+        },
+        {
+          "repository": "LevelUpDiag_SemantiK_Architect",
+          "root": "C:\\mycode\\SemantiK_Architect\\LevelUpDiag_SemantiK_Architect",
+          "path": "tests/test_lot8_overlay_regressions.py",
+          "expected_post_install_sha256": "2b9f5cf676867c0ac6e5f2f66928f9ff0532c1f9cb136ea51db7fac178bb5b33",
+          "snapshot_pre_install_sha256": null
+        },
+        {
+          "repository": "UCKK_Assets",
+          "root": "C:\\mycode\\UCKK\\UCKK_Assets",
+          "path": "README.md",
+          "expected_post_install_sha256": "1b5773634aa9eac6ff6d833fa8191263f17eadec07763739ffde4a9a240e9557",
+          "snapshot_pre_install_sha256": "f872ce095b855a3d42f79b7280547e59fa643e6d681f8c15efd4864fc39fe749"
+        }
+      ]
+    }
+  ],
+  "additional_c0_and_dik_context": [
+    {
+      "artifact": "koa_C0_overlay_local_2026-11-23.zip",
+      "source_status": "POST_OVERLAY_SNAPSHOT_MATCH_10_OF_10",
+      "qualification": "Binary match only; not added to the lot 1 10-file Pastorale count",
+      "sha256": "86f3d5245b23d4b283b43ac3ed2713f122af36c1bf84a62442749ce1d8d6146e"
+    },
+    {
+      "artifact": "koa_overlay_complementaire_kristal_manager_C0_2026-11-23.zip",
+      "source_status": "PREPARED_INSTALLATION_NOT_VERIFIED",
+      "qualification": "Cannot assert installed from the supplied historical report",
+      "sha256": "b0b8185a9001f77292af8604f7a3fdacf66132611c50121c93e2123d00ca0edf"
+    },
+    {
+      "artifact": "DIK_ECOSYSTEM_V5_9_ALIGNEMENT_5_REPOS_PS7(2).zip",
+      "source_status": "POST_V59_ENCYKLOPEDIA_SNAPSHOT_MATCH",
+      "qualification": "Six protected EncyKlopedia V5.9 hashes checked with lot 6; no diK target writes",
+      "sha256": "56a15188f670c6ecf80d4be66a10cf59b3627369b2e54d120dfb65105db5904b"
+    }
+  ],
+  "open_qualification_gates": [
+    {
+      "gate_id": "QUAL-01",
+      "priority": "P1",
+      "owner": "Konstellation-Light",
+      "issue": "Publication C4 remains blocked; a successful overlay is not an authorization to expose the real collection.",
+      "status": "BLOCKED_OWNER_DECISION",
+      "source_finding": "L6-03",
+      "next_evidence": "Independent owner approval, exact pin and public release evidence."
+    },
+    {
+      "gate_id": "QUAL-02",
+      "priority": "P1",
+      "owner": "Konstellation",
+      "issue": "Prove a compatible package-lock.json in the actual checkout and run Node per project requirements.",
+      "status": "AWAITING_OWNER_CHECK",
+      "source_finding": "L6-01",
+      "next_evidence": "Lock integrity, correct Node version, release workflow in controlled environment."
+    },
+    {
+      "gate_id": "QUAL-03",
+      "priority": "P1",
+      "owner": "SemantiK Architect",
+      "issue": "Three RELEASED RuntimeSets refer to grammar.pgf files missing from snapshots.",
+      "status": "BLOCKED_SOURCE_EVIDENCE",
+      "source_finding": "L8-03",
+      "next_evidence": "Authorized PGF artifacts and strict qualified RuntimeSet conformance; do not synthesize grammars."
+    },
+    {
+      "gate_id": "QUAL-04",
+      "priority": "P1",
+      "owner": "kOA-Linux",
+      "issue": "QEMU and genuine system images / appliance recovery not qualified on snapshot copy.",
+      "status": "NOT_EXECUTED",
+      "source_finding": "L7 audit limitations",
+      "next_evidence": "Linux/QEMU host, real images, recovery and sandbox validation."
+    },
+    {
+      "gate_id": "QUAL-05",
+      "priority": "P1",
+      "owner": "Konfid",
+      "issue": "PostgreSQL concurrency and real integration scenarios not executed in offline audit.",
+      "status": "NOT_EXECUTED",
+      "source_finding": "L7 Konfid tests",
+      "next_evidence": "Owner Postgres test service, concurrency / migration / audit replay."
+    },
+    {
+      "gate_id": "QUAL-06",
+      "priority": "P2",
+      "owner": "Konnaxion / Orgo",
+      "issue": "Live bilateral and real service E2E checks not established by synthetic suites.",
+      "status": "NOT_EXECUTED",
+      "source_finding": "L5 audit limitations",
+      "next_evidence": "Owner-to-owner contract replay against running services."
+    },
+    {
+      "gate_id": "QUAL-07",
+      "priority": "P2",
+      "owner": "Ekole / Akor / Kontexte",
+      "issue": "Boulangerie course qc-pri-ma-006 versus proposed qc-pri-ma-008 requires pedagogical decision.",
+      "status": "OPEN_OWNER_DECISION",
+      "source_finding": "L4-06",
+      "next_evidence": "Pedagogical sign-off before any mission/course link replacement."
+    },
+    {
+      "gate_id": "QUAL-08",
+      "priority": "P2",
+      "owner": "Ekole / sibling repos",
+      "issue": "Full sibling-repository integration suites need precise checkout and missing siblings.",
+      "status": "NOT_EXECUTED",
+      "source_finding": "L4-07",
+      "next_evidence": "Run complete integration tests with authorized sibling repositories."
+    },
+    {
+      "gate_id": "QUAL-09",
+      "priority": "P2",
+      "owner": "Atelier-Images",
+      "issue": "Approved style image assets were not included in the capture.",
+      "status": "AWAITING_OWNER_CHECK",
+      "source_finding": "L4-08",
+      "next_evidence": "Confirm actual Windows file and SmartDump inclusion policy; do not invent visual asset."
+    },
+    {
+      "gate_id": "QUAL-10",
+      "priority": "P2",
+      "owner": "Spek",
+      "issue": "Education distribution manifest lists 3 PDF artifacts absent in snapshot.",
+      "status": "AWAITING_OWNER_CHECK",
+      "source_finding": "L6-07",
+      "next_evidence": "Check real Windows artifacts and source-controlled build; retain strict verification."
+    },
+    {
+      "gate_id": "QUAL-11",
+      "priority": "P2",
+      "owner": "Konstellation-Publisher",
+      "issue": "4/20 historical SOURCE-SHA256 digests differ; a dated note was installed, not a rewrite.",
+      "status": "OPEN_OWNER_RECONCILIATION",
+      "source_finding": "L6-06",
+      "next_evidence": "Separate active vs historical inventory and qualify fresh manifest if owner approves."
+    },
+    {
+      "gate_id": "QUAL-12",
+      "priority": "P2",
+      "owner": "Konstellation-Light",
+      "issue": "Logo SVG and external visual-auditor kit absent from snapshot.",
+      "status": "AWAITING_OWNER_CHECK",
+      "source_finding": "L6-02/L6-08",
+      "next_evidence": "Resolve approved logo source and compatible auditor without relaxing C4."
+    },
+    {
+      "gate_id": "QUAL-13",
+      "priority": "P2",
+      "owner": "SenTient",
+      "issue": "Model directory absent in snapshot and historical OpenTapioca suite lacks optional test dependencies.",
+      "status": "NOT_EXECUTED",
+      "source_finding": "L8-05/L8-06",
+      "next_evidence": "Authorized models, dependencies and complete controlled test environment."
+    },
+    {
+      "gate_id": "QUAL-14",
+      "priority": "P2",
+      "owner": "UCKK Ops Console",
+      "issue": "PowerShell 7 GUI, Moodle and SSH operational checks not run in Linux audit.",
+      "status": "NOT_EXECUTED",
+      "source_finding": "L8-08",
+      "next_evidence": "Windows PS7 runbooks and owner-approved local / remote test hosts."
+    },
+    {
+      "gate_id": "QUAL-15",
+      "priority": "P2",
+      "owner": "Koali-Control-Panel / LevelUpDiag-Koali",
+      "issue": "LevelUpDiag 3.0 bilateral pairing and koali-final campaign role not qualified by documentation alone.",
+      "status": "NOT_EXECUTED",
+      "source_finding": "LOT2-003",
+      "next_evidence": "Run owner pair qualification before promoting diagnostic role."
+    },
+    {
+      "gate_id": "QUAL-16",
+      "priority": "P3",
+      "owner": "Ecole Pastorale",
+      "issue": "Three historical Wiki pages have no verified local equivalence; no automatic reconstruction.",
+      "status": "OPEN_SOURCE_GAP",
+      "source_finding": "DOC-014",
+      "next_evidence": "Owner source recovery or approved new guides, then recheck links."
+    },
+    {
+      "gate_id": "QUAL-17",
+      "priority": "P3",
+      "owner": "docs-initkoa-org",
+      "issue": "Scheduled Wiki/Pages publication workflow requires explicit publication authority confirmation.",
+      "status": "OPEN_OWNER_DECISION",
+      "source_finding": "L6-09",
+      "next_evidence": "Owner validates cadence and public scope; no auto-publication."
+    },
+    {
+      "gate_id": "QUAL-18",
+      "priority": "P3",
+      "owner": "C0",
+      "issue": "Update the historical C0 documentation drift ledger only after an owner readback; preserve 53/55 snapshot baselines.",
+      "status": "AWAITING_POST_INSTALL_READBACK",
+      "source_finding": "DOC-001 / post-overlay 2026-11-23",
+      "next_evidence": "Fresh owner C0 snapshot, exact revisions, no rewriting historical audit."
+    },
+    {
+      "gate_id": "QUAL-19",
+      "priority": "P2",
+      "owner": "diK",
+      "issue": "User-owned diK V5.9; cross-repo pins and qualification must remain under its owner, with no overlay writes.",
+      "status": "DEFERRED_OWNER",
+      "source_finding": "C0 DOC-002/DOC-009 and L6 V5.9",
+      "next_evidence": "Any diK changes handled exclusively by user; verify cross-repo compatibility without modifying diK."
+    },
+    {
+      "gate_id": "QUAL-20",
+      "priority": "P2",
+      "owner": "All lots / C0",
+      "issue": "Post-install exact SHA readback from Windows has not been supplied for all 74 target files.",
+      "status": "AWAITING_POST_INSTALL_READBACK",
+      "source_finding": "Lots 1–8 PowerShell logs",
+      "next_evidence": "Run read-only target fingerprint verification; no automatic repairs."
+    }
+  ],
+  "non_goals": [
+    "No diK file changes",
+    "No git operations",
+    "No remote publication",
+    "No launch of services",
+    "No PGF/model/PDF/lockfile synthesis",
+    "No changes to C0 docs/target or historical inventory",
+    "No global qualification promotion"
+  ]
+}

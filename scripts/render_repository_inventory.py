@@ -18,7 +18,8 @@ def render(root: Path = ROOT) -> str:
         '> Snapshot-derived local roots do not verify Git remote, HEAD, public visibility, integration or deployment.', '',
         f'**Repositories in the declared C0 perimeter:** {len(inventory)}.',
         'Source-of-truth for this list: [`repositories.json`](repositories.json).',
-        'Offline code snapshot digests: [`code-snapshots-53.v1.json`](code-snapshots-53.v1.json).', '',
+        'Offline code snapshot digests: [`code-snapshots-53.v1.json`](code-snapshots-53.v1.json).',
+        'Separate companion engineering repositories: [Doc Server and kOADiag](ECOSYSTEM_TOOLING.md).', '',
         '| Repository | Declared verification status | Reported local checkout root |',
         '|---|---|---|',
     ]

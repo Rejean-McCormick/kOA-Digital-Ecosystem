@@ -1,0 +1,80 @@
+{
+  "format": "koa.c0-post-overlay-reconciliation/1.0",
+  "as_of": "2026-11-23",
+  "source_snapshot": "SmartDump_20261123_144857.zip",
+  "source_snapshot_sha256": "000a4d5398af5d5dbe7251d05be43a13a1c16eb0112bf7bef9edd54e7a37cfc3",
+  "snapshot_repository_count": 13,
+  "reference_overlays": [
+    {
+      "file": "koa_repos_overlay_auto_2026-11-23_v2.zip",
+      "sha256": "2265a5b403e417619b6c3fede9132e67726eacd1158f46d09b7d06722e772839",
+      "matching_document_files": 22
+    },
+    {
+      "file": "koa_C0_overlay_local_2026-11-23.zip",
+      "sha256": "86f3d5245b23d4b283b43ac3ed2713f122af36c1bf84a62442749ce1d8d6146e",
+      "matching_files": 10
+    }
+  ],
+  "evidence_class": "OBSERVED_SNAPSHOT_NON_NORMATIVE",
+  "verification_scope": "exact payload file SHA-256 comparison in supplied 14:48 SmartDump; code smoke tests and release qualification not performed",
+  "verified_documentation_ids": [
+    "DOC-003",
+    "DOC-004",
+    "DOC-005",
+    "DOC-006",
+    "DOC-007",
+    "DOC-008",
+    "DOC-010",
+    "DOC-011",
+    "DOC-013"
+  ],
+  "partial_ids": [
+    "DOC-012",
+    "DOC-014"
+  ],
+  "deferred_ids": [
+    "DOC-002",
+    "DOC-009",
+    "VER-002"
+  ],
+  "still_qualified_or_incomplete": [
+    {
+      "id": "DOC-001",
+      "status": "snapshot_gap_remote_tree_present",
+      "note": "docs/target omitted from SmartDump, observed on remote GitHub main; no change to target."
+    },
+    {
+      "id": "DOC-012",
+      "status": "partial_at_1448",
+      "note": "Five added guides verified; nine further README links missing from snapshot and remote main. New local overlay repair not yet independently observed after installation."
+    },
+    {
+      "id": "DOC-014",
+      "status": "partial_at_1448",
+      "note": "README links repaired; three Wiki page equivalents still unverified."
+    },
+    {
+      "id": "REL-001",
+      "status": "not_in_snapshot",
+      "note": "package-lock.json excluded from SmartDump; installer reported UNCHANGED and GitHub main blob matched user-provided lockfile. Local direct existence not proven by this snapshot."
+    },
+    {
+      "id": "VER-001",
+      "status": "requires_owner_compatibility_qualification",
+      "note": "No automatic upgrade of pinned LevelUpDiag-Koali version."
+    }
+  ],
+  "new_overlay_status": "PREPARED_NOT_YET_OBSERVED_IN_OWNER_SNAPSHOT",
+  "new_overlay_scope": [
+    "Kristal-Manager README links and historical/runtime limits",
+    "C0 dated reconciliation references"
+  ],
+  "no_claims": {
+    "diK_changed": false,
+    "git_published": false,
+    "runtime_tests_performed": false,
+    "deployment_qualified": false
+  },
+  "historical_audit_unchanged": "docs/audit/2026-11-23-documentation-drift.v1.json"
+}

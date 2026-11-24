@@ -6,6 +6,10 @@ This repository documents **the intended final kOA system-of-systems architectur
 
 [November 2026 owner-branch source consolidation](docs/integration/2026-11-09-branch-consolidation.md) records nine offline deliveries covering 46 registered repositories, the missing branch 05 and still-unqualified owner handoffs. This is not a deployment status update.
 
+**23 November 2026 documentation/code audit:** the [C0 drift register](docs/audit/2026-11-23-documentation-drift.md) distinguishes owner documentation defects, owner work in progress (diK), and release/compatibility risks. The [55-snapshot evidence ledger](docs/inventory/code-snapshots-55-2026-11-23.v1.json) is separate from the historical 53-snapshot ledger. The supplied C0 ZIP omitted `docs/target/`, but that corpus was observed on GitHub main; do not overwrite it from an incomplete offline archive. None of these observations upgrades implementation or release maturity.
+
+**Post-overlay verification (23 November, 14:48 snapshot):** [dated reconciliation](docs/audit/2026-11-23-post-overlay-validation.md) records 22/22 matched owner-documentation files and 10/10 matched C0 files. It documents remaining link and capture gaps without closing historical findings or qualifying runtime interoperability. The Kristal Manager README follow-up is prepared separately and requires a subsequent local snapshot for confirmation.
+
 ## Control views
 
 Use these views together:

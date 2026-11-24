@@ -1,6 +1,9 @@
 # Observability
 
 Observability follows authoritative owners rather than creating a synthetic global state.
+## Ecosystem diagnostic and documentary observability
+
+**kOADiag** provides opt-in, scope-limited cross-repository observations (static boundaries, API routes, events, IK and C0 port checks, and owner-provided E2E evidence). **kOA Doc Server** presents documents, independent wiki checkouts, RepoSurveyor profiles and provenance-aware exports. Neither application owns product state or qualifies a release. See the [companion-tool and hinge-repository map](../inventory/ECOSYSTEM_TOOLING.md).
 
 ## Runtime Pack
 
