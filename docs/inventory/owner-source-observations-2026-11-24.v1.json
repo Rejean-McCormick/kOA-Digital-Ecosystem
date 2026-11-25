@@ -1,0 +1,66 @@
+{
+  "format": "koa.c0.owner-source-observations/1",
+  "observation_date": "2026-11-24",
+  "status": "OBSERVED_SNAPSHOT",
+  "scope": "Supplied offline source snapshots only; not live remote, checkout or deployment verification.",
+  "repository_count_before": 55,
+  "repository_count_after": 55,
+  "entries": [
+    {
+      "repository": "Rejean-McCormick/EncyKlopedia",
+      "status": "OBSERVED_SNAPSHOT",
+      "source_filename": "znapshot_EncyKlopedia_11241552.zip",
+      "zip_sha256": "8d194a7871bbba44d2def37a5c60322a1034612e0cec9b938eaccd12707540d8",
+      "zip_member_count": 5366,
+      "observed_source_files": [
+        "AGENTS.md",
+        "README.md",
+        "docs/GITHUB_SETUP.md",
+        "docs/ARCHITECTURE.md",
+        "docs/ai/INDEX.md",
+        "docs/v32/docs/11_REFERENCE_V8_IA/00_INDEX.md",
+        "encyk_v32/pipeline.py",
+        "package.json"
+      ],
+      "observations": [
+        "The supplied archive contains the EncyKlopedia V32.2 private engine, V8 reference documentation, and a separate Node.js reader alpha.",
+        "AGENTS.md and README.md explicitly state that the standalone V8 station is distributed separately; this archive is not V8 runtime proof.",
+        "docs/GITHUB_SETUP.md describes a historical GitHub naming collision and a proposed rename/new-repository procedure; the exact current GitHub identity, remote origin and HEAD are not established by this ZIP."
+      ],
+      "not_verified": [
+        "git_origin",
+        "exact_commit_sha",
+        "remote_main",
+        "publication",
+        "runtime",
+        "qualified_integration"
+      ]
+    },
+    {
+      "repository": "Rejean-McCormick/kOA-Digital-Ecosystem",
+      "status": "OBSERVED_SNAPSHOT",
+      "source_filename": "znapshot_kOA_Digital_Ecosystem_11241558.zip",
+      "zip_sha256": "5a246fa24fbed6464b85b1fa819253b6dd035100605b4cbe55878bccc3aafd69",
+      "zip_member_count": 279,
+      "observed_source_files": [
+        "AGENTS.md",
+        "docs/inventory/repositories.json",
+        "docs/inventory/repositories.md",
+        "scripts/render_repository_inventory.py",
+        "docs/inventory/README.md"
+      ],
+      "observations": [
+        "The C0 source snapshot contains a 55-entry canonical owner identity inventory; no new owner repository identity is proved by this capture.",
+        "The supplied C0 ZIP omits docs/target; earlier documented checks reported that this corpus is present on GitHub main. Do not infer deletion or reconstruct the target corpus from this incomplete export."
+      ],
+      "not_verified": [
+        "git_origin",
+        "exact_commit_sha",
+        "remote_main",
+        "publication",
+        "runtime",
+        "qualified_integration"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "schema": "koa.semantic_stack.local_roots.v1",
+  "as_of": "2026-11-24",
+  "authority": "coordination_only_non_normative",
+  "description": "Reported Windows worktree roots for the 14-component diK/EncyK/Kristal semantic alignment workstream; not Git verification or canonical C0 portfolio admission.",
+  "entries": [
+    {
+      "name": "Kristal-Framework",
+      "github_repo": "Rejean-McCormick/Kristal-Framework",
+      "local_root": "C:\\mycode\\Kristal\\Kristal-Framework",
+      "evidence": "USER_REPORTED_DIRECTORY_SCAN"
+    },
+    {
+      "name": "Kristal-Authoring-Kit",
+      "github_repo": "Rejean-McCormick/Kristal-Authoring-Kit",
+      "local_root": "C:\\mycode\\Kristal\\Kristal-Authoring-Kit",
+      "evidence": "USER_REPORTED_DIRECTORY_SCAN"
+    },
+    {
+      "name": "Kristal-Manager",
+      "github_repo": "Rejean-McCormick/Kristal-Manager",
+      "local_root": "C:\\mycode\\Kristal\\Kristal-Manager",
+      "evidence": "USER_REPORTED_DIRECTORY_SCAN"
+    },
+    {
+      "name": "KristalDiag",
+      "github_repo": "Rejean-McCormick/KristalDiag",
+      "local_root": "C:\\mycode\\Kristal\\KristalDiag",
+      "evidence": "USER_REPORTED_DIRECTORY_SCAN"
+    },
+    {
+      "name": "Kristal-Integration-Pack",
+      "github_repo": "Rejean-McCormick/Kristal-Integration-Pack",
+      "local_root": "C:\\mycode\\Kristal\\Kristal-Integration-Pack",
+      "evidence": "USER_REPORTED_DIRECTORY_SCAN"
+    },
+    {
+      "name": "kristal-public",
+      "github_repo": "Rejean-McCormick/kristal-public",
+      "local_root": "C:\\mycode\\Kristal\\kristal-public",
+      "evidence": "USER_REPORTED_DIRECTORY_SCAN"
+    },
+    {
+      "name": "diK",
+      "github_repo": "Rejean-McCormick/diK",
+      "local_root": "C:\\mycode\\diK\\diK",
+      "evidence": "SUPPLIED_SNAPSHOT_INDEX"
+    },
+    {
+      "name": "EncyKlopedia",
+      "github_repo": "Rejean-McCormick/EncyKlopedia",
+      "local_root": "C:\\mycode\\EncyKlopedia\\EncyKlopedia",
+      "evidence": "USER_REPORTED_DIRECTORY_SCAN"
+    },
+    {
+      "name": "SemantiK-Architect",
+      "github_repo": "Rejean-McCormick/SemantiK-Architect",
+      "local_root": "C:\\mycode\\SemantiK_Architect\\SemantiK_Architect",
+      "evidence": "SUPPLIED_SNAPSHOT_INDEX"
+    },
+    {
+      "name": "SemantiK_Runtime_Orchestrator",
+      "github_repo": "Rejean-McCormick/SemantiK_Runtime_Orchestrator",
+      "local_root": "C:\\mycode\\SemantiK_Architect\\SemantiK_Runtime_Orchestrator",
+      "evidence": "USER_REPORTED_DIRECTORY_SCAN"
+    },
+    {
+      "name": "Spek",
+      "github_repo": "Rejean-McCormick/Spek",
+      "local_root": "C:\\mycode\\Spek_Semantic-publishing\\Spek",
+      "evidence": "USER_REPORTED_DIRECTORY_SCAN"
+    },
+    {
+      "name": "Konstellation",
+      "github_repo": "Rejean-McCormick/Konstellation",
+      "local_root": "C:\\mycode\\Konstellation\\Konstellation",
+      "evidence": "USER_REPORTED_DIRECTORY_SCAN"
+    },
+    {
+      "name": "Kristalizer",
+      "github_repo": "Rejean-McCormick/Kristalizer",
+      "local_root": "C:\\mycode\\Kristal\\Kristalizer",
+      "evidence": "USER_REPORTED_DIRECTORY_SCAN"
+    },
+    {
+      "name": "GF_Wordbench",
+      "github_repo": null,
+      "local_root": "C:\\mycode\\Grammatical-Framework\\GF_Wordbench",
+      "evidence": "USER_REPORTED_GIT_MARKER"
+    }
+  ]
+}

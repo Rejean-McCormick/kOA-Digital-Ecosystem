@@ -1,0 +1,24 @@
+{
+  "format": "koa.additional-repository-inventory.v1",
+  "as_of": "2026-11-24",
+  "relationship_to_c0_inventory": "Declared owner repository identities and associated documentation checkouts outside the current 55-role target baseline. Registration does not imply architectural admission, GitSink enrollment or runtime qualification.",
+  "repositories": [
+    {
+      "github_repo": "Rejean-McCormick/Kin-City",
+      "github_url": "https://github.com/Rejean-McCormick/Kin-City",
+      "local_root": "C:\\mycode\\Kin_City\\Kin-City",
+      "local_git_marker": "C:\\mycode\\Kin_City\\Kin-City\\.git",
+      "scope": "PUBLIC",
+      "status": "github_verified_local_origin_unverified",
+      "github_identity_verified_on": "2026-11-24",
+      "role": "Immersive spatial interface and educational game environment",
+      "wiki": {
+        "local_root": "C:\\mycode\\Kin_City\\Kin-City.wiki",
+        "local_home": "C:\\mycode\\Kin_City\\Kin-City.wiki\\Home.md",
+        "github_url": "https://github.com/Rejean-McCormick/Kin-City/wiki",
+        "clone_url": "https://github.com/Rejean-McCormick/Kin-City.wiki.git",
+        "status": "user_reported_path_remote_unverified"
+      }
+    }
+  ]
+}
