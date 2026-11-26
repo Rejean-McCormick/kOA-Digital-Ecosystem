@@ -1,0 +1,5 @@
+# Local semantic qualification V5.20
+
+Run `scripts/apply_semantic_qualification_v520.ps1 -Apply` after installing the additive overlay. The one-shot installer runs tests before the live workflow. Python with jsonschema is required; `-Offline` suppresses the network and canonical stage (tests still require jsonschema). Do not run concurrent authoring, Manager or synchronization jobs. Only public Q/P IDs and language tags are sent to Wikidata, not workspace names or local content. Raw source responses and backups remain private. Keep sufficient disk space for multiple rebuilt SQLite databases.
+
+Read the latest `SEMANTIC_V520_*.json` in `%LOCALAPPDATA%\Kristal`. The `database` field identifies the final SQLite to share; `.evidence` contains raw public API responses and local pre-change state/profile backups. `COMPLETE_WITH_NETWORK_BLOCKER` or `COMPLETE_WITH_WORKSPACE_BLOCKERS` is not complete qualification. `BLOCKED_OR_PARTIAL` requires inspecting the private report and any pending Authoring Kit transactions before retrying. No public edits or publication.
