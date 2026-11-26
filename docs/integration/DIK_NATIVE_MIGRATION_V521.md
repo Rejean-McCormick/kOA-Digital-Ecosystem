@@ -1,0 +1,3 @@
+# V5.21 one-shot — private migration candidates
+
+Run `INSTALLER_PS7.ps1 -Apply` with Python and jsonschema already installed. Keep the exact final V5.20 report and active SQLite database 879bcd3e8dea in the private directory. The overlay checks installed code hashes, backs up its one replacement, executes focused tests, then builds a private candidate generation. No Git or remote calls. The final status `CANDIDATES_QUALIFIED_ACTIVATION_PENDING` is deliberate: no actual local profile activation. Inspect `report.json`, `active.sqlite` and `manifest.sha256.json` in the printed directory; submit the report and database for the next phase. Do not delete existing evidence or copy staging profiles to locals.
