@@ -33,3 +33,7 @@
 ## Procédure opérationnelle proposée (lot 04)
 
 - [`OPERATIONS.md`](OPERATIONS.md) — parcours concret et points de contrôle à vérifier avant tout effet.
+
+## Multilingual work context (2026-11-26)
+
+- [C0 multilingual coordination](../../docs/2-Technical-Reference/40-integration/multilingual/README.md) — dated owner reconciliation, language scope matrix and open gates.

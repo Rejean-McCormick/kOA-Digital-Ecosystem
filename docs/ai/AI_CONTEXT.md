@@ -43,3 +43,7 @@
 - [`docs/status/current.md`](../../docs/status/current.md) — Maturité et portée temporelle.
 - [`scripts/render_target_wiki.py`](../../scripts/render_target_wiki.py) — Projection wiki C0 si sources présentes.
 - [`scripts/validate_c0_coordination.py`](../../scripts/validate_c0_coordination.py) — Validateur C0.
+
+## Multilingual work context (2026-11-26)
+
+Start with [C0 multilingual coordination](../../docs/2-Technical-Reference/40-integration/multilingual/README.md). Use the owner exact contract and source evidence before changing code. Scope counts are not language certification.

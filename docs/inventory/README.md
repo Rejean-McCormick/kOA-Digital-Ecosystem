@@ -45,3 +45,11 @@ These repositories are tracked here for CI follow-up outside the C0 owner portfo
 This inventory is **descriptive, not an instruction to publish**. A `scope=PUBLIC` entry is neither GitSink permission nor evidence that a repository is ready for pushing. Explicit selection, verification of the Git root and `origin`, and publication gates are required before any Git write.
 
 For integration evidence, see [current status](../status/current.md) and the [authority map](../2-Technical-Reference/10-system/authority-map.md).
+
+## Language work contexts (2026-11-26)
+
+The [multilingual documentary view](../2-Technical-Reference/40-integration/multilingual/README.md) groups 12 components for work and export without changing the 55-entry canonical registry or target roles.
+
+## Local documentary sources (2026-11-26)
+
+See [`documentary-sources.v1.json`](documentary-sources.v1.json) for the six historical catalogue entries that were unresolved in the last Doc Server export. GF Audit is a local archive, Konnaxion's two diagnostic views are consolidated under the current owner, Kristal-Reference is archived (2026-10-03), LevelUpDiag-Kristal is consolidated into the local Navigation diagnostic, and UCKK is a functional domain whose three declared components replace the generic source. Doc Server reads this lifecycle policy at startup, falling back to its bundled copy. This register is descriptive, not a Git inventory or a permission to publish. The 55 canonical paths remain unchanged. Doc Server's actual installed root is recorded in [`companion-tools.v1.json`](companion-tools.v1.json).

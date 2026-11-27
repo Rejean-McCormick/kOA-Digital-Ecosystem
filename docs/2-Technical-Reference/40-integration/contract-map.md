@@ -94,3 +94,7 @@ The table above preserves the historical v6/IK/UCKK rows. This newer **draft v10
 | Arketype source catalogue | Design-only archetype metadata | Konstellation visual hints | **PROPOSED**, never semantics or state commitments |
 
 **No silent upgrade:** EncyK v2→Médiathèque and frozen EncyK v1→v6 knowledge routes retain separate consumer obligations. See the [v10 contract matrix](kristal-v10-alignment/contracts-and-versions.md).
+
+## Multilingual coordination supplement (2026-11-26)
+
+See [owner handoffs and negative gates](multilingual/chains.md). These are documentary coordination entries, not newly qualified interfaces; historical rows and pins remain unchanged.

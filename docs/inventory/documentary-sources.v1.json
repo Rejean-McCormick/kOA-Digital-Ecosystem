@@ -1,0 +1,80 @@
+{
+  "format": "koa.ecosystem.documentary-sources.v1",
+  "as_of": "2026-11-26",
+  "scope": "Supplementary documentary source lifecycle and selection policy; not canonical Git identities, GitSink permissions, or qualification.",
+  "observations": [
+    {
+      "catalog_identity": "Rejean-McCormick/Grammatical-Framework-audit",
+      "status": "local_archive_observed",
+      "local_root": "C:\\mycode\\Grammatical-Framework\\gf-audit",
+      "kind": "historical_audit_reports",
+      "git_marker": false,
+      "source": "User directory scan and gf-audit.zip; owner tool source remains unidentified."
+    },
+    {
+      "catalog_identity": "Rejean-McCormick/Konnaxion-LevelUpDiag",
+      "status": "functional_view_consolidated",
+      "documentary_owner": "Rejean-McCormick/KonnaxionDiag",
+      "owner_root": "C:\\mycode\\Konnaxion\\KonnaxionDiag",
+      "source": "Local scan (.git, README.md) and owner README v4.2.5 states combined LevelUpDiag and SecurityDiag campaigns. No Git rename or retirement inferred.",
+      "documentary_targets": [
+        "Rejean-McCormick/KonnaxionDiag"
+      ]
+    },
+    {
+      "catalog_identity": "Rejean-McCormick/Konnaxion-SecurityDiag",
+      "status": "functional_view_consolidated",
+      "documentary_owner": "Rejean-McCormick/KonnaxionDiag",
+      "owner_root": "C:\\mycode\\Konnaxion\\KonnaxionDiag",
+      "source": "Local scan (.git, README.md) and owner README v4.2.5 states combined LevelUpDiag and SecurityDiag campaigns. No Git rename or retirement inferred.",
+      "documentary_targets": [
+        "Rejean-McCormick/KonnaxionDiag"
+      ]
+    },
+    {
+      "catalog_identity": "Rejean-McCormick/Kristal-Reference",
+      "status": "archived",
+      "local_root": null,
+      "source": "Owner supplied GitHub archive banner dated 2026-10-03; GitHub repository metadata independently confirmed archived=true.",
+      "archived_on": "2026-10-03",
+      "documentary_targets": []
+    },
+    {
+      "catalog_identity": "Rejean-McCormick/LevelUpDiag-Kristal",
+      "status": "functional_view_consolidated",
+      "local_root": null,
+      "related_observation": {
+        "local_root": "C:\\mycode\\Kristal\\LevelUpDiag-Kristal-Navigation",
+        "git_marker": false,
+        "readme": true
+      },
+      "source": "Owner snapshot README and local directory scan confirm the current navigation diagnostic. Documentary consolidation only; no Git rename asserted.",
+      "documentary_targets": [
+        "LocalSnapshot/LevelUpDiag-Kristal-Navigation"
+      ]
+    },
+    {
+      "catalog_identity": "Rejean-McCormick/UCKK",
+      "status": "functional_domain_only",
+      "local_root": null,
+      "related_observation": {
+        "local_root": "C:\\mycode\\UCKK",
+        "git_marker": false,
+        "readme": false
+      },
+      "source": "Owner snapshots and SmartDump declarations identify the three documentary roots. UCKK workspace parent is not a documentary root; no Git retirement inferred.",
+      "documentary_targets": [
+        "Rejean-McCormick/UCKK-Assets",
+        "LocalSnapshot/uckk-moodle",
+        "Rejean-McCormick/UCKK-Ops-Console"
+      ]
+    }
+  ],
+  "selection_policy": {
+    "active": "retain normal catalogue entry",
+    "archived": "exclude from active catalogue; retain historical observation",
+    "functional_view_consolidated": "replace with already declared documentary targets",
+    "functional_domain_only": "retain category; replace generic repository entry with declared component targets",
+    "local_archive_observed": "retain controlled local report source"
+  }
+}

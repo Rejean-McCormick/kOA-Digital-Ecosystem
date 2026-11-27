@@ -1,0 +1,2 @@
+# DIK V5.21.1
+Offline additive overlay. Run PS7 installer -Apply against the exact V5.21 installation and keep its private generation. Ten attempted adapters, nine passed in snapshot integration, 33 remaining including Aging. Read report and active.sqlite in new private generation. The `--check-approval` CLI only checks declaration completeness, not independence or activation. No public write or canonical modification. Install-only changes are additive; existing files are pinned and not replaced.

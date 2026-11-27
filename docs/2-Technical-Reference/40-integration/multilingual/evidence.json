@@ -1,0 +1,397 @@
+{
+  "format": "koa.c0.multilingual-evidence/1",
+  "date": "2026-11-26",
+  "status": "OBSERVED_SNAPSHOT",
+  "archives": {
+    "ars-magna-defluens": {
+      "file": "kOA_IA_TOTAL_STRUCTURE_20261126_205308_07baf7fd.zip",
+      "sha256": "be7c3f413bf9ab41d3ab70515ebed5ef86e16081fae278da0edc7216428954a2",
+      "kind": "documentation_export"
+    },
+    "GF_Wordbench": {
+      "file": "kOA_IA_TOTAL_STRUCTURE_20261126_205308_07baf7fd.zip",
+      "sha256": "be7c3f413bf9ab41d3ab70515ebed5ef86e16081fae278da0edc7216428954a2",
+      "kind": "documentation_export"
+    },
+    "SemantiK_Phrase_Ops_Console": {
+      "file": "kOA_IA_TOTAL_STRUCTURE_20261126_205308_07baf7fd.zip",
+      "sha256": "be7c3f413bf9ab41d3ab70515ebed5ef86e16081fae278da0edc7216428954a2",
+      "kind": "documentation_export"
+    },
+    "diK": {
+      "file": "kOA_IA_TOTAL_STRUCTURE_20261126_205308_07baf7fd.zip",
+      "sha256": "be7c3f413bf9ab41d3ab70515ebed5ef86e16081fae278da0edc7216428954a2",
+      "kind": "documentation_export"
+    },
+    "LevelUpDiag_SemantiK-Architect": {
+      "file": "kOA_IA_TOTAL_STRUCTURE_20261126_205308_07baf7fd.zip",
+      "sha256": "be7c3f413bf9ab41d3ab70515ebed5ef86e16081fae278da0edc7216428954a2",
+      "kind": "documentation_export"
+    },
+    "SemantiK-Architect": {
+      "file": "kOA_IA_TOTAL_STRUCTURE_20261126_205308_07baf7fd.zip",
+      "sha256": "be7c3f413bf9ab41d3ab70515ebed5ef86e16081fae278da0edc7216428954a2",
+      "kind": "documentation_export"
+    },
+    "SemantiK_Runtime_Orchestrator": {
+      "file": "kOA_IA_TOTAL_STRUCTURE_20261126_205308_07baf7fd.zip",
+      "sha256": "be7c3f413bf9ab41d3ab70515ebed5ef86e16081fae278da0edc7216428954a2",
+      "kind": "documentation_export"
+    },
+    "Spek": {
+      "file": "kOA_IA_TOTAL_STRUCTURE_20261126_205308_07baf7fd.zip",
+      "sha256": "be7c3f413bf9ab41d3ab70515ebed5ef86e16081fae278da0edc7216428954a2",
+      "kind": "documentation_export"
+    },
+    "C0": {
+      "file": "znapshot_kOA_Digital_Ecosystem_11261534.zip",
+      "sha256": "76130bdbfc91be9b3a46e2191e242ebf2c2602ccd88ae892c38254d164a50973",
+      "kind": "offline_snapshot"
+    },
+    "GF_Observatory": {
+      "file": "znapshot_GF_Observatory_11261608.zip",
+      "sha256": "1e0b7f6edc6a2b16f0bd70bd92f31c5ff25f93daf590b06fca7cabb48d51c3b0",
+      "kind": "offline_snapshot"
+    },
+    "GF_RGL_AI_Compendium": {
+      "file": "znapshot_GF_RGL_AI_Compendium_11261556.zip",
+      "sha256": "da0c0c6ef45d80f800af64709c3f342ba9f9283c0b5178be13f8dfc4daa2605a",
+      "kind": "offline_snapshot"
+    },
+    "Grammatical_Framework-Albanian": {
+      "file": "znapshot_Grammatical_Framework-Albanian_11261610.zip",
+      "sha256": "2d60a62643bf626d357a9694eee0677b3797bb0f3bb99d109d766bae80abcb5d",
+      "kind": "offline_snapshot"
+    },
+    "GF Audit": {
+      "file": "gf-audit.zip",
+      "sha256": "de15bbebdc87bc1dec4530670bd7e2bd71fb80d12a69555393df87f8c9d5a7a3",
+      "kind": "historical_results"
+    }
+  },
+  "documents": [
+    {
+      "project": "GF_RGL_AI_Compendium",
+      "path": "000_EXECUTIVE_OVERVIEW.md",
+      "sha256": "6ccff8db61141fc95147d4e9d89c5baf7e30c5be1a9b048cb8c13990cfde5dce"
+    },
+    {
+      "project": "GF_RGL_AI_Compendium",
+      "path": "02_AUTHORITY_AND_PROVENANCE.md",
+      "sha256": "a46d817474fecce10ba23642d4d739cc1dc04f535d74892661c6a768bbfcaec6"
+    },
+    {
+      "project": "GF_RGL_AI_Compendium",
+      "path": "00_MASTER_ROUTER.md",
+      "sha256": "4c1f7753558a928b601c1aa81c781467470eeb7f5498e0583890f389054848a4"
+    },
+    {
+      "project": "GF_Wordbench",
+      "path": "README.md",
+      "sha256": "952b5d5a83efe940cb0e45925ea696ad41b5ce6c3ce02d6964259b867841ce41"
+    },
+    {
+      "project": "GF_Wordbench",
+      "path": "docs/practical/REVUE_14_LANGUES_DEFLUENS_v014.md",
+      "sha256": "6234d7cce9ab0808bc706768acd1708cb96c66c08ffa1d74395b13aeadafaea5"
+    },
+    {
+      "project": "GF_Wordbench",
+      "path": "docs/practical/INTEGRATION_QUALIFICATION_WORDBENCH_v1.1.md",
+      "sha256": "a080ec76f2a8ba6d8eae5397f23ab48ee0e61b50301096c0214f397f7da4f7d9"
+    },
+    {
+      "project": "GF_Wordbench",
+      "path": "docs/DIK_FEDERATION_V02_BOUNDARY.md",
+      "sha256": "c1adb0602df80b8da9ee0d589f9e2e164926a45981b490f06a3f97edf4b3a9d2"
+    },
+    {
+      "project": "GF_Observatory",
+      "path": "README.md",
+      "sha256": "6e19a9ea7f303cd265b6c6dc9ff55c92015f1e6aed241a0f4fcb86616b066944"
+    },
+    {
+      "project": "GF_Observatory",
+      "path": "docs/00_START_HERE.md",
+      "sha256": "1435e9a8984a896e03ae292d87a392e23ea6da34069fbe645bb96c60da3d108c"
+    },
+    {
+      "project": "Grammatical_Framework-Albanian",
+      "path": "README.md",
+      "sha256": "3f9bb361c9f0254e1db8e754a4915099f73bd6e83627dfe3f12a5b77e0f5671a"
+    },
+    {
+      "project": "Grammatical_Framework-Albanian",
+      "path": "validation/verbal_advanced/NEGATIVE_CONSTRAINTS.md",
+      "sha256": "d59ddb3d09bd5ca5373640c7129a33c711a4830525e2b24cc9ceda4e76570b5a"
+    },
+    {
+      "project": "GF Audit",
+      "path": "run_20260916_154149/summary.md",
+      "sha256": "85a2556fbade6c1787802eb5fc87b6e01e652afa86672e1f1e59a2cddf7236f4"
+    },
+    {
+      "project": "ars-magna-defluens",
+      "path": "README.md",
+      "sha256": "e0c44dffd94c47be8d1ec89f8a50189e5dfe54dd2598fb8877038925d4ce14e7"
+    },
+    {
+      "project": "ars-magna-defluens",
+      "path": "docs/WINDOWS_GF_VALIDATION_2026_11_05.md",
+      "sha256": "c610302050779a5f8512239c2b8b5a2c5a2e6fc31ac07fa714a1082e3ccdfd37"
+    },
+    {
+      "project": "diK",
+      "path": "README.md",
+      "sha256": "3501a1336fa07ac218080f24d193dc4b993716fe576546c5194d2d50999c9625"
+    },
+    {
+      "project": "diK",
+      "path": "docs/docs/70_SELECTION_REVISIONS_CANONIQUES_V5_11.md",
+      "sha256": "c67bd6cb74d6066df7c39fe389e12ac64de26d134b687b830a6a535ee015b2ee"
+    },
+    {
+      "project": "diK",
+      "path": "docs/decisions/ADR-DIK-FEDERATION-18-operational-read-v5216.md",
+      "sha256": "dec4cbf6eef9f452a09c46fa34161022f6690077b54cacdffdd17d8a0c7f5fa4"
+    },
+    {
+      "project": "SemantiK-Architect",
+      "path": "README.md",
+      "sha256": "76a3cfa5f0697f4da9c0647dca933d061bf0daa4226c2479aabeab047bc74564"
+    },
+    {
+      "project": "SemantiK-Architect",
+      "path": "docs/26_BRANCH04_LANGUAGE_HANDOFF.md",
+      "sha256": "1a5dd20eae476cabf553d0d196dfea3d6ba2872f92af5ccbc59d13098d593fe6"
+    },
+    {
+      "project": "SemantiK-Architect",
+      "path": "docs/22_DIK_FEDERATED_REGISTRY_READONLY.md",
+      "sha256": "41015ca10721c92501500ff68b2dba6a04bd04c304c757a4943290168545e7b3"
+    },
+    {
+      "project": "SemantiK-Architect",
+      "path": "docs/06_SA_GF_CONTRACT_LOCK.md",
+      "sha256": "1c09cbfbf45d2fc1c9cd242f180dceef435b5279719eed045a28bb33ae44e1af"
+    },
+    {
+      "project": "SemantiK_Phrase_Ops_Console",
+      "path": "README.md",
+      "sha256": "46601119ad645e00f9d37a5b9d16e5a0f25ccea865f89a42acd1ff9d6070ce87"
+    },
+    {
+      "project": "SemantiK_Runtime_Orchestrator",
+      "path": "README.md",
+      "sha256": "4a1aaeeddbd275f369bd8cd707d214e021c257247920a743198c5a59d95ee8ba"
+    },
+    {
+      "project": "SemantiK_Runtime_Orchestrator",
+      "path": "docs/BRANCH04_LANGUAGE_RUNTIME_BOUNDARY.md",
+      "sha256": "fc58803bb159fbf6d8f27a53a9c5a6cea5f0977f7a0bf8aedc4b574a56c7d7f9"
+    },
+    {
+      "project": "SemantiK_Runtime_Orchestrator",
+      "path": "docs/DIK_FEDERATION_V02_BOUNDARY.md",
+      "sha256": "ff12ccee827cc8ffabdf03a45a2cd791ca8b7ff7d0817abf4bf5483acc63526e"
+    },
+    {
+      "project": "LevelUpDiag_SemantiK-Architect",
+      "path": "README.md",
+      "sha256": "ca5f6758ba888422418d11cea73ecc08190c050c8a3fd64f7acd2a4799495fb1"
+    },
+    {
+      "project": "LevelUpDiag_SemantiK-Architect",
+      "path": "docs/BRANCH04_CROSS_READER_DIAGNOSTIC.md",
+      "sha256": "62f34464440f83ddaa38158681dbc8c461872d746def68c700184e2be6b040df"
+    },
+    {
+      "project": "Spek",
+      "path": "README.md",
+      "sha256": "28199658e00462c0f3723b232c57f40223876ce031384d6b66149812cbcf31a7"
+    },
+    {
+      "project": "Spek",
+      "path": "docs/BRANCH04_EDITORIAL_RUNTIME_ALIGNMENT.md",
+      "sha256": "f6062ff33e433e778e61942cc05c505acafa3bb2d9fe65f3f2a6a9a0c7cfb01f"
+    },
+    {
+      "project": "Spek",
+      "path": "docs/DIK_FEDERATION_V02_BOUNDARY.md",
+      "sha256": "4bb71642e5110b0c68b4956e19d9fcbba5c1b47fe030586c55fa8ad0424dba23"
+    },
+    {
+      "project": "C0",
+      "path": "docs/audit/2026-11-23-documentation-drift.md",
+      "sha256": "6a84ff61bf702db6f54666b64eb71233bb14dc43fc4c04ffeef041a97fec74ef"
+    },
+    {
+      "project": "C0",
+      "path": "docs/audit/2026-11-23-documentation-drift.v1.json",
+      "sha256": "5825612d5743b5082ebf6ac3b483520126be242536c6c1b07b54f411a34465ab"
+    },
+    {
+      "project": "C0",
+      "path": "docs/audit/2026-11-23-post-overlay-validation.md",
+      "sha256": "43409907002941619487de1343e1f7beed728be01f6692cbc67962e1ef8606cd"
+    },
+    {
+      "project": "C0",
+      "path": "docs/inventory/repositories.json",
+      "sha256": "32cd4c1d6c660085bee0369f6237f8657a0b11ee5d7dd9429ee568c61912f7eb"
+    },
+    {
+      "project": "C0",
+      "path": "AGENTS.md",
+      "sha256": "754f71f9d40e9e2b9780c4d61c6b9e92b0f4a1f3cf7dfdbfd248714104e7af6e"
+    }
+  ],
+  "groups": {
+    "engineering": [
+      "GF_RGL_AI_Compendium",
+      "GF_Wordbench",
+      "GF_Observatory",
+      "Grammatical_Framework-Albanian",
+      "GF Audit",
+      "ars-magna-defluens"
+    ],
+    "production": [
+      "Spek",
+      "diK",
+      "SemantiK-Architect",
+      "SemantiK_Phrase_Ops_Console",
+      "SemantiK_Runtime_Orchestrator",
+      "LevelUpDiag_SemantiK-Architect",
+      "ars-magna-defluens",
+      "GF_Wordbench"
+    ]
+  },
+  "owners": {
+    "GF_RGL_AI_Compendium": {
+      "version": "source_grounded_provisional",
+      "role": "RGL engineering knowledge and routing",
+      "state": "56 patterns, 15 model profiles, 179 accepted / 2 quarantined evidence records; not release-ready.",
+      "gate": "Revalidate exact external source locators and owner signatures; compiler and human review remain external.",
+      "refs": [
+        "000_EXECUTIVE_OVERVIEW.md",
+        "02_AUTHORITY_AND_PROVENANCE.md",
+        "00_MASTER_ROUTER.md"
+      ]
+    },
+    "GF_Wordbench": {
+      "version": "1.4.0",
+      "role": "GF compilation, scenario evidence and hash-bound linguistic qualification",
+      "state": "20 prepared practical pilots; 14 focus languages × 15 intents; candidate handoff inspector.",
+      "gate": "Exact inputs, GF build and scenarios, owner gold/review evidence; never infer release from pilot.",
+      "refs": [
+        "README.md",
+        "docs/practical/REVUE_14_LANGUES_DEFLUENS_v014.md",
+        "docs/practical/INTEGRATION_QUALIFICATION_WORDBENCH_v1.1.md",
+        "docs/DIK_FEDERATION_V02_BOUNDARY.md"
+      ]
+    },
+    "GF_Observatory": {
+      "version": "1.0.0rc1",
+      "role": "Independent evidence read model",
+      "state": "Reads defluens.pilot-batch/1.0 for 14 × 15; not canonical Wordbench release evidence.",
+      "gate": "Validate real canonical bundles and Windows integration separately; no compilation, gold approval or activation.",
+      "refs": [
+        "README.md",
+        "docs/00_START_HERE.md"
+      ]
+    },
+    "Grammatical_Framework-Albanian": {
+      "version": "GF 3.12 / checkpoint 2026-11-02",
+      "role": "Sqi RGL grammar, morphology, syntax and lexicon",
+      "state": "58/58 compile; 51/52 required scenarios; overall FAIL at C0369; 2786 other warnings reported.",
+      "gate": "Source-locked reproduction, evidence for future progressive, independent linguistic review; no R4 claim.",
+      "refs": [
+        "README.md",
+        "validation/verbal_advanced/NEGATIVE_CONSTRAINTS.md"
+      ]
+    },
+    "GF Audit": {
+      "version": "GF 3.12.0 / 2026-09-16",
+      "role": "Historical compilation diagnostics",
+      "state": "Run 20260916_154149: ExtendSqi, one ambiguous failure; historical evidence only.",
+      "gate": "Locate tool source separately; never reinterpret historical FAIL as current code status.",
+      "refs": [
+        "run_20260916_154149/summary.md"
+      ]
+    },
+    "ars-magna-defluens": {
+      "version": "0.11.2",
+      "role": "Local structured multilingual communication orchestration",
+      "state": "Nov 5 FR/EN 28/28 automated candidates, 14 parity pairs; zero human reviews; no release or activation.",
+      "gate": "Keep six-operation FR/EN candidate profile distinct from 14×15 practical lab; owner review and release gates.",
+      "refs": [
+        "README.md",
+        "docs/WINDOWS_GF_VALIDATION_2026_11_05.md"
+      ]
+    },
+    "diK": {
+      "version": "README alpha.12 header / reported 1.0.0a16 on Nov 24",
+      "role": "Reviewed lexical resources and external crosswalk evidence",
+      "state": "Header stale against later dated README notes; draft.3 pin preserved; 13 target locales, historical no retained.",
+      "gate": "Owner confirms local pyproject, pin and inventory; compare exact schemas to draft.4; no automatic activation or identity mutation.",
+      "refs": [
+        "README.md",
+        "docs/docs/70_SELECTION_REVISIONS_CANONIQUES_V5_11.md",
+        "docs/decisions/ADR-DIK-FEDERATION-18-operational-read-v5216.md"
+      ]
+    },
+    "SemantiK-Architect": {
+      "version": "1.3.0-alpha.2",
+      "role": "Typed CommunicationRequest/1.0 planning and realization",
+      "state": "Portable kristal_state/6.0; historical 7.0.0-draft.3.2 ecosystem baseline; diK preflight integrity only.",
+      "gate": "Approved v11 ACL and exact producer/consumer conformance; qualified external GF/PGF RuntimeSet.",
+      "refs": [
+        "README.md",
+        "docs/26_BRANCH04_LANGUAGE_HANDOFF.md",
+        "docs/22_DIK_FEDERATED_REGISTRY_READONLY.md",
+        "docs/06_SA_GF_CONTRACT_LOCK.md"
+      ]
+    },
+    "SemantiK_Phrase_Ops_Console": {
+      "version": "0.4.1",
+      "role": "Candidate diagnostics and preparation",
+      "state": "active16: 128 technical probes; 121 advertised + 7 disabled; counts describe policy/expected gates, not a new run.",
+      "gate": "Wordbench handoff release_authorized=false/release_eligible=false; separate review and approval.",
+      "refs": [
+        "README.md"
+      ]
+    },
+    "SemantiK_Runtime_Orchestrator": {
+      "version": "1.2.1",
+      "role": "Fail-closed transactional release coordination and activation",
+      "state": "1.2.0 compatibility baseline with SA 1.3.0-alpha.2 preserved; Defluens development handoff BLOCKED.",
+      "gate": "Immutable artifacts, SA validation, diagnostics and configured deployment gates; reject incomplete evidence.",
+      "refs": [
+        "README.md",
+        "docs/BRANCH04_LANGUAGE_RUNTIME_BOUNDARY.md",
+        "docs/DIK_FEDERATION_V02_BOUNDARY.md"
+      ]
+    },
+    "LevelUpDiag_SemantiK-Architect": {
+      "version": "2.3.0",
+      "role": "Independent SA diagnostics",
+      "state": "Profile aligned through SA 1.3.0-alpha.2; missing deployed RuntimeSet is WARN, not a source failure.",
+      "gate": "Pin exact tested artifacts; separate source checks from real-runtime checks; no release authorization.",
+      "refs": [
+        "README.md",
+        "docs/BRANCH04_CROSS_READER_DIAGNOSTIC.md"
+      ]
+    },
+    "Spek": {
+      "version": "0.5.0 (README)",
+      "role": "Editorial composition and authorized publication",
+      "state": "FR/EN/IT illustrative fixtures, not certified SA output; read-only diK bridge.",
+      "gate": "Explicit typed requests, real qualified RuntimeSet, editorial approval, privacy/license and target authorization.",
+      "refs": [
+        "README.md",
+        "docs/BRANCH04_EDITORIAL_RUNTIME_ALIGNMENT.md",
+        "docs/DIK_FEDERATION_V02_BOUNDARY.md"
+      ]
+    }
+  }
+}

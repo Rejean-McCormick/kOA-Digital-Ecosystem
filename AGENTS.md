@@ -18,3 +18,7 @@ This repository is **C0 architecture and coordination**, not a domain authority,
 ## Branch-10 public target projection
 
 Maintain `docs/target/public-architecture.v1.json` with `python scripts/export_public_architecture.py`; run `--check` before handing updates to the docs portal, Homepage or Mosaic. No local roots, source snapshot paths, personal data or deployment claims belong in that public projection. The site build/publishing owners retain independent release authorization. See `docs/integration/BRANCH10_PUBLIC_ARCHITECTURE_2026-11-09.md`.
+
+## Multilingual documentation coordination
+
+Read `docs/2-Technical-Reference/40-integration/multilingual/README.md` and its source ledger before cross-owner language work. Keep practical pilot, technical scenario result, human linguistic review, RuntimeSet activation and editorial authorization distinct. Do not infer v11 adoption from C0, change owner pins, or recreate omitted `docs/target/`.

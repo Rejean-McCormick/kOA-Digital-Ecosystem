@@ -158,3 +158,7 @@ See [application ownership and maturity](docs/1-Overview/Components-Skope-and-Ek
 ## Konstellation Publisher — registry addition (2026-10-27)
 
 [`Konstellation-Publisher`](https://github.com/Rejean-McCormick/Konstellation-Publisher) is recorded as a distinct public GitHub repository in the [repository inventory](docs/inventory/repositories.md) ([JSON source](docs/inventory/repositories.json)). Its Windows checkout root was reported as `C:\mycode\Konstellation\Konstellation-Publisher`, but its local `origin` has **not** been verified. The supplied `0.2.0-alpha.1` code is a local packaging/preflight candidate: **remote publication remains blocked**. See [Publisher boundaries](docs/2-Technical-Reference/40-integration/konstellation/publisher.md). Listing is not GitSink enrollment or deployment approval.
+
+## Multilingual coordination (26 November 2026)
+
+See the [two language working contexts and owner reconciliation](docs/2-Technical-Reference/40-integration/multilingual/README.md). This is a dated C0 evidence view, not target architecture admission, an owner contract or runtime qualification.

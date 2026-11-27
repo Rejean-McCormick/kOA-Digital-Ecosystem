@@ -1,0 +1,3 @@
+# V5.21.6 integration
+
+Overlay is additive across five repositories. Private diagnostic checks live active graph pins, Kit/Framework, candidate readiness, and prior structured/native packets. Run `scripts/apply_operational_native_v5216.ps1` or the pinned one-shot installer. Preserve previous immutable generations. Report all blocked profiles; never treat completion of diagnostic as approval. No production routes, publication, network, Git push, or canonical activation. The live Windows state is required to qualify all 77 active graphs. The available historical snapshot matches 50 active profile/state/projection pins; the remaining 27 must be checked on the actual machine.

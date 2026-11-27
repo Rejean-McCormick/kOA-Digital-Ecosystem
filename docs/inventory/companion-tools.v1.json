@@ -1,6 +1,6 @@
 {
   "format": "koa.ecosystem.companion-tools.v1",
-  "as_of": "2026-11-22",
+  "as_of": "2026-11-26",
   "owner_repository": "Rejean-McCormick/kOA-Digital-Ecosystem",
   "relationship_to_c0_inventory": "Supplementary documentation and observation tooling; not members of the frozen 55-role final-system design or the GitSink canonical inventory.",
   "github_identity_verification": "Both repository identities verified on GitHub on 2026-11-22. Local .git directory locations were reported by the user; local remote URLs and exact checked-out commits were not inspected.",
@@ -10,7 +10,7 @@
       "github_repo": "Rejean-McCormick/kOA-Doc-Server",
       "github_url": "https://github.com/Rejean-McCormick/kOA-Doc-Server",
       "local_root": "C:\\mycode\\DocServer\\kOA-Doc-Server",
-      "evidence": "Verified GitHub repository identity; user-reported .git checkout path; separate 1.3.1 runtime verification and English update prepared in November 2026",
+      "evidence": "Verified GitHub repository identity; user-reported .git checkout path; separate 1.3.1 runtime verification and English update prepared in November 2026; 2026-11-26 local directory scan reported .git, README.md and LANCER_DOC_SERVER.cmd at this root; language overlay backup and subsequent export reported by user",
       "identity_status": "github_repository_verified_local_git_marker_reported_origin_unverified",
       "role": "Local documentation browser, AI documentation viewer, wiki reader, RepoSurveyor launcher and provenance-aware ZIP exporter",
       "authority": "Derived read and export surface; cannot certify applications, publish an owner release, or promote evidence",
@@ -20,7 +20,7 @@
         "RepoSurveyor on-demand profiles"
       ],
       "writes": "Its own reports and exports; the separate Docs IA installer writes opt-in additions to owner repositories",
-      "installed_application_root": "C:\\mycode\\DocServer\\kOA-Doc-Server-1.3.0"
+      "installed_application_root": "C:\\mycode\\DocServer\\kOA-Doc-Server"
     },
     {
       "name": "kOADiag",
