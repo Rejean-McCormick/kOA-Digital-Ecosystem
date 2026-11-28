@@ -1,5 +1,7 @@
 # Konstellation — versioned integration
 
+**Current offline observation (2026-11-27):** [Konstellation 1.0.0-rc.2 and Koreograph](koreograph-2026-11-27.md). The integration record below is retained as the historical 0.4 contract view; it is not the current application version.
+
 Konstellation v0.4 is documented as a **reading and exploration application** in this contract view. Kristal retains authority over knowledge, provenance and epistemic metadata. SemantiK Architect (SA) fulfills an explicit communication request; the runtime orchestrator controls qualification and runtime activation. This page describes the recorded integration candidate, not a guarantee that every listed product is currently installed or integrated.
 
 | Producer / owner | Contract or artifact | Responsibility |
@@ -18,7 +20,7 @@ Local reading does not require a new Interaction Kernel bus. HTTP connections ar
 
 ## Publisher — local preparation only
 
-[`Konstellation-Publisher`](publisher.md) is a separate tool from Konstellation Reader. Its public GitHub repository was confirmed as an identifier as of 2026-10-27, but the local checkout remote and publication of the reviewed code were not verified. Candidate `0.2.0-alpha.1` prepares and preflights packages **locally**; it blocks remote deployment pending independent permission, rollout and rollback qualification. This page grants no publication authority.
+[`Konstellation-Publisher`](publisher.md) is a separate tool from Konstellation Reader. Its public GitHub repository was confirmed as an identifier as of 2026-10-27, but the local checkout remote and publication of the reviewed code were not verified. The historical candidate `0.2.0-alpha.1` prepares and preflights packages **locally**; it blocks remote deployment pending independent permission, rollout and rollback qualification. This page grants no publication authority.
 
 ## Later C0 / v10 coordination
 

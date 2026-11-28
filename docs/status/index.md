@@ -1,12 +1,16 @@
 # kOA Digital Ecosystem alignment status — 2026-09-21
 
+<!-- koa-docs-validation-2026-11-27 -->
+> **Validation locale du 27 novembre 2026.** Voir le [bilan kOADiag du poste Windows](2026-11-27-koadiag-qualification-locale.md) pour les résultats observés, les blocages et le profil matériel.
+<!-- /koa-docs-validation-2026-11-27 -->
+
 > **Current status:** [`current.md`](./current.md) is the entry point for the current ecosystem maturity assessment. This dated page is not the live inventory.
 
 This page records ecosystem alignment against the supplied Konnaxion, Orgo, Kristal, Interaction Kernel, current kOA-Linux docs/contracts snapshot and current Koali Spaces docs snapshot.
 
 For the compact cross-system dashboard, see [`current.md`](./current.md). It keeps architecture, implementation, qualification, integration and production evidence as separate dimensions.
 
-Latest cross-product qualification evidence: [`2026-09-21-konnaxion-orgo-ik-e2e-qualification.md`](./2026-09-21-konnaxion-orgo-ik-e2e-qualification.md).
+Historical qualification (2026-09-21): [`2026-09-21-konnaxion-orgo-ik-e2e-qualification.md`](./2026-09-21-konnaxion-orgo-ik-e2e-qualification.md).
 
 ## Overall result
 

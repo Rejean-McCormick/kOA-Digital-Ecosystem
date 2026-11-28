@@ -37,3 +37,7 @@
 ## Multilingual work context (2026-11-26)
 
 - [C0 multilingual coordination](../../docs/2-Technical-Reference/40-integration/multilingual/README.md) — dated owner reconciliation, language scope matrix and open gates.
+
+## Konstellation coordination (2026-11-27)
+
+- [Current offline integration observation](../2-Technical-Reference/40-integration/konstellation/koreograph-2026-11-27.md) — owner contracts, Koreograph and Publisher boundaries.

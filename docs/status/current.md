@@ -1,8 +1,14 @@
 # kOA ecosystem maturity map
 
+<!-- koa-docs-validation-2026-11-27 -->
+> **Validation locale du 27 novembre 2026.** Voir le [bilan kOADiag du poste Windows](2026-11-27-koadiag-qualification-locale.md) pour les résultats observés, les blocages et le profil matériel.
+<!-- /koa-docs-validation-2026-11-27 -->
+
 **Purpose:** time-scoped cross-system engineering evidence view; for the final-system design see [target architecture](../target/README.md). This page does not replace owner status/release documents.
 
 **Later offline evidence (2026-11-23):** [55 code snapshots](../inventory/code-snapshots-55-2026-11-23.v1.json) and the [documentation/code divergence register](../audit/2026-11-23-documentation-drift.md) are available as structural and documentary observations only. They do not re-qualify the owner interactions below. diK findings are deferred while its owner updates the application. The C0 ZIP omitted `docs/target/`, but the GitHub main tree separately contains it.
+
+**Later offline observation (2026-11-27):** [Konstellation 1.0.0-rc.2, Koreograph and Publisher](../2-Technical-Reference/40-integration/konstellation/koreograph-2026-11-27.md). Synthetic runtime qualification passed; real-campaign execution and publication remain unverified.
 
 ## Offline source consolidation (2026-11-09; not a production status upgrade)
 
