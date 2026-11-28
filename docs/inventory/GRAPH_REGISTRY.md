@@ -1,7 +1,7 @@
 # Registre source du graphe kOA (v1)
 
 Ce registre est **la source architecturale** consommée lors des publications datées de `kOA-Digital-Ecosystem-GitHub-Audit`. Il ne déploie ni ne qualifie une application.
-**Separate engineering hinges:** [kOA Doc Server and kOADiag](ECOSYSTEM_TOOLING.md) are documented in a companion inventory, not injected into this owner-only publication graph. Its fixed 55-role/14-node scope is intentionally preserved until an explicit owner-approved change to the graph publication contract.
+**Separate engineering hinges:** [kOA Doc Server, kOADiag and GitHub Audit](ECOSYSTEM_TOOLING.md) are documented in a companion inventory, not injected into this owner-only publication graph. Its fixed 55-role/14-node scope is intentionally preserved until an explicit owner-approved change to the graph publication contract.
 
 - [`repositories.json`](repositories.json) is the 55-repository inventory. The November 9 SmartDump ledger covers the original 53 entries. Ekole-Quebec and Ekole-Atelier-Images were recorded on November 12.
 - [`graph-registry.v1.json`](graph-registry.v1.json) : propriétaires et relations documentés; le graphe est **une sélection de 14 systèmes** et ne prétend pas représenter individuellement les 55 dépôts. `Kolor` et `Karacter` sont désormais inscrits au portefeuille, sans relations inter-produit qualifiées par cette seule inscription.

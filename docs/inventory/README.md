@@ -8,7 +8,8 @@ This directory documents **the currently declared kOA repository perimeter**, ke
 - [`graph-focus.v1.json`](graph-focus.v1.json) — typed focused paths, branches, contracts, documentary evidence, and maturity levels (separate from application qualification).
 - [`repositories.json`](repositories.json) — **Canonical machine-readable inventory**, 55 registered repositories.
 - [`additional-repositories.v1.json`](additional-repositories.v1.json) — registered additional owner repositories and associated wiki checkouts (Kin-City); shown separately in [`repositories.md`](repositories.md), outside the current 55-role architecture baseline.
-- [**Key ecosystem repositories and tooling**](ECOSYSTEM_TOOLING.md) and [`companion-tools.v1.json`](companion-tools.v1.json) — verified GitHub links for **[kOA Doc Server](https://github.com/Rejean-McCormick/kOA-Doc-Server)** and **[kOADiag](https://github.com/Rejean-McCormick/kOADiag)**, declared local checkouts, and their hinge roles. These companion tools do not change the 55-entry canonical inventory.
+- [**Key ecosystem repositories and tooling**](ECOSYSTEM_TOOLING.md) and [`companion-tools.v1.json`](companion-tools.v1.json) — verified GitHub links for **[kOA Doc Server](https://github.com/Rejean-McCormick/kOA-Doc-Server)**, **[kOADiag](https://github.com/Rejean-McCormick/kOADiag)** and **[GitHub Audit](https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem-GitHub-Audit)**, declared local checkouts, and their hinge roles. These companion tools do not change the 55-entry canonical inventory.
+- [**GitHub Audit operations and evidence**](GITHUB_AUDIT.md) — [public dashboard](https://rejean-mccormick.github.io/kOA-Digital-Ecosystem-GitHub-Audit/), local scan and weekly GitHub observation.
 - [`code-snapshots-53.v1.json`](code-snapshots-53.v1.json) — SHA-256 ledger for 53 offline code archives, with audit status `NOT_EVALUATED`.
 - [`code-snapshots-55-2026-11-23.v1.json`](code-snapshots-55-2026-11-23.v1.json) — separately dated SHA-256 ledger for 55 supplied offline code snapshots from 23 November 2026; this does **not** supersede the historical 53-snapshot ledger or prove code/documentation conformity.
 - [23 November documentation/code issue compilation](../audit/2026-11-23-documentation-drift.md) — triaged owner issues; diK deferred during its owner update.
@@ -37,7 +38,7 @@ These repositories are tracked here for CI follow-up outside the C0 owner portfo
 | Repository | Reported local checkout root | Reported local wiki page | Source available for triage |
 |---|---|---|---|
 | [King-Klown-Canon](https://github.com/Rejean-McCormick/King-Klown-Canon) | `C:\mycode\01-Text_Based_Git\King_Klown\king-clown-canon` (reported `.git` marker) | `C:\mycode\01-Text_Based_Git\King_Klown\king-klown-canon.wiki\Home.md` | User-reported checkout |
-| [kOA-Digital-Ecosystem-GitHub-Audit](https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem-GitHub-Audit) | Unknown | `C:\mycode\kOA-Digital-Ecosystem-GitHub-Audit\kOA-Digital-Ecosystem-GitHub-Audit.wiki\Home.md` | Source snapshot supplied 2026-11-24 |
+| [kOA-Digital-Ecosystem-GitHub-Audit](https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem-GitHub-Audit) | `C:\mycode\kOA-Digital-Ecosystem-GitHub-Audit\kOA-D-E-GitHub-Audit` (operator-reported working root) | `C:\mycode\kOA-Digital-Ecosystem-GitHub-Audit\kOA-Digital-Ecosystem-GitHub-Audit.wiki\Home.md` | Source snapshot supplied 2026-11-24; [operating evidence, 2026-11-28](GITHUB_AUDIT.md) |
 | [VotingMachine](https://github.com/Rejean-McCormick/VotingMachine) | Unknown | Unknown | Source snapshot supplied 2026-11-24 |
 
 ## Git synchronization safety

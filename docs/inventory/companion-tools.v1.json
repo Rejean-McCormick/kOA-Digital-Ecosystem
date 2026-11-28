@@ -1,9 +1,9 @@
 {
   "format": "koa.ecosystem.companion-tools.v1",
-  "as_of": "2026-11-26",
+  "as_of": "2026-11-28",
   "owner_repository": "Rejean-McCormick/kOA-Digital-Ecosystem",
   "relationship_to_c0_inventory": "Supplementary documentation and observation tooling; not members of the frozen 55-role final-system design or the GitSink canonical inventory.",
-  "github_identity_verification": "Both repository identities verified on GitHub on 2026-11-22. Local .git directory locations were reported by the user; local remote URLs and exact checked-out commits were not inspected.",
+  "github_identity_verification": "Doc Server and kOADiag identities verified on 2026-11-22; GitHub Audit identity and dated workflow evidence verified on 2026-11-28. Local working roots are operator-reported; local origins and exact checked-out commits remain unverified.",
   "repositories": [
     {
       "name": "kOA Doc Server",
@@ -37,6 +37,35 @@
         "optional owner-provided evidence exports"
       ],
       "writes": "Its own diagnostic reports and opt-in private audit exports; explicitly authorized isolated E2E tests may change test data"
+    },
+    {
+      "name": "kOA-Digital-Ecosystem-GitHub-Audit",
+      "github_repo": "Rejean-McCormick/kOA-Digital-Ecosystem-GitHub-Audit",
+      "github_url": "https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem-GitHub-Audit",
+      "public_dashboard_url": "https://rejean-mccormick.github.io/kOA-Digital-Ecosystem-GitHub-Audit/",
+      "local_root": "C:\\mycode\\kOA-Digital-Ecosystem-GitHub-Audit\\kOA-D-E-GitHub-Audit",
+      "identity_status": "github_repository_verified_local_working_root_reported_origin_unverified",
+      "evidence": "2026-11-28: operator-reported Windows scan and aggregate sync; Pages deployment run 46097058483 verified; correction PR #6 merged; remote observation run 46146239397 succeeded at ab2e61d11c037cd9080d84590cf0a5dac8e5a344; 55/55 metadata observations, security coverage unknown for all 55.",
+      "role": "Local static repository audit, read-only remote GitHub observation, independent aggregate dashboard and dated graph publication",
+      "authority": "Observation only; no product certification, owner release authority, canonical state mutation or automatic evidence promotion",
+      "reads": [
+        "C0 repository inventory and pinned graph registries",
+        "local repositories in LOCAL_OBSERVE",
+        "GitHub metadata and available security observations in OBSERVE"
+      ],
+      "writes": "Local reports; sanitized workflow artifacts; explicitly confirmed allowlisted aggregate synchronization to the audit repository only; separate Pages deployment. No writes to audited repositories.",
+      "reference": "docs/inventory/GITHUB_AUDIT.md",
+      "weekly_observation": {
+        "workflow_url": "https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem-GitHub-Audit/actions/workflows/observe.yml",
+        "cron_utc": "27 8 * * 1",
+        "verified_run_url": "https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem-GitHub-Audit/actions/runs/46146239397",
+        "observed_at": "2026-11-28",
+        "repositories_in_scope": 55,
+        "repositories_observed": 55,
+        "repositories_without_metadata": 0,
+        "security_coverage": "UNKNOWN",
+        "artifact_retention_days": 14
+      }
     }
   ],
   "related_hinges": [
@@ -64,11 +93,6 @@
       "name": "initkoa-docs",
       "role": "Independent docs portal and derived MkDocs/Wiki views; not owner of C0 truth",
       "reference": "docs/wiki/README.md"
-    },
-    {
-      "name": "kOA-Digital-Ecosystem-GitHub-Audit",
-      "role": "Manual dated public audit snapshots, no direct promotion from Doc Server or kOADiag",
-      "reference": "docs/inventory/GRAPH_REGISTRY.md"
     }
   ],
   "notes": [

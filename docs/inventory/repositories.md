@@ -6,7 +6,7 @@
 **Repositories in the declared C0 perimeter:** 55.
 Source-of-truth for this list: [`repositories.json`](repositories.json).
 Offline code snapshot digests: [`code-snapshots-53.v1.json`](code-snapshots-53.v1.json).
-Separate companion engineering repositories: [Doc Server and kOADiag](ECOSYSTEM_TOOLING.md).
+Separate companion engineering repositories: [Doc Server, kOADiag and GitHub Audit](ECOSYSTEM_TOOLING.md). [Public audit dashboard](https://rejean-mccormick.github.io/kOA-Digital-Ecosystem-GitHub-Audit/).
 
 | Repository | Declared verification status | Reported local checkout root | Latest offline source evidence |
 |---|---|---|---|

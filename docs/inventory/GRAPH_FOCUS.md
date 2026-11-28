@@ -6,7 +6,7 @@ L'application `kOA-Digital-Ecosystem-GitHub-Audit` le lit uniquement pendant une
 la copie **datée**, et ne reconstitue jamais le graphe depuis GitHub en direct.
 
 ## Pourquoi des parcours ?
-**Documentation/diagnostics reading path:** [kOA Doc Server and kOADiag](ECOSYSTEM_TOOLING.md) are cross-cutting companion tools. They are intentionally not drawn as new mandatory stages of the four domain-focused paths; their documentation is linked separately to avoid creating fictitious owner contracts.
+**Documentation/diagnostics reading path:** [kOA Doc Server, kOADiag and GitHub Audit](ECOSYSTEM_TOOLING.md) are cross-cutting companion tools. They are intentionally not drawn as new mandatory stages of the four domain-focused paths; their documentation is linked separately to avoid creating fictitious owner contracts.
 
 
 Le graphe n'est **pas une chaîne globale**. Un parcours est un angle de lecture

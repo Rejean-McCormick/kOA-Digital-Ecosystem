@@ -20,9 +20,13 @@ Use these views together:
 - **Maturity map** — specified vs implemented vs qualified vs integrated vs production-proven: [`docs/status/current.md`](docs/status/current.md)
 - **Layer model** — conceptual classification/orientation only: [`docs/3-Layer-Model/README.md`](docs/3-Layer-Model/README.md)
 - **Repository inventory** — current kOA repository perimeter: [`docs/inventory/README.md`](docs/inventory/README.md)
-- **Documentation and diagnostics hinges** — **[kOA Doc Server](https://github.com/Rejean-McCormick/kOA-Doc-Server)** and **[kOADiag](https://github.com/Rejean-McCormick/kOADiag)**; verified repository identities, local checkout declarations, authority boundaries, and related tools: [ecosystem tooling map](docs/inventory/ECOSYSTEM_TOOLING.md). The 55-entry C0 inventory and 53-role final-system design remain unchanged.
+- **Documentation, diagnostics and audit hinges** — **[kOA Doc Server](https://github.com/Rejean-McCormick/kOA-Doc-Server)**, **[kOADiag](https://github.com/Rejean-McCormick/kOADiag)** and **[GitHub Audit](https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem-GitHub-Audit)** ([public dashboard](https://rejean-mccormick.github.io/kOA-Digital-Ecosystem-GitHub-Audit/)); verified repository identities, local checkout declarations, authority boundaries, and related tools: [ecosystem tooling map](docs/inventory/ECOSYSTEM_TOOLING.md). The 55-entry C0 inventory and 53-role final-system design remain unchanged.
 - **Local development ports (proposed)** — C0 [versioned registry](config/local-dev-ports.v1.json), [policy](docs/2-Technical-Reference/50-operations/local-development-ports.md) and [owner migration gates](docs/2-Technical-Reference/50-operations/owner-port-migration.md). These are target allocations, not deployed listeners.
 - **diK & Kristalizer mapping** — snapshot-backed local roots and proposed lexical/authoring handoffs: [`docs/2-Technical-Reference/40-integration/dik-kristalizer/README.md`](docs/2-Technical-Reference/40-integration/dik-kristalizer/README.md)
+
+## Public ecosystem audit
+
+**[Open the live kOA audit dashboard](https://rejean-mccormick.github.io/kOA-Digital-Ecosystem-GitHub-Audit/)** — the independent GitHub Audit companion exposes approved aggregate observations and dated graph publications. [Audit tooling and operating evidence](docs/inventory/GITHUB_AUDIT.md) describes the local Windows audit, weekly read-only GitHub observation, publication boundary and limits. Observation is not product qualification.
 
 ## Purpose
 
@@ -117,7 +121,7 @@ The [public target metadata export](docs/target/public-architecture.v1.json) is 
 ## Wiki and documentation maintenance
 ### Local documentation and diagnostic workspaces
 
-**[kOA Doc Server](https://github.com/Rejean-McCormick/kOA-Doc-Server)** reads owner documentation, independent wiki checkouts, proposed AI navigation, and on-demand RepoSurveyor engineering profiles. **[kOADiag](https://github.com/Rejean-McCormick/kOADiag)** examines cross-repository interfaces, declared C0 services, and scoped evidence without promoting a proof. Both are companion tools, **not new C0 product owners**. See the [companion inventory and hinge map](docs/inventory/ECOSYSTEM_TOOLING.md), mirrored for readers on the [wiki tooling page](https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem/wiki/Ecosystem-Tooling).
+**[kOA Doc Server](https://github.com/Rejean-McCormick/kOA-Doc-Server)** reads owner documentation, independent wiki checkouts, proposed AI navigation, and on-demand RepoSurveyor engineering profiles. **[kOADiag](https://github.com/Rejean-McCormick/kOADiag)** examines cross-repository interfaces, declared C0 services, and scoped evidence without promoting a proof. **[GitHub Audit](https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem-GitHub-Audit)** observes local repository code and GitHub metadata in separate modes, with an independently published [public dashboard](https://rejean-mccormick.github.io/kOA-Digital-Ecosystem-GitHub-Audit/). All three are companion tools, **not new C0 product owners**. See the [companion inventory and hinge map](docs/inventory/ECOSYSTEM_TOOLING.md), with a separate reader [wiki tooling page](https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem/wiki/Ecosystem-Tooling).
 
 
 

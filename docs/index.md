@@ -40,6 +40,8 @@ The GitHub Wiki is a secondary navigation surface. The [2026-10-27 wiki reconcil
 - [Current maturity map](status/current.md)
 - [Conceptual Layer Model](3-Layer-Model/README.md)
 - [Repository inventory](inventory/README.md)
+- [Companion engineering tools](inventory/ECOSYSTEM_TOOLING.md)
+- **[Public kOA audit dashboard](https://rejean-mccormick.github.io/kOA-Digital-Ecosystem-GitHub-Audit/)** — [audit repository, operations and dated observations](inventory/GITHUB_AUDIT.md); not product qualification.
 
 ## Start here
 
